@@ -1,0 +1,722 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-11",
+  "graph_version": "0.9.34",
+  "plan_version": "4.08",
+  "manuscript_revision": "4.09",
+  "source_summary": "runs/wp1/boundary_main_pdf_review_20261011/reading_summary.json",
+  "source_summary_sha256": "0efb9cba28215e2959a0057b8bcb7a7efcaa2647c3c3a44127a0d2d01917135c",
+  "source_freeze_sha256": "5472b4a2e1a038b2da7db8131c568337db3115548b53bcdc896925a2c0b970fc",
+  "staged_source_preserved": true,
+  "graph_integration_pending": false,
+  "compiled_main_integration_pending": false,
+  "status": {
+    "boundary_comparators": 4,
+    "acquired_PDF_pages": 106,
+    "cumulative_distinct_same_AI_readings": 18,
+    "cumulative_acquired_PDF_pages": 335,
+    "independent_reviews": 0,
+    "new_execution_records": 0,
+    "new_scientific_or_industrial_passes": 0,
+    "whole_corpus_complete": false,
+    "external_supplements_complete": false
+  },
+  "records": [
+    {
+      "work_id": "W_icml_2024_4411004895826cce",
+      "method": "ILILT",
+      "title": "ILILT: Implicit Learning of Inverse Lithography Technologies",
+      "venue": "ICML",
+      "year": 2024,
+      "order": 1,
+      "pages": 13,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/yang24s/yang24s.pdf",
+      "pdf_sha256": "affee10fbae431b7a0946d5c4353c57a25ef79facd42e9366b7af84ebc0e8458",
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "prior_targeted_audit": {
+        "node_id": "work:PT16",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "A lithography estimator is called within the iterative mask optimization and provides simulated wafer-image feedback (provisional C1 for simulator-coupled mask design). Appendix describes optical/resist approximations and says optical parameters are foundry-calibrated in principle; this review found no foundry calibration file, calibrated process profile or independent physical validation.",
+          "physical_evidence_assessment": "Author-reported simulated wafer print, EPE and process-variation-band analysis under nominal/non-nominal simulator conditions. No physical wafer/metrology validation or independent solver audit identified; authors state production-level QoR remains future work.",
+          "manufacturing_assessment": "Pre-fabrication semiconductor mask optimization with industry-relevant simulated EPE/PVB measures (M1). No production line, fabricated wafer, yield/defect KPI, external tool/site/lot holdout, integration or operational qualification established."
+        },
+        "node_sha256": "0014f1d52f18469c5bd19761617a68924b8e2fe19d799adf3da0f429523b86b8"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C1",
+          "C4"
+        ],
+        "physical_evidence_codes": [
+          "V2"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "claims": [
+        {
+          "claim_id": "IL01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            11
+          ],
+          "location": "Forward simulator and learning",
+          "paraphrase": "Forward lithography supplies inference feedback; finite unrolled BPTT with weighted mask supervision is implemented in the described method, while end-to-end DEQ training is future work.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IL02",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            7
+          ],
+          "location": "Metric definition and Table2",
+          "paraphrase": "EPE is averaged violation count at contour probes; PVB measures area across process corners. Neither is a measured wafer metric.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IL03",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Table2",
+          "paraphrase": "GPUILT: EPE0.21/PVB4656/runtime4; CFNO8:0.25/4674/0.4; P2PHD8:0.08/4695/0.8. The10x runtime ratio belongs to CFNO8 and the best EPE belongs to P2PHD8; combine only same-setting quantities.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "IL04",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "location": "Scope and public assets",
+          "paraphrase": "Production-level designs/manufacturing QoR remain future. Foundry calibration is discussed without an acquired calibration file. A pix2pixHD backbone link is not a full ILILT recipe/checkpoint.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "Frozen unseen-layout to new binary mask and simulated print, separate baseline/method configurations.",
+        "validators": [
+          "independent contour-distance and violation-count implementations, both with units",
+          "EPE/PVB across fixed dose/focus settings",
+          "mask binary/topology/min-feature checks",
+          "independent optical or measured-wafer reference"
+        ],
+        "release_gaps": [
+          "full method code and exact config/checkpoint not established by this PDF",
+          "backbone release cannot substitute for ILILT",
+          "test membership, process corner and probe definitions"
+        ],
+        "industry": "Named scanner/resist/layout layer with measured wafer holdout and upstream asset permissions; unknown gates hold."
+      },
+      "pdf_pages": 13,
+      "review_path": "runs/wp1/boundary_main_pdf_review_20261011/W_icml_2024_4411004895826cce_review.json",
+      "review_sha256": "ba19c0435ec599b98aa309f6d680911ac0671bcaa644a052d3b2e71acee42d80",
+      "graph_work_ids": [
+        "work:D37",
+        "work:PT16"
+      ],
+      "public_review_path": "boundary_readings.html",
+      "historical_codes_unchanged": true,
+      "independent_review": false,
+      "new_execution": false,
+      "independent_physical_validation": false,
+      "industrial_pass": false,
+      "systematic_inclusion_counted": false,
+      "external_supplements_complete": false,
+      "full_code_tree_acquired": false,
+      "release_observations": [],
+      "release_pins": []
+    },
+    {
+      "work_id": "W_icml_2025_fc52733ab9b1e7fd",
+      "method": "M2PDE",
+      "title": "M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation",
+      "venue": "ICML",
+      "year": 2025,
+      "order": 2,
+      "pages": 29,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhang25bb/zhang25bb.pdf",
+      "pdf_sha256": "a4f88bea26264d455edda25a7896b28f3f6d32f7d1a44a6f7f34a67a9f76f48a",
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "prior_targeted_audit": {
+        "node_id": "work:PT14",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "PDE/simulator-conditioned generation supports provisional C1 for physical-simulation coupling; manufacturing process correspondence is not established.",
+          "physical_evidence_assessment": "Author-reported comparison with numerical simulator solutions; no independent solver, physical instrument or uncertainty audit.",
+          "manufacturing_assessment": "Adjacent engineering simulation; no named factory product/process/equipment profile, external lot/site or operational metric."
+        },
+        "node_sha256": "85732bd448e993ef75506a1efa3111b35660b169ad61ab8354893fbc4ace7ddf"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C1",
+          "C4"
+        ],
+        "physical_evidence_codes": [
+          "V2"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "claims": [
+        {
+          "claim_id": "MP01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            5,
+            28,
+            29
+          ],
+          "location": "Core assumptions",
+          "paraphrase": "Solver-generated training and conditional diffusion compose fields/components; learned energy is probabilistic and the noise objective is not a physical residual. Neighbor/BC coverage and local Markov assumptions limit scope.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP02",
+          "pdf_pages_1_based": [
+            6
+          ],
+          "location": "Table1 and prose",
+          "paraphrase": "FNO-v0.0102 versus M2PDE0.0080 gives1.275x, not fourfold; coupled FNO0.0264 is smaller than decoupled0.0320. Retain table/prose conflict as unresolved.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP03",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            18
+          ],
+          "location": "Tables2/3 and provenance",
+          "paraphrase": "Relative-L2 table unit1e-2 must be explicit. Multi-component training derives rows from16-element assemblies, so component rows share source simulations and are not independent assembly samples.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP04",
+          "pdf_pages_1_based": [
+            9,
+            26,
+            27,
+            28
+          ],
+          "location": "Accuracy/timing configurations",
+          "paraphrase": "Table3 epsilon2.07 versus3.31 yields37.46% reduction, while Table18 original-DDPM1.94 yields41.39% for a different setting. Table20 timing uses DDIM50 and normalized forward cost assumptions. RD speedup0.064 indicates slower inference.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP05",
+          "pdf_pages_1_based": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            23,
+            24
+          ],
+          "location": "Industrial transfer",
+          "paraphrase": "Simplified reactor/plane-strain models, excluded physics, coupled-training comparators, input-information differences and initialization exceptions prevent blanket superiority or process acceptance.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP06",
+          "pdf_pages_1_based": [
+            5,
+            13,
+            14,
+            28,
+            29
+          ],
+          "location": "Independent task design",
+          "paraphrase": "Record Eq8/9/Algorithm2 mapping questions separately; numerical-reference relative errors are author claims. An independent PDE residual/BC/interface validator and frozen unseen conditions are still needed.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "Frozen unseen reaction-diffusion conditions to newly generated coupled u/v fields; engineering nuclear/heatpipe tasks separate.",
+        "validators": [
+          "same-grid independent numerical solver",
+          "PDE residual plus initial/boundary consistency",
+          "interface continuity/flux for engineering extensions",
+          "distribution/uncertainty coverage across seeds"
+        ],
+        "release_gaps": [
+          "exact data and checkpoint bytes/acquisition",
+          "notebook clean entrypoint and Python/dependencies",
+          "training-origin grouping and DDPM/DDIM/K settings"
+        ],
+        "industry": "RD is a technical engineering test only; named manufacturing process/model parameter calibration and external KPI required."
+      },
+      "pdf_pages": 29,
+      "review_path": "runs/wp1/boundary_main_pdf_review_20261011/W_icml_2025_fc52733ab9b1e7fd_review.json",
+      "review_sha256": "247b4cdcbe32882a3a958c5ca08bd5291588390492f8d7291d97a49aed7bd2ce",
+      "graph_work_ids": [
+        "work:PT14"
+      ],
+      "public_review_path": "boundary_readings.html",
+      "historical_codes_unchanged": true,
+      "independent_review": false,
+      "new_execution": false,
+      "independent_physical_validation": false,
+      "industrial_pass": false,
+      "systematic_inclusion_counted": false,
+      "external_supplements_complete": false,
+      "full_code_tree_acquired": false,
+      "release_observations": [
+        {
+          "method": "M2PDE",
+          "source_paths": [
+            "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_README.md",
+            "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_LICENSE",
+            "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_requirements.txt"
+          ],
+          "observation": "README advertises Google Drive dataset/checkpoint archives and Python3.12.4; actual archive access/content not checked here. Top-level LICENSE is CC BY-NC4.0, not a verified commercial permission grant. Requirements mix pywin32, Torch2.4cu118 and specialized graph wheels; platform resolution remains untested.",
+          "code_and_all_asset_rights": "not_qualified_scope_unresolved",
+          "data_checkpoint_acquired": false,
+          "new_execution": false
+        }
+      ],
+      "release_pins": [
+        {
+          "repository": "AI4Science-WestlakeU/M2PDE",
+          "checked_at_utc": "2026-10-11T13:14:06.296575+00:00",
+          "immutable_commit": "604031962a3d09f91b010c2eb94d35e680e0904c",
+          "complete_assets_acquired": false,
+          "executed": false,
+          "snapshots": [
+            {
+              "kind": "commit",
+              "url": "https://api.github.com/repos/AI4Science-WestlakeU/M2PDE/commits/main",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_commit.json",
+              "bytes": 26262,
+              "sha256": "48accd1c2adfe008c10335c3d7a3500a484247332f8fa2a80db8b0823e846244"
+            },
+            {
+              "kind": "README.md",
+              "url": "https://raw.githubusercontent.com/AI4Science-WestlakeU/M2PDE/604031962a3d09f91b010c2eb94d35e680e0904c/README.md",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_README.md",
+              "bytes": 5693,
+              "sha256": "c0df513f8677454d9c7db9008f169db34f38f12ca5f95395f875d7eef83c79fc",
+              "commit_pinned": true
+            },
+            {
+              "kind": "LICENSE",
+              "url": "https://raw.githubusercontent.com/AI4Science-WestlakeU/M2PDE/604031962a3d09f91b010c2eb94d35e680e0904c/LICENSE",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_LICENSE",
+              "bytes": 19342,
+              "sha256": "0afca3145596cd005f6f6ed977313ea31928094fc5b4aaabc21bb765ea369d09",
+              "commit_pinned": true
+            },
+            {
+              "kind": "requirements.txt",
+              "url": "https://raw.githubusercontent.com/AI4Science-WestlakeU/M2PDE/604031962a3d09f91b010c2eb94d35e680e0904c/requirements.txt",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/M2PDE_requirements.txt",
+              "bytes": 1505,
+              "sha256": "f6b8df1b67c9711feaed4a771c4276a05b8efc89c7e25c2a39b7404605cdc3a2",
+              "commit_pinned": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "W_neurips_2024_d5c36a3794afba8e",
+      "method": "DrivAerNet++",
+      "title": "DrivAerNet++: A Large-Scale Multimodal Car Dataset with Computational Fluid Dynamics Simulations and Deep Learning Benchmarks",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "order": 3,
+      "pages": 38,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/013cf29a9e68e4411d0593040a8a1eb3-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "6c8895e40f5c5903cd6327dbfae45b60d7e3badcd8b012367921e2a780e1c8d6",
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "prior_targeted_audit": {
+        "node_id": "work:PT13",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V3"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "Parametric geometry plus CFD with OpenFOAM v11, steady incompressible RANS using k-omega SST, quality/convergence checks and mesh sensitivity. This is a governing-equation simulation pathway (C1); it is not a learned model constrained by equations at inference, and design-point fidelity is bounded by the reported solver, mesh, boundary conditions and Reynolds-number scope.",
+          "physical_evidence_assessment": "Author v2 reports baseline drag comparisons with TUM wind-tunnel values across four vehicle configurations, with reported differences about 2.18-4.88%, and mesh sensitivity for one fastback case (relative error 8.21% at 6M cells vs 2.17% at 24M against reference CFD). This is stronger than a simulation-only score but remains author-reported; the present audit did not reproduce the runs or verify uncertainty/independent external lots.",
+          "manufacturing_assessment": "Designed to avoid geometries that are difficult to manufacture and supports conceptual automotive design/aerodynamics, but evidence is simulation and initial-design support. It does not generate factory process histories, defects, material states or production-lot variation; no vehicle production or field-operational KPI is established. Keep H2 boundary pending human scope adjudication."
+        },
+        "node_sha256": "a760f961c7bd4bb52ca0e2866f4150181cdc3379f0719d67501063a8b0fe140e"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C1"
+        ],
+        "physical_evidence_codes": [
+          "V3"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "claims": [
+        {
+          "claim_id": "DA01",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            4,
+            5,
+            15,
+            18,
+            19
+          ],
+          "location": "Generation pathway",
+          "paraphrase": "8,000 paper cases combine ANSA geometry morphing and OpenFOAM11 steady incompressible RANS. Actual12M symmetric-half and24M full-equivalent mesh descriptions have different scopes.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DA02",
+          "pdf_pages_1_based": [
+            6,
+            11,
+            13,
+            36,
+            37,
+            38
+          ],
+          "location": "Access and rights",
+          "paraphrase": "Paper states CC BY-NC dataset, upstream CAD registration/no-license concern, commercial ANSA, raw OpenFOAM upon request/approval and future release promises. These are dated author statements, not current asset acquisition.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DA03",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            27
+          ],
+          "location": "Metrics and splits",
+          "paraphrase": "Deep models use5600/1200/1200 samples; AutoML uses a different split. Table3/4 MSE/MAE/MaxAE need aggregation reconciliation, and Figure5 confidence-band description conflicts with checklist no-error-bars response.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DA04",
+          "pdf_pages_1_based": [
+            20,
+            21
+          ],
+          "location": "Physical comparison and ranking",
+          "paraphrase": "Mesh sensitivity compares reference CFD, while four baseline geometries compare wind references. Table9 N-FS experimental+0.003 versus predicted-0.002 reverses sign; Table8/9 E-FS values require reconciliation. Neither gives8,000 measured cases.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DA05",
+          "pdf_pages_1_based": [
+            7,
+            22,
+            28,
+            29,
+            30,
+            35,
+            36
+          ],
+          "location": "Decision boundaries",
+          "paraphrase": "Conceptual-design scope, RANS limitations, training/validation outlier removal and point-budget/interpolation changes limit transfer claims. Native pressure18.97% and interpolated24.84% are separate errors.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "A fixed small newly selected geometry through mesh/CFD to new fields, separately from ML regression on saved dataset.",
+        "validators": [
+          "mesh validity and source geometry lineage",
+          "conservation/residual/mesh sensitivity",
+          "independent CFD/physical reference with boundary identity",
+          "case-grouped split and raw metric consistency"
+        ],
+        "release_gaps": [
+          "ANSA/upstream CAD permission and complete generation recipe",
+          "version-specific dataset inventory",
+          "per-asset data license and requested raw availability",
+          "bounded CPU/memory/time with complete costs"
+        ],
+        "industry": "Conceptual aerodynamics profile is not factory-data generation; physical ranking and commercial full-stack rights need distinct evidence."
+      },
+      "pdf_pages": 38,
+      "review_path": "runs/wp1/boundary_main_pdf_review_20261011/W_neurips_2024_d5c36a3794afba8e_review.json",
+      "review_sha256": "0fad91e0278402384e16f17fa53e53435a273a7baa0f93ee28f4aa2a908f037a",
+      "graph_work_ids": [
+        "work:PT13"
+      ],
+      "public_review_path": "boundary_readings.html",
+      "historical_codes_unchanged": true,
+      "independent_review": false,
+      "new_execution": false,
+      "independent_physical_validation": false,
+      "industrial_pass": false,
+      "systematic_inclusion_counted": false,
+      "external_supplements_complete": false,
+      "full_code_tree_acquired": false,
+      "release_observations": [
+        {
+          "method": "DrivAerNet++",
+          "source_paths": [
+            "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_README.md",
+            "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_LICENSE",
+            "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_requirements.txt"
+          ],
+          "observation": "Pinned README says8,150 designs while acquired2024 PDF says8,000; no inventory reconciliation. README calls code MIT and links LICENSE, but that pinned LICENSE contains CC BY-NC4.0. Record conflicting asset-scope assertions without granting commercial code permission. Data commercial-use restrictions remain explicitly stated by README. Separate2026 extensions are not silently included in the2024 paper count.",
+          "code_and_all_asset_rights": "not_qualified_conflicting_source_statements",
+          "dataset_manifest_acquired": false,
+          "new_execution": false
+        }
+      ],
+      "release_pins": [
+        {
+          "repository": "Mohamedelrefaie/DrivAerNet",
+          "checked_at_utc": "2026-10-11T13:14:07.625255+00:00",
+          "immutable_commit": "8b8c053053aa0f27c30f73af00be070a20205858",
+          "complete_assets_acquired": false,
+          "executed": false,
+          "snapshots": [
+            {
+              "kind": "commit",
+              "url": "https://api.github.com/repos/Mohamedelrefaie/DrivAerNet/commits/main",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_commit.json",
+              "bytes": 5929,
+              "sha256": "a764ac8ddb47651b17452e5df0478f969f2a1d04def23e1b9f8585aa1456c9e6"
+            },
+            {
+              "kind": "README.md",
+              "url": "https://raw.githubusercontent.com/Mohamedelrefaie/DrivAerNet/8b8c053053aa0f27c30f73af00be070a20205858/README.md",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_README.md",
+              "bytes": 15027,
+              "sha256": "8c285350198952551b52f06a5320c74e4c8b8b3d4ebf94f74202d2bebd4e686f",
+              "commit_pinned": true
+            },
+            {
+              "kind": "LICENSE",
+              "url": "https://raw.githubusercontent.com/Mohamedelrefaie/DrivAerNet/8b8c053053aa0f27c30f73af00be070a20205858/LICENSE",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_LICENSE",
+              "bytes": 19346,
+              "sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+              "commit_pinned": true
+            },
+            {
+              "kind": "requirements.txt",
+              "url": "https://raw.githubusercontent.com/Mohamedelrefaie/DrivAerNet/8b8c053053aa0f27c30f73af00be070a20205858/requirements.txt",
+              "http_status": 200,
+              "path": "runs/wp1/boundary_main_pdf_review_20261011/release_context_unsandboxed/DrivAerNet_requirements.txt",
+              "bytes": 474,
+              "sha256": "5d658ee12766487f57f872d9ee2e0a62c937e64868090d524fd2ae26d5102292",
+              "commit_pinned": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "work_id": "W_neurips_2025_e242169abd7d050b",
+      "method": "TokMan",
+      "title": "TokMan:Tokenize Manhattan Mask Optimization for Inverse Lithography",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "order": 4,
+      "pages": 26,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/4e127d4fb92a3145ecb60f6aa0b16eef-Paper-Conference.pdf",
+      "pdf_sha256": "5e1303d95b90657490e6af0abd8c4e85057e3afbaebc0db52ab571f8ffa9f09e",
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "prior_targeted_audit": {
+        "node_id": "work:PT15",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "Differentiable forward lithography simulation feeds the mask optimization objective (provisional C1 for simulator-coupled process design). Manhattan/binary geometric constraints are not themselves evidence of calibrated resist/optics physics or physical wafer fidelity.",
+          "physical_evidence_assessment": "Author-reported simulated print fidelity/runtime and geometry compliance (V2); publisher-indexed excerpts available, full experiment tables/supplement not retrieved, and no independent simulator, wafer measurement, uncertainty or holdout audit performed.",
+          "manufacturing_assessment": "Semiconductor mask optimization and design-rule/manufacturability-oriented geometry (M1). No observed production line, metrology-linked lot, yield/defect KPI, external tool/site transfer, or operational qualification identified in this bounded audit."
+        },
+        "node_sha256": "5ba2b41187ce5aaf9e725a50e674c80b2b97574e2d6aa82f08a9d381d9bae52d"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C2",
+          "C3",
+          "C5"
+        ],
+        "physical_evidence_codes": [
+          "V2"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "claims": [
+        {
+          "claim_id": "TM01",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "location": "Coupling decomposition",
+          "paraphrase": "Manhattan axis/offset parameterization, differentiable lithography training loss and optional ILT post-correction occupy C2/C3/C5. They do not by themselves establish calibrated wafer physics.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM02",
+          "pdf_pages_1_based": [
+            5,
+            6
+          ],
+          "location": "Discrete/continuous and objective questions",
+          "paraphrase": "Point topology is structured, but offsets are real scalars. Quantization, polygon validity, exact DFM thresholds, clean-delta construction and denoising/MSE objective combination require release-level mapping. Gaussian diffusion is not automatically optical corruption.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM03",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9
+          ],
+          "location": "Metric and cost identity",
+          "paraphrase": "Mean contour-distance EPE differs from violation count. Shot count is a mask-writing proxy; TAT includes inference/refinement but excludes I/O, and training cost is outside this TAT. Training uses a32H20 platform, about80GB at batch40, testing oneA100.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TM04",
+          "pdf_pages_1_based": [
+            7,
+            9,
+            21
+          ],
+          "location": "Numerical claims",
+          "paraphrase": "Table1 EPE2.70 to2.16 is20% using rounded values; Table2 exact displayed averages differ slightly. TokMan L TAT1.57 exceeds Multi-ILT1.33, contradicting a universal all-metrics superiority reading of AppendixA. Baseline-specific shot ratios must be named.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM05",
+          "pdf_pages_1_based": [
+            9,
+            10,
+            14,
+            15,
+            16,
+            19,
+            20,
+            21
+          ],
+          "location": "Qualification and asset state",
+          "paraphrase": "Full-chip, SRAF flexibility and real industrial production data remain untested. Checklist open-code Yes defers release and new-assets says none released. This dated PDF statement does not prove current global absence; DiT terminology is not evidence of an LLM.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM06",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9,
+            21,
+            22,
+            23
+          ],
+          "location": "Sample and validation scope",
+          "paraphrase": "89,697 rearranged upstream layouts require grouping by original cell/design. All20 test cases in AppendixA are benchmark simulations, and selected mask/resist images do not demonstrate fabricated wafer or writing-tool acceptance.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "Frozen unseen layout to new vector mask, raster mask and simulated print, before/after fixed100step refinement.",
+        "validators": [
+          "orthogonality, polygon closure/intersection, quantization and minimum feature checks",
+          "mean contour EPE and violation count separately",
+          "writing-shot algorithm/device assumptions",
+          "independent resist/optical model or measured wafer"
+        ],
+        "release_gaps": [
+          "complete method code/model/weights not verified by this PDF",
+          "delta supervision/objective and DFM thresholds",
+          "refinement/sampling settings and exact test membership"
+        ],
+        "industry": "Require named process window, full-chip boundary healing, writing-tool and fabricated-wafer evidence; geometry alone cannot pass."
+      },
+      "pdf_pages": 26,
+      "review_path": "runs/wp1/boundary_main_pdf_review_20261011/W_neurips_2025_e242169abd7d050b_review.json",
+      "review_sha256": "6f79442a38f58c13ad8758bf2425bcd95b8b771daadb40966971bc38c72d0e08",
+      "graph_work_ids": [
+        "work:D36",
+        "work:PT15"
+      ],
+      "public_review_path": "boundary_readings.html",
+      "historical_codes_unchanged": true,
+      "independent_review": false,
+      "new_execution": false,
+      "independent_physical_validation": false,
+      "industrial_pass": false,
+      "systematic_inclusion_counted": false,
+      "external_supplements_complete": false,
+      "full_code_tree_acquired": false,
+      "release_observations": [],
+      "release_pins": []
+    }
+  ],
+  "publication_scope": "Paraphrased evidence and hashes only; primary PDFs/text/renders/weights and raw repository snapshots are not redistributed.",
+  "paired_user_study_performed": false
+}

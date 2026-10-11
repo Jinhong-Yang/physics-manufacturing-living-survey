@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "run_id": "catalog_2026_partial_20261010T145518Z",
+  "classification": "2026 partial-year official catalog retrieval; never mixed into complete 2020-2025 trend denominators",
+  "cutoff_date": "2026-10-10",
+  "catalogs": [
+    {
+      "source_id": "cvpr_2026",
+      "venue": "CVPR",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "http_status": 200,
+      "record_count": 4042,
+      "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792",
+      "raw_response_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/index.html",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/records.json",
+      "error": null
+    },
+    {
+      "source_id": "iclr_2026",
+      "venue": "ICLR",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026",
+      "http_status": 200,
+      "record_count": 5351,
+      "sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5",
+      "raw_response_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/index.html",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/records.json",
+      "error": null
+    },
+    {
+      "source_id": "icml_2026",
+      "venue": "ICML",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "url": "https://proceedings.mlr.press/v306/",
+      "http_status": 200,
+      "record_count": 6552,
+      "sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e",
+      "raw_response_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/index.html",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/records.json",
+      "error": null
+    },
+    {
+      "source_id": "ijcai_2026",
+      "venue": "IJCAI",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "url": "https://www.ijcai.org/proceedings/2026/",
+      "http_status": 200,
+      "record_count": 972,
+      "sha256": "7ef48df4f1a7b5bdd18f4272ad2c1311f055dec575657eee891546c2f73344c1",
+      "raw_response_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/index.html",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/records.json",
+      "error": null
+    }
+  ],
+  "venue_availability": [
+    {
+      "venue": "AAAI",
+      "status": "retrieved",
+      "records_path": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json"
+    },
+    {
+      "venue": "CVPR",
+      "status": "index_fetched_and_parsed"
+    },
+    {
+      "venue": "ICLR",
+      "status": "index_fetched_and_parsed"
+    },
+    {
+      "venue": "ICML",
+      "status": "index_fetched_and_parsed"
+    },
+    {
+      "venue": "IJCAI",
+      "status": "index_fetched_and_parsed"
+    },
+    {
+      "venue": "NeurIPS",
+      "status": "official_proceedings_endpoint_not_yet_published_as_of_2026-10-10"
+    },
+    {
+      "venue": "ECCV",
+      "status": "2026_issue_not_listed_in_official_ECVA_archive_as_of_2026-10-10"
+    },
+    {
+      "venue": "ICCV",
+      "status": "biennial_off_year"
+    }
+  ],
+  "limitations": [
+    "Availability is censored by proceedings publication date.",
+    "The 2026 records are a partial-cycle sensitivity set and must be reported separately.",
+    "Title/abstract screening and deduplication remain pending."
+  ]
+}

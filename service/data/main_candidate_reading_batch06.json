@@ -1,0 +1,656 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "schema_version": "1.0",
+    "cohort_freeze_sha256": "d83677aeaf3c17af2fd35747674db2e241aff8ca2c918ae869fdde9fc6aca79d",
+    "batch06_freeze_sha256": "68d2fb98a976300e33f7fb7832f3fdcf0de23cbcc1954e3b78efaca7779b14de",
+    "fixed_cohort_works": 14,
+    "fixed_cohort_main_pdf_pages": 229,
+    "coverage_scope": "All acquired PDF pages, including embedded appendices; external supplements separate.",
+    "this_batch_same_ai_reviews_complete": 2,
+    "this_batch_pages_read_and_visually_reviewed": 44,
+    "cumulative_same_ai_main_pdf_reviews_complete": 14,
+    "cumulative_same_ai_main_pdf_pages_read_and_visually_reviewed": 229,
+    "remaining_same_ai_main_pdf_reviews": 0,
+    "remaining_same_ai_main_pdf_pages": 0,
+    "independent_reviews_complete": 0,
+    "adjudicated_inclusions": 0,
+    "systematic_review_complete": false,
+    "new_executions": 0,
+    "new_scientific_passes": 0,
+    "new_industrial_qualification_passes": 0,
+    "historical_sources_and_human_packets_unchanged": true,
+    "previous_twelve_reviews_and_batch05_validation_unchanged": true,
+    "raw_pdfs_or_renders_publicly_redistributed": false,
+    "validation_scope": "Local source/record integrity and stated fixed-cohort acquired-PDF coverage; not independent reading, whole-corpus coverage, physical validation or industrial qualification.",
+    "prior_reviews": [
+      {
+        "work_id": "W_aaai_2023_3e92365c6a31ea37",
+        "method": "DFMGAN",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_aaai_2023_3e92365c6a31ea37_review.json",
+        "sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae"
+      },
+      {
+        "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+        "method": "TGI-AD",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2024_4bca28b6f05c412d_review.json",
+        "sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a"
+      },
+      {
+        "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+        "method": "DefectFill",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2025_e6d8cf140103e9bb_review.json",
+        "sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51"
+      },
+      {
+        "work_id": "W_eccv_2024_72b004555e605ea7",
+        "method": "GLASS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_72b004555e605ea7_review.json",
+        "sha256": "76fc6184f2dc02de24f6c73f1388b8165005cc1c576492259c0c265d85b9e06e"
+      },
+      {
+        "work_id": "W_eccv_2024_6821303e219e9206",
+        "method": "DefectDiffu",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_6821303e219e9206_review.json",
+        "sha256": "6ef150302a9ae4fcd8f3010df2c29ef78d00e61069ae8c6e73a70857dd17c45b"
+      },
+      {
+        "work_id": "W_iccv_2025_e01efad5210c86d2",
+        "method": "IKDDiT",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_e01efad5210c86d2_review.json",
+        "sha256": "3a9920930959cc26e9611f2d933525656be565bc46bb11511dfdde5acce3eb68"
+      },
+      {
+        "work_id": "W_iccv_2025_715dd4512a3586b9",
+        "method": "SeaS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_715dd4512a3586b9_review.json",
+        "sha256": "8ca05c3f0118f5624f04ab6cca98fd95d1c28a25ffe576eb47bd634673fd0db9"
+      },
+      {
+        "work_id": "W_iccv_2025_204365ef82780322",
+        "method": "TF-IDG",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_204365ef82780322_review.json",
+        "sha256": "6dc1f50f994937bd4b4a326d82f4a327ebfa21371f679ec82532ff019740ebe3"
+      },
+      {
+        "work_id": "W_icml_2025_b84206981cf14d22",
+        "method": "LineFlow",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch04/W_icml_2025_b84206981cf14d22_review.json",
+        "sha256": "d473bd4874789d3babc13ebf7dbeaf2befc5ea0dfac1682b81258b6bd7c03e37"
+      },
+      {
+        "work_id": "W_neurips_2022_f8d33af9719ba938",
+        "method": "SMPL",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch04/W_neurips_2022_f8d33af9719ba938_review.json",
+        "sha256": "326886123ae33782bf5f7f84d704e228e6062948363d5300ae0263e548268250"
+      },
+      {
+        "work_id": "W_neurips_2023_6e31d25a4d3bd304",
+        "method": "SAMD23",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch05/W_neurips_2023_6e31d25a4d3bd304_review.json",
+        "sha256": "cecc32d0fbe4f37f64aa15e1adf8cd13340d95ac5afdef9729a190b36f51b81a"
+      },
+      {
+        "work_id": "W_neurips_2023_499969137de65d0b",
+        "method": "LithoBench",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch05/W_neurips_2023_499969137de65d0b_review.json",
+        "sha256": "417c44039523cabedfa4698d0fae6bef9e5a76cce82dbcede9ff2d035beff105"
+      }
+    ],
+    "reviews": [
+      {
+        "work_id": "W_neurips_2025_0a00b52c83c220fa",
+        "method": "DrivAerStar",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch06/W_neurips_2025_0a00b52c83c220fa_review.json",
+        "sha256": "764fd1b214f55ff3092f09879a5373968884f68b060f714b38c2b9024942543f"
+      },
+      {
+        "work_id": "W_neurips_2025_4b3ae9c13c106648",
+        "method": "LithoSim",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch06/W_neurips_2025_4b3ae9c13c106648_review.json",
+        "sha256": "aa80ec6d0ea700ee88c310ea2690e3ea4f82e6d5e0efaa0fc2ed24a6fbca2208"
+      }
+    ],
+    "pending_work_ids": [],
+    "remaining_external_supplements_and_independent_review": true
+  },
+  "relation_to_existing_graph": "Additive same-AI provisional metadata; not integrated into graph0.9.32. Author wind-tunnel engineering evidence and simulation proxy evidence remain distinct. No qualification counts change.",
+  "records": [
+    {
+      "work_id": "W_neurips_2025_0a00b52c83c220fa",
+      "method": "DrivAerStar",
+      "title": "DrivAerStar: An Industrial-Grade CFD Dataset for Vehicle Aerodynamic Optimization",
+      "official_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8dcedad1f5635033b4170a1ce40f05d4-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "dc8552ef4a8840727457c8cfa5fecbbb0bea8422e0b42b56c45fb6c1eb7b4f6c",
+      "provisional_topic_decision": "supporting_engineering_physical_field_generation_benchmark_I3_pending_core_boundary_and_independent_adjudication",
+      "queue_decision_unchanged": "I3 in frozen original queue; no final systematic inclusion",
+      "provisional_codes": {
+        "C": [
+          "C1"
+        ],
+        "physical_verification": [
+          "V3"
+        ],
+        "manufacturing": [
+          "M3"
+        ]
+      },
+      "code_evidence_basis": {
+        "C1": "Author CAD/CFD field-generation pipeline pp4-7, separate from surrogate prediction.",
+        "V3": "Author comparisons with external wind-tunnel drag/pressure/wake measurements pp7-8; not local independent physical validation.",
+        "M3": "External automotive engineering experiment at scaled wind-tunnel baselines; tag must disclose engineering rather than manufacturing-process/site acceptance. Core manufacturing-topic membership is pending."
+      },
+      "generation": {
+        "reference_data": "20parameter vehicle-geometry perturbations across Fastback/Notchback/Estateback followed by proprietary CFD; fields, surface quantities and force coefficients.",
+        "forward_surrogate": "Vehicle geometry/point-cloud inputs to surface pressure and wall shear, then drag integration; ML test reference is CFD.",
+        "physical_measurement_scope": "Author wind-tunnel comparisons for three scaled baseline configurations and measured pressure/wake context; not12000individually measured geometries.",
+        "not_demonstrated": "Manufacturing process observations, a fully acquired open solver reproduction, independent local wind-tunnel validation or commercial full-stack clearance."
+      },
+      "claims": [
+        {
+          "claim_id": "DR01",
+          "pdf_pages_1_based": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "location": "Generation chain",
+          "paraphrase": "Geometry perturbation and steady RANS CFD produce engineering-field data. The learned surface-field benchmark is a separate surrogate task, not a learned physical data generator.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DR02",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Boundary conditions",
+          "paraphrase": "The author pipeline uses approximately12million cells, SST k-omega, moving ground, rotating wheels, porous engine,40m/s inlet and prescribed turbulence/residual conditions. Supplementary equations, parameter tables and mesh convergence sections are referenced but not embedded.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DR03",
+          "pdf_pages_1_based": [
+            7,
+            8
+          ],
+          "location": "External measurement",
+          "paraphrase": "Three25percent-scale rear-configuration baselines are compared to wind-tunnel data. Table2 drag deviations are1.12,0.82,1.17percent;1.04percent is reported as their average. Sixty pressure taps and PIV/wake comparisons have a different measurement scope.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DR04",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            7,
+            9
+          ],
+          "location": "Accuracy denominators",
+          "paraphrase": "Abstract below1.04percent phrasing must not become a maximum error over12000cases. Learned-vs-CFD drag errors2.99/2.78percent at400/1200examples differ from wind-tunnel agreement. Section2 pressure wording and Table1 precision need distinct evidence records.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DR05",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            10
+          ],
+          "location": "Split and normalization questions",
+          "paraphrase": "150cases/config wording,80/20 train/test wording and a12000training-size row require exact membership reconciliation. Mean/std over dataset samples need a train-only-fit audit before independent-generalization inference; realized leakage is not established.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DR06",
+          "pdf_pages_1_based": [
+            5,
+            10,
+            11
+          ],
+          "location": "Release and resources",
+          "paraphrase": "The dataset declares CC BY-NC-SA4.0 while conclusions use permissive wording. STAR-CCM+ and the educational-license acknowledgment establish a proprietary solver dependency. Large CPU/mesh/storage costs do not establish minimal pretrained inference cost.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DR07",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Printed Table2 caption",
+          "paraphrase": "The caption describes scaling/improvement whereas the table body contains wind-tunnel drag and simulation deviations. Preserve this source inconsistency as a provenance question; do not reinterpret the numbers as training scaling.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DR08",
+          "pdf_pages_1_based": [
+            10,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "location": "Evidence boundary",
+          "paraphrase": "Author checklist answers and industrial-grade claims do not establish a clean-start run, verified asset licenses or manufacturing-site qualification. Referenced external appendices remain separate unread documents.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "generated_vehicle_cases": 12000,
+        "dataset_size_TB_claim": 20,
+        "CFD_CPU_core_hours_claim": 1080000,
+        "nodes_claim": 100,
+        "geometry_parameters": 20,
+        "rear_configurations": 3,
+        "reference_cells_per_case_approx": 12000000,
+        "inlet_m_per_s": 40,
+        "wind_tunnel_scale": 0.25,
+        "wind_tunnel_baseline_configurations": 3,
+        "wind_tunnel_Cd": [
+          0.278,
+          0.279,
+          0.299
+        ],
+        "simulation_Cd": [
+          0.2749,
+          0.2767,
+          0.2955
+        ],
+        "Table2_relative_deviation_percent": [
+          1.12,
+          0.82,
+          1.17
+        ],
+        "reported_mean_wind_deviation_percent": 1.04,
+        "all_generated_cases_individually_measured": false,
+        "surrogate_CFD_mean_Cd_error_percent_at400": 2.99,
+        "surrogate_CFD_mean_Cd_error_percent_at1200": 2.78,
+        "Table3_validation_loss": [
+          0.0375,
+          0.0335,
+          0.0286,
+          0.0266
+        ],
+        "Table3_training_sizes": [
+          400,
+          800,
+          1200,
+          12000
+        ],
+        "pressure_taps": 60,
+        "supplementary_sections_A_to_G_embedded": false,
+        "manufacturing_process_measurements_observed": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            7,
+            8,
+            9
+          ],
+          "issue": "Wind-tunnel baselines, generatedCFD corpus and surrogate errors use different references and denominators; no12000case measured validation."
+        },
+        {
+          "pages": [
+            8,
+            9,
+            10
+          ],
+          "issue": "Split-size and normalization scope require pinned code/data membership audit; exact out-of-design independence not established."
+        },
+        {
+          "pages": [
+            6,
+            7,
+            10,
+            14,
+            15,
+            17
+          ],
+          "issue": "Detailed equations, mesh convergence, wake/pressure validation, hyperparameters and limitations are in externalSectionsA-G, not this20pagePDF."
+        },
+        {
+          "pages": [
+            4,
+            5,
+            6,
+            11
+          ],
+          "issue": "Geometry/CFD generation needs proprietary solver and substantial compute; pretrained-surrogate inference is a separate resource task."
+        },
+        {
+          "pages": [
+            1,
+            5,
+            7,
+            10
+          ],
+          "issue": "Industrial-grade wording and engineering wind-tunnel evidence do not establish manufacturing-process deployment or unrestricted commercial rights."
+        }
+      ],
+      "open_questions": [
+        "Read/hash actual externalSectionsA-G before claiming full supplementary equations, convergence or validation protocol coverage.",
+        "Pin maker and benchmark commits, geometry/data/checkpoint revisions and measured-reference provenance independently.",
+        "Reconcile pressure-versus-drag1.04percent statements, split memberships and train-only normalization; retain maximum/per-case errors.",
+        "Define separate bounded surrogate-inference and complete geometry/CFD-generation recipes with minimal assets, solver versions and resources.",
+        "Keep external-engineering wind-tunnel evidence distinct from manufacturing sensor/process transfer and industrial qualification.",
+        "Resolve code/data/model/solver/output rights per asset before commercial adoption."
+      ],
+      "accepted_version_observation": "Official NeurIPS2025 Datasets and Benchmarks PDF; title/authors/notice and printed pages1-20 inspected. Pages14-20 contain the author checklist. Referenced supplementary Sections A-G are absent from this acquired PDF. Independent version adjudication remains pending.",
+      "embedded_appendices_read_this_batch": false,
+      "review_sha256": "764fd1b214f55ff3092f09879a5373968884f68b060f714b38c2b9024942543f",
+      "acquired_pdf_pages_read": 20,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false,
+      "carried_forward_local_execution": {
+        "new_execution_this_batch": false,
+        "generator_execution_observed": false,
+        "scientific_pass": false,
+        "industrial_qualification": false
+      }
+    },
+    {
+      "work_id": "W_neurips_2025_4b3ae9c13c106648",
+      "method": "LithoSim",
+      "title": "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driven Semiconductor Manufacturing",
+      "official_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/e6f1c64aa72e867b6dc54e87d1d196c8-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "7d24e487ab84868e129c64d5bf1c0a56152af99855aa524da7aedd1be6a34bde",
+      "provisional_topic_decision": "include_lithography_synthetic_physical_observation_benchmark_I3_pending_independent_adjudication",
+      "queue_decision_unchanged": "I3 in frozen original queue; no final systematic inclusion",
+      "provisional_codes": {
+        "C": [
+          "C1"
+        ],
+        "physical_verification": [
+          "V2"
+        ],
+        "manufacturing": [
+          "M1"
+        ]
+      },
+      "code_evidence_basis": {
+        "C1": "Reference source/mask/optical/resist simulation pp4-5,21. Route-specific learned architecture evidence is separate.",
+        "V2": "Author quantified simulation-reference contour/parameter/OODmetrics pp7-10,24; not independent or measured-wafer validation.",
+        "M1": "Manufacturing-specific design/process simulation proxy; p10 explicitly describes productionlinedata verification and toolchain integration as future work."
+      },
+      "generation": {
+        "reference_data": "Optical source/defocus models plus original/OPC metal and via masks with dose-dependent simulated resist outputs;4million-plus conditional examples.",
+        "forward_surrogate": "Mask,source,dose,defocus to simulated resist; six trained baseline routes, not all explicitly constrained by physical equations.",
+        "inverse_generation": "OPC/SMO optimization equations are described, but Section5 reports downstream toolchain integration as future work.",
+        "not_demonstrated": "Measured-wafer calibration, completed production-line qualification, independent local inference or integrated closed-loop RET deployment."
+      },
+      "claims": [
+        {
+          "claim_id": "LS01",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            4,
+            5,
+            21,
+            24
+          ],
+          "location": "Physical provenance",
+          "paraphrase": "Reference optical generation supports source-data C1; learnedFNO/SOCS route-specific architectural inspiration must be coded separately. Conditional attention, Fourier representations and benchmark accuracy do not imply exact governing-equation satisfaction.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS02",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "location": "Parameters and cohorts",
+          "paraphrase": "Headline620sources/13dose/5defocus and1210masks/category differ in scope from ID construction600+annular/three defocus/1200layouts/±10percentdose. OOD uses20dipole/quasar sources,20new CPUlayout clips and±80nm/±12percent. These descriptions require row-level asset reconciliation.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS03",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            9
+          ],
+          "location": "Splits",
+          "paraphrase": "Four mask-category splits are approximately70/10/20;1580OODexamples are reserved for test. Per-category splitting alone does not establish that repeated base masks/source combinations or correspondingOPCpairs are absent across splits. Exact base-design/physical-condition group memberships need audit.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS04",
+          "pdf_pages_1_based": [
+            6,
+            8,
+            9,
+            10,
+            24
+          ],
+          "location": "Metrics and thresholds",
+          "paraphrase": "Author asserts under1nmEPE as a small-scale industrial-testing criterion. Table4SOCSseparateOOD reports0.91nmmaximum and0.60nmaverage, whereasOPC-Metal-to-Metal reports2.82/2.22nm. No aggregateODresult supplies an all-process or measured-wafer industrial pass.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS05",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            17,
+            24
+          ],
+          "location": "Definitions",
+          "paraphrase": "PA Eq20 uses foreground intersection divided by target foreground, not allpixelaccuracy. EPE samples normally20nmspaced target-contour normal lines; failure/missing intersections and geometric-unit conversion require code audit. Table3±values are datasetSD,not repeat-runCI.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS06",
+          "pdf_pages_1_based": [
+            10,
+            14
+          ],
+          "location": "Industrial evidence",
+          "paraphrase": "Section5 states fixedchemicalkinetics and homogeneous resist/substrate optical constants, collaboration toward productionlinedata verification, and incompleteOPC/SMO/SRAFsystems integration. Future work does not qualify actualfab transfer.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LS07",
+          "pdf_pages_1_based": [
+            3,
+            21,
+            22
+          ],
+          "location": "RET equations",
+          "paraphrase": "NominalL2andtwo-cornerPVBform a weighted objective, withOPCmask-only andSMOsource/maskargmins. Eq6 assignsRmax tonegative-dose/negative-focus andRmin topositive-dose/positive-focus; verify labels and actual corner extrema before importing a physical gate.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS08",
+          "pdf_pages_1_based": [
+            4,
+            5,
+            8,
+            9,
+            22,
+            24
+          ],
+          "location": "Source consistency",
+          "paraphrase": "4096square at1nm/pixel implies16.777216micrometer-square, different from16micrometer-square headline; p5prints16nm-square. NarrativeMFNO0.69nm differs fromTable3andTable4delta cells have inconsistencies. Eq11duplicatescosine for both ychannels. Preserve questions rather than silently changing numbers or declaring codebugs.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LS09",
+          "pdf_pages_1_based": [
+            1,
+            16,
+            19
+          ],
+          "location": "Release boundary",
+          "paraphrase": "Authorlinks todata/code/models are inspectable release claims; checklistLightningApache2.0 describes an upstream framework, not automatically all weights/datasets. Historical license conflict/resource/archival snapshots remain dated and not fresh checks.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "Table2_counts": {
+          "OPC-Metal": [
+            693330,
+            99000,
+            198000,
+            990330
+          ],
+          "Metal": [
+            903672,
+            129096,
+            258423,
+            1291191
+          ],
+          "OPC-Via": [
+            655842,
+            93654,
+            187341,
+            936837
+          ],
+          "Via": [
+            607365,
+            86757,
+            173514,
+            867636
+          ]
+        },
+        "ID_total_from_Table2": 4085994,
+        "OOD_test_examples": 1580,
+        "all_total_from_Table2": 4087574,
+        "Table1_sources": 620,
+        "Table1_dose_levels": 13,
+        "Table1_defocus_levels": 5,
+        "Table1_masks_per_type": 1210,
+        "ID_defocus_nm": [
+          -40,
+          0,
+          40
+        ],
+        "ID_dose_variation_percent": [
+          -10,
+          10
+        ],
+        "OOD_defocus_extent_nm": 80,
+        "OOD_dose_extent_percent": 12,
+        "OOD_sources": 20,
+        "OOD_new_layout_clips": 20,
+        "NA": 1.35,
+        "wavelength_nm": 193,
+        "Zernike_terms": 37,
+        "image_pixels": [
+          4096,
+          4096
+        ],
+        "stated_nm_per_pixel": 1,
+        "headline_area_um2": 16,
+        "area_from_raster_um2": 16.777216,
+        "author_parallel_CPUs": 100,
+        "author_training_GPUs": "4H100",
+        "author_optical_model_build_minutes": 40,
+        "author_resist_seconds_per_pattern": 15,
+        "Table4_SOCS_OOD": {
+          "MSE": 0.00413,
+          "PA_percent": 99.79,
+          "IOU_percent": 80.24,
+          "EPE_max_nm": 0.91,
+          "EPE_avg_nm": 0.6
+        },
+        "Table4_SOCS_OPCMetal_to_Metal": {
+          "EPE_max_nm": 2.82,
+          "EPE_avg_nm": 2.22
+        },
+        "Table3_SOCS_Via_TAT_ms": 7.82,
+        "Table3_SD_is_run_seed_CI": false,
+        "PA_definition_includes_true_negatives": false,
+        "typical_EPE_probe_spacing_nm": 20,
+        "measured_wafer_validation_completed": false,
+        "downstream_RET_toolchain_completed": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            4,
+            5,
+            21
+          ],
+          "issue": "Simulation-derived reference and fixedchemistry are distinct from calibrated wafermetrology; parameter/grid/unit provenance needs reconciliation."
+        },
+        {
+          "pages": [
+            5,
+            6,
+            9
+          ],
+          "issue": "IDpercategory split is not proven base-design/source-condition independence; different cross-OPCandOODtasks need separate denominators."
+        },
+        {
+          "pages": [
+            6,
+            8,
+            9,
+            10,
+            24
+          ],
+          "issue": "Below1nmcriterion is an author statement; max/average/percase failures, metrics and hardware conditions need predefined process-specific acceptance."
+        },
+        {
+          "pages": [
+            3,
+            10,
+            21,
+            22
+          ],
+          "issue": "RETloss capability/argminequations do not establish completedOPC/SMOtoolchain integration or downstream manufacturability."
+        },
+        {
+          "pages": [
+            1,
+            16,
+            19
+          ],
+          "issue": "Public code/data/model links and upstream Apache2.0credit do not resolve perasset commercial terms, maintenance or runnable checkpoint compatibility."
+        }
+      ],
+      "open_questions": [
+        "Pin compatiblecode/model/data/configversions and reconcile620/600+,1210/1200 anddose/defocuscoverage at row level.",
+        "Validate rasterunits,foregroundPA,EPEintersectionfailures,max-versus-averagetolerances andTable4delta inconsistencies with pinned implementation.",
+        "Audit base-layout/correspondingOPCpair/source groups acrosssplit before design/processOODclaims; keep1580OODtest separate.",
+        "Separate datasetcreation/pretrainingcost from bounded checkpointinference; verify minimaldata bundle,newresistoutput,time/memory and taskvalidator.",
+        "Resolve commercialperasset licenseconflict and archival/maintenance state before industrialpackaging.",
+        "Test independent calibratedsimulation or wafermetrology plus actualRETloop/workflowintegration before scientific/industrial qualification."
+      ],
+      "accepted_version_observation": "Official NeurIPS2025 Datasets and Benchmarks PDF title/authors/notice and printed pages1-24 inspected. Checklist14-20 is author self-report; embedded AppendixA.1-A.6 on21-24 read. Independent version adjudication pending.",
+      "embedded_appendices_read_this_batch": true,
+      "review_sha256": "aa80ec6d0ea700ee88c310ea2690e3ea4f82e6d5e0efaa0fc2ed24a6fbca2208",
+      "acquired_pdf_pages_read": 24,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false,
+      "carried_forward_local_execution": {
+        "new_execution_this_batch": false,
+        "generator_execution_observed": false,
+        "scientific_pass": false,
+        "industrial_qualification": false
+      }
+    }
+  ]
+}

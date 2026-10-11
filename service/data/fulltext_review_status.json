@@ -1,0 +1,1367 @@
+{
+  "purpose": "Acquisition metadata layer, not graph inclusion or completed review",
+  "as_of": "2026-10-11",
+  "independent_human_reviews_complete": 0,
+  "records": [
+    {
+      "work_id": "W_aaai_2023_3e92365c6a31ea37",
+      "title": "Few-Shot Defect Image Generation via Defect-Aware Feature Manipulation",
+      "venue": "AAAI",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25132/24904",
+      "pdf_sha256": "392c918e8c501e0f0ff460f0a6cc0bb8174a6df100257d2a55df60067a969c22",
+      "pages": 8
+    },
+    {
+      "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+      "title": "Text-Guided Variational Image Generation for Industrial Anomaly Detection and Segmentation",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Text-Guided_Variational_Image_Generation_for_Industrial_Anomaly_Detection_and_Segmentation_CVPR_2024_paper.pdf",
+      "pdf_sha256": "3464c3713af32ffc5e04881cc1b6f90286b3f61e2ed363243bdec7a2a2037ea5",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+      "title": "DefectFill: Realistic Defect Generation with Inpainting Diffusion Model for Visual Inspection",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Song_DefectFill_Realistic_Defect_Generation_with_Inpainting_Diffusion_Model_for_Visual_CVPR_2025_paper.pdf",
+      "pdf_sha256": "9cef7436b5034c4100d12d15e2ac2d4f3e5f7966394862e3a9e9de206a8cc2c9",
+      "pages": 10
+    },
+    {
+      "work_id": "W_eccv_2024_72b004555e605ea7",
+      "title": "A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08382.pdf",
+      "pdf_sha256": "e4915ef8f03a9488cc17100e33d71ca792d0e7f07e9df53b6d466507bbf51d01",
+      "pages": 17
+    },
+    {
+      "work_id": "W_eccv_2024_6821303e219e9206",
+      "title": "Few-shot Defect Image Generation based on Consistency Modeling",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09803.pdf",
+      "pdf_sha256": "b6208c6357877f0f47d4f596022e991d1657a729fe55192952389a781e5eba82",
+      "pages": 17
+    },
+    {
+      "work_id": "W_iccv_2025_e01efad5210c86d2",
+      "title": "Photolithography Overlay Map Generation with Implicit Knowledge Distillation Diffusion Transformer",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_Photolithography_Overlay_Map_Generation_with_Implicit_Knowledge_Distillation_Diffusion_Transformer_ICCV_2025_paper.pdf",
+      "pdf_sha256": "1b0f8e1371d8b8535d6a2f7a84af89bc34e98acc46e04d695dd1d2838e6cabe9",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2025_715dd4512a3586b9",
+      "title": "SeaS: Few-shot Industrial Anomaly Image Generation with Separation and Sharing Fine-tuning",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Dai_SeaS_Few-shot_Industrial_Anomaly_Image_Generation_with_Separation_and_Sharing_ICCV_2025_paper.pdf",
+      "pdf_sha256": "bb23301598d2c920f41a2ba25e0fe45ca7aa8639a0ad0af396b0a2617f1e1317",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2025_204365ef82780322",
+      "title": "Training-Free Industrial Defect Generation with Diffusion Models",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Xu_Training-Free_Industrial_Defect_Generation_with_Diffusion_Models_ICCV_2025_paper.pdf",
+      "pdf_sha256": "7fc9d0945d942a70b499e982ed0548b205840c43282c50a2d6e8592d9b7c9355",
+      "pages": 10
+    },
+    {
+      "work_id": "W_icml_2025_b84206981cf14d22",
+      "title": "LineFlow: A Framework to Learn Active Control of Production Lines",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/muller25c/muller25c.pdf",
+      "pdf_sha256": "f73274c1c544aa3b5a269ba8e883a9359b8a50052a273bc1f7c46b1f284f6aa2",
+      "pages": 24
+    },
+    {
+      "work_id": "W_neurips_2022_f8d33af9719ba938",
+      "title": "SMPL: Simulated Industrial Manufacturing and Process Control Learning Environments",
+      "venue": "NeurIPS",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a9b3d7f65eebb083e5c7f8cf10e52528-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "b61b376faa27f710f85011b3f236e61572af8da3137f18c421abc07c71eaf8f6",
+      "pages": 14
+    },
+    {
+      "work_id": "W_neurips_2023_6e31d25a4d3bd304",
+      "title": "Benchmark of Machine Learning Force Fields for Semiconductor Simulations: Datasets, Metrics, and Comparative Analysis",
+      "venue": "NeurIPS",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/a1859debfb3b59d094f3504d5ebb6c25-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "6b9782022a80a783ddb304e1c5ebe9b153b916693dc2dd8d719fc478b7cd0f3d",
+      "pages": 43
+    },
+    {
+      "work_id": "W_neurips_2023_499969137de65d0b",
+      "title": "LithoBench: Benchmarking AI Computational Lithography for Semiconductor Manufacturing",
+      "venue": "NeurIPS",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/604b9fa9e1c16284e6517d923cf9ff20-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "bac5c4c528817c92082c484583ae3776226abf4394fcd02d2eac827d2a59471d",
+      "pages": 12
+    },
+    {
+      "work_id": "W_neurips_2025_0a00b52c83c220fa",
+      "title": "DrivAerStar: An Industrial-Grade CFD Dataset for Vehicle Aerodynamic Optimization",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8dcedad1f5635033b4170a1ce40f05d4-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "dc8552ef4a8840727457c8cfa5fecbbb0bea8422e0b42b56c45fb6c1eb7b4f6c",
+      "pages": 20
+    },
+    {
+      "work_id": "W_neurips_2025_4b3ae9c13c106648",
+      "title": "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driven Semiconductor Manufacturing",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/e6f1c64aa72e867b6dc54e87d1d196c8-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "7d24e487ab84868e129c64d5bf1c0a56152af99855aa524da7aedd1be6a34bde",
+      "pages": 24
+    },
+    {
+      "work_id": "W_aaai_2024_91c53b13bc8a8c86",
+      "title": "Unified Framework for Diffusion Generative Models in SO(3): Applications in Computer Vision and Astrophysics",
+      "venue": "AAAI",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29171/30215",
+      "pdf_sha256": "85cb0f67b21c59cfe793c8eb366857e8a858115ed5461a9cb2074a7e47a57624",
+      "pages": 9
+    },
+    {
+      "work_id": "W_aaai_2025_2ec5b4161143d12e",
+      "title": "Deep Generative Model for Mechanical System Configuration Design",
+      "venue": "AAAI",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+      "pdf_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+      "pages": 9
+    },
+    {
+      "work_id": "W_aaai_2025_7625ab2557a05227",
+      "title": "DreamPhysics: Learning Physics-Based 3D Dynamics with Video Diffusion Priors",
+      "venue": "AAAI",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32389/34544",
+      "pdf_sha256": "1fbeb52ac423cddb3385f7229e58ebccc8cdb9e9f675671db6c69b3929dc051d",
+      "pages": 9
+    },
+    {
+      "work_id": "W_aaai_2025_341a190a64e95536",
+      "title": "Mamba-CAD: State Space Model for 3D Computer-Aided Design Generative Modeling",
+      "venue": "AAAI",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32531/34686",
+      "pdf_sha256": "8d6a8a4e0ed0808cd1fb0bc4d8bd83595eba47d50553af7adcf87b449bdbead6",
+      "pages": 9
+    },
+    {
+      "work_id": "W_cvpr_2021_6c5f7b22f9b63231",
+      "title": "Physically-Aware Generative Network for 3D Shape Modeling",
+      "venue": "CVPR",
+      "year": 2021,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Mezghanni_Physically-Aware_Generative_Network_for_3D_Shape_Modeling_CVPR_2021_paper.pdf",
+      "pdf_sha256": "1e1cc99da724ff8a89737a8686de5eb5c14f9b21a63b0aaf02ac164269de7f2d",
+      "pages": 12
+    },
+    {
+      "work_id": "W_cvpr_2022_f88a3b36f30c6895",
+      "title": "CAPRI-Net: Learning Compact CAD Shapes With Adaptive Primitive Assembly",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Yu_CAPRI-Net_Learning_Compact_CAD_Shapes_With_Adaptive_Primitive_Assembly_CVPR_2022_paper.pdf",
+      "pdf_sha256": "2a1b1e4449e4c29ab34b09215d6a5eb872ec6a0a832fc9c006ab9b33ab2b7bde",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2022_6db9f97bea12e822",
+      "title": "D-Grasp: Physically Plausible Dynamic Grasp Synthesis for Hand-Object Interactions",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Christen_D-Grasp_Physically_Plausible_Dynamic_Grasp_Synthesis_for_Hand-Object_Interactions_CVPR_2022_paper.pdf",
+      "pdf_sha256": "88d088c533b91690354971b228479db5315deae6efdd1e4a40e10ef1d43f3a9b",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2022_8c550d6f1ab03661",
+      "title": "Fixing Malfunctional Objects With Learned Physical Simulation and Functional Prediction",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Hong_Fixing_Malfunctional_Objects_With_Learned_Physical_Simulation_and_Functional_Prediction_CVPR_2022_paper.pdf",
+      "pdf_sha256": "343bc936c90e4af1d0f31b80784381dd4ac7b366d025ed63caf03670397d2033",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2022_3fc184bcbbef3376",
+      "title": "Industrial Style Transfer With Large-Scale Geometric Warping and Content Preservation",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Yang_Industrial_Style_Transfer_With_Large-Scale_Geometric_Warping_and_Content_Preservation_CVPR_2022_paper.pdf",
+      "pdf_sha256": "d4cb5638608194bdb6cad39d8da61808863684653845f92461c00167608c14b1",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2022_33d8a8b9ff9e99db",
+      "title": "JoinABLe: Learning Bottom-Up Assembly of Parametric CAD Joints",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Willis_JoinABLe_Learning_Bottom-Up_Assembly_of_Parametric_CAD_Joints_CVPR_2022_paper.pdf",
+      "pdf_sha256": "4b79e5b8161224c8dad7187c43e385c7c65f74e9b0b86f247e518b26b62af9ed",
+      "pages": 12
+    },
+    {
+      "work_id": "W_cvpr_2022_9dd6903488bdfb05",
+      "title": "Neural Shape Mating: Self-Supervised Object Assembly With Adversarial Shape Priors",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_Neural_Shape_Mating_Self-Supervised_Object_Assembly_With_Adversarial_Shape_Priors_CVPR_2022_paper.pdf",
+      "pdf_sha256": "1951994c18b1792825aff2c6445e607d77acc1ae691d9ca2cdc8452d130db816",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2022_f9f10afe159c2fba",
+      "title": "Physical Simulation Layer for Accurate 3D Modeling",
+      "venue": "CVPR",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Mezghanni_Physical_Simulation_Layer_for_Accurate_3D_Modeling_CVPR_2022_paper.pdf",
+      "pdf_sha256": "48c137192d253ca0b7054d33613a6db796d26f9571acde61a55511585fa7de98",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2023_06e8e0b2511f3c43",
+      "title": "Physics-Driven Diffusion Models for Impact Sound Synthesis From Videos",
+      "venue": "CVPR",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Su_Physics-Driven_Diffusion_Models_for_Impact_Sound_Synthesis_From_Videos_CVPR_2023_paper.pdf",
+      "pdf_sha256": "1c9c893d3a490e9723287091f32e12d48da6d22df04ba5c7df65b3e647b85749",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+      "title": "CNC-Net: Self-Supervised Learning for CNC Machining Operations",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+      "pdf_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2024_0c31727fc57e3109",
+      "title": "Category-Level Multi-Part Multi-Joint 3D Shape Assembly",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Category-Level_Multi-Part_Multi-Joint_3D_Shape_Assembly_CVPR_2024_paper.pdf",
+      "pdf_sha256": "f4fd84df7c8458b39304445acc68b5161e71c40d5294369d84393f6b4efd795b",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2024_36f660f0bbc536ca",
+      "title": "Design2Cloth: 3D Cloth Generation from 2D Masks",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Zheng_Design2Cloth_3D_Cloth_Generation_from_2D_Masks_CVPR_2024_paper.pdf",
+      "pdf_sha256": "3ee3179b5a2c78419ca0f71e805d54b86aa0904912fe4eb7416f65192587851e",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2024_d7172e994d1ff361",
+      "title": "GPLD3D: Latent Diffusion of 3D Shape Generative Models by Enforcing Geometric and Physical Priors",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Dong_GPLD3D_Latent_Diffusion_of_3D_Shape_Generative_Models_by_Enforcing_CVPR_2024_paper.pdf",
+      "pdf_sha256": "3c0a4c53a922bfe8728cfd9db8ec65189f009a7f3ba76b6ce4e14d6171d00c1a",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2024_21d48b01978ff08f",
+      "title": "PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_PhyScene_Physically_Interactable_3D_Scene_Synthesis_for_Embodied_AI_CVPR_2024_paper.pdf",
+      "pdf_sha256": "ed1228eeb26684af843ca529068f44e470be3c71087280e97221b424d55b3f39",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2024_f4c55aa9bdb33527",
+      "title": "PhysGaussian: Physics-Integrated 3D Gaussians for Generative Dynamics",
+      "venue": "CVPR",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Xie_PhysGaussian_Physics-Integrated_3D_Gaussians_for_Generative_Dynamics_CVPR_2024_paper.pdf",
+      "pdf_sha256": "9e5c0907440707ada89ce7252819aa24aeaaa2aa2d2d6924cddf5a2769e5dddf",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_c9c011b31d643938",
+      "title": "CAD-Llama: Leveraging Large Language Models for Computer-Aided Design Parametric 3D Model Generation",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_CAD-Llama_Leveraging_Large_Language_Models_for_Computer-Aided_Design_Parametric_3D_CVPR_2025_paper.pdf",
+      "pdf_sha256": "0403384525a066d680fc75777312726ba84d1f3031f150d9a3cce3a39f7373c8",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2025_9431c411a2c69ee6",
+      "title": "CASAGPT: Cuboid Arrangement and Scene Assembly for Interior Design",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Feng_CASAGPT_Cuboid_Arrangement_and_Scene_Assembly_for_Interior_Design_CVPR_2025_paper.pdf",
+      "pdf_sha256": "735a2f996f2946fd382bf5f0caa283007d9fee9b6c9ac33fe2a62448906d6f77",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_0d87c51a12f0d4b7",
+      "title": "Hearing Hands: Generating Sounds from Physical Interactions in 3D Scenes",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Dou_Hearing_Hands_Generating_Sounds_from_Physical_Interactions_in_3D_Scenes_CVPR_2025_paper.pdf",
+      "pdf_sha256": "f4738ee7ffd9a09013d81bc1dd2fb94a458d996411efdb5c514cff0453686d20",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_5dbe9e6a027640ae",
+      "title": "POMP: Physics-consistent Motion Generative Model through Phase Manifolds",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Ji_POMP_Physics-consistent_Motion_Generative_Model_through_Phase_Manifolds_CVPR_2025_paper.pdf",
+      "pdf_sha256": "067eb88d177cf2dde5bc934d2518380fceab290e3b9ff6a97284c6c76592cc18",
+      "pages": 12
+    },
+    {
+      "work_id": "W_cvpr_2025_602e32d6d1873f20",
+      "title": "PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation_CVPR_2025_paper.pdf",
+      "pdf_sha256": "93aa65c43465a232db41852efc9c7c5393b2ec1e389f2be4d4a7f45e10dac678",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2025_64dc82977c2cfa96",
+      "title": "PhysAnimator: Physics-Guided Generative Cartoon Animation",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Xie_PhysAnimator_Physics-Guided_Generative_Cartoon_Animation_CVPR_2025_paper.pdf",
+      "pdf_sha256": "615e945bafa6a454376d4cb5b4c2b3ff6a2f7a46c386ad6a96cce5d4f66ee5fe",
+      "pages": 12
+    },
+    {
+      "work_id": "W_cvpr_2025_3b2acb3a1b04c547",
+      "title": "PhysicsGen: Can Generative Models Learn from Images to Predict Complex Physical Relations?",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Spitznagel_PhysicsGen_Can_Generative_Models_Learn_from_Images_to_Predict_Complex_CVPR_2025_paper.pdf",
+      "pdf_sha256": "696bb4ee0eb30d4690f075d05273d266d32a3100e1404427158f024295a1297d",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_09171f793630ed5b",
+      "title": "RainyGS: Efficient Rain Synthesis with Physically-Based Gaussian Splatting",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Dai_RainyGS_Efficient_Rain_Synthesis_with_Physically-Based_Gaussian_Splatting_CVPR_2025_paper.pdf",
+      "pdf_sha256": "64f919aef667794a27992a292e7d787e0af8b784a1645ad34f8bf2d82cbd84b0",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_9e0ae9c600b1130c",
+      "title": "SceneDiffuser++: City-Scale Traffic Simulation via a Generative World Model",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Tan_SceneDiffuser_City-Scale_Traffic_Simulation_via_a_Generative_World_Model_CVPR_2025_paper.pdf",
+      "pdf_sha256": "3476a0606509ae04158759bbabf6775cb82ec838324d1ec9418160ad268b1ddc",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2025_0928dbf5322e6554",
+      "title": "TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Pan_TokenHSI_Unified_Synthesis_of_Physical_Human-Scene_Interactions_through_Task_Tokenization_CVPR_2025_paper.pdf",
+      "pdf_sha256": "dbd13adf32adc030b989287d88efead03b72c064e473d7ce49d5d5e6f3128098",
+      "pages": 13
+    },
+    {
+      "work_id": "W_cvpr_2025_5c0acc81b1531249",
+      "title": "UniPhy: Learning a Unified Constitutive Model for Inverse Physics Simulation",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mittal_UniPhy_Learning_a_Unified_Constitutive_Model_for_Inverse_Physics_Simulation_CVPR_2025_paper.pdf",
+      "pdf_sha256": "208d0d0a1cbafc0afeccb04dc2bde76d778bcd9e429686d161c24a4458ad887f",
+      "pages": 11
+    },
+    {
+      "work_id": "W_cvpr_2025_7846026d3b64c8db",
+      "title": "Unleashing the Potential of Multi-modal Foundation Models and Video Diffusion for 4D Dynamic Physical Scene Simulation",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_Unleashing_the_Potential_of_Multi-modal_Foundation_Models_and_Video_Diffusion_CVPR_2025_paper.pdf",
+      "pdf_sha256": "767abf693edcc562a088bab111cc263e23dbb6ec3f6efc785397515598bbb273",
+      "pages": 10
+    },
+    {
+      "work_id": "W_cvpr_2025_9c6965bd8115003b",
+      "title": "Vid2Sim: Generalizable, Video-based Reconstruction of Appearance, Geometry and Physics for Mesh-free Simulation",
+      "venue": "CVPR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_Vid2Sim_Generalizable_Video-based_Reconstruction_of_Appearance_Geometry_and_Physics_for_CVPR_2025_paper.pdf",
+      "pdf_sha256": "17b4387ad16b0e0f10969760d150ec41d0b60c4614837911d0718365bfed40b5",
+      "pages": 11
+    },
+    {
+      "work_id": "W_eccv_2020_e6ba7a682b811d55",
+      "title": "Learning 3D Part Assembly from a Single Image",
+      "venue": "ECCV",
+      "year": 2020,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510664.pdf",
+      "pdf_sha256": "aa0dc312e0142a2d36b2e985400908fa358f1a4ca00189d0b8bb992f5f130838",
+      "pages": 19
+    },
+    {
+      "work_id": "W_eccv_2022_c1dcd7334912d38e",
+      "title": "PIP: Physical Interaction Prediction via Mental Simulation with Span Selection",
+      "venue": "ECCV",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136950401.pdf",
+      "pdf_sha256": "18d3b304fcbbc602e0497ff5fba20265300635f53bf98a3c8fd7f448c3851dab",
+      "pages": 18
+    },
+    {
+      "work_id": "W_eccv_2024_678018d90ebdeee9",
+      "title": "Generating Physically Realistic and Directable Human Motions from Multi-Modal Inputs",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07885.pdf",
+      "pdf_sha256": "1cb9f0c5907d64f22b90bfe8b72be247393ed6bab9d8ac288a4f17b5ab3ee2bc",
+      "pages": 17
+    },
+    {
+      "work_id": "W_eccv_2024_355b9ef02350479d",
+      "title": "Language-Driven Physics-Based Scene Synthesis and Editing via Feature Splatting",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05788.pdf",
+      "pdf_sha256": "0a2a53d9e8a1f3c324283c0ae8a89bf1998e17fe4bca88056065751571186190",
+      "pages": 16
+    },
+    {
+      "work_id": "W_eccv_2024_140083d62e64e270",
+      "title": "Modelling Competitive Behaviors in Autonomous Driving Under Generative World Model",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05085.pdf",
+      "pdf_sha256": "b86be1d63ba1e8b23f861c439357677cd508c63bc5fe91005dea7dba0957a3cf",
+      "pages": 18
+    },
+    {
+      "work_id": "W_eccv_2024_cd6575ada16c64e2",
+      "title": "Parameterized Quasi-Physical Simulators for Dexterous Manipulations Transfer",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10032.pdf",
+      "pdf_sha256": "8067dfeb6575921d88fe681d02b74aaefb9dacdc921a68cb329e68f7623d4e47",
+      "pages": 19
+    },
+    {
+      "work_id": "W_eccv_2024_e8f76969d57d4753",
+      "title": "PhysGen: Rigid-Body Physics-Grounded Image-to-Video Generation",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10827.pdf",
+      "pdf_sha256": "090968fd8175ebfc8de3e2a071cfd1c63fc83bc2517b1b90404c22b13604fa50",
+      "pages": 20
+    },
+    {
+      "work_id": "W_eccv_2024_d90a790a47d3efdc",
+      "title": "Physical-Based Event Camera Simulator",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06110.pdf",
+      "pdf_sha256": "169514c7bfbbd72ef4eedbc9732f9f4e79d70b683eb04f9633575d26b99b4b90",
+      "pages": 17
+    },
+    {
+      "work_id": "W_eccv_2024_6f7a1530c2504fe3",
+      "title": "Physics-Based Interaction with 3D Objects via Video Generation",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/00270.pdf",
+      "pdf_sha256": "db0200046bce4a0813fbb1c3c9e8adae35aed142271fafed989f20881e1eaf38",
+      "pages": 19
+    },
+    {
+      "work_id": "W_eccv_2024_1975aa1f6a2fdb6c",
+      "title": "PoseAugment: Generative Human Pose Data Augmentation with Physical Plausibility for IMU-based Motion Capture",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04630.pdf",
+      "pdf_sha256": "1942ad346b899c6bdc4dadc23a530cf8500c709c8a062d4505c68d97e6fe40c7",
+      "pages": 19
+    },
+    {
+      "work_id": "W_eccv_2024_1073172cbc18ca51",
+      "title": "Thermal3D-GS: Physics-induced 3D Gaussians for Thermal Infrared Novel-view Synthesis",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03916.pdf",
+      "pdf_sha256": "69ff41934ffe77d1f7a4ff8c02efec5a560dcb4a106ef6b67893b5f005c5464a",
+      "pages": 17
+    },
+    {
+      "work_id": "W_eccv_2024_18053cacc0ff78ac",
+      "title": "TreeSBA: Tree-Transformer for Self-Supervised Sequential Brick Assembly",
+      "venue": "ECCV",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11535.pdf",
+      "pdf_sha256": "e397565e3fd497bfa5f06c7d5d53023e45942e42a97973208f919d09a3f7a6aa",
+      "pages": 17
+    },
+    {
+      "work_id": "W_iccv_2021_3c3b44be8426b2e1",
+      "title": "Physics-Based Differentiable Depth Sensor Simulation",
+      "venue": "ICCV",
+      "year": 2021,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Planche_Physics-Based_Differentiable_Depth_Sensor_Simulation_ICCV_2021_paper.pdf",
+      "pdf_sha256": "1b2138d5371a6353342982199c481c45ed5b7bb19de43323750d9345654b2e7c",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2021_3590315e474b7f52",
+      "title": "Physics-Based Human Motion Estimation and Synthesis From Videos",
+      "venue": "ICCV",
+      "year": 2021,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Xie_Physics-Based_Human_Motion_Estimation_and_Synthesis_From_Videos_ICCV_2021_paper.pdf",
+      "pdf_sha256": "d031855f4a60880c546a79f3aee8ee51b1309a4796b3aa497e27bac959d6fa1f",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2023_1035b3635c08064e",
+      "title": "Both Diverse and Realism Matter: Physical Attribute and Style Alignment for Rainy Image Generation",
+      "venue": "ICCV",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Yu_Both_Diverse_and_Realism_Matter_Physical_Attribute_and_Style_Alignment_ICCV_2023_paper.pdf",
+      "pdf_sha256": "415995248f3cdf4964ae680af7e6cf5d718835b255222d549f2568eb6140f70c",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2023_5425625b2279e971",
+      "title": "Few-Shot Physically-Aware Articulated Mesh Generation via Hierarchical Deformation",
+      "venue": "ICCV",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Liu_Few-Shot_Physically-Aware_Articulated_Mesh_Generation_via_Hierarchical_Deformation_ICCV_2023_paper.pdf",
+      "pdf_sha256": "5ee91f1ce675345414e55174e9e2389680cda7a96dbba12a631af75c6ad29de3",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2023_777420e92c114fac",
+      "title": "InterDiff: Generating 3D Human-Object Interactions with Physics-Informed Diffusion",
+      "venue": "ICCV",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Xu_InterDiff_Generating_3D_Human-Object_Interactions_with_Physics-Informed_Diffusion_ICCV_2023_paper.pdf",
+      "pdf_sha256": "dd5896e8751715b916b4e6c41d3f868765a484895243296c9ee77eae06acd33a",
+      "pages": 13
+    },
+    {
+      "work_id": "W_iccv_2023_9d3ff34791d5ec85",
+      "title": "PhysDiff: Physics-Guided Human Motion Diffusion Model",
+      "venue": "ICCV",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Yuan_PhysDiff_Physics-Guided_Human_Motion_Diffusion_Model_ICCV_2023_paper.pdf",
+      "pdf_sha256": "6f3c1e2f48a100ae2f3969173fd14a605d8628756ffad03bf9ceb5f2573c1cc3",
+      "pages": 12
+    },
+    {
+      "work_id": "W_iccv_2025_f1426c4ae61f599b",
+      "title": "Aligning Constraint Generation with Design Intent in Parametric CAD",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Casey_Aligning_Constraint_Generation_with_Design_Intent_in_Parametric_CAD_ICCV_2025_paper.pdf",
+      "pdf_sha256": "2f70c45a5029a752763a5053c24c818526ad69d55ad0b269c8bc7b24999f4136",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2025_abd83b2129c52999",
+      "title": "DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_DSO_Aligning_3D_Generators_with_Simulation_Feedback_for_Physical_Soundness_ICCV_2025_paper.pdf",
+      "pdf_sha256": "515120431682962484b9f362dcd56d9b5a7e1b216749f3cd226f54505443aba3",
+      "pages": 12
+    },
+    {
+      "work_id": "W_iccv_2025_28d796eb576f45e8",
+      "title": "Generating Physically Stable and Buildable Brick Structures from Text",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Pun_Generating_Physically_Stable_and_Buildable_Brick_Structures_from_Text_ICCV_2025_paper.pdf",
+      "pdf_sha256": "9ab6650e0e0d02752d0469ca95ff93dc6736dec9e9f770e26643eefdc58c76f6",
+      "pages": 12
+    },
+    {
+      "work_id": "W_iccv_2025_b8ded639f1b8a595",
+      "title": "Guiding Diffusion-Based Articulated Object Generation by Partial Point Cloud Alignment and Physical Plausibility Constraints",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Kreber_Guiding_Diffusion-Based_Articulated_Object_Generation_by_Partial_Point_Cloud_Alignment_ICCV_2025_paper.pdf",
+      "pdf_sha256": "438cad8ac86e18b1d6401c026f80bab8f2ecfe7e96904f878761a114828437ea",
+      "pages": 9
+    },
+    {
+      "work_id": "W_iccv_2025_bac1833cb8f9cb28",
+      "title": "HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhou_HERMES_A_Unified_Self-Driving_World_Model_for_Simultaneous_3D_Scene_ICCV_2025_paper.pdf",
+      "pdf_sha256": "9a102d6761064bc81ee36cdeefd53abb7607809a37f566e770c6ccfc2424129b",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2025_c1b508ab10036f0f",
+      "title": "HazeFlow: Revisit Haze Physical Model as ODE and Non-Homogeneous Haze Generation for Real-World Dehazing",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Shin_HazeFlow_Revisit_Haze_Physical_Model_as_ODE_and_Non-Homogeneous_Haze_ICCV_2025_paper.pdf",
+      "pdf_sha256": "e6eaec5efd008fc4845c242bd624d4aefd60c977597c4ecf37e38b5141f43af7",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2025_73eaf31c2f1210ed",
+      "title": "InstaDrive: Instance-Aware Driving World Models for Realistic and Consistent Video Generation",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_InstaDrive_Instance-Aware_Driving_World_Models_for_Realistic_and_Consistent_Video_ICCV_2025_paper.pdf",
+      "pdf_sha256": "2991d525dbd9868fa5a548d7926da2af1114c5fd2a6157e70f8853208ea6b145",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2025_b458dd172a60c855",
+      "title": "Learning an Implicit Physics Model for Image-based Fluid Simulation",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Jia_Learning_an_Implicit_Physics_Model_for_Image-based_Fluid_Simulation_ICCV_2025_paper.pdf",
+      "pdf_sha256": "8870cd4fcce0e3020a3423a41809873206776cb01ddfc0ee6d79ed4d7e3f900f",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2025_c2a31c7ddebc65a3",
+      "title": "MiDSummer: Multi-Guidance Diffusion for Controllable Zero-Shot Immersive Gaussian Splatting Scene Generation",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Hu_MiDSummer_Multi-Guidance_Diffusion_for_Controllable_Zero-Shot_Immersive_Gaussian_Splatting_Scene_ICCV_2025_paper.pdf",
+      "pdf_sha256": "ef512c259001daa5db9578a8cbd847edc55ffa8d6b5acffe14fb6185c933c47d",
+      "pages": 13
+    },
+    {
+      "work_id": "W_iccv_2025_8e3d9d6deb61b821",
+      "title": "Morph: A Motion-free Physics Optimization Framework for Human Motion Generation",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Morph_A_Motion-free_Physics_Optimization_Framework_for_Human_Motion_Generation_ICCV_2025_paper.pdf",
+      "pdf_sha256": "c518779deeede1628dc6ef4fa0d10e7439defca84511a04ea9a9dda2dcd539eb",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iccv_2025_6b372470a5d65afd",
+      "title": "Ph-GAN: Physics-Inspired GAN for Generating SAR Images Under Limited Data",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Ph-GAN_Physics-Inspired_GAN_for_Generating_SAR_Images_Under_Limited_Data_ICCV_2025_paper.pdf",
+      "pdf_sha256": "a0c671122c5c0343c37d5c2152fe17236c8adba8434c943a16c1556e113066c9",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2025_2b7c97a08af1f7c6",
+      "title": "PhysSplat: Efficient Physics Simulation for 3D Scenes via MLLM-Guided Gaussian Splatting",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_PhysSplat_Efficient_Physics_Simulation_for_3D_Scenes_via_MLLM-Guided_Gaussian_ICCV_2025_paper.pdf",
+      "pdf_sha256": "2b7b6b12111ad5619709944368501d0bf56cfdaff9842fb84d3a01f104b90aed",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2025_20565a234ee9f523",
+      "title": "PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Jiang_PhysTwin_Physics-Informed_Reconstruction_and_Simulation_of_Deformable_Objects_from_Videos_ICCV_2025_paper.pdf",
+      "pdf_sha256": "e1f43e6528b1e34c8cdd673eba894e6db4025053c04d94871a675ec9edff4c72",
+      "pages": 12
+    },
+    {
+      "work_id": "W_iccv_2025_2f1759792f4c7a43",
+      "title": "Synthetic Video Enhances Physical Fidelity in Video Synthesis",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Synthetic_Video_Enhances_Physical_Fidelity_in_Video_Synthesis_ICCV_2025_paper.pdf",
+      "pdf_sha256": "659a72a0645de91a83cf6f09562cc36f0363452aca92bcc1024117769e61d96b",
+      "pages": 12
+    },
+    {
+      "work_id": "W_iccv_2025_ff5edbe2bf29bd9e",
+      "title": "UniPhys: Unified Planner and Controller with Diffusion for Flexible Physics-Based Character Control",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wu_UniPhys_Unified_Planner_and_Controller_with_Diffusion_for_Flexible_Physics-Based_ICCV_2025_paper.pdf",
+      "pdf_sha256": "343814ce40f2898bbcaaaacc4dbb585576e90998065d4fe97a29cc49e920e27f",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2025_21d5748dd3121465",
+      "title": "VLIPP: Towards Physically Plausible Video Generation with Vision and Language Informed Physical Prior",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_VLIPP_Towards_Physically_Plausible_Video_Generation_with_Vision_and_Language_ICCV_2025_paper.pdf",
+      "pdf_sha256": "e5b6d96dd2854ddb8faa3b646cf06ff92557274d595fe40650dfcd8bdf19cd9e",
+      "pages": 11
+    },
+    {
+      "work_id": "W_iccv_2025_67891346c46b81c5",
+      "title": "p-AVAS: Can Physics-Integrated Audio-Visual Modeling Boost Neural Acoustic Synthesis?",
+      "venue": "ICCV",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Liang_p-AVAS_Can_Physics-Integrated_Audio-Visual_Modeling_Boost_Neural_Acoustic_Synthesis_ICCV_2025_paper.pdf",
+      "pdf_sha256": "c35780f4e3edb6a84f97fc20c726a6cd3f0945bfcd99df92031a4b5032b9c4f4",
+      "pages": 10
+    },
+    {
+      "work_id": "W_iclr_2024_8e008a4b1556692c",
+      "title": "Accelerating Data Generation for Neural Operators via Krylov Subspace Recycling",
+      "venue": "ICLR",
+      "year": 2024,
+      "status": "not_acquired",
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "pages": null
+    },
+    {
+      "work_id": "W_iclr_2024_6e938fe42abb7962",
+      "title": "DIFFTACTILE: A Physics-based Differentiable Tactile Simulator for Contact-rich Robotic Manipulation",
+      "venue": "ICLR",
+      "year": 2024,
+      "status": "not_acquired",
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "pages": null
+    },
+    {
+      "work_id": "W_iclr_2024_ed2d5fa5247555cc",
+      "title": "Navigating the Design Space of Equivariant Diffusion-Based Generative Models for De Novo 3D Molecule Generation",
+      "venue": "ICLR",
+      "year": 2024,
+      "status": "not_acquired",
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "pages": null
+    },
+    {
+      "work_id": "W_iclr_2024_aab57849970a5381",
+      "title": "Thin-Shell Object Manipulations With Differentiable Physics Simulations",
+      "venue": "ICLR",
+      "year": 2024,
+      "status": "not_acquired",
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "pages": null
+    },
+    {
+      "work_id": "W_iclr_2025_ad1c13a3c0957ba4",
+      "title": "AssembleFlow: Rigid Flow Matching with Inertial Frames for Molecular Assembly",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/02dd0db10c40092de3d9ec2508d12f60-Paper-Conference.pdf",
+      "pdf_sha256": "ff25eabbfc5b4fdd2805f5a661f78309848caa2d597760d3fadfe67d59025d21",
+      "pages": 33
+    },
+    {
+      "work_id": "W_iclr_2025_189f348b6e0c5b65",
+      "title": "Generating CAD Code with Vision-Language Models for 3D Designs",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/81a934cd364e18ea6fdeaf57a93c17d4-Paper-Conference.pdf",
+      "pdf_sha256": "a2f537955a9bf1c39744355398b50ded506d8831906048e7260b2d13147b982f",
+      "pages": 27
+    },
+    {
+      "work_id": "W_iclr_2025_83bd128fd1f67195",
+      "title": "Generating Physical Dynamics under Priors",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/c573258c38d0a3919d8c1364053c45df-Paper-Conference.pdf",
+      "pdf_sha256": "297f8fbc287f5da5b900b6eec6b28dcb3ad411ae1aeb87ea60a0680f7153234c",
+      "pages": 35
+    },
+    {
+      "work_id": "W_iclr_2025_563145fa5c16ce32",
+      "title": "Improved Sampling Of Diffusion Models In Fluid Dynamics With Tweedie's Formula",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/b3875605f2e35714fc8a807cadf8a5e8-Paper-Conference.pdf",
+      "pdf_sha256": "34d36683e21cd85796344dda727b75d95dd55b8f0501369d73b541e474302a3a",
+      "pages": 29
+    },
+    {
+      "work_id": "W_iclr_2025_9d09c795ea097158",
+      "title": "InverseBench: Benchmarking Plug-and-Play Diffusion Priors for Inverse Problems in Physical Sciences",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/e297068f5ec7f483a017948715b591fb-Paper-Conference.pdf",
+      "pdf_sha256": "be69531c95f8cf1efc1bfb2b9062e3ebc63813008095a3a31e57253cfa4eb514",
+      "pages": 29
+    },
+    {
+      "work_id": "W_iclr_2025_c93d88cfd63c6a29",
+      "title": "OmniPhysGS: 3D Constitutive Gaussians for General Physics-Based Dynamics Generation",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/af31604708f3e44b4de9fdfa6dcaa9d1-Paper-Conference.pdf",
+      "pdf_sha256": "6d541f67fe8cf93bbddbeae2cd7a97f65ce4b9d427e708d2f4db336dc0b138e4",
+      "pages": 28
+    },
+    {
+      "work_id": "W_iclr_2025_2b162033fc481a28",
+      "title": "Physics-aligned field reconstruction with diffusion bridge",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/9421261e06f1a63a352b068f1ac90609-Paper-Conference.pdf",
+      "pdf_sha256": "cb96692154f36a87dcf515646605c539fa26798336209c3a5b8233408013943c",
+      "pages": 37
+    },
+    {
+      "work_id": "W_iclr_2025_02eec51b471e33b6",
+      "title": "Scalable Discrete Diffusion Samplers: Combinatorial Optimization and Statistical Physics",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/d87eadbe6114b768e76c5d5e8eb39388-Paper-Conference.pdf",
+      "pdf_sha256": "73b71fcfef9539d8df7029aac4cbeb210457e57b1a8efd30131edbe2f72907ee",
+      "pages": 30
+    },
+    {
+      "work_id": "W_iclr_2025_d7ed3056ce01fb0d",
+      "title": "Text2PDE: Latent Diffusion Models for Accessible Physics Simulation",
+      "venue": "ICLR",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/7274ed909a312d4d869cc328ad1c5f04-Paper-Conference.pdf",
+      "pdf_sha256": "06f91dd2a0f6e94861fa651cabe6e1dd77fffb6fa22848f96ae745d29bb101b4",
+      "pages": 30
+    },
+    {
+      "work_id": "W_icml_2023_4d46cb59b322af5e",
+      "title": "The Acquisition of Physical Knowledge in Generative Neural Networks",
+      "venue": "ICML",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.mlr.press/v202/schulze-buschoff23a/schulze-buschoff23a.pdf",
+      "pdf_sha256": "f05aad710b07906379cb944a217e1678e02e8dac86e6e67d936a69629a34b832",
+      "pages": 21
+    },
+    {
+      "work_id": "W_icml_2023_ec6a3030d0e4e430",
+      "title": "User-defined Event Sampling and Uncertainty Quantification in Diffusion Models for Physical Dynamical Systems",
+      "venue": "ICML",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.mlr.press/v202/finzi23a/finzi23a.pdf",
+      "pdf_sha256": "ebf1cf7644f0a5dd718a3acfe10ee610363a22b7df648335a20665ca2bf9aa04",
+      "pages": 17
+    },
+    {
+      "work_id": "W_icml_2024_c36fee50ce7a40dd",
+      "title": "3D-VLA: A 3D Vision-Language-Action Generative World Model",
+      "venue": "ICML",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/zhen24a/zhen24a.pdf",
+      "pdf_sha256": "82e86dc22037766ac073ddbfbf34e74de36c90b96072663b442640b6e0ed2575",
+      "pages": 17
+    },
+    {
+      "work_id": "W_icml_2024_50946c28d0ab8d7d",
+      "title": "Accelerating PDE Data Generation via Differential Operator Action in Solution Space",
+      "venue": "ICML",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/dong24d/dong24d.pdf",
+      "pdf_sha256": "90f0d95fbdac654f3402e9f7f49a1a07c9a955afc4fc3e9fab5252e2c6513d0c",
+      "pages": 17
+    },
+    {
+      "work_id": "W_icml_2024_e307890b3dda6954",
+      "title": "GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting",
+      "venue": "ICML",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/zhou24p/zhou24p.pdf",
+      "pdf_sha256": "75b63ece1b22b7de047aa6e08d253010f15deb53df5dbda813347bdeda33c423",
+      "pages": 11
+    },
+    {
+      "work_id": "W_icml_2024_4411004895826cce",
+      "title": "ILILT: Implicit Learning of Inverse Lithography Technologies",
+      "venue": "ICML",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/yang24s/yang24s.pdf",
+      "pdf_sha256": "affee10fbae431b7a0946d5c4353c57a25ef79facd42e9366b7af84ebc0e8458",
+      "pages": 13
+    },
+    {
+      "work_id": "W_icml_2024_8aa8481f49708442",
+      "title": "LLM and Simulation as Bilevel Optimizers: A New Paradigm to Advance Physical Scientific Discovery",
+      "venue": "ICML",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/ma24m/ma24m.pdf",
+      "pdf_sha256": "b036c72aa09eee1bde9e40ee1ee4455730c12541624ae3b3f954e3b243d6f44f",
+      "pages": 23
+    },
+    {
+      "work_id": "W_icml_2025_cbea28b289ac8068",
+      "title": "Adaptive Flow Matching for Resolving Small-Scale Physics",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/fotiadis25a/fotiadis25a.pdf",
+      "pdf_sha256": "1e3ae0f848e2f768173e61de79fc9c4abc84b239b48d0844f423580b6a41484b",
+      "pages": 33
+    },
+    {
+      "work_id": "W_icml_2025_3d55527daab7c0d0",
+      "title": "BiAssemble: Learning Collaborative Affordance for Bimanual Geometric Assembly",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25i/shen25i.pdf",
+      "pdf_sha256": "fa3596ed5431e3bd26b47705363ed30f6e20b86f906a67bd85dbd35d48b5c44c",
+      "pages": 23
+    },
+    {
+      "work_id": "W_icml_2025_b2db73b4479e1f1e",
+      "title": "Compositional Flows for 3D Molecule and Synthesis Pathway Co-design",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25b/shen25b.pdf",
+      "pdf_sha256": "b6a74cf1afb6f2266a6f33342a300732e6110e4f8f1fcf5e604cab19342c4f26",
+      "pages": 29
+    },
+    {
+      "work_id": "W_icml_2025_74a01b4ffa91f6d9",
+      "title": "How Far Is Video Generation from World Model: A Physical Law Perspective",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/kang25g/kang25g.pdf",
+      "pdf_sha256": "588e3611ada87db71d06975538bb6deff6a48d542be8001a72496721f676d4a7",
+      "pages": 27
+    },
+    {
+      "work_id": "W_icml_2025_fc52733ab9b1e7fd",
+      "title": "M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhang25bb/zhang25bb.pdf",
+      "pdf_sha256": "a4f88bea26264d455edda25a7896b28f3f6d32f7d1a44a6f7f34a67a9f76f48a",
+      "pages": 29
+    },
+    {
+      "work_id": "W_icml_2025_777ad146fdbcb823",
+      "title": "PISA Experiments: Exploring Physics Post-Training for Video Diffusion Models by Watching Stuff Drop",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/li25bu/li25bu.pdf",
+      "pdf_sha256": "2f5ae3f1836574c5d45be5739cbeb719fd1effc032dd9678371e0219cee55ec5",
+      "pages": 25
+    },
+    {
+      "work_id": "W_icml_2025_f2e43be8b8a3578b",
+      "title": "Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation",
+      "venue": "ICML",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/meng25c/meng25c.pdf",
+      "pdf_sha256": "7e4952db7c5ee7c2e84fb0a224534b3690aca893b0b456f7a2a0d14eeffb43ce",
+      "pages": 26
+    },
+    {
+      "work_id": "W_ijcai_2024_c1c287e3e18193f4",
+      "title": "AADMIP: Adversarial Attacks and Defenses Modeling in Industrial Processes",
+      "venue": "IJCAI",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ijcai.org/proceedings/2024/1030.pdf",
+      "pdf_sha256": "3b08a3855886a285d04d4aeb7680404eb1a9bb60baef1b5270f1ecdc83f4d518",
+      "pages": 4
+    },
+    {
+      "work_id": "W_ijcai_2025_0796bca50a7fe6cc",
+      "title": "Leveraging Pretrained Diffusion Models for Zero-Shot Part Assembly",
+      "venue": "IJCAI",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ijcai.org/proceedings/2025/0264.pdf",
+      "pdf_sha256": "1c73c72e1ae4d1b8315852050339cce68198638539a573a63b58b6fec1b33b9f",
+      "pages": 9
+    },
+    {
+      "work_id": "W_ijcai_2025_e7d73958d5e53f1b",
+      "title": "UltraModel: A Modeling Paradigm for Industrial Objects",
+      "venue": "IJCAI",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://www.ijcai.org/proceedings/2025/0876.pdf",
+      "pdf_sha256": "a5588dc9edcf008db9b58a9eb9e76ed4aea88a7417c32d42301ebf993291a9f2",
+      "pages": 9
+    },
+    {
+      "work_id": "W_neurips_2020_ae499642c68bf7eb",
+      "title": "Generative 3D Part Assembly via Dynamic Graph Learning",
+      "venue": "NeurIPS",
+      "year": 2020,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf",
+      "pdf_sha256": "96a9390d2d6c7b14b699ab918716b180180ec0dbb5aeb0cebdc31106c60dc65f",
+      "pages": 12
+    },
+    {
+      "work_id": "W_neurips_2020_1244abbe96675aaf",
+      "title": "RELATE: Physically Plausible Multi-Object Scene Synthesis Using Structured Latent Spaces",
+      "venue": "NeurIPS",
+      "year": 2020,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/806beafe154032a5b818e97b4420ad98-Paper.pdf",
+      "pdf_sha256": "ee76aafacd2604d74bf798e9a7a3cc574f6dc393503a287be46d99abf1d70f94",
+      "pages": 12
+    },
+    {
+      "work_id": "W_neurips_2022_827a172f19e5484a",
+      "title": "Breaking Bad: A Dataset for Geometric Fracture and Reassembly",
+      "venue": "NeurIPS",
+      "year": 2022,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/fe18f2090bf1e0fd5a1ded5bdd7ca351-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "2645acd6401b27bb308fce11c6967807b574961a5905d5456ffb1f1c77d36318",
+      "pages": 14
+    },
+    {
+      "work_id": "W_neurips_2023_06a85952d7c10acc",
+      "title": "DiffuseBot: Breeding Soft Robots With Physics-Augmented Generative Diffusion Models",
+      "venue": "NeurIPS",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/8b1008098947ad59144c18a78337f937-Paper-Conference.pdf",
+      "pdf_sha256": "a86574dddcad535e9c26b8da2146c246f36882af3892c2bf4bb15572e7f3ae52",
+      "pages": 26
+    },
+    {
+      "work_id": "W_neurips_2023_65708f6b012e3c1d",
+      "title": "End-To-End Latent Variational Diffusion Models for Inverse Problems in High Energy Physics",
+      "venue": "NeurIPS",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/cd830afc6208a346e4ec5caf1b08b4b4-Paper-Conference.pdf",
+      "pdf_sha256": "dd9d0826a42edaa444d81e3645cc236cf9b39156b48cfdc8eb4261aebfb6e24c",
+      "pages": 26
+    },
+    {
+      "work_id": "W_neurips_2023_ab2ffbb1a6b81810",
+      "title": "Geometric Neural Diffusion Processes",
+      "venue": "NeurIPS",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/a797c2d2e0c1fdabf4d1ab8cd0b465c6-Paper-Conference.pdf",
+      "pdf_sha256": "ca91f52c33009ad74c5ebeb78219be9cb2c64159635bec595e2d1fbe309cd952",
+      "pages": 33
+    },
+    {
+      "work_id": "W_neurips_2023_542377b2e0a63bb4",
+      "title": "Unifying Predictions of Deterministic and Stochastic Physics in Mesh-reduced Space with Sequential Flow Generative Model",
+      "venue": "NeurIPS",
+      "year": 2023,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/bea78e2bb0abccc14404b24b90d9299f-Paper-Conference.pdf",
+      "pdf_sha256": "dbd4153b733734201d557110a73c61036b837b35238dc598d6e4b2da234e0c8c",
+      "pages": 25
+    },
+    {
+      "work_id": "W_neurips_2024_07e103fb1c1da9bb",
+      "title": "Atlas3D: Physically Constrained Self-Supporting Text-to-3D for Simulation and Fabrication",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/b9b228d28770dc2a18922de5cd49f1d9-Paper-Conference.pdf",
+      "pdf_sha256": "bad63bf8e32c5bc77e1e2231a93b4c7a9d29bf89793106e9093bd334b8a2ff19",
+      "pages": 30
+    },
+    {
+      "work_id": "W_neurips_2024_38e9301a16c970dc",
+      "title": "DiffusionPDE: Generative PDE-Solving under Partial Observation",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/eb3878c1dcbfff9ee95d5d033e5f5942-Paper-Conference.pdf",
+      "pdf_sha256": "faaa1875067c02fe018765de822f7c1a7add44b42550676d9b5aa07619da57a3",
+      "pages": 33
+    },
+    {
+      "work_id": "W_neurips_2024_d5c36a3794afba8e",
+      "title": "DrivAerNet++: A Large-Scale Multimodal Car Dataset with Computational Fluid Dynamics Simulations and Deep Learning Benchmarks",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/013cf29a9e68e4411d0593040a8a1eb3-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "6c8895e40f5c5903cd6327dbfae45b60d7e3badcd8b012367921e2a780e1c8d6",
+      "pages": 38
+    },
+    {
+      "work_id": "W_neurips_2024_0af605c1244879d5",
+      "title": "GIC: Gaussian-Informed Continuum for Physical Property Identification and Simulation",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/89379d5fc6eb34ff98488202fb52b9d0-Paper-Conference.pdf",
+      "pdf_sha256": "01afb19a39ad915350f0dfb4bc92e98f5bea2bf9345c4c3dd40980c2af9f0616",
+      "pages": 29
+    },
+    {
+      "work_id": "W_neurips_2024_d2218f05b14abee2",
+      "title": "Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/0e5b96f97c1813bb75f6c28532c2ecc7-Paper-Conference.pdf",
+      "pdf_sha256": "1c66a017a4b0d5ee2716ec98ea53a44a04081d67136b0ab194c550acaeef629a",
+      "pages": 28
+    },
+    {
+      "work_id": "W_neurips_2025_d1acf6f3b44d6219",
+      "title": "Diffusion-Based Hierarchical Graph Neural Networks for Simulating Nonlinear Solid Mechanics",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bcd3c132bb19544815c5e660a2b044bd-Paper-Conference.pdf",
+      "pdf_sha256": "2eb69d39d285c0db40dbca347179f22a924361cb01d09d276af4f72a722f678b",
+      "pages": 30
+    },
+    {
+      "work_id": "W_neurips_2025_6cd375d5f39ac8f3",
+      "title": "GS2E: Gaussian Splatting is an Effective Data Generator for Event Stream Generation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/5dd2d7a5dba72af7a2d78128e02514f4-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "8d8670a6cb794f7c97617008f8bb75499d9416bef814de4317be9954c02ef00d",
+      "pages": 28
+    },
+    {
+      "work_id": "W_neurips_2025_8024b40a6f2b7dcf",
+      "title": "Generating Full-field Evolution of Physical Dynamics from Irregular Sparse Observations",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c209cd57e13f3344a4cad4ce84d0ee1b-Paper-Conference.pdf",
+      "pdf_sha256": "f221ad79f375827d25ed7a9ca8be1e35bb3d97fbfdda69da299b458989712589",
+      "pages": 37
+    },
+    {
+      "work_id": "W_neurips_2025_5b7d36c7a5e0c791",
+      "title": "Generating Physically Sound Designs from Text and a Set of Physical Constraints",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9bb116f3dd333d288bb6283d8514e6c3-Paper-Conference.pdf",
+      "pdf_sha256": "535e59bec7346ff9e6eff39e14b696b93b5a4b0cb86c464331d0b2a053fcbd38",
+      "pages": 33
+    },
+    {
+      "work_id": "W_neurips_2025_fb6221b90eb76c0d",
+      "title": "Generative Perception of Shape and Material from Differential Motion",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b4e49c75933caedcc079b2d6289cb079-Paper-Conference.pdf",
+      "pdf_sha256": "c0bf8256a2d07879604a72aceca6ac9f13de28dbbab362f087d62c609423f190",
+      "pages": 25
+    },
+    {
+      "work_id": "W_neurips_2025_3a23daaa3e2e0b76",
+      "title": "Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c3b88408bb209dca87dad596ecf88bba-Paper-Conference.pdf",
+      "pdf_sha256": "cdea4745b8e8aea6919cc0e6044e07f73141d5781bfa0b4bf142f2e27c12f3a8",
+      "pages": 46
+    },
+    {
+      "work_id": "W_neurips_2025_a7e317d39cd98852",
+      "title": "Non-stationary Equivariant Graph Neural Networks for Physical Dynamics Simulation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/e372bfe389adbf742a759396f0170356-Paper-Conference.pdf",
+      "pdf_sha256": "ad4311382a50129c996289f6b5749131d2f74b56a8a04e6ae544bd9fbfe7048b",
+      "pages": 27
+    },
+    {
+      "work_id": "W_neurips_2025_3933b264379fb08f",
+      "title": "PhysX-3D: Physical-Grounded 3D Asset Generation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/86beeac1799c083e4597d4aa17385a25-Paper-Conference.pdf",
+      "pdf_sha256": "418a8a42ed6d7253d8d63effd6a9fd3e290af79087852754636812e8eabfcd78",
+      "pages": 14
+    },
+    {
+      "work_id": "W_neurips_2025_2d357e78fbc55e89",
+      "title": "Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+      "pdf_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+      "pages": 36
+    },
+    {
+      "work_id": "W_neurips_2025_508776b2dcf933dd",
+      "title": "REArtGS: Reconstructing and Generating Articulated Objects via 3D Gaussian Splatting with Geometric and Motion Constraints",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/94ea47483883c01a0555cafd99d8bff7-Paper-Conference.pdf",
+      "pdf_sha256": "63fe69af37e5e86643f92064dd31668f6e3ecf6efe8f5b3e85090e1591ce564a",
+      "pages": 27
+    },
+    {
+      "work_id": "W_neurips_2025_1d63578af070d6e8",
+      "title": "SimWorld: An Open-ended Simulator for Agents in Physical and Social Worlds",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f1eff44d59d9c66cc6e359d36d80b0b9-Paper-Conference.pdf",
+      "pdf_sha256": "c2e21935adea37efd2d9b9f2efebb16871b885b07d7f3c032b80fe6959cd456f",
+      "pages": 52
+    },
+    {
+      "work_id": "W_neurips_2025_e242169abd7d050b",
+      "title": "TokMan:Tokenize Manhattan Mask Optimization for Inverse Lithography",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/4e127d4fb92a3145ecb60f6aa0b16eef-Paper-Conference.pdf",
+      "pdf_sha256": "5e1303d95b90657490e6af0abd8c4e85057e3afbaebc0db52ab571f8ffa9f09e",
+      "pages": 26
+    },
+    {
+      "work_id": "W_neurips_2025_234d0bfb28144115",
+      "title": "WorldModelBench: Judging Video Generation Models As World Models",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "status": "acquired_automatic_identity_triage_pass",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/4ec03ed08a3fcb59e1c815b5598beff1-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "pdf_sha256": "0a52dd5a64546ca485588616b1d28ac3e9158d1d2f9fb9a294cd03e0dc972f2d",
+      "pages": 25
+    }
+  ]
+}

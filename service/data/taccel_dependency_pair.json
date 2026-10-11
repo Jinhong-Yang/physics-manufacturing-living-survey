@@ -1,0 +1,692 @@
+{
+  "created_utc": "2026-10-11T07:38:04.332027+00:00",
+  "schema_version": "1.0",
+  "work_id": "W_neurips_2025_7d71af30fcc1f3f6",
+  "audit_id": "SUP_A05",
+  "artifact_commit": "cb23bc251b531ba6908a3788c2f91423cd543149",
+  "variants": [
+    {
+      "variant": "original_py310",
+      "dependency_condition": "Original specified Torch251/CUDA124",
+      "result": {
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "cuda_version": "12.4",
+        "cuda_available": true,
+        "cuda_force_ptx_jit": null,
+        "python_version": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+        "python_executable": "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_original_deps/bin/python",
+        "device_name": "NVIDIA GeForce RTX 5080",
+        "device_capability": [
+          12,
+          0
+        ],
+        "compiled_arch_list": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "cases": [
+          {
+            "case": "allocate_copy",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0,
+                0.0625,
+                0.125,
+                0.1875
+              ],
+              [
+                0.25,
+                0.3125,
+                0.375,
+                0.4375
+              ],
+              [
+                0.5,
+                0.5625,
+                0.625,
+                0.6875
+              ],
+              [
+                0.75,
+                0.8125,
+                0.875,
+                0.9375
+              ]
+            ],
+            "seconds": 0.18566735100000642
+          },
+          {
+            "case": "add_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 28, in evaluate\n    if op=='add': return v+1\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.05564132200004224
+          },
+          {
+            "case": "add_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 28, in evaluate\n    if op=='add': return v+1\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.0025113960000453517
+          },
+          {
+            "case": "sine_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 29, in evaluate\n    if op=='sine': return torch.sin(v)\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.009647964999999203
+          },
+          {
+            "case": "sine_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 29, in evaluate\n    if op=='sine': return torch.sin(v)\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.002945823000004566
+          },
+          {
+            "case": "index_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 30, in evaluate\n    if op=='index': return v[torch.tensor([3,1],device=v.device)]\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.008702719999973851
+          },
+          {
+            "case": "index_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 30, in evaluate\n    if op=='index': return v[torch.tensor([3,1],device=v.device)]\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.004734096999982285
+          },
+          {
+            "case": "matmul_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 0.066418424999938
+          },
+          {
+            "case": "matmul_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 0.03181326899994019
+          },
+          {
+            "case": "solve_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 32, in evaluate\n    if op=='solve': return torch.linalg.solve(v @ v.T + torch.eye(4,dtype=dtype,device=v.device),torch.ones(4,dtype=dtype,device=v.device))\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.019330595000042194
+          },
+          {
+            "case": "solve_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 32, in evaluate\n    if op=='solve': return torch.linalg.solve(v @ v.T + torch.eye(4,dtype=dtype,device=v.device),torch.ones(4,dtype=dtype,device=v.device))\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.003326649999962683
+          }
+        ],
+        "case_count": 11,
+        "passed_case_count": 3,
+        "all_cases_passed": false,
+        "taccel_execution_performed": false,
+        "manufacturing_generation_pass": false,
+        "industrial_pass": false
+      },
+      "setup_seconds": 657.537412907,
+      "diagnostic_seconds": 22.034885850000023,
+      "install_manifest": "runs/wp1/taccel_execution_20261011/original_py310_install.json",
+      "case_manifest": "runs/wp1/taccel_execution_20261011/original_py310_cases.json"
+    },
+    {
+      "variant": "adapted_py310",
+      "dependency_condition": "Changed Torch271/CUDA128",
+      "result": {
+        "torch_version": "2.7.1+cu128",
+        "numpy_version": "1.26.4",
+        "cuda_version": "12.8",
+        "cuda_available": true,
+        "cuda_force_ptx_jit": null,
+        "python_version": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+        "python_executable": "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain/bin/python",
+        "device_name": "NVIDIA GeForce RTX 5080",
+        "device_capability": [
+          12,
+          0
+        ],
+        "compiled_arch_list": [
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "sm_100",
+          "sm_120",
+          "compute_120"
+        ],
+        "cases": [
+          {
+            "case": "allocate_copy",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0,
+                0.0625,
+                0.125,
+                0.1875
+              ],
+              [
+                0.25,
+                0.3125,
+                0.375,
+                0.4375
+              ],
+              [
+                0.5,
+                0.5625,
+                0.625,
+                0.6875
+              ],
+              [
+                0.75,
+                0.8125,
+                0.875,
+                0.9375
+              ]
+            ],
+            "seconds": 0.36417616300002464
+          },
+          {
+            "case": "add_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                1.0,
+                1.0625,
+                1.125,
+                1.1875
+              ],
+              [
+                1.25,
+                1.3125,
+                1.375,
+                1.4375
+              ],
+              [
+                1.5,
+                1.5625,
+                1.625,
+                1.6875
+              ],
+              [
+                1.75,
+                1.8125,
+                1.875,
+                1.9375
+              ]
+            ],
+            "seconds": 0.09155022700002746
+          },
+          {
+            "case": "add_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                1.0,
+                1.0625,
+                1.125,
+                1.1875
+              ],
+              [
+                1.25,
+                1.3125,
+                1.375,
+                1.4375
+              ],
+              [
+                1.5,
+                1.5625,
+                1.625,
+                1.6875
+              ],
+              [
+                1.75,
+                1.8125,
+                1.875,
+                1.9375
+              ]
+            ],
+            "seconds": 0.00782379800000399
+          },
+          {
+            "case": "sine_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 5.960464477539063e-08,
+            "values": [
+              [
+                0.0,
+                0.0624593161046505,
+                0.1246747300028801,
+                0.1864033043384552
+              ],
+              [
+                0.24740396440029144,
+                0.30743852257728577,
+                0.36627253890037537,
+                0.4236762523651123
+              ],
+              [
+                0.4794255495071411,
+                0.5333026647567749,
+                0.5850972533226013,
+                0.6346070766448975
+              ],
+              [
+                0.681638777256012,
+                0.7260087132453918,
+                0.7675435543060303,
+                0.8060811161994934
+              ]
+            ],
+            "seconds": 0.015218751000020347
+          },
+          {
+            "case": "sine_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 1.1102230246251565e-16,
+            "values": [
+              [
+                0.0,
+                0.0624593178423802,
+                0.12467473338522769,
+                0.18640329676226988
+              ],
+              [
+                0.24740395925452294,
+                0.30743851458038085,
+                0.36627252908604757,
+                0.42367625720393803
+              ],
+              [
+                0.479425538604203,
+                0.5333026735360201,
+                0.5850972729404621,
+                0.6346070800152693
+              ],
+              [
+                0.6816387600233341,
+                0.7260086552607126,
+                0.767543502236027,
+                0.8060811082606929
+              ]
+            ],
+            "seconds": 0.004562449999980345
+          },
+          {
+            "case": "index_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.75,
+                0.8125,
+                0.875,
+                0.9375
+              ],
+              [
+                0.25,
+                0.3125,
+                0.375,
+                0.4375
+              ]
+            ],
+            "seconds": 0.05184709899998552
+          },
+          {
+            "case": "index_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.75,
+                0.8125,
+                0.875,
+                0.9375
+              ],
+              [
+                0.25,
+                0.3125,
+                0.375,
+                0.4375
+              ]
+            ],
+            "seconds": 0.008974985999998353
+          },
+          {
+            "case": "matmul_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 0.21370430199999646
+          },
+          {
+            "case": "matmul_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 0.1386738489999857
+          },
+          {
+            "case": "solve_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 1.4901161193847656e-08,
+            "values": [
+              0.8520709872245789,
+              0.5364890694618225,
+              0.2209073305130005,
+              -0.09467456489801407
+            ],
+            "seconds": 0.17972579100000985
+          },
+          {
+            "case": "solve_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 2.7755575615628914e-17,
+            "values": [
+              0.8520710059171598,
+              0.5364891518737673,
+              0.22090729783037466,
+              -0.09467455621301768
+            ],
+            "seconds": 0.012573599999996077
+          }
+        ],
+        "case_count": 11,
+        "passed_case_count": 11,
+        "all_cases_passed": true,
+        "taccel_execution_performed": false,
+        "manufacturing_generation_pass": false,
+        "industrial_pass": false
+      },
+      "setup_seconds": 230.130511163,
+      "diagnostic_seconds": 30.508527243999993,
+      "install_manifest": "runs/wp1/taccel_execution_20261011/adapted_py310_install.json",
+      "case_manifest": "runs/wp1/taccel_execution_20261011/adapted_py310_cases.json"
+    }
+  ],
+  "fixed_python": "3.10.22",
+  "fixed_numpy": "1.26.4",
+  "base_conda_package_count": 81,
+  "prior_python312_negative_outcome_known_at_design": true,
+  "source_patch_performed": false,
+  "setup_parallelized": true,
+  "gpu_diagnostics_serialized": true,
+  "inference_scope": "Two dependency paths on one host; torch and bundled CUDA both changed. Eleven diagnostic cases per process are not independent scientific runs. CUDA error carryover is possible. Setup durations include concurrent preparation.",
+  "method_run_denominator_added": 0,
+  "taccel_execution_performed": false,
+  "new_manufacturing_generation_pass": false,
+  "independent_physical_pass": false,
+  "industrial_pass": false,
+  "sources": [
+    {
+      "path": "runs/wp1/taccel_execution_20261011/python310_pair_freeze.json",
+      "bytes": 1236,
+      "sha256": "e19f102f107f14ed144870c415e2408c0ff7623ad0b8da24a4b804955734441e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/python310_base_explicit.txt",
+      "bytes": 9560,
+      "sha256": "f8844daa43450240946084ed2ac168c615b1a486529251933c8d209f54ac0a90"
+    },
+    {
+      "path": "protocol/Taccel_Python310_Dependency_Pair_20261011.md",
+      "bytes": 3091,
+      "sha256": "88a68c0c724afabd11eeb908ab629d959c166ee35f8b5eae9d70962845a45816"
+    },
+    {
+      "path": "scripts/taccel_python310_dependency_pair.py",
+      "bytes": 4583,
+      "sha256": "b250f10752be1b9e10bf9031942bb4c623c27fb668f361d6de7690e989016e6e"
+    },
+    {
+      "path": "scripts/taccel_linux_gpu_preflight.py",
+      "bytes": 5979,
+      "sha256": "6ff798807201dac83aa9fc134c0883a832312a53238e875a7ea09dcb6b0dd0fc"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_base_create.log",
+      "bytes": 79505,
+      "sha256": "8a01fe93750dbd743d9928189125d6c6af23c9462f112174785b5d038d0243f6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_before_install.log",
+      "bytes": 159,
+      "sha256": "15bac38cf2e112a99a3148d7372cfc08d609f6bd14ff865cf5bfad6877ff9fb9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_pip_install.log",
+      "bytes": 7156,
+      "sha256": "c3c295e264447ffaf6955f04dfa3a6bcbbed42d8c825affa4a6b54d1c348acea"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_pip_freeze.log",
+      "bytes": 954,
+      "sha256": "d5106adc84c86a4aebbea251d7419283f88820647073f78c0fd5c0625e54b51b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_gpu_cases.log",
+      "bytes": 12012,
+      "sha256": "c797b9ace0cd6454515d60b8e341abb437cc754ed75e2dc11a4eff8d39694384"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/original_py310_install.json",
+      "bytes": 3569,
+      "sha256": "3c8bbe707ba855ea3b337372b152da6f56ed82eebff7127c6b1b3f562cf7f6ef"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/original_py310_cases.json",
+      "bytes": 14310,
+      "sha256": "6f2b9dcdb5bacfe7ca6f0b435e5b7d4deb04b00ecbff7a5b06b53ea9455193aa"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/original_py310_install_report.json",
+      "bytes": 117834,
+      "sha256": "469a249703e535897066366508e1a138e6a99a6ab395b4cc10a300b4df868c5d"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_before_install.log",
+      "bytes": 159,
+      "sha256": "15bac38cf2e112a99a3148d7372cfc08d609f6bd14ff865cf5bfad6877ff9fb9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_pip_install.log",
+      "bytes": 8440,
+      "sha256": "e30960a64abc9b4c8f3ece35988f1ccea35156cd1e74804bbd70f2ee379b5f32"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_pip_freeze.log",
+      "bytes": 1010,
+      "sha256": "9ae79ef73317396ebf81189988ec0028a8312aad637f15f6525d9922c498de98"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_gpu_cases.log",
+      "bytes": 4328,
+      "sha256": "4504feb324f4ce01c25e44f87c848d6b03a209b039b15b07c8c2a6f0be7fe3b6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/adapted_py310_install.json",
+      "bytes": 2676,
+      "sha256": "b83c8cb1553a22b310c5751d3623bb85b51825c09af3da267b6106b46fa03264"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/adapted_py310_cases.json",
+      "bytes": 8866,
+      "sha256": "4d47c6cf9aed0c9a6ccb9d6e38528152de616ea71a13d3031ecbd23ac0b610da"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/adapted_py310_install_report.json",
+      "bytes": 131601,
+      "sha256": "ab0e48d2b37666b9f7caf4ee76bf8e782e73849d0519ceb15c379e330973c345"
+    }
+  ]
+}

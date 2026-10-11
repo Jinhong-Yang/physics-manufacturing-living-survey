@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "watch_status": "not_started",
+  "as_of": null,
+  "monitor_scope": "Weekly GitHub repository revision metadata only; no code/model/data/license or scientific claim is reclassified.",
+  "graph_version": "0.9.14",
+  "graph_as_of": "2026-10-11",
+  "unique_github_repositories": 0,
+  "available_n": 0,
+  "check_failed_n": 0,
+  "revision_changes_n": 0,
+  "revision_changes": [],
+  "items": [],
+  "limitations": [
+    "Repository URL and default-branch commit do not prove required assets are usable or licensed.",
+    "The scheduled workflow is not live until a remote repository and GitHub Actions are configured.",
+    "Changed revisions require human evidence and rights review; this monitor does not discover new papers or perform eligibility screening."
+  ]
+}

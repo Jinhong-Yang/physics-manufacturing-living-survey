@@ -1,0 +1,742 @@
+{
+  "created_utc": "2026-10-11T07:06:49.323269+00:00",
+  "schema_version": "1.0",
+  "work_id": "W_neurips_2025_7d71af30fcc1f3f6",
+  "audit_id": "SUP_A05",
+  "artifact_repo": "https://github.com/Taccel-Simulator/Taccel",
+  "artifact_commit": "cb23bc251b531ba6908a3788c2f91423cd543149",
+  "fixed_checkout_files": 1406,
+  "all_git_blobs_matched": true,
+  "archive_batch_line_ending_restorations": 7,
+  "observed_host": "Existing Ubuntu 24.04.4 WSL2 / RTX 5080",
+  "host_source": "Existing Ubuntu capability only. No install, model/physics simulation or generation pass. WSL start is not upstream execution.",
+  "core_binary_python_abi": "CPython 3.10 x86_64 Linux",
+  "readable_core_python_source_files_present": false,
+  "core_source_paths_missing": [
+    "warp_ipc/collision_detection.py",
+    "warp_ipc/ipc_integrator.py",
+    "warp_ipc/sim_model.py"
+  ],
+  "peg_default_output": "Simulation logs and optional PLY scene meshes; no render_tactile call in examples/peg.py.",
+  "gpu_tests": [
+    {
+      "label": "gpu_original",
+      "command_record": {
+        "label": "gpu_original",
+        "command": [
+          "[local research project]/runs/wp1/taccel_execution_20261011/runtime/torch251_cu124/bin/python",
+          "[local research project]/scripts/taccel_linux_gpu_preflight.py",
+          "--cases"
+        ],
+        "exit_code": 0,
+        "seconds": 30.704464761000054,
+        "log": "runs/wp1/taccel_execution_20261011/preflight_logs/gpu_original.log",
+        "log_sha256": "f37d6394b5f9638b30774a35d5e561bfbdb19c79ecd3d063e42325427f48319d"
+      },
+      "result": {
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "cuda_version": "12.4",
+        "cuda_available": true,
+        "cuda_force_ptx_jit": null,
+        "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "python_executable": "[local research project]/runs/wp1/taccel_execution_20261011/runtime/torch251_cu124/bin/python",
+        "device_name": "NVIDIA GeForce RTX 5080",
+        "device_capability": [
+          12,
+          0
+        ],
+        "compiled_arch_list": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "cases": [
+          {
+            "case": "allocate_copy",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0,
+                0.0625,
+                0.125,
+                0.1875
+              ],
+              [
+                0.25,
+                0.3125,
+                0.375,
+                0.4375
+              ],
+              [
+                0.5,
+                0.5625,
+                0.625,
+                0.6875
+              ],
+              [
+                0.75,
+                0.8125,
+                0.875,
+                0.9375
+              ]
+            ],
+            "seconds": 0.20873260899998058
+          },
+          {
+            "case": "add_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 28, in evaluate\n    if op=='add': return v+1\n                         ~^~\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.016243418999920323
+          },
+          {
+            "case": "add_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 28, in evaluate\n    if op=='add': return v+1\n                         ~^~\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.0029837910000196644
+          },
+          {
+            "case": "sine_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 29, in evaluate\n    if op=='sine': return torch.sin(v)\n                          ^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.008912611000027937
+          },
+          {
+            "case": "sine_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 29, in evaluate\n    if op=='sine': return torch.sin(v)\n                          ^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.004060947000084525
+          },
+          {
+            "case": "index_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 30, in evaluate\n    if op=='index': return v[torch.tensor([3,1],device=v.device)]\n                           ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.013108302999967236
+          },
+          {
+            "case": "index_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 30, in evaluate\n    if op=='index': return v[torch.tensor([3,1],device=v.device)]\n                           ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.004372206999960326
+          },
+          {
+            "case": "matmul_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 3.3229718549999916
+          },
+          {
+            "case": "matmul_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 3.1169431660000555
+          },
+          {
+            "case": "solve_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 32, in evaluate\n    if op=='solve': return torch.linalg.solve(v @ v.T + torch.eye(4,dtype=dtype,device=v.device),torch.ones(4,dtype=dtype,device=v.device))\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.036364977999937764
+          },
+          {
+            "case": "solve_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 32, in evaluate\n    if op=='solve': return torch.linalg.solve(v @ v.T + torch.eye(4,dtype=dtype,device=v.device),torch.ones(4,dtype=dtype,device=v.device))\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.00401388600005248
+          }
+        ],
+        "case_count": 11,
+        "passed_case_count": 3,
+        "all_cases_passed": false,
+        "taccel_execution_performed": false,
+        "manufacturing_generation_pass": false,
+        "industrial_pass": false
+      },
+      "log_sha256": "f37d6394b5f9638b30774a35d5e561bfbdb19c79ecd3d063e42325427f48319d"
+    },
+    {
+      "label": "gpu_forced_ptx",
+      "command_record": {
+        "label": "gpu_forced_ptx",
+        "command": [
+          "[local research project]/runs/wp1/taccel_execution_20261011/runtime/torch251_cu124/bin/python",
+          "[local research project]/scripts/taccel_linux_gpu_preflight.py",
+          "--cases"
+        ],
+        "exit_code": 0,
+        "seconds": 12.854987200999972,
+        "log": "runs/wp1/taccel_execution_20261011/preflight_logs/gpu_forced_ptx.log",
+        "log_sha256": "7434f09379a765913b7c4987eb0fee94bf109756257fa93476af0b7c161ac530"
+      },
+      "result": {
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "cuda_version": "12.4",
+        "cuda_available": true,
+        "cuda_force_ptx_jit": "1",
+        "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "python_executable": "[local research project]/runs/wp1/taccel_execution_20261011/runtime/torch251_cu124/bin/python",
+        "device_name": "NVIDIA GeForce RTX 5080",
+        "device_capability": [
+          12,
+          0
+        ],
+        "compiled_arch_list": [
+          "sm_50",
+          "sm_60",
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90"
+        ],
+        "cases": [
+          {
+            "case": "allocate_copy",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0,
+                0.0625,
+                0.125,
+                0.1875
+              ],
+              [
+                0.25,
+                0.3125,
+                0.375,
+                0.4375
+              ],
+              [
+                0.5,
+                0.5625,
+                0.625,
+                0.6875
+              ],
+              [
+                0.75,
+                0.8125,
+                0.875,
+                0.9375
+              ]
+            ],
+            "seconds": 0.22006711699998505
+          },
+          {
+            "case": "add_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 28, in evaluate\n    if op=='add': return v+1\n                         ~^~\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.017989836999959152
+          },
+          {
+            "case": "add_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 28, in evaluate\n    if op=='add': return v+1\n                         ~^~\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.0021281020000287754
+          },
+          {
+            "case": "sine_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 29, in evaluate\n    if op=='sine': return torch.sin(v)\n                          ^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.008432821000042168
+          },
+          {
+            "case": "sine_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 29, in evaluate\n    if op=='sine': return torch.sin(v)\n                          ^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.0032992769999964366
+          },
+          {
+            "case": "index_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 30, in evaluate\n    if op=='index': return v[torch.tensor([3,1],device=v.device)]\n                           ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.011668217999954322
+          },
+          {
+            "case": "index_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 30, in evaluate\n    if op=='index': return v[torch.tensor([3,1],device=v.device)]\n                           ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.002216897000039353
+          },
+          {
+            "case": "matmul_float32",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 0.15171358899999632
+          },
+          {
+            "case": "matmul_float64",
+            "passed": true,
+            "finite": true,
+            "same_shape": true,
+            "allclose": true,
+            "max_absolute_error": 0.0,
+            "values": [
+              [
+                0.0546875,
+                0.1484375,
+                0.2421875,
+                0.3359375
+              ],
+              [
+                0.1484375,
+                0.4921875,
+                0.8359375,
+                1.1796875
+              ],
+              [
+                0.2421875,
+                0.8359375,
+                1.4296875,
+                2.0234375
+              ],
+              [
+                0.3359375,
+                1.1796875,
+                2.0234375,
+                2.8671875
+              ]
+            ],
+            "seconds": 0.025897538000094755
+          },
+          {
+            "case": "solve_float32",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 32, in evaluate\n    if op=='solve': return torch.linalg.solve(v @ v.T + torch.eye(4,dtype=dtype,device=v.device),torch.ones(4,dtype=dtype,device=v.device))\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.022061352000037004
+          },
+          {
+            "case": "solve_float64",
+            "passed": false,
+            "error_type": "RuntimeError",
+            "error": "CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+            "traceback": "Traceback (most recent call last):\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 34, in gpu_cases\n    expected=evaluate(x); actual=evaluate(y)\n                                 ^^^^^^^^^^^\n  File \"[local research project]/scripts/taccel_linux_gpu_preflight.py\", line 32, in evaluate\n    if op=='solve': return torch.linalg.solve(v @ v.T + torch.eye(4,dtype=dtype,device=v.device),torch.ones(4,dtype=dtype,device=v.device))\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: CUDA error: no kernel image is available for execution on the device\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+            "seconds": 0.003916072000038184
+          }
+        ],
+        "case_count": 11,
+        "passed_case_count": 3,
+        "all_cases_passed": false,
+        "taccel_execution_performed": false,
+        "manufacturing_generation_pass": false,
+        "industrial_pass": false
+      },
+      "log_sha256": "7434f09379a765913b7c4987eb0fee94bf109756257fa93476af0b7c161ac530"
+    }
+  ],
+  "local_toolchain_attempts": [
+    {
+      "created_utc": "2026-10-11T06:56:25.547836+00:00",
+      "freeze_sha256": "93c01c0b0954459ecf6b0e19c7a60e11fca1747de9831370ffac0e4d27ca7b64",
+      "commands": [
+        {
+          "label": "toolchain_dry_run",
+          "command": [
+            "[local research project]/runs/wp1/taccel_execution_20261011/downloads/micromamba-linux-64",
+            "--no-rc",
+            "create",
+            "--yes",
+            "--prefix",
+            "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain",
+            "--override-channels",
+            "-c",
+            "conda-forge",
+            "python=3.10",
+            "pip",
+            "gcc_linux-64=12",
+            "gxx_linux-64=12",
+            "cmake",
+            "ninja",
+            "suitesparse",
+            "numpy=1.26.4",
+            "--dry-run",
+            "--json"
+          ],
+          "exit_code": 1,
+          "seconds": 0.06722135800001183,
+          "log": "runs/wp1/taccel_execution_20261011/toolchain_dry_run.log",
+          "log_sha256": "aadfdeed0346f5f16bcc9a97a9596508f72f370a87d7be35567016b377bf78cd"
+        }
+      ],
+      "seconds": 0.06990882400000942,
+      "prefix": "runs/wp1/taccel_execution_20261011/runtime/python310_toolchain",
+      "system_install_performed": false,
+      "taccel_build_performed": false,
+      "taccel_execution_performed": false,
+      "generation_pass": false,
+      "industrial_pass": false
+    },
+    {
+      "created_utc": "2026-10-11T07:03:46.219715+00:00",
+      "freeze_sha256": "7b8e5e89310cef546afb37be799e86450d82035e89bbc322fa5935a530c6ed47",
+      "commands": [
+        {
+          "label": "toolchain_dry_run",
+          "command": [
+            "[local research project]/runs/wp1/taccel_execution_20261011/downloads/micromamba-linux-64",
+            "--no-rc",
+            "create",
+            "--yes",
+            "--prefix",
+            "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain",
+            "--override-channels",
+            "-c",
+            "conda-forge",
+            "python=3.10",
+            "pip",
+            "gcc_linux-64=12",
+            "gxx_linux-64=12",
+            "cmake",
+            "ninja",
+            "suitesparse",
+            "numpy=1.26.4",
+            "--dry-run",
+            "--json"
+          ],
+          "exit_code": 0,
+          "seconds": 5.078924110000003,
+          "log": "runs/wp1/taccel_execution_20261011/toolchain_dry_run_v2.log",
+          "log_sha256": "0f840152f3ea29ccecd2aa0cbf5d75a4b5d0d5654348c3124edf91929e3b53c6"
+        },
+        {
+          "label": "toolchain_create",
+          "command": [
+            "[local research project]/runs/wp1/taccel_execution_20261011/downloads/micromamba-linux-64",
+            "--no-rc",
+            "create",
+            "--yes",
+            "--prefix",
+            "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain",
+            "--override-channels",
+            "-c",
+            "conda-forge",
+            "python=3.10",
+            "pip",
+            "gcc_linux-64=12",
+            "gxx_linux-64=12",
+            "cmake",
+            "ninja",
+            "suitesparse",
+            "numpy=1.26.4",
+            "--json"
+          ],
+          "exit_code": 0,
+          "seconds": 391.789487096,
+          "log": "runs/wp1/taccel_execution_20261011/toolchain_create_v2.log",
+          "log_sha256": "21cfe01d9ce2df8e84d953c717bf71708bda9a7b057cf6ed30e1934dc47b1d8b"
+        },
+        {
+          "label": "toolchain_explicit",
+          "command": [
+            "[local research project]/runs/wp1/taccel_execution_20261011/downloads/micromamba-linux-64",
+            "--no-rc",
+            "list",
+            "--prefix",
+            "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain",
+            "--explicit"
+          ],
+          "exit_code": 0,
+          "seconds": 7.53665171099999,
+          "log": "runs/wp1/taccel_execution_20261011/toolchain_explicit_v2.log",
+          "log_sha256": "f90dcacef8b6ada4ad43f89857bef98c237c14f10266ff99dbea5cd5d76d7c2f"
+        },
+        {
+          "label": "toolchain_python",
+          "command": [
+            "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain/bin/python",
+            "-c",
+            "import sys;print(sys.version)"
+          ],
+          "exit_code": 0,
+          "seconds": 0.16776980000008734,
+          "log": "runs/wp1/taccel_execution_20261011/toolchain_python_v2.log",
+          "log_sha256": "e205fd8de45801def0e7049217fa9d3b1ec5387ed5024629e46ed60c7efa321f"
+        }
+      ],
+      "seconds": 404.61431729800006,
+      "prefix": "runs/wp1/taccel_execution_20261011/runtime/python310_toolchain",
+      "system_install_performed": false,
+      "taccel_build_performed": false,
+      "taccel_execution_performed": false,
+      "generation_pass": false,
+      "industrial_pass": false
+    }
+  ],
+  "first_toolchain_attempt_attribution": "Our harness supplied incompatible --no-rc and CONDARC options; not a Taccel failure.",
+  "taccel_build_performed": false,
+  "taccel_execution_performed": false,
+  "new_manufacturing_generation_pass": false,
+  "independent_physical_pass": false,
+  "industrial_pass": false,
+  "method_run_denominator_added": 0,
+  "scientific_review_completed": false,
+  "independent_human_review": false,
+  "statistical_scope": "Eleven diagnostic operations per process/environment path, not independent studies, simulation runs or production samples.",
+  "graph_counting_scope": "Adjunct environment evidence for existing audit; 45 method run records and prior graph node/edge counts unchanged.",
+  "sources": [
+    {
+      "path": "runs/wp1/taccel_execution_20261011/existing_linux_host_probe.json",
+      "bytes": 73017,
+      "sha256": "6c65dae61176b93ce200aca4055430d45a95a0408f12d20468007b9dc8ff52f4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/build_path_sources.json",
+      "bytes": 4153,
+      "sha256": "006fa06fa877d4ef07729b573b4c19cff0049662b9999436615c195abd356722"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/pinned_checkout_manifest.json",
+      "bytes": 424924,
+      "sha256": "471c36d0ee7002c4883db2fed5ae2751744cf5f7caa5e76e2b81904aa975440a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/archive_tree_comparison.json",
+      "bytes": 2528,
+      "sha256": "8a677e9d35aa6acfa9711320af136b5f814173e59089583c9b5b418b7ec675da"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/runtime_bootstrap_manifest.json",
+      "bytes": 1184,
+      "sha256": "4ac26730624a4a4d209d3fae92635dab27bf1d89328c84c5a4d09284c50c1d0e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/gpu_preflight_freeze.json",
+      "bytes": 567,
+      "sha256": "566217418b41efe3ea364720cd671cf45be1a28f729eb3a6896e2e0736094ce4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/gpu_dependency_preflight.json",
+      "bytes": 3435,
+      "sha256": "f7e5ccabad391f53fdf02a439a6651abc2438385f84762303f3d59cf81cb669c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_freeze.json",
+      "bytes": 884,
+      "sha256": "93c01c0b0954459ecf6b0e19c7a60e11fca1747de9831370ffac0e4d27ca7b64"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_preparation.json",
+      "bytes": 1376,
+      "sha256": "b920f569304904cbe82a96535db503d8e3a2a7a5e48ab29d9c873680bdb2856c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_freeze_v2.json",
+      "bytes": 1276,
+      "sha256": "7b8e5e89310cef546afb37be799e86450d82035e89bbc322fa5935a530c6ed47"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_preparation_v2.json",
+      "bytes": 3447,
+      "sha256": "8337f7ac9ba283cf0ba980fe2a55327ad1d5e0813dec0af056bd71235bba6df1"
+    },
+    {
+      "path": "protocol/Taccel_Local_GPU_Preflight_20261011.md",
+      "bytes": 2864,
+      "sha256": "41ad8171a2f752646a455742bcbd7e1d1c084d9f58dbf37a96ad095d3ec30d30"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/preflight_logs/venv_create.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/preflight_logs/pip_install_original.log",
+      "bytes": 9497,
+      "sha256": "9da6d8b885f02b315a09fcfcae14645a2c339b29279101761098178abdf4832a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/preflight_logs/pip_freeze.log",
+      "bytes": 577,
+      "sha256": "95bcbe68e0777497d836a6dd7e9ae4cb50978645f245cf6887b1b2ffdc22fb35"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/preflight_logs/gpu_original.log",
+      "bytes": 12803,
+      "sha256": "f37d6394b5f9638b30774a35d5e561bfbdb19c79ecd3d063e42325427f48319d"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/preflight_logs/gpu_forced_ptx.log",
+      "bytes": 12807,
+      "sha256": "7434f09379a765913b7c4987eb0fee94bf109756257fa93476af0b7c161ac530"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_dry_run.log",
+      "bytes": 2681,
+      "sha256": "aadfdeed0346f5f16bcc9a97a9596508f72f370a87d7be35567016b377bf78cd"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_dry_run_v2.log",
+      "bytes": 173294,
+      "sha256": "0f840152f3ea29ccecd2aa0cbf5d75a4b5d0d5654348c3124edf91929e3b53c6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_create_v2.log",
+      "bytes": 180584,
+      "sha256": "21cfe01d9ce2df8e84d953c717bf71708bda9a7b057cf6ed30e1934dc47b1d8b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_explicit_v2.log",
+      "bytes": 6961,
+      "sha256": "f90dcacef8b6ada4ad43f89857bef98c237c14f10266ff99dbea5cd5d76d7c2f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_python_v2.log",
+      "bytes": 79,
+      "sha256": "e205fd8de45801def0e7049217fa9d3b1ec5387ed5024629e46ed60c7efa321f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/torch251_install_report.json",
+      "bytes": 180112,
+      "sha256": "72eebdc93fc49178790407394baacc1b4cf28df4d9a7b423ab73aeeb1ab815c2"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_capability_probe.json",
+      "bytes": 1512,
+      "sha256": "71b5a613069bb210f59d3f375387ea6ed66f84e114825866d4750e5b9f0ce6fa"
+    }
+  ],
+  "toolchain_capability_probe": {
+    "path": "runs/wp1/taccel_execution_20261011/toolchain_capability_probe.json",
+    "sha256": "71b5a613069bb210f59d3f375387ea6ed66f84e114825866d4750e5b9f0ce6fa",
+    "gcc_version": "12.4.0",
+    "python_version": "3.10.22",
+    "cmake_version": "4.4.4",
+    "ninja_version": "1.13.2",
+    "cholmod_development_header_present": true,
+    "cuda_nvcc_present": false
+  },
+  "environment_evidence_extension": {
+    "as_of_utc": "2026-10-11T07:14:27.941714+00:00",
+    "parent_snapshot": "runs/wp1/taccel_execution_20261011/runtime_evidence_before_toolchain_probe.json",
+    "parent_sha256": "1e106616ec31b5da46799b55e62c702127d608b7bb297a34417d740e29dc1d2d",
+    "scope": "Only append actual local compiler/header probe; prior dependency tests and no-simulator flags unchanged."
+  }
+}

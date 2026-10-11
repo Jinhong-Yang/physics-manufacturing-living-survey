@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="공개 제조 합성데이터 생성 연구의 근거, 실행성, 물리 검증과 산업 적용 상태를 추적하는 living knowledge graph.">
+  <title>Manufacturing Synthesis Evidence Graph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="홈">
+      <span class="brand-mark">M</span>
+      <span><strong>Manufacturing Synthesis</strong><small>Evidence Graph</small></span>
+    </a>
+    <div class="top-meta"><span class="live-dot"></span><span id="snapshot-label">Loading current snapshot…</span></div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">RESEARCH DISCOVERY · EXECUTION EVIDENCE · INDUSTRIAL READINESS</p>
+        <h1>논문에서 실제 사용 판단까지,<br><em>근거의 연결을 따라가세요.</em></h1>
+        <p class="lede">공개 코드·모델 가운데 오늘 재실행할 수 있는 release와 특정 제조 용도의 사용 근거를 연결합니다. 문헌의 주장, clean-start 생성 결과, profile별 산업 증거를 구분해 보여줍니다.</p>
+      </div>
+      <div class="hero-note"><span class="note-icon">i</span><span>링크 공개만으로 실험 가능이나 산업 사용을 표시하지 않습니다. clean-start 신규 샘플 검증과 제조 profile별 근거가 없으면 보류·미검증으로 남깁니다.<br><small id="revision-watch-status">GitHub repository revision watch: not started.</small></span></div>
+    </section>
+
+    <section class="candidate-feed panel" aria-label="신규 후보 논문 검토 대기열">
+      <div><p class="eyebrow">WEEKLY PAPER DISCOVERY · REVIEW GATE</p><h2>신규 후보는 검토 대기열에서 시작합니다</h2>
+        <p id="discovery-status">2026 부분 연도 공식 proceedings 후보를 불러오는 중입니다…</p>
+      </div>
+      <a id="discovery-download" class="button-link" href="data/discovery_queue_2026_partial.json">후보·출처 목록 열기 ↗</a>
+    </section>
+
+    <section class="candidate-feed panel" aria-label="보충 검색 후보의 초록 확보와 검토 상태">
+      <div><p class="eyebrow">SUPPLEMENTAL SEARCH · INDEPENDENT REVIEW PENDING</p><h2>초록 확보와 연구 포함 판정을 구분합니다</h2>
+        <p id="sensitivity-recovery-status">보충 검색 후보의 공식 초록 확보 상태를 불러오는 중입니다…</p>
+<p id="sensitivity-fulltext-status">보충 원문 확보 기록을 불러오는 중입니다.</p>
+<p><a href="data/supplemental_fulltext_evidence.json">원문 확보 및 공개 구현 감사 기록 열기 ↗</a></p>
+      </div>
+      <a class="button-link" href="data/supplemental_abstract_evidence.json">후보·공식 출처 목록 ↗</a>
+    </section>
+
+    <section class="candidate-feed panel" aria-label="센서 데이터 생성의 제조 적용 조건">
+      <div><p class="eyebrow">PUBLIC IMPLEMENTATION · CALIBRATION · INDUSTRIAL USE</p><h2>생성 결과를 제조 현장에 쓸 수 있는가</h2>
+        <p>열영상 외관, 초분광 측정, 촉각 변형은 각각 검증할 물리량이 다릅니다. 아래의 초기 정적 감사는 당시 상태로 보존하며, 나중 실행 근거를 별도 연결합니다. 이 감사 자체는 신규 실행이나 산업 합격을 뜻하지 않습니다.</p>
+        <div id="sensor-audit-list">후보별 적용 조건을 불러오는 중입니다.</div>
+      </div>
+    </section>
+
+    <section class="candidate-feed panel" aria-label="Taccel 실행 환경의 실제 시험 결과">
+      <div><p class="eyebrow">OBSERVED ENVIRONMENT · DEPENDENCY COMPARISON</p><h2>지정 버전과 호환성 변경 경로의 실제 GPU 시험</h2>
+        <p id="taccel-runtime-status">Taccel의 실행 환경 사전 시험 결과를 불러오는 중입니다.</p>
+        <p>이 시험은 시뮬레이션이나 촉각 데이터 생성, 제조 현장의 품질 검증과 구분합니다.</p>
+      </div>
+      <div><a class="button-link" href="data/taccel_dependency_pair.json">같은 Python의 비교 근거 ↗</a>
+        <p><a href="data/taccel_runtime_evidence.json">최초 사전 시험 기록</a></p></div>
+    </section>
+
+    <section class="candidate-feed panel" aria-label="원본 Taccel 예제의 후속 실행">
+      <div><p class="eyebrow">ORIGINAL EXAMPLE · RETAINED FAILURES · OUTPUT SCOPE</p><h2>원본 예제의 실행과 출력 검증</h2><p id="peg-summary">실제 예제의 후속 관측을 불러오는 중입니다.</p></div>
+      <a class="button-link" href="taccel_peg.html">형상 출력과 산업 판정 근거 ↗</a>
+    </section>
+    <section class="candidate-feed panel" aria-label="저장 형상의 요소 변형 검사">
+      <div><p class="eyebrow">관측 형상 · 부분 물리 진단</p><h2>요소 변형과 제조 검증 범위</h2><p>32개 형상 프레임의 국소 요소 뒤집힘은 검출되지 않았습니다. 접촉·힘·실측·제조 적격은 별도 검증이 필요합니다.</p></div>
+      <a class="button-link" href="taccel_saved_geometry.html">검사한 범위와 남은 검증 ↗</a>
+    </section>
+    <section class="candidate-feed panel" aria-label="물리 설계와 모델 실행"><div><p class="eyebrow">공식 논문과 실행 관측</p><h2>물리 근거와 실제 출력의 차이</h2><p>TIDES와 PhysX-3D의 저자 보고, 원본 실행 및 별도 관찰의 범위를 확인합니다.</p></div><a class="button-link" href="physical_design_evidence.html">물리 설계 근거 보기 ↗</a></section>
+    <section class="candidate-feed panel" aria-label="GearFormer 실행 결과"><div><p class="eyebrow">공개 모델의 실제 생성</p><h2>같은 토큰과 다른 부품 해석</h2><p>3,679개 입력의 설정별 결과와 문법·충돌 검사의 범위를 확인합니다.</p></div><a class="button-link" href="gearformer_execution.html">공개 모델 실행 근거 보기 ↗</a></section>
+<section class="candidate-feed panel" aria-label="제조 설계 실행 조건"><div><p class="eyebrow">모델·입력·제조 조건</p><h2>공개 자산에서 실행까지</h2><p>GearFormer와 CNC-Net의 모델·데이터 규약, 실행 방식과 물리 검증 범위를 확인합니다.</p></div><a class="button-link" href="manufacturing_design_readings.html">제조 설계 근거 보기 ↗</a></section>
+<section class="candidate-feed panel" aria-label="보충자료 근거"><div><p class="eyebrow">입력과 물리 가정의 확인</p><h2>보충자료의 제조 사용 조건</h2><p>11개 부록의 비용·실패·물리 검증 조건과 남은 질문을 확인하세요. 새 실행·산업 통과와 구분합니다.</p></div><a class="button-link" href="supplement_readings.html">보충자료 근거 보기 ↗</a></section>
+<section class="candidate-feed panel" aria-label="버전별 실제 실행"><div><p class="eyebrow">소스와 가중치의 호환성</p><h2>공개 모델의 버전별 실행 결과</h2><p>M2PDE의 현재 소스 실패와 과거 소스의 수정 생성 결과, 수치 비교와 산업 검증 범위를 함께 확인하세요.</p></div><a class="button-link" href="m2pde_execution.html">실행 조건과 결과 보기 ↗</a></section>
+    <section class="candidate-feed panel" aria-label="경계 비교 논문 추가 검토"><div><p class="eyebrow">지표 정의 · 버전 · 사용 조건</p><h2>추가 4편의 원문과 실행 계약</h2><p>취득 PDF106쪽을 검토해 누적18편335쪽의 근거를 연결했습니다. 저장소 관측2건과 미해결 출처 차이를 확인할 수 있습니다.</p></div><a class="button-link" href="boundary_readings.html">추가 근거와 계획된 실험 ↗</a></section>
+    <section class="candidate-feed panel" aria-label="고정 우선 후보 원문 검토"><div><p class="eyebrow">원문 범위 · 공개 자산 · 산업 적용 근거</p><h2>14편의 원문 검토와 사용 판단 근거</h2><p>취득 PDF229쪽을 같은 AI가 검토했습니다. 독립 심사·최종 포함 판정과 실행·물리·산업 검증은 별도입니다.</p></div><a class="button-link" href="main_candidate_readings.html">후보별 근거와 미확인 조건 ↗</a></section>
+    <section class="metrics" aria-label="현재 데이터 현황">
+      <article class="metric"><span class="metric-value" id="metric-records">—</span><span class="metric-label">연구·비교 기록</span><small>2026-10-11 스냅샷 · targeted audit 16 · discovery/comparator 40</small></article>
+      <article class="metric"><span class="metric-value" id="metric-sensitivity">—</span><span class="metric-label">보충 제목 민감도 후보</span><small>고유 연구; 초록 확보와 포함 판정은 별도</small></article>
+      <article class="metric"><span class="metric-value" id="metric-artifacts">—</span><span class="metric-label">공개 코드·모델 링크</span><small>저장소 링크 수 · 가중치·권리·실행성 미확정 포함</small></article>
+      <article class="metric"><span class="metric-value" id="metric-runs">—</span><span class="metric-label">신규 출력 관측 방법</span><small>부분 실행 포함 · 완전한 과학 검증·산업 통과와 별도</small></article>
+      <article class="metric"><span class="metric-value" id="metric-industrial">—</span><span class="metric-label">산업 준비 통과</span><small>용도별 근거 필요</small></article>
+    </section>
+
+    <section class="workspace">
+      <aside class="browse-panel panel">
+        <div class="panel-heading"><div><p class="eyebrow">EVIDENCE CATALOG</p><h2>연구 기록</h2></div><span id="result-count" class="count-pill">—</span></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="논문, 방법, venue, 태그 검색" autocomplete="off"><kbd>/</kbd></label>
+        <div class="filters">
+          <label>문헌 층<select id="stratum"><option value="">전체</option><option value="visual">시각 합성</option><option value="physics">물리·물리장 생성</option><option value="boundary">리뷰·플랫폼 비교</option><option value="priority_fulltext_targeted_audit">우선후보 전문표적감사</option><option value="discovery">제조 전이 비교군</option><option value="direct_manufacturing_transfer">제조 직접 전이·산업 실증 비교</option><option value="manufacturing_dataset">제조 데이터셋 비교군</option><option value="manufacturing_generator">제조 CAD 생성 비교군</option><option value="manufacturing_simulation">제조 공정 시뮬레이터</option><option value="engineering_sim2real_comparator">공학·sim-to-real 선행 비교</option><option value="prior_art">선행 서베이</option><option value="industrial_systems">산업 시스템·기반모델</option></select></label>
+          <label>공개 구현<select id="artifact"><option value="">전체</option><option value="yes">링크 확인</option><option value="no">확인 안 됨</option></select></label>
+          <label>물리 결합<select id="physics"><option value="">전체</option><option value="C0">C0 · 미식별</option><option value="C1">C1 · 생성 데이터</option><option value="C2">C2 · 구조 제약</option><option value="C3">C3 · 물리 손실</option><option value="C4">C4 · 추론 제약</option><option value="C5">C5 · 사후 검사</option></select></label>
+        </div>
+        <div class="list-tools"><span>검색 결과</span><button id="clear-filters" class="text-button" type="button">초기화</button></div>
+        <div id="record-list" class="record-list" role="listbox" aria-label="연구 기록 목록"></div>
+      </aside>
+
+      <section class="detail-column">
+        <article class="panel detail-panel" id="record-detail" aria-live="polite">
+          <div class="loading">지식그래프를 불러오는 중입니다…</div>
+        </article>
+        <article class="panel graph-panel">
+          <div class="panel-heading graph-heading"><div><p class="eyebrow">PROVENANCE PATH</p><h2>근거 관계</h2></div><span class="mini-caption">기록을 선택하면 연결이 바뀝니다</span></div>
+          <div id="graph-view" class="graph-view" aria-label="선택된 연구 기록의 근거 관계"></div>
+          <div class="legend"><span><i class="legend-dot paper"></i>연구</span><span><i class="legend-dot method"></i>방법</span><span><i class="legend-dot artifact"></i>공개 구현</span><span><i class="legend-dot evidence"></i>근거</span></div>
+        </article>
+      </section>
+    </section>
+    <p><a href="taccel_peg.html">Taccel 원본 예제의 실제 실행과 산업 적용 판정</a></p>
+    <footer><span>Physics-Consistent Manufacturing Synthetic Data · Living Evidence Graph</span><span id="footer-status">Static evidence snapshot · repository revision watch is metadata-only</span></footer>
+  </main>
+  <script src="data/knowledge_graph.js?v=0.9.39"></script>
+  <script src="execution_evidence.js"></script>
+  <script src="app.js?v=0.9.39" defer></script>
+<script src="taccel_runtime.js?v=1.1" defer></script>
+</body>
+</html>

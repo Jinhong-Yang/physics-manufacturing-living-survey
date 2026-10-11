@@ -1,0 +1,986 @@
+{
+  "created_utc": "2026-10-11T10:06:40.189607+00:00",
+  "related_work_node": "work:SUP_A05",
+  "analysis_kind": "posthoc_saved_geometry_alternate_reader_and_analytic_element_diagnostics",
+  "observed_frames": 32,
+  "planned_frames": 200,
+  "unobserved_frames": 168,
+  "sensor_meshes": 2,
+  "tetrahedra_per_mesh": 317,
+  "total_correlated_element_frame_evaluations": 20288,
+  "minimum_relative_J": 0.8229089661892354,
+  "maximum_relative_J": 1.0462526653226683,
+  "nonpositive_J_detected": 0,
+  "minimum_principal_stretch": 0.721648059424658,
+  "maximum_principal_stretch": 1.1964410274720043,
+  "alternate_arithmetic_verification_passed": true,
+  "sources": [
+    {
+      "path": "scripts/analyze_taccel_saved_geometry.py",
+      "bytes": 12109,
+      "sha256": "333e3da1583147ba0eec80725f762d6e71324292f34a7cd9c7f8211a3fe8c154"
+    },
+    {
+      "path": "scripts/check_taccel_saved_geometry.py",
+      "bytes": 5639,
+      "sha256": "7b80a58fe03c514d991b869980d30f3809ee6e236e580dfe635f8d608eafe0d4"
+    },
+    {
+      "path": "scripts/write_taccel_saved_geometry_supplement.py",
+      "bytes": 9488,
+      "sha256": "5633b24b425b3dab83f30764ca776290e90f479d517c73569122d3620974a72f"
+    },
+    {
+      "path": "scripts/plot_taccel_saved_geometry.py",
+      "bytes": 2850,
+      "sha256": "d33db8480ce4d9926ef2a4f087b1d38ea25171ad3d2233ad808590ff8e0fa07a"
+    },
+    {
+      "path": "scripts/render_taccel_saved_geometry_report.py",
+      "bytes": 7116,
+      "sha256": "4925516db1afb6588bca5a95aa1fe258cf97a5915bf2b93c14c31b9edfba6c3f"
+    },
+    {
+      "path": "protocol/Taccel_Saved_Geometry_Invariants_20261011.md",
+      "bytes": 4090,
+      "sha256": "adb029119fc65a793ac1abee5a82c20cef432dd0950097bf3242d6df8b9cd278"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_freeze.json",
+      "bytes": 815,
+      "sha256": "cc70a6a23da76910993f404a5bcd543f961719ecccfafb9fbe5544f83b87a0c9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_invariants.json",
+      "bytes": 81921,
+      "sha256": "f5829a57ed356df26408578f66852e4b93a4f3bcf0c276a75b5ba36b7f270e21"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_validation.json",
+      "bytes": 931,
+      "sha256": "225549f7857d087a265d5437863b752eb324a54e84f440772efba623e0622d1c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_frame_metrics.csv",
+      "bytes": 7029,
+      "sha256": "b7726a1a0b68bc4e8152b8909545fa41221cb156a4f2597a97827216ea7f584a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_plot_manifest.json",
+      "bytes": 767,
+      "sha256": "2fc38a74b7739ed20d7d606879c11c38cc7966d19a18ef558fa3a226bc00cd47"
+    },
+    {
+      "path": "output/Taccel_Saved_Geometry_Report_KO.md",
+      "bytes": 5231,
+      "sha256": "3384900c5d9e838c4db1c00ac4c387efbe6e019007c9cedc82c1c08ebf2b026a"
+    },
+    {
+      "path": "output/pdf/Taccel_Saved_Geometry_Report_KO.pdf",
+      "bytes": 299948,
+      "sha256": "87b7e953f1ee7a8ccc8ca6f753acdb6a2b29893ec7a882609097a656e99127ec"
+    },
+    {
+      "path": "output/pdf/Taccel_Saved_Geometry_Figure.pdf",
+      "bytes": 16805,
+      "sha256": "526c8b4af0e786fc36e678798060fd8a5f26944dc43d66b8ce0600b7a7e1cf84"
+    },
+    {
+      "path": "output/pdf/Taccel_Saved_Geometry_Figure.png",
+      "bytes": 163771,
+      "sha256": "694a106a1805b3b058c70c875a0c1679f02d67171d2be4297b561dcb96ab9f51"
+    },
+    {
+      "path": "manuscript/supplements/taccel_saved_geometry_results.tex",
+      "bytes": 2787,
+      "sha256": "bb4532a3e7acdc53c7fa39666e0ee1a5ae24084e7aa816f1077c87a54816c2db"
+    },
+    {
+      "path": "manuscript/figures/taccel_saved_geometry.pdf",
+      "bytes": 16805,
+      "sha256": "526c8b4af0e786fc36e678798060fd8a5f26944dc43d66b8ce0600b7a7e1cf84"
+    },
+    {
+      "path": "scripts/export_taccel_element_metrics.py",
+      "bytes": 3763,
+      "sha256": "d6483215a631ef20d150bf6b8d1e7c9592d4bef422b8b1b4ded59e2d4f649ad2"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_element_metrics.csv",
+      "bytes": 2557478,
+      "sha256": "a4f965cf23be75f85af3ca65f1d94a99abac277e7ec9b72124526a5c86037322"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_element_metrics_validation.json",
+      "bytes": 838,
+      "sha256": "4047e214f039395d2c62385318880e8e582afcfb82cf42b487c2bbd073cd1e04"
+    }
+  ],
+  "graph_integration_pending": false,
+  "compiled_main_integration_pending": false,
+  "main_manuscript_revision": "4.07",
+  "plan_revision": "4.06",
+  "public_graph_revision": "0.9.32",
+  "full_trajectory_complete": false,
+  "new_method_runs": 0,
+  "independent_human_review": false,
+  "independent_physical_pass": false,
+  "scientific_R4_pass": false,
+  "industrial_pass": false,
+  "limits": "Surface topology matched correspondence, not direct native tetra-state observation. Positive local J does not establish contact nonpenetration, global injectivity, force accuracy, constitutive validity, metrology, full trajectory or industrial qualification. Correlated frames/elements are not independent observations.",
+  "element_metric_rows": 20288,
+  "all_element_matrix_scalar_values_agree": true,
+  "maximum_all_element_arithmetic_difference": 8.881784197001252e-16,
+  "derived_from": "service/data/taccel_saved_geometry_evidence.json",
+  "derived_from_sha256": "3a9dd150f11292e02c1fd80de08e9f685bf1d8e15000b75fa35b19d4564ec351",
+  "source_main_integration_completed": true,
+  "qualification_layers": [
+    {
+      "layer": "local_element_geometry",
+      "label": "국소 요소 변형",
+      "status": "no_nonpositive_J_detected_in_observed_frames"
+    },
+    {
+      "layer": "contact_geometry",
+      "label": "물체 간 접촉·관통",
+      "status": "not_assessed"
+    },
+    {
+      "layer": "force_dynamics",
+      "label": "힘·마찰·동역학",
+      "status": "not_assessed"
+    },
+    {
+      "layer": "measured_sensor_fidelity",
+      "label": "실측 센서 정확성",
+      "status": "not_assessed"
+    },
+    {
+      "layer": "named_manufacturing_task",
+      "label": "특정 제조 작업 적격성",
+      "status": "not_assessed"
+    }
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.9999725260928795,
+          "maximum_J": 1.0000261914492834,
+          "rest_volume_weighted_mean_J": 0.9999998600405574,
+          "minimum_principal_stretch": 0.9999122582556583,
+          "maximum_principal_stretch": 1.0000888741764329
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.9999724523269393,
+          "maximum_J": 1.0000262095862569,
+          "rest_volume_weighted_mean_J": 0.9999998208098633,
+          "minimum_principal_stretch": 0.9999122432909479,
+          "maximum_principal_stretch": 1.0000888637675598
+        }
+      ]
+    },
+    {
+      "frame_index": 1,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.9993389647966378,
+          "maximum_J": 1.0001306152669032,
+          "rest_volume_weighted_mean_J": 0.9998288287838737,
+          "minimum_principal_stretch": 0.9986773178241276,
+          "maximum_principal_stretch": 1.000870005856768
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.9992607678553452,
+          "maximum_J": 1.0001456985361108,
+          "rest_volume_weighted_mean_J": 0.9998169581631394,
+          "minimum_principal_stretch": 0.9985478069128536,
+          "maximum_principal_stretch": 1.0010028967023574
+        }
+      ]
+    },
+    {
+      "frame_index": 2,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.913359181727401,
+          "maximum_J": 1.0200358482651652,
+          "rest_volume_weighted_mean_J": 0.9695607933840519,
+          "minimum_principal_stretch": 0.8854397012965879,
+          "maximum_principal_stretch": 1.0681962174408075
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.9077590165387259,
+          "maximum_J": 1.0196234777275701,
+          "rest_volume_weighted_mean_J": 0.9694496233209202,
+          "minimum_principal_stretch": 0.8755253781620664,
+          "maximum_principal_stretch": 1.0675021005016276
+        }
+      ]
+    },
+    {
+      "frame_index": 3,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8800872475124977,
+          "maximum_J": 1.0275265724612743,
+          "rest_volume_weighted_mean_J": 0.9552428014617848,
+          "minimum_principal_stretch": 0.839166753826646,
+          "maximum_principal_stretch": 1.1049045995214724
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8656029961992217,
+          "maximum_J": 1.0281338518313086,
+          "rest_volume_weighted_mean_J": 0.9549941229752819,
+          "minimum_principal_stretch": 0.8201269436573012,
+          "maximum_principal_stretch": 1.1038867514190118
+        }
+      ]
+    },
+    {
+      "frame_index": 4,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.859636907887958,
+          "maximum_J": 1.033955719840647,
+          "rest_volume_weighted_mean_J": 0.9421130704014964,
+          "minimum_principal_stretch": 0.7909646438211436,
+          "maximum_principal_stretch": 1.1447425580973978
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8380563930062868,
+          "maximum_J": 1.0354291615547495,
+          "rest_volume_weighted_mean_J": 0.9419742310208455,
+          "minimum_principal_stretch": 0.7819611787670387,
+          "maximum_principal_stretch": 1.1434336270914354
+        }
+      ]
+    },
+    {
+      "frame_index": 5,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8476183723069767,
+          "maximum_J": 1.041450503807225,
+          "rest_volume_weighted_mean_J": 0.9292337892741025,
+          "minimum_principal_stretch": 0.7445176836761438,
+          "maximum_principal_stretch": 1.1853790831362117
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8229089661892354,
+          "maximum_J": 1.0440058796106022,
+          "rest_volume_weighted_mean_J": 0.9290934511666761,
+          "minimum_principal_stretch": 0.7366478910504367,
+          "maximum_principal_stretch": 1.1848103118910829
+        }
+      ]
+    },
+    {
+      "frame_index": 6,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8508424910088296,
+          "maximum_J": 1.0385462878336669,
+          "rest_volume_weighted_mean_J": 0.931168230035996,
+          "minimum_principal_stretch": 0.742084719512491,
+          "maximum_principal_stretch": 1.1874412660525735
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8416308866967517,
+          "maximum_J": 1.0444694115000108,
+          "rest_volume_weighted_mean_J": 0.931049075014051,
+          "minimum_principal_stretch": 0.73227432240857,
+          "maximum_principal_stretch": 1.1893646661082384
+        }
+      ]
+    },
+    {
+      "frame_index": 7,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8503566728572698,
+          "maximum_J": 1.0352989690164447,
+          "rest_volume_weighted_mean_J": 0.9321959561094283,
+          "minimum_principal_stretch": 0.7414987914577399,
+          "maximum_principal_stretch": 1.1869232174205115
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8497578107267951,
+          "maximum_J": 1.0432812242811011,
+          "rest_volume_weighted_mean_J": 0.9320485030600072,
+          "minimum_principal_stretch": 0.7302654009939291,
+          "maximum_principal_stretch": 1.1905819858607094
+        }
+      ]
+    },
+    {
+      "frame_index": 8,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8500961459163081,
+          "maximum_J": 1.0328166934760081,
+          "rest_volume_weighted_mean_J": 0.9329016110208315,
+          "minimum_principal_stretch": 0.741652592789102,
+          "maximum_principal_stretch": 1.1864056362549678
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8495153078413565,
+          "maximum_J": 1.0427661861459734,
+          "rest_volume_weighted_mean_J": 0.932780979288205,
+          "minimum_principal_stretch": 0.728829092672224,
+          "maximum_principal_stretch": 1.1915758049162144
+        }
+      ]
+    },
+    {
+      "frame_index": 9,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8501516430099544,
+          "maximum_J": 1.0309449440961196,
+          "rest_volume_weighted_mean_J": 0.9334281427876742,
+          "minimum_principal_stretch": 0.74212150478762,
+          "maximum_principal_stretch": 1.1860231966571204
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8495138787198976,
+          "maximum_J": 1.042603194326911,
+          "rest_volume_weighted_mean_J": 0.9332905928956519,
+          "minimum_principal_stretch": 0.7278334262828964,
+          "maximum_principal_stretch": 1.1924854784615582
+        }
+      ]
+    },
+    {
+      "frame_index": 10,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8499458934454872,
+          "maximum_J": 1.029422859141461,
+          "rest_volume_weighted_mean_J": 0.9337802264972817,
+          "minimum_principal_stretch": 0.7422342023554709,
+          "maximum_principal_stretch": 1.1858065685724062
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8493658383775682,
+          "maximum_J": 1.042614122623299,
+          "rest_volume_weighted_mean_J": 0.9336799020178438,
+          "minimum_principal_stretch": 0.7266507792686457,
+          "maximum_principal_stretch": 1.193113793611549
+        }
+      ]
+    },
+    {
+      "frame_index": 11,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8500322075885006,
+          "maximum_J": 1.0282340780737451,
+          "rest_volume_weighted_mean_J": 0.9340579362746424,
+          "minimum_principal_stretch": 0.7426812229019425,
+          "maximum_principal_stretch": 1.1856659380050416
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8494162780637114,
+          "maximum_J": 1.0428025609357172,
+          "rest_volume_weighted_mean_J": 0.933942404478187,
+          "minimum_principal_stretch": 0.7258119192633891,
+          "maximum_principal_stretch": 1.1936924011407404
+        }
+      ]
+    },
+    {
+      "frame_index": 12,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8498408655508632,
+          "maximum_J": 1.027220868441073,
+          "rest_volume_weighted_mean_J": 0.9342243807633126,
+          "minimum_principal_stretch": 0.7426954383273245,
+          "maximum_principal_stretch": 1.1856155499187373
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.849248747872463,
+          "maximum_J": 1.0430023866845692,
+          "rest_volume_weighted_mean_J": 0.9341327257874655,
+          "minimum_principal_stretch": 0.7249059618735464,
+          "maximum_principal_stretch": 1.1941649027779244
+        }
+      ]
+    },
+    {
+      "frame_index": 13,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8499628369973465,
+          "maximum_J": 1.0264320465818049,
+          "rest_volume_weighted_mean_J": 0.9343652152083115,
+          "minimum_principal_stretch": 0.7431142331689217,
+          "maximum_principal_stretch": 1.1855896939257513
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8493556220941195,
+          "maximum_J": 1.0433033450033544,
+          "rest_volume_weighted_mean_J": 0.9342541317474996,
+          "minimum_principal_stretch": 0.7243616131701182,
+          "maximum_principal_stretch": 1.1946194854543184
+        }
+      ]
+    },
+    {
+      "frame_index": 14,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8497584967243698,
+          "maximum_J": 1.0257698487533158,
+          "rest_volume_weighted_mean_J": 0.9344168264602185,
+          "minimum_principal_stretch": 0.7430893395262491,
+          "maximum_principal_stretch": 1.1857025089641473
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8493449392038679,
+          "maximum_J": 1.043499681805441,
+          "rest_volume_weighted_mean_J": 0.9343652510355653,
+          "minimum_principal_stretch": 0.7237330929953633,
+          "maximum_principal_stretch": 1.194864403442214
+        }
+      ]
+    },
+    {
+      "frame_index": 15,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8497965457105263,
+          "maximum_J": 1.0253335029622768,
+          "rest_volume_weighted_mean_J": 0.9344642776863749,
+          "minimum_principal_stretch": 0.7433768188846155,
+          "maximum_principal_stretch": 1.1858832204932168
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8496123850698108,
+          "maximum_J": 1.0436736048372006,
+          "rest_volume_weighted_mean_J": 0.9344289580699319,
+          "minimum_principal_stretch": 0.72346188588968,
+          "maximum_principal_stretch": 1.1950619630275303
+        }
+      ]
+    },
+    {
+      "frame_index": 16,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8496622577491897,
+          "maximum_J": 1.0248875823768262,
+          "rest_volume_weighted_mean_J": 0.9345011310122529,
+          "minimum_principal_stretch": 0.7434042306293138,
+          "maximum_principal_stretch": 1.1859981389937422
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8496275552634356,
+          "maximum_J": 1.0438726495521427,
+          "rest_volume_weighted_mean_J": 0.9344492210758811,
+          "minimum_principal_stretch": 0.7229693037617076,
+          "maximum_principal_stretch": 1.1952432328767393
+        }
+      ]
+    },
+    {
+      "frame_index": 17,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8495564475876946,
+          "maximum_J": 1.0245067972002948,
+          "rest_volume_weighted_mean_J": 0.9345238625651723,
+          "minimum_principal_stretch": 0.743472128593745,
+          "maximum_principal_stretch": 1.1861060951958928
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8496747901615158,
+          "maximum_J": 1.0440717134583015,
+          "rest_volume_weighted_mean_J": 0.9344507235202733,
+          "minimum_principal_stretch": 0.7225553695821337,
+          "maximum_principal_stretch": 1.1954239604753436
+        }
+      ]
+    },
+    {
+      "frame_index": 18,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8496532912891246,
+          "maximum_J": 1.0242353843105831,
+          "rest_volume_weighted_mean_J": 0.9345435743562195,
+          "minimum_principal_stretch": 0.7437800437169748,
+          "maximum_principal_stretch": 1.1862322937054588
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8499377544310962,
+          "maximum_J": 1.0443063593097042,
+          "rest_volume_weighted_mean_J": 0.9344398829761413,
+          "minimum_principal_stretch": 0.7224191122236999,
+          "maximum_principal_stretch": 1.1955865780032644
+        }
+      ]
+    },
+    {
+      "frame_index": 19,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.849523425238447,
+          "maximum_J": 1.023949800294107,
+          "rest_volume_weighted_mean_J": 0.9345365201672615,
+          "minimum_principal_stretch": 0.7437722789960248,
+          "maximum_principal_stretch": 1.1863664113574452
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8500349491971967,
+          "maximum_J": 1.0445049887701428,
+          "rest_volume_weighted_mean_J": 0.9344285899728583,
+          "minimum_principal_stretch": 0.7221047719178663,
+          "maximum_principal_stretch": 1.195673132711206
+        }
+      ]
+    },
+    {
+      "frame_index": 20,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8496064649732317,
+          "maximum_J": 1.023284435194658,
+          "rest_volume_weighted_mean_J": 0.9345522077991972,
+          "minimum_principal_stretch": 0.7440448437629286,
+          "maximum_principal_stretch": 1.1865693077418937
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8503452801933439,
+          "maximum_J": 1.0447408906750897,
+          "rest_volume_weighted_mean_J": 0.934406110537982,
+          "minimum_principal_stretch": 0.7220163003536477,
+          "maximum_principal_stretch": 1.1957695478015786
+        }
+      ]
+    },
+    {
+      "frame_index": 21,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8494709750219054,
+          "maximum_J": 1.02333956329129,
+          "rest_volume_weighted_mean_J": 0.934530703722433,
+          "minimum_principal_stretch": 0.7439948779172585,
+          "maximum_principal_stretch": 1.1866907648096963
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8505178876951418,
+          "maximum_J": 1.0449258077679424,
+          "rest_volume_weighted_mean_J": 0.9343894553394748,
+          "minimum_principal_stretch": 0.7218141061166112,
+          "maximum_principal_stretch": 1.1957929302533616
+        }
+      ]
+    },
+    {
+      "frame_index": 22,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8493790792981725,
+          "maximum_J": 1.0232241023821067,
+          "rest_volume_weighted_mean_J": 0.934515911567811,
+          "minimum_principal_stretch": 0.7440074123256554,
+          "maximum_principal_stretch": 1.1868167002140315
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.850731755475282,
+          "maximum_J": 1.0451129140543174,
+          "rest_volume_weighted_mean_J": 0.9343604096133108,
+          "minimum_principal_stretch": 0.721648059424658,
+          "maximum_principal_stretch": 1.1958286028537413
+        }
+      ]
+    },
+    {
+      "frame_index": 23,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8494926894436566,
+          "maximum_J": 1.0232892577599293,
+          "rest_volume_weighted_mean_J": 0.9345089189375424,
+          "minimum_principal_stretch": 0.7442702287931897,
+          "maximum_principal_stretch": 1.186955121536214
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8511904660777626,
+          "maximum_J": 1.0453260372236406,
+          "rest_volume_weighted_mean_J": 0.9343305520891104,
+          "minimum_principal_stretch": 0.7217578934566914,
+          "maximum_principal_stretch": 1.1958555921570333
+        }
+      ]
+    },
+    {
+      "frame_index": 24,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.849374996627367,
+          "maximum_J": 1.0234112638730588,
+          "rest_volume_weighted_mean_J": 0.9344820322409542,
+          "minimum_principal_stretch": 0.7442090429767826,
+          "maximum_principal_stretch": 1.1870682299182347
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8514808595823888,
+          "maximum_J": 1.0455060886843608,
+          "rest_volume_weighted_mean_J": 0.9343046993861804,
+          "minimum_principal_stretch": 0.7216602587117594,
+          "maximum_principal_stretch": 1.19582476278442
+        }
+      ]
+    },
+    {
+      "frame_index": 25,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8494189934215759,
+          "maximum_J": 1.0247796024852829,
+          "rest_volume_weighted_mean_J": 0.9344334258280476,
+          "minimum_principal_stretch": 0.744364785489909,
+          "maximum_principal_stretch": 1.1869968732804788
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8519094209950719,
+          "maximum_J": 1.045680579121896,
+          "rest_volume_weighted_mean_J": 0.9342582986084769,
+          "minimum_principal_stretch": 0.7217381164241508,
+          "maximum_principal_stretch": 1.1958395387728424
+        }
+      ]
+    },
+    {
+      "frame_index": 26,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8492685090719468,
+          "maximum_J": 1.0259358567043837,
+          "rest_volume_weighted_mean_J": 0.9343843480679499,
+          "minimum_principal_stretch": 0.7442964395375765,
+          "maximum_principal_stretch": 1.186969373969383
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.852198920287667,
+          "maximum_J": 1.045790190143848,
+          "rest_volume_weighted_mean_J": 0.934214494467539,
+          "minimum_principal_stretch": 0.7216519301965415,
+          "maximum_principal_stretch": 1.1958351093961355
+        }
+      ]
+    },
+    {
+      "frame_index": 27,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8493603926440267,
+          "maximum_J": 1.0268273297454065,
+          "rest_volume_weighted_mean_J": 0.9343507241449756,
+          "minimum_principal_stretch": 0.7445613204518138,
+          "maximum_principal_stretch": 1.1870026269601155
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8527479114948273,
+          "maximum_J": 1.0459031544668724,
+          "rest_volume_weighted_mean_J": 0.9341653475850408,
+          "minimum_principal_stretch": 0.7218392746469143,
+          "maximum_principal_stretch": 1.195869794599138
+        }
+      ]
+    },
+    {
+      "frame_index": 28,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8492894075036183,
+          "maximum_J": 1.0273027450134826,
+          "rest_volume_weighted_mean_J": 0.934304204217516,
+          "minimum_principal_stretch": 0.7445190322184577,
+          "maximum_principal_stretch": 1.187024196779299
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8529070770642428,
+          "maximum_J": 1.045972441255643,
+          "rest_volume_weighted_mean_J": 0.93409527406516,
+          "minimum_principal_stretch": 0.7218912279930341,
+          "maximum_principal_stretch": 1.1960979091377288
+        }
+      ]
+    },
+    {
+      "frame_index": 29,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8492422309977303,
+          "maximum_J": 1.0277355422289751,
+          "rest_volume_weighted_mean_J": 0.9342481957699493,
+          "minimum_principal_stretch": 0.7442378288821544,
+          "maximum_principal_stretch": 1.1870148402055865
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8532378728590359,
+          "maximum_J": 1.0460575026753458,
+          "rest_volume_weighted_mean_J": 0.9340237094381147,
+          "minimum_principal_stretch": 0.7219404561207032,
+          "maximum_principal_stretch": 1.1963502227085403
+        }
+      ]
+    },
+    {
+      "frame_index": 30,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8491588513553904,
+          "maximum_J": 1.0280680757715306,
+          "rest_volume_weighted_mean_J": 0.9341979481139867,
+          "minimum_principal_stretch": 0.7432946758666447,
+          "maximum_principal_stretch": 1.1869741797190372
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8537697104379092,
+          "maximum_J": 1.046146852490353,
+          "rest_volume_weighted_mean_J": 0.9339621545138861,
+          "minimum_principal_stretch": 0.721945283411794,
+          "maximum_principal_stretch": 1.1964410274720043
+        }
+      ]
+    },
+    {
+      "frame_index": 31,
+      "mapped_sensor_blocks": [
+        {
+          "vertex_start": 80,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8491053673749978,
+          "maximum_J": 1.0283560457907812,
+          "rest_volume_weighted_mean_J": 0.9341346638090374,
+          "minimum_principal_stretch": 0.7431959843737799,
+          "maximum_principal_stretch": 1.1869234363991996
+        },
+        {
+          "vertex_start": 219,
+          "tet_count": 317,
+          "nonpositive_J_count": 0,
+          "minimum_J": 0.8545314864744179,
+          "maximum_J": 1.0462526653226683,
+          "rest_volume_weighted_mean_J": 0.9339019495656159,
+          "minimum_principal_stretch": 0.7218709630655497,
+          "maximum_principal_stretch": 1.1963684710044373
+        }
+      ]
+    }
+  ],
+  "public_element_metrics": "data/taccel_saved_geometry_element_metrics.csv",
+  "public_figure": "images/taccel_saved_geometry.png",
+  "current_documents": [
+    {
+      "path": "manuscript/main.tex",
+      "sha256": "17b84f6e6cdfc71546fe21dba5a13be9b100734e399020bd2a7adf4378b37bd6"
+    },
+    {
+      "path": "output/Research_Plan_KO.md",
+      "sha256": "5fabac37f8482d32c45a27d04629361f344601914619eac8b636d34aba1fd510"
+    },
+    {
+      "path": "output/IEEE_Access_Manuscript_Draft_v4.07.pdf",
+      "sha256": "b0a57ec739f07a9347d7e46db8d647bdceeadfc182ec7f17b42b7b1e11d05e77"
+    },
+    {
+      "path": "output/Research_Plan_KO.pdf",
+      "sha256": "fed8fb3532c0197e0d78d67d21f6f7986fb4f8dab2c5edb004803a0cacaad401"
+    }
+  ]
+}

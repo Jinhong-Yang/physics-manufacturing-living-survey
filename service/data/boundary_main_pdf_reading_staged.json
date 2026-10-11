@@ -1,0 +1,1512 @@
+{
+  "kind": "staged_boundary_complete_acquired_PDF_reading",
+  "parent_working_package_version": "0.92",
+  "parent_plan_revision": "4.07",
+  "parent_manuscript_revision": "4.08",
+  "parent_graph_version": "0.9.33",
+  "integration_pending": true,
+  "freeze_sha256": "5472b4a2e1a038b2da7db8131c568337db3115548b53bcdc896925a2c0b970fc",
+  "reviews": [
+    {
+      "path": "runs/wp1/boundary_main_pdf_review_20261011/W_icml_2024_4411004895826cce_review.json",
+      "sha256": "ba19c0435ec599b98aa309f6d680911ac0671bcaa644a052d3b2e71acee42d80",
+      "method": "ILILT",
+      "pages": 13,
+      "work_id": "W_icml_2024_4411004895826cce"
+    },
+    {
+      "path": "runs/wp1/boundary_main_pdf_review_20261011/W_icml_2025_fc52733ab9b1e7fd_review.json",
+      "sha256": "247b4cdcbe32882a3a958c5ca08bd5291588390492f8d7291d97a49aed7bd2ce",
+      "method": "M2PDE",
+      "pages": 29,
+      "work_id": "W_icml_2025_fc52733ab9b1e7fd"
+    },
+    {
+      "path": "runs/wp1/boundary_main_pdf_review_20261011/W_neurips_2024_d5c36a3794afba8e_review.json",
+      "sha256": "0fad91e0278402384e16f17fa53e53435a273a7baa0f93ee28f4aa2a908f037a",
+      "method": "DrivAerNet++",
+      "pages": 38,
+      "work_id": "W_neurips_2024_d5c36a3794afba8e"
+    },
+    {
+      "path": "runs/wp1/boundary_main_pdf_review_20261011/W_neurips_2025_e242169abd7d050b_review.json",
+      "sha256": "6f79442a38f58c13ad8758bf2425bcd95b8b771daadb40966971bc38c72d0e08",
+      "method": "TokMan",
+      "pages": 26,
+      "work_id": "W_neurips_2025_e242169abd7d050b"
+    }
+  ],
+  "papers": 4,
+  "pages": 106,
+  "same_ai_main_candidate_prior_papers": 14,
+  "same_ai_main_candidate_prior_pages": 229,
+  "total_distinct_acquired_pdf_same_ai_readings": 18,
+  "total_distinct_acquired_pdf_pages": 335,
+  "total_is_not_systematic_inclusion_or_whole_corpus_review": true,
+  "independent_review_count": 0,
+  "new_execution_count": 0,
+  "new_industrial_qualification_count": 0,
+  "submission_ready": false,
+  "records": [
+    {
+      "schema_version": "1.0",
+      "recorded_at_utc": "2026-10-11T13:13:04.578474+00:00",
+      "review_kind": "same_AI_complete_acquired_PDF_boundary_reading_provisional",
+      "cohort_freeze_sha256": "5472b4a2e1a038b2da7db8131c568337db3115548b53bcdc896925a2c0b970fc",
+      "order": 1,
+      "work_id": "W_icml_2024_4411004895826cce",
+      "method": "ILILT",
+      "title": "ILILT: Implicit Learning of Inverse Lithography Technologies",
+      "venue": "ICML",
+      "year": 2024,
+      "screening_code": "H2",
+      "existing_targeted_audit_ids": [
+        "PT16"
+      ],
+      "pdf_path": "runs/wp1/fulltext_acquisition_20261011/W_icml_2024_4411004895826cce/main.pdf",
+      "pdf_sha256": "affee10fbae431b7a0946d5c4353c57a25ef79facd42e9366b7af84ebc0e8458",
+      "pdf_bytes": 2614556,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/yang24s/yang24s.pdf",
+      "text_path": "runs/wp1/fulltext_acquisition_20261011/W_icml_2024_4411004895826cce/main_extracted_fonttools.txt",
+      "text_sha256": "9e15a2209733e85fd5da09bedc5b22086ff718f4b93a482618dfc7102720bf0b",
+      "pages": 13,
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "source_extraction_qualification_changed": false,
+      "external_supplements_reviewed": false,
+      "whole_corpus_review": false,
+      "independent_reviewer": false,
+      "blinded": false,
+      "systematic_inclusion_counted": false,
+      "final_inclusion_decision": null,
+      "prior_targeted_audit": {
+        "node_id": "work:PT16",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "A lithography estimator is called within the iterative mask optimization and provides simulated wafer-image feedback (provisional C1 for simulator-coupled mask design). Appendix describes optical/resist approximations and says optical parameters are foundry-calibrated in principle; this review found no foundry calibration file, calibrated process profile or independent physical validation.",
+          "physical_evidence_assessment": "Author-reported simulated wafer print, EPE and process-variation-band analysis under nominal/non-nominal simulator conditions. No physical wafer/metrology validation or independent solver audit identified; authors state production-level QoR remains future work.",
+          "manufacturing_assessment": "Pre-fabrication semiconductor mask optimization with industry-relevant simulated EPE/PVB measures (M1). No production line, fabricated wafer, yield/defect KPI, external tool/site/lot holdout, integration or operational qualification established."
+        },
+        "node_sha256": "0014f1d52f18469c5bd19761617a68924b8e2fe19d799adf3da0f429523b86b8"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C1",
+          "C4"
+        ],
+        "physical_evidence_codes": [
+          "V2"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "page_reading_notes": [
+        {
+          "page": 1,
+          "note": "Title/authors/ICML2024 notice; learned inverse mask optimizer, not a demonstrated training-data synthesis service.",
+          "derived_page_text_sha256": "9637a700b6a654172bdc7e0f7f0e8010879502e1358ca4d782d54a87d1772a3f",
+          "replaced_surrogates": 0,
+          "render_sha256": "77ab041a6514481c29fbe1a4dfabdf273d303950ce9260b89a954fd1775b9ac9",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 2,
+          "note": "Fig2 places forward lithography in iterative inference; removes numerical ILT gradients, not the forward simulator.",
+          "derived_page_text_sha256": "8ddc905044cab389e5c5ad692980602a42ab4bef4aa2031441964234dbbbdd9c",
+          "replaced_surrogates": 0,
+          "render_sha256": "69a4c0f505bb49ad7c462b760efefaff44c54e30800b8be351ec8468eb3fc89e",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 3,
+          "note": "Implicit fixed-point formulation Eq8-9; assumptions of implicit differentiation differ from finite unrolled training.",
+          "derived_page_text_sha256": "ee50b1c6be4825a6712f597cc364bb5b7b83f43a717695cfeba442f5f66dc108",
+          "replaced_surrogates": 0,
+          "render_sha256": "c1de0292f1db423646e0fe9f29fe3e467b6a6215832f89e05710d21e4a316a0f",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 4,
+          "note": "Sec3.3 selects finite unrolling/BPTT due expensive/inexact DEQ roots and gradients; Eq12 uses simulated Zt, Eq13 weighted mask MSE.",
+          "derived_page_text_sha256": "7bf597bea7643f42bae74d0ef35a8ccf8e95b889b2638856c11a4a2ed6a473b9",
+          "replaced_surrogates": 0,
+          "render_sha256": "3d1bbbe2bb4a08345c12454d341e6f05d00157d404d4613491054790b8089041",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 5,
+          "note": "LithoBench tiles and training configuration; tile-size/pixel units, subset and test membership need release mapping.",
+          "derived_page_text_sha256": "1e5209aa7984ea23d03bf5cd5c865d658105c6bd29beea7764656af498665224",
+          "replaced_surrogates": 0,
+          "render_sha256": "19ab314eb117e0bf5d2fd38a41f86985352dd3ad1c38b09ca4098a9e06f79116",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 6,
+          "note": "Evaluation trajectory and EPE/PVB definitions; EPE is violation counts at probes, not a mean contour distance.",
+          "derived_page_text_sha256": "9e5bced0e2f056f95f66c38e230fe1f6460477c53762715eb697768112d927c0",
+          "replaced_surrogates": 0,
+          "render_sha256": "f0240853ead45d6a3c3d534dd82ae909cf43991f6b727952b2af5b6423792552",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 7,
+          "note": "Table2 separates CFNO8 runtime0.4s/EPE0.25 from P2PHD8 runtime0.8s/EPE0.08; cannot join fastest runtime and best EPE.",
+          "derived_page_text_sha256": "c29c60f122de1ae50f5b9ec8dbae1301767c03d5f944f82c0da4595f7c4120a9",
+          "replaced_surrogates": 0,
+          "render_sha256": "be03048b763b08261a79b9ff61d9884c89ec7770224bcef1571796535710ceb1",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 8,
+          "note": "Conclusion and Sec4.5 leave production QoR and DEQ training as future work; simulated examples do not certify all masks.",
+          "derived_page_text_sha256": "6be84872ba700b1229949083274782199f23cf23b45e63e19910b3d675d9ae5a",
+          "replaced_surrogates": 0,
+          "render_sha256": "e1c5218c2d594f2fed678055669bd439d5e87fb3439ebebd81babe19c3325995",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 9,
+          "note": "Impact statement and references; aspirational deployment statement is not external qualification.",
+          "derived_page_text_sha256": "5a1b6c7df60c2eb92e61fdaca1415be4970502b43ae46db238b87b1b8b3cec2d",
+          "replaced_surrogates": 0,
+          "render_sha256": "9788b8f3bcfe15223a9b1c7fb06fc656e0a1dbe6a77152a9ed9a45f80c68caa2",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 10,
+          "note": "References continue; no additional local execution evidence in this page.",
+          "derived_page_text_sha256": "c337c75e1e9d0d25a1df12924308299a4fb03637a0ab166bd5b387b809d26611",
+          "replaced_surrogates": 0,
+          "render_sha256": "14c4973545c7b01cea45425f2968d3c1f8505bff495eb9b30432af84d64f8666",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 11,
+          "note": "AppendixA optical kernel sum and hard-resist threshold0.225; calibrated-in-principle statement lacks acquired foundry calibration.",
+          "derived_page_text_sha256": "9f367d9e7b337d1f79b092b5defcd73172a4291176efe0ffe099285a06599ffb",
+          "replaced_surrogates": 0,
+          "render_sha256": "661e5949a195ae556c853b862e4c0023e9678f82588b29f34ae8512d30c48c08",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 12,
+          "note": "AppendicesB/C CFNO and P2PHD drawings; Fig9 input depiction needs Eq12 implementation reconciliation. pix2pixHD is an upstream backbone.",
+          "derived_page_text_sha256": "a6275a30468dfb7e8a49ff4f4c977a165c4edd8b3b0916f1c7de384494a671f9",
+          "replaced_surrogates": 0,
+          "render_sha256": "36707930af022574a897128597a222d199f70a568bed7891408393ad108c1bd0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 13,
+          "note": "AppendixD network modifications/45M parameters and AppendixE layout example; no full-chip industrial acceptance evidence.",
+          "derived_page_text_sha256": "343ab309c722cddff90b9d2f07708f542b47683eaf2ca5f60c55eab6f182aca2",
+          "replaced_surrogates": 0,
+          "render_sha256": "4aff218975842cc79635f1f84ff786bb82ee35c462740c3689876c1abfa4a8ee",
+          "text_and_render_inspected_by_same_ai": true
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "IL01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            11
+          ],
+          "location": "Forward simulator and learning",
+          "paraphrase": "Forward lithography supplies inference feedback; finite unrolled BPTT with weighted mask supervision is implemented in the described method, while end-to-end DEQ training is future work.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IL02",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            7
+          ],
+          "location": "Metric definition and Table2",
+          "paraphrase": "EPE is averaged violation count at contour probes; PVB measures area across process corners. Neither is a measured wafer metric.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IL03",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Table2",
+          "paraphrase": "GPUILT: EPE0.21/PVB4656/runtime4; CFNO8:0.25/4674/0.4; P2PHD8:0.08/4695/0.8. The10x runtime ratio belongs to CFNO8 and the best EPE belongs to P2PHD8; combine only same-setting quantities.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "IL04",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "location": "Scope and public assets",
+          "paraphrase": "Production-level designs/manufacturing QoR remain future. Foundry calibration is discussed without an acquired calibration file. A pix2pixHD backbone link is not a full ILILT recipe/checkpoint.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "Frozen unseen-layout to new binary mask and simulated print, separate baseline/method configurations.",
+        "validators": [
+          "independent contour-distance and violation-count implementations, both with units",
+          "EPE/PVB across fixed dose/focus settings",
+          "mask binary/topology/min-feature checks",
+          "independent optical or measured-wafer reference"
+        ],
+        "release_gaps": [
+          "full method code and exact config/checkpoint not established by this PDF",
+          "backbone release cannot substitute for ILILT",
+          "test membership, process corner and probe definitions"
+        ],
+        "industry": "Named scanner/resist/layout layer with measured wafer holdout and upstream asset permissions; unknown gates hold."
+      },
+      "new_execution_performed": false,
+      "new_task_output_observed": false,
+      "independent_physical_validation": false,
+      "scientific_r4_pass": false,
+      "industrial_qualified": false
+    },
+    {
+      "schema_version": "1.0",
+      "recorded_at_utc": "2026-10-11T13:13:04.608478+00:00",
+      "review_kind": "same_AI_complete_acquired_PDF_boundary_reading_provisional",
+      "cohort_freeze_sha256": "5472b4a2e1a038b2da7db8131c568337db3115548b53bcdc896925a2c0b970fc",
+      "order": 2,
+      "work_id": "W_icml_2025_fc52733ab9b1e7fd",
+      "method": "M2PDE",
+      "title": "M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation",
+      "venue": "ICML",
+      "year": 2025,
+      "screening_code": "H2",
+      "existing_targeted_audit_ids": [
+        "PT14"
+      ],
+      "pdf_path": "runs/wp1/fulltext_acquisition_20261011/W_icml_2025_fc52733ab9b1e7fd/main.pdf",
+      "pdf_sha256": "a4f88bea26264d455edda25a7896b28f3f6d32f7d1a44a6f7f34a67a9f76f48a",
+      "pdf_bytes": 7182194,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhang25bb/zhang25bb.pdf",
+      "text_path": "runs/wp1/fulltext_acquisition_20261011/W_icml_2025_fc52733ab9b1e7fd/main_extracted_fonttools.txt",
+      "text_sha256": "e179abe8556835e4594fe2d8111af1864004f24d7fab27285df11b757ecfcde0",
+      "pages": 29,
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "source_extraction_qualification_changed": false,
+      "external_supplements_reviewed": false,
+      "whole_corpus_review": false,
+      "independent_reviewer": false,
+      "blinded": false,
+      "systematic_inclusion_counted": false,
+      "final_inclusion_decision": null,
+      "prior_targeted_audit": {
+        "node_id": "work:PT14",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "PDE/simulator-conditioned generation supports provisional C1 for physical-simulation coupling; manufacturing process correspondence is not established.",
+          "physical_evidence_assessment": "Author-reported comparison with numerical simulator solutions; no independent solver, physical instrument or uncertainty audit.",
+          "manufacturing_assessment": "Adjacent engineering simulation; no named factory product/process/equipment profile, external lot/site or operational metric."
+        },
+        "node_sha256": "85732bd448e993ef75506a1efa3111b35660b169ad61ab8354893fbc4ace7ddf"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C1",
+          "C4"
+        ],
+        "physical_evidence_codes": [
+          "V2"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "page_reading_notes": [
+        {
+          "page": 1,
+          "note": "Accepted ICML2025 identity; generative coupled-PDE predictions and engineering examples, not factory data qualification.",
+          "derived_page_text_sha256": "f731ad53c59098b46fb1eb387212765ea0226bf6c428b4c86c9f9ea6950f5c1d",
+          "replaced_surrogates": 0,
+          "render_sha256": "5895171c79dcbc709a4a22fbc3dfb0b492626a4cc2ae442f72d25e2bfe2819c3",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 2,
+          "note": "Compositional conditional models separate physical fields/components; learned energy terminology is probabilistic.",
+          "derived_page_text_sha256": "ebbcfa54e0797cdb5a9c54446d4163f8156305fcce2415d1bcd78384dc106c64",
+          "replaced_surrogates": 0,
+          "render_sha256": "4a3faf4eccc662a3d074b4f0aede776a902443a5a2804862ecea6cd4e8a7ea50",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 3,
+          "note": "Conditional distributions/Bayes decomposition; local dependencies and boundary coverage are assumptions.",
+          "derived_page_text_sha256": "9c9d92ded42f4b1d475dcd38f002006f2f0b291713e9b80354e138a2bc3ce6c4",
+          "replaced_surrogates": 148,
+          "render_sha256": "8aa7da8ec277e6c8078df267e2bf4d1b848e51cb81ffc00af345b7e0eae245d5",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 4,
+          "note": "Diffusion formulation/noise objective Eq7; no explicit physical residual penalty shown in the core objective.",
+          "derived_page_text_sha256": "7faa0cf97b3e55bd92a8e719d3d10d4d7054a0929d75be0ae983674c38b40535",
+          "replaced_surrogates": 0,
+          "render_sha256": "24a2b68901e5ea9e4931d938e7c3c29811a99a2a86a5d5ae9d0e659e4a2e09b1",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 5,
+          "note": "Inference conditions on neighboring/other fields. Eq8-9 and Algorithm2 notation need executable mapping, not an asserted implementation bug.",
+          "derived_page_text_sha256": "b3f5b8b2345add430f7a58f249e1d735479468fa76c11faac3e3f7ddaf4a487a",
+          "replaced_surrogates": 0,
+          "render_sha256": "c6a69b459ad898f5356c7a376d2f77fe961a1dfb24f5993291de92b074660602",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 6,
+          "note": "Reaction-diffusion1D results: Table1 FNO v ratio0.0102/0.0080 differs from fourfold prose; coupled-table comparisons also need reconciliation.",
+          "derived_page_text_sha256": "91177ce383465d227b8bd9d3421407b4661158fa6ac9683a694b48aa0aeee1e8",
+          "replaced_surrogates": 0,
+          "render_sha256": "8cc784a72fe5b444eff947d19f27b102358de9545779d5de77ffb773f1b5dd85",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 7,
+          "note": "Nuclear neutron/solid/fluid PDEs and interface continuity; decoupled data uses pre-iteration fields, not absence of interactions.",
+          "derived_page_text_sha256": "58c04037143a45a45a5777802bb64c466e8cb9d0b3446ab85a90cb86aed83f34",
+          "replaced_surrogates": 0,
+          "render_sha256": "ba43b466d9f88930af5c1746d8690c60340709c8829a9c52270ee6c5b5ec7488",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 8,
+          "note": "Table2 unit1e-2 and Figure4 assembly training; 16-element generated assemblies provide component rows with shared provenance.",
+          "derived_page_text_sha256": "efa829dcb736b73e4de6aa9d5569f4cf5120ea93de4495cc2a74654441c486b1",
+          "replaced_surrogates": 0,
+          "render_sha256": "b4bb82c416fbb8160c24a75e784394c7308f06112708be75e9fcb1a71c2024c1",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 9,
+          "note": "Table3 relative-error unit1e-2; epsilon2.07 versus3.31 gives37.46% reduction. Practical physical validation remains future.",
+          "derived_page_text_sha256": "aeb64c0c9a6da3704bb9a63f98f0ce8ad0d0a267946a489a4a8a7896a9504bd8",
+          "replaced_surrogates": 0,
+          "render_sha256": "b5f26cbdae54c674067e28d44d646b325d9108bdb6fa0032525e80031514b20b",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 10,
+          "note": "References begin; cited engineering tools are not locally executed by this reading.",
+          "derived_page_text_sha256": "71aed798d41bbec45703c1bbe5a634dc84d4f656a6f9e04cc097de9777593c34",
+          "replaced_surrogates": 0,
+          "render_sha256": "4a8151ffb4a21cc3eec6a29880715813a0644514ecf68dc5aa5e07b55a3f7511",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 11,
+          "note": "References continue, including PDE learning and diffusion; no added manufacturing KPI.",
+          "derived_page_text_sha256": "0d42004af8c645cfa91f837f16efb8609e92de95b42f2d2302957156446ed3b3",
+          "replaced_surrogates": 0,
+          "render_sha256": "d266be226d6c75eca2edd821007f3e922ef2024124e867ebda1449c8af75c3aa",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 12,
+          "note": "References conclude before appendices; external cited sources not all independently reviewed.",
+          "derived_page_text_sha256": "cd67c22f4a96f62963da5008a896a72fb339b3a082ff7f5a3889bb9fba4fce8f",
+          "replaced_surrogates": 0,
+          "render_sha256": "f2ce3a3cd814d9cd023014202f570c774e903228ceb29a15b898b1ebe59f1ca8",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 13,
+          "note": "AppendixA reaction-diffusion PDEs, numerical solution and decoupled sampling.",
+          "derived_page_text_sha256": "48b78c460a2dd3c8aa522f72c28155abba79ef5be8b7cc880fe9fbe36f53a6b3",
+          "replaced_surrogates": 0,
+          "render_sha256": "c8197f66974865d5e23169efaea9dad184895fca3ff42eeaf7cb722b8256ae16",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 14,
+          "note": "AppendixB solve_ivp discretization nx20/nt10,250 diffusion steps,K2 and Table5 training resources.",
+          "derived_page_text_sha256": "264d7fc6d68259e5a59635ec44e41a58c180a0393bf6ec9b08de73369ba8e18b",
+          "replaced_surrogates": 0,
+          "render_sha256": "8dacf0082c450851a6c05a2e6a6604b7368a99ef5984de33b53e6da4fce537db",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 15,
+          "note": "AppendixC MOOSE finite-element/finite-volume nuclear solver with temperature feedback; cladding omission limits correspondence.",
+          "derived_page_text_sha256": "429cc6cbce45675f428597fe2d119dc6c900805eec1983bf0d22afe828069793",
+          "replaced_surrogates": 0,
+          "render_sha256": "68c88b812ef3a0f2ae1fcd124ef61e0f52677c1bc3092d5491780ce4bff342f2",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 16,
+          "note": "Nuclear interpolation/grids and pre-iteration construction; expensive fluid solution amortization must be in cost accounting.",
+          "derived_page_text_sha256": "5e7a57f63b615605075c8708c1c6e096e2d0e6618b9eafc0ff21d96d86b566f7",
+          "replaced_surrogates": 0,
+          "render_sha256": "fa78b8ce36090f82e0a99565514ccb9ff8d185ae49e18c35df9fc5e78f09b717",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 17,
+          "note": "Nuclear interface-error examples and Table7 training details; local thermal-mechanical appendix starts.",
+          "derived_page_text_sha256": "a05f3d565613c00da003b484d7f9d921d31cc10d368df3e3ddc7a9e3d5cd0bff",
+          "replaced_surrogates": 0,
+          "render_sha256": "0b51b5f4c27c8982387fa990d8a0fabde68b0e08825cdd1c3de57660ac9f1356",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 18,
+          "note": "Prismatic component plane-strain model and 16-component assembly provenance; heat-flux units are printed W/m and need mapping.",
+          "derived_page_text_sha256": "adf755d771d37cb69e396daf65109001211c2dc6f2a52401c0cd362c4939ebf0",
+          "replaced_surrogates": 0,
+          "render_sha256": "20555fc76fd17655b747941f0f0928c84dbac588ff6990aad029a9c8c276c174",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 19,
+          "note": "Component condition/neighbor inputs and K3; baselines do not necessarily receive the same conditional field information.",
+          "derived_page_text_sha256": "827985bdf1ee082fbbf77ed159dd6d82938a80b9367f4bfc83857e022ddece63",
+          "replaced_surrogates": 0,
+          "render_sha256": "767b945deeb69bf1edca88d28d391e865bf5132cb4fa596b2d1d8805158c76e4",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 20,
+          "note": "Temperature prediction/error plots for large assemblies; author numerical-reference error, not measured process evidence.",
+          "derived_page_text_sha256": "6fd388fceb511c40b14801f3969f405ad8d88b5828c7fe40db3815f9ad3a73de",
+          "replaced_surrogates": 0,
+          "render_sha256": "0f4682aac0c0d66170b19daafca904e8f143a82409f2f054bdd5b3678b90ddf6",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 21,
+          "note": "Strain-x prediction/error plots; analogous strain-y claim is not an acquired independent measurement.",
+          "derived_page_text_sha256": "43b43c3f48c1054019a8237d381bbfdafdfdb03b0330baf9871ac2ff5517b208",
+          "replaced_surrogates": 0,
+          "render_sha256": "34a73d23622010dd0d6672b63741812cd8f5440549ebd10ecceb1d5340ff6167",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 22,
+          "note": "FNO large-assembly comparison figures; this does not establish universal convergence or manufacturing readiness.",
+          "derived_page_text_sha256": "fa080c9d66203e1d194edafeaee69d334dfb336829f8a90217ab7582f9c1b982",
+          "replaced_surrogates": 0,
+          "render_sha256": "88d0cc8ef7aebd234b726192ea8a28ae2c7fa3611a2466ce90a72802a6a64f6e",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 23,
+          "note": "Table9 resources and Table10 coupled-training alternatives; decoupled M2PDE does not dominate fully coupled training in these rows.",
+          "derived_page_text_sha256": "60537d947bc94545f5dacde50a5a96d82f998302fe72a5659447cc03d7ceaf4c",
+          "replaced_surrogates": 0,
+          "render_sha256": "702a16e457fc0e7dc485e97f2a76036e19d2f2af61c6c8776cfd24bb101a0ac4",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 24,
+          "note": "Table11 initialization claim has exceptions and Table12-14 K ablations; no global iteration convergence guarantee.",
+          "derived_page_text_sha256": "9a6a2b585eef2aead14e2093b498d8718c4391a59ab961f89264c55fa0502f33",
+          "replaced_surrogates": 0,
+          "render_sha256": "dc925d3873f19ed0742fa3cdc7937930e6385fc37bb88d3f21ae3daaf6cf29a6",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 25,
+          "note": "Table15 Wasserstein depends on field units; training-condition coverage is part of transfer scope.",
+          "derived_page_text_sha256": "3b254a63246f65391970ff31890504b73a50e12cfc4659b6e7ae8278b976c744",
+          "replaced_surrogates": 0,
+          "render_sha256": "9669865aa2a37ac7201581df8dc6aeea481a251715db06b073a7e12da2ef4efe",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 26,
+          "note": "DDIM steps/eta tradeoffs and tables17-19; accuracy settings must stay distinct from best original-DDPM rows.",
+          "derived_page_text_sha256": "a4ef8d7337b849bfdfbf170d9ff08d6a747c4f6a6160da775e6de19dc562d21d",
+          "replaced_surrogates": 0,
+          "render_sha256": "7542cfbeef091485b9b8285b4fe6639ffb9c2337f715a0b2f3482c87009e1ad0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 27,
+          "note": "Table18 epsilon1.94 versus3.31 yields41.39% for a different configuration than Table3; Table20 uses DDIM50 timing.",
+          "derived_page_text_sha256": "8c3a3071a695767300a26ff4fb187d2731dce0bb213759da60c6a34604691b2a",
+          "replaced_surrogates": 0,
+          "render_sha256": "dc1f6d8f6cb6cc6c0b4f9870bf7b97ff7ba375a674a3653ea12fb4d1321fc4c8",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 28,
+          "note": "Per-forward normalized timing and CPU/GPU assumptions; RD speedup0.064 is slower. Eigenvalue PDE applicability is explicitly limited.",
+          "derived_page_text_sha256": "b130af6bc809fe43e7308f489a144a71f89b880fe31b932ccdcf8900450dc92a",
+          "replaced_surrogates": 0,
+          "render_sha256": "a2339ed0a5c976225824fbe20cfe122eaf36a657b70079585f371b53b162402a",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 29,
+          "note": "AppendixJ boundary/neighbor-condition coverage limitations and Table21 application domains; engineering domains alone do not establish factory qualification.",
+          "derived_page_text_sha256": "5130218ba903fb1466d01ed8e095bc9691dcc711bc1edf3e11ed24f3744f3957",
+          "replaced_surrogates": 0,
+          "render_sha256": "b2e170ac5c478deac9093d369bb60b47443d3b77abba09f602e3eba752c5aa80",
+          "text_and_render_inspected_by_same_ai": true
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "MP01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            5,
+            28,
+            29
+          ],
+          "location": "Core assumptions",
+          "paraphrase": "Solver-generated training and conditional diffusion compose fields/components; learned energy is probabilistic and the noise objective is not a physical residual. Neighbor/BC coverage and local Markov assumptions limit scope.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP02",
+          "pdf_pages_1_based": [
+            6
+          ],
+          "location": "Table1 and prose",
+          "paraphrase": "FNO-v0.0102 versus M2PDE0.0080 gives1.275x, not fourfold; coupled FNO0.0264 is smaller than decoupled0.0320. Retain table/prose conflict as unresolved.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP03",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            18
+          ],
+          "location": "Tables2/3 and provenance",
+          "paraphrase": "Relative-L2 table unit1e-2 must be explicit. Multi-component training derives rows from16-element assemblies, so component rows share source simulations and are not independent assembly samples.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP04",
+          "pdf_pages_1_based": [
+            9,
+            26,
+            27,
+            28
+          ],
+          "location": "Accuracy/timing configurations",
+          "paraphrase": "Table3 epsilon2.07 versus3.31 yields37.46% reduction, while Table18 original-DDPM1.94 yields41.39% for a different setting. Table20 timing uses DDIM50 and normalized forward cost assumptions. RD speedup0.064 indicates slower inference.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP05",
+          "pdf_pages_1_based": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            23,
+            24
+          ],
+          "location": "Industrial transfer",
+          "paraphrase": "Simplified reactor/plane-strain models, excluded physics, coupled-training comparators, input-information differences and initialization exceptions prevent blanket superiority or process acceptance.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "MP06",
+          "pdf_pages_1_based": [
+            5,
+            13,
+            14,
+            28,
+            29
+          ],
+          "location": "Independent task design",
+          "paraphrase": "Record Eq8/9/Algorithm2 mapping questions separately; numerical-reference relative errors are author claims. An independent PDE residual/BC/interface validator and frozen unseen conditions are still needed.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "Frozen unseen reaction-diffusion conditions to newly generated coupled u/v fields; engineering nuclear/heatpipe tasks separate.",
+        "validators": [
+          "same-grid independent numerical solver",
+          "PDE residual plus initial/boundary consistency",
+          "interface continuity/flux for engineering extensions",
+          "distribution/uncertainty coverage across seeds"
+        ],
+        "release_gaps": [
+          "exact data and checkpoint bytes/acquisition",
+          "notebook clean entrypoint and Python/dependencies",
+          "training-origin grouping and DDPM/DDIM/K settings"
+        ],
+        "industry": "RD is a technical engineering test only; named manufacturing process/model parameter calibration and external KPI required."
+      },
+      "new_execution_performed": false,
+      "new_task_output_observed": false,
+      "independent_physical_validation": false,
+      "scientific_r4_pass": false,
+      "industrial_qualified": false
+    },
+    {
+      "schema_version": "1.0",
+      "recorded_at_utc": "2026-10-11T13:13:04.657506+00:00",
+      "review_kind": "same_AI_complete_acquired_PDF_boundary_reading_provisional",
+      "cohort_freeze_sha256": "5472b4a2e1a038b2da7db8131c568337db3115548b53bcdc896925a2c0b970fc",
+      "order": 3,
+      "work_id": "W_neurips_2024_d5c36a3794afba8e",
+      "method": "DrivAerNet++",
+      "title": "DrivAerNet++: A Large-Scale Multimodal Car Dataset with Computational Fluid Dynamics Simulations and Deep Learning Benchmarks",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "screening_code": "H2",
+      "existing_targeted_audit_ids": [
+        "PT13"
+      ],
+      "pdf_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2024_d5c36a3794afba8e/main.pdf",
+      "pdf_sha256": "6c8895e40f5c5903cd6327dbfae45b60d7e3badcd8b012367921e2a780e1c8d6",
+      "pdf_bytes": 31706267,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/013cf29a9e68e4411d0593040a8a1eb3-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "text_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2024_d5c36a3794afba8e/main_extracted_fonttools.txt",
+      "text_sha256": "2ca42d522718adaa678e0f46f25b41a85f7120975ae3fc621869cba6842f9c8c",
+      "pages": 38,
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "source_extraction_qualification_changed": false,
+      "external_supplements_reviewed": false,
+      "whole_corpus_review": false,
+      "independent_reviewer": false,
+      "blinded": false,
+      "systematic_inclusion_counted": false,
+      "final_inclusion_decision": null,
+      "prior_targeted_audit": {
+        "node_id": "work:PT13",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V3"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "Parametric geometry plus CFD with OpenFOAM v11, steady incompressible RANS using k-omega SST, quality/convergence checks and mesh sensitivity. This is a governing-equation simulation pathway (C1); it is not a learned model constrained by equations at inference, and design-point fidelity is bounded by the reported solver, mesh, boundary conditions and Reynolds-number scope.",
+          "physical_evidence_assessment": "Author v2 reports baseline drag comparisons with TUM wind-tunnel values across four vehicle configurations, with reported differences about 2.18-4.88%, and mesh sensitivity for one fastback case (relative error 8.21% at 6M cells vs 2.17% at 24M against reference CFD). This is stronger than a simulation-only score but remains author-reported; the present audit did not reproduce the runs or verify uncertainty/independent external lots.",
+          "manufacturing_assessment": "Designed to avoid geometries that are difficult to manufacture and supports conceptual automotive design/aerodynamics, but evidence is simulation and initial-design support. It does not generate factory process histories, defects, material states or production-lot variation; no vehicle production or field-operational KPI is established. Keep H2 boundary pending human scope adjudication."
+        },
+        "node_sha256": "a760f961c7bd4bb52ca0e2866f4150181cdc3379f0719d67501063a8b0fe140e"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C1"
+        ],
+        "physical_evidence_codes": [
+          "V3"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "page_reading_notes": [
+        {
+          "page": 1,
+          "note": "NeurIPS2024 Datasets and Benchmarks identity; author8,000-case/39TB claim is version-specific.",
+          "derived_page_text_sha256": "3addb632ba9dda0a4d7928e5bf7bed172eb43c677c8bd82930edd1914ab8de9c",
+          "replaced_surrogates": 0,
+          "render_sha256": "2d24d3ecf576d9802733a21b4553a6ce6335566db1cf2798dd5df46495ab0b9e",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 2,
+          "note": "Adds4,000 cases to preceding DrivAerNet; original family lineage must be controlled in train/test splits.",
+          "derived_page_text_sha256": "1cb237f906b3f120a7e0f3b9c5131f6a49bbc55319e4585a9a945a1d6d3e1a16",
+          "replaced_surrogates": 0,
+          "render_sha256": "dd5f4d1c05d265540dfacd121481697b8b5c4e12c9a54c75adbae4ba14e12534",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 3,
+          "note": "Dataset comparison table is an author summary; not independent execution or licensing validation of other datasets.",
+          "derived_page_text_sha256": "51dc3bc8c7ee4ab68cf42c1ebb956c9cdcafc381030a4fa6dc85be1b9372ea93",
+          "replaced_surrogates": 0,
+          "render_sha256": "cd9968eb050653298e183646da91c4c21426603221e9c7d0273430e355228875",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 4,
+          "note": "26parameter ANSA geometry and optimized LHS; ANSA is a commercial dependency in the generation chain.",
+          "derived_page_text_sha256": "97bfa907fcd779490a2a79c524262ba3def8e8e4e7f2a2473bde59d6d2ea38bc",
+          "replaced_surrogates": 0,
+          "render_sha256": "e91f88415c14377e94ad761e26f994a3d79706bb594b3b1c8626950a05abb7d0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 5,
+          "note": "Author3million CPU-hours and per-case256cores/1000GB memory; full-domain equivalents versus actual half-domain meshes need distinction.",
+          "derived_page_text_sha256": "33786cafe0bee3c6bb60e98c482d9e5f465d8b658046efd6bcdb4b203eec4292",
+          "replaced_surrogates": 0,
+          "render_sha256": "aa603e1bb28f48b1a1dcbf05572d9591b33177e3af75a6db7345ddc63734bee7",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 6,
+          "note": "Modalities and CC BY-NC dataset statement; code/data/CAD rights are different assets.",
+          "derived_page_text_sha256": "f023b3336c60713347c50d341bafdede0a249b09edfaaa5d84aa07ccd66b5f1d",
+          "replaced_surrogates": 0,
+          "render_sha256": "8b047d479c43ccd15c96241ab70392764c5d2fff62722ad11dd3ba579424ddb1",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 7,
+          "note": "Conceptual early design scope and RANS approximation; cited0.005 MAE target concerns wind comparison, not any ML-CFD table.",
+          "derived_page_text_sha256": "e106c517131c8c117bd661fac44c00d482c2160740171e61a65025c12c435cac",
+          "replaced_surrogates": 0,
+          "render_sha256": "e2f56b6176a022b058d12e9768f62442aee702a94136fa1c59e5158d0670cc96",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 8,
+          "note": "Deep-model5,600/1,200/1,200 split versus different AutoML split; Table3/4 error aggregation questions need raw predictions.",
+          "derived_page_text_sha256": "56017ddac236ed73a7dcf46ad7d60673ee8feb9c573f1320896ec9b8250fca3e",
+          "replaced_surrogates": 0,
+          "render_sha256": "1328efbe595bb3737422988b01f95cb983ad8d9f0cbad7281da3e12ba8e7f3a2",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 9,
+          "note": "Figure5 median/95%CI wording with checklist no-error-bars response; sample/seeds/CI construction unresolved.",
+          "derived_page_text_sha256": "89480c04a0ac9b410a3301899cad95fa2d624853e3a0847f945ba26d25b01a99",
+          "replaced_surrogates": 0,
+          "render_sha256": "2598d68a7048fa4cad6d5b201cd3b14504773ecaf5a4fcf18eae03ba36502cdc",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 10,
+          "note": "Acknowledgement and tooling collaborators; collaboration is not production-line validation.",
+          "derived_page_text_sha256": "606d445f32cf798e7c60c6cf246c513428777d6cdcbdd0e66a96adfb237c3880",
+          "replaced_surrogates": 0,
+          "render_sha256": "e579e87c3aecf08559d203e443f02e9f412ca24449313ff4becb394f72da63b9",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 11,
+          "note": "Checklist notes upstream CAD registration/no license and no-error-bars response; source self-reports do not establish permissions.",
+          "derived_page_text_sha256": "33683a20db889185a914ced086b301ced3cea193bc0cbf39f9c122a0aa51b94d",
+          "replaced_surrogates": 0,
+          "render_sha256": "4ca921f2756d8748c4c03b8e17251ab51047f6ae9e1c11f4d2f41e4192d28c08",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 12,
+          "note": "Appendix contents outline; this acquired PDF includes A-I and datasheet, not just a main text.",
+          "derived_page_text_sha256": "39883ac6ecc0477096a2c7f33cb871125a424916bb3598d0b9e0eeb1a3efc6f4",
+          "replaced_surrogates": 0,
+          "render_sha256": "8edbef768befdb72c5e08c570856594ef90f9e8098f9e4838a140e366f0b0f2a",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 13,
+          "note": "AppendixA4A10080GB/CPU setup and code/data release assertions; experiment reproduction remains author-reported.",
+          "derived_page_text_sha256": "a2bee2500083f7dd98332425ec075ed11eab272e9d730bde5f2423c55362fc8b",
+          "replaced_surrogates": 0,
+          "render_sha256": "577cb5e00a18611629f5894ef0f2dbfe28dc2b451170b64dcec6fef1a488409b",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 14,
+          "note": "AppendixB potential applications are prospective, not operational acceptance.",
+          "derived_page_text_sha256": "1892e53dfd4954e08b2b59788f44cd7ec45005d09607ceda2be486398da9c82c",
+          "replaced_surrogates": 0,
+          "render_sha256": "1551e71dc4e40f18a1dc8c378e3eb93f117dbb863492eaaec14ce4f85cd63579",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 15,
+          "note": "AppendixC ANSA parameterized/direct morphing; no independently executed open-CAD substitute.",
+          "derived_page_text_sha256": "3b9ee68819fceefa62e4d461f18bd1c0cda99793d03808fdcfbb72ea8533b40d",
+          "replaced_surrogates": 0,
+          "render_sha256": "8b9f1f3b9c4e0e7dcb63601d30617979893cafd1db14b8c7d328701008f25aa0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 16,
+          "note": "Table5 parameter ranges include GreenHouseAngle -200..150 degrees; units/implementation need clarification. Figure8 shows selected categories.",
+          "derived_page_text_sha256": "7b999879bb48bb7474d0f7406bb3826830650a12687648c7f201d0c00bc5f9fa",
+          "replaced_surrogates": 0,
+          "render_sha256": "dfd945d2731467e406b018b7290a0f37894a29be853d78924393040d6db8f7ca",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 17,
+          "note": "AppendixD snappyHexMesh castellated/snap/layer stages; five prism layers and geometry-category distributions.",
+          "derived_page_text_sha256": "e35258f24ea8e0dd40c9594863999d1e53aec4a4cd639f5a2f7e45311b6d7530",
+          "replaced_surrogates": 0,
+          "render_sha256": "2d3ba96ceed55bfde7a37e5af96db72a1fe66db24e87b845130232c2aef34ef0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 18,
+          "note": "OpenFOAM11 steady incompressible SIMPLE/k-omega SST, actual12M symmetric-half versus24M full-equivalent;30m/s inlet.",
+          "derived_page_text_sha256": "bda839779ead29531b6de2f28df50e34e24255f2b57f0ec3819f19c3c027b483",
+          "replaced_surrogates": 0,
+          "render_sha256": "eb74df0aa06ce8fa51430a55848227062fbd178b7e413a894ea2b6aeca723789",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 19,
+          "note": "Moving ground and rotatingWallVelocity with fixed meshes; air properties, symmetry and wall-function boundaries limit extrapolation.",
+          "derived_page_text_sha256": "bd63711889d2a16adff0c86c1d1f27fc053a553b00f4ed2db7d400e79852591f",
+          "replaced_surrogates": 0,
+          "render_sha256": "3a184079c8525ce88c45653dfe41895fff67f143789be051b2e16cb766831df8",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 20,
+          "note": "Mesh sensitivity6/12/24M relative to reference CFD; Table8 wind baselines have a distinct physical reference denominator.",
+          "derived_page_text_sha256": "3b3ee8a15ebbf200596cbecde4aa5f80674f71fe5c6cab8f9f5f8d94860a9e4e",
+          "replaced_surrogates": 0,
+          "render_sha256": "644499d41078762f18f9f8a989bdf606a5583ec41c1b778bc879ed9df22a55f8",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 21,
+          "note": "Four wind-reference baseline categories, not8,000 measured cars. Table9 N-FS sign reversal and E-FS table reconciliation affect ranking.",
+          "derived_page_text_sha256": "bdef9dc31a7dc16b9e07ef75f2dc6b8d509d54fd218e34aa6e6bb5038f1ba96c",
+          "replaced_surrogates": 0,
+          "render_sha256": "70a918f9da20bbf21d3ecb3717c7d431283e6d0209cffbef9ca8b881ab3b9fb8",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 22,
+          "note": "Residual criterion and outlier removal described during training/validation; exclusion identities/counts/timing require audit.",
+          "derived_page_text_sha256": "6a1c335f5f8afeaa83de2a9ba464d5eb4b3a75a3299445d1c888e98db1de5c51",
+          "replaced_surrogates": 0,
+          "render_sha256": "f5601c5267867b3e0cf2593535ea63e22c28771915b4e4d09f34000018628be1",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 23,
+          "note": "Streamline plots at normalized velocity; visual plausibility is not independent field agreement.",
+          "derived_page_text_sha256": "914cd19cda0c3b4ac5d860c35dcd1b2f0f56748f8191d5eb0247cc74e8c1d4ec",
+          "replaced_surrogates": 0,
+          "render_sha256": "a8b27494ffb6c71282a3077acda28c193289f380b8df9e7b692f03a09d6b65bd",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 24,
+          "note": "Surface-pressure plots with Cp color scale; descriptive selected cases.",
+          "derived_page_text_sha256": "b3d7c6c3bc33f3a8bd4ce26feab1a8f17bef6b62bf504846d9eb3568956fec68",
+          "replaced_surrogates": 0,
+          "render_sha256": "52b39497c98e66c29bacaf3283724499b0b1cad0b829729f51eef1ec110549fc",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 25,
+          "note": "Velocity/wall-stress views of selected configurations; not evidence of all mesh or field quality gates.",
+          "derived_page_text_sha256": "cc3b09dbfcc40ce591430c0b42da7f97a5470d216b0bb8e862ba94b7225af1df",
+          "replaced_surrogates": 0,
+          "render_sha256": "2b8d9aa90aacaa3e7b7bb1b96b0975d46cf8c07fda2a3a8acb83dda963f30545",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 26,
+          "note": "29part labels and RegDGCNN architecture; learned regressor has no shown hard governing-equation guarantee.",
+          "derived_page_text_sha256": "69869cf9638c71f43d8fd06dc87b3490e50872446e293c6663caffc3bfe4d933",
+          "replaced_surrogates": 0,
+          "render_sha256": "f18b621ce2ccdae593a3625d46dbad55f7f9f0cd31f9bf7764ca48f2ff2476db",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 27,
+          "note": "Baseline training and Eq3-5 unweighted MSE/MAE/Max definitions support arithmetic-consistency questions for Table3/4.",
+          "derived_page_text_sha256": "09dfc72d0f74d3bcca563794bb5a354ad1c835c62fc9459d5b8317bf8c2614ce",
+          "replaced_surrogates": 0,
+          "render_sha256": "cc0286d5d6b186d71256e7e5d3f3b7399a7d41a103eed16e4e86554efa0d0c7f",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 28,
+          "note": "Pressure relative-L2 compares different point budgets and includes RBF interpolation:18.97% native to24.84% full-surface for PointNet.",
+          "derived_page_text_sha256": "a3a61594799ac6ed89f3731df3a4f82a02e7463c73c45682438d9eb2e1d83850",
+          "replaced_surrogates": 0,
+          "render_sha256": "ff4e90096e045af3d12aa78d667d4fda91cf6b9c4c18d9b8024ac34afe1949de",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 29,
+          "note": "t-SNE geometry features by body type; embedding separation is not held-out generalization or manufacturing compliance.",
+          "derived_page_text_sha256": "c50b379589af03b49b2aa96b0496a8cd1c3e2d5e51028789995675a935eefc12",
+          "replaced_surrogates": 0,
+          "render_sha256": "1657d84ecc9cc5cc100d68dc142a5a1588763ca503b740d95e5e598b254bf515",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 30,
+          "note": "t-SNE additional configurations and references; cannot infer calibrated global metric distances.",
+          "derived_page_text_sha256": "561fe06e8e01e8e3af3d5a3dd9acd9d16da77e98d4e167768255590a5966bfb5",
+          "replaced_surrogates": 0,
+          "render_sha256": "80db341ebeba91a9e5f402e46b08fe88436f663fd08624f12cae78b03fcda133",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 31,
+          "note": "References including original DrivAerNet, CFD/design comparators and open tools.",
+          "derived_page_text_sha256": "9c6c05b2aa6aa77fc5f0a02fa44293aa821c055446a3aa5792a2d6cc64c270f6",
+          "replaced_surrogates": 0,
+          "render_sha256": "97b69cce0fad058b6e9aa3569c387a8a5a2f48280a77f8a00ce1f8e381367ae5",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 32,
+          "note": "References including OpenFOAM11 and original DrivAer baseline experiments.",
+          "derived_page_text_sha256": "32f5a5cf69721ec5b904a219e37bae49ccf52e37bf1d832bf360bca219db5d26",
+          "replaced_surrogates": 0,
+          "render_sha256": "99d9db529dde4cfbc67488b038f7c75c61373d7528907448024afd720da20eb0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 33,
+          "note": "References including TUM geometry, meshing, PointNet and DrivAer physical reference.",
+          "derived_page_text_sha256": "8fe2014d54acc5e6c9fa7a5ca7ab4e07835a250dfcc317190c2073de0b7b5a27",
+          "replaced_surrogates": 0,
+          "render_sha256": "0a08096d62ab92e0489a4c4bb945beb5bb91e112c49a34558366f5ff47f8e5b4",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 34,
+          "note": "Remaining references; externally cited physical studies were not completely read in this batch.",
+          "derived_page_text_sha256": "87f2b14d23b454618e1c0693c63440aa0b11e7d7f34f4e91dfc685e2bf1a7077",
+          "replaced_surrogates": 0,
+          "render_sha256": "ab789bd458fbdc254a3ab59efdd9da08d96ce5f646ee7c94ff9c4dfe6cb677ca",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 35,
+          "note": "Datasheet composition and raw modalities; complete spatial domain answer does not establish representative coverage of all cars.",
+          "derived_page_text_sha256": "ffe2301f7f4b26f12e7faa28a9c805823abf6da249635f2b2881ab11b0d02169",
+          "replaced_surrogates": 0,
+          "render_sha256": "c4ab965a29d29810c4155a7db6ea41399ceb7cce1769ee6ece13dec476b00004",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 36,
+          "note": "Datasheet RANS limitations and collection2023-2024; self-contained data differs from full open generation pipeline.",
+          "derived_page_text_sha256": "388ed0014cf76fce67e88d7aa260bc31b010dda65c1fdd08f52a5bfe88969f0f",
+          "replaced_surrogates": 0,
+          "render_sha256": "62da1f2552d94747aacecee22d90f7546e73c859cfae6ee3dbf7918b61fc326e",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 37,
+          "note": "Datasheet raw OpenFOAM on request/MIT approval and datasetCC BY-NC4.0; historical future-release language is not current download status.",
+          "derived_page_text_sha256": "e61de987b9482eeb67437e78afb41e2c4b49e364d8bf853d9112ffd92dcfdb72",
+          "replaced_surrogates": 0,
+          "render_sha256": "571f7d774d1c4711134e8644f3ce491072b4c8d2157f1f076c2c81de57e39fb3",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 38,
+          "note": "Datasheet maintenance/issues/PR version-history commitment; author planned service is not this study independently validated service.",
+          "derived_page_text_sha256": "98fe5e74d19fea7de9de27e666f7feceebe187c1b25605a0559c8fe45c091352",
+          "replaced_surrogates": 0,
+          "render_sha256": "2c87ea07fc119766094fdafa9b481961fd1dcac4b83bffbfb37428b2ac49b03c",
+          "text_and_render_inspected_by_same_ai": true
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "DA01",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            4,
+            5,
+            15,
+            18,
+            19
+          ],
+          "location": "Generation pathway",
+          "paraphrase": "8,000 paper cases combine ANSA geometry morphing and OpenFOAM11 steady incompressible RANS. Actual12M symmetric-half and24M full-equivalent mesh descriptions have different scopes.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DA02",
+          "pdf_pages_1_based": [
+            6,
+            11,
+            13,
+            36,
+            37,
+            38
+          ],
+          "location": "Access and rights",
+          "paraphrase": "Paper states CC BY-NC dataset, upstream CAD registration/no-license concern, commercial ANSA, raw OpenFOAM upon request/approval and future release promises. These are dated author statements, not current asset acquisition.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DA03",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            27
+          ],
+          "location": "Metrics and splits",
+          "paraphrase": "Deep models use5600/1200/1200 samples; AutoML uses a different split. Table3/4 MSE/MAE/MaxAE need aggregation reconciliation, and Figure5 confidence-band description conflicts with checklist no-error-bars response.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DA04",
+          "pdf_pages_1_based": [
+            20,
+            21
+          ],
+          "location": "Physical comparison and ranking",
+          "paraphrase": "Mesh sensitivity compares reference CFD, while four baseline geometries compare wind references. Table9 N-FS experimental+0.003 versus predicted-0.002 reverses sign; Table8/9 E-FS values require reconciliation. Neither gives8,000 measured cases.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DA05",
+          "pdf_pages_1_based": [
+            7,
+            22,
+            28,
+            29,
+            30,
+            35,
+            36
+          ],
+          "location": "Decision boundaries",
+          "paraphrase": "Conceptual-design scope, RANS limitations, training/validation outlier removal and point-budget/interpolation changes limit transfer claims. Native pressure18.97% and interpolated24.84% are separate errors.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "A fixed small newly selected geometry through mesh/CFD to new fields, separately from ML regression on saved dataset.",
+        "validators": [
+          "mesh validity and source geometry lineage",
+          "conservation/residual/mesh sensitivity",
+          "independent CFD/physical reference with boundary identity",
+          "case-grouped split and raw metric consistency"
+        ],
+        "release_gaps": [
+          "ANSA/upstream CAD permission and complete generation recipe",
+          "version-specific dataset inventory",
+          "per-asset data license and requested raw availability",
+          "bounded CPU/memory/time with complete costs"
+        ],
+        "industry": "Conceptual aerodynamics profile is not factory-data generation; physical ranking and commercial full-stack rights need distinct evidence."
+      },
+      "new_execution_performed": false,
+      "new_task_output_observed": false,
+      "independent_physical_validation": false,
+      "scientific_r4_pass": false,
+      "industrial_qualified": false
+    },
+    {
+      "schema_version": "1.0",
+      "recorded_at_utc": "2026-10-11T13:13:04.706843+00:00",
+      "review_kind": "same_AI_complete_acquired_PDF_boundary_reading_provisional",
+      "cohort_freeze_sha256": "5472b4a2e1a038b2da7db8131c568337db3115548b53bcdc896925a2c0b970fc",
+      "order": 4,
+      "work_id": "W_neurips_2025_e242169abd7d050b",
+      "method": "TokMan",
+      "title": "TokMan:Tokenize Manhattan Mask Optimization for Inverse Lithography",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "existing_targeted_audit_ids": [
+        "PT15"
+      ],
+      "pdf_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_e242169abd7d050b/main.pdf",
+      "pdf_sha256": "5e1303d95b90657490e6af0abd8c4e85057e3afbaebc0db52ab571f8ffa9f09e",
+      "pdf_bytes": 15514103,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/4e127d4fb92a3145ecb60f6aa0b16eef-Paper-Conference.pdf",
+      "text_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_e242169abd7d050b/main_extracted_fonttools.txt",
+      "text_sha256": "dba451c34cf00851935f9efd1bf75ee2a4136961805d430760f18e56a316eea4",
+      "pages": 26,
+      "accepted_version_observation": "Title/authors/venue notice and all acquired PDF pages, including embedded appendices/checklist/datasheet, inspected by same AI. Independent identity/version decision remains pending.",
+      "source_extraction_qualification_changed": false,
+      "external_supplements_reviewed": false,
+      "whole_corpus_review": false,
+      "independent_reviewer": false,
+      "blinded": false,
+      "systematic_inclusion_counted": false,
+      "final_inclusion_decision": null,
+      "prior_targeted_audit": {
+        "node_id": "work:PT15",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C1"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "Differentiable forward lithography simulation feeds the mask optimization objective (provisional C1 for simulator-coupled process design). Manhattan/binary geometric constraints are not themselves evidence of calibrated resist/optics physics or physical wafer fidelity.",
+          "physical_evidence_assessment": "Author-reported simulated print fidelity/runtime and geometry compliance (V2); publisher-indexed excerpts available, full experiment tables/supplement not retrieved, and no independent simulator, wafer measurement, uncertainty or holdout audit performed.",
+          "manufacturing_assessment": "Semiconductor mask optimization and design-rule/manufacturability-oriented geometry (M1). No observed production line, metrology-linked lot, yield/defect KPI, external tool/site transfer, or operational qualification identified in this bounded audit."
+        },
+        "node_sha256": "5ba2b41187ce5aaf9e725a50e674c80b2b97574e2d6aa82f08a9d381d9bae52d"
+      },
+      "provisional_cvm": {
+        "physics_coupling_codes": [
+          "C2",
+          "C3",
+          "C5"
+        ],
+        "physical_evidence_codes": [
+          "V2"
+        ],
+        "manufacturing_codes": [
+          "M1"
+        ],
+        "qualification_authority": "same_AI_provisional_only",
+        "categories_not_ordinal": true
+      },
+      "coding_reconciliation": "Old targeted codes are preserved. New codes locate mechanisms under frozen C0-C5 definitions; changes require independent adjudication. DrivAerNet++ M1 retains conceptual-design scope despite author wind-reference V3; contrast with earlier DrivAerStar M3 interpretation remains an explicit coding question.",
+      "page_reading_notes": [
+        {
+          "page": 1,
+          "note": "NeurIPS2025 identity; abstract strict manufacturing-compliance claim needs distinction from simulated tests.",
+          "derived_page_text_sha256": "00f7b87e6c62ae18d3dd11592009c98b76ddab6bdc396fb4e8e8337ead167925",
+          "replaced_surrogates": 0,
+          "render_sha256": "681958ccdd8788ed40da2a6f7d501251fd492de4cd3db0fc053f4e466f5c0fe6",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 2,
+          "note": "Manhattan token/conditional diffusion framing; Gaussian corruption analogy is not a proven optical forward-process equivalence.",
+          "derived_page_text_sha256": "836e9d68df3ff65ae8698e3ec330a241fbb97ed26b00159042ab0ecaeb467a7b",
+          "replaced_surrogates": 0,
+          "render_sha256": "d49ebb03e897524f7c9c728d4a4cfc18f8f41be7b652b3ad3ee2399b92908caa",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 3,
+          "note": "Figure2 separates segmentation, network, differentiable renderer/lithography loss and post-refinement.",
+          "derived_page_text_sha256": "839dbd417a1affea222abca1c58369ec0e837144ad77fd968ad876fa4ddf38dd",
+          "replaced_surrogates": 0,
+          "render_sha256": "51ee194fb8d2faed30b9e89a68e5fedc1e5caba79b30819a9ef4ed59fca1ba9f",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 4,
+          "note": "Forward optical model Eq1 and inverse objective; simplified imaging equation is not a calibrated foundry process specification.",
+          "derived_page_text_sha256": "9a896a7c458bb45d6379ad3d15d664633f5a25ccca9d613a039d72ef0b59e7cb",
+          "replaced_surrogates": 0,
+          "render_sha256": "3cef38a0f504170a532986679b298155c602d0fee1831b745a6914082821a820",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 5,
+          "note": "Axis-aligned segmentation and scalar real offsets; claimed discrete tokens do not specify all quantization/topology/DFM constraints.",
+          "derived_page_text_sha256": "3317a999aa53b4ba048e6810145d9cb675ceca63ea1a310fe1bf4ddf4627ac07",
+          "replaced_surrogates": 0,
+          "render_sha256": "46d00262655519192f5e304719a54b7878ce78a12b04c8dde42bfa7f696b1eaa",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 6,
+          "note": "Noise loss Eq5 and lithography MSE Eq6; source of clean corrections and combined objective/weights require executable reconciliation.",
+          "derived_page_text_sha256": "9b220e36628d73e512dc4d9b7d477dd616f7282830d60ce63c0db68ae090968b",
+          "replaced_surrogates": 0,
+          "render_sha256": "7e1a4f6a07db431a3c2e72b5e05a9fe33571ac7f9284c72a51f14aeb3ef81905",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 7,
+          "note": "Table1 benchmarks,32H20 training platform/~80GB batch40 and singleA100 test;89,697 augmented layouts with upstream-family split unresolved.",
+          "derived_page_text_sha256": "79f5a9f92cd3fce6992bc7975dd59fa4ad1cc6ff01024ce9fc2b737015130014",
+          "replaced_surrogates": 0,
+          "render_sha256": "befcffd40bf769c7ccef316fe138604cb5b35fea854417f2335c844dcc57aeb9",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 8,
+          "note": "Eq7 mean contour distance EPE differs from LithoBench violation counts. TAT includes refinement and excludes I/O; shot count is a writing proxy.",
+          "derived_page_text_sha256": "994b15c7130631219fd6d76455133d4a004687e2600bce6842067515171418f5",
+          "replaced_surrogates": 0,
+          "render_sha256": "357bde5f291f9ac66e8df280c91f6c339078caa3c633e769b384e2c14265e56a",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 9,
+          "note": "100iteration refinement tradeoff; lack of full-chip/SRAF/real industrial-data validation is explicit.",
+          "derived_page_text_sha256": "1b48ddb45ca4caaa7ebb1acec0b447a5775ee08afedffad646b4a94db9949e4f",
+          "replaced_surrogates": 0,
+          "render_sha256": "49552a59b990c0ededd839948a115fd32a335a2b25d5a55f88cdca15f37cd0de",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 10,
+          "note": "Conclusions/future domains are aspirational; production-ready wording is not field acceptance evidence.",
+          "derived_page_text_sha256": "6cac6790dcfc640dae7c092a046e4221b4cb480687807f2ff5fcc3b8cfeba0b1",
+          "replaced_surrogates": 0,
+          "render_sha256": "9c2b3bf8fa6c7f2a0feee01477f48d5937905bd0362bd71a614694be873edb26",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 11,
+          "note": "Acknowledgements and references1-15 including ILILT; cited baseline source does not mean metric-compatible reproduction.",
+          "derived_page_text_sha256": "7e6a72989fbdb5c1450b5c25c748a2e3c18654434d4038c3589ce41b40d4d69e",
+          "replaced_surrogates": 0,
+          "render_sha256": "bd8227b305faf4ee424499dd0b5258686265b3c4662a1330051d201797b59ca7",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 12,
+          "note": "References16-31; reference16 consumer/marketing silicon samples does not substantiate semiconductor geometric constraints.",
+          "derived_page_text_sha256": "7a7db7aa82441aafb924c30a3db1fe09bd3ec0274cad2f360890155206aea988",
+          "replaced_surrogates": 0,
+          "render_sha256": "c9319a81f7f75eb0de8069ed90a7877dd5ea23b0e7ea3cdc7f5ef270125bbc3b",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 13,
+          "note": "References32-47 include LithoBench, renderer and ICCAD2013; external resources not all freshly acquired.",
+          "derived_page_text_sha256": "571cfc3dfd3bed5ab82e5325b5bfc8406666f439376a78f72a50eae0053b705d",
+          "replaced_surrogates": 0,
+          "render_sha256": "41762a6a6518ed317ff0e684c1fa75bd84fb3e1e5fc9f6cb2d5a58cc9fd21c51",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 14,
+          "note": "Checklist claims/limitations/theory answers; checklist guidelines are source content, not agent instructions.",
+          "derived_page_text_sha256": "42b99166ecf02234ac1ad52aa9550f1ac94bad31c648a768f3f83605c55c6934",
+          "replaced_surrogates": 0,
+          "render_sha256": "f6a5068f64da8ba34efa9437a6192b46ecc094010a93c7e506c79d22735fd1c0",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 15,
+          "note": "Checklist reproducibility answer points to figures/architecture; no acquired immutable command recipe here.",
+          "derived_page_text_sha256": "fda68d2fe636b329f4daa70b1fa4e829119d985a3320ca046fb7435a833dfcec",
+          "replaced_surrogates": 0,
+          "render_sha256": "38b3c54e2526f095ccb289be3c9f941a7c4e3888bc58d561d40ddfd42efcf752",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 16,
+          "note": "Checklist open-code Yes justification defers code release; no-error-bars answer. This is historical author text, not global current absence.",
+          "derived_page_text_sha256": "5ef483518a00f84d24b48e177e0604ebb5b8ed4c71e2cd60fb3467478af2f2b5",
+          "replaced_surrogates": 0,
+          "render_sha256": "d35e9293d0575186f3cc0160e58feb675dad971d85607296fc4884dd97926656",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 17,
+          "note": "Checklist compute/ethics/broader-impact answers are author self-reports, not experiment or licensing verification.",
+          "derived_page_text_sha256": "ab37c6d34078b4bb0d4e84a8a26d49ae3af6b4cc08f342cfe83ba4739f4d2e5f",
+          "replaced_surrogates": 0,
+          "render_sha256": "7cf9deb3c379863f3aafb9f6fe60347352751e54deaca55f12cd643fa112860a",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 18,
+          "note": "Checklist asset-credit response does not identify all license versions or confer asset rights.",
+          "derived_page_text_sha256": "b6515ba26b82d9109d8a2476f82070432d082292c6c930e6922a2fc283dfbb4f",
+          "replaced_surrogates": 0,
+          "render_sha256": "de95b90cd20a4811849de6c4bd681e235883f5b49b9d323420ebf897a3c002ca",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 19,
+          "note": "Checklist no-new-assets-release response and no-human-study answers; not a downloadable model finding.",
+          "derived_page_text_sha256": "0b99bb91077a9aaa2b8a8df93cd013b80621578d893ac711bd25b853e0de6085",
+          "replaced_surrogates": 0,
+          "render_sha256": "7529b34ee5f97da095f7e752d58c569254bbf21670dddbeaffccb9923020c31a",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 20,
+          "note": "Checklist calls DiT training an LLM usage component; architecture naming alone does not establish a language model.",
+          "derived_page_text_sha256": "84e8dd4828be071909f09b6d4ff765c73faaf80dc1c4f10c174534aa01d7770d",
+          "replaced_surrogates": 0,
+          "render_sha256": "d956c4084b72b3ec90cf6aaa5c441b3fd26da9a06b15a61a0f3f6a8bcb45d833",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 21,
+          "note": "AppendixA Table2 all20 layouts; some TAT slower than baselines, so all-metrics superiority prose is too broad. Image has one training-loss plot.",
+          "derived_page_text_sha256": "33046ab2cfc323e7df956c2133915f785d456e0d3b28cd784b8ec802aa1e29cc",
+          "replaced_surrogates": 0,
+          "render_sha256": "9fb4c8be8c46ce4d9d6e46d9b4e19807ba43d83e6a70a05a986ab9b912f1981f",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 22,
+          "note": "AppendixB Figure8 selected small benchmark mask/resist images; visual comparisons do not establish wafer measurement.",
+          "derived_page_text_sha256": "988363f07c955f59949486a34319b316b8f45d221ca883541a4812183afac920",
+          "replaced_surrogates": 0,
+          "render_sha256": "b6ba8ab99675a0befbb4431786fa217c4e0e79d3a3fb69b6524fb23f8bd8ef7b",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 23,
+          "note": "AppendixB Figure9 selected large benchmark images; simulations remain the physical reference.",
+          "derived_page_text_sha256": "df74e347edc46cad3da9f1df4dee7b4e03cfe45e87e26a3aa4304fb578fbe4b0",
+          "replaced_surrogates": 0,
+          "render_sha256": "f138c56518ecb4b9fc43306d78d2e3454e0f04f63b305c26db41bddbeae3e16d",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 24,
+          "note": "Repeated references1-17; checked all displayed content without treating repetition as new evidence.",
+          "derived_page_text_sha256": "5ebb8519085bf755e8b42b32a203f866fdef296e9c4fba805fa4e60adafa547f",
+          "replaced_surrogates": 0,
+          "render_sha256": "252196624aa9931a739a11468d5099d03824d7938c3f5419561878651455c6a1",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 25,
+          "note": "Repeated references18-33; no additional executable assets are established by citations.",
+          "derived_page_text_sha256": "95a4129cd2ee2d6e71bd2e4d95328329a0a6a98e8a3f2286505b34194873eb81",
+          "replaced_surrogates": 0,
+          "render_sha256": "6dc5669fe2c284fb787c101e0ef2b83fd03086bc1805fdacb85873c68f38dab7",
+          "text_and_render_inspected_by_same_ai": true
+        },
+        {
+          "page": 26,
+          "note": "Repeated references34-47 finish acquired PDF; external supplements/code remain separate availability checks.",
+          "derived_page_text_sha256": "0793ce99049708b62f5254c98ec3383cac421abc1a1787691f6b3ccbe6fb1998",
+          "replaced_surrogates": 0,
+          "render_sha256": "5dadabee16e0cd49fd74396edad340193d46d8772a58386c6056597a1b8e4b60",
+          "text_and_render_inspected_by_same_ai": true
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "TM01",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "location": "Coupling decomposition",
+          "paraphrase": "Manhattan axis/offset parameterization, differentiable lithography training loss and optional ILT post-correction occupy C2/C3/C5. They do not by themselves establish calibrated wafer physics.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM02",
+          "pdf_pages_1_based": [
+            5,
+            6
+          ],
+          "location": "Discrete/continuous and objective questions",
+          "paraphrase": "Point topology is structured, but offsets are real scalars. Quantization, polygon validity, exact DFM thresholds, clean-delta construction and denoising/MSE objective combination require release-level mapping. Gaussian diffusion is not automatically optical corruption.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM03",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9
+          ],
+          "location": "Metric and cost identity",
+          "paraphrase": "Mean contour-distance EPE differs from violation count. Shot count is a mask-writing proxy; TAT includes inference/refinement but excludes I/O, and training cost is outside this TAT. Training uses a32H20 platform, about80GB at batch40, testing oneA100.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TM04",
+          "pdf_pages_1_based": [
+            7,
+            9,
+            21
+          ],
+          "location": "Numerical claims",
+          "paraphrase": "Table1 EPE2.70 to2.16 is20% using rounded values; Table2 exact displayed averages differ slightly. TokMan L TAT1.57 exceeds Multi-ILT1.33, contradicting a universal all-metrics superiority reading of AppendixA. Baseline-specific shot ratios must be named.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM05",
+          "pdf_pages_1_based": [
+            9,
+            10,
+            14,
+            15,
+            16,
+            19,
+            20,
+            21
+          ],
+          "location": "Qualification and asset state",
+          "paraphrase": "Full-chip, SRAF flexibility and real industrial production data remain untested. Checklist open-code Yes defers release and new-assets says none released. This dated PDF statement does not prove current global absence; DiT terminology is not evidence of an LLM.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TM06",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9,
+            21,
+            22,
+            23
+          ],
+          "location": "Sample and validation scope",
+          "paraphrase": "89,697 rearranged upstream layouts require grouping by original cell/design. All20 test cases in AppendixA are benchmark simulations, and selected mask/resist images do not demonstrate fabricated wafer or writing-tool acceptance.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "planned_new_task": {
+        "task": "Frozen unseen layout to new vector mask, raster mask and simulated print, before/after fixed100step refinement.",
+        "validators": [
+          "orthogonality, polygon closure/intersection, quantization and minimum feature checks",
+          "mean contour EPE and violation count separately",
+          "writing-shot algorithm/device assumptions",
+          "independent resist/optical model or measured wafer"
+        ],
+        "release_gaps": [
+          "complete method code/model/weights not verified by this PDF",
+          "delta supervision/objective and DFM thresholds",
+          "refinement/sampling settings and exact test membership"
+        ],
+        "industry": "Require named process window, full-chip boundary healing, writing-tool and fabricated-wafer evidence; geometry alone cannot pass."
+      },
+      "new_execution_performed": false,
+      "new_task_output_observed": false,
+      "independent_physical_validation": false,
+      "scientific_r4_pass": false,
+      "industrial_qualified": false
+    }
+  ]
+}

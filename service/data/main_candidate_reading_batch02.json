@@ -1,0 +1,599 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "schema_version": "1.0",
+    "cohort_freeze_sha256": "d83677aeaf3c17af2fd35747674db2e241aff8ca2c918ae869fdde9fc6aca79d",
+    "batch02_freeze_sha256": "37bd3693bd019e1a999071dcaa71577670ebcc491c0611af2609c170a16f75a2",
+    "fixed_cohort_works": 14,
+    "fixed_cohort_main_pdf_pages": 229,
+    "this_batch_same_ai_reviews_complete": 2,
+    "this_batch_pages_read_and_visually_reviewed": 34,
+    "cumulative_same_ai_main_pdf_reviews_complete": 5,
+    "cumulative_same_ai_main_pdf_pages_read_and_visually_reviewed": 62,
+    "remaining_same_ai_main_pdf_reviews": 9,
+    "remaining_same_ai_main_pdf_pages": 167,
+    "independent_reviews_complete": 0,
+    "adjudicated_inclusions": 0,
+    "systematic_review_complete": false,
+    "new_executions": 0,
+    "new_scientific_passes": 0,
+    "new_industrial_qualification_passes": 0,
+    "historical_sources_and_human_packets_unchanged": true,
+    "previous_three_reviews_and_batch01_validation_unchanged": true,
+    "raw_pdfs_or_renders_publicly_redistributed": false,
+    "validation_scope": "Local source/record integrity, stated page coverage and conservative state accounting; not independent reading, scientific verification or industrial qualification.",
+    "prior_reviews": [
+      {
+        "work_id": "W_aaai_2023_3e92365c6a31ea37",
+        "method": "DFMGAN",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_aaai_2023_3e92365c6a31ea37_review.json",
+        "sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae"
+      },
+      {
+        "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+        "method": "TGI-AD",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2024_4bca28b6f05c412d_review.json",
+        "sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a"
+      },
+      {
+        "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+        "method": "DefectFill",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2025_e6d8cf140103e9bb_review.json",
+        "sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51"
+      }
+    ],
+    "reviews": [
+      {
+        "work_id": "W_eccv_2024_72b004555e605ea7",
+        "method": "GLASS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_72b004555e605ea7_review.json",
+        "sha256": "76fc6184f2dc02de24f6c73f1388b8165005cc1c576492259c0c265d85b9e06e"
+      },
+      {
+        "work_id": "W_eccv_2024_6821303e219e9206",
+        "method": "DefectDiffu",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_6821303e219e9206_review.json",
+        "sha256": "6ef150302a9ae4fcd8f3010df2c29ef78d00e61069ae8c6e73a70857dd17c45b"
+      }
+    ],
+    "pending_work_ids": [
+      "W_iccv_2025_e01efad5210c86d2",
+      "W_iccv_2025_715dd4512a3586b9",
+      "W_iccv_2025_204365ef82780322",
+      "W_icml_2025_b84206981cf14d22",
+      "W_neurips_2022_f8d33af9719ba938",
+      "W_neurips_2023_6e31d25a4d3bd304",
+      "W_neurips_2023_499969137de65d0b",
+      "W_neurips_2025_0a00b52c83c220fa",
+      "W_neurips_2025_4b3ae9c13c106648"
+    ]
+  },
+  "relation_to_existing_graph": "Additive provisional reading overlay; not appended to current graph v0.9.32 and changes no qualification or graph counts.",
+  "records": [
+    {
+      "work_id": "W_eccv_2024_72b004555e605ea7",
+      "method": "GLASS",
+      "title": "A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization",
+      "official_pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08382.pdf",
+      "pdf_sha256": "e4915ef8f03a9488cc17100e33d71ca792d0e7f07e9df53b6d466507bbf51d01",
+      "review_sha256": "76fc6184f2dc02de24f6c73f1388b8165005cc1c576492259c0c265d85b9e06e",
+      "main_pdf_pages_read": 17,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "generation": {
+        "target": "hybrid training augmentation: global synthetic feature anomalies and local synthetic RGB images with placement masks",
+        "inputs": "normal images/features, Perlin masks, estimated foreground masks and external DTD texture images",
+        "conditioning": "normal feature distribution hypotheses, gradient-ascent detector loss, local mask and texture-mixing coefficient",
+        "resolution_reported": "288x288 resized/center-cropped inspection inputs",
+        "output_scope": "LAS provides image-level synthesis; GAS feature samples are a separate output type"
+      },
+      "claims": [
+        {
+          "claim_id": "GLASS01",
+          "pdf_pages_1_based": [
+            4,
+            8,
+            9
+          ],
+          "location": "Figures 2 and 4; Eq. 4; inference paragraph",
+          "paraphrase": "GLASS combines GAS feature synthesis and LAS RGB synthesis during training. LAS overlays augmented external texture through Perlin and foreground masks. Inference uses the normal branch with the trained detector, without the synthesis branches.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "GLASS02",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            7
+          ],
+          "location": "Manifold/hypersphere hypotheses; Eqs. 1-2; Algorithm 1",
+          "paraphrase": "Gaussian feature perturbations undergo normalized detector-loss gradient ascent and truncated radius projection. Hypersphere parameters cover 75% of normal features. These equations constrain learned feature distributions; they do not establish constitutive material or manufacturing process laws.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "GLASS03",
+          "pdf_pages_1_based": [
+            8,
+            10
+          ],
+          "location": "Figure 4; Eq. 4; MAD-sys dataset description",
+          "paraphrase": "Two Perlin masks are combined by intersection, union or a single-mask choice with equal probabilities. Texture augmentation selects three of nine operations. MAD-sys uses five texture categories and four weakness levels beta=0.1, 0.3, 0.5, 0.7 within the LAS image-mixing family.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "GLASS04",
+          "pdf_pages_1_based": [
+            10,
+            12
+          ],
+          "location": "MAD-man/MAD-sys definitions; Table 3",
+          "paraphrase": "Five individuals select weak real anomalies from each MVTec AD category for MAD-man. MAD-sys contains synthetically mixed anomalies. Their reported mean scores must retain their distinct real-versus-synthetic evaluation provenance; selection by five people is not five independently adjudicated survey cohorts.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "GLASS05",
+          "pdf_pages_1_based": [
+            10,
+            11,
+            15
+          ],
+          "location": "WFDD description; Table 2; acknowledgements",
+          "paraphrase": "The main paper reports 3,860 normal and 241 anomalous WFDD images collected in an industrial setting and acknowledges WEIQIAO textile source images. GLASS-j reports WFDD image/pixel AUROC 100/98.9 percent and PRO 94.9 percent. These are author-reported offline results on industry-sourced images, not an independent production-site qualification.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "GLASS06",
+          "pdf_pages_1_based": [
+            10,
+            11
+          ],
+          "location": "Implementation details; Table 2 throughput column",
+          "paraphrase": "The reported recipe uses a WideResNet-50 backbone, feature levels 2+3, 640 training epochs, batch size 8, an NVIDIA Tesla A800 and an Intel Xeon Gold 6346. Table 2 reports 1,327 images/s for GLASS detection inference. It is not measured generation throughput or complete acquisition-to-inspection throughput.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "GLASS07",
+          "pdf_pages_1_based": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "location": "Tables 1-4",
+          "paraphrase": "Reported metrics are image/pixel AUROC and PRO. Variant improvements are not monotone for every category: Table 1 pill values for GLASS-m are 99.4/99.5 percent and GLASS-j 99.3/99.4 percent.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "GLASS08",
+          "pdf_pages_1_based": [
+            14
+          ],
+          "location": "Limitations",
+          "paraphrase": "The authors note that logical anomaly detection has not been extensively explored and that auxiliary texture datasets remain necessary.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "GLASS09",
+          "pdf_pages_1_based": [
+            4,
+            8
+          ],
+          "location": "Topic eligibility interpretation",
+          "paraphrase": "Retain the work provisionally in the visual generation track because LAS creates synthetic images. Excluding the entire work as feature-only would erase an explicit image-generation branch.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "GLASS10",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12,
+            14
+          ],
+          "location": "Process-physics and industrial evidence interpretation",
+          "paraphrase": "No main-paper calibrated physical variable, governing process model, independent solver/metrology agreement, external site/lot/tool holdout or operational acceptance test is established. C0/V0/M2 preserves industrial image provenance while withholding process-physics and field qualification.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "WFDD_main_total_normal_images": 3860,
+        "WFDD_main_total_anomalous_images": 241,
+        "WFDD_main_counts_are_training_split": false,
+        "table_2_GLASS_j_WFDD_percent": {
+          "image_AUROC": 100.0,
+          "pixel_AUROC": 98.9,
+          "PRO": 94.9
+        },
+        "table_2_GLASS_j_four_dataset_mean_percent": {
+          "image_AUROC": 99.6,
+          "pixel_AUROC": 99.1,
+          "PRO": 95.7
+        },
+        "table_2_GLASS_m_four_dataset_mean_percent": {
+          "image_AUROC": 99.5,
+          "pixel_AUROC": 99.0,
+          "PRO": 95.5
+        },
+        "table_2_detection_inference_images_per_second": 1327,
+        "inference_throughput_is_generation_throughput": false,
+        "table_1_pill_percent": {
+          "GLASS_m": {
+            "image_AUROC": 99.4,
+            "pixel_AUROC": 99.5
+          },
+          "GLASS_j": {
+            "image_AUROC": 99.3,
+            "pixel_AUROC": 99.4
+          }
+        },
+        "table_3_GLASS_m_percent": {
+          "MAD_man": {
+            "image_AUROC": 99.6,
+            "pixel_AUROC": 99.3,
+            "PRO": 97.5
+          },
+          "MAD_sys": {
+            "image_AUROC": 95.6,
+            "pixel_AUROC": 93.3,
+            "PRO": 80.3
+          }
+        },
+        "MAD_sys_beta_levels": [
+          0.1,
+          0.3,
+          0.5,
+          0.7
+        ],
+        "training_beta_truncation": [
+          0.2,
+          0.8
+        ],
+        "training_beta_normal_mean": 0.5,
+        "training_beta_normal_std": 0.1,
+        "GAS_noise_std": 0.015,
+        "training_epochs": 640,
+        "training_batch_size": 8,
+        "author_hardware": "NVIDIA Tesla A800; Intel Xeon Gold 6346 @ 3.10GHz",
+        "author_hardware_locally_reproduced": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            4,
+            8,
+            9
+          ],
+          "issue": "Separate feature samples, generated images and detector outputs when coding artifacts and timing."
+        },
+        {
+          "pages": [
+            5,
+            6,
+            7
+          ],
+          "issue": "Feature-radius constraints are not calibrated manufacturing process constraints; do not infer physical V1 from a mathematical projection."
+        },
+        {
+          "pages": [
+            10,
+            12
+          ],
+          "issue": "Synthetic weak test images share the LAS mixing family; keep them separate from weak real-image and external-site evaluations."
+        },
+        {
+          "pages": [
+            10,
+            11,
+            15
+          ],
+          "issue": "Main WFDD totals are not its training split. Industrial source provenance supports M2 but does not establish external site/lot/tool or operational qualification."
+        },
+        {
+          "pages": [
+            11
+          ],
+          "issue": "The 1,327 images/s number is inspection inference; batch/warmup/preprocessing timing definitions are not established in the reviewed main paper."
+        },
+        {
+          "pages": [
+            7,
+            10,
+            14
+          ],
+          "issue": "Dataset split details and variant selection are deferred to separately linked appendices. No complete supplement reading is claimed in this batch."
+        }
+      ],
+      "open_questions": [
+        "Fully read and record separately linked appendices A-E; preserve prior targeted supplement evidence separately.",
+        "Acquire a pinned author revision and task weights with checksums and asset-specific intended-use terms.",
+        "Measure generation cost separately from detector inference, and test real external weak defects separately from MAD-sys.",
+        "Resolve WFDD lineage, texture rights, declared physical defect acceptance criteria and external industrial profile gates."
+      ],
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false
+    },
+    {
+      "work_id": "W_eccv_2024_6821303e219e9206",
+      "method": "DefectDiffu",
+      "title": "Few-shot Defect Image Generation based on Consistency Modeling",
+      "official_pdf_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09803.pdf",
+      "pdf_sha256": "b6208c6357877f0f47d4f596022e991d1657a729fe55192952389a781e5eba82",
+      "review_sha256": "6ef150302a9ae4fcd8f3010df2c29ef78d00e61069ae8c6e73a70857dd17c45b",
+      "main_pdf_pages_read": 17,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "generation": {
+        "target": "defect RGB images and generated masks",
+        "inputs": "few defective image-mask pairs, normal target-product images, text conditions and pretrained DiT/VAE/CLIP components",
+        "conditioning": "good/product/defect prompts, disentangled visual background/defect directions and double-free guidance scales",
+        "resolution_reported": "512x512 pixels in reported experiments",
+        "output_scope": "image-mask generation; consistency refers to visual appearance and morphology"
+      },
+      "claims": [
+        {
+          "claim_id": "DD01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "location": "Consistency definitions; Figure 2",
+          "paraphrase": "Background consistency concerns appearance within a product and defect consistency concerns morphology across products. The architecture splits background, defect and fusion DiT components and supervises a mask module with real encoded masks.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DD02",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9,
+            12
+          ],
+          "location": "Eqs. 3-12; Algorithm 1; Figure 4",
+          "paraphrase": "Double-free guidance adjusts background and defect directions. Adaptive attention weights emphasize defect regions. Guidance wd varies from 0.2 to 2.8 in Figure 4; illustrated severity is visual defect area/count, without calibrated process or material units.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DD03",
+          "pdf_pages_1_based": [
+            9,
+            10,
+            13,
+            14
+          ],
+          "location": "Section 3.6; Section 4.4; Figure 5",
+          "paraphrase": "Zero-shot generation uses normal images of the target product during training and transfers defects learned from other products. It excludes target defect training examples but does not establish zero exposure to the target product or external factory.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DD04",
+          "pdf_pages_1_based": [
+            10,
+            13
+          ],
+          "location": "Section 4.1 dataset paragraph; Section 4.3",
+          "paraphrase": "Half of the MVTec AD test images are selected for generation training; remaining half is used for segmentation testing. A real-training-set UNet baseline is compared with augmentation by generated samples twice the size of that real training set.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DD05",
+          "pdf_pages_1_based": [
+            11
+          ],
+          "location": "Table 1",
+          "paraphrase": "Reported generation metrics are FID and LPIPS across 15 product categories at 512 pixels. DefectDiffu mean FID is 69.35 and LPIPS 0.21; Defect-Gen has LPIPS 0.24. The reported method is not uniformly best on every category or diversity metric.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DD06",
+          "pdf_pages_1_based": [
+            13
+          ],
+          "location": "Table 2",
+          "paraphrase": "Real-only baseline means mIoU/F1/mAP/AUC are 60.3/73.0/78.7/97.7 percent; DefectDiffu augmentation reports 67.1/79.0/84.5/98.7. Leather mAP/AUC are 88.1/99.7 versus baseline 89.6/99.8. Aggregate improvement does not imply every category-metric cell improves.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DD07",
+          "pdf_pages_1_based": [
+            7,
+            9
+          ],
+          "location": "Printed Eq. 3 versus Eq. 4; Eq. 7",
+          "paraphrase": "Eq. 3 visually prints wp*Fd + wd*Fp, while Eq. 4 assigns wp to Fp and wd to Fd. Eq. 7 visually prints a sum indexed 0..M with divisor M. Preserve these as implementation clarification questions; no implementation failure or corrected equation is established.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DD08",
+          "pdf_pages_1_based": [
+            5,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            14
+          ],
+          "location": "Physical and industrial interpretation",
+          "paraphrase": "DDPM noise equations, attention losses and visual consistency do not establish material laws, calibrated physical severity, independent process validation or production-line acceptance. Offline MVTec evidence supports provisional C0/V0/M2.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DD09",
+          "pdf_pages_1_based": [
+            10,
+            13
+          ],
+          "location": "Protocol comparability",
+          "paraphrase": "The half-test-image supervised generation/segmentation split differs from normal-only unsupervised anomaly detection and from one-third/two-thirds protocols in DFMGAN/DefectFill. Preserve split manifests and compare only matched protocols; this observation does not itself establish leakage.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "table_1_metric_family": "FID, not KID",
+        "table_1_product_categories": 15,
+        "table_1_mean": {
+          "DefectDiffu": {
+            "FID": 69.35,
+            "LPIPS": 0.21
+          },
+          "Defect_Gen": {
+            "FID": 233.7,
+            "LPIPS": 0.24
+          },
+          "DFMGAN": {
+            "FID": 145.19,
+            "LPIPS": 0.21
+          },
+          "StyleGAN": {
+            "FID": 138.99,
+            "LPIPS": 0.18
+          }
+        },
+        "table_2_mean_percent": {
+          "real_only_baseline": {
+            "mIoU": 60.3,
+            "F1": 73.0,
+            "mAP": 78.7,
+            "AUC": 97.7
+          },
+          "DefectDiffu": {
+            "mIoU": 67.1,
+            "F1": 79.0,
+            "mAP": 84.5,
+            "AUC": 98.7
+          }
+        },
+        "table_2_leather_percent": {
+          "real_only_baseline": {
+            "mIoU": 67.4,
+            "F1": 80.5,
+            "mAP": 89.6,
+            "AUC": 99.8
+          },
+          "DefectDiffu": {
+            "mIoU": 67.9,
+            "F1": 80.9,
+            "mAP": 88.1,
+            "AUC": 99.7
+          }
+        },
+        "reported_split": "half MVTec AD test images for training; remaining half for downstream segmentation testing",
+        "synthetic_to_real_training_count_ratio": 2,
+        "DiT_depths_N_M_K": [
+          10,
+          10,
+          8
+        ],
+        "reported_resolution_pixels": [
+          512,
+          512
+        ],
+        "lambda_mask_loss": 0.2,
+        "condition_dropout_p1_p2": [
+          0.2,
+          0.2
+        ],
+        "attention_alpha": 0.001,
+        "mask_attention_average_steps": 100,
+        "FID_reference_and_generated_sample_counts": "not established in reviewed main PDF",
+        "full_repeated_seed_intervals": "not established in reviewed main PDF",
+        "author_end_to_end_generation_timing": "not established in reviewed main PDF"
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            2,
+            6,
+            9,
+            12
+          ],
+          "issue": "Visual consistency and guidance-scale severity have no declared physical units or process calibration."
+        },
+        {
+          "pages": [
+            9,
+            10,
+            13,
+            14
+          ],
+          "issue": "Zero-shot still includes target-product normal images in training; do not label it unseen-product or unseen-site generalization."
+        },
+        {
+          "pages": [
+            10,
+            13
+          ],
+          "issue": "Half of a conventional benchmark test set is repurposed for supervised training. Preserve the new split rather than pool with normal-only standard benchmark protocols."
+        },
+        {
+          "pages": [
+            11
+          ],
+          "issue": "FID is distinct from KID, with unresolved sample counts; LPIPS is not uniformly highest. Do not combine unlike paper metrics into one generation-quality rank."
+        },
+        {
+          "pages": [
+            13
+          ],
+          "issue": "Retain leather mAP and AUC regressions alongside improving aggregate scores."
+        },
+        {
+          "pages": [
+            7,
+            9
+          ],
+          "issue": "Printed direction coefficients and summation bounds require author-code clarification; they are not demonstrated implementation bugs."
+        },
+        {
+          "pages": [
+            8,
+            11,
+            14
+          ],
+          "issue": "Mask thresholding and additional results are deferred; no separately linked supplement is completely reviewed in this batch."
+        }
+      ],
+      "open_questions": [
+        "Fully read separate appendix and record exact masks, thresholding, sample counts, splits and repeated-seed definitions.",
+        "Acquire an attributable fine-tuned DefectDiffu checkpoint rather than treating a generic DiT backbone as ready inference release.",
+        "Resolve Eq. 3/Eq. 4 direction coefficients and Eq. 7 indexing against pinned author code.",
+        "Measure cold-start image-mask generation, per-category downstream harms and physical severity under a declared industrial profile."
+      ],
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false
+    }
+  ]
+}

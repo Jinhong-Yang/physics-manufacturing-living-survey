@@ -1,0 +1,1053 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-12",
+  "graph_version": "0.9.36",
+  "plan_version": "4.10",
+  "manuscript_revision": "4.11",
+  "scope": {
+    "reviewed_PDFs": 11,
+    "reviewed_physical_pages": 164,
+    "fully_read_PDFs": 10,
+    "fully_read_pages": 138,
+    "direct_visual_only_reviewed_pages": 26,
+    "unread_PDFs": 0,
+    "unread_pages": 0,
+    "unresolved_legibility_pages": [
+      25
+    ]
+  },
+  "records": [
+    {
+      "order": 2,
+      "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+      "graph_work_id": "work:V03",
+      "graph_work_aliases": [
+        "work:V03",
+        "work:PT02"
+      ],
+      "method": "TGI_AD",
+      "venue": "CVPR 2024",
+      "pages": 8,
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/supplemental/Lee_Text-Guided_Variational_Image_CVPR_2024_supplemental.pdf",
+      "sha256": "6edf4fb9d58bf49b4d0ecd88c6ce586cbe74700737a8817ee64fbd88d646b6a7",
+      "claims": [
+        {
+          "id": "TG01",
+          "pages": [
+            2
+          ],
+          "location": "A2",
+          "observation": "Normal-image one/few/full-shot augmentation; author runtime182.6s periteration and VRAM2031–23277MB are not end-to-end perimage inference measurements.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "TG02",
+          "pages": [
+            3,
+            5,
+            6
+          ],
+          "location": "Tables5/12–15",
+          "observation": "Detector/product/dataset-dependent regressions constrain all-metric improvement and direct deployment claims.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "TG03",
+          "pages": [
+            4,
+            8
+          ],
+          "location": "Tables7/18",
+          "observation": "One-shotGrid baseline47.2 versus68.6 has unresolved protocol identity; do not pool the rows.",
+          "kind": "reported_protocol_identity_question"
+        },
+        {
+          "id": "TG04",
+          "pages": [
+            7
+          ],
+          "location": "Table16",
+          "observation": "Quality scores and latent diversity do not establish physical calibration; displayed LPIPS scale not inferred.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "정상 영상 증강의 효과를 제품·검출기·학습량별로 평가합니다.",
+      "next_validation_ko": "공개 실행 자산과 표 간 설정을 확인하고 성능이 낮아진 제품군·전체 생성 비용을 검증합니다.",
+      "reading_kind": "same_AI_unblinded_whole_extracted_text_with_selected_visuals",
+      "reading_ledger_sha256": "9627dcf30179814ee201d15957595dc022d3c6a3da85415f37a742ce1e787a7b",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 3,
+      "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+      "graph_work_id": "work:PT03",
+      "graph_work_aliases": [
+        "work:V06",
+        "work:D15",
+        "work:PT03"
+      ],
+      "method": "DefectFill",
+      "venue": "CVPR 2025",
+      "pages": 11,
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Song_DefectFill_Realistic_Defect_CVPR_2025_supplemental.pdf",
+      "sha256": "79d18976934e0fbd306eae982bb5508d1180db3abf7334a0c4e90a1e6a0b18c3",
+      "claims": [
+        {
+          "id": "FS01",
+          "pages": [
+            1
+          ],
+          "location": "A/B2",
+          "observation": "Rank8LoRA,2000steps,batch4; VisA uses first10 abnormal-image/mask pairs perobject. This requires labeled defect examples and task adaptation.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "FS02",
+          "pages": [
+            2,
+            3,
+            10
+          ],
+          "location": "E/FigureS2/FigureS16",
+          "observation": "Object-level flip and misplacement can lose structural/semantic information; selected generated successes do not remove this failure mode.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "FS03",
+          "pages": [
+            1,
+            2
+          ],
+          "location": "TableS1/C1",
+          "observation": "LFS tradeoffs: capsuleKID5.01to5.60; toothbrush2.87to3.19; zipperIC-LPIPS0.21to0.20. No all-category dominance.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "FS04",
+          "pages": [
+            2
+          ],
+          "location": "C2/TableS2",
+          "observation": "Prose says all scores exceed0.95; pillF1 is printed0.95. Rounding/raw-value ambiguity remains; no data error is proved.",
+          "kind": "reported_value_precision_question"
+        },
+        {
+          "id": "FS05",
+          "pages": [
+            3
+          ],
+          "location": "F/FigureS3",
+          "observation": "Hole transfer supports selected visual plausibility across objects; physical mechanism/material equivalence requires separate validation.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "결함 학습 입력과 구조 뒤집힘·잘못된 배치의 실패 조건을 확인합니다.",
+      "next_validation_ko": "이미지·마스크 권리와 학습 비용, 구조적 결함 및 공정별 외부 평가를 확인합니다.",
+      "reading_kind": "same_AI_unblinded_whole_extracted_text_with_selected_visuals",
+      "reading_ledger_sha256": "9f293279133d269dbde0dbc9b69247aa92670c8a2a246f2f59b63dce74f362b3",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        10,
+        11
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 4,
+      "work_id": "W_eccv_2024_72b004555e605ea7",
+      "graph_work_id": "work:V04",
+      "graph_work_aliases": [
+        "work:V04"
+      ],
+      "method": "GLASS",
+      "venue": "ECCV 2024",
+      "pages": 10,
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08382-supp.pdf",
+      "sha256": "e954246118d15892c39290e9c758e8059bdb78e8e6a0d879282f0c9280764b37",
+      "claims": [
+        {
+          "id": "GL01",
+          "pages": [
+            1
+          ],
+          "location": "A1/A2/TableS1",
+          "observation": "WFDD factory origin is distinct from independent site qualification; MADman600 selector records need image-overlap and selection provenance.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "GL02",
+          "pages": [
+            2,
+            10
+          ],
+          "location": "AlgorithmS1/B1/Weak anomalies",
+          "observation": "Gradient ascent acts in feature space; DFT means Fourier analysis. Weaknessbeta and10x10pixels do not establish physical dimensions.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "GL03",
+          "pages": [
+            3,
+            4
+          ],
+          "location": "TablesS2/S8",
+          "observation": "Foreground masks and synthetic beta affect results; preserve operational prerequisites and evaluation strata.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "GL04",
+          "pages": [
+            5,
+            8
+          ],
+          "location": "C2/FiguresS8/S12",
+          "observation": "Selected dirty-capsule robustness and WFDD illustrations do not establish cross-plant robustness.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "특징 공간 이상 합성과 전경 마스크의 사용 조건을 확인합니다.",
+      "next_validation_ko": "마스크 확보 비용, 결함 강도별 성능과 외부 공장의 검증을 진행합니다.",
+      "reading_kind": "same_AI_unblinded_whole_extracted_text_with_selected_visuals",
+      "reading_ledger_sha256": "9627dcf30179814ee201d15957595dc022d3c6a3da85415f37a742ce1e787a7b",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        10
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 5,
+      "work_id": "W_eccv_2024_6821303e219e9206",
+      "graph_work_id": "work:PT04",
+      "graph_work_aliases": [
+        "work:D31",
+        "work:PT04"
+      ],
+      "method": "DefectDiffu",
+      "venue": "ECCV 2024",
+      "pages": 17,
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09803-supp.pdf",
+      "sha256": "b1605033078e7ef098a503c90400124c54ef9858ba335a4133aa1a3d67fca847",
+      "claims": [
+        {
+          "id": "DS01",
+          "pages": [
+            1,
+            2
+          ],
+          "location": "1.1/Table2",
+          "observation": "Unified labels merge different original defect names. Preserve original class/product identity and assess mechanism equivalence separately.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "DS02",
+          "pages": [
+            1,
+            3
+          ],
+          "location": "Table1/TableA/TableB",
+          "observation": "Average classification and segmentation gains are author reported. KSDD2LPIPS and VisApcb1mIoU retain comparator exceptions.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "DS03",
+          "pages": [
+            3,
+            4
+          ],
+          "location": "1.5/Figure1",
+          "observation": "Selected tile/leather/wood zero-shot examples do not establish no prior domain knowledge or external manufacturing transfer.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "DS04",
+          "pages": [
+            3,
+            12,
+            16,
+            17
+          ],
+          "location": "1.6/Figures9/14–16",
+          "observation": "Strength control is illustrated withwd. These supplement figures do not calibrate its values to defect dimensions, loads or process parameters.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "통합된 결함 이름과 영상 강도가 물리 메커니즘·크기를 뜻하는지 구분합니다.",
+      "next_validation_ko": "원래 결함 라벨을 유지하고 강도를 물리 단위로 교정한 경우 그 관계를 검증합니다.",
+      "reading_kind": "same_AI_unblinded_whole_extracted_text_with_selected_visuals",
+      "reading_ledger_sha256": "9f293279133d269dbde0dbc9b69247aa92670c8a2a246f2f59b63dce74f362b3",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        12,
+        16,
+        17
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 6,
+      "work_id": "W_iccv_2025_e01efad5210c86d2",
+      "graph_work_id": "work:PT08",
+      "graph_work_aliases": [
+        "work:D19",
+        "work:PT08"
+      ],
+      "method": "IKDDiT",
+      "venue": "ICCV 2025 main conference",
+      "pages": 14,
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Yang_Photolithography_Overlay_Map_ICCV_2025_supplemental.pdf",
+      "sha256": "dac0e7ae756d2e1a26dc1042fd029f91f189dd5c78c89fc36ce1607626d5dea0",
+      "claims": [
+        {
+          "id": "IKS01",
+          "pages": [
+            1,
+            2
+          ],
+          "location": "A.1–A.3",
+          "observation": "EVM compares measured and predicted overlay vectors. The same supplement states model access is restricted; reported process evidence and public executability are separate judgments.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "IKS02",
+          "pages": [
+            2,
+            3,
+            8
+          ],
+          "location": "B.1/B.4/B.5/G",
+          "observation": "Heun sampling and FID ablations evaluate the generative model. They do not demonstrate a lithography governing-law constraint or independent manufacturing acceptance.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "IKS03",
+          "pages": [
+            3
+          ],
+          "location": "B.4/Table3",
+          "observation": "End-to-end optimizer beta2 is printed as0.95 in prose and0.999 in Table3; no value is selected as correct.",
+          "kind": "source_discrepancy_unresolved"
+        },
+        {
+          "id": "IKS04",
+          "pages": [
+            2,
+            3
+          ],
+          "location": "B.2/B.5",
+          "observation": "The supplement reports762M inference parameters and eight A10080GB training hardware. Exact asset/architecture and resource contracts are needed; no local measurement is added.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "IKS05",
+          "pages": [
+            6,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "location": "E/H/I/Figures5–6,9–15",
+          "observation": "Equipment-log and ID conditioning is illustrated. Figure13/14 captions disagree with displayed IDs; log illustrations do not establish raw-data provenance, external holdout or acceptance criteria.",
+          "kind": "source_discrepancy_and_scope_inference"
+        }
+      ],
+      "summary_ko": "공정 계측 근거와 제한된 모델 접근을 별도로 평가합니다.",
+      "next_validation_ko": "공개 실행 자산, 장비 로그와 overlay의 외부 검증, 학습 설정의 동일성을 확인합니다.",
+      "reading_kind": "same_AI_unblinded_full_separate_supplement_reading",
+      "reading_ledger_sha256": "028d5c56c64096a8220aa385a3b9b2412b995ff726307c64084465bde4a2a216",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 7,
+      "work_id": "W_iccv_2025_715dd4512a3586b9",
+      "graph_work_id": "work:PT09",
+      "graph_work_aliases": [
+        "work:V09",
+        "work:PT09"
+      ],
+      "method": "SeaS",
+      "venue": "ICCV 2025 main conference",
+      "pages": 26,
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Dai_SeaS_Few-shot_Industrial_ICCV_2025_supplemental.pdf",
+      "sha256": "8f10cd4d8a4a52890c9e8232d86c01e3512880456ef2b859663a065b9f727f62",
+      "claims": [
+        {
+          "id": "SS01",
+          "pages": [
+            2,
+            16
+          ],
+          "location": "A3/Table7/A8",
+          "observation": "Generator and downstream segmenter resource scopes differ. Author A10040GB/~20GB/73h overallMVTec/720ms image inference are reported, not locally measured.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SS02",
+          "pages": [
+            5,
+            6,
+            26
+          ],
+          "location": "Tables17/18/28",
+          "observation": "Metric-dependent winners: MRM(a)IoU exceeds(c); threshold0.1 bestAUROC versus0.2 othermetrics; DRAEM+SeaS MVTecIoU below originalDRAEM.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SS03",
+          "pages": [
+            25
+          ],
+          "location": "A10–A12",
+          "observation": "Peach lighting experiment also changes view/background; extremely subtle and truly unseen defect types remain limitations. Qualitative robustness is narrower than independent nuisance-factor qualification.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SS04",
+          "pages": [
+            10,
+            15,
+            24
+          ],
+          "location": "Figures17/22/27",
+          "observation": "MVTec3D RGB illustrations support image/mask tasks; no generated3D physical field or dimensional tolerance is established by these figures.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SS05",
+          "pages": [
+            25
+          ],
+          "location": "A9 and Figure29 caption",
+          "observation": "Some rendered text is visibly interrupted or obscured. All26 pages visually reviewed; complete legible transcription is not claimed.",
+          "kind": "source_quality_limitation"
+        }
+      ],
+      "summary_ko": "생성기와 분할기의 비용·지표를 구분하고 미세·미관측 결함의 한계를 확인합니다.",
+      "next_validation_ko": "가려진 25쪽의 대체 원본을 확인하고 결함별 교정과 외부 현장 검증을 수행합니다.",
+      "reading_kind": "same_AI_unblinded_direct_visual_all_pages",
+      "reading_ledger_sha256": "9f293279133d269dbde0dbc9b69247aa92670c8a2a246f2f59b63dce74f362b3",
+      "whole_supplement_text_read": false,
+      "unresolved_rendered_text_regions": [
+        {
+          "page": 25,
+          "locations": [
+            "A9 paragraph",
+            "Figure29 caption"
+          ]
+        }
+      ],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 8,
+      "work_id": "W_iccv_2025_204365ef82780322",
+      "graph_work_id": "work:PT10",
+      "graph_work_aliases": [
+        "work:V08",
+        "work:PT10"
+      ],
+      "method": "TF-IDG",
+      "venue": "ICCV 2025 main conference",
+      "pages": 6,
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Xu_Training-Free_Industrial_Defect_ICCV_2025_supplemental.pdf",
+      "sha256": "4cde1ea5dfa49ba1c06da83cdd0d7e14a965fd382b5749e2df0d7b9ffcfec584",
+      "claims": [
+        {
+          "id": "TFS01",
+          "pages": [
+            1,
+            2
+          ],
+          "location": "Sections1/2.3",
+          "observation": "A reference anomaly, real masks and predefined feasible object regions remain recipe inputs. One-shot and no task-specific training do not eliminate annotation or asset requirements.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "TFS02",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "location": "Section2.2/Table3 versus Tables6–7",
+          "observation": "Authors report RTX3090/24GB and22s inference alongside0h task training. Downstream detector24.5M/3.6G entries are not whole-generation pipeline costs.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "TFS03",
+          "pages": [
+            1
+          ],
+          "location": "Section2.1/Table1",
+          "observation": "The supplement selectsN500; the prior main-paper review recorded1000generated pairs per anomaly type. Preserve these as separate reported protocols until their relationship is clarified.",
+          "kind": "cross_source_recipe_question"
+        },
+        {
+          "id": "TFS04",
+          "pages": [
+            2,
+            3
+          ],
+          "location": "Section2.4/Table7",
+          "observation": "The prose states+0.7% VisA Pro over GLASS; displayed92.2 and95.3 imply3.1percentage points or about3.36% relative. Keep all observations; no silent correction.",
+          "kind": "source_discrepancy_recomputed"
+        },
+        {
+          "id": "TFS05",
+          "pages": [
+            3,
+            4,
+            5
+          ],
+          "location": "Tables6–11/Section3",
+          "observation": "Image/localization metrics and visual examples are offline evidence. Authors report limitations for semantic/logical defects; task-specific defect acceptance and external plant tests remain open.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "추가 학습이 없어도 참조 이상 영상·마스크·가능 영역이 입력으로 남습니다.",
+      "next_validation_ko": "필수 입력 확보 비용, 전체 생성 자원과 제조 결함별 성능을 평가합니다.",
+      "reading_kind": "same_AI_unblinded_full_separate_supplement_reading",
+      "reading_ledger_sha256": "028d5c56c64096a8220aa385a3b9b2412b995ff726307c64084465bde4a2a216",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 10,
+      "work_id": "W_neurips_2022_f8d33af9719ba938",
+      "graph_work_id": "work:PT12",
+      "graph_work_aliases": [
+        "work:D05",
+        "work:PT12"
+      ],
+      "method": "SMPL",
+      "venue": "NeurIPS 2022 Datasets and Benchmarks",
+      "pages": 15,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a9b3d7f65eebb083e5c7f8cf10e52528-Supplemental-Datasets_and_Benchmarks.pdf",
+      "sha256": "11c2e466c2fcc20de469c599201d302aaac2b50d8b125186f28809ee012c7bf4",
+      "claims": [
+        {
+          "id": "SM_SUP01",
+          "pages": [
+            1
+          ],
+          "location": "A.1 Eqs1–3/Table3",
+          "observation": "The supplement declares Kelvin for reactor temperatures and prints Tf76.85 and U50000. Existing code-side numerical agreement does not resolve the previously recorded parameter/unit difference.",
+          "kind": "source_and_prior_execution_reconciliation"
+        },
+        {
+          "id": "SM_SUP02",
+          "pages": [
+            4,
+            5
+          ],
+          "location": "A.3.1 process scope and assumptions",
+          "observation": "The mAb model includes upstream and purification operations but excludes final ultrafiltration; perfect mixing and several thermal/dilution approximations constrain transfer.",
+          "kind": "author_reported"
+        },
+        {
+          "id": "SM_SUP03",
+          "pages": [
+            6
+          ],
+          "location": "Eqs14–16 and associated validity statement",
+          "observation": "The mAb growth/death temperature regressions are stated valid only over33–37C, from cited literature data. This bounds that submodel; it is not a verified plant operating envelope.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SM_SUP04",
+          "pages": [
+            3,
+            4,
+            11,
+            12
+          ],
+          "location": "Atropine E-factor; mAb economic objectives and controller settings",
+          "observation": "Atropine waste/product and mAb material-flow objectives have different denominators. mAb MPC/EMPC uses100steps at1hour sampling; those settings do not describe the earlier ReactorEnv PID execution.",
+          "kind": "author_reported_with_execution_scope_inference"
+        },
+        {
+          "id": "SM_SUP05",
+          "pages": [
+            12,
+            15
+          ],
+          "location": "Tables7/8",
+          "observation": "The authors state some downstream parameters were modified for scale-up. Values remain reported model parameters; no external lot/site acceptance evidence is supplied by these tables.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SM_SUP06",
+          "pages": [
+            14
+          ],
+          "location": "AppendixB Compute",
+          "observation": "The authors report5380GPUhours across three GPU types and an i9-12900k. This whole-study budget cannot be assigned to one simulator trajectory or used as local inference cost.",
+          "kind": "author_reported"
+        }
+      ],
+      "summary_ko": "생물·화학 공정의 물리 가정과 온도 적용 범위를 확인합니다.",
+      "next_validation_ko": "Reactor의 단위·매개변수와 공정별 외부 계측을 확인하고, 전체 공정과 부분 실행의 범위를 구분합니다.",
+      "reading_kind": "same_AI_unblinded_full_separate_supplement_reading",
+      "reading_ledger_sha256": "02de82f1769f82ad1afcc57849e2fa374e54fbf25a66c5c7fb3cb5fa1ecf8d2d",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        9,
+        11,
+        15
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 11,
+      "work_id": "W_neurips_2023_6e31d25a4d3bd304",
+      "graph_work_id": "work:PT07",
+      "graph_work_aliases": [
+        "work:D34",
+        "work:PT07"
+      ],
+      "method": "SAMD23",
+      "venue": "NeurIPS 2023 Datasets and Benchmarks Track",
+      "pages": 34,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/a1859debfb3b59d094f3504d5ebb6c25-Supplemental-Datasets_and_Benchmarks.zip",
+      "sha256": "0c0cb87e06e09985228847623c884808fa908fe9513901483ea2db026bdaf02c",
+      "claims": [
+        {
+          "id": "SA01",
+          "pages": [
+            8,
+            15,
+            19,
+            23,
+            24,
+            27
+          ],
+          "location": "TablesC1/D2/D6/D7/FiguresD7/D11",
+          "observation": "Energy/force errors, RDF/ADF dynamics, EoS and PEC cover different evidence; interrupted trajectories are configuration-specific.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SA02",
+          "pages": [
+            15,
+            16
+          ],
+          "location": "D1/TableD1",
+          "observation": "50snapshots with6fs intervals versus last3ps and HfO2376 versus prose2592 lower bound remain unresolved.",
+          "kind": "reported_protocol_identity_question"
+        },
+        {
+          "id": "SA03",
+          "pages": [
+            8,
+            9
+          ],
+          "location": "C2/TableC2",
+          "observation": "SCNSiNbatch6 versus prose3/4/8/16 requires exact configuration audit.",
+          "kind": "reported_protocol_identity_question"
+        },
+        {
+          "id": "SA04",
+          "pages": [
+            13,
+            23,
+            25,
+            30
+          ],
+          "location": "TablesC4/D8/FiguresD7/D14",
+          "observation": "Author timing and relative score mappings are not project measurements or factory pass criteria.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SA05",
+          "pages": [
+            1,
+            5
+          ],
+          "location": "TablesA1/A2/FigureA6",
+          "observation": "Simulation generation uses domain-specific DFT workflow. Raw snapshots differ from MLFF training splits.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "SA06",
+          "pages": [
+            8
+          ],
+          "location": "C2",
+          "observation": "codes.zip and result archive are separate asset audit tasks; Appendix reading alone does not validate their executability.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "예측 오차와 학습 설정별 원자 동역학 안정성·물성 검증을 함께 확인합니다.",
+      "next_validation_ko": "코드 설정과 표본 간격·원자 수·batch를 확인하고 물질별 궤적·물성의 독립 검증을 수행합니다.",
+      "reading_kind": "same_AI_unblinded_whole_extracted_text_with_selected_visuals",
+      "reading_ledger_sha256": "9627dcf30179814ee201d15957595dc022d3c6a3da85415f37a742ce1e787a7b",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        5,
+        8,
+        9,
+        12,
+        13,
+        15,
+        16,
+        19,
+        23,
+        24,
+        25,
+        27,
+        30
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 12,
+      "work_id": "W_neurips_2023_499969137de65d0b",
+      "graph_work_id": "work:PT05",
+      "graph_work_aliases": [
+        "work:D16",
+        "work:PT05"
+      ],
+      "method": "LithoBench",
+      "venue": "NeurIPS 2023 Datasets and Benchmarks Track",
+      "pages": 7,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/604b9fa9e1c16284e6517d923cf9ff20-Supplemental-Datasets_and_Benchmarks.pdf",
+      "sha256": "51411494547fcaa816475230a5602c7bc7cab287f3ff18fb39c8f820b04ac3bb",
+      "claims": [
+        {
+          "id": "LB_SUP01",
+          "pages": [
+            1,
+            2
+          ],
+          "location": "A–C/reference ILT",
+          "observation": "Reference mask optimization uses optical kernels, thresholds and sequential256/512/1024resolution optimization followed by2048interpolation. This is a separate stage from initial DNN inference.",
+          "kind": "author_reported"
+        },
+        {
+          "id": "LB_SUP02",
+          "pages": [
+            5
+          ],
+          "location": "D.2.2 Neural-ILT",
+          "observation": "NeuralILT uses supervised pretraining then an objective combining nominal printed-image error and process variation. Training and post-inference refinement must remain separate execution stages.",
+          "kind": "author_reported"
+        },
+        {
+          "id": "LB_SUP03",
+          "pages": [
+            6
+          ],
+          "location": "E Table2 Average row",
+          "observation": "After reference-ILT refinement, the displayed best averages differ by metric: NeuralILT L2, GANOPC PVB, DAMO EPE and CFNO shots. No model dominates all four displayed average objectives.",
+          "kind": "author_reported_and_recomputed_Pareto_relation"
+        },
+        {
+          "id": "LB_SUP04",
+          "pages": [
+            6
+          ],
+          "location": "F Limitations and Future Work",
+          "observation": "The authors state production-level scale and complex layouts have not been well studied and super-large-scale evaluation is absent. Tile-level benchmark results do not establish foundry deployment qualification.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "LB_SUP05",
+          "pages": [
+            1,
+            6
+          ],
+          "location": "B Eq2 versus D.2.2/E",
+          "observation": "The reference optimizer target term uses maximum-corner output, while the NeuralILT training objective uses nominal output. A repeated maximum-corner argument in Eq2 remains a documentation question; no source bug or universal identical objective is inferred.",
+          "kind": "reviewer_inference"
+        },
+        {
+          "id": "LB_SUP06",
+          "pages": [
+            5,
+            6
+          ],
+          "location": "D.2 visual artifacts; F research use",
+          "observation": "Reported unusual NeuralILT mask lines and a statement allowing research use do not constitute shape-manufacturability acceptance or commercial rights clearance.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "정제 이후 마스크 비교와 새 초기 마스크의 실행 결과는 다른 단계입니다.",
+      "next_validation_ko": "같은 정제 단계·입력·공정 조건에서 다목적 지표와 독립 노광 기준을 평가합니다.",
+      "reading_kind": "same_AI_unblinded_full_separate_supplement_reading",
+      "reading_ledger_sha256": "02de82f1769f82ad1afcc57849e2fa374e54fbf25a66c5c7fb3cb5fa1ecf8d2d",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    },
+    {
+      "order": 13,
+      "work_id": "W_neurips_2025_0a00b52c83c220fa",
+      "graph_work_id": "work:PT06",
+      "graph_work_aliases": [
+        "work:D33",
+        "work:PT06"
+      ],
+      "method": "DrivAerStar",
+      "venue": "NeurIPS 2025 Datasets and Benchmarks Track",
+      "pages": 16,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8dcedad1f5635033b4170a1ce40f05d4-Supplemental-Datasets_and_Benchmarks_Track.zip",
+      "sha256": "59c1d9757eee3a6abdd55fc5c52a1d562ab515830e0bbc80f2600f87a94700e4",
+      "claims": [
+        {
+          "id": "DAS01",
+          "pages": [
+            1
+          ],
+          "location": "A/TableA1",
+          "observation": "Authors report noncommercial dataset terms and written-permission requirement for commercial use; twenty bounded deformation parameters do not clear a new manufacturing profile.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "DAS02",
+          "pages": [
+            3,
+            6,
+            7,
+            8
+          ],
+          "location": "C.1–C.5",
+          "observation": "Geometry generation, mandatory STAR-CCM+ wrapping and steady-RANS/porous-media simulation are distinct stages; the reported generation budget is1,080,000core-hours, not downloaded-subset inference cost.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "DAS03",
+          "pages": [
+            9,
+            10
+          ],
+          "location": "C.7–C.8/D.1/EqsA12–A13",
+          "observation": "Numerical filtering and experimental comparisons are reported. RelativeL2 uses standardized variables and dataset-wide mean/std; partition provenance and raw-unit/count error should be separately established. No actual leakage is proved.",
+          "kind": "author_reported_with_scope_inference"
+        },
+        {
+          "id": "DAS04",
+          "pages": [
+            6,
+            10,
+            11
+          ],
+          "location": "C.3/D.2/TableA2",
+          "observation": "Printed prism thickness and several percentage/model-ranking statements do not follow from displayed inputs/rows. Preserve source values and request exact configurations; this is not proof of solver failure.",
+          "kind": "source_discrepancy_recomputed"
+        },
+        {
+          "id": "DAS05",
+          "pages": [
+            9,
+            11,
+            12
+          ],
+          "location": "C.7/TableA2/D.3/F",
+          "observation": "Lowest5% rejection/top60% retention, table-caption1500samples and row-specific subsets, and baseline/scaling splits require denominator reconciliation. No usable whole-dataset acceptance rate is inferred.",
+          "kind": "denominator_and_scope_question"
+        },
+        {
+          "id": "DAS06",
+          "pages": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "location": "G/FiguresA8–A10",
+          "observation": "Twenty-parameter geometry and steady-RANS omit important real-world variability. Simulated field examples and author experimental agreement do not establish commercial production/design qualification.",
+          "kind": "author_reported_with_scope_inference"
+        }
+      ],
+      "summary_ko": "기하 생성과 유동 시뮬레이션의 단계·사용권·분모를 구분합니다.",
+      "next_validation_ko": "정확한 solver 설정과 분할, 원 단위 오차, 상업적 사용 조건을 확인합니다.",
+      "reading_kind": "same_AI_unblinded_full_separate_supplement_reading",
+      "reading_ledger_sha256": "028d5c56c64096a8220aa385a3b9b2412b995ff726307c64084465bde4a2a216",
+      "whole_supplement_text_read": true,
+      "unresolved_rendered_text_regions": [],
+      "visually_inspected_pages": [
+        1,
+        6,
+        7,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16
+      ],
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false
+    }
+  ],
+  "parent_stages": [
+    {
+      "verified_utc": "2026-10-11T15:32:05.571394+00:00",
+      "archive": "output/Separate_Supplement_Reading_Stage_20261012.zip",
+      "sha256": "a1ad57dc2fd98c8b90b703a3cbc3b7e1857b74b7b2b329bf71a69ece884bdd0a",
+      "bytes": 72312,
+      "files": 38,
+      "every_payload_SHA_and_CRC_valid": true,
+      "current_disk_matches_payloads": true,
+      "parent_package_unchanged": true,
+      "author_source_assets_redistributed": false,
+      "canonical_integration_pending": true,
+      "submission_ready": false,
+      "path": "output/Separate_Supplement_Reading_Stage_20261012.zip"
+    },
+    {
+      "verified_utc": "2026-10-11T15:46:15.929358+00:00",
+      "archive": "output/Separate_Supplement_Reading_Batch02_20261012.zip",
+      "sha256": "ff9a6da777a7ed1d24233ca14d4392d2ee99a3811e45dd335dcbf68300fddad3",
+      "bytes": 40458,
+      "files": 14,
+      "every_payload_SHA_and_CRC_valid": true,
+      "current_disk_matches_payloads": true,
+      "immutable_parents_unchanged": true,
+      "original_source_assets_redistributed": false,
+      "canonical_integration_pending": true,
+      "new_model_executions": 0,
+      "industrial_pass_count": 0,
+      "submission_ready": false,
+      "path": "output/Separate_Supplement_Reading_Batch02_20261012.zip"
+    },
+    {
+      "path": "output/Separate_Supplement_Reading_Batch03_20261012.zip",
+      "bytes": 42162,
+      "sha256": "f4cbbbfd8fe1f850802f1efcef5c5c40f04117a54089060710d54d4dcb9a16b8",
+      "total_files": 17,
+      "CRC_valid": true,
+      "all_payload_hashes_valid": true,
+      "all_payloads_equal_current_disk": true,
+      "parent_digests_unchanged": true
+    },
+    {
+      "path": "output/Separate_Supplement_Reading_Batch04_20261012.zip",
+      "bytes": 55156,
+      "sha256": "ba541c76b5821bf94bda2030505343e26d337c35e3d46474f2ce10b82bf1b02c",
+      "total_files": 19,
+      "CRC_valid": true,
+      "all_payload_hashes_valid": true,
+      "all_payloads_equal_current_disk": true,
+      "parent_digests_unchanged": true
+    }
+  ],
+  "canonical_integration_pending": false,
+  "independent_review": false,
+  "new_execution_count": 0,
+  "industrial_pass_count": 0,
+  "submission_ready": false
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+runs/**/index.html
+runs/**/archive_pages/
+*.pdf
+*.pt
+*.pkl
+*.npz
+*.safetensors

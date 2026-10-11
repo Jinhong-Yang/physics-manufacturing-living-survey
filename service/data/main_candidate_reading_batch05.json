@@ -1,0 +1,690 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "schema_version": "1.0",
+    "cohort_freeze_sha256": "d83677aeaf3c17af2fd35747674db2e241aff8ca2c918ae869fdde9fc6aca79d",
+    "batch05_freeze_sha256": "852d358b79b6bec280885cb97b96726d6326906ba7de82ed1a59c9da9bf27e9f",
+    "fixed_cohort_works": 14,
+    "fixed_cohort_main_pdf_pages": 229,
+    "coverage_scope": "All pages of each acquired PDF, including embedded appendices where present; external supplements separate.",
+    "this_batch_same_ai_reviews_complete": 2,
+    "this_batch_pages_read_and_visually_reviewed": 55,
+    "cumulative_same_ai_main_pdf_reviews_complete": 12,
+    "cumulative_same_ai_main_pdf_pages_read_and_visually_reviewed": 185,
+    "remaining_same_ai_main_pdf_reviews": 2,
+    "remaining_same_ai_main_pdf_pages": 44,
+    "independent_reviews_complete": 0,
+    "adjudicated_inclusions": 0,
+    "systematic_review_complete": false,
+    "new_executions": 0,
+    "new_scientific_passes": 0,
+    "new_industrial_qualification_passes": 0,
+    "historical_sources_and_human_packets_unchanged": true,
+    "previous_ten_reviews_and_batch04_validation_unchanged": true,
+    "raw_pdfs_or_renders_publicly_redistributed": false,
+    "validation_scope": "Local source/record integrity, stated acquired-PDF page coverage and conservative accounting; not independent reading, physical validation or industrial qualification.",
+    "prior_reviews": [
+      {
+        "work_id": "W_aaai_2023_3e92365c6a31ea37",
+        "method": "DFMGAN",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_aaai_2023_3e92365c6a31ea37_review.json",
+        "sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae"
+      },
+      {
+        "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+        "method": "TGI-AD",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2024_4bca28b6f05c412d_review.json",
+        "sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a"
+      },
+      {
+        "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+        "method": "DefectFill",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2025_e6d8cf140103e9bb_review.json",
+        "sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51"
+      },
+      {
+        "work_id": "W_eccv_2024_72b004555e605ea7",
+        "method": "GLASS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_72b004555e605ea7_review.json",
+        "sha256": "76fc6184f2dc02de24f6c73f1388b8165005cc1c576492259c0c265d85b9e06e"
+      },
+      {
+        "work_id": "W_eccv_2024_6821303e219e9206",
+        "method": "DefectDiffu",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_6821303e219e9206_review.json",
+        "sha256": "6ef150302a9ae4fcd8f3010df2c29ef78d00e61069ae8c6e73a70857dd17c45b"
+      },
+      {
+        "work_id": "W_iccv_2025_e01efad5210c86d2",
+        "method": "IKDDiT",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_e01efad5210c86d2_review.json",
+        "sha256": "3a9920930959cc26e9611f2d933525656be565bc46bb11511dfdde5acce3eb68"
+      },
+      {
+        "work_id": "W_iccv_2025_715dd4512a3586b9",
+        "method": "SeaS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_715dd4512a3586b9_review.json",
+        "sha256": "8ca05c3f0118f5624f04ab6cca98fd95d1c28a25ffe576eb47bd634673fd0db9"
+      },
+      {
+        "work_id": "W_iccv_2025_204365ef82780322",
+        "method": "TF-IDG",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_204365ef82780322_review.json",
+        "sha256": "6dc1f50f994937bd4b4a326d82f4a327ebfa21371f679ec82532ff019740ebe3"
+      },
+      {
+        "work_id": "W_icml_2025_b84206981cf14d22",
+        "method": "LineFlow",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch04/W_icml_2025_b84206981cf14d22_review.json",
+        "sha256": "d473bd4874789d3babc13ebf7dbeaf2befc5ea0dfac1682b81258b6bd7c03e37"
+      },
+      {
+        "work_id": "W_neurips_2022_f8d33af9719ba938",
+        "method": "SMPL",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch04/W_neurips_2022_f8d33af9719ba938_review.json",
+        "sha256": "326886123ae33782bf5f7f84d704e228e6062948363d5300ae0263e548268250"
+      }
+    ],
+    "reviews": [
+      {
+        "work_id": "W_neurips_2023_6e31d25a4d3bd304",
+        "method": "SAMD23",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch05/W_neurips_2023_6e31d25a4d3bd304_review.json",
+        "sha256": "cecc32d0fbe4f37f64aa15e1adf8cd13340d95ac5afdef9729a190b36f51b81a"
+      },
+      {
+        "work_id": "W_neurips_2023_499969137de65d0b",
+        "method": "LithoBench",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch05/W_neurips_2023_499969137de65d0b_review.json",
+        "sha256": "417c44039523cabedfa4698d0fae6bef9e5a76cce82dbcede9ff2d035beff105"
+      }
+    ],
+    "pending_work_ids": [
+      "W_neurips_2025_0a00b52c83c220fa",
+      "W_neurips_2025_4b3ae9c13c106648"
+    ]
+  },
+  "relation_to_existing_graph": "Additive same-AI provisional C1/V2/M1 benchmark metadata; not appended to graph v0.9.32. Method-specific conservation/objective evidence and dated prior executions remain separate. No qualification counts change.",
+  "frozen_description_correction": {
+    "kind": "append_only_frozen_description_correction",
+    "frozen_file": "runs/wp1/main_candidate_ai_reading_20261011/batch05/batch05_freeze.json",
+    "frozen_sha256": "852d358b79b6bec280885cb97b96726d6326906ba7de82ed1a59c9da9bf27e9f",
+    "field": "selection",
+    "frozen_description": "Unchanged fixed orders 11-12: LineFlow then SMPL; no outcome-based selection.",
+    "correct_description": "Unchanged fixed orders 11-12: SAMD23 then LithoBench; no outcome-based selection.",
+    "basis": "Frozen records contain the correct SAMD23 and LithoBench IDs and original cohort orders. Only the prose method names were copied from batch04.",
+    "frozen_records_or_order_changed": false,
+    "original_freeze_modified": false
+  },
+  "records": [
+    {
+      "work_id": "W_neurips_2023_6e31d25a4d3bd304",
+      "method": "SAMD23",
+      "title": "Benchmark of Machine Learning Force Fields for Semiconductor Simulations: Datasets, Metrics, and Comparative Analysis",
+      "official_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/a1859debfb3b59d094f3504d5ebb6c25-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "6b9782022a80a783ddb304e1c5ebe9b153b916693dc2dd8d719fc478b7cd0f3d",
+      "provisional_topic_decision": "include_material_state_generation_and_MLFF_benchmark_I3_pending_independent_adjudication",
+      "queue_decision_unchanged": "I3 in frozen original queue; no final systematic inclusion",
+      "provisional_codes": {
+        "C": [
+          "C1"
+        ],
+        "physical_verification": [
+          "V2"
+        ],
+        "manufacturing": [
+          "M1"
+        ]
+      },
+      "code_evidence_basis": {
+        "C1": "DFT/MD reference atomic-state generation, pp3-4 and15-19; route-specific architecture/loss tags require separate method-level coding.",
+        "V2": "Author-reported quantified DFT-reference RDF/ADF/EoS/PEC comparisons, pp8-10 and26-43; no independent local physical validation.",
+        "M1": "Semiconductor material simulations and properties; no inspectable external production/wafer cohort."
+      },
+      "generation": {
+        "reference_data": "DFT molecular-dynamics atomic states with energy and force labels; extended-XYZ raw/sampled SiN/HfO datasets.",
+        "learned_route": "Atomic configuration -> MLFF energy/forces -> MD integration -> synthetic trajectories and property evaluation.",
+        "not_demonstrated": "Wafer inspection images, measured film dynamics, manufacturing defect formation or calibrated fab production.",
+        "outputs_need_separate_identity": [
+          "reference dataset",
+          "trained potential/checkpoint",
+          "predicted energy/force",
+          "integrated trajectory",
+          "postprocessed property"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "SA01",
+          "pdf_pages_1_based": [
+            1,
+            3,
+            4,
+            15,
+            19
+          ],
+          "location": "Dataset construction",
+          "paraphrase": "VASP/PBE DFT and modified melt-quench-anneal generate simulated SiN/HfO reference atomic states. Raw snapshots, sampled splits and per-atom data points are different dataset counts; the2.6k GPU-day corpus cost is not a third-party released-data inference budget.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SA02",
+          "pdf_pages_1_based": [
+            5,
+            7,
+            20,
+            21,
+            38
+          ],
+          "location": "Force route and conservation",
+          "paraphrase": "Energy-gradient force models and direct-force models must be distinguished. GemNet-dT avoids energy backpropagation and is explicitly described as non-energy-conserving in the main paper; benchmark-level physics-based data cannot certify all learned trajectories.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SA03",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            26,
+            28,
+            29,
+            32
+          ],
+          "location": "Split and evaluation units",
+          "paraphrase": "Original sampled ID data use an8:1:1 train/validation/test split. OOD training-error tests, MD composition/phase changes and static EoS structures have different denominators. Snapshot count is not the number of independent trajectories or wafer/site holdouts.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SA04",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            26,
+            27,
+            28,
+            31,
+            32,
+            34
+          ],
+          "location": "Physics-related evaluation",
+          "paraphrase": "The authors compare RDF, ADF, bulk modulus, equilibrium volume and PEC against DFT reference data. These quantified simulator/property comparisons support author-reported V2, not independent experimental-film/metrology validation.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SA05",
+          "pdf_pages_1_based": [
+            9,
+            10,
+            37,
+            38
+          ],
+          "location": "Failures retained",
+          "paraphrase": "HfO OOD dynamic simulations have interrupted RDF/ADF entries: Allegro with both losses and MACE with MAE in TablesD6/D7. FigureD8 shows Allegro Hf collision; failed entries must not disappear from completion/failure denominators.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SA06",
+          "pdf_pages_1_based": [
+            9,
+            35,
+            36,
+            38,
+            42,
+            43
+          ],
+          "location": "Indicator visualization and selection",
+          "paraphrase": "Radar scores use the minimum observed cohort error and chosen maximum thresholds; five axes include EF,RDF,ADF,B0,V0 while PEC remains separately reported. The main figure selects MAE/MSE variants by total indicator score. Neither the plot nor its aggregate is a universal industrial acceptance score.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SA07",
+          "pdf_pages_1_based": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "location": "Reproduction conditions",
+          "paraphrase": "Training uses200epochs and model-dependent batches chosen for V100 memory. Data scaling fixes update budgets rather than epochs. DPA-1 runs in a different TensorFlow framework; OC20 also changes training recipe and cannot silently be pooled with SiN/HfO results.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SA08",
+          "pdf_pages_1_based": [
+            28,
+            29
+          ],
+          "location": "Source consistency questions",
+          "paraphrase": "The text describes averaging the last3ps using50snapshots at6fs intervals, which spans approximately0.3ps rather than3ps. TableD1 also includes a2376-atom HfO OOD system below the narrative2592 minimum. These are source/code clarification questions, not established defects in the repository.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SA09",
+          "pdf_pages_1_based": [
+            11
+          ],
+          "location": "Version sensitivity",
+          "paraphrase": "The acquired official-source PDF acknowledges new Allegro configurations released in January2024 and reports the benchmark used a version before February2023. Historical performance should be attached to model/configuration version rather than asserted as a current family-wide result.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SA10",
+          "pdf_pages_1_based": [
+            29,
+            30,
+            31,
+            32,
+            34,
+            35
+          ],
+          "location": "Reference boundary",
+          "paraphrase": "DFT-derived RDF/ADF/EoS/PEC alignment provides physical proxies. Statements connecting these to thin-film use do not supply measured wafer outcomes or a calibrated process integration envelope.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "dataset_count_units_separated": true,
+        "Table1_SiN_ID": {
+          "raw_snapshots": 84463,
+          "atomic_data_points": 4817344,
+          "train": 22510,
+          "validation": 2822,
+          "test": 2866,
+          "gpu_hours_V100": 36556
+        },
+        "Table1_HfO_ID": {
+          "raw_snapshots": 160000,
+          "atomic_data_points": 15360000,
+          "train": 27960,
+          "validation": 3510,
+          "test": 3510,
+          "gpu_hours_V100": 19341
+        },
+        "author_corpus_generation_gpu_days_approx": 2600,
+        "training_epochs": 200,
+        "training_neighbor_cutoff_angstrom": 6,
+        "max_neighbors": 50,
+        "MD_duration_ps": 6,
+        "RDF_ADF_last_window_ps_claim": 3,
+        "RDF_ADF_snapshots_claim": 50,
+        "RDF_ADF_interval_fs_claim": 6,
+        "TableD1_HfO_OOD_cubic_atoms": 2376,
+        "HfO_MAE_interrupted_dynamic_models": [
+          "Allegro",
+          "MACE"
+        ],
+        "HfO_MSE_interrupted_dynamic_models": [
+          "Allegro"
+        ],
+        "TableC3_Allegro_MAE_OC20_val_ood_both_EF": 210000000000000.0,
+        "new_local_model_timing_or_accuracy": null,
+        "radar_axis_count": 5,
+        "PEC_included_in_radar": false,
+        "radar_is_industrial_acceptance_score": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            3,
+            4,
+            15,
+            19
+          ],
+          "issue": "References are DFT/MD data; correlation across snapshots and exact source/trajectory partitioning must be audited."
+        },
+        {
+          "pages": [
+            5,
+            7,
+            21,
+            38
+          ],
+          "issue": "Force route/conservation is model-variant-specific. A source-data C1 label does not give every MLFF a conservation guarantee."
+        },
+        {
+          "pages": [
+            8,
+            10,
+            37,
+            38
+          ],
+          "issue": "OOD MD interruptions and high-energy extrapolation failures must remain explicit; no measured fab or film trajectory qualification."
+        },
+        {
+          "pages": [
+            28,
+            29
+          ],
+          "issue": "Average-window interval and atom-range statements require pinned-code/data reconciliation before matching the property protocol."
+        },
+        {
+          "pages": [
+            9,
+            35,
+            36,
+            38
+          ],
+          "issue": "Cohort-relative scores and model/loss variant selection must not become universal acceptance or independent held-out evaluation."
+        },
+        {
+          "pages": [
+            11
+          ],
+          "issue": "Allegro configuration update is acknowledged; claims belong to the evaluated historical version."
+        },
+        {
+          "pages": [
+            1,
+            19,
+            21
+          ],
+          "issue": "A documented framework/data route is not acquired pinned code, trained model, MD execution or clean-start resource measurement."
+        }
+      ],
+      "open_questions": [
+        "Pin top-level commit, all submodules/patches, data checksums and inference-ready trained checkpoints before a bounded clean-start MD run.",
+        "Reconcile the3ps/50snapshot/6fs averaging statements and exact dynamic reference structures against pinned configuration and data.",
+        "Preserve interruptions separately from missing measurements and publish denominator by structure, loss, version, temperature and composition.",
+        "Select tolerances before evaluation; measure energy-force consistency, trajectory stability and DFT-reference property error without borrowing cohort-relative radar scores as physical gates.",
+        "Evaluate conservative and direct-force routes separately, including integrator/thermostat/boundary conditions and hardware/time/memory.",
+        "Resolve each code/data/model/submodule/upstream rights scope and verify measured film/process transfer before industrial qualification."
+      ],
+      "accepted_version_observation": "Official NeurIPS2023 Datasets and Benchmarks source, title/authors and all printed pages 1-43 inspected; embedded Appendices A-D read. Independent publication-version adjudication pending.",
+      "embedded_appendices_read_this_batch": true,
+      "carried_forward_local_execution": {
+        "new_execution_this_batch": false,
+        "generator_execution_observed": false,
+        "scientific_pass": false,
+        "industrial_qualification": false
+      },
+      "review_sha256": "cecc32d0fbe4f37f64aa15e1adf8cd13340d95ac5afdef9729a190b36f51b81a",
+      "acquired_pdf_pages_read": 43,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    },
+    {
+      "work_id": "W_neurips_2023_499969137de65d0b",
+      "method": "LithoBench",
+      "title": "LithoBench: Benchmarking AI Computational Lithography for Semiconductor Manufacturing",
+      "official_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/604b9fa9e1c16284e6517d923cf9ff20-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "bac5c4c528817c92082c484583ae3776226abf4394fcd02d2eac827d2a59471d",
+      "provisional_topic_decision": "include_lithography_synthetic_physical_observations_and_mask_generation_benchmark_I3_pending_independent_adjudication",
+      "queue_decision_unchanged": "I3 in frozen original queue; no final systematic inclusion",
+      "provisional_codes": {
+        "C": [
+          "C1"
+        ],
+        "physical_verification": [
+          "V2"
+        ],
+        "manufacturing": [
+          "M1"
+        ]
+      },
+      "code_evidence_basis": {
+        "C1": "Reference optics/resist/ILT generates physical observation proxies, pp3-6. Individual trained inverse objectives, e.g.NeuralILT p8, need method-level C3 coding separately.",
+        "V2": "Author-reported quantified reference-model nominal/process-corner/EPE metrics, pp6-9; not measured wafer validation.",
+        "M1": "Circuit design layouts and simulated resist outputs; design-data origin is distinct from actual manufactured sensor/metrology data."
+      },
+      "generation": {
+        "reference_data": "Synthetic MetalSet layouts plus circuit-derived ViaSet and standard-cell designs; optimized masks and aerial/resist images generated by reference lithography/ILT.",
+        "forward_surrogate": "Optimized mask -> predicted aerial and printed images.",
+        "inverse_generation": "Target pattern -> candidate optimized mask -> reference-simulator evaluation; optional separate refinement stage.",
+        "not_demonstrated": "Measured printed-wafer labels or calibrated fab process-window/production acceptance."
+      },
+      "claims": [
+        {
+          "claim_id": "LI01",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "location": "Task/model distinction",
+          "paraphrase": "Lithography simulation predicts aerial/resist images from an optimized mask. Inverse mask generation predicts a mask from a target layout. Both use a Hopkins optical and resist reference model; they have different inputs, outputs, training targets and evaluation denominators.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LI02",
+          "pdf_pages_1_based": [
+            5,
+            6
+          ],
+          "location": "Design-data provenance",
+          "paraphrase": "MetalSet is synthesized according to ICCAD13 design rules; ViaSet is generated from OpenROAD gcd/aes designs; StdMetal/StdContact use Nangate45nm standard cells. Circuit-derived design patterns do not supply measured manufactured-wafer labels.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LI03",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            8
+          ],
+          "location": "Split/transfer conditions",
+          "paraphrase": "Simulation test counts differ from mask-optimization10case MetalSet/ViaSet tests. StdMetal uses271test tiles without adaptation; StdContact uses163adaptation tiles and165test tiles. That transfer result is not fully unseen zero-adaptation testing.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LI04",
+          "pdf_pages_1_based": [
+            5,
+            6
+          ],
+          "location": "Count and equation questions",
+          "paraphrase": "The133496 printed total differs from133446 obtained by Table1 simulation subset counts; ViaSet construction116415 differs from116375 in Table1. Eq8 repeats a Zmax argument and uses Zmax in its target-error term despite nominal-L2 Eq5. Keep these as provenance/code questions, not silently corrected data or proven code bugs.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LI05",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Metric definition",
+          "paraphrase": "PA Eq10 divides the foreground intersection by target foreground, resembling foreground recall rather than all-pixel accuracy. EPE counts probe violations; shots count decomposed rectangles. Nominal mismatch, variation robustness, mask complexity and timing require separate interpretation.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LI06",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9
+          ],
+          "location": "Author comparisons",
+          "paraphrase": "Author experiments use RTX3090 and different model resolutions; DOINN leads simulation averages, while mask optimization trades L2/EPE/PVB/shots. NeuralILT has best displayed average L2/EPE, GANOPC best average PVB and CFNO lowest average shots. No single all-metric best follows.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LI07",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          "location": "Physical evidence boundary",
+          "paraphrase": "Quantified reference-model optical/resist/corner evaluations support author-reported V2 and source-data C1. Applying a32nm reference to45nm layouts is an author modeling assumption, not independently calibrated fab qualification. Individual NeuralILT objectives explicitly use physics-linked L2 and PVB.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LI08",
+          "pdf_pages_1_based": [
+            5,
+            6
+          ],
+          "location": "Independence question",
+          "paraphrase": "ViaSet crops2048nm tiles with512nm stride and retains central1280nm patterns. Neighboring tiles may share context; exact circuit/spatial partition membership needs audit before independent-design claims. This reading does not establish realized train/test leakage.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "printed_total_tiles": 133496,
+        "Table1_simulation_tiles_sum": 133446,
+        "Table1_simulation_training": {
+          "MetalSet": 14824,
+          "ViaSet": 104733,
+          "StdMetal": 0,
+          "StdContact": 163
+        },
+        "Table1_simulation_testing": {
+          "MetalSet": 1648,
+          "ViaSet": 11642,
+          "StdMetal": 271,
+          "StdContact": 165
+        },
+        "Table1_mask_testing": {
+          "MetalSet": 10,
+          "ViaSet": 10,
+          "StdMetal": 271,
+          "StdContact": 165
+        },
+        "ViaSet_construction_count": 116415,
+        "ViaSet_Table1_sum": 116375,
+        "layout_raster_nm_per_pixel": 1,
+        "layout_image_pixels": [
+          2048,
+          2048
+        ],
+        "ViaSet_stride_nm": 512,
+        "ViaSet_central_region_nm": 1280,
+        "multilevel_optimizer_iterations": [
+          200,
+          100,
+          100
+        ],
+        "multilevel_optimizer_resolution": [
+          256,
+          512,
+          1024
+        ],
+        "author_hardware": "RTX3090",
+        "Table3_NeuralILT_MetalSet": {
+          "L2": 36670,
+          "PVB": 42666,
+          "EPE": 7.3,
+          "shots": 476
+        },
+        "Table3_NeuralILT_reported_seconds_per_image": 0.025,
+        "PA_definition_includes_true_negatives": false,
+        "StdContact_no_adaptation": false,
+        "Table2_and_Table3_equal_test_denominators": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            3,
+            4,
+            6
+          ],
+          "issue": "Labels and process corners come from the reference simulator, not measured wafers; optical/resist calibration and32nm-to45nm transfer need independent checks."
+        },
+        {
+          "pages": [
+            5,
+            6
+          ],
+          "issue": "Task-specific test counts and163tile StdContact adaptation must accompany generalization claims."
+        },
+        {
+          "pages": [
+            5,
+            6
+          ],
+          "issue": "Overlapping circuit crops may share context; inspect exact spatial/circuit memberships before independent-design inference."
+        },
+        {
+          "pages": [
+            4,
+            5,
+            6,
+            9
+          ],
+          "issue": "Dataset totals and Eq8 have source consistency questions requiring pinned assets/code; do not silently alter paper counts."
+        },
+        {
+          "pages": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "issue": "PA,EPE,shots and runtime have distinct units/definitions. Model resolution/hardware and optional refinement affect comparisons."
+        },
+        {
+          "pages": [
+            1,
+            7
+          ],
+          "issue": "Code release and adaptive-boxes MIT observation do not establish model/kernel/layout/output commercial rights or industrial process acceptance."
+        }
+      ],
+      "open_questions": [
+        "Reconcile dataset totals, Eq8 target corner/arguments and PA reference definition with pinned data and scripts.",
+        "Audit spatial/circuit split overlap and163tile adaptation; report task-specific10/1648/11642/271/165 denominators explicitly.",
+        "Separate pretraining, learned initialization, optional refinement and complete mask manufacturing metrics in reproducible recipes.",
+        "Predefine nominal-error, process-window, EPE, shots and resource thresholds; a better L2 does not compensate for PVB failure.",
+        "Audit kernel/resist calibration, wavelength/process envelope and measured-wafer transfer before physical or industrial claims.",
+        "Establish model/kernel/layout/dependency/output rights and verified packaging for practical industrial reuse."
+      ],
+      "accepted_version_observation": "Official NeurIPS2023 Datasets and Benchmarks source, title/authors/publication notice and printed pages1-12 inspected; references end on12, no embedded appendix. Independent publication-version adjudication pending.",
+      "embedded_appendices_read_this_batch": false,
+      "carried_forward_local_execution": {
+        "new_execution_this_batch": false,
+        "source": "runs/wp1/artifacts/LithoBench_actual_NeuralILT_process_tradeoff_audit_20261011.md",
+        "scope": "MetalSet NeuralILT initialization only, ICCAD2013 M1test1-10 pluscase1repeat; same operator/host CPU adaptation.",
+        "source_commit": "9c74e82218e377eaf6d02d113fc1ce6e36c92aa6",
+        "primary_layouts": 10,
+        "repeat_layouts": 1,
+        "training_reproduction": false,
+        "final_ILT_refinement_reproduction": false,
+        "shot_count_reproduction": false,
+        "mean_L2_baseline": 102664.1,
+        "mean_L2_generated": 36663.8,
+        "mean_L2_change_percent": -64.29,
+        "mean_PVB_baseline": 37476.3,
+        "mean_PVB_generated": 42657.7,
+        "mean_PVB_change_percent": 13.83,
+        "PVB_improved_layouts": 4,
+        "PVB_worsened_layouts": 6,
+        "mean_EPE_baseline": 69.6,
+        "mean_EPE_generated": 7.3,
+        "author_PNG_bitwise_matches": 0,
+        "author_PNG_cases_compared": 10,
+        "numerical_checker_scope": "Separate NumPy/SciPy convolution implementation sharing source kernels and model assumptions;60corner comparisons, not independent physical reference.",
+        "max_scaled_aerial_error": 3.198024e-07,
+        "max_resist_error": 2.236699e-06,
+        "numerical_tolerance": 0.0001,
+        "mean_CPU_inference_seconds": 1.1782,
+        "whole_process_RSS_bytes": 2978160640,
+        "independent_local_physical_validation": false,
+        "scientific_pass": false,
+        "industrial_qualification": false
+      },
+      "review_sha256": "417c44039523cabedfa4698d0fae6bef9e5a76cce82dbcede9ff2d035beff105",
+      "acquired_pdf_pages_read": 12,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    }
+  ]
+}

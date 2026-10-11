@@ -1,0 +1,1039 @@
+{
+  "created_utc": "2026-10-11T08:32:10.460675+00:00",
+  "schema_version": "1.0",
+  "work_id": "W_neurips_2025_7d71af30fcc1f3f6",
+  "audit_id": "SUP_A05",
+  "artifact_commit": "cb23bc251b531ba6908a3788c2f91423cd543149",
+  "evidence_kind": "environment_followup",
+  "parent_evidence": [
+    "service/data/taccel_runtime_evidence.json",
+    "service/data/taccel_dependency_pair.json"
+  ],
+  "host": {
+    "system": "Ubuntu24.04.4 WSL2",
+    "gpu": "NVIDIA GeForce RTX5080",
+    "gpu_capability": [
+      12,
+      0
+    ],
+    "python": "3.10.22",
+    "numpy": "1.26.4",
+    "adapted_torch": "2.7.1+cu128",
+    "toolkit": "12.8.1",
+    "nvcc": "12.8.93",
+    "compiler": "GCC/G++12.4"
+  },
+  "stages": [
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/cuda_sdk_preparation.json",
+      "observation": "our_harness_guard_failure",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/cuda_sdk_preparation_v2.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/cuda_sdk_preparation_v2.json",
+      "observation": "project_sdk_install_completed",
+      "followup_manifest": null
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/vendored_warp_build.json",
+      "observation": "missing_sdk_header_layout",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/warp_layout_adapted_build.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/warp_layout_adapted_build.json",
+      "observation": "compiler_generated_unquoted_rpath",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/warp_portable_build.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/warp_short_compiler_build.json",
+      "observation": "our_harness_temporary_path_assumption",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/warp_portable_build.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/compiler_spec_adapter_probe.json",
+      "observation": "own_compiler_link_probe_completed",
+      "followup_manifest": null
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/warp_portable_build.json",
+      "observation": "native_build_completed",
+      "followup_manifest": null
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies.json",
+      "observation": "scikit_sparse_compiler_path_failure",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_v2.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_v2.json",
+      "observation": "runtime_package_install_then_missing_temporary_compiler",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup.json",
+      "observation": "python_linker_flags_unquoted_path",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup_v2.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup_v2.json",
+      "observation": "scikit_sparse_build_and_import_completed",
+      "followup_manifest": null
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/core_import_probe.json",
+      "observation": "missing_torch_scatter_dependency",
+      "followup_manifest": "runs/wp1/taccel_execution_20261011/core_import_probe_v2.json"
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/scatter_dependency_setup.json",
+      "observation": "official_matching_wheel_and_two_gpu_cases_completed",
+      "followup_manifest": null
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/core_import_probe_v2.json",
+      "observation": "all_three_core_imports_completed",
+      "followup_manifest": null
+    },
+    {
+      "manifest": "runs/wp1/taccel_execution_20261011/warp_gpu_kernel_probe.json",
+      "observation": "two_native_gpu_kernel_cases_completed",
+      "followup_manifest": null
+    }
+  ],
+  "compiled_libraries": [
+    {
+      "path": "runs/wp1/taccel_execution_20261011/runtime/compiled_warp_portable/warp.so",
+      "bytes": 255080896,
+      "sha256": "416967ff003e3c5641dfc2ba518c16268fcdea38faa3cec1c4442053ba659fdb"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/runtime/compiled_warp_portable/warp-clang.so",
+      "bytes": 66030984,
+      "sha256": "838b7fd75b1b58b0d39077d03e405a2b896fb8c590632f464e7a16419f4e2f3a"
+    }
+  ],
+  "native_build_seconds": 481.607816282,
+  "exact_source_files_verified_before_build": 1406,
+  "core_imports_before_dependency": {
+    "passed": 0,
+    "total": 3,
+    "manifest": "runs/wp1/taccel_execution_20261011/core_import_probe.json"
+  },
+  "core_imports_after_dependency": {
+    "passed": 3,
+    "total": 3,
+    "manifest": "runs/wp1/taccel_execution_20261011/core_import_probe_v2.json"
+  },
+  "scatter_gpu_cases": {
+    "passed": 2,
+    "total": 2,
+    "manifest": "runs/wp1/taccel_execution_20261011/scatter_dependency_setup.json"
+  },
+  "native_warp_gpu_cases": {
+    "passed": 2,
+    "total": 2,
+    "manifest": "runs/wp1/taccel_execution_20261011/warp_gpu_kernel_probe.json",
+    "warp_version": "1.6.2-taccel",
+    "maximum_absolute_error": 0.0
+  },
+  "manual_upstream_source_patch_performed": false,
+  "compiler_binary_replaced": false,
+  "compiler_config_override_performed": true,
+  "cuda_layout_and_static_libraries_adapted": true,
+  "python_build_linker_flags_overridden": true,
+  "original_requirements_followed": false,
+  "system_driver_installed": false,
+  "method_run_denominator_added": 0,
+  "taccel_simulator_constructed": false,
+  "taccel_execution_performed": false,
+  "tactile_output_observed": false,
+  "new_manufacturing_generation_pass": false,
+  "independent_physical_pass": false,
+  "industrial_pass": false,
+  "inference_scope": "Single-host changed-dependency environment branch. Small native kernels and imports are not IPC solver/model execution, tactile generation or independent physical/industrial validation. Earlier failures and historical snapshots remain unchanged. Missing temporary directories were observed later; their disappearance cause was not established.",
+  "next_gate": "Frozen one-environment seed42 original200-step peg example; preserve full horizon and Newton20; validate states/PLY separately from tactile depth/normal/markers and learned RGB.",
+  "sources": [
+    {
+      "path": "protocol/Taccel_Native_Runtime_Followup_20261011.md",
+      "bytes": 2181,
+      "sha256": "b42cae073965460d51b4b5d6a2703a08cc88810f619b4a8931414dd51ba1fcdf"
+    },
+    {
+      "path": "protocol/Taccel_Peg_Runtime_Dependencies_20261011.md",
+      "bytes": 1425,
+      "sha256": "80447307ec52783a02a27972d9e712f0cd8fe128b11f86696d8cfef791a22046"
+    },
+    {
+      "path": "protocol/Taccel_Python310_Dependency_Pair_20261011.md",
+      "bytes": 3091,
+      "sha256": "88a68c0c724afabd11eeb908ab629d959c166ee35f8b5eae9d70962845a45816"
+    },
+    {
+      "path": "protocol/Taccel_Vendored_Warp_Build_20261011.md",
+      "bytes": 2437,
+      "sha256": "40e3e077dc1c1307273caff7d248c7dcb8c62c7dbdad67968c48bd35fed15e61"
+    },
+    {
+      "path": "protocol/Taccel_Warp_Layout_Adaptation_20261011.md",
+      "bytes": 2217,
+      "sha256": "327868b2c584a96735613dd0ed1998c96ac9f6fa12fd78bb21163f134acbb206"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/adapted_py310_cases.json",
+      "bytes": 8866,
+      "sha256": "4d47c6cf9aed0c9a6ccb9d6e38528152de616ea71a13d3031ecbd23ac0b610da"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/adapted_py310_install.json",
+      "bytes": 2676,
+      "sha256": "b83c8cb1553a22b310c5751d3623bb85b51825c09af3da267b6106b46fa03264"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/adapted_py310_install_report.json",
+      "bytes": 131601,
+      "sha256": "ab0e48d2b37666b9f7caf4ee76bf8e782e73849d0519ceb15c379e330973c345"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/archive_tree_comparison.json",
+      "bytes": 2528,
+      "sha256": "8a677e9d35aa6acfa9711320af136b5f814173e59089583c9b5b418b7ec675da"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/build_path_sources.json",
+      "bytes": 4153,
+      "sha256": "006fa06fa877d4ef07729b573b4c19cff0049662b9999436615c195abd356722"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/compiler_command_trace.log",
+      "bytes": 12446,
+      "sha256": "13c5faee95c2a83cde46c06aea3b4e6d2eb9f918de75f7acdfef631f6e8dcd6b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/compiler_spec_adapter_freeze.json",
+      "bytes": 591,
+      "sha256": "cb9e0519ab2f50e6e122cdfbddf3b3ed5c82a0f4d8d82e14c9934f0481819b75"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/compiler_spec_adapter_probe.json",
+      "bytes": 2005,
+      "sha256": "1938d8a551d3e4b98e8ec458a8071093281d8f75f111f563130a8031b4e1c420"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/compiler_spec_adapter_probe.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_freeze.json",
+      "bytes": 545,
+      "sha256": "b05c4a9bbb3284aa0e2218d5b1ccab719329e5f13aece6d1b4f0174844f1bf1e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_freeze_v2.json",
+      "bytes": 700,
+      "sha256": "5325118ad3b617a0fb4453a54f65008679a154114991253980a322839daacf32"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_logs/warp_ipc_collision_detection.log",
+      "bytes": 1353,
+      "sha256": "75ef0e38bf843bb66f920a442f8baa667a19409b6db1b153d35f9050f8b9c355"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_logs/warp_ipc_ipc_integrator.log",
+      "bytes": 1344,
+      "sha256": "591b15f4a49012b8972511ca09eeec4ead338c72ba49ac40db51924bce313465"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_logs/warp_ipc_sim_model.log",
+      "bytes": 1421,
+      "sha256": "e34a8e52e4610d85c1ec63685a576e09f7e5868598822aa3b9d07e861ffddef3"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_logs_v2/warp_ipc_collision_detection.log",
+      "bytes": 1739,
+      "sha256": "a944eb0f11a57f8d8461cee5c444ed8603ac563afda279e6fe2b778d95a3fa4f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_logs_v2/warp_ipc_ipc_integrator.log",
+      "bytes": 4301,
+      "sha256": "318d894810a1e93e2fbbe7e1e4d6a0e50fa80478ccc461ea6ffe29d45fe84449"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_logs_v2/warp_ipc_sim_model.log",
+      "bytes": 3097,
+      "sha256": "cee0a8136d55b426ed6cf78acbc7bd7f39b9b0f67433c3c2c9268a9162981fab"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_probe.json",
+      "bytes": 3214,
+      "sha256": "da2f16d392c596b92861eb1a8ec89789999b1c6c8d12cb1ba6060c2763341570"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/core_import_probe_v2.json",
+      "bytes": 4755,
+      "sha256": "bc2f69c3676f96eaa1973142bd7ffd8fcaad994b204c515d363a00c49266316a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_driver_dev_payload_audit.json",
+      "bytes": 4759,
+      "sha256": "2f1a14b70644e1d399bf1060825f2d2304e87ccfac3621ecc3780b9c67ce8399"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_nvcc_version_v2.log",
+      "bytes": 208,
+      "sha256": "68f8b0a1301428031e307cf5260142a517bff25cc232a09eae2734be475d721f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_redistrib_12.8.1.json",
+      "bytes": 50197,
+      "sha256": "249e28a83008d711d5f72880541c8be6253f6d61608461de4fcb715554a6cf17"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_create_v2.log",
+      "bytes": 187835,
+      "sha256": "5a7c52bd523ef322946145b304cef273d402cbcd08a4e61838767fd1c43c1213"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_dry_run.log",
+      "bytes": 256832,
+      "sha256": "c382bf175a8529df956624c7b83b29505d3f10a7d08d1ae19c3b578fd19c17de"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_explicit_v2.txt",
+      "bytes": 14448,
+      "sha256": "96177d56f457624d0e586422001f1b2994b4eedc84db56183dde1625717af529"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_freeze.json",
+      "bytes": 797,
+      "sha256": "c81658f26bdd7127741656a14b49a70f771bedb876fd9302d27f64e19edcd5b7"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_freeze_v2.json",
+      "bytes": 1301,
+      "sha256": "4db5f98428f9e7bc496b5805fc9e83b69a771f7054b0c12dcd7fac2c07cca745"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_layout_probe.json",
+      "bytes": 251,
+      "sha256": "42bb4ae43182f48e80b0f5dc0574b642f38bc76ee1d51c4d9f40cc5f3c297146"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_preparation.json",
+      "bytes": 645,
+      "sha256": "cc6f2ba8a17488f03ca328c4d3efa0e87a6b6650514dae51a6367f86b381504e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_sdk_preparation_v2.json",
+      "bytes": 1815,
+      "sha256": "4bfdc13ab38d9d150439c0ca0d268b6836a6af94eacf5760a549e2b61ff22036"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_static_redist_acquisition.json",
+      "bytes": 2437,
+      "sha256": "d972b282b3c5f221cfaaf5fff35b4a21d4d6913efa7825bee5c96d1cf4ddfd06"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/cuda_static_redist_freeze.json",
+      "bytes": 1543,
+      "sha256": "5d4bb15f08a26638901db04469627949f20603c1192f46d85dcd80d756d169a9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/existing_linux_host_probe.json",
+      "bytes": 73017,
+      "sha256": "6c65dae61176b93ce200aca4055430d45a95a0408f12d20468007b9dc8ff52f4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/gpu_dependency_preflight.json",
+      "bytes": 3435,
+      "sha256": "f7e5ccabad391f53fdf02a439a6651abc2438385f84762303f3d59cf81cb669c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/gpu_preflight_freeze.json",
+      "bytes": 567,
+      "sha256": "566217418b41efe3ea364720cd671cf45be1a28f729eb3a6896e2e0736094ce4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/local_service_panel_verification.json",
+      "bytes": 500,
+      "sha256": "015ca39f07aa9bdee6fa750388224acd5ec1451b68cfa14f3093deec8f08f4c2"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/original_py310_cases.json",
+      "bytes": 14310,
+      "sha256": "6f2b9dcdb5bacfe7ca6f0b435e5b7d4deb04b00ecbff7a5b06b53ea9455193aa"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/original_py310_install.json",
+      "bytes": 3569,
+      "sha256": "3c8bbe707ba855ea3b337372b152da6f56ed82eebff7127c6b1b3f562cf7f6ef"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/original_py310_install_report.json",
+      "bytes": 117834,
+      "sha256": "469a249703e535897066366508e1a138e6a99a6ab395b4cc10a300b4df868c5d"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_before_install.log",
+      "bytes": 159,
+      "sha256": "15bac38cf2e112a99a3148d7372cfc08d609f6bd14ff865cf5bfad6877ff9fb9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_gpu_cases.log",
+      "bytes": 4328,
+      "sha256": "4504feb324f4ce01c25e44f87c848d6b03a209b039b15b07c8c2a6f0be7fe3b6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_pip_freeze.log",
+      "bytes": 1010,
+      "sha256": "9ae79ef73317396ebf81189988ec0028a8312aad637f15f6525d9922c498de98"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/adapted_py310_pip_install.log",
+      "bytes": 8440,
+      "sha256": "e30960a64abc9b4c8f3ece35988f1ccea35156cd1e74804bbd70f2ee379b5f32"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_base_create.log",
+      "bytes": 79505,
+      "sha256": "8a01fe93750dbd743d9928189125d6c6af23c9462f112174785b5d038d0243f6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_before_install.log",
+      "bytes": 159,
+      "sha256": "15bac38cf2e112a99a3148d7372cfc08d609f6bd14ff865cf5bfad6877ff9fb9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_gpu_cases.log",
+      "bytes": 12012,
+      "sha256": "c797b9ace0cd6454515d60b8e341abb437cc754ed75e2dc11a4eff8d39694384"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_pip_freeze.log",
+      "bytes": 954,
+      "sha256": "d5106adc84c86a4aebbea251d7419283f88820647073f78c0fd5c0625e54b51b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_dependency_logs/original_py310_pip_install.log",
+      "bytes": 7156,
+      "sha256": "c3c295e264447ffaf6955f04dfa3a6bcbbed42d8c825affa4a6b54d1c348acea"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/paired_service_panel_verification.json",
+      "bytes": 872,
+      "sha256": "78cbbe1a04ecb669c5ef8b49eca46d26c52ff1786b6207e89d79e7021db4e89b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs/after_freeze.log",
+      "bytes": 1010,
+      "sha256": "9ae79ef73317396ebf81189988ec0028a8312aad637f15f6525d9922c498de98"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs/before_freeze.log",
+      "bytes": 1010,
+      "sha256": "9ae79ef73317396ebf81189988ec0028a8312aad637f15f6525d9922c498de98"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs/before_versions.log",
+      "bytes": 44,
+      "sha256": "01ef33b4fd4b0f4cfa4dd94e95b03bd77eed7fbb497cea8a5a9cf1e37a68987e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs/pip_install.log",
+      "bytes": 20397,
+      "sha256": "eae765d8d5b6511729545bd8528ff5b6d0f14b8d0c1e2f3fd8479362d798f7f1"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs_v2/after_freeze.log",
+      "bytes": 2113,
+      "sha256": "31c0947bc48469f25670d577b2272d25065af2488620e6e2ddbc1fddea6afd23"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs_v2/before_freeze.log",
+      "bytes": 1010,
+      "sha256": "9ae79ef73317396ebf81189988ec0028a8312aad637f15f6525d9922c498de98"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs_v2/before_versions.log",
+      "bytes": 44,
+      "sha256": "01ef33b4fd4b0f4cfa4dd94e95b03bd77eed7fbb497cea8a5a9cf1e37a68987e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs_v2/runtime_packages.log",
+      "bytes": 18037,
+      "sha256": "d1a78b8f6dc3e5b8c1515399fe5effe1c60ce7b180f482a5a4c751e6936b9824"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_dependency_logs_v2/scikit_sparse.log",
+      "bytes": 4259,
+      "sha256": "5b5b1509be12a84d2b927afcff3e985369cbfa276dd542238e25579e9cf4148a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies.json",
+      "bytes": 3391,
+      "sha256": "07a9406813b1ffd21cd11581b64cd5e67f76f527a40e728bd71638d59eed4bc9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_freeze.json",
+      "bytes": 712,
+      "sha256": "0a66e04527520392354bfbecfdb193b66d11f666aec7f8b4f4788efca71f825a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_freeze_v2.json",
+      "bytes": 1172,
+      "sha256": "94d363f4bf2271e42a7ad18a4a2629db26834332d150e98b441e7a986c180242"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_v2.json",
+      "bytes": 4592,
+      "sha256": "98b76abb2a230f1fe1bcb25d920d51f2d687372017dc5312f799c518efffbb77"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_install_report.json",
+      "bytes": 902412,
+      "sha256": "62109fc17c5ce1cd4de9177037ced146570af7d46451151ef7b289d0c9b278a0"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_install_report_v2.json",
+      "bytes": 929712,
+      "sha256": "204c032d20bf3ccf10d553a4f53199766cfa0a54a800f7d456d1adadf5e3e8bc"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_scikit_sparse_install_report_v2.json",
+      "bytes": 3103,
+      "sha256": "6a3dc1a4c63601f1362ef218e1d6b8251a90aede436aabe23f8388bacb21bd85"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/pinned_checkout_manifest.json",
+      "bytes": 424924,
+      "sha256": "471c36d0ee7002c4883db2fed5ae2751744cf5f7caa5e76e2b81904aa975440a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/python310_base_explicit.txt",
+      "bytes": 9560,
+      "sha256": "f8844daa43450240946084ed2ac168c615b1a486529251933c8d209f54ac0a90"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/python310_pair_freeze.json",
+      "bytes": 1236,
+      "sha256": "e19f102f107f14ed144870c415e2408c0ff7623ad0b8da24a4b804955734441e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/recreated_compiler_alias_freeze.json",
+      "bytes": 385,
+      "sha256": "381ca6afd82088c9d4b73ae4e123e04661573b91ce7a8f137cd253047a45de96"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/recreated_compiler_alias_probe.json",
+      "bytes": 889,
+      "sha256": "13e353365bfb7d93cddc6407a7e7f0efa4e982fb58437149476ef108b915ea49"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/recreated_compiler_alias_probe.log",
+      "bytes": 364,
+      "sha256": "9779ec4f1fd652d863ec869ec77d3198e270ef7089708df4f91f099ce4c9db3e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/runtime_bootstrap_manifest.json",
+      "bytes": 1184,
+      "sha256": "4ac26730624a4a4d209d3fae92635dab27bf1d89328c84c5a4d09284c50c1d0e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/runtime_evidence_before_toolchain_probe.json",
+      "bytes": 43508,
+      "sha256": "1e106616ec31b5da46799b55e62c702127d608b7bb297a34417d740e29dc1d2d"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/runtime_followup_validation.json",
+      "bytes": 831,
+      "sha256": "032199d934e5740847c0661b728f6c676e3794f36071d5f18310693b849d9d7b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scatter_dependency_freeze.json",
+      "bytes": 759,
+      "sha256": "51f1da2b6ca410167330e04f80d0db00e51419688d53d2d31b1850e58b625a98"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scatter_dependency_setup.json",
+      "bytes": 2338,
+      "sha256": "cc821b54ebbf65bfb7ee36d43eb6717bc433dd909f7fca83840aef8e96117a77"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scatter_gpu_probe.log",
+      "bytes": 709,
+      "sha256": "c05833c1999bdbfae6cdcaa50f69024c7f155aa457ba7b4820663b6ee718dced"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scatter_install.log",
+      "bytes": 215,
+      "sha256": "ddacc4c8429493d7b7f9022efc0448fc209cdb4cb055316a1716d3ffcadecd59"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scatter_install_report.json",
+      "bytes": 9107,
+      "sha256": "e337521970c5f31c6c50d9aa745b8e91b6cab5d13a197456034b65f1992ad0d0"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_freeze.json",
+      "bytes": 954,
+      "sha256": "e86d750dcb521e431ceef0178be8556341ff512f3234a8cc9c6955da91ada4bf"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_freeze_v2.json",
+      "bytes": 581,
+      "sha256": "5a2429ff7b94a0a77f9e46541c58520a74f63d7aa512173bb97ab8492e089edf"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_install_report.json",
+      "bytes": 3103,
+      "sha256": "6a3dc1a4c63601f1362ef218e1d6b8251a90aede436aabe23f8388bacb21bd85"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_install_report_v2.json",
+      "bytes": 3103,
+      "sha256": "6a3dc1a4c63601f1362ef218e1d6b8251a90aede436aabe23f8388bacb21bd85"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup.json",
+      "bytes": 2332,
+      "sha256": "90c5741c45d662fe986ff9f85b7d77d1dce435e38e4ff1be31de5869fee30309"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup.log",
+      "bytes": 10378,
+      "sha256": "2da1677c3ac2090f06469d3b276af547dad18ef1f09a4223361a451151103f97"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup_v2.json",
+      "bytes": 2911,
+      "sha256": "4a6aea651421936161f07a5c4614eb5fd1553e6555246fe418b084c14a04682a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/scikit_sparse_portable_setup_v2.log",
+      "bytes": 1178,
+      "sha256": "9dc0e0545e783bbd8557a7a9c0483e7d8eed7ba47ed533605425df53eda4a14b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/short_compiler_create.log",
+      "bytes": 78133,
+      "sha256": "68e7ef334b95867c7e46a50f363632578f5e4e2d14b0f0ed19924f8db06e7ddc"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/short_compiler_freeze.json",
+      "bytes": 696,
+      "sha256": "5ae281992acdbafb60581b7a9035a04c71467e7a7b4aa3d31180206a6ada128e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/short_compiler_preparation.json",
+      "bytes": 1796,
+      "sha256": "9e67e55bbaa0d8707c6d05c646c744c471fb28f84103605247ff5e26f35aed83"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_capability_probe.json",
+      "bytes": 1512,
+      "sha256": "71b5a613069bb210f59d3f375387ea6ed66f84e114825866d4750e5b9f0ce6fa"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_create_v2.log",
+      "bytes": 180584,
+      "sha256": "21cfe01d9ce2df8e84d953c717bf71708bda9a7b057cf6ed30e1934dc47b1d8b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_dry_run.log",
+      "bytes": 2681,
+      "sha256": "aadfdeed0346f5f16bcc9a97a9596508f72f370a87d7be35567016b377bf78cd"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_dry_run_v2.log",
+      "bytes": 173294,
+      "sha256": "0f840152f3ea29ccecd2aa0cbf5d75a4b5d0d5654348c3124edf91929e3b53c6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_explicit_v2.log",
+      "bytes": 6961,
+      "sha256": "f90dcacef8b6ada4ad43f89857bef98c237c14f10266ff99dbea5cd5d76d7c2f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_freeze.json",
+      "bytes": 884,
+      "sha256": "93c01c0b0954459ecf6b0e19c7a60e11fca1747de9831370ffac0e4d27ca7b64"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_freeze_v2.json",
+      "bytes": 1276,
+      "sha256": "7b8e5e89310cef546afb37be799e86450d82035e89bbc322fa5935a530c6ed47"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_preparation.json",
+      "bytes": 1376,
+      "sha256": "b920f569304904cbe82a96535db503d8e3a2a7a5e48ab29d9c873680bdb2856c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_preparation_v2.json",
+      "bytes": 3447,
+      "sha256": "8337f7ac9ba283cf0ba980fe2a55327ad1d5e0813dec0af056bd71235bba6df1"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/toolchain_python_v2.log",
+      "bytes": 79,
+      "sha256": "e205fd8de45801def0e7049217fa9d3b1ec5387ed5024629e46ed60c7efa321f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/torch251_install_report.json",
+      "bytes": 180112,
+      "sha256": "72eebdc93fc49178790407394baacc1b4cf28df4d9a7b423ab73aeeb1ab815c2"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/vendored_warp_build.json",
+      "bytes": 1548,
+      "sha256": "0a2276845f85452a581e163278fe91d955c32879cc666da50a3e7d7b34954151"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/vendored_warp_build.log",
+      "bytes": 4140,
+      "sha256": "f1b9d58d2e6191c0dd975855a19488d8ecbd3bbf6a2ee7117a1bd9b5fc06b378"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/vendored_warp_build_freeze.json",
+      "bytes": 793,
+      "sha256": "0bb7214ece4d1e2784867835928609ad1a3e219397270259cc323f657006e00b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_gpu_kernel_freeze.json",
+      "bytes": 763,
+      "sha256": "8f26adfea9cd03e1a828aee70bb617cdf87b706d24af0b3e91f17e2500103a23"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_gpu_kernel_probe.json",
+      "bytes": 2602,
+      "sha256": "d5b842ab233b9efc0a90355aac44c719429d5e92ef842fe64374d3404a0e9f78"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_gpu_kernel_probe.log",
+      "bytes": 1674,
+      "sha256": "23ba0164bf6c2750919549d242cd923633c4f9e4196f0062fa3e7441e2d5adb8"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_layout_adapted_build.json",
+      "bytes": 47760,
+      "sha256": "7afce9e7f4f6168b21bf0b4eb3ea007113a3ec514a52420d679b18fd04514a60"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_layout_adapted_build.log",
+      "bytes": 16494,
+      "sha256": "247e58aa17c994b57399c76b953f10ac0895d9fbb152c813ac36bbfae2bc03c9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_layout_adapted_build_freeze.json",
+      "bytes": 1224,
+      "sha256": "3ed10b1afbbd184e021bc6bfa0254ca925e9e6ca097b4d9898e71b90aa006553"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_portable_build.json",
+      "bytes": 2809,
+      "sha256": "c01186fe66d804f548edecf47c2404ccea1690d7772246569d2f149688b936fd"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_portable_build.log",
+      "bytes": 20095,
+      "sha256": "7fbc74f40b2356756921a0091bf743b6f92db0d23703632f57f4841d12927fb4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_portable_build_freeze.json",
+      "bytes": 955,
+      "sha256": "c97b2ce383c9a02c45ebe41fa9bdb3379b6d7b102f219f070cd46b0a42ccafc1"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_short_compiler_build.json",
+      "bytes": 598,
+      "sha256": "0b366aca7c4d6a46a6e6e5157c18e6244e8d5cffcbb723cc5bac7dd8dc37c264"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/warp_short_compiler_build_freeze.json",
+      "bytes": 924,
+      "sha256": "8781edc7f46dd65a5fdadd0b0959e14c7235151e9b356754230a8362583fa2c4"
+    },
+    {
+      "path": "scripts/acquire_cuda128_static_redist.py",
+      "bytes": 2629,
+      "sha256": "f071692432310d231c4e840bc5a8f3d633e03d1886de4f09877bb22c648f4bb8"
+    },
+    {
+      "path": "scripts/acquire_taccel_pinned_checkout.py",
+      "bytes": 3012,
+      "sha256": "397ee646559ae1bde249db93da3a63d47a80d4788a901ad71feacaf16b020bcc"
+    },
+    {
+      "path": "scripts/acquire_taccel_runtime_bootstrap.py",
+      "bytes": 1908,
+      "sha256": "a170fe449a2593546659a35b7bd02e01e5efb3ca1bd248420c58c633dbae49d9"
+    },
+    {
+      "path": "scripts/audit_cuda_driver_dev_payload.py",
+      "bytes": 2140,
+      "sha256": "7f258f19d368f1a60f78cb4a53946beb8ae1d7c5fa65287dad1b05126439a7f4"
+    },
+    {
+      "path": "scripts/check_taccel_dependency_pair.py",
+      "bytes": 4599,
+      "sha256": "73afb0ca421383e097fd61121a16a0c180889cb871cf59e7d9146bc42796d5bc"
+    },
+    {
+      "path": "scripts/check_taccel_runtime_evidence.py",
+      "bytes": 5405,
+      "sha256": "c18830228c53e035dc0ae28d470799c134d7cf554a5cec7a7581b7f4c68b12c5"
+    },
+    {
+      "path": "scripts/freeze_cuda128_static_redist.py",
+      "bytes": 1218,
+      "sha256": "61f02b0f6b5de72ea7f37409f9f8b9b9fafdc73ef89e276ebc7fd051af8e2b8a"
+    },
+    {
+      "path": "scripts/freeze_taccel_compiler_spec_adapter.py",
+      "bytes": 927,
+      "sha256": "7a409bde8a848f41bada6cb2670a8b46cfacde679c641e80a63b6424a1faa663"
+    },
+    {
+      "path": "scripts/freeze_taccel_core_import_probe.py",
+      "bytes": 851,
+      "sha256": "621e7c512edb6fad07b81e19e49b1f42c15d715dafed68535cf53fb8929bbf67"
+    },
+    {
+      "path": "scripts/freeze_taccel_core_import_v2.py",
+      "bytes": 917,
+      "sha256": "5ab881b690900689fce65528a62cc29883d099720cc39462019f3eb81a3c39fa"
+    },
+    {
+      "path": "scripts/freeze_taccel_cuda_sdk.py",
+      "bytes": 1094,
+      "sha256": "1e93c9726342f704dc03ab4897ccb77c4ba6f7bd26d6f750ca6823004b461314"
+    },
+    {
+      "path": "scripts/freeze_taccel_cuda_sdk_v2.py",
+      "bytes": 2854,
+      "sha256": "1bb73a22868a6b60999c70c0b5cc2445b67efc1ce85643452d0fc34bfd91bdbd"
+    },
+    {
+      "path": "scripts/freeze_taccel_gpu_preflight.py",
+      "bytes": 876,
+      "sha256": "dbfdda05ec57de558a5b58502dec4415d3ff129a13f82be208e8957e9e3dee07"
+    },
+    {
+      "path": "scripts/freeze_taccel_peg_runtime_dependencies.py",
+      "bytes": 966,
+      "sha256": "1a6da87b00ec5a0ca7126545685510c9c696dbdc292a152e2d5b9f1fe1119e7e"
+    },
+    {
+      "path": "scripts/freeze_taccel_peg_runtime_dependencies_v2.py",
+      "bytes": 1275,
+      "sha256": "10d22c35137af618af4c9427e575a34f0c264f22bc3a7ffa860de23890dde9ca"
+    },
+    {
+      "path": "scripts/freeze_taccel_portable_stages.py",
+      "bytes": 1946,
+      "sha256": "ec2355a861508ebdeae1129a848071160e37ef7c208b0f2b4e8c0052880060c9"
+    },
+    {
+      "path": "scripts/freeze_taccel_python310_pair.py",
+      "bytes": 1896,
+      "sha256": "85ef3fa81d9965c521a21cf600729ceb91501fda111b1a5675ffd7270b31ce58"
+    },
+    {
+      "path": "scripts/freeze_taccel_recreated_compiler_alias.py",
+      "bytes": 718,
+      "sha256": "07f10029af771f6f3f73702d4b806100112ea4307a0c265adce7ebd1ce57264d"
+    },
+    {
+      "path": "scripts/freeze_taccel_scatter_dependency.py",
+      "bytes": 1076,
+      "sha256": "f32502bb624bbf711e214ee67b18a370633d99bfc2f402aff700e640d5be912d"
+    },
+    {
+      "path": "scripts/freeze_taccel_short_compiler.py",
+      "bytes": 944,
+      "sha256": "28b26677f3d84e4ecd2be4b68f46a365c4f61b0431ba9584d53ededbfd64448c"
+    },
+    {
+      "path": "scripts/freeze_taccel_toolchain.py",
+      "bytes": 1924,
+      "sha256": "cabe5f71d3f57c45583e32b4964bfc83e8b7a30d3d5a67b680f4a6865c315e35"
+    },
+    {
+      "path": "scripts/freeze_taccel_vendored_warp_build.py",
+      "bytes": 1095,
+      "sha256": "40f0011f92a6b702a56599befacb87fd2f93beb4db72fe3fca27a6e7c11435a3"
+    },
+    {
+      "path": "scripts/freeze_taccel_warp_gpu_kernel.py",
+      "bytes": 957,
+      "sha256": "8fdc98118535a2b664cca844d2851b7f1c5ecf2a99c917c24d33855a844f6be9"
+    },
+    {
+      "path": "scripts/freeze_taccel_warp_layout_adapted_build.py",
+      "bytes": 1090,
+      "sha256": "ea95b0e32a4da669de1198eb3a02fedb7d8dc4fc1e6951abe1ad4f34166d3619"
+    },
+    {
+      "path": "scripts/freeze_taccel_warp_short_compiler_build.py",
+      "bytes": 1088,
+      "sha256": "4309a3ffa79f7ccf21e042b1f269a3f2e8a68fb3b515c66df3f26f7ed17acdbb"
+    },
+    {
+      "path": "scripts/probe_taccel_compiler_spec_adapter.py",
+      "bytes": 1875,
+      "sha256": "23710467e2a7311b78c178f4b33edbfcece600d85573dea0e768959cd0cc0ac0"
+    },
+    {
+      "path": "scripts/probe_taccel_existing_linux_host.py",
+      "bytes": 3292,
+      "sha256": "53fc7965de71b0c7ea37f46fdd25835fa7179a6ba2c18de2118a6676dce2d852"
+    },
+    {
+      "path": "scripts/probe_taccel_local_toolchain.py",
+      "bytes": 1541,
+      "sha256": "2e224d7e41817df7fab0ff48702038b7456d1e875ac5e7819df782d14509d4b5"
+    },
+    {
+      "path": "scripts/probe_taccel_recreated_compiler_alias.py",
+      "bytes": 2149,
+      "sha256": "4325f8c2fc615b4ca131d492630fc883a441f59e86947ce26925beb15f1d6db1"
+    },
+    {
+      "path": "scripts/record_taccel_build_followup.py",
+      "bytes": 12802,
+      "sha256": "88c68c4ccede50ef4da83007129b5707410011b00b2619475fd4b58809f696c1"
+    },
+    {
+      "path": "scripts/record_taccel_python310_pair.py",
+      "bytes": 3138,
+      "sha256": "4732b8befa41021818994ed47cc84967e8e755abf03544dcd252de443809d3a1"
+    },
+    {
+      "path": "scripts/record_taccel_runtime_followup.py",
+      "bytes": 11105,
+      "sha256": "760fdbf3e2925aa6fce1f924433e67caf39770387566085d4855d8c2ac9e7b18"
+    },
+    {
+      "path": "scripts/resume_taccel_pinned_checkout.py",
+      "bytes": 3564,
+      "sha256": "b0697573b24342a73a578161320f848e4128367856c6d9fb05b42bc9e03d2093"
+    },
+    {
+      "path": "scripts/snapshot_taccel_build_paths.py",
+      "bytes": 1430,
+      "sha256": "ad14cb561904a58cd4b65c2fab290f9bccec8e523b69c3057e3b6b33f849bae8"
+    },
+    {
+      "path": "scripts/taccel_compiler_spec_adapter.py",
+      "bytes": 1774,
+      "sha256": "4b08773d038467f9c2da0fc89ebb361ba6622b703fd8e88dcc9f6e68b91ad976"
+    },
+    {
+      "path": "scripts/taccel_core_import_probe.py",
+      "bytes": 2842,
+      "sha256": "cd5a5db3038ae21006a5223dbec445045a46a1f5ffb7cde45e48d99f2cbdf994"
+    },
+    {
+      "path": "scripts/taccel_core_import_probe_v2.py",
+      "bytes": 3247,
+      "sha256": "a22500760eb33801ddd9d65133cbe3333253993a6581728fc6bf4921741a1e8d"
+    },
+    {
+      "path": "scripts/taccel_cuda_sdk_prepare.py",
+      "bytes": 2830,
+      "sha256": "95abae1bd444c8092118df655a0a8223c1709154c7e08a7e29183e2b501a894f"
+    },
+    {
+      "path": "scripts/taccel_cuda_sdk_prepare_v2.py",
+      "bytes": 2361,
+      "sha256": "601a38f4ea6bbfc340c90909a1f587f6f56a9f4937e10916db3595b750e3448a"
+    },
+    {
+      "path": "scripts/taccel_linux_gpu_preflight.py",
+      "bytes": 5979,
+      "sha256": "6ff798807201dac83aa9fc134c0883a832312a53238e875a7ea09dcb6b0dd0fc"
+    },
+    {
+      "path": "scripts/taccel_linux_toolchain_prepare.py",
+      "bytes": 2981,
+      "sha256": "dd79e2146a16179a51a9e7367b5c2c0cdb6db01175a1701c0dff079c4137be9f"
+    },
+    {
+      "path": "scripts/taccel_linux_toolchain_prepare_v2.py",
+      "bytes": 3033,
+      "sha256": "48f5f23bb5d357a637860a561140ce4466f39e468f2b3ebd528372a0cdee714f"
+    },
+    {
+      "path": "scripts/taccel_peg_runtime_dependencies.py",
+      "bytes": 3176,
+      "sha256": "44e6eed8b246728331bfdd7551e5c6901cf7ecf1c692ae15b61aaaf788fc3379"
+    },
+    {
+      "path": "scripts/taccel_peg_runtime_dependencies_v2.py",
+      "bytes": 3663,
+      "sha256": "f8d3258a5d699564df22e47a21f159507eb76e75bd901e66a538b2a33f331003"
+    },
+    {
+      "path": "scripts/taccel_python310_dependency_pair.py",
+      "bytes": 4583,
+      "sha256": "b250f10752be1b9e10bf9031942bb4c623c27fb668f361d6de7690e989016e6e"
+    },
+    {
+      "path": "scripts/taccel_scatter_dependency.py",
+      "bytes": 3772,
+      "sha256": "5c6a33a7607c190816157bf27a5939db911522b6eed45b0787b4a214644fc440"
+    },
+    {
+      "path": "scripts/taccel_scikit_sparse_portable_setup.py",
+      "bytes": 2442,
+      "sha256": "ca63a175b9d0e600e5a1f60b3a2dd8abb01aa4d6dbff6a481505c5aa9a5efdd3"
+    },
+    {
+      "path": "scripts/taccel_scikit_sparse_portable_setup_v2.py",
+      "bytes": 2521,
+      "sha256": "d7f64b16e9479b39a9c75c353f47466ebadf0671fe0224f32f0d1f05c756d6a6"
+    },
+    {
+      "path": "scripts/taccel_short_compiler_prepare.py",
+      "bytes": 2494,
+      "sha256": "ab34ac39977c740b255d3b17d4b69e6dae50d520c710f407adfc1a7180ff252a"
+    },
+    {
+      "path": "scripts/taccel_vendored_warp_build.py",
+      "bytes": 3667,
+      "sha256": "08d492b11bbee59e89e5dcc5c9b5a2d869eeb21ba53ed0225d1af95e20a5c085"
+    },
+    {
+      "path": "scripts/taccel_warp_gpu_kernel_case.py",
+      "bytes": 2290,
+      "sha256": "238c1778a8b91151573bf4f6ea7e3e47f844bfee9924af40f7424c14507cfe74"
+    },
+    {
+      "path": "scripts/taccel_warp_gpu_kernel_probe.py",
+      "bytes": 2033,
+      "sha256": "0becb3038b9dbf1908e77c106585d5287d7e93a1437ce0297b6f9525082c60fb"
+    },
+    {
+      "path": "scripts/taccel_warp_layout_adapted_build.py",
+      "bytes": 4513,
+      "sha256": "a94125363142600450d471e3487a8aa873a17655b8199e84d235e86d531f830d"
+    },
+    {
+      "path": "scripts/taccel_warp_portable_build.py",
+      "bytes": 3239,
+      "sha256": "94637bb0b7f0a704a82914154a8c49e5af9988b0346a1f6c085db2a126af6bb0"
+    },
+    {
+      "path": "scripts/taccel_warp_short_compiler_build.py",
+      "bytes": 3573,
+      "sha256": "adda29274914bc325f851eff4a10247023a0eccf182e9e02591fa2315d056aa6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/portable_dependency_install_metadata.json",
+      "bytes": 248100,
+      "sha256": "34a66396b5856fc64c23d8af2fe69f963798dcfbc4e1aa1651a821669f740ef7"
+    }
+  ],
+  "portable_dependency_metadata": "runs/wp1/taccel_execution_20261011/portable_dependency_install_metadata.json",
+  "raw_pip_install_report_bodies_packaged": false
+}

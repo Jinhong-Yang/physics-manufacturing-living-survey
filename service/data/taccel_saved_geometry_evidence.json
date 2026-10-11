@@ -1,0 +1,134 @@
+{
+  "created_utc": "2026-10-11T09:58:15.528196+00:00",
+  "related_work_node": "work:SUP_A05",
+  "analysis_kind": "posthoc_saved_geometry_alternate_reader_and_analytic_element_diagnostics",
+  "observed_frames": 32,
+  "planned_frames": 200,
+  "unobserved_frames": 168,
+  "sensor_meshes": 2,
+  "tetrahedra_per_mesh": 317,
+  "total_correlated_element_frame_evaluations": 20288,
+  "minimum_relative_J": 0.8229089661892354,
+  "maximum_relative_J": 1.0462526653226683,
+  "nonpositive_J_detected": 0,
+  "minimum_principal_stretch": 0.721648059424658,
+  "maximum_principal_stretch": 1.1964410274720043,
+  "alternate_arithmetic_verification_passed": true,
+  "sources": [
+    {
+      "path": "scripts/analyze_taccel_saved_geometry.py",
+      "bytes": 12109,
+      "sha256": "333e3da1583147ba0eec80725f762d6e71324292f34a7cd9c7f8211a3fe8c154"
+    },
+    {
+      "path": "scripts/check_taccel_saved_geometry.py",
+      "bytes": 5639,
+      "sha256": "7b80a58fe03c514d991b869980d30f3809ee6e236e580dfe635f8d608eafe0d4"
+    },
+    {
+      "path": "scripts/write_taccel_saved_geometry_supplement.py",
+      "bytes": 9488,
+      "sha256": "5633b24b425b3dab83f30764ca776290e90f479d517c73569122d3620974a72f"
+    },
+    {
+      "path": "scripts/plot_taccel_saved_geometry.py",
+      "bytes": 2850,
+      "sha256": "d33db8480ce4d9926ef2a4f087b1d38ea25171ad3d2233ad808590ff8e0fa07a"
+    },
+    {
+      "path": "scripts/render_taccel_saved_geometry_report.py",
+      "bytes": 7116,
+      "sha256": "4925516db1afb6588bca5a95aa1fe258cf97a5915bf2b93c14c31b9edfba6c3f"
+    },
+    {
+      "path": "protocol/Taccel_Saved_Geometry_Invariants_20261011.md",
+      "bytes": 4090,
+      "sha256": "adb029119fc65a793ac1abee5a82c20cef432dd0950097bf3242d6df8b9cd278"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_freeze.json",
+      "bytes": 815,
+      "sha256": "cc70a6a23da76910993f404a5bcd543f961719ecccfafb9fbe5544f83b87a0c9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_invariants.json",
+      "bytes": 81921,
+      "sha256": "f5829a57ed356df26408578f66852e4b93a4f3bcf0c276a75b5ba36b7f270e21"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_validation.json",
+      "bytes": 931,
+      "sha256": "225549f7857d087a265d5437863b752eb324a54e84f440772efba623e0622d1c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_frame_metrics.csv",
+      "bytes": 7029,
+      "sha256": "b7726a1a0b68bc4e8152b8909545fa41221cb156a4f2597a97827216ea7f584a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_plot_manifest.json",
+      "bytes": 767,
+      "sha256": "2fc38a74b7739ed20d7d606879c11c38cc7966d19a18ef558fa3a226bc00cd47"
+    },
+    {
+      "path": "output/Taccel_Saved_Geometry_Report_KO.md",
+      "bytes": 5231,
+      "sha256": "3384900c5d9e838c4db1c00ac4c387efbe6e019007c9cedc82c1c08ebf2b026a"
+    },
+    {
+      "path": "output/pdf/Taccel_Saved_Geometry_Report_KO.pdf",
+      "bytes": 299948,
+      "sha256": "87b7e953f1ee7a8ccc8ca6f753acdb6a2b29893ec7a882609097a656e99127ec"
+    },
+    {
+      "path": "output/pdf/Taccel_Saved_Geometry_Figure.pdf",
+      "bytes": 16805,
+      "sha256": "526c8b4af0e786fc36e678798060fd8a5f26944dc43d66b8ce0600b7a7e1cf84"
+    },
+    {
+      "path": "output/pdf/Taccel_Saved_Geometry_Figure.png",
+      "bytes": 163771,
+      "sha256": "694a106a1805b3b058c70c875a0c1679f02d67171d2be4297b561dcb96ab9f51"
+    },
+    {
+      "path": "manuscript/supplements/taccel_saved_geometry_results.tex",
+      "bytes": 2787,
+      "sha256": "bb4532a3e7acdc53c7fa39666e0ee1a5ae24084e7aa816f1077c87a54816c2db"
+    },
+    {
+      "path": "manuscript/figures/taccel_saved_geometry.pdf",
+      "bytes": 16805,
+      "sha256": "526c8b4af0e786fc36e678798060fd8a5f26944dc43d66b8ce0600b7a7e1cf84"
+    },
+    {
+      "path": "scripts/export_taccel_element_metrics.py",
+      "bytes": 3763,
+      "sha256": "d6483215a631ef20d150bf6b8d1e7c9592d4bef422b8b1b4ded59e2d4f649ad2"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_element_metrics.csv",
+      "bytes": 2557478,
+      "sha256": "a4f965cf23be75f85af3ca65f1d94a99abac277e7ec9b72124526a5c86037322"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/saved_geometry_element_metrics_validation.json",
+      "bytes": 838,
+      "sha256": "4047e214f039395d2c62385318880e8e582afcfb82cf42b487c2bbd073cd1e04"
+    }
+  ],
+  "graph_integration_pending": true,
+  "compiled_main_integration_pending": true,
+  "main_manuscript_revision": "4.06",
+  "plan_revision": "4.05",
+  "public_graph_revision": "0.9.31",
+  "full_trajectory_complete": false,
+  "new_method_runs": 0,
+  "independent_human_review": false,
+  "independent_physical_pass": false,
+  "scientific_R4_pass": false,
+  "industrial_pass": false,
+  "limits": "Surface topology matched correspondence, not direct native tetra-state observation. Positive local J does not establish contact nonpenetration, global injectivity, force accuracy, constitutive validity, metrology, full trajectory or industrial qualification. Correlated frames/elements are not independent observations.",
+  "element_metric_rows": 20288,
+  "all_element_matrix_scalar_values_agree": true,
+  "maximum_all_element_arithmetic_difference": 8.881784197001252e-16
+}

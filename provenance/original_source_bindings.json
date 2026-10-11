@@ -1,0 +1,590 @@
+{
+  "local_graph_version": "0.9.39",
+  "original_graph_sha256": "5576ed0a40719cf2254c0647ed1c2f11ed8a5825cb48f8b25db60bb0fe79e543",
+  "transformation": "Host paths redacted; public run links point to observation summaries. Scientific numeric observations, claims, decisions and source hashes retained. Original local payload hashes do not certify sanitized public bytes.",
+  "source_bindings": [
+    {
+      "source_path": "service/app.js",
+      "original_sha256": "4e3fa5d35e273af64ada8281a9036aa139e351e1c482a9212d23bd6253971d28",
+      "published_path": "service/app.js",
+      "published_sha256": "4e3fa5d35e273af64ada8281a9036aa139e351e1c482a9212d23bd6253971d28"
+    },
+    {
+      "source_path": "service/boundary_readings.html",
+      "original_sha256": "82283d6328b4e27765a312f20a2998b89565d34b5bfcc18248cd524a23c3f3e4",
+      "published_path": "service/boundary_readings.html",
+      "published_sha256": "82283d6328b4e27765a312f20a2998b89565d34b5bfcc18248cd524a23c3f3e4"
+    },
+    {
+      "source_path": "service/boundary_readings.js",
+      "original_sha256": "29b59ce4ef8eb499913355f6b6c807ed538b9fa0f0ce9af5f036d8402059f9c1",
+      "published_path": "service/boundary_readings.js",
+      "published_sha256": "29b59ce4ef8eb499913355f6b6c807ed538b9fa0f0ce9af5f036d8402059f9c1"
+    },
+    {
+      "source_path": "service/execution_evidence.js",
+      "original_sha256": "01c37cef620457f247050dd50d0bff77e9d8df6060c238277c141b3db1a26512",
+      "published_path": "service/execution_evidence.js",
+      "published_sha256": "01c37cef620457f247050dd50d0bff77e9d8df6060c238277c141b3db1a26512"
+    },
+    {
+      "source_path": "service/gearformer_execution.html",
+      "original_sha256": "ee6dcaa649c8c3e59187a6a5b0136458bf8fa60a045feed6a1ef50eab4d9ee2a",
+      "published_path": "service/gearformer_execution.html",
+      "published_sha256": "ee6dcaa649c8c3e59187a6a5b0136458bf8fa60a045feed6a1ef50eab4d9ee2a"
+    },
+    {
+      "source_path": "service/gearformer_execution.js",
+      "original_sha256": "20a96871db8baa16a3325192386b992c773c5402a47cee790ce8e254f81f112c",
+      "published_path": "service/gearformer_execution.js",
+      "published_sha256": "20a96871db8baa16a3325192386b992c773c5402a47cee790ce8e254f81f112c"
+    },
+    {
+      "source_path": "service/index.html",
+      "original_sha256": "a07e5aa0e3d6f8b459f104e0351274caffe60160807d02fc98186fd68017f4ee",
+      "published_path": "service/index.html",
+      "published_sha256": "a07e5aa0e3d6f8b459f104e0351274caffe60160807d02fc98186fd68017f4ee"
+    },
+    {
+      "source_path": "service/m2pde_execution.html",
+      "original_sha256": "c099f75b55ca11171e60a867f34df7ccd1f6420332d63708d17cd2e94621bd1d",
+      "published_path": "service/m2pde_execution.html",
+      "published_sha256": "c099f75b55ca11171e60a867f34df7ccd1f6420332d63708d17cd2e94621bd1d"
+    },
+    {
+      "source_path": "service/m2pde_execution.js",
+      "original_sha256": "269f848d48bdf705593c3382ecdcc81d57f97428c9d718ad00f8ee8be7f7086c",
+      "published_path": "service/m2pde_execution.js",
+      "published_sha256": "269f848d48bdf705593c3382ecdcc81d57f97428c9d718ad00f8ee8be7f7086c"
+    },
+    {
+      "source_path": "service/main_candidate_readings.html",
+      "original_sha256": "f6c4041e7b5da81476ad72bc7f5822f41ed6579a270585eb72e1895329809567",
+      "published_path": "service/main_candidate_readings.html",
+      "published_sha256": "f6c4041e7b5da81476ad72bc7f5822f41ed6579a270585eb72e1895329809567"
+    },
+    {
+      "source_path": "service/main_candidate_readings.js",
+      "original_sha256": "a1e0e3253d37bdae44d3a50b6c89c4920524f1a620ea7c4b5ef03e44c50e27d5",
+      "published_path": "service/main_candidate_readings.js",
+      "published_sha256": "a1e0e3253d37bdae44d3a50b6c89c4920524f1a620ea7c4b5ef03e44c50e27d5"
+    },
+    {
+      "source_path": "service/manufacturing_design_readings.html",
+      "original_sha256": "6c319034ac444a79f9e6e3c34d9b9d63d86b58fb3a65d3fad5670bff75b5ddb7",
+      "published_path": "service/manufacturing_design_readings.html",
+      "published_sha256": "6c319034ac444a79f9e6e3c34d9b9d63d86b58fb3a65d3fad5670bff75b5ddb7"
+    },
+    {
+      "source_path": "service/manufacturing_design_readings.js",
+      "original_sha256": "0cb35c56212d40257a60af01ee48b6a848fd9cd3995d608ab3f50d0b7c3d969f",
+      "published_path": "service/manufacturing_design_readings.js",
+      "published_sha256": "0cb35c56212d40257a60af01ee48b6a848fd9cd3995d608ab3f50d0b7c3d969f"
+    },
+    {
+      "source_path": "service/physical_design_evidence.html",
+      "original_sha256": "04fb1944f7f2ee2cd90ee0cbf687be2089f2f297a9a5677fddd5ac4e8cd0b795",
+      "published_path": "service/physical_design_evidence.html",
+      "published_sha256": "04fb1944f7f2ee2cd90ee0cbf687be2089f2f297a9a5677fddd5ac4e8cd0b795"
+    },
+    {
+      "source_path": "service/physical_design_evidence.js",
+      "original_sha256": "dcf81fb85bcdf6534dc69826e8a3687e46a554121ad38dd4bba20d2d4e4ceff9",
+      "published_path": "service/physical_design_evidence.js",
+      "published_sha256": "dcf81fb85bcdf6534dc69826e8a3687e46a554121ad38dd4bba20d2d4e4ceff9"
+    },
+    {
+      "source_path": "service/README.md",
+      "original_sha256": "39f0927bc0aa8e7962cad9ab8e675b2d869ff3b97be1906a8627c92917b69455",
+      "published_path": "service/README.md",
+      "published_sha256": "39f0927bc0aa8e7962cad9ab8e675b2d869ff3b97be1906a8627c92917b69455"
+    },
+    {
+      "source_path": "service/styles.css",
+      "original_sha256": "0c23acdc35501201f03c36bf65eac98cd2427d88a01f6b73594da8f805db896e",
+      "published_path": "service/styles.css",
+      "published_sha256": "0c23acdc35501201f03c36bf65eac98cd2427d88a01f6b73594da8f805db896e"
+    },
+    {
+      "source_path": "service/supplement_readings.html",
+      "original_sha256": "ebc759c4717acfa2ac3480ad67c7264505eb20004afacfdb093f3ce2549b5df0",
+      "published_path": "service/supplement_readings.html",
+      "published_sha256": "ebc759c4717acfa2ac3480ad67c7264505eb20004afacfdb093f3ce2549b5df0"
+    },
+    {
+      "source_path": "service/supplement_readings.js",
+      "original_sha256": "dea8e4bdb39a58d989f1f5d273cf5b3e30b105529b906b167579c0097f9ba1f5",
+      "published_path": "service/supplement_readings.js",
+      "published_sha256": "dea8e4bdb39a58d989f1f5d273cf5b3e30b105529b906b167579c0097f9ba1f5"
+    },
+    {
+      "source_path": "service/taccel_build_followup.html",
+      "original_sha256": "1b852e93c93023a7d568bba624bcfc1c774ac766651c67c116cf1349fea95e4e",
+      "published_path": "service/taccel_build_followup.html",
+      "published_sha256": "1b852e93c93023a7d568bba624bcfc1c774ac766651c67c116cf1349fea95e4e"
+    },
+    {
+      "source_path": "service/taccel_build_followup.js",
+      "original_sha256": "143b6c07f65d8a2cf382ae5777b7f4fa313ffb0ff1296ed2ec7cf8fda9950250",
+      "published_path": "service/taccel_build_followup.js",
+      "published_sha256": "143b6c07f65d8a2cf382ae5777b7f4fa313ffb0ff1296ed2ec7cf8fda9950250"
+    },
+    {
+      "source_path": "service/taccel_peg.html",
+      "original_sha256": "76775c8c5ae0d0eeb2202bf189e7e26df7b17e561a9cbc3377f0a69cf57c154f",
+      "published_path": "service/taccel_peg.html",
+      "published_sha256": "76775c8c5ae0d0eeb2202bf189e7e26df7b17e561a9cbc3377f0a69cf57c154f"
+    },
+    {
+      "source_path": "service/taccel_peg.js",
+      "original_sha256": "71720964696d914cb62f9a46cfc500d5b9b5f3a337aa916a39d27dde88ff71bd",
+      "published_path": "service/taccel_peg.js",
+      "published_sha256": "71720964696d914cb62f9a46cfc500d5b9b5f3a337aa916a39d27dde88ff71bd"
+    },
+    {
+      "source_path": "service/taccel_peg_attempt.html",
+      "original_sha256": "ff1defec77a99e7122dcb60a65f21dfb8ab50ec597bda71e07ec676ca3801fd6",
+      "published_path": "service/taccel_peg_attempt.html",
+      "published_sha256": "ff1defec77a99e7122dcb60a65f21dfb8ab50ec597bda71e07ec676ca3801fd6"
+    },
+    {
+      "source_path": "service/taccel_peg_attempt.js",
+      "original_sha256": "e0addfe51d268515967c446108e2268eca84c74fce4bbc157c1ba92cb2e5245f",
+      "published_path": "service/taccel_peg_attempt.js",
+      "published_sha256": "e0addfe51d268515967c446108e2268eca84c74fce4bbc157c1ba92cb2e5245f"
+    },
+    {
+      "source_path": "service/taccel_runtime.js",
+      "original_sha256": "3d3faede60115015d18dc5abf35ba8c54456373403ef6a4265b8e44e5a667bd0",
+      "published_path": "service/taccel_runtime.js",
+      "published_sha256": "3d3faede60115015d18dc5abf35ba8c54456373403ef6a4265b8e44e5a667bd0"
+    },
+    {
+      "source_path": "service/taccel_saved_geometry.html",
+      "original_sha256": "1022a344ff3297692720698483bb98d5bf5005435bebabe21d4514168c2185da",
+      "published_path": "service/taccel_saved_geometry.html",
+      "published_sha256": "1022a344ff3297692720698483bb98d5bf5005435bebabe21d4514168c2185da"
+    },
+    {
+      "source_path": "service/taccel_saved_geometry.js",
+      "original_sha256": "57bc4cf405b2dd88cf17c0def401ea2b67d1f3ccf364025f091b6e31595176fe",
+      "published_path": "service/taccel_saved_geometry.js",
+      "published_sha256": "57bc4cf405b2dd88cf17c0def401ea2b67d1f3ccf364025f091b6e31595176fe"
+    },
+    {
+      "source_path": "service/data/boundary_main_pdf_reading_staged.json",
+      "original_sha256": "6901e3a02738e831083c369b1a57c40a653849aae3bea99a37622d623b20bbcd",
+      "published_path": "service/data/boundary_main_pdf_reading_staged.json",
+      "published_sha256": "6901e3a02738e831083c369b1a57c40a653849aae3bea99a37622d623b20bbcd"
+    },
+    {
+      "source_path": "service/data/boundary_reading_integrated.json",
+      "original_sha256": "f5c8b35bc8def930b420c93202481d19eee29519c456ad6dfdbef37a22e67e89",
+      "published_path": "service/data/boundary_reading_integrated.json",
+      "published_sha256": "f5c8b35bc8def930b420c93202481d19eee29519c456ad6dfdbef37a22e67e89"
+    },
+    {
+      "source_path": "service/data/discovery_queue_2026_partial.json",
+      "original_sha256": "7bf0124877f30472db64763f065ffa52cb0c262044e1c5e838d76e7dd4759edd",
+      "published_path": "service/data/discovery_queue_2026_partial.json",
+      "published_sha256": "7bf0124877f30472db64763f065ffa52cb0c262044e1c5e838d76e7dd4759edd"
+    },
+    {
+      "source_path": "service/data/fulltext_review_status.json",
+      "original_sha256": "d91d4a323cc1c30375eae5b61eb13b20d19159c3e74321662ef43ed7def26251",
+      "published_path": "service/data/fulltext_review_status.json",
+      "published_sha256": "d91d4a323cc1c30375eae5b61eb13b20d19159c3e74321662ef43ed7def26251"
+    },
+    {
+      "source_path": "service/data/gearformer_execution_integrated.json",
+      "original_sha256": "dcfabf1fed987fea8b3de4f9b3568a80b33d96882a5af3c1c08862ef49708e7c",
+      "published_path": "service/data/gearformer_execution_integrated.json",
+      "published_sha256": "dcfabf1fed987fea8b3de4f9b3568a80b33d96882a5af3c1c08862ef49708e7c"
+    },
+    {
+      "source_path": "service/data/knowledge_graph.json",
+      "original_sha256": "5576ed0a40719cf2254c0647ed1c2f11ed8a5825cb48f8b25db60bb0fe79e543",
+      "published_path": "service/data/knowledge_graph.json",
+      "published_sha256": "21e055cdba52f5ba96923863270bd348b2ecc8013bdacb3ea92131653918be95"
+    },
+    {
+      "source_path": "service/data/m2pde_execution_integrated.json",
+      "original_sha256": "b03777330ffa6aae7f571f2e8b4129c796ec1703e6df4567ea7b701fd2065383",
+      "published_path": "service/data/m2pde_execution_integrated.json",
+      "published_sha256": "b03777330ffa6aae7f571f2e8b4129c796ec1703e6df4567ea7b701fd2065383"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_batch01.json",
+      "original_sha256": "f767f9106c6b3550238042feb2e932d7ce9f4e0ebdf9f6254eecbd9a2d075523",
+      "published_path": "service/data/main_candidate_reading_batch01.json",
+      "published_sha256": "f767f9106c6b3550238042feb2e932d7ce9f4e0ebdf9f6254eecbd9a2d075523"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_batch02.json",
+      "original_sha256": "d5f0b1dd1406f5858470a035a49280105afd7e7dab0768fd2c15c8046c9db6ad",
+      "published_path": "service/data/main_candidate_reading_batch02.json",
+      "published_sha256": "d5f0b1dd1406f5858470a035a49280105afd7e7dab0768fd2c15c8046c9db6ad"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_batch03.json",
+      "original_sha256": "d414e295618ecaa6c8e722ab6a6c951624b0766a921cdca62334b3eb147b4af8",
+      "published_path": "service/data/main_candidate_reading_batch03.json",
+      "published_sha256": "d414e295618ecaa6c8e722ab6a6c951624b0766a921cdca62334b3eb147b4af8"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_batch04.json",
+      "original_sha256": "c3141237ed1d3e00a4fd0244fee0d3c27f8cfb7bd8acb542ccbca31c80a00cad",
+      "published_path": "service/data/main_candidate_reading_batch04.json",
+      "published_sha256": "c3141237ed1d3e00a4fd0244fee0d3c27f8cfb7bd8acb542ccbca31c80a00cad"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_batch05.json",
+      "original_sha256": "3ee65f187f4c9fbf459e811888114ad147a35c7a19e55bac20cea2b9522cb642",
+      "published_path": "service/data/main_candidate_reading_batch05.json",
+      "published_sha256": "3ee65f187f4c9fbf459e811888114ad147a35c7a19e55bac20cea2b9522cb642"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_batch06.json",
+      "original_sha256": "64a1a4ae39c7ed64546f106d3e930e4c70f5ad61cd697cfbdbd8538a36275fb8",
+      "published_path": "service/data/main_candidate_reading_batch06.json",
+      "published_sha256": "64a1a4ae39c7ed64546f106d3e930e4c70f5ad61cd697cfbdbd8538a36275fb8"
+    },
+    {
+      "source_path": "service/data/main_candidate_reading_cohort.json",
+      "original_sha256": "03602795e554394e1d7d0d83adabe2514a76dc082ddd65c6303550251a401e1f",
+      "published_path": "service/data/main_candidate_reading_cohort.json",
+      "published_sha256": "03602795e554394e1d7d0d83adabe2514a76dc082ddd65c6303550251a401e1f"
+    },
+    {
+      "source_path": "service/data/manufacturing_design_integrated.json",
+      "original_sha256": "aa361d802db29f45d807a3a45f935a7984ca36a98f432ef4d1b4de3a3e69bd38",
+      "published_path": "service/data/manufacturing_design_integrated.json",
+      "published_sha256": "aa361d802db29f45d807a3a45f935a7984ca36a98f432ef4d1b4de3a3e69bd38"
+    },
+    {
+      "source_path": "service/data/physical_design_evidence_integrated.json",
+      "original_sha256": "9e198a5b4b32a5017d8e879f0a9b992edaac1dad6685a4e817334437443c8ef2",
+      "published_path": "service/data/physical_design_evidence_integrated.json",
+      "published_sha256": "9e198a5b4b32a5017d8e879f0a9b992edaac1dad6685a4e817334437443c8ef2"
+    },
+    {
+      "source_path": "service/data/public_artifact_revision_watch.json",
+      "original_sha256": "0d5f643371109159c408fa9199afa864ad1ef5411f67d518a66532e009efb686",
+      "published_path": "service/data/public_artifact_revision_watch.json",
+      "published_sha256": "0d5f643371109159c408fa9199afa864ad1ef5411f67d518a66532e009efb686"
+    },
+    {
+      "source_path": "service/data/separate_supplements_integrated.json",
+      "original_sha256": "88d501adb23cef492cafd7bf63f100a7cfe1a00cd9579d956686bf6612f75a46",
+      "published_path": "service/data/separate_supplements_integrated.json",
+      "published_sha256": "88d501adb23cef492cafd7bf63f100a7cfe1a00cd9579d956686bf6612f75a46"
+    },
+    {
+      "source_path": "service/data/supplemental_abstract_evidence.json",
+      "original_sha256": "dadf7e7a34826acb154edee83495ace5da5c226f4761379c4abb5a0f415e58ed",
+      "published_path": "service/data/supplemental_abstract_evidence.json",
+      "published_sha256": "dadf7e7a34826acb154edee83495ace5da5c226f4761379c4abb5a0f415e58ed"
+    },
+    {
+      "source_path": "service/data/supplemental_fulltext_evidence.json",
+      "original_sha256": "53c91ae5cbc22920b785fb54b1717d745797f1d66ffc541e9ff075df8e171eb6",
+      "published_path": "service/data/supplemental_fulltext_evidence.json",
+      "published_sha256": "53c91ae5cbc22920b785fb54b1717d745797f1d66ffc541e9ff075df8e171eb6"
+    },
+    {
+      "source_path": "service/data/taccel_build_followup.json",
+      "original_sha256": "900405fae9862519d4700ac61edb21f0b9e36140ed2d2f4618c86fc20c221ea5",
+      "published_path": "service/data/taccel_build_followup.json",
+      "published_sha256": "900405fae9862519d4700ac61edb21f0b9e36140ed2d2f4618c86fc20c221ea5"
+    },
+    {
+      "source_path": "service/data/taccel_dependency_pair.json",
+      "original_sha256": "3a4b4013b6bdc61a0b22bd713f42382d2d507a4da764c2278279abd75968eb0c",
+      "published_path": "service/data/taccel_dependency_pair.json",
+      "published_sha256": "2e245688e3f4aec2c186e3e56eb9f885f640fcdaa08bea872b7df56523c13628"
+    },
+    {
+      "source_path": "service/data/taccel_peg_attempt1.json",
+      "original_sha256": "145a3f435d573cd3acc2e4a03df9187ff9b7fb0a108e4b97dc4a22123fc1e1d1",
+      "published_path": "service/data/taccel_peg_attempt1.json",
+      "published_sha256": "e9746c7145cfa79bffef94281774d02e1d857fc31d92700d444b0b3f8bee7d62"
+    },
+    {
+      "source_path": "service/data/taccel_peg_attempt2.json",
+      "original_sha256": "5f589224e9601eee0a771fde9614f16562df1a6555a6f603e6ff357280ccfd8b",
+      "published_path": "service/data/taccel_peg_attempt2.json",
+      "published_sha256": "eb9bc08527738be476e8a87134160a8b4aa2523d1abe120909de011d5cc893b6"
+    },
+    {
+      "source_path": "service/data/taccel_peg_evidence.json",
+      "original_sha256": "6db09062b7b23df1415db9ce92714b2f10e8adbf94bd117d83cd00ec3436025c",
+      "published_path": "service/data/taccel_peg_evidence.json",
+      "published_sha256": "a85c6dd793b274ac05e2f65ee7dec165ee016e61daa19805645a8f39af2b63ef"
+    },
+    {
+      "source_path": "service/data/taccel_runtime_evidence.json",
+      "original_sha256": "ef918fa9f6d6b7570f4d69708d7a8540f5c9a19462cccf1080dc4b6ba86dbbcd",
+      "published_path": "service/data/taccel_runtime_evidence.json",
+      "published_sha256": "a7a7ff79cc569c40c7b958040404d99da3bd4b2a267ec64052d19d02a870e595"
+    },
+    {
+      "source_path": "service/data/taccel_saved_geometry_evidence.json",
+      "original_sha256": "3a9dd150f11292e02c1fd80de08e9f685bf1d8e15000b75fa35b19d4564ec351",
+      "published_path": "service/data/taccel_saved_geometry_evidence.json",
+      "published_sha256": "3a9dd150f11292e02c1fd80de08e9f685bf1d8e15000b75fa35b19d4564ec351"
+    },
+    {
+      "source_path": "service/data/taccel_saved_geometry_integrated.json",
+      "original_sha256": "9c958793d0f18ca2c6264f2d9bc2f3584d58b52bc3e7fc23d4553480e8580040",
+      "published_path": "service/data/taccel_saved_geometry_integrated.json",
+      "published_sha256": "9c958793d0f18ca2c6264f2d9bc2f3584d58b52bc3e7fc23d4553480e8580040"
+    }
+  ],
+  "redaction_fields": [
+    {
+      "field": "service/data/knowledge_graph.json/nodes/1488/properties/hf_cache",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/knowledge_graph.json/nodes/1489/properties/hf_cache",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/knowledge_graph.json/nodes/1490/properties/hf_cache",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/knowledge_graph.json/nodes/1495/properties/packages/smpl_path",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/knowledge_graph.json/nodes/1495/properties/packages/torch_path",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/knowledge_graph.json/nodes/1578/properties/recoverability",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/python_executable",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/1/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/2/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/3/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/4/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/5/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/6/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/9/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/0/result/cases/10/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_dependency_pair.json/variants/1/result/python_executable",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_attempt1.json/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_attempt1.json/command/2",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_attempt2.json/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_attempt2.json/command/2",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_evidence.json/attempts/0/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_evidence.json/attempts/0/command/2",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_evidence.json/attempts/1/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_peg_evidence.json/attempts/1/command/2",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/command_record/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/command_record/command/1",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/python_executable",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/1/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/2/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/3/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/4/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/5/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/6/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/9/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/0/result/cases/10/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/command_record/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/command_record/command/1",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/python_executable",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/1/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/2/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/3/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/4/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/5/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/6/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/9/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/gpu_tests/1/result/cases/10/traceback",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/0/commands/0/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/0/commands/0/command/5",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/0/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/0/command/5",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/1/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/1/command/5",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/2/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/2/command/4",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "service/data/taccel_runtime_evidence.json/local_toolchain_attempts/1/commands/3/command/0",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "parent_graph/nodes/1488/properties/hf_cache",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "parent_graph/nodes/1489/properties/hf_cache",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "parent_graph/nodes/1490/properties/hf_cache",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "parent_graph/nodes/1495/properties/packages/smpl_path",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "parent_graph/nodes/1495/properties/packages/torch_path",
+      "kind": "machine_path_redaction"
+    },
+    {
+      "field": "parent_graph/nodes/1578/properties/recoverability",
+      "kind": "machine_path_redaction"
+    }
+  ],
+  "private_payloads_distributed": false
+}

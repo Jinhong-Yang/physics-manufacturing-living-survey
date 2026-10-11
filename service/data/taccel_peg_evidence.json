@@ -1,0 +1,341 @@
+{
+  "created_utc": "2026-10-11T09:23:50.383466+00:00",
+  "schema_version": "1.0",
+  "work_id": "W_neurips_2025_7d71af30fcc1f3f6",
+  "graph_work_id": "work:SUP_A05",
+  "audit_id": "SUP_A05",
+  "title": "Taccel: Scaling Up Vision-based Tactile Robotics via High-performance GPU Simulation",
+  "artifact_commit": "cb23bc251b531ba6908a3788c2f91423cd543149",
+  "source_ids": [
+    "S321",
+    "S322"
+  ],
+  "historical_static_audit_preserved": true,
+  "attempts": [
+    {
+      "started_utc": "2026-10-11T08:46:25.964127+00:00",
+      "created_utc": "2026-10-11T08:47:09.659761+00:00",
+      "freeze_sha256": "8415888c2e580d63a17a76ce70814c2a2025bd5a74213e7eb3815579ec067d0d",
+      "command": [
+        "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain/bin/python",
+        "-u",
+        "[local research project]/runs/wp1/taccel_execution_20261011/upstream/examples/peg.py",
+        "--num_envs",
+        "1",
+        "--seed",
+        "42",
+        "--export_mesh"
+      ],
+      "cwd": "runs/wp1/taccel_execution_20261011/runtime/peg_original_workdir",
+      "process_pid": 3871,
+      "source_files_prechecked": 1406,
+      "exit_code": 1,
+      "termination_reason": null,
+      "seconds": 43.699621447000006,
+      "log": "runs/wp1/taccel_execution_20261011/peg_execution.log",
+      "log_sha256": "ef9b158e88246b65517cd75cb0fda6e885b2336fb31616d6ba1a61797efcaacb",
+      "telemetry": "runs/wp1/taccel_execution_20261011/peg_gpu_telemetry.jsonl",
+      "telemetry_sha256": "bb4de74a2f8dd8ad72755f46b6694360a99485424f2efe39b6a634ea44615ac1",
+      "validator_exit_code": 0,
+      "validation_log": "runs/wp1/taccel_execution_20261011/peg_output_validation.log",
+      "validation_log_sha256": "ce07a3b45fdc9d2d944e8281ffdb6f6c653e19217e3865da6129e9f21e0fc3e4",
+      "validation": "runs/wp1/taccel_execution_20261011/peg_output_validation.json",
+      "validation_sha256": "ce07a3b45fdc9d2d944e8281ffdb6f6c653e19217e3865da6129e9f21e0fc3e4",
+      "observed_frames": 0,
+      "complete_example_and_output_sanity_pass": false,
+      "manual_upstream_source_patch_performed": false,
+      "original_requirements_followed": false,
+      "tactile_output_observed": false,
+      "independent_physical_pass": false,
+      "industrial_pass": false,
+      "method_run_denominator_added": 1
+    },
+    {
+      "started_utc": "2026-10-11T08:53:29.792179+00:00",
+      "created_utc": "2026-10-11T09:23:39.533617+00:00",
+      "freeze_sha256": "a456a33688725d99fb069b4df233838027253a33d1480e5ea78a97e3d6748a00",
+      "command": [
+        "[local research project]/runs/wp1/taccel_execution_20261011/runtime/python310_toolchain/bin/python",
+        "-u",
+        "[local research project]/runs/wp1/taccel_execution_20261011/upstream/examples/peg.py",
+        "--num_envs",
+        "1",
+        "--seed",
+        "42",
+        "--export_mesh"
+      ],
+      "cwd": "runs/wp1/taccel_execution_20261011/runtime/peg_open3d_workdir",
+      "process_pid": 3789,
+      "source_files_prechecked": 1406,
+      "exit_code": -15,
+      "termination_reason": "time_limit",
+      "seconds": 1809.7443747420002,
+      "log": "runs/wp1/taccel_execution_20261011/peg_execution_v2.log",
+      "log_sha256": "8ed2006f2b6adc9a316a67637e0574d092879c5955d14884a161ee70cee6e7fe",
+      "telemetry": "runs/wp1/taccel_execution_20261011/peg_gpu_telemetry_v2.jsonl",
+      "telemetry_sha256": "f103386810a87f591ea76d7909df85ae8d1aba44c26e32320b6ea2fd250b41a1",
+      "validator_exit_code": 0,
+      "validation_log": "runs/wp1/taccel_execution_20261011/peg_output_validation_v2.log",
+      "validation_log_sha256": "1cdcc2167aa2b11e508795213a6bc5cde98eddfe2bb1900ed0ea91333684ebdd",
+      "validation": "runs/wp1/taccel_execution_20261011/peg_output_validation_v2.json",
+      "validation_sha256": "1cdcc2167aa2b11e508795213a6bc5cde98eddfe2bb1900ed0ea91333684ebdd",
+      "observed_frames": 32,
+      "complete_example_and_output_sanity_pass": false,
+      "manual_upstream_source_patch_performed": false,
+      "original_requirements_followed": false,
+      "tactile_output_observed": false,
+      "independent_physical_pass": false,
+      "industrial_pass": false,
+      "method_run_denominator_added": 1
+    }
+  ],
+  "run_records": [
+    {
+      "id": "run:SUP_A05:peg-attempt1-20261011",
+      "work_id": "work:SUP_A05",
+      "recipe_id": "recipe:SUP_A05:peg-original200",
+      "artifact_version_id": "av:SUP_A05:taccel:cb23bc2",
+      "environment_id": "env:SUP_A05:adapted-wsl-py310-cu128",
+      "status": "failed",
+      "started_at": "2026-10-11T08:46:25.964127+00:00",
+      "observed_at": "2026-10-11T08:47:09.659761+00:00",
+      "scope": "Original200step algorithm in changed environment; geometry serialization only, no tactile rendering, independent solver,metrology or manufacturing qualification.",
+      "log": "runs/wp1/taccel_execution_20261011/peg_execution.json",
+      "log_sha256": "145a3f435d573cd3acc2e4a03df9187ff9b7fb0a108e4b97dc4a22123fc1e1d1",
+      "model_or_simulation_executed": false,
+      "data_loaded": false,
+      "sample_generation_executed": false,
+      "task_output_generated": false,
+      "task_category": "contact_simulation_geometry_trajectory",
+      "generated_sample_count": 0,
+      "generated_sample_unit": "serialized trajectory frames; not independent trajectories,grasp samples or manufacturing observations",
+      "observed_frame_files": 0,
+      "R4_clean_start_pass": false,
+      "physical_validation_pass": false,
+      "industrial_pass": false,
+      "commercial_rights": "Root codeMIT; exact input/thirdparty/output manufacturing-use qualification unresolved.",
+      "solver_loop_entered": false,
+      "tactile_output_observed": false,
+      "public_log": "taccel_peg_attempt.html?attempt=1",
+      "public_manifest": "data/taccel_peg_attempt1.json"
+    },
+    {
+      "id": "run:SUP_A05:peg-attempt2-20261011",
+      "work_id": "work:SUP_A05",
+      "recipe_id": "recipe:SUP_A05:peg-original200",
+      "artifact_version_id": "av:SUP_A05:taccel:cb23bc2",
+      "environment_id": "env:SUP_A05:adapted-wsl-py310-cu128",
+      "status": "partial",
+      "started_at": "2026-10-11T08:53:29.792179+00:00",
+      "observed_at": "2026-10-11T09:23:39.533617+00:00",
+      "scope": "Original200step algorithm in changed environment; geometry serialization only, no tactile rendering, independent solver,metrology or manufacturing qualification.",
+      "log": "runs/wp1/taccel_execution_20261011/peg_execution_v2.json",
+      "log_sha256": "5f589224e9601eee0a771fde9614f16562df1a6555a6f603e6ff357280ccfd8b",
+      "model_or_simulation_executed": true,
+      "data_loaded": true,
+      "sample_generation_executed": true,
+      "task_output_generated": true,
+      "task_category": "contact_simulation_geometry_trajectory",
+      "generated_sample_count": 32,
+      "generated_sample_unit": "serialized trajectory frames; not independent trajectories,grasp samples or manufacturing observations",
+      "observed_frame_files": 32,
+      "R4_clean_start_pass": false,
+      "physical_validation_pass": false,
+      "industrial_pass": false,
+      "commercial_rights": "Root codeMIT; exact input/thirdparty/output manufacturing-use qualification unresolved.",
+      "solver_loop_entered": true,
+      "tactile_output_observed": false,
+      "public_log": "taccel_peg_attempt.html?attempt=2",
+      "public_manifest": "data/taccel_peg_attempt2.json"
+    }
+  ],
+  "method_execution_attempts_added": 2,
+  "complete_example_and_output_sanity_pass": false,
+  "solver_loop_entered": true,
+  "geometry_frame_files": 32,
+  "usable_geometry_frames": 32,
+  "geometry_output_observed": true,
+  "original_requirements_followed": false,
+  "manual_upstream_source_patch_performed": false,
+  "author_provided_ptx_cache_used": true,
+  "ptx_target_arch": 86,
+  "depth_normal_rgb_or_marker_generation_observed": false,
+  "independent_physical_pass": false,
+  "industrial_pass": false,
+  "scientific_R4_pass": false,
+  "host_telemetry": {
+    "observations": 354,
+    "minimum_free_MiB": 848.0,
+    "maximum_used_MiB": 15130.0,
+    "maximum_utilization_percent": 100.0,
+    "scope": "Whole GPU including other activity; not attributed solver peakVRAM or isolated deployment measurement."
+  },
+  "validation_summary": {
+    "frame_count": 32,
+    "exact_frame_names": false,
+    "all_frames_sanity_passed": false,
+    "fps_observation_count": 32,
+    "last_cumulative_reported_fps": 0.018453025457924134,
+    "maximum_first_to_last_vertex_displacement": null,
+    "output_sanity_pass": false
+  },
+  "counting_scope": "Two sequential attempts of one purposively selected public release/use example,not two studies/independent replications. Geometry trajectory frames are distinct from learned tactile or manufacturing sensor outputs.",
+  "sources": [
+    {
+      "path": "runs/wp1/taccel_execution_20261011/open3d_after.log",
+      "bytes": 3140,
+      "sha256": "3d502bef70813a863729215320df7568d40cffe68c657b33778c8a29a18a5f1c"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/open3d_before.log",
+      "bytes": 2293,
+      "sha256": "ccd20cd78b6fbc19ea2fa044a06871355f1c67e56b8cd37b1f6aa8632cb47bf6"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/open3d_dependency_freeze.json",
+      "bytes": 537,
+      "sha256": "8f851c703e6f7d4a0a03805d2c123fe8ec0d6edfce6b8adc3052950103b46c8e"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/open3d_dependency_setup.json",
+      "bytes": 3137,
+      "sha256": "ccc4653e8cfd0cb92f32e0be64638b7177e6ba7fb499cf930749586f385493c0"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/open3d_install.log",
+      "bytes": 18944,
+      "sha256": "aaab4fa74329106ffe461eda9c271cb1fc809e7db4bedac75de452df2387fc3f"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/open3d_probe.log",
+      "bytes": 500,
+      "sha256": "0f850800fd61eddc5ec5d7c17a46c93974bc04d3fee5d442c3dafe44f5c446d4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_execution.json",
+      "bytes": 1798,
+      "sha256": "145a3f435d573cd3acc2e4a03df9187ff9b7fb0a108e4b97dc4a22123fc1e1d1"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_execution.log",
+      "bytes": 3769,
+      "sha256": "ef9b158e88246b65517cd75cb0fda6e885b2336fb31616d6ba1a61797efcaacb"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_execution_freeze.json",
+      "bytes": 17611,
+      "sha256": "8415888c2e580d63a17a76ce70814c2a2025bd5a74213e7eb3815579ec067d0d"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_execution_freeze_v2.json",
+      "bytes": 17998,
+      "sha256": "a456a33688725d99fb069b4df233838027253a33d1480e5ea78a97e3d6748a00"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_execution_v2.json",
+      "bytes": 1819,
+      "sha256": "5f589224e9601eee0a771fde9614f16562df1a6555a6f603e6ff357280ccfd8b"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_execution_v2.log",
+      "bytes": 24219,
+      "sha256": "8ed2006f2b6adc9a316a67637e0574d092879c5955d14884a161ee70cee6e7fe"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_gpu_telemetry.jsonl",
+      "bytes": 1956,
+      "sha256": "bb4de74a2f8dd8ad72755f46b6694360a99485424f2efe39b6a634ea44615ac1"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_gpu_telemetry_v2.jsonl",
+      "bytes": 100250,
+      "sha256": "f103386810a87f591ea76d7909df85ae8d1aba44c26e32320b6ea2fd250b41a1"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_output_validation.json",
+      "bytes": 672,
+      "sha256": "ce07a3b45fdc9d2d944e8281ffdb6f6c653e19217e3865da6129e9f21e0fc3e4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_output_validation.log",
+      "bytes": 672,
+      "sha256": "ce07a3b45fdc9d2d944e8281ffdb6f6c653e19217e3865da6129e9f21e0fc3e4"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_output_validation_v2.json",
+      "bytes": 16796,
+      "sha256": "1cdcc2167aa2b11e508795213a6bc5cde98eddfe2bb1900ed0ea91333684ebdd"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_output_validation_v2.log",
+      "bytes": 16796,
+      "sha256": "1cdcc2167aa2b11e508795213a6bc5cde98eddfe2bb1900ed0ea91333684ebdd"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies.json",
+      "bytes": 3391,
+      "sha256": "07a9406813b1ffd21cd11581b64cd5e67f76f527a40e728bd71638d59eed4bc9"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_freeze.json",
+      "bytes": 712,
+      "sha256": "0a66e04527520392354bfbecfdb193b66d11f666aec7f8b4f4788efca71f825a"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_freeze_v2.json",
+      "bytes": 1172,
+      "sha256": "94d363f4bf2271e42a7ad18a4a2629db26834332d150e98b441e7a986c180242"
+    },
+    {
+      "path": "runs/wp1/taccel_execution_20261011/peg_runtime_dependencies_v2.json",
+      "bytes": 4592,
+      "sha256": "98b76abb2a230f1fe1bcb25d920d51f2d687372017dc5312f799c518efffbb77"
+    },
+    {
+      "path": "scripts/taccel_peg_execution.py",
+      "bytes": 5243,
+      "sha256": "e3ecbd3cb84720653eff19de6fe7d68e00a68417f93729608e517ba5f0a182b4"
+    },
+    {
+      "path": "scripts/taccel_peg_execution_v2.py",
+      "bytes": 5555,
+      "sha256": "4ebc1c4cd44105774b5dbb85cb1298fd4d69ee62871ee6d0d36eb747b3a51c93"
+    },
+    {
+      "path": "scripts/validate_taccel_peg_outputs.py",
+      "bytes": 3353,
+      "sha256": "f7dd2a34e88a5ebee8483802abce366a263b0acdb022fb50bfd49b2bbf3f936c"
+    },
+    {
+      "path": "scripts/freeze_taccel_peg_execution.py",
+      "bytes": 1712,
+      "sha256": "dc4ccc2a1b8b2f72ff99c60686c5d2320f499f2dff0646c67e474db9322eb6fb"
+    },
+    {
+      "path": "scripts/prepare_taccel_peg_retry.py",
+      "bytes": 2248,
+      "sha256": "01d4e731666bba368ab215f7518bc6a0503be397f96687a421e732e17b51625e"
+    },
+    {
+      "path": "scripts/taccel_open3d_dependency_setup.py",
+      "bytes": 2323,
+      "sha256": "07a3fd933e494cc377bab2b11cc7dfdcddf35f91a524da078cca31638ffb058f"
+    },
+    {
+      "path": "scripts/freeze_taccel_open3d_dependency.py",
+      "bytes": 772,
+      "sha256": "019a4185a44b781f1383013cc78c3c9574a50f328135c7f7722b66aaf157b97b"
+    },
+    {
+      "path": "service/data/taccel_peg_attempt1.json",
+      "bytes": 1798,
+      "sha256": "145a3f435d573cd3acc2e4a03df9187ff9b7fb0a108e4b97dc4a22123fc1e1d1"
+    },
+    {
+      "path": "service/data/taccel_peg_attempt2.json",
+      "bytes": 1819,
+      "sha256": "5f589224e9601eee0a771fde9614f16562df1a6555a6f603e6ff357280ccfd8b"
+    }
+  ],
+  "static_service_metadata_export_scope": "Own terminal attempt manifests only; no upstream source, assets, environment, geometry or source paper redistributed."
+}

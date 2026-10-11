@@ -1,0 +1,1701 @@
+{
+  "as_of": "2026-10-12",
+  "graph_version": "0.9.37",
+  "records": [
+    {
+      "method": "GearFormer",
+      "work_id": "W_aaai_2025_2ec5b4161143d12e",
+      "graph_work_id": "work:D40",
+      "graph_work_aliases": [
+        "work:D40"
+      ],
+      "venue": "AAAI 2025",
+      "pages": 9,
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+      "pdf_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+      "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+      "repository": "GearFormer/GearFormer",
+      "claims": [
+        {
+          "claim_id": "G01",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            3,
+            5
+          ],
+          "claim": "Synthetic gear configuration data are generated from a bounded DSL, catalogue geometry and kinematics; output is design sequence, not measured process or inspection data.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G02",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            3
+          ],
+          "claim": "Torque is simplified using inverse speed while efficiency is ignored; no load/strength/fatigue validation inferred.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G03",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            5
+          ],
+          "claim": "37,606 structural templates and7,363,640 feasible sequences reported; validation/test3,681 each reported. Actual downloaded split counts are audited separately.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G04",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            5
+          ],
+          "claim": "Interference checker uses component bounding boxes and excludes immediately preceding connected component; feasibility does not equal all design requirements met.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G05",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            4,
+            6
+          ],
+          "claim": "52 lexicon strings includesstart/end; loss section states53tokens as52plusend. Equation4 negative terms differ from Equation7 positive weight convention.",
+          "claim_kind": "source_internal_discrepancy",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G06",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            6
+          ],
+          "claim": "Validity/feasibility use full test denominator; other reported requirements use valid sequences only.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G07",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            7
+          ],
+          "claim": "Table3 test GearFormer feasibility94.73%,position0.041m,speed0.0229RMSLE,weight6.25kg; these are author-reported design metrics, not acceptance limits.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G08",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            7
+          ],
+          "claim": "30 sampled benchmark problems; literalTable3labels10e3/10e4 preserved independently of prose10,000 andhybridone-tenth.",
+          "claim_kind": "source_notation_uncertainty",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G09",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            7
+          ],
+          "claim": "Author timing .328s per generated design vs .039s per evaluated search candidate and6.5min persearch; no measured deployment latency or fixed-cost comparability.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "G10",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "paper",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33812/35967",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_aaai_2025_2ec5b4161143d12e/main.pdf",
+          "source_sha256": "9bfcd519beb862ba6bcdeeba6647c84b0d48bee80c5f1a659b76c569adc33371",
+          "physical_pages": [
+            6,
+            7
+          ],
+          "claim": "Weight optimization trades off validity/feasibility; hybrid results differ by position, speed, motion and weight. No single industrial-readiness rank inferred.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S323"
+        },
+        {
+          "claim_id": "GS01",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/README.md",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/README.md",
+          "source_sha256": "438b04d2e9d2398d4809d06c4c31a8ff6f8a1db268bf22352140ac186b4f1bf0",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            111,
+            114
+          ],
+          "claim": "Software permission is limited to non-commercial research or education; commercial use is not established.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S325"
+        },
+        {
+          "claim_id": "GS02",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/Dockerfile",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/Dockerfile",
+          "source_sha256": "4b28fbae4ef65f778a39366367dc95ff6f1ff0b5a1438858c71a14911f9e7270",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            1,
+            25
+          ],
+          "claim": "Container recipe usesPython3.12andunversioneddependencies; environment is not locked.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S326"
+        },
+        {
+          "claim_id": "GS03",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/utils/data_handle.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/data_handle.py",
+          "source_sha256": "550b9766d4a76bcf2bcfe3d2cecbc3ca2cacff0f655d3502e015f6a9dcef7f59",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            50,
+            72
+          ],
+          "claim": "Statictranscription exposes duplicate inverseendindices1/52 andEOS53 despite53classes; downloaded arrays end with51/pad52. Semantic discrepancy must be resolved explicitly.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/load_model.py",
+              "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/models/load_model.py",
+              "source_sha256": "d3176658df973b8bed40acc1357372ede4684d09c625919f92ec9880cfc772a8",
+              "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+              "lines": [
+                20,
+                32
+              ],
+              "source_id": "S328"
+            }
+          ],
+          "source_id": "S327"
+        },
+        {
+          "claim_id": "GS04",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/utils/data_handle.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/data_handle.py",
+          "source_sha256": "550b9766d4a76bcf2bcfe3d2cecbc3ca2cacff0f655d3502e015f6a9dcef7f59",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            89,
+            99
+          ],
+          "claim": "Defaultpd.read_csv has noheader=None; numeric first row is consumed as header in downloaded headerlesssplit. Dataset/header protocol mismatch is source/data audit.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S327"
+        },
+        {
+          "claim_id": "GS05",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/models/transformers.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/transformers.py",
+          "source_sha256": "4350e320a0f9743a9dd0503d2f35c9dbd585db7d5d4c70b05f131c99b822122e",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            16,
+            66
+          ],
+          "claim": "Encoder uses unconditional.cuda(); training code adds positiveweightedmass to crossentropy, corresponding toEq7ratherthanliteralnegativeEq4; no runtime claim.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S329"
+        },
+        {
+          "claim_id": "GS06",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/evaluation.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/evaluation.py",
+          "source_sha256": "7236bd14ed5db17a2287e514912ec77c95991b363f2f5b996bef9346e294b5d3",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            77,
+            90
+          ],
+          "claim": "Evaluation hardcodes53classes,input8,maxlength21 and loads both namedcheckpointfiles; pinning actualweightbytes stillpending.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S330"
+        },
+        {
+          "claim_id": "GS07",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_search/gearformer.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/gearformer.py",
+          "source_sha256": "1ff7a1a4ddfce72eba95969a83e808b9c78f43725006cf2754a9a9d2caec723b",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            14,
+            19
+          ],
+          "claim": "Hybridhelper callsloading_model(model,...), withmodelstringXtransformer passedbyautocomplete; loading_model expectsargs.dim/depth/head. Staticcall-interface discrepancy, not observedexception.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/gearformer.py",
+              "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_search/gearformer.py",
+              "source_sha256": "1ff7a1a4ddfce72eba95969a83e808b9c78f43725006cf2754a9a9d2caec723b",
+              "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+              "lines": [
+                42,
+                47
+              ],
+              "source_id": "S331"
+            },
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/load_model.py",
+              "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/models/load_model.py",
+              "source_sha256": "d3176658df973b8bed40acc1357372ede4684d09c625919f92ec9880cfc772a8",
+              "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+              "lines": [
+                20,
+                30
+              ],
+              "source_id": "S328"
+            }
+          ],
+          "source_id": "S331"
+        },
+        {
+          "claim_id": "GS08",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_search/run.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/run.py",
+          "source_sha256": "2b6a8254ec8afee99d5ba6de3082a9c1ebe7dc2455a5cf771606e365627dc22d",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            6,
+            16
+          ],
+          "claim": "DefaultMCTS10,000iterations,EDA10iterations*1,000population; uniqueevaluatedcandidatecount not observed.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S332"
+        },
+        {
+          "claim_id": "GS09",
+          "work_id": "W_aaai_2025_2ec5b4161143d12e",
+          "method": "GearFormer",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/models/transformers.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/transformers.py",
+          "source_sha256": "4350e320a0f9743a9dd0503d2f35c9dbd585db7d5d4c70b05f131c99b822122e",
+          "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+          "lines": [
+            74,
+            83
+          ],
+          "claim": "TrainingGumbelsoftmaxdim=-1; validationdim=1 observed. Preserve dimensiondifference and testadaptationseparately.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/transformers.py",
+              "source_url": "https://raw.githubusercontent.com/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/gearformer_model/models/transformers.py",
+              "source_sha256": "4350e320a0f9743a9dd0503d2f35c9dbd585db7d5d4c70b05f131c99b822122e",
+              "commit_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
+              "lines": [
+                50,
+                57
+              ],
+              "source_id": "S329"
+            }
+          ],
+          "source_id": "S329"
+        }
+      ],
+      "summary_ko": "모델 파일과 테스트 데이터는 관측했습니다. 토큰·행 규약의 불일치가 있으며 실행·상업 이용은 검증하지 않았습니다.",
+      "next_validation_ko": "가중치 payload와 tokenizer·CSV 규약을 확인한 뒤 원형과 수정 variant를 구분해 새 설계를 생성하고 별도 기하 평가기로 검증합니다.",
+      "startup_mode_ko": "공개 checkpoint 추론 경로 · 입력 규약 확인 필요",
+      "rights_ko": "비상업 연구·교육 조건 · 자산별 범위 확인 필요",
+      "physical_scope_ko": "문법·기구학·제한된 bounding-box 간섭 검사",
+      "original_H2_decision_preserved": true,
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false,
+      "public_review_path": "manufacturing_design_readings.html",
+      "reading_ledger_sha256": "5ec39b17583eb57188a3eeeb8d3d69b132bd0101cc27255f5e3cc6f64f6caa08",
+      "task_examples": [
+        {
+          "path": "dataset/test_data.csv",
+          "bytes": 497157,
+          "sha256": "638cd752e9afd81c6c754b119228566c43329845896fc90d30c49ac8ba3d6fcc",
+          "digest_verified": true,
+          "url": "https://media.githubusercontent.com/media/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/dataset/test_data.csv"
+        },
+        {
+          "path": "dataset/val_data.csv",
+          "bytes": 497675,
+          "sha256": "b15f1210ed2a04cbecafc2ca868fa931feb16898a72cc47b1e2b2056f6ff5617",
+          "digest_verified": true,
+          "url": "https://media.githubusercontent.com/media/GearFormer/GearFormer/0a0d9d0254ba64e2278ce0a5733eea376af1610f/dataset/val_data.csv"
+        }
+      ]
+    },
+    {
+      "method": "CNC-Net",
+      "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+      "graph_work_id": "work:D41",
+      "graph_work_aliases": [
+        "work:D41"
+      ],
+      "venue": "CVPR 2024",
+      "pages": 10,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+      "pdf_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+      "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+      "repository": "myavartanoo/CNC-Net_PyTorch",
+      "claims": [
+        {
+          "claim_id": "C01",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            3,
+            4,
+            5
+          ],
+          "claim": "Cylindrical tools and CSG subtraction define geometric material removal; target-aware occupancy/shape-preservation losses constrain reconstruction. Force, temperature, tool wear and fixture physics are not demonstrated in the reviewed model.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C02",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            5
+          ],
+          "claim": "Tool-radius options in normalized shape space; paper softmax weighted selection, two-layer256LSTM,64-cubed occupancy and20-step caps. Normalized numbers are not calibrated millimetre tolerances.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C03",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            6
+          ],
+          "claim": "ABC sample50testshapes; ShapeNet130 from13categories. Whole dataset sizes are not independent validation samples.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C04",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            6
+          ],
+          "claim": "100 pretraining epochs and12,000 per-object fine-tuning iterations (~30min) reported; zero-shot means training per individualshape, not instant inference.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C05",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            6,
+            7
+          ],
+          "claim": "Reconstruction metrics IoU/F1 at256-cubed andCD/NCfrom8k surfacepoints; CDreportedscaled1000. ABCIoU.824 does not qualify an actual CNC profile.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C06",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            7
+          ],
+          "claim": "ABC surfaceCD.509 vsCAPRI.312; NC.893 vs.914; volume improvement coexists with surface trade-off.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C07",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            7
+          ],
+          "claim": "ShapeNetTable2 printsF1down-arrow but discussion and other tables treat largerF1asbetter; retain as visible inconsistency, not reverse metric orientation.",
+          "claim_kind": "source_internal_discrepancy",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C08",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            8
+          ],
+          "claim": "Zero-shotABC IoU.780 vsfine-tuned.824; ShapeNet.698vs.740; CDalsochanges. These are descriptive rounded-table differences, not significance tests.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C09",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            8
+          ],
+          "claim": "Paper states no reference dataset of operation sequences to assess efficiency/optimality; broader tool/operation/stock support remains futurework.",
+          "claim_kind": "author_reported",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "C10",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "paper",
+          "source_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yavartanoo_CNC-Net_Self-Supervised_Learning_for_CNC_Machining_Operations_CVPR_2024_paper.pdf",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_cvpr_2024_96b6db3cabb4325d/main.pdf",
+          "source_sha256": "2a9e1217f73389f65dee0b20677a8bf6325322732f161c8dae6d60588f9bb132",
+          "physical_pages": [
+            3,
+            6,
+            8
+          ],
+          "claim": "Simulation/reconstruction of CAD stock and paths is a manufacturing proxy. Independent machine metrology and field-production evidence are not established in reviewed main pages.",
+          "claim_kind": "bounded_negative_scope",
+          "evidence_status": "paper_or_repository_reported_not_independently_reproduced",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S324"
+        },
+        {
+          "claim_id": "CS01",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/run.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py",
+          "source_sha256": "ec9b7f0972991e3b063d1bfc2e2912153202b77e8e03e0889f30ee69debbf8fa",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            161,
+            221
+          ],
+          "claim": "Modelisconstructedafresh; existingcheckpointisloadedonlyifcontinue_fromnotNone. Defaultquickstartisoptimizationratherthanpretrainedinference.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/README.md",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/README.md",
+              "source_sha256": "88a33f5331ea88d9b2ec3dca900af3a0bf03c6f74ab633d566d20f7cf49bcf64",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                30,
+                37
+              ],
+              "source_id": "S334"
+            }
+          ],
+          "source_id": "S333"
+        },
+        {
+          "claim_id": "CS02",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/utils/dataloader.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/dataloader.py",
+          "source_sha256": "5c5dea65b126b4b5f9eb190cdb38031103f03e4e7cba4a834fed78edaad38342",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            90,
+            99
+          ],
+          "claim": "Datasetlength1000buteverygetitemreturnssameshapearrays; nominal100configuredepochs*1000updates, not1000distinctexamples.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/configs/specs.json",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/configs/specs.json",
+              "source_sha256": "14c797dbbfe3f4207f475d8b9558548043370156388734b75ad7312aefb75a0e",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                1,
+                6
+              ],
+              "source_id": "S336"
+            }
+          ],
+          "source_id": "S335"
+        },
+        {
+          "claim_id": "CS03",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/run.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py",
+          "source_sha256": "ec9b7f0972991e3b063d1bfc2e2912153202b77e8e03e0889f30ee69debbf8fa",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            237,
+            262
+          ],
+          "claim": "Eachloaderbatchupdatesoptimizer; batchsize1andlen1000produce100,000nominalupdatesunder100epochs; noactualtime/countermeasured.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/run.py",
+              "source_sha256": "ec9b7f0972991e3b063d1bfc2e2912153202b77e8e03e0889f30ee69debbf8fa",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                182,
+                187
+              ],
+              "source_id": "S333"
+            },
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/dataloader.py",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/utils/dataloader.py",
+              "source_sha256": "5c5dea65b126b4b5f9eb190cdb38031103f03e4e7cba4a834fed78edaad38342",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                92,
+                99
+              ],
+              "source_id": "S335"
+            },
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/configs/specs.json",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/configs/specs.json",
+              "source_sha256": "14c797dbbfe3f4207f475d8b9558548043370156388734b75ad7312aefb75a0e",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                1,
+                6
+              ],
+              "source_id": "S336"
+            }
+          ],
+          "source_id": "S333"
+        },
+        {
+          "claim_id": "CS04",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/networks/model.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/model.py",
+          "source_sha256": "81d9589ec3162933f4c3646a58edae0c68866990df4c635d6cc9d895fd73271b",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            344,
+            345
+          ],
+          "claim": "Drilling loop requiresdifference>0.1 andbest_iou>.92; differsfrompapercommon1e-4description. Actualdrillingactivationnotobserved.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S337"
+        },
+        {
+          "claim_id": "CS05",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/networks/model.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/model.py",
+          "source_sha256": "81d9589ec3162933f4c3646a58edae0c68866990df4c635d6cc9d895fd73271b",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            269,
+            299
+          ],
+          "claim": "ToolchoiceuseshardGumbelsoftmaxandrotationusesaxis_angle_to_matrix; recordagainstpapersoftmaxandX/Yrotationdescription. Analytic256-cubedby100by2float32intermediate12.5GiBnotobservedVRAM.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "secondary_source_spans": [
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/primitives.py",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/networks/primitives.py",
+              "source_sha256": "94f0020526aeb56967df0d09514fce875c0a0bdaef63bee37c8972a214c8224f",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                23,
+                29
+              ],
+              "source_id": "S338"
+            },
+            {
+              "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py",
+              "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/run.py",
+              "source_sha256": "ec9b7f0972991e3b063d1bfc2e2912153202b77e8e03e0889f30ee69debbf8fa",
+              "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+              "lines": [
+                287,
+                290
+              ],
+              "source_id": "S333"
+            }
+          ],
+          "source_id": "S337"
+        },
+        {
+          "claim_id": "CS06",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/utils/cad_meshing.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/cad_meshing.py",
+          "source_sha256": "3e628f760c9b06af400ca9c3bf5b3da7991290f4df558d1bc2ef6a338132a00c",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            1,
+            8
+          ],
+          "claim": "mcubesandpymeshareimportsonthedefaultmeshpathbutaremissingfromREADMEdependencylist; exactinstallversions/platformnotlocked.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S339"
+        },
+        {
+          "claim_id": "CS07",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/run.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py",
+          "source_sha256": "ec9b7f0972991e3b063d1bfc2e2912153202b77e8e03e0889f30ee69debbf8fa",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            290,
+            299
+          ],
+          "claim": "Quickstartreturnsreconstructionandsavesmesh; revieweddefaultpathdoesnotexposemachine-readyG-code/feeds/speedsorcalibratedoperationexport. Noindustrialintegrationpass.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S333"
+        },
+        {
+          "claim_id": "CS08",
+          "work_id": "W_cvpr_2024_96b6db3cabb4325d",
+          "method": "CNC-Net",
+          "source_kind": "pinned_repository_source",
+          "source_url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/utils/cad_meshing.py",
+          "source_path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/cad_meshing.py",
+          "source_sha256": "3e628f760c9b06af400ca9c3bf5b3da7991290f4df558d1bc2ef6a338132a00c",
+          "commit_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
+          "lines": [
+            93,
+            99
+          ],
+          "claim": "RawOBJ andten-iterationsmoothedOBJbothsaved; futurevalidationmustdistinguishprocessedoutputfromoperation-derivedgeometry.",
+          "claim_kind": "investigator_static_audit",
+          "evidence_status": "investigator_static_audit_not_method_execution",
+          "supports_method_execution": false,
+          "supports_industrial_pass": false,
+          "source_id": "S339"
+        }
+      ],
+      "summary_ko": "기본 예제는 사전학습 추론이 아닌 형상별 최적화입니다. 이용 조건·의존 환경·반복 수·드릴링 조건을 확인해야 합니다.",
+      "next_validation_ko": "연구 이용 조건과 의존 환경을 확인하고 반복 수·공구 작동·raw/smoothed 출력을 기록해 별도 재료 제거 평가기로 검증합니다.",
+      "startup_mode_ko": "형상별 반복 최적화",
+      "rights_ko": "검토한 공개 release의 이용허락 미확인",
+      "physical_scope_ko": "기하학적 재료 제거·형상 복원",
+      "original_H2_decision_preserved": true,
+      "independent_review": false,
+      "new_execution": false,
+      "industrial_pass": false,
+      "public_review_path": "manufacturing_design_readings.html",
+      "reading_ledger_sha256": "5ec39b17583eb57188a3eeeb8d3d69b132bd0101cc27255f5e3cc6f64f6caa08",
+      "task_examples": [
+        {
+          "path": "samples/0.off",
+          "bytes": 1020767,
+          "sha256": "8e80d539b1c593501a55bd9f7b3c6b9099ce57fdb556e298b0bd3b744f690b7c",
+          "digest_verified": true,
+          "url": "https://raw.githubusercontent.com/myavartanoo/CNC-Net_PyTorch/ba0652f9941686058c07c98617b9748e72f5f019/samples/0.off"
+        }
+      ]
+    }
+  ],
+  "scope": {
+    "papers": 2,
+    "pages": 19,
+    "claims": 37,
+    "cumulative_main_PDFs": 20,
+    "cumulative_main_pages": 354
+  },
+  "parent_stage": {
+    "path": "runs/wp1/manufacturing_boundary_reading_batch01_20261012/Manufacturing_Design_Boundary_Evidence_Batch01_20261012.zip",
+    "sha256": "1a4516e0230f6f7651f26f7df7bb8e9e9884ce2e0cb0bf2e8fb84526782b2cfa"
+  },
+  "static_checks": {
+    "created_utc": "2026-10-11T17:12:49.262202+00:00",
+    "script_sha256": "0f1b91a825f591f6d39a827f507c6db08f75307fc21e42313247e32d43b413d0",
+    "no_upstream_execution": true,
+    "no_scientific_execution_promotion": true,
+    "no_industrial_promotion": true,
+    "python_syntax_parsing": [
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/evaluation.py",
+        "sha256": "7236bd14ed5db17a2287e514912ec77c95991b363f2f5b996bef9346e294b5d3",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/evaluation_random.py",
+        "sha256": "9689fe1675850b482a903e0d4af0b2b5e449a3bb832bdb784011e9a31467043b",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/load_model.py",
+        "sha256": "d3176658df973b8bed40acc1357372ede4684d09c625919f92ec9880cfc772a8",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/transformers.py",
+        "sha256": "4350e320a0f9743a9dd0503d2f35c9dbd585db7d5d4c70b05f131c99b822122e",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/train.py",
+        "sha256": "bb76bbc75e318eda796c80f5a4cc0eb081c464c65ab97c97be3a6657f4edd380",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/config_file.py",
+        "sha256": "874d68d52fd026e882b256d0f051056b51dbf2b6203b70096ee414fc4c370f7b",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/data_handle.py",
+        "sha256": "550b9766d4a76bcf2bcfe3d2cecbc3ca2cacff0f655d3502e015f6a9dcef7f59",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/helper.py",
+        "sha256": "40da9f3478c6202bc241502a65a6731654e29d442305dca027263f6951e834e4",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/domain_comp.py",
+        "sha256": "591e47ebbac7af9f80b6e5bc8892448ced0c12266f7a435a85a9a8fffaf5ed44",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/eda.py",
+        "sha256": "1bd33d067b8b128ad78b7a41e57ff55050733af276c1e29eb41e15519128bdc6",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/eval.py",
+        "sha256": "376fe3d256ee2cef4c08c08f4bd341b795fa752ccb64d13fa60ce4eaf2c1783c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/gearformer.py",
+        "sha256": "1ff7a1a4ddfce72eba95969a83e808b9c78f43725006cf2754a9a9d2caec723b",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/mcts.py",
+        "sha256": "ede17f63ed0e4c206bfce9e3a3e5ee1aaf8db25e289612cbaf566c8ed06fa806",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/run.py",
+        "sha256": "2b6a8254ec8afee99d5ba6de3082a9c1ebe7dc2455a5cf771606e365627dc22d",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/bevel_gears.py",
+        "sha256": "2e7e8648c50264bc97a7b9c0b79b1c142ae1a400ef26695e55563da4443694f6",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/hypoid_pinion.py",
+        "sha256": "d82ab555c8cc8fb6fef301ffaab20fe0751298e5c1a9d08f7a440805956aa1bf",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/pinion_hypoid.py",
+        "sha256": "4f6c83eacd4b908ebfecec0b390c8281fc2ac1a09d75b65acdce1c22863df97c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/pinion_rack.py",
+        "sha256": "6de4ea7a00a307ef50ac2384680df632579b4ff4a4c71a92e15e77e40fe34960",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/rack_pinion.py",
+        "sha256": "2b12a5a80588757e314296fa7a991bafc94bd36118a33dd19cfe47cd09dbc19c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/shaft.py",
+        "sha256": "3b96bd1e3e10d1ce3e4cd0b868caedb3dd33cc2c60f0d3261bd1a07881a82fa7",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/spur_gears.py",
+        "sha256": "87f6312679e4e3632f91044d9d45b89e9fb41d9026f1d096fc4b02e56890f197",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/wheel_worm.py",
+        "sha256": "4636cb35f2236c40ee1bd39acbc2f8839244275bb5a90685f27edf2715b152db",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/worm_wheel.py",
+        "sha256": "2f6494b92deb1bda642fbc057007c8f08b1467575b35ee066ad7629def69ec6c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/evaluating_with_simulator.py",
+        "sha256": "980084d901540ab3a476a0c7a0d4c80d8907dea6b58291224c53f5777cfe73a5",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/gear_system.py",
+        "sha256": "f00b9c36f46e9191a38a9286c3750e861012d34851b6e62ee192df9c37c6367c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/gear_train_simulator.py",
+        "sha256": "7041358780bacbaf82fa9ac4df638c9ffde209ec08393df2955916737fc05c4b",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/simulate.py",
+        "sha256": "b1dc799b933fed603f1d3c0b34cc02ae6004b1c0fa8ef8c9eff42f8820eeed71",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/util/compute_weight.py",
+        "sha256": "fa555518c6b2e066ad8b681636de2080058b09fffe3573f7eaba9cad7bc55236",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/util/parse_input.py",
+        "sha256": "cb1befb785b0233714ec035eca12e3a6f12c7494e1ed5ba8bfc55fcf28936b38",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/util/suppress_print.py",
+        "sha256": "78cf1dc9beb54b95848f1bd214131a80175488356bbf8541e31e2e158926a869",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/capri.py",
+        "sha256": "4fd5cab894c5b84f091547d5a63082456013ac4fab073b012013b3f9865d5f6e",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/model.py",
+        "sha256": "81d9589ec3162933f4c3646a58edae0c68866990df4c635d6cc9d895fd73271b",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/primitives.py",
+        "sha256": "94f0020526aeb56967df0d09514fce875c0a0bdaef63bee37c8972a214c8224f",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py",
+        "sha256": "ec9b7f0972991e3b063d1bfc2e2912153202b77e8e03e0889f30ee69debbf8fa",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/cad_meshing.py",
+        "sha256": "3e628f760c9b06af400ca9c3bf5b3da7991290f4df558d1bc2ef6a338132a00c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/dataloader.py",
+        "sha256": "5c5dea65b126b4b5f9eb190cdb38031103f03e4e7cba4a834fed78edaad38342",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/denoise_points.py",
+        "sha256": "f985d0c011fc51d8e681c96f7ffb7ae5e0ec4ab745a2662c063b1a0661aa0cb2",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/eval_metric.py",
+        "sha256": "b4d3bd35965c21743f86dcaa876058a6f1cf9b71ca754786b0eac5d0f5dcc7a0",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/Logger.py",
+        "sha256": "fac0b0ec04286ff7def90bb6c6c00db4a9e353e49e375f2a9e7aaf506787317c",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/rotation.py",
+        "sha256": "2efa3a52982f89380561c2904f290a6c4a75c4883cd544ab4d8dcd3fda0bd981",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/utils.py",
+        "sha256": "0d9c16c436ac43ae442ac7500e3189dba50127915aa16ef99aac4330a7d8f455",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/visualizer.py",
+        "sha256": "240f56adfc96e7726155812bfa747d34f90563ffc361bfa248ae43456b4f38d2",
+        "parsed": true
+      },
+      {
+        "path": "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/workspace.py",
+        "sha256": "b7be243caafc3fdb1b37df21123eabaa82694080431e41558be96b0aafceb281",
+        "parsed": true
+      }
+    ],
+    "imports": {
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/evaluation.py": [
+        "csv",
+        "decimal",
+        "models",
+        "numpy",
+        "os",
+        "random",
+        "torch",
+        "tqdm",
+        "utils"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/evaluation_random.py": [
+        "argparse",
+        "csv",
+        "decimal",
+        "numpy",
+        "random",
+        "torch",
+        "utils"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/load_model.py": [
+        "models",
+        "torch",
+        "x_transformers"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/models/transformers.py": [
+        "einops",
+        "numpy",
+        "random",
+        "sys",
+        "torch",
+        "x_transformers"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/train.py": [
+        "csv",
+        "evaluation",
+        "models",
+        "numpy",
+        "os",
+        "random",
+        "torch",
+        "tqdm",
+        "utils"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/config_file.py": [
+        "argparse"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/data_handle.py": [
+        "config_file",
+        "csv",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pickle",
+        "random",
+        "torch"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_model/utils/helper.py": [
+        "decimal",
+        "json",
+        "numpy",
+        "random",
+        "torch"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/domain_comp.py": [
+        "gearformer",
+        "gearformer_model",
+        "itertools",
+        "json",
+        "numpy",
+        "signal",
+        "simulator"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/eda.py": [
+        "gearformer",
+        "gearformer_model",
+        "itertools",
+        "json",
+        "numpy",
+        "signal",
+        "simulator"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/eval.py": [
+        "json",
+        "math",
+        "numpy",
+        "sklearn"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/gearformer.py": [
+        "gearformer_model",
+        "numpy",
+        "os",
+        "random",
+        "torch"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/mcts.py": [
+        "domain_comp",
+        "json",
+        "logging",
+        "math",
+        "random",
+        "warnings"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/gearformer_search/run.py": [
+        "eda",
+        "json",
+        "logging",
+        "mcts"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/bevel_gears.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/hypoid_pinion.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/pinion_hypoid.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/pinion_rack.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/rack_pinion.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/shaft.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/spur_gears.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/wheel_worm.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/components/worm_wheel.py": [
+        "numpy",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/evaluating_with_simulator.py": [
+        "argparse",
+        "concurrent",
+        "csv",
+        "gear_train_simulator",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "sklearn",
+        "tqdm",
+        "util"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/gear_system.py": [
+        "components",
+        "json",
+        "openmdao"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/gear_train_simulator.py": [
+        "argparse",
+        "gear_system",
+        "json",
+        "numpy",
+        "openmdao",
+        "util"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/simulate.py": [
+        "argparse",
+        "concurrent",
+        "gear_train_simulator",
+        "os",
+        "pickle",
+        "util"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/util/compute_weight.py": [
+        "json",
+        "numpy"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/util/parse_input.py": [
+        "json"
+      ],
+      "private_sources/repositories/GearFormer__GearFormer/source_files/simulator/util/suppress_print.py": [
+        "contextlib",
+        "sys"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/capri.py": [
+        "torch"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/model.py": [
+        "copy",
+        "networks",
+        "numpy",
+        "pytorch3d",
+        "torch",
+        "utils"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/networks/primitives.py": [
+        "torch"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/run.py": [
+        "argparse",
+        "json",
+        "logging",
+        "math",
+        "networks",
+        "numpy",
+        "os",
+        "random",
+        "signal",
+        "sys",
+        "time",
+        "torch",
+        "tqdm",
+        "utils"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/cad_meshing.py": [
+        "mcubes",
+        "numpy",
+        "open3d",
+        "os",
+        "pymesh",
+        "time",
+        "torch",
+        "utils"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/dataloader.py": [
+        "h5py",
+        "numpy",
+        "open3d",
+        "os",
+        "pysdf",
+        "time",
+        "torch"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/denoise_points.py": [
+        "pdb",
+        "pytorch3d",
+        "torch"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/eval_metric.py": [
+        "numpy",
+        "pytorch3d",
+        "torch",
+        "trimesh"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/Logger.py": [
+        "os",
+        "sys"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/rotation.py": [
+        "torch"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/utils.py": [
+        "logging",
+        "numpy",
+        "os",
+        "plyfile",
+        "torch"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/visualizer.py": [
+        "numpy",
+        "open3d",
+        "pdb",
+        "pymesh",
+        "pytorch3d",
+        "torch",
+        "tqdm",
+        "trimesh",
+        "utils"
+      ],
+      "private_sources/repositories/myavartanoo__CNC-Net_PyTorch/source_files/utils/workspace.py": [
+        "json",
+        "os",
+        "torch"
+      ]
+    },
+    "gearformer_token_mapping": {
+      "language_unique_strings": 52,
+      "transcribed_get_tokens_dictionary_count": 53,
+      "maximum_token_index": 53,
+      "end_token_index": 52,
+      "EOS_index": 53,
+      "inverse_end_indices": [
+        1,
+        52
+      ],
+      "indices_without_inverse_mapping": [],
+      "hardcoded_decoder_classes": 53,
+      "ignore_index": 52,
+      "inverse_token_at_51": "MHP1-1045L",
+      "status": "static_mapping_discrepancy_not_runtime_failure_or_corrected_model"
+    },
+    "gearformer_CSV_data": [
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/task_examples/dataset/test_data.csv",
+        "sha256": "638cd752e9afd81c6c754b119228566c43329845896fc90d30c49ac8ba3d6fcc",
+        "physical_csv_rows": 3680,
+        "first_row_is_numeric_shape_record": true,
+        "rows_if_first_row_is_header_as_in_pd_read_csv_default": 3679,
+        "paper_reported_split_rows": 3681,
+        "csv_row_difference_from_paper": -1,
+        "default_loader_row_difference_from_paper": -2,
+        "column_counts": [
+          11
+        ],
+        "sequence_lengths": [
+          21
+        ],
+        "index_min": 0,
+        "index_max": 52,
+        "token_index_histogram": {
+          "0": 3680,
+          "29": 485,
+          "5": 3454,
+          "15": 610,
+          "1": 5329,
+          "8": 1788,
+          "44": 824,
+          "6": 3469,
+          "43": 824,
+          "2": 5239,
+          "12": 1877,
+          "24": 667,
+          "3": 3302,
+          "21": 575,
+          "51": 3680,
+          "52": 11142,
+          "13": 621,
+          "9": 1856,
+          "4": 3258,
+          "22": 611,
+          "30": 489,
+          "20": 653,
+          "17": 574,
+          "40": 743,
+          "39": 743,
+          "37": 423,
+          "38": 423,
+          "31": 481,
+          "35": 263,
+          "33": 836,
+          "7": 1526,
+          "42": 832,
+          "41": 832,
+          "14": 610,
+          "19": 656,
+          "11": 1754,
+          "48": 798,
+          "47": 798,
+          "32": 501,
+          "28": 608,
+          "46": 811,
+          "45": 811,
+          "23": 606,
+          "26": 631,
+          "25": 656,
+          "34": 299,
+          "49": 832,
+          "50": 832,
+          "18": 614,
+          "10": 1767,
+          "16": 623,
+          "36": 274,
+          "27": 690
+        },
+        "all_rows_have_51": true,
+        "rows_with_52": 3677,
+        "EOS_index_53_present": false,
+        "first_sequence_last_non52_token": 51,
+        "status": "acquired_data_format_audit_no_generator_execution"
+      },
+      {
+        "path": "private_sources/repositories/GearFormer__GearFormer/task_examples/dataset/val_data.csv",
+        "sha256": "b15f1210ed2a04cbecafc2ca868fa931feb16898a72cc47b1e2b2056f6ff5617",
+        "physical_csv_rows": 3680,
+        "first_row_is_numeric_shape_record": true,
+        "rows_if_first_row_is_header_as_in_pd_read_csv_default": 3679,
+        "paper_reported_split_rows": 3681,
+        "csv_row_difference_from_paper": -1,
+        "default_loader_row_difference_from_paper": -2,
+        "column_counts": [
+          11
+        ],
+        "sequence_lengths": [
+          21
+        ],
+        "index_min": 0,
+        "index_max": 52,
+        "token_index_histogram": {
+          "0": 3680,
+          "1": 5248,
+          "8": 1773,
+          "45": 836,
+          "3": 3406,
+          "46": 836,
+          "10": 1681,
+          "6": 3360,
+          "40": 812,
+          "5": 3309,
+          "39": 812,
+          "2": 5275,
+          "11": 1888,
+          "51": 3680,
+          "52": 11367,
+          "12": 1842,
+          "47": 826,
+          "48": 826,
+          "7": 1530,
+          "42": 799,
+          "41": 799,
+          "16": 677,
+          "14": 624,
+          "17": 625,
+          "20": 633,
+          "9": 1809,
+          "50": 820,
+          "49": 820,
+          "4": 3336,
+          "25": 599,
+          "32": 462,
+          "29": 485,
+          "15": 640,
+          "37": 382,
+          "38": 382,
+          "43": 834,
+          "44": 834,
+          "27": 598,
+          "22": 605,
+          "31": 486,
+          "24": 626,
+          "13": 574,
+          "28": 621,
+          "18": 580,
+          "30": 488,
+          "34": 297,
+          "33": 848,
+          "36": 268,
+          "19": 628,
+          "21": 645,
+          "35": 283,
+          "26": 587,
+          "23": 599
+        },
+        "all_rows_have_51": true,
+        "rows_with_52": 3675,
+        "EOS_index_53_present": false,
+        "first_sequence_last_non52_token": 51,
+        "status": "acquired_data_format_audit_no_generator_execution"
+      }
+    ],
+    "CNC_quickstart_iterations": {
+      "configured_epochs": 100,
+      "same_shape_dataset_length": 1000,
+      "batch_size": 1,
+      "nominal_optimizer_updates": 100000,
+      "paper_finetuning_iterations": 12000,
+      "ratio_to_reported_paper_finetuning": 8.333333333333334,
+      "distinct_shapes_for_quickstart": 1,
+      "observed_runtime_updates": null,
+      "note": "Nominal loop product only; no execution, time estimate, or full result reproduction."
+    },
+    "CNC_nominal_memory": {
+      "evaluation_points": 16777216,
+      "path_samples": 100,
+      "xy_channels": 2,
+      "assumed_float32_bytes": 4,
+      "nominal_dense_pairwise_xy_tensor_bytes": 13421772800,
+      "nominal_dense_pairwise_xy_tensor_GiB": 12.5,
+      "source": "networks/primitives.py:26 with run.py high-resolution input; model.py:297-299",
+      "observed_peak_memory": null,
+      "note": "Analytical intermediate size for the shown eager expression, not measured peak VRAM or proof of OOM."
+    },
+    "CNC_ABC_table_arithmetic": [
+      {
+        "baseline": "CSG-Stump",
+        "paper_reported_relative_improvement_percent": 4.7,
+        "difference_percentage_points": 3.699999999999992,
+        "relative_improvement_percent_from_rounded_table": 4.701397712833533,
+        "source_table_rounding_preserved": true
+      },
+      {
+        "baseline": "ExtrudeNet",
+        "paper_reported_relative_improvement_percent": 7.2,
+        "difference_percentage_points": 5.499999999999994,
+        "relative_improvement_percent_from_rounded_table": 7.152145643693109,
+        "source_table_rounding_preserved": true
+      },
+      {
+        "baseline": "CAPRI-Net",
+        "paper_reported_relative_improvement_percent": 7.3,
+        "difference_percentage_points": 5.599999999999994,
+        "relative_improvement_percent_from_rounded_table": 7.291666666666652,
+        "source_table_rounding_preserved": true
+      },
+      {
+        "baseline": "SECAD-Net",
+        "paper_reported_relative_improvement_percent": 6.2,
+        "difference_percentage_points": 4.799999999999994,
+        "relative_improvement_percent_from_rounded_table": 6.185567010309279,
+        "source_table_rounding_preserved": true
+      }
+    ],
+    "GearFormer_candidate_notation": {
+      "paper_table_hybrid_literal": "10e3",
+      "paper_table_plain_search_literal": "10e4",
+      "paper_prose_plain_search_candidates": 10000,
+      "paper_prose_hybrid_ratio": 0.1,
+      "README_plain_MCTS_iterations": 10000,
+      "README_hybrid_MCTS_iterations": 1000,
+      "README_plain_EDA_nominal_population_slots": 10000,
+      "README_hybrid_EDA_nominal_population_slots": 1000,
+      "observed_evaluated_unique_candidates": null,
+      "runtime_seconds_from_paper_prose": 390.0,
+      "runtime_minutes_from_paper_prose": 6.5,
+      "literal_scientific_notation_search_value_if_interpreted_as_10_times_10_power_4": 100000,
+      "status": "paper_table_notation_ambiguous_keep_literal_and_prose_separate; iteration slots not unique validated candidates"
+    },
+    "CNC_zero_shot_changes": {
+      "ABC_IoU_percentage_point_drop": 4.399999999999993,
+      "ShapeNet_IoU_percentage_point_drop": 4.200000000000004,
+      "ABC_CD_ratio_from_rounded_table": 2.2141453831041256,
+      "ShapeNet_CD_ratio_from_rounded_table": 1.3796414852752878,
+      "source": "CNC main PDF physical page 8 Table 3; author-reported rounded entries"
+    },
+    "canonical_integration_pending": true
+  },
+  "canonical_integration_pending": false,
+  "independent_review": false,
+  "new_execution_count": 0,
+  "industrial_pass_count": 0,
+  "submission_ready": false
+}

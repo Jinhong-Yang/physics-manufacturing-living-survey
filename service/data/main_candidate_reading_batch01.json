@@ -1,0 +1,457 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "schema_version": "1.0",
+    "cohort_freeze_sha256": "d83677aeaf3c17af2fd35747674db2e241aff8ca2c918ae869fdde9fc6aca79d",
+    "fixed_cohort_works": 14,
+    "fixed_cohort_main_pdf_pages": 229,
+    "same_ai_main_pdf_reviews_complete": 3,
+    "same_ai_main_pdf_pages_read_and_visually_reviewed": 28,
+    "remaining_same_ai_main_pdf_reviews": 11,
+    "independent_reviews_complete": 0,
+    "adjudicated_inclusions": 0,
+    "systematic_review_complete": false,
+    "new_executions": 0,
+    "new_scientific_passes": 0,
+    "new_industrial_qualification_passes": 0,
+    "historical_sources_and_human_packets_unchanged": true,
+    "raw_pdfs_or_renders_publicly_redistributed": false,
+    "validation_scope": "Source/record integrity, coverage record completeness and non-inflated state checks; not independent scientific or human review.",
+    "reviews": [
+      {
+        "work_id": "W_aaai_2023_3e92365c6a31ea37",
+        "method": "DFMGAN",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_aaai_2023_3e92365c6a31ea37_review.json",
+        "sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae"
+      },
+      {
+        "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+        "method": "TGI-AD",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2024_4bca28b6f05c412d_review.json",
+        "sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a"
+      },
+      {
+        "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+        "method": "DefectFill",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2025_e6d8cf140103e9bb_review.json",
+        "sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51"
+      }
+    ],
+    "pending_work_ids": [
+      "W_eccv_2024_72b004555e605ea7",
+      "W_eccv_2024_6821303e219e9206",
+      "W_iccv_2025_e01efad5210c86d2",
+      "W_iccv_2025_715dd4512a3586b9",
+      "W_iccv_2025_204365ef82780322",
+      "W_icml_2025_b84206981cf14d22",
+      "W_neurips_2022_f8d33af9719ba938",
+      "W_neurips_2023_6e31d25a4d3bd304",
+      "W_neurips_2023_499969137de65d0b",
+      "W_neurips_2025_0a00b52c83c220fa",
+      "W_neurips_2025_4b3ae9c13c106648"
+    ]
+  },
+  "relation_to_existing_graph": "Provisional coding overlay; not yet appended to the v0.9.32 graph, and does not change graph counts or qualifications.",
+  "records": [
+    {
+      "work_id": "W_aaai_2023_3e92365c6a31ea37",
+      "method": "DFMGAN",
+      "title": "Few-Shot Defect Image Generation via Defect-Aware Feature Manipulation",
+      "official_pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/25132/24904",
+      "pdf_sha256": "392c918e8c501e0f0ff460f0a6cc0bb8174a6df100257d2a55df60067a969c22",
+      "review_sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae",
+      "main_pdf_pages_read": 8,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "generation": {
+        "target": "defective and defect-free RGB images with generated masks",
+        "inputs": "latent object/defect codes; normal images and few defective image-mask pairs for training",
+        "conditioning": "object category and learned defect category",
+        "resolution_reported": "256x256 pixels"
+      },
+      "claims": [
+        {
+          "claim_id": "DFM01",
+          "pdf_pages_1_based": [
+            1,
+            3,
+            4
+          ],
+          "location": "Figures 1-2; Section 3; Eqs. 1-3",
+          "paraphrase": "StyleGAN2 pretraining on normal images precedes training defect residual blocks and a defect mapping network. Mask-gated feature addition, image-mask discrimination and mode-seeking losses constrain visual content.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFM02",
+          "pdf_pages_1_based": [
+            3
+          ],
+          "location": "Section 3.2",
+          "paraphrase": "The second stage fixes the 23.2M-parameter backbone and trains 3.7M added parameters; these are author-reported counts, not measured resource use.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFM03",
+          "pdf_pages_1_based": [
+            5
+          ],
+          "location": "Section 4.2; Table 1",
+          "paraphrase": "KID is evaluated using 5,000 generated defect images against the corresponding real defect category. Clustered LPIPS uses 1,000 outputs, assigned to nearest real-image clusters. Main results emphasize four hazelnut defects.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFM04",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Section 4.3; Table 2",
+          "paraphrase": "Each partition uses one-third of real defect images as base sets and the remaining two-thirds for classification tests. Hazelnut has 48 test images. ResNet-34 is trained on 4,000 generated images. Reported accuracies for three partitions are 83.33%, 81.25%, 81.25%.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFM05",
+          "pdf_pages_1_based": [
+            5,
+            7
+          ],
+          "location": "Sections 4 and 4.3; supplement references",
+          "paraphrase": "Other object categories, implementation details, ablations and extreme one-/five-shot generation are deferred to a separate supplement. Main-paper classification does not establish segmentation performance or factory deployment.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFM06",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "location": "Method and evaluation sections",
+          "paraphrase": "No governing manufacturing process equation, calibrated physical variable or independent physical measurement is established in these main-paper methods and results. C0/V0 is a provisional process-physics code, not a claim that image metrics are absent.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "design_limitations": [
+        {
+          "pages": [
+            5,
+            7
+          ],
+          "issue": "Generation-quality evaluation in Section 4.2 does not declare the classification holdout split used separately in Section 4.3. Do not silently assume a held-out KID reference set."
+        },
+        {
+          "pages": [
+            7
+          ],
+          "issue": "Random partitions within MVTec AD are not independent site/lot/tool validation; repeated partitions can share images and do not establish independent cohort replication."
+        },
+        {
+          "pages": [
+            5,
+            7
+          ],
+          "issue": "Main paper defers implementation, other categories and extreme-shot experiments; complete main-PDF reading does not imply complete supplement reading."
+        }
+      ],
+      "open_questions": [
+        "Acquire and fully review the separately linked supplement.",
+        "Resolve generation-quality reference split and scientific task-validator criteria.",
+        "Keep adapted execution distinct from unmodified author-command completion and independent reproduction."
+      ],
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false
+    },
+    {
+      "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+      "method": "TGI-AD",
+      "title": "Text-Guided Variational Image Generation for Industrial Anomaly Detection and Segmentation",
+      "official_pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Text-Guided_Variational_Image_Generation_for_Industrial_Anomaly_Detection_and_Segmentation_CVPR_2024_paper.pdf",
+      "pdf_sha256": "3464c3713af32ffc5e04881cc1b6f90286b3f61e2ed363243bdec7a2a2037ea5",
+      "review_sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a",
+      "main_pdf_pages_read": 10,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "generation": {
+        "target": "non-defective reference RGB images for anomaly-detector training",
+        "inputs": "one/five/full normal-image sets and target object keyword",
+        "conditioning": "WordNet-derived prompt, CLIP text/image embeddings and learned visual latent variance",
+        "resolution_reported": "not specified in reviewed main PDF"
+      },
+      "claims": [
+        {
+          "claim_id": "TGI01",
+          "pdf_pages_1_based": [
+            2,
+            4,
+            5
+          ],
+          "location": "Figure 4; Section 4; Eqs. 1-7",
+          "paraphrase": "WordNet prompt candidates are selected using CLIP. A VQGAN-derived generator estimates latent variance from augmented normal images; generated image sets are selected by text/image cosine similarity while the generator is updated.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TGI02",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Section 5.1; Figures 5-7",
+          "paraphrase": "The authors evaluate one-, five- and full-shot settings across PatchCore, CFLOW, Reverse Distillation and EfficientAD on MVTec AD, plus PatchCore experiments on BTAD and MVTec LOCO AD. Author text reports average improvements of 15.7%, 14.1% and 5.6%; the text does not justify pooling these as one metric across datasets.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TGI03",
+          "pdf_pages_1_based": [
+            6
+          ],
+          "location": "Figure 5 caption and second row",
+          "paraphrase": "The five displayed classes in the second row are selected for highest improvement; they are illustrative selected results, not an unbiased all-class aggregate.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TGI04",
+          "pdf_pages_1_based": [
+            8
+          ],
+          "location": "Table 3",
+          "paraphrase": "The text-enabled ablation reports image-level 79.1 versus baseline 74.5, while pixel-level 96.9 is below baseline 97.0. Improvements are task- and setting-dependent, so a blanket all-metric gain is unsupported.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TGI05",
+          "pdf_pages_1_based": [
+            4,
+            5,
+            7
+          ],
+          "location": "Section 4.1.1; Eq. 6; Table 2",
+          "paraphrase": "The visually inspected text retains a distance greater than 0.5 for prompt filtering; Eq. 6 divides a sum over M images by n; Table 2 reports LPIPS values in the hundreds without an explicit scale in the table. These are implementation/metric clarification questions, not corrections or demonstrated errors.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TGI06",
+          "pdf_pages_1_based": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "location": "Methods and experimental results",
+          "paraphrase": "Visual latent variance, cosine selection and image losses do not provide manufacturing governing equations or independent physical metrology. The three offline datasets establish benchmark relevance, not calibrated process-condition or field qualification.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "design_limitations": [
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "issue": "Benchmarks across several datasets are not a documented external manufacturing site, lot or equipment qualification."
+        },
+        {
+          "pages": [
+            6
+          ],
+          "issue": "Selected best-improving classes must not be used as the all-class effect estimate."
+        },
+        {
+          "pages": [
+            8
+          ],
+          "issue": "The prompt ablation has different signs for image- and pixel-level change; generated-image count is not monotonically beneficial."
+        },
+        {
+          "pages": [
+            4,
+            5,
+            7,
+            9
+          ],
+          "issue": "Equations, metric scaling and deferred supplement details need resolution before a faithful implementation or pooled metric comparison."
+        }
+      ],
+      "open_questions": [
+        "Fully review separately linked supplement rather than infer content from bibliography page cross-references.",
+        "Recheck an immutable author release before any intent-to-run admission.",
+        "Clarify prompt-distance selection, Eq. 6 normalization, LPIPS scale, exact splits and dispersion definitions."
+      ],
+      "release_attribution_snapshot": "author_associated_repository_in_prior_audit_only",
+      "release_snapshot_fresh_network_rechecked": false
+    },
+    {
+      "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+      "method": "DefectFill",
+      "title": "DefectFill: Realistic Defect Generation with Inpainting Diffusion Model for Visual Inspection",
+      "official_pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Song_DefectFill_Realistic_Defect_Generation_with_Inpainting_Diffusion_Model_for_Visual_CVPR_2025_paper.pdf",
+      "pdf_sha256": "9cef7436b5034c4100d12d15e2ac2d4f3e5f7966394862e3a9e9de206a8cc2c9",
+      "review_sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51",
+      "main_pdf_pages_read": 10,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "generation": {
+        "target": "defective RGB images on provided normal backgrounds and placement masks",
+        "inputs": "few defective image-mask pairs for fine-tuning; normal image and supplied mask for generation",
+        "conditioning": "learned defect token, object prompt, inpainting background and mask",
+        "resolution_reported": "not established in reviewed main PDF"
+      },
+      "claims": [
+        {
+          "claim_id": "DFILL01",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5
+          ],
+          "location": "Figures 2-3; Eqs. 4-9; Section 3.3",
+          "paraphrase": "LoRA adapts text encoder and UNet attention. Defect-, object- and attention-based losses learn localized visual concepts. Sampling replaces background latents outside the mask; the selected result has the largest masked-region LPIPS among eight candidates.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFILL02",
+          "pdf_pages_1_based": [
+            5
+          ],
+          "location": "Experimental dataset paragraph; implementation details",
+          "paraphrase": "One-third of defective image-mask pairs are used to learn defects, while remaining two-thirds masks are applied with normal images for synthesis. The main recipe uses SD2-inpainting, rank-8 LoRA and 50-step DDIM sampling.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFILL03",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Table 1 caption; quantitative results",
+          "paraphrase": "Generation metrics use 1,000 images per defect category and aggregate by object across ten categories. Real defect images excluded from generator training form the metric reference. Baseline columns mix original-paper numbers, author reruns and filtered public generated datasets.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFILL04",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Tables 2-3; Section 4.2",
+          "paraphrase": "ResNet-34 classification and UNet localization are trained on generated images and evaluated on the remaining two-thirds real data. Capsule classification is 87.50%, and capsule localization AP is 0.75. These are author-reported benchmark results, not investigator reproduction.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFILL05",
+          "pdf_pages_1_based": [
+            8
+          ],
+          "location": "Table 4; Limitations",
+          "paraphrase": "LFS changes average reported KID from 28.485 to 25.947 and IC-LPIPS from 0.247 to 0.250. The authors explicitly note reduced effectiveness for global structural defects such as misalignment.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "DFILL06",
+          "pdf_pages_1_based": [
+            5,
+            7
+          ],
+          "location": "Dataset paragraph and downstream test paragraph",
+          "paraphrase": "Masks from the same remaining-two-thirds partition are stated to be used in synthesis and that partition is also tested downstream. Exact sample and annotation lineage must be checked. This is an unresolved test-annotation exposure question, not a demonstrated image leak or invalidity verdict.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "DFILL07",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            7,
+            8
+          ],
+          "location": "Methods, results and limitations",
+          "paraphrase": "Visual semantic integration and latent masking do not constitute calibrated crack mechanics, material laws, process constraints or independent physical measurements. Main-paper offline MVTec results support visual inspection relevance only.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "design_limitations": [
+        {
+          "pages": [
+            5,
+            7
+          ],
+          "issue": "Resolve source mask/sample lineage before classifying downstream testing as annotation-independent. Do not assume all use of held-out image masks is the same as image leakage."
+        },
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "issue": "Baseline columns have distinct provenance; copied results, author reruns and filtered public generated datasets are not a uniform experiment."
+        },
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "issue": "There are ten quantitative generation/localization categories but nine classification rows. Do not reuse a denominator of ten for classification."
+        },
+        {
+          "pages": [
+            1,
+            8
+          ],
+          "issue": "External-image examples are qualitative; the explicit global-structural-defect limitation narrows suitability."
+        },
+        {
+          "pages": [
+            5,
+            8
+          ],
+          "issue": "Eight-candidate selection has additional generation cost and may alter defect/severity distribution; neither calibrated severity nor end-to-end field throughput is established."
+        }
+      ],
+      "open_questions": [
+        "Fully review separate supplement and inspect exact split/mask lineage in an attributable release if available.",
+        "Verify paper-linked author release separately from unofficial implementations.",
+        "Measure eight-candidate end-to-end generation cost under a declared profile and check calibrated defect/severity validity."
+      ],
+      "release_attribution_snapshot": "third_party_only_in_prior_audit",
+      "release_snapshot_fresh_network_rechecked": false
+    }
+  ]
+}

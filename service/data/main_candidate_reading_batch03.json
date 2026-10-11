@@ -1,0 +1,790 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "schema_version": "1.0",
+    "cohort_freeze_sha256": "d83677aeaf3c17af2fd35747674db2e241aff8ca2c918ae869fdde9fc6aca79d",
+    "batch03_freeze_sha256": "a62c7d5cfd46bec3dbe0ad66f1f5be6ea3e440a8b1753de295f6dc2b933f60cd",
+    "fixed_cohort_works": 14,
+    "fixed_cohort_main_pdf_pages": 229,
+    "this_batch_same_ai_reviews_complete": 3,
+    "this_batch_pages_read_and_visually_reviewed": 30,
+    "cumulative_same_ai_main_pdf_reviews_complete": 8,
+    "cumulative_same_ai_main_pdf_pages_read_and_visually_reviewed": 92,
+    "remaining_same_ai_main_pdf_reviews": 6,
+    "remaining_same_ai_main_pdf_pages": 137,
+    "independent_reviews_complete": 0,
+    "adjudicated_inclusions": 0,
+    "systematic_review_complete": false,
+    "new_executions": 0,
+    "new_scientific_passes": 0,
+    "new_industrial_qualification_passes": 0,
+    "historical_sources_and_human_packets_unchanged": true,
+    "previous_five_reviews_and_batch02_validation_unchanged": true,
+    "raw_pdfs_or_renders_publicly_redistributed": false,
+    "validation_scope": "Local source/record integrity, stated page coverage and conservative accounting; not independent reading, physical validation or industrial qualification.",
+    "prior_reviews": [
+      {
+        "work_id": "W_aaai_2023_3e92365c6a31ea37",
+        "method": "DFMGAN",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_aaai_2023_3e92365c6a31ea37_review.json",
+        "sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae"
+      },
+      {
+        "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+        "method": "TGI-AD",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2024_4bca28b6f05c412d_review.json",
+        "sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a"
+      },
+      {
+        "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+        "method": "DefectFill",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2025_e6d8cf140103e9bb_review.json",
+        "sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51"
+      },
+      {
+        "work_id": "W_eccv_2024_72b004555e605ea7",
+        "method": "GLASS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_72b004555e605ea7_review.json",
+        "sha256": "76fc6184f2dc02de24f6c73f1388b8165005cc1c576492259c0c265d85b9e06e"
+      },
+      {
+        "work_id": "W_eccv_2024_6821303e219e9206",
+        "method": "DefectDiffu",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_6821303e219e9206_review.json",
+        "sha256": "6ef150302a9ae4fcd8f3010df2c29ef78d00e61069ae8c6e73a70857dd17c45b"
+      }
+    ],
+    "reviews": [
+      {
+        "work_id": "W_iccv_2025_e01efad5210c86d2",
+        "method": "IKDDiT",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_e01efad5210c86d2_review.json",
+        "sha256": "3a9920930959cc26e9611f2d933525656be565bc46bb11511dfdde5acce3eb68"
+      },
+      {
+        "work_id": "W_iccv_2025_715dd4512a3586b9",
+        "method": "SeaS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_715dd4512a3586b9_review.json",
+        "sha256": "8ca05c3f0118f5624f04ab6cca98fd95d1c28a25ffe576eb47bd634673fd0db9"
+      },
+      {
+        "work_id": "W_iccv_2025_204365ef82780322",
+        "method": "TF-IDG",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_204365ef82780322_review.json",
+        "sha256": "6dc1f50f994937bd4b4a326d82f4a327ebfa21371f679ec82532ff019740ebe3"
+      }
+    ],
+    "pending_work_ids": [
+      "W_icml_2025_b84206981cf14d22",
+      "W_neurips_2022_f8d33af9719ba938",
+      "W_neurips_2023_6e31d25a4d3bd304",
+      "W_neurips_2023_499969137de65d0b",
+      "W_neurips_2025_0a00b52c83c220fa",
+      "W_neurips_2025_4b3ae9c13c106648"
+    ]
+  },
+  "relation_to_existing_graph": "Additive provisional coding overlay; not appended to current graph v0.9.32. No graph or qualification counts change.",
+  "records": [
+    {
+      "work_id": "W_iccv_2025_e01efad5210c86d2",
+      "method": "IKDDiT",
+      "title": "Photolithography Overlay Map Generation with Implicit Knowledge Distillation Diffusion Transformer",
+      "official_pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_Photolithography_Overlay_Map_Generation_with_Implicit_Knowledge_Distillation_Diffusion_Transformer_ICCV_2025_paper.pdf",
+      "pdf_sha256": "1b0f8e1371d8b8535d6a2f7a84af89bc34e98acc46e04d695dd1d2838e6cabe9",
+      "review_sha256": "3a9920930959cc26e9611f2d933525656be565bc46bb11511dfdde5acce3eb68",
+      "main_pdf_pages_read": 10,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_topic_decision": "include_physical_fields_and_observations_track_pending_independent_adjudication",
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V3"
+        ],
+        "manufacturing": [
+          "M3"
+        ]
+      },
+      "code_evidence_basis": {
+        "C0": "Main methods do not establish embedded governing process physics.",
+        "V3": "Author-reported measurement-linked overlay comparison; main p7 plus prior targeted supplement EVM audit. Not independent local verification.",
+        "M3": "Author-reported pilot/process comparison; no independent external-site transfer or operational qualification."
+      },
+      "generation": {
+        "target": "current-layer photolithography overlay-map images",
+        "inputs": "previous-layer overlay maps, equipment logs and equipment/chuck/reticle IDs",
+        "conditioning": "multimodal unified contrastive embeddings and gated cross-attention in latent teacher-student diffusion",
+        "resolution_reported": "512x512x3 images, 64x64x4 VAE latent",
+        "output_scope": "process-linked map images; numerical calibrated overlay vectors are not acquired in this reading batch"
+      },
+      "claims": [
+        {
+          "claim_id": "IKD01",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "location": "Figures 1-4; Sections 3.1-3.7",
+          "paraphrase": "IKDDiT conditions current-layer map generation on prior-layer maps, logs and equipment/chuck/reticle identifiers. Masked student and unmasked teacher tokens are aligned with contrastive and discriminator objectives; the decoder denoises visible tokens and reconstructs hidden ones.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IKD02",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "location": "Process-model interpretation",
+          "paraphrase": "Diffusion probability-flow ODEs, feature alignment and equipment conditions do not establish embedded lithography optics/resist equations or calibrated physical constraints. C0 can coexist with measurement-linked industrial evaluation.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "IKD03",
+          "pdf_pages_1_based": [
+            6
+          ],
+          "location": "Section 4.1; Table 1",
+          "paraphrase": "MPOM is described as real semiconductor-industry multimodal data: overlay images, logs with 5,781 unique tokens and 152GB total, plus categorical equipment IDs. Image resolution is 512 pixels, batch size 64 and student mask ratio 0.5. Model S/B/XL counts are 19.4/81.6/417.9 million parameters.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IKD04",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Sections 4.2-4.4; Tables 2-3",
+          "paraphrase": "The authors compare FID over training iterations. IKDDiT reaches 11.6 at 250k iterations, while DiT/MDT/MaskDiT report 14.1/12.2/11.9 at 500k. This is convergence by iteration count, not measured wall-clock speed or generation throughput.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IKD05",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Section 4.5; Table 4",
+          "paraphrase": "Pilot-run wafers undergo overlay measurement and APC estimation for a lot of 25 wafers. Reported OME rates are pilot run 6.8%, GAGAN 9.2% and IKDDiT-G 3.2%. Table 4 explicitly states lot size and scanner loss are estimated through simulation: IKDDiT-G 24.1 and 2.3%.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IKD06",
+          "pdf_pages_1_based": [
+            7,
+            8
+          ],
+          "location": "Section 4.6; Figures 7-8; prior targeted supplement audit",
+          "paraphrase": "Figure 7 ground truth is attributed to actual pilot-run data. A prior dated targeted audit separately records the supplement EVM as metrology-derived actual-minus-predicted overlay vectors. This supports provisional paper-reported V3/M3 evidence, not newly completed supplement reading, independent measurement replication or field qualification.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "IKD07",
+          "pdf_pages_1_based": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "location": "Reporting clarification questions",
+          "paraphrase": "Section 4.1 says training is capped at 1,000 iterations; Sections 4.2-4.4 use 578.1k updates and Section 4.7 says 150k for ablations whose tables are labelled FID-15k. Mask prose on page 5 calls m=1 unmasked while the losses use 1-m for score estimation and m for masked reconstruction. Clarify timestep/update/evaluation-sample definitions and mask conventions against pinned code rather than silently repair them.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "IKD08",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Section 4.4 versus Table 3",
+          "paraphrase": "Prose says CFG recall ranks second behind MDT-G, whereas Table 3 lists IKDDiT-G recall 0.67 and MDT-G 0.63. Preserve the table and prose separately pending clarification; no locally reproduced ranking is claimed.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "MPOM_size_GB": 152,
+        "unique_log_tokens": 5781,
+        "training_batch_size": 64,
+        "reported_resolution": [
+          512,
+          512,
+          3
+        ],
+        "VAE_latent_shape": [
+          64,
+          64,
+          4
+        ],
+        "table_1_parameters_million": {
+          "S": 19.4,
+          "B": 81.6,
+          "XL": 417.9
+        },
+        "table_1_GFLOPs": {
+          "S": 3.7,
+          "B": 14.3,
+          "XL": 73.9
+        },
+        "table_2_FID_at_250k": 11.6,
+        "table_2_FID_at_500k": 6.8,
+        "table_3": {
+          "IKDDiT": {
+            "FID": 6.64,
+            "sFID": 5.24,
+            "IS": 197.39,
+            "precision": 0.81,
+            "recall": 0.62
+          },
+          "IKDDiT_G": {
+            "FID": 2.68,
+            "sFID": 6.12,
+            "IS": 189.0,
+            "precision": 0.76,
+            "recall": 0.67
+          },
+          "MDT_G_recall": 0.63
+        },
+        "table_4": {
+          "pilot_run": {
+            "OME_percent": 6.8,
+            "rework_per_lot": 3.7,
+            "lot_size": 16.3,
+            "scanner_loss_percent": 9.1
+          },
+          "GAGAN": {
+            "OME_percent": 9.2,
+            "rework_per_lot": 2.3,
+            "lot_size": 21.9,
+            "scanner_loss_percent": 3.8
+          },
+          "IKDDiT_G": {
+            "OME_percent": 3.2,
+            "rework_per_lot": 0.8,
+            "lot_size": 24.1,
+            "scanner_loss_percent": 2.3
+          }
+        },
+        "table_4_lot_size_and_scanner_loss": "explicitly estimated through simulation; not observed production KPIs",
+        "table_4_rework_measurement_provenance": "not independently established; caption specifically labels lot size/scanner loss as simulated",
+        "training_iteration_statements": {
+          "Section_4_1": 1000,
+          "Sections_4_2_4_4": 578100,
+          "Section_4_7": 150000
+        },
+        "ablation_table_metric_label": "FID-15k; clarify relationship to stated 150k training updates",
+        "local_wall_clock_or_hardware_reproduction": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "issue": "Main PDF does not establish exact wafer/lot/tool/time split, OME denominator, metrology uncertainty or external holdout. Process evidence must not be erased, but independent qualification remains open."
+        },
+        {
+          "pages": [
+            7
+          ],
+          "issue": "Lot-size and scanner-loss estimates are explicitly simulated. Rework measurement provenance is not independently established; do not label all columns measured or all columns simulated."
+        },
+        {
+          "pages": [
+            6
+          ],
+          "issue": "Iteration convergence and GFLOPs are not end-to-end wall-clock or resource measurements."
+        },
+        {
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "issue": "Keep schedule, mask convention and recall text/table questions separate from proven implementation failures."
+        },
+        {
+          "pages": [
+            7,
+            8
+          ],
+          "issue": "Appendix G/I and the metrology definition require separately recorded supplement review, not inferred full coverage."
+        }
+      ],
+      "open_questions": [
+        "Acquire a lawful MPOM endpoint, checksum, metrology vector representation and task checkpoint.",
+        "Fully review the separate supplement and resolve OME/EVM definitions, uncertainty and lot/tool/time independence.",
+        "Clarify diffusion timesteps versus training updates, FID-15k labels and mask conventions against immutable code.",
+        "Evaluate a named overlay-control use profile with independent metrology and measured production outcomes."
+      ],
+      "release_attribution_snapshot": "author_associated_in_prior_audit",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    },
+    {
+      "work_id": "W_iccv_2025_715dd4512a3586b9",
+      "method": "SeaS",
+      "title": "SeaS: Few-shot Industrial Anomaly Image Generation with Separation and Sharing Fine-tuning",
+      "official_pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Dai_SeaS_Few-shot_Industrial_Anomaly_Image_Generation_with_Separation_and_Sharing_ICCV_2025_paper.pdf",
+      "pdf_sha256": "bb23301598d2c920f41a2ba25e0fe45ca7aa8639a0ad0af396b0a2617f1e1317",
+      "review_sha256": "8ca05c3f0118f5624f04ab6cca98fd95d1c28a25ffe576eb47bd634673fd0db9",
+      "main_pdf_pages_read": 10,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_topic_decision": "include_visual_track_pending_independent_adjudication",
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "code_evidence_basis": {
+        "C0": "Visual token/image objectives without process laws.",
+        "V0": "No calibrated process/metrology validation in reviewed main PDF; image/downstream metrics exist separately.",
+        "M2": "Author-reported offline industrial inspection benchmarks."
+      },
+      "generation": {
+        "target": "normal RGB images and anomalous RGB image-mask pairs",
+        "inputs": "60 normal images and one-third masked anomaly images per anomaly type for fine-tuning; a selected normal training image plus noise for inference",
+        "conditioning": "one normal token and multiple learned anomaly tokens, DA/NA alignment and a separately learned RMP mask branch",
+        "resolution_reported": "512x512 output masks/images in method description",
+        "output_scope": "one generator per product covering its anomaly types; downstream supervised segmenter is shared across products; 3D-AD uses RGB only"
+      },
+      "claims": [
+        {
+          "claim_id": "SEAS01",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "location": "Figures 2-4; Eqs. 3-7; Section 3.4",
+          "paraphrase": "SeaS fine-tunes shared product-level U-Net and normal/anomaly tokens using separated DA/NA objectives. RMP combines U-Net and VAE features with real-mask focal supervision. Inference begins from a noised normal training image and averages masks from the final three denoising steps.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SEAS02",
+          "pdf_pages_1_based": [
+            4,
+            6,
+            7,
+            8
+          ],
+          "location": "Mixed training; Section 4.1; supervised segmentation paragraph",
+          "paraphrase": "One generative model is trained per product across its anomaly types, using 60 normal images and one-third masked anomaly images per type. It produces 1,000 anomaly image-mask pairs per type. The downstream supervised segmentation model is instead shared across all products.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SEAS03",
+          "pdf_pages_1_based": [
+            6
+          ],
+          "location": "Dataset paragraph",
+          "paraphrase": "Experiments cover 15 MVTec AD, 12 VisA and 10 MVTec 3D AD categories. MVTec 3D AD is explicitly used for RGB images only, without establishing generated 3D geometry or depth.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SEAS04",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Metric paragraph; Table 1",
+          "paraphrase": "IS/IC-LPIPS assess anomalous images, KID assesses normal images, and IC-LPIPS(a) assesses anomaly regions. SeaS reports MVTec/VisA/3D-AD KID values 0.04/0.02/0.06 for normal-image generation, not defect-image KID.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SEAS05",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            7,
+            8
+          ],
+          "location": "Abstract; Tables 2-4; downstream paragraphs",
+          "paraphrase": "The three downstream uses differ: replace pseudo-anomalies for synthesis-based detectors, add normal images to unsupervised training, and train supervised segmentation from generated pairs plus original normal images. Reported headline gains are +8.66 pixel AP, +1.10 image AP and +12.79 IoU with percent labels; do not pool these unlike tasks.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SEAS06",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Tables 2-3",
+          "paraphrase": "Table 2 DRAEM MVTec IoU decreases 60.30 to 58.87 after SeaS; GLASS VisA pixel AUROC decreases 98.47 to 98.43. Table 3 MambaAD MVTec 3D AD pixel AP decreases 37.30 to 35.46. Retain adverse cells alongside headline averages.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SEAS07",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "location": "Physics/novelty interpretation",
+          "paraphrase": "Learned image/token alignment and mask refinement do not establish physically manufacturable novel defects or independent metrology. Recombination examples support visual diversity claims, not a process-physics acceptance test. Offline RGB benchmarks support C0/V0/M2.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SEAS08",
+          "pdf_pages_1_based": [
+            6,
+            8
+          ],
+          "location": "F1-max and supplement deferrals",
+          "paraphrase": "F1-max is reported at an optimal threshold; operational threshold calibration and acceptance must be separately evaluated. Exact training, mask threshold and other ablations are deferred to appendix A, which is not completely read in this batch.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "training_normal_images_per_product": 60,
+        "training_anomaly_fraction_per_type": "one-third",
+        "generated_pairs_per_anomaly_type": 1000,
+        "final_mask_average_denoising_steps": 3,
+        "table_1_SeaS": {
+          "MVTec_AD": {
+            "IS": 1.88,
+            "IC_LPIPS": 0.34,
+            "normal_image_KID": 0.04,
+            "IC_LPIPS_anomaly_region": 0.18
+          },
+          "VisA": {
+            "IS": 1.27,
+            "IC_LPIPS": 0.26,
+            "normal_image_KID": 0.02,
+            "IC_LPIPS_anomaly_region": 0.06
+          },
+          "MVTec_3D_AD_RGB": {
+            "IS": 1.95,
+            "IC_LPIPS": 0.3,
+            "normal_image_KID": 0.06,
+            "IC_LPIPS_anomaly_region": 0.09
+          }
+        },
+        "headline_gain_percent_labels": [
+          8.66,
+          1.1,
+          12.79
+        ],
+        "headline_unlike_metrics_pooled_in_this_review": false,
+        "table_2_DRAEM_MVTec_IoU_percent": {
+          "baseline": 60.3,
+          "with_SeaS": 58.87
+        },
+        "table_2_GLASS_VisA_pixel_AUROC_percent": {
+          "baseline": 98.47,
+          "with_SeaS": 98.43
+        },
+        "table_3_MambaAD_3D_AD_RGB_pixel_AP_percent": {
+          "baseline": 37.3,
+          "with_SeaS": 35.46
+        },
+        "uses_3D_geometry_in_3D_AD_evaluation": false,
+        "author_generation_throughput_in_main_PDF": "not established"
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            4,
+            7,
+            8
+          ],
+          "issue": "Product-level generator sharing differs from all-products segmentation sharing; preserve both scopes."
+        },
+        {
+          "pages": [
+            6
+          ],
+          "issue": "Inference uses a source normal image. Preserve source-image lineage rather than count all output variation as unconditional new examples."
+        },
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "issue": "KID is for normal images; 3D-AD contains RGB-only experiments. Dataset or metric names do not establish different output modalities."
+        },
+        {
+          "pages": [
+            7
+          ],
+          "issue": "Multiple adverse metric cells remain despite improving averages; no all-metric/all-regime gain is established."
+        },
+        {
+          "pages": [
+            6,
+            8
+          ],
+          "issue": "Optimal-threshold F1 and remaining-image tests are not independent factory acceptance. Separate appendix and split provenance remain open."
+        }
+      ],
+      "open_questions": [
+        "Fully read appendix A and record split/image lineage, thresholding and repeated-seed definitions.",
+        "Acquire pinned product-level generator and RMP weights, separate from generated output archives.",
+        "Evaluate source-image memorization, mask semantic validity and adverse metric cells with independent validators.",
+        "Measure generation-plus-mask resource cost and qualify an external manufacturing use profile."
+      ],
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    },
+    {
+      "work_id": "W_iccv_2025_204365ef82780322",
+      "method": "TF-IDG",
+      "title": "Training-Free Industrial Defect Generation with Diffusion Models",
+      "official_pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Xu_Training-Free_Industrial_Defect_Generation_with_Diffusion_Models_ICCV_2025_paper.pdf",
+      "pdf_sha256": "7fc9d0945d942a70b499e982ed0548b205840c43282c50a2d6e8592d9b7c9355",
+      "review_sha256": "6dc1f50f994937bd4b4a326d82f4a327ebfa21371f679ec82532ff019740ebe3",
+      "main_pdf_pages_read": 10,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "provisional_topic_decision": "include_visual_track_pending_independent_adjudication",
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "code_evidence_basis": {
+        "C0": "Inference feature/image constraints without governing process physics.",
+        "V0": "No calibrated process/metrology validation in reviewed main PDF; visual/downstream scores recorded separately.",
+        "M2": "Author-reported offline MVTec/VisA benchmarks."
+      },
+      "generation": {
+        "target": "defective RGB images on source normal backgrounds with supplied target masks",
+        "inputs": "normal background, reference defect image/mask and augmented real target mask placed within a predefined affected-object area",
+        "conditioning": "AnyDoor/DINOv2/ControlNet plus inference-time Sinkhorn feature alignment, adaptive mask and texture guidance",
+        "resolution_reported": "not established as a uniform output resolution in reviewed main PDF",
+        "output_scope": "mask-conditioned image editing; target-mask annotations are supplied, not independently measured output ground truth"
+      },
+      "claims": [
+        {
+          "claim_id": "TF01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "location": "Figures 2-4; Eqs. 3-14",
+          "paraphrase": "TF-IDG avoids task-specific model retraining but performs gradient-guided latent optimization using reference defects. DDIM inversion stores reference/background features; Sinkhorn alignment and adaptive masks guide early sampling, followed by attention/AdaIN texture preservation.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF02",
+          "pdf_pages_1_based": [
+            4
+          ],
+          "location": "Section 4.1",
+          "paraphrase": "Inputs include a normal background, reference defect image with mask and a target generation mask. Augmented real masks are randomly placed within a predefined affected-object region; supplied mask placement remains an input/provenance requirement.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF03",
+          "pdf_pages_1_based": [
+            6
+          ],
+          "location": "Section 5.1",
+          "paraphrase": "Few-shot uses one-third of each defect category as reference and remaining two-thirds as test. One-shot uses one reference anomaly per category. Sampling uses AnyDoor-trained SD2.1/ControlNet, DINOv2 guidance 4.5, 50 steps, Tn=30, Ti=25 and eta=0.04. Reported output count is 1,000 image-mask pairs per anomaly type.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF04",
+          "pdf_pages_1_based": [
+            6,
+            7
+          ],
+          "location": "Metric paragraph; Table 1",
+          "paraphrase": "Local IS is computed on mask-cropped defect regions, unlike whole-image IS in SeaS. TF-IDG reports MVTec/VisA Local IS 3.32/3.90 and IC-LPIPS 0.32/0.30; the latter ties displayed AnoDiff/AnoGen values rather than uniformly exceeding them.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF05",
+          "pdf_pages_1_based": [
+            7
+          ],
+          "location": "Table 2",
+          "paraphrase": "Classification Table 2 lists 14 categories with mean accuracy 79.84% few-shot and 71.92% one-shot. Grid accuracy is 40.00% few-shot versus DIAG 46.74% and AnoDiff 42.50%; the one-shot grid value is 31.58%. Preserve exceptions alongside mean improvements.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF06",
+          "pdf_pages_1_based": [
+            7,
+            8
+          ],
+          "location": "Tables 3-5",
+          "paraphrase": "The paper evaluates generated-data UNet localization/detection and ResNet-34 classification, plus replacement of GLASS synthesis and augmentation of UniAD anomaly features. These are distinct downstream regimes rather than one pooled comparison.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF07",
+          "pdf_pages_1_based": [
+            6,
+            8
+          ],
+          "location": "Printed metric definition and Table 5/prose",
+          "paraphrase": "The main metric paragraph defines Pro as area under the precision-recall curve while also reporting AP. Resolve the exact implementation before equating it with other papers' PRO. Table 5 displayed VisA GLASS Pro values are 92.2 to 95.3 while prose says 3.4% improvement; preserve the displayed values and prose separately.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "TF08",
+          "pdf_pages_1_based": [
+            8
+          ],
+          "location": "Shot-count discussion; Table 4",
+          "paraphrase": "The authors explicitly note that one-shot may bias the learned distribution toward the reference defect and harm generalization. More seen examples improve aggregate scores, but unseen defect/factory coverage is not independently qualified.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "TF09",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "location": "Physical and cost interpretation",
+          "paraphrase": "Sinkhorn feature distances, pixel differences and texture matching are visual constraints, not independent process residuals or calibrated defect morphology. Training-free removes task fine-tuning but not pretrained asset, inversion, memory-bank, gradient or mask-preparation costs. Offline benchmarks support C0/V0/M2.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "sampling_steps": 50,
+        "Tn": 30,
+        "Ti": 25,
+        "eta": 0.04,
+        "DINOv2_guidance_scale": 4.5,
+        "ControlNet_scale": 1,
+        "generated_pairs_per_anomaly_type": 1000,
+        "table_1": {
+          "MVTec_AD": {
+            "Local_IS": 3.32,
+            "IC_LPIPS": 0.32
+          },
+          "VisA": {
+            "Local_IS": 3.9,
+            "IC_LPIPS": 0.3
+          }
+        },
+        "table_2_classification_categories": 14,
+        "table_2_mean_accuracy_percent": {
+          "few_shot": 79.84,
+          "one_shot": 71.92
+        },
+        "table_2_grid_accuracy_percent": {
+          "TF_IDG_few_shot": 40.0,
+          "TF_IDG_one_shot": 31.58,
+          "DIAG": 46.74,
+          "AnoDiff": 42.5
+        },
+        "table_5_VisA_GLASS_Pro_percent": {
+          "baseline": 92.2,
+          "with_TF_IDG": 95.3
+        },
+        "table_5_VisA_UniAD_image_AUC_percent": {
+          "baseline": 88.8,
+          "with_TF_IDG": 94.3
+        },
+        "table_5_MVTec_UniAD_image_AUC_percent": {
+          "baseline": 96.5,
+          "with_TF_IDG": 98.9
+        },
+        "text_gain_percent_labels": {
+          "VisA_GLASS_Pro": 3.4,
+          "VisA_UniAD_image_AUC": 5.4,
+          "MVTec_UniAD_image_AUC": 2.5
+        },
+        "Pro_printed_definition": "Area Under the Precision-Recall curve; exact implementation unresolved before cross-paper PRO equivalence",
+        "local_IS_equated_to_whole_image_IS": false,
+        "task_finetuning_required": false,
+        "inference_gradient_optimization_present": true,
+        "main_PDF_end_to_end_runtime_and_peak_memory": "not established"
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            4,
+            5,
+            6
+          ],
+          "issue": "Training-free still incurs inversion, feature-bank, mask preparation and gradient-guided inference cost; no new timing measurement exists."
+        },
+        {
+          "pages": [
+            4
+          ],
+          "issue": "Reference defect/mask, background and target affected-object region require explicit provenance and semantic acceptance."
+        },
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "issue": "Local IS and whole-image IS are not the same estimand; IC-LPIPS has displayed ties."
+        },
+        {
+          "pages": [
+            7
+          ],
+          "issue": "Classification Table 2 has 14 categories, not 15. Grid performance does not exceed all comparators."
+        },
+        {
+          "pages": [
+            6,
+            8
+          ],
+          "issue": "Resolve Pro definition and text-versus-table gain interpretation before metric normalization; do not silently overwrite values."
+        },
+        {
+          "pages": [
+            8
+          ],
+          "issue": "One-shot reference bias is an author-acknowledged limitation; no external-site/process acceptance follows from benchmark averages."
+        }
+      ],
+      "open_questions": [
+        "Fully read separate supplement and resolve Pro code, mask handling, split provenance and seed definitions.",
+        "Acquire all attributable pretrained assets and verify rights/checksums, including bundled iseg dependency.",
+        "Measure cold-start inference including DDIM inversion, gradients and mask preparation under a declared budget.",
+        "Independently validate supplied-mask/defect correspondence and per-category harms before any external industrial profile pass."
+      ],
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    }
+  ]
+}

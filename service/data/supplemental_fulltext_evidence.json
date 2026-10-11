@@ -1,0 +1,3566 @@
+{
+  "as_of": "2026-10-11",
+  "scope": "Supplemental112H2 followups, fixed42high attempts; separate frommain136. Acquisition/static audits do not add final inclusions or runs.",
+  "full_queue_source": "runs/wp1/search/supplemental_fulltext_priority_queue_20261011.json",
+  "full_queue_sha256": "250d9a64672ad3d4337acc64ec3cec1113499d814da3a96b40e4931c8400b6e0",
+  "parent_metadata_snapshot": "runs/wp1/search/supplemental_fulltext_parent_metadata_snapshot.json",
+  "parent_metadata_snapshot_sha256": "dadf7e7a34826acb154edee83495ace5da5c226f4761379c4abb5a0f415e58ed",
+  "high_queue_source": "runs/wp1/search/supplemental_high_fulltext_acquisition_queue_20261011.json",
+  "high_queue_sha256": "926518b5aed2ed911e0980987e4c890873f38cbcf80a6c99e1bc7938d82c9312",
+  "manifest_source": "runs/wp1/supplemental_fulltext_acquisition_20261011/manifest.json",
+  "manifest_sha256": "bfbfd2da065c8f0db0669e8faf66cdf91413e64963fca903351e3fb9d1ad33e1",
+  "asset_source_manifest": "runs/wp1/supplemental_asset_audit_20261011/source_snapshot_manifest.json",
+  "asset_source_manifest_sha256": "b0fe3e88c83018ef3a9836c15e6e57056deac906ea955c1267fdd0a055189afb",
+  "installation_manifest": "runs/wp1/supplemental_asset_audit_20261011/legacy_installation_snapshot_manifest.json",
+  "installation_manifest_sha256": "0c469a6ec3d86e04f9022585bbb4a2e0988431388c5932b958c47b737b9e7b8c",
+  "counts": {
+    "supplemental_H2_followups": 112,
+    "fixed_high_priority_attempts": 42,
+    "official_pdfs_acquired": 36,
+    "not_acquired": 6,
+    "pdf_pages": 763,
+    "pdf_bytes": 269965439,
+    "targeted_static_audits": 5,
+    "complete_scientific_fulltext_reviews": 0,
+    "independent_reviews": 0,
+    "new_execution_passes": 0,
+    "industrial_passes": 0
+  },
+  "extraction_runtime": {
+    "pypdf": "6.19.0",
+    "fontTools": "4.66.1"
+  },
+  "records": [
+    {
+      "work_id": "W_aaai_2022_d9121fd8e0d28c4d",
+      "queue_ordinal": 2,
+      "title": "DeepThermal: Combustion Optimization for Thermal Power Generating Units Using Offline Reinforcement Learning",
+      "venue": "AAAI",
+      "year": 2022,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:21.985705+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20393",
+          "normalized_landing_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20393",
+          "landing_response": {
+            "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20393",
+            "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20393",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 4862,
+            "etag": "3548678432",
+            "last_modified": null
+          },
+          "landing_page_sha256": "4f8bf38a577c38e960711cac73bf71632fbf8bb5d9ad4fd90750cdbe93f3423e",
+          "pdf_candidates": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+            "https://ojs.aaai.org/index.php/AAAI/article/view/20393/20152"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+              "response": {
+                "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+                "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 844711,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+      "response": {
+        "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+        "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/20393/20152",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 844711,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_aaai_2022_d9121fd8e0d28c4d/main.pdf",
+      "pdf_bytes": 844711,
+      "pdf_sha256": "02d2c5cebc49564b6d26c35ca6d26a284f5ff4daf9fa7d8b3ca5f3ead1e988a4",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_aaai_2022_d9121fd8e0d28c4d/main_extracted_fonttools.txt",
+      "text_bytes": 45615,
+      "text_sha256": "01adedc26ea8ce9b65427ce236d04620d1ed7ca3ebeedfafa7869082970a1cdc",
+      "pages": 9,
+      "extracted_characters": 43957,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:25.543958+00:00"
+    },
+    {
+      "work_id": "W_aaai_2025_1199db053ce47b0b",
+      "queue_ordinal": 5,
+      "title": "CAD-GPT: Synthesising CAD Construction Sequence with Spatial Reasoning-Enhanced Multimodal LLMs",
+      "venue": "AAAI",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:21.986707+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://ojs.aaai.org/index.php/AAAI/article/view/32849",
+          "normalized_landing_url": "https://ojs.aaai.org/index.php/AAAI/article/view/32849",
+          "landing_response": {
+            "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/view/32849",
+            "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/32849",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 5094,
+            "etag": "537867156",
+            "last_modified": null
+          },
+          "landing_page_sha256": "5700fd16bc4caf6e2913982a538426023e98b1949c6800d970d0b22c68f4822b",
+          "pdf_candidates": [
+            "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+            "https://ojs.aaai.org/index.php/AAAI/article/view/32849/35004"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+              "response": {
+                "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+                "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 2909127,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+      "response": {
+        "requested_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+        "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/32849/35004",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 2909127,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_aaai_2025_1199db053ce47b0b/main.pdf",
+      "pdf_bytes": 2909127,
+      "pdf_sha256": "7b39c0f58693458b18b251b892736b13be91aaaeb4513b4d846f5b862725e1e5",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_aaai_2025_1199db053ce47b0b/main_extracted_fonttools.txt",
+      "text_bytes": 39392,
+      "text_sha256": "e5f87b2f8ed4511b984550e075fe7eb954bb496972189dfe8257129502440826",
+      "pages": 9,
+      "extracted_characters": 38452,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:25.703870+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2020_9ca3453a6a561c87",
+      "queue_ordinal": 8,
+      "title": "Dynamic Fluid Surface Reconstruction Using Deep Neural Network",
+      "venue": "CVPR",
+      "year": 2020,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:21.986707+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 4648,
+            "etag": "\"1228-5ba5f69cfaae1\"",
+            "last_modified": "Tue, 02 Feb 2021 19:24:03 GMT"
+          },
+          "landing_page_sha256": "f972cd292ba80db0fe6081e2edd40c4487d6b43f02f94979f62e2b0554a659c7",
+          "pdf_candidates": [
+            "http://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+            "https://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "http://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+              "response": {
+                "requested_url": "http://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 7980403,
+                "etag": "\"79c573-5a92c48e25180\"",
+                "last_modified": "Sun, 28 Jun 2020 22:15:50 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "http://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+      "response": {
+        "requested_url": "http://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Thapa_Dynamic_Fluid_Surface_Reconstruction_Using_Deep_Neural_Network_CVPR_2020_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 7980403,
+        "etag": "\"79c573-5a92c48e25180\"",
+        "last_modified": "Sun, 28 Jun 2020 22:15:50 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2020_9ca3453a6a561c87/main.pdf",
+      "pdf_bytes": 7980403,
+      "pdf_sha256": "112fa15648c068579421e7a2df3cdd8dd32122d8e33133e3dd1be76712f9a07e",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2020_9ca3453a6a561c87/main_extracted_fonttools.txt",
+      "text_bytes": 43787,
+      "text_sha256": "02dc6035d11d9c1e0a76f3e70d4d20045ae2cac52b6ecd9bf31b4b9a6b731a29",
+      "pages": 10,
+      "extracted_characters": 42296,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:28.472790+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2023_d62d7a2e74a4501c",
+      "queue_ordinal": 10,
+      "title": "NeRF in the Palm of Your Hand: Corrective Augmentation for Robotics via Novel-View Synthesis",
+      "venue": "CVPR",
+      "year": 2023,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:25.605480+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 6581,
+            "etag": "\"19b5-5fcffa9f176ca\"",
+            "last_modified": "Wed, 31 May 2023 16:18:01 GMT"
+          },
+          "landing_page_sha256": "6bddeb32319198d35dd10404951bcecfb1f0f01703abf14720ee27c87148e8b2",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 5153986,
+                "etag": "\"4ea4c2-5fb33491b8f00\"",
+                "last_modified": "Mon, 08 May 2023 19:02:52 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_NeRF_in_the_Palm_of_Your_Hand_Corrective_Augmentation_for_CVPR_2023_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 5153986,
+        "etag": "\"4ea4c2-5fb33491b8f00\"",
+        "last_modified": "Mon, 08 May 2023 19:02:52 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2023_d62d7a2e74a4501c/main.pdf",
+      "pdf_bytes": 5153986,
+      "pdf_sha256": "8c9722f02f576c1b1f37700c5145769465cfdf93f2fa89f7be37799450d8dce6",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2023_d62d7a2e74a4501c/main_extracted_fonttools.txt",
+      "text_bytes": 53246,
+      "text_sha256": "72316919bdc0ba010a9292979b6409587a920e59704b794b482fa94bdbbc3407",
+      "pages": 11,
+      "extracted_characters": 51780,
+      "title_token_coverage": 0.9333333333333333,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:30.914534+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2024_034c55a1ed64d21c",
+      "queue_ordinal": 16,
+      "title": "GenH2R: Learning Generalizable Human-to-Robot Handover via Scalable Simulation Demonstration and Imitation",
+      "venue": "CVPR",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:25.705870+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 6553,
+            "etag": "\"1999-61a8f4d3a95ca\"",
+            "last_modified": "Mon, 10 Jun 2024 20:50:38 GMT"
+          },
+          "landing_page_sha256": "7c9a2114f1dc630b0cd332bd0eca02131ae107efc7eb192b58486616e62e1100",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 2696162,
+                "etag": "\"2923e2-619c52fb66c00\"",
+                "last_modified": "Fri, 31 May 2024 19:42:40 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_GenH2R_Learning_Generalizable_Human-to-Robot_Handover_via_Scalable_Simulation_Demonstration_and_CVPR_2024_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 2696162,
+        "etag": "\"2923e2-619c52fb66c00\"",
+        "last_modified": "Fri, 31 May 2024 19:42:40 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2024_034c55a1ed64d21c/main.pdf",
+      "pdf_bytes": 2696162,
+      "pdf_sha256": "9b157bfc8bf3766b20fe266241b9cd651ae07709efc389f93cb9a790ce0ce6fa",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2024_034c55a1ed64d21c/main_extracted_fonttools.txt",
+      "text_bytes": 51763,
+      "text_sha256": "172098548e4319d5d7de1381694a76fc5e4591ec945ae47b19879f8649cc3fa3",
+      "pages": 11,
+      "extracted_characters": 50445,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:30.632328+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2025_5bf9a76b1ce1237c",
+      "queue_ordinal": 19,
+      "title": "CADCrafter: Generating Computer-Aided Design Models from Unconstrained Images",
+      "venue": "CVPR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:28.472790+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 7327,
+            "etag": "\"1c9f-63a77fd28b9cb\"",
+            "last_modified": "Mon, 21 Jul 2025 22:28:03 GMT"
+          },
+          "landing_page_sha256": "a9ab935e4d64769a5fe596e5644c583758520c7caab5c81ebc277f03baaeda81",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 1978294,
+                "etag": "\"1e2fb6-6357bc5337f80\"",
+                "last_modified": "Mon, 19 May 2025 11:52:46 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_CADCrafter_Generating_Computer-Aided_Design_Models_from_Unconstrained_Images_CVPR_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 1978294,
+        "etag": "\"1e2fb6-6357bc5337f80\"",
+        "last_modified": "Mon, 19 May 2025 11:52:46 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_5bf9a76b1ce1237c/main.pdf",
+      "pdf_bytes": 1978294,
+      "pdf_sha256": "feba8639dbc6484c3359420b6b800146dc8660564b94c5f62b915d35cccb48ac",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_5bf9a76b1ce1237c/main_extracted_fonttools.txt",
+      "text_bytes": 47789,
+      "text_sha256": "27e00a9dbd86924178955c7939759d51f36d324cba2614eb63bf4fff35907b88",
+      "pages": 10,
+      "extracted_characters": 46250,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:31.281214+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2025_e33bf91bce083f38",
+      "queue_ordinal": 21,
+      "title": "DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI",
+      "venue": "CVPR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:30.722964+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 6220,
+            "etag": "\"184c-63a77fd24b284\"",
+            "last_modified": "Mon, 21 Jul 2025 22:28:02 GMT"
+          },
+          "landing_page_sha256": "4007b79c378b69cc59a654f2ddf621f66d2c48dbe3c9c32f31a806d11da50f7f",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 2580792,
+                "etag": "\"276138-6357c026a4640\"",
+                "last_modified": "Mon, 19 May 2025 12:09:53 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 2580792,
+        "etag": "\"276138-6357c026a4640\"",
+        "last_modified": "Mon, 19 May 2025 12:09:53 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_e33bf91bce083f38/main.pdf",
+      "pdf_bytes": 2580792,
+      "pdf_sha256": "e489d02d5e0ed28b8b7b6d910c1893bcba9a7a4dbb838728c48adc2dae898515",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_e33bf91bce083f38/main_extracted_fonttools.txt",
+      "text_bytes": 46536,
+      "text_sha256": "1774b1a7b56d1070cf124ca7f21c561c9f23e1df2d68b5ef7276898d108ca616",
+      "pages": 10,
+      "extracted_characters": 45026,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:35.748503+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2025_4bf95bf5d603ccf6",
+      "queue_ordinal": 24,
+      "title": "MobileH2R: Learning Generalizable Human to Mobile Robot Handover Exclusively from Scalable and Diverse Synthetic Data",
+      "venue": "CVPR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:30.918534+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 6522,
+            "etag": "\"197a-63a77fd2fbeb7\"",
+            "last_modified": "Mon, 21 Jul 2025 22:28:03 GMT"
+          },
+          "landing_page_sha256": "1aa5b0bca3229da3a8ad827cb1c94d57a0e970aa21cf39d513618d9edc99d2cb",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 4147770,
+                "etag": "\"3f4a3a-6368c89b62180\"",
+                "last_modified": "Mon, 02 Jun 2025 01:18:14 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_MobileH2R_Learning_Generalizable_Human_to_Mobile_Robot_Handover_Exclusively_from_CVPR_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 4147770,
+        "etag": "\"3f4a3a-6368c89b62180\"",
+        "last_modified": "Mon, 02 Jun 2025 01:18:14 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_4bf95bf5d603ccf6/main.pdf",
+      "pdf_bytes": 4147770,
+      "pdf_sha256": "01889023beda8e47123bc2aae8607ad7fb98d86da1c263464ef760e896ed07f2",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_4bf95bf5d603ccf6/main_extracted_fonttools.txt",
+      "text_bytes": 54011,
+      "text_sha256": "5e5ce81455f598bd961312d5837e4485d156686161a0a08c79679fd3880d97dd",
+      "pages": 11,
+      "extracted_characters": 52650,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:36.502600+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2025_e8aeda3976635695",
+      "queue_ordinal": 26,
+      "title": "RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins",
+      "venue": "CVPR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:31.282211+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 7269,
+            "etag": "\"1c65-63a77fd29466c\"",
+            "last_modified": "Mon, 21 Jul 2025 22:28:03 GMT"
+          },
+          "landing_page_sha256": "2ca907f044819d859c4fd03ccc641a7cde5c7cf0b7a21401639e2f5d50b1a5ae",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 8072840,
+                "etag": "\"7b2e88-63696f1251ec0\"",
+                "last_modified": "Mon, 02 Jun 2025 13:42:59 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 8072840,
+        "etag": "\"7b2e88-63696f1251ec0\"",
+        "last_modified": "Mon, 02 Jun 2025 13:42:59 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_e8aeda3976635695/main.pdf",
+      "pdf_bytes": 8072840,
+      "pdf_sha256": "ed4fbd32f89e40d3610dc1e0da42d7e22222e0eedf50bb81965cd4b5c5ba80dc",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_e8aeda3976635695/main_extracted_fonttools.txt",
+      "text_bytes": 59493,
+      "text_sha256": "1259ce6de544fb50a76ef9a157ae7712d974531ba34b1fc9d418d7eaef0b7cc0",
+      "pages": 12,
+      "extracted_characters": 58023,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:39.029837+00:00"
+    },
+    {
+      "work_id": "W_cvpr_2025_1f8a377b62cd6762",
+      "queue_ordinal": 29,
+      "title": "ZeroGrasp: Zero-Shot Shape Reconstruction Enabled Robotic Grasping",
+      "venue": "CVPR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:35.750507+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 6689,
+            "etag": "\"1a21-63a77fd2d1ed3\"",
+            "last_modified": "Mon, 21 Jul 2025 22:28:03 GMT"
+          },
+          "landing_page_sha256": "7242b0a8041166d4d7cbb136bb4f908efb82e447aed58fe1d0a9f9757db55eda",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 8417749,
+                "etag": "\"8071d5-6368c8fac0280\"",
+                "last_modified": "Mon, 02 Jun 2025 01:19:54 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Iwase_ZeroGrasp_Zero-Shot_Shape_Reconstruction_Enabled_Robotic_Grasping_CVPR_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 8417749,
+        "etag": "\"8071d5-6368c8fac0280\"",
+        "last_modified": "Mon, 02 Jun 2025 01:19:54 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_1f8a377b62cd6762/main.pdf",
+      "pdf_bytes": 8417749,
+      "pdf_sha256": "e5caa1c917ac2e868d6d8499bae1c7f5f66fcfab81f344024374bec3bbea1367",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_cvpr_2025_1f8a377b62cd6762/main_extracted_fonttools.txt",
+      "text_bytes": 50255,
+      "text_sha256": "76873b8e334ece2e05d7d11c21f4e0da0b3a94f9f3ecfaf91a488180f34460b3",
+      "pages": 11,
+      "extracted_characters": 48367,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:42.072683+00:00"
+    },
+    {
+      "work_id": "W_iccv_2025_d6166266d53c0427",
+      "queue_ordinal": 41,
+      "title": "Physical Degradation Model-Guided Interferometric Hyperspectral Reconstruction with Unfolding Transformer",
+      "venue": "ICCV",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:36.503607+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 6513,
+            "etag": "\"1971-641237d674b69\"",
+            "last_modified": "Tue, 14 Oct 2025 19:35:43 GMT"
+          },
+          "landing_page_sha256": "8872db848872a056e868dfb8f937169f2fdc9e6b65aa51e931312e228b2ecce2",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 5448064,
+                "etag": "\"532180-63fc7c34e6300\"",
+                "last_modified": "Sat, 27 Sep 2025 12:44:28 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Physical_Degradation_Model-Guided_Interferometric_Hyperspectral_Reconstruction_with_Unfolding_Transformer_ICCV_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 5448064,
+        "etag": "\"532180-63fc7c34e6300\"",
+        "last_modified": "Sat, 27 Sep 2025 12:44:28 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iccv_2025_d6166266d53c0427/main.pdf",
+      "pdf_bytes": 5448064,
+      "pdf_sha256": "00bc1ae2b98e45ff3eeb43c7b271b852398cceef1b5ba4ce969bf0e884629aa0",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iccv_2025_d6166266d53c0427/main_extracted_fonttools.txt",
+      "text_bytes": 56248,
+      "text_sha256": "64cdc9a4b1f868c0b0d96da642504dd256e8095358a24a3f1faa9e4a750ab3f1",
+      "pages": 11,
+      "extracted_characters": 52179,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:41.771161+00:00"
+    },
+    {
+      "work_id": "W_iccv_2025_fcd7c1cd6c7c8ec2",
+      "queue_ordinal": 42,
+      "title": "RoboPearls: Editable Video Simulation for Robot Manipulation",
+      "venue": "ICCV",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:39.030837+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.html",
+          "normalized_landing_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.html",
+          "landing_response": {
+            "requested_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.html",
+            "final_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=UTF-8",
+            "content_encoding": null,
+            "transport_bytes": 7083,
+            "etag": "\"1bab-641237d67bcb3\"",
+            "last_modified": "Tue, 14 Oct 2025 19:35:43 GMT"
+          },
+          "landing_page_sha256": "88a73c67726ef0a6fe3acf3d925685f8e56484a8980196b28acbe64f7b6b43ba",
+          "pdf_candidates": [
+            "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf",
+              "response": {
+                "requested_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf",
+                "final_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 16545035,
+                "etag": "\"fc750b-63fc6e7b90200\"",
+                "last_modified": "Sat, 27 Sep 2025 11:43:04 GMT"
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf",
+      "response": {
+        "requested_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf",
+        "final_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation_ICCV_2025_paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 16545035,
+        "etag": "\"fc750b-63fc6e7b90200\"",
+        "last_modified": "Sat, 27 Sep 2025 11:43:04 GMT"
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iccv_2025_fcd7c1cd6c7c8ec2/main.pdf",
+      "pdf_bytes": 16545035,
+      "pdf_sha256": "4019152a7d9561916626a633c731376443da061e8efd737d3970e9d07c931a90",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iccv_2025_fcd7c1cd6c7c8ec2/main_extracted_fonttools.txt",
+      "text_bytes": 60203,
+      "text_sha256": "14d8b78824fee5f5b3a8ad375a0d282dbcc4cf7e6827dba1ce5a6760a86caffe",
+      "pages": 12,
+      "extracted_characters": 58422,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:49.694571+00:00"
+    },
+    {
+      "work_id": "W_iclr_2020_3969a35f069f62ce",
+      "queue_ordinal": 44,
+      "title": "Lagrangian Fluid Simulation with Continuous Convolutions",
+      "venue": "ICLR",
+      "year": 2020,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:41.773157+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://iclr.cc/virtual/2020/poster/1580",
+          "normalized_landing_url": "https://iclr.cc/virtual/2020/poster/1580",
+          "landing_response": {
+            "requested_url": "https://iclr.cc/virtual/2020/poster/1580",
+            "final_url": "https://iclr.cc/virtual/2020/poster/1580",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 80200,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "9e1e8243bf41c90168095f0ba0ffe7080913aaa01aa707f70250c6c070796edc",
+          "pdf_candidates": [],
+          "candidate_attempts": [],
+          "error_type": "ValueError",
+          "error": "official_main_pdf_link_not_found"
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "status": "not_acquired",
+      "finished_utc": "2026-10-11T05:52:42.892665+00:00"
+    },
+    {
+      "work_id": "W_iclr_2022_fcb1b13aed2a503e",
+      "queue_ordinal": 45,
+      "title": "Crystal Diffusion Variational Autoencoder for Periodic Material Generation",
+      "venue": "ICLR",
+      "year": 2022,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:42.073683+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://iclr.cc/virtual/2022/poster/7063",
+          "normalized_landing_url": "https://iclr.cc/virtual/2022/poster/7063",
+          "landing_response": {
+            "requested_url": "https://iclr.cc/virtual/2022/poster/7063",
+            "final_url": "https://iclr.cc/virtual/2022/poster/7063",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 86268,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "372d97c8da8f657fa62b8bd9276813522092ad394bb652b79675341a1c6d3835",
+          "pdf_candidates": [
+            "https://openreview.net/pdf?id=03RLpj-tc_"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openreview.net/pdf?id=03RLpj-tc_",
+              "error_type": "HTTPError",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ],
+          "error_type": "ValueError",
+          "error": "no_usable_pdf_in_observed_candidates"
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "status": "not_acquired",
+      "finished_utc": "2026-10-11T05:52:43.785901+00:00"
+    },
+    {
+      "work_id": "W_iclr_2022_356e56bb8b9aae5a",
+      "queue_ordinal": 46,
+      "title": "Vitruvion: A Generative Model of Parametric CAD Sketches",
+      "venue": "ICLR",
+      "year": 2022,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:42.893663+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://iclr.cc/virtual/2022/poster/6237",
+          "normalized_landing_url": "https://iclr.cc/virtual/2022/poster/6237",
+          "landing_response": {
+            "requested_url": "https://iclr.cc/virtual/2022/poster/6237",
+            "final_url": "https://iclr.cc/virtual/2022/poster/6237",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 85615,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "e0fcac453211ce781e2cc58ca18c0d8c49a5fd3901fab370efecb42a8fbbc460",
+          "pdf_candidates": [
+            "https://openreview.net/pdf?id=Ow1C7s3UcY"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openreview.net/pdf?id=Ow1C7s3UcY",
+              "error_type": "HTTPError",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ],
+          "error_type": "ValueError",
+          "error": "no_usable_pdf_in_observed_candidates"
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "status": "not_acquired",
+      "finished_utc": "2026-10-11T05:52:44.344659+00:00"
+    },
+    {
+      "work_id": "W_iclr_2024_d21e4c0406a53b4b",
+      "queue_ordinal": 48,
+      "title": "Fine-Tuned Language Models Generate Stable Inorganic Materials as Text",
+      "venue": "ICLR",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:43.787902+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "/virtual/2024/poster/17538",
+          "normalized_landing_url": "https://iclr.cc/virtual/2024/poster/17538",
+          "landing_response": {
+            "requested_url": "https://iclr.cc/virtual/2024/poster/17538",
+            "final_url": "https://iclr.cc/virtual/2024/poster/17538",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 84151,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "4686c3be0dbb271c9051986b5157a09429529b074b1bdceab18c06b5bcc4700e",
+          "pdf_candidates": [
+            "https://openreview.net/pdf?id=vN9fpfqoP1"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openreview.net/pdf?id=vN9fpfqoP1",
+              "error_type": "HTTPError",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ],
+          "error_type": "ValueError",
+          "error": "no_usable_pdf_in_observed_candidates"
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "status": "not_acquired",
+      "finished_utc": "2026-10-11T05:52:45.121339+00:00"
+    },
+    {
+      "work_id": "W_iclr_2024_f09a01370cb122ad",
+      "queue_ordinal": 49,
+      "title": "GenSim: Generating Robotic Simulation Tasks via Large Language Models",
+      "venue": "ICLR",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:44.346656+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "/virtual/2024/poster/18747",
+          "normalized_landing_url": "https://iclr.cc/virtual/2024/poster/18747",
+          "landing_response": {
+            "requested_url": "https://iclr.cc/virtual/2024/poster/18747",
+            "final_url": "https://iclr.cc/virtual/2024/poster/18747",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 86153,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "4f300297055aef3858bcd85992286f23b4dcee5e24bc509d3d90241dedb14ad7",
+          "pdf_candidates": [
+            "https://openreview.net/pdf?id=OI3RoHoWAN"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openreview.net/pdf?id=OI3RoHoWAN",
+              "error_type": "HTTPError",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ],
+          "error_type": "ValueError",
+          "error": "no_usable_pdf_in_observed_candidates"
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "status": "not_acquired",
+      "finished_utc": "2026-10-11T05:52:45.735334+00:00"
+    },
+    {
+      "work_id": "W_iclr_2024_be6898e5061d8b02",
+      "queue_ordinal": 51,
+      "title": "Scalable Diffusion for Materials Generation",
+      "venue": "ICLR",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:45.123338+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "/virtual/2024/poster/17481",
+          "normalized_landing_url": "https://iclr.cc/virtual/2024/poster/17481",
+          "landing_response": {
+            "requested_url": "https://iclr.cc/virtual/2024/poster/17481",
+            "final_url": "https://iclr.cc/virtual/2024/poster/17481",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 85040,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "e26d409863732de5e51de15cd8720dd68cab1548c774a5950f14d8d761327c39",
+          "pdf_candidates": [
+            "https://openreview.net/pdf?id=wm4WlHoXpC"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://openreview.net/pdf?id=wm4WlHoXpC",
+              "error_type": "HTTPError",
+              "error": "HTTP Error 403: Forbidden"
+            }
+          ],
+          "error_type": "ValueError",
+          "error": "no_usable_pdf_in_observed_candidates"
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "status": "not_acquired",
+      "finished_utc": "2026-10-11T05:52:46.566440+00:00"
+    },
+    {
+      "work_id": "W_iclr_2025_c5e3e11d54b82d80",
+      "queue_ordinal": 54,
+      "title": "A Periodic Bayesian Flow for Material Generation",
+      "venue": "ICLR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:45.736332+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/1f09e1ee5035a4c3fe38a5681cae5815-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/1f09e1ee5035a4c3fe38a5681cae5815-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/1f09e1ee5035a4c3fe38a5681cae5815-Abstract-Conference.html",
+            "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/1f09e1ee5035a4c3fe38a5681cae5815-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 9938,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "b6f0f9625a77bb8f1bee4f2a73eee46a73569045a5225903253bc3883a40b258",
+          "pdf_candidates": [
+            "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf",
+                "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 2130894,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf",
+        "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/1f09e1ee5035a4c3fe38a5681cae5815-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 2130894,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iclr_2025_c5e3e11d54b82d80/main.pdf",
+      "pdf_bytes": 2130894,
+      "pdf_sha256": "8e08cbf1372a8fc12faef963b73ae6c16756c5629ea1a5e4ebac3a0ffd15a0d6",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iclr_2025_c5e3e11d54b82d80/main_extracted_fonttools.txt",
+      "text_bytes": 100954,
+      "text_sha256": "aeb92d39bf63ee3e4e69fc5a9868e7f386675472169e68c56f0c973f2f8d393e",
+      "pages": 30,
+      "extracted_characters": 96629,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [
+        "Exceeded 5000 form XObject invocations while extracting text; further form content is skipped."
+      ],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:49.715570+00:00"
+    },
+    {
+      "work_id": "W_iclr_2025_42187a31355a2c82",
+      "queue_ordinal": 58,
+      "title": "Learning Distributions of Complex Fluid Simulations with Diffusion Graph Networks",
+      "venue": "ICLR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:46.569437+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bfc02f1f412e8a6e710b1e00ea9ca670-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bfc02f1f412e8a6e710b1e00ea9ca670-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bfc02f1f412e8a6e710b1e00ea9ca670-Abstract-Conference.html",
+            "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/bfc02f1f412e8a6e710b1e00ea9ca670-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 9556,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "e49ae474c2f1cd1ce1cf85069f6807cb659646dcdb01249257d2d1c86339d177",
+          "pdf_candidates": [
+            "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf",
+                "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 9177973,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf",
+        "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bfc02f1f412e8a6e710b1e00ea9ca670-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 9177973,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iclr_2025_42187a31355a2c82/main.pdf",
+      "pdf_bytes": 9177973,
+      "pdf_sha256": "d0afc1091c0816ccadd8eeaec7eb04c77756ca0d4c526c998687704c90aee9fc",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iclr_2025_42187a31355a2c82/main_extracted_fonttools.txt",
+      "text_bytes": 109960,
+      "text_sha256": "cc1027fac99f419b530749447c1fa44f864f50ab7581f12974df4abba205a4fe",
+      "pages": 31,
+      "extracted_characters": 106908,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:52.495897+00:00"
+    },
+    {
+      "work_id": "W_iclr_2025_fb7b6f5880497148",
+      "queue_ordinal": 63,
+      "title": "SonicSim: A customizable simulation platform for speech processing in moving sound source scenarios",
+      "venue": "ICLR",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:49.697571+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a8633d27d782f66fe660c2fb4bae446e-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a8633d27d782f66fe660c2fb4bae446e-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a8633d27d782f66fe660c2fb4bae446e-Abstract-Conference.html",
+            "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a8633d27d782f66fe660c2fb4bae446e-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 9920,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "c7a7195c381008b967765ea00b6d0b6765e7ace621c13797381f326bc6742861",
+          "pdf_candidates": [
+            "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf",
+                "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 2145642,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf",
+        "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/a8633d27d782f66fe660c2fb4bae446e-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 2145642,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iclr_2025_fb7b6f5880497148/main.pdf",
+      "pdf_bytes": 2145642,
+      "pdf_sha256": "a9da7b34c04f2f0ea7c29c497e9b5a76a0b4ad1fcac9b2a5f4efcb388754228f",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_iclr_2025_fb7b6f5880497148/main_extracted_fonttools.txt",
+      "text_bytes": 182640,
+      "text_sha256": "b512541328173f6432aacd412dcefa906521c5deeecfb1b44beee869369ee1aa",
+      "pages": 27,
+      "extracted_characters": 180098,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:53.507140+00:00"
+    },
+    {
+      "work_id": "W_icml_2024_2cbb8031215aa619",
+      "queue_ordinal": 67,
+      "title": "FlowMM: Generating Materials with Riemannian Flow Matching",
+      "venue": "ICML",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:49.716567+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.mlr.press/v235/miller24a.html",
+          "normalized_landing_url": "https://proceedings.mlr.press/v235/miller24a.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.mlr.press/v235/miller24a.html",
+            "final_url": "https://proceedings.mlr.press/v235/miller24a.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 16336,
+            "etag": "\"6ac63046-3fd0\"",
+            "last_modified": "Wed, 07 Oct 2026 11:43:02 GMT"
+          },
+          "landing_page_sha256": "ee573c2cdf76f2bc161fb4c99ae70b8ca3e506f29d8fe96a922fae7e84e55f24",
+          "pdf_candidates": [
+            "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+            "https://openreview.net/pdf?id=W4pB7VbzZI"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+              "response": {
+                "requested_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+                "final_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+                "http_status": 200,
+                "content_type": "application/octet-stream",
+                "content_encoding": null,
+                "transport_bytes": 618973,
+                "etag": "\"e442ed467b43c791757e6e7d41a8b720256764298b9d4632ab58d6388f5cfd79\"",
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+      "response": {
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+        "final_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/miller24a/miller24a.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "transport_bytes": 618973,
+        "etag": "\"e442ed467b43c791757e6e7d41a8b720256764298b9d4632ab58d6388f5cfd79\"",
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2024_2cbb8031215aa619/main.pdf",
+      "pdf_bytes": 618973,
+      "pdf_sha256": "04d135e34a161f62222efaf8f392d1e2f8a799804a5269b768883a864bda5e57",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2024_2cbb8031215aa619/main_extracted_fonttools.txt",
+      "text_bytes": 95880,
+      "text_sha256": "f3ae7d7a4deb71f30581c5d6d6bac9c0f8d0446e157f2c01803731f45a1be752",
+      "pages": 23,
+      "extracted_characters": 92654,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:52.298326+00:00"
+    },
+    {
+      "work_id": "W_icml_2025_2c16705de5a31af7",
+      "queue_ordinal": 72,
+      "title": "DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression",
+      "venue": "ICML",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:52.375338+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.mlr.press/v267/wen25g.html",
+          "normalized_landing_url": "https://proceedings.mlr.press/v267/wen25g.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.mlr.press/v267/wen25g.html",
+            "final_url": "https://proceedings.mlr.press/v267/wen25g.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 18444,
+            "etag": "\"6ac630a8-480c\"",
+            "last_modified": "Wed, 07 Oct 2026 11:44:40 GMT"
+          },
+          "landing_page_sha256": "7bde3412035ea9b2db259d573a517870579d5820957bb406acec63fcd321c35f",
+          "pdf_candidates": [
+            "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+            "https://openreview.net/pdf?id=VdwdU81Uzy"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+              "response": {
+                "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+                "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+                "http_status": 200,
+                "content_type": "application/octet-stream",
+                "content_encoding": null,
+                "transport_bytes": 1716577,
+                "etag": "\"82584efc88e574e03ab28d415faedbc16363bc79ae941185af979acb8bf13247\"",
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+      "response": {
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+        "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/wen25g/wen25g.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "transport_bytes": 1716577,
+        "etag": "\"82584efc88e574e03ab28d415faedbc16363bc79ae941185af979acb8bf13247\"",
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_2c16705de5a31af7/main.pdf",
+      "pdf_bytes": 1716577,
+      "pdf_sha256": "aace1bfdbc16031b1db1e50f7a9ca106606241fea20631cf2eaa74db69bc45ae",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_2c16705de5a31af7/main_extracted_fonttools.txt",
+      "text_bytes": 74105,
+      "text_sha256": "655e03ed36247526cb2c31b50929592be2e49dc8dd7a1698030f199521210dc8",
+      "pages": 17,
+      "extracted_characters": 72358,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:54.126042+00:00"
+    },
+    {
+      "work_id": "W_icml_2025_d9c5370f0974655f",
+      "queue_ordinal": 73,
+      "title": "Flow-based Domain Randomization for Learning and Sequencing Robotic Skills",
+      "venue": "ICML",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:52.498898+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.mlr.press/v267/curtis25a.html",
+          "normalized_landing_url": "https://proceedings.mlr.press/v267/curtis25a.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.mlr.press/v267/curtis25a.html",
+            "final_url": "https://proceedings.mlr.press/v267/curtis25a.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 16378,
+            "etag": "\"6ac630a8-3ffa\"",
+            "last_modified": "Wed, 07 Oct 2026 11:44:40 GMT"
+          },
+          "landing_page_sha256": "cb6df8c68a7f753ce2da587fcb76d7c08a0873c1cf784af2a5ec602926f0e611",
+          "pdf_candidates": [
+            "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+            "https://openreview.net/pdf?id=9JQXuyzdGL"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+              "response": {
+                "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+                "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+                "http_status": 200,
+                "content_type": "application/octet-stream",
+                "content_encoding": null,
+                "transport_bytes": 5531652,
+                "etag": "\"f070e5caf62387de49c27838470253460d707ea3c1d32eb41eb94af741a9c75c\"",
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+      "response": {
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+        "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/curtis25a/curtis25a.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "transport_bytes": 5531652,
+        "etag": "\"f070e5caf62387de49c27838470253460d707ea3c1d32eb41eb94af741a9c75c\"",
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_d9c5370f0974655f/main.pdf",
+      "pdf_bytes": 5531652,
+      "pdf_sha256": "6b6ff43a6c30bc7b6bea07122d81e336efc1349c1d013ec5d109b0d079901152",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_d9c5370f0974655f/main_extracted_fonttools.txt",
+      "text_bytes": 68215,
+      "text_sha256": "fac7e4973e11d29195b340d56ab262090b581a20c2700c391d7ace88c16528e9",
+      "pages": 18,
+      "extracted_characters": 65583,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:52:57.912097+00:00"
+    },
+    {
+      "work_id": "W_icml_2025_60a0b36579bea1dc",
+      "queue_ordinal": 76,
+      "title": "Open Materials Generation with Stochastic Interpolants",
+      "venue": "ICML",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:53.508140+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.mlr.press/v267/hollmer25a.html",
+          "normalized_landing_url": "https://proceedings.mlr.press/v267/hollmer25a.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.mlr.press/v267/hollmer25a.html",
+            "final_url": "https://proceedings.mlr.press/v267/hollmer25a.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 18749,
+            "etag": "\"6ac630a8-493d\"",
+            "last_modified": "Wed, 07 Oct 2026 11:44:40 GMT"
+          },
+          "landing_page_sha256": "9573877df13bf006a20ff2e199837876629b07f5de1de89e4675caeebfd5093d",
+          "pdf_candidates": [
+            "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+            "https://openreview.net/pdf?id=gHGrzxFujU"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+              "response": {
+                "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+                "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+                "http_status": 200,
+                "content_type": "application/octet-stream",
+                "content_encoding": null,
+                "transport_bytes": 9308809,
+                "etag": "\"f478a49607b8442cbadb8d03f9168248e10e590f15ee03f79fee21eeda8e880e\"",
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+      "response": {
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+        "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/hollmer25a/hollmer25a.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "transport_bytes": 9308809,
+        "etag": "\"f478a49607b8442cbadb8d03f9168248e10e590f15ee03f79fee21eeda8e880e\"",
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_60a0b36579bea1dc/main.pdf",
+      "pdf_bytes": 9308809,
+      "pdf_sha256": "6ad440912aba935891a3ab03cbdae5fdb86c0a6c33f5350d8f7ec56f86a99c07",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_60a0b36579bea1dc/main_extracted_fonttools.txt",
+      "text_bytes": 120424,
+      "text_sha256": "c746d63b121c8effd3a23c8c8ac96e4610f2ee8f6a46ecfc46291dac8152667e",
+      "pages": 34,
+      "extracted_characters": 116516,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:00.131681+00:00"
+    },
+    {
+      "work_id": "W_icml_2025_0575edbe4ba4be04",
+      "queue_ordinal": 77,
+      "title": "PEINR: A Physics-enhanced Implicit Neural Representation for High-Fidelity Flow Field Reconstruction",
+      "venue": "ICML",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:54.127037+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.mlr.press/v267/shen25a.html",
+          "normalized_landing_url": "https://proceedings.mlr.press/v267/shen25a.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.mlr.press/v267/shen25a.html",
+            "final_url": "https://proceedings.mlr.press/v267/shen25a.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 17450,
+            "etag": "\"6ac630a8-442a\"",
+            "last_modified": "Wed, 07 Oct 2026 11:44:40 GMT"
+          },
+          "landing_page_sha256": "24e197e5ba97fb23bb1ae436b0512f81ee5c1464828ae4e8e1933462068bc5c5",
+          "pdf_candidates": [
+            "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+            "https://openreview.net/pdf?id=1QZMWVrgsU"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+              "response": {
+                "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+                "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+                "http_status": 200,
+                "content_type": "application/octet-stream",
+                "content_encoding": null,
+                "transport_bytes": 15393417,
+                "etag": "\"f9c732967c4aa647edc6ca4524a2cb2b7919023467c8a210178abb3ad99f771e\"",
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+      "response": {
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+        "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/shen25a/shen25a.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "transport_bytes": 15393417,
+        "etag": "\"f9c732967c4aa647edc6ca4524a2cb2b7919023467c8a210178abb3ad99f771e\"",
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_0575edbe4ba4be04/main.pdf",
+      "pdf_bytes": 15393417,
+      "pdf_sha256": "b1c9d5687b075a0f3c3eef16493ad643ef540fcc3d7d5d0f3a24c85de9f04a74",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_0575edbe4ba4be04/main_extracted_fonttools.txt",
+      "text_bytes": 64995,
+      "text_sha256": "7cbe211b94b0baa225ded6c5a43c4792d29fface6fde8ff59d366a0e64c5d1a8",
+      "pages": 17,
+      "extracted_characters": 63240,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:00.789789+00:00"
+    },
+    {
+      "work_id": "W_icml_2025_b2150d7ca2ee3f6c",
+      "queue_ordinal": 78,
+      "title": "Simultaneous Multi-Robot Motion Planning with Projected Diffusion Models",
+      "venue": "ICML",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:52:57.973106+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.mlr.press/v267/liang25e.html",
+          "normalized_landing_url": "https://proceedings.mlr.press/v267/liang25e.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.mlr.press/v267/liang25e.html",
+            "final_url": "https://proceedings.mlr.press/v267/liang25e.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 16326,
+            "etag": "\"6ac630a8-3fc6\"",
+            "last_modified": "Wed, 07 Oct 2026 11:44:40 GMT"
+          },
+          "landing_page_sha256": "967f7cd8d8b01365a5e0135f57df20186b661b33cc374734d884587a6a21674d",
+          "pdf_candidates": [
+            "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+            "https://openreview.net/pdf?id=Sp7jclUwkV"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+              "response": {
+                "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+                "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+                "http_status": 200,
+                "content_type": "application/octet-stream",
+                "content_encoding": null,
+                "transport_bytes": 5270326,
+                "etag": "\"9ee7494f59df1e40feeb512eda61a5225302c7ebde83fd5abef8ab8ebd55b107\"",
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+      "response": {
+        "requested_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+        "final_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liang25e/liang25e.pdf",
+        "http_status": 200,
+        "content_type": "application/octet-stream",
+        "content_encoding": null,
+        "transport_bytes": 5270326,
+        "etag": "\"9ee7494f59df1e40feeb512eda61a5225302c7ebde83fd5abef8ab8ebd55b107\"",
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_b2150d7ca2ee3f6c/main.pdf",
+      "pdf_bytes": 5270326,
+      "pdf_sha256": "c0b73381e29f8be30967996d0e796fb7fa2ff6c92b8d9f134bfddbc8a5d8c82f",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_icml_2025_b2150d7ca2ee3f6c/main_extracted_fonttools.txt",
+      "text_bytes": 67329,
+      "text_sha256": "42c731e8f50e909c9aab2870ca5659becc40e3398d9914f1c68078fbb6e1112e",
+      "pages": 19,
+      "extracted_characters": 64883,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:01.497728+00:00"
+    },
+    {
+      "work_id": "W_neurips_2021_237ee9bac41586ea",
+      "queue_ordinal": 85,
+      "title": "SketchGen: Generating Constrained CAD Sketches",
+      "venue": "NeurIPS",
+      "year": 2021,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:00.135679+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/28891cb4ab421830acc36b1f5fd6c91e-Abstract.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/28891cb4ab421830acc36b1f5fd6c91e-Abstract.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/28891cb4ab421830acc36b1f5fd6c91e-Abstract.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/28891cb4ab421830acc36b1f5fd6c91e-Abstract.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10160,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "50f8c2a3b7b9c3b9a69367437bc3b219a0557412c191249f3313c9551f0eefc6",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+            "https://openreview.net/pdf?id=Oeb2LbHAfJ4"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 361457,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/28891cb4ab421830acc36b1f5fd6c91e-Paper.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 361457,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2021_237ee9bac41586ea/main.pdf",
+      "pdf_bytes": 361457,
+      "pdf_sha256": "6e438db749f4d050b3ebeb4ffc923f42232695697988d85d7d4bc1ec407e49f7",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2021_237ee9bac41586ea/main_extracted_fonttools.txt",
+      "text_bytes": 45713,
+      "text_sha256": "cb136f65cc77155280a637a73e3f8e0b7e407a8baa786ed3989d8c8472c0fa00",
+      "pages": 12,
+      "extracted_characters": 44680,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:03.133865+00:00"
+    },
+    {
+      "work_id": "W_neurips_2022_62bfa0b8210a431e",
+      "queue_ordinal": 86,
+      "title": "Conditional Diffusion Process for Inverse Halftoning",
+      "venue": "NeurIPS",
+      "year": 2022,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:00.864659+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/2492288f6878e6f99124b362604e58f5-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/2492288f6878e6f99124b362604e58f5-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/2492288f6878e6f99124b362604e58f5-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/2492288f6878e6f99124b362604e58f5-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10617,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "635648ab2623a921fca4be4e10be6d9364eb9f232e06be60a6b9aad87c374014",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 1242597,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/2492288f6878e6f99124b362604e58f5-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 1242597,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2022_62bfa0b8210a431e/main.pdf",
+      "pdf_bytes": 1242597,
+      "pdf_sha256": "73dbb343ac266080b67949145a7b646d198da50907fd76f27f1ab1906b5534bd",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2022_62bfa0b8210a431e/main_extracted_fonttools.txt",
+      "text_bytes": 43614,
+      "text_sha256": "08af64f281ccaf90168b181384b9e8bda402d622630eb38889ae1a2bbb5423a4",
+      "pages": 12,
+      "extracted_characters": 42156,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:04.485225+00:00"
+    },
+    {
+      "work_id": "W_neurips_2022_8790722f994e8966",
+      "queue_ordinal": 87,
+      "title": "Inverse Design for Fluid-Structure Interactions using Graph Network Simulators",
+      "venue": "NeurIPS",
+      "year": 2022,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:01.498727+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/59593615e358d52295578e0d8e94ec4a-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/59593615e358d52295578e0d8e94ec4a-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/59593615e358d52295578e0d8e94ec4a-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/59593615e358d52295578e0d8e94ec4a-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10349,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "7f0ff19a1adda81f864def0925c5911373386ca1480c38c66808d6415e7e9d9a",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 15033420,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/59593615e358d52295578e0d8e94ec4a-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 15033420,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2022_8790722f994e8966/main.pdf",
+      "pdf_bytes": 15033420,
+      "pdf_sha256": "fc6c686f752a427a1b0e28ec8ad38e9ce6e7cea72b7c504e9385a61a480958ef",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2022_8790722f994e8966/main_extracted_fonttools.txt",
+      "text_bytes": 67850,
+      "text_sha256": "bfaa2641d54fd5b1f9c2fe246acceb180cc62f9283b8dbbd45f8c72075ee4f2b",
+      "pages": 16,
+      "extracted_characters": 66706,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:07.244432+00:00"
+    },
+    {
+      "work_id": "W_neurips_2024_bf6f6ac124ebb457",
+      "queue_ordinal": 90,
+      "title": "Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:03.136864+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fad8962279154544ed69bb63eb14d677-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fad8962279154544ed69bb63eb14d677-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fad8962279154544ed69bb63eb14d677-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fad8962279154544ed69bb63eb14d677-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10106,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "8152432aea61281f6863681c805bfcf42419dc01ffafea903888405d53c79408",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 4848288,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fad8962279154544ed69bb63eb14d677-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 4848288,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2024_bf6f6ac124ebb457/main.pdf",
+      "pdf_bytes": 4848288,
+      "pdf_sha256": "495cc0e42cec79068d837251f03a740c814e1a55fcaf308408b0ff171a52430f",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2024_bf6f6ac124ebb457/main_extracted_fonttools.txt",
+      "text_bytes": 91841,
+      "text_sha256": "b4693cb29eaf9e0b8c3426eeb1eaabb76af5653f5c066783f522a2f2853258b6",
+      "pages": 28,
+      "extracted_characters": 89979,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:08.799344+00:00"
+    },
+    {
+      "work_id": "W_neurips_2024_a2e35e75c53c94d1",
+      "queue_ordinal": 91,
+      "title": "FlowLLM: Flow Matching for Material Generation with Large Language Models as Base Distributions",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:04.487732+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/51d317df78eded9eb3c9d3fb1091c279-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/51d317df78eded9eb3c9d3fb1091c279-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/51d317df78eded9eb3c9d3fb1091c279-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/51d317df78eded9eb3c9d3fb1091c279-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 9685,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "7ab7faee541858f56ae16344333d3e7173b17da02b501686e48dcbe9163e9b81",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 740667,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/51d317df78eded9eb3c9d3fb1091c279-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 740667,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2024_a2e35e75c53c94d1/main.pdf",
+      "pdf_bytes": 740667,
+      "pdf_sha256": "dbc5c4e2382e3dee737ba7050097e8fd0e69180cb3561ed3e855d1ab346b2f2f",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2024_a2e35e75c53c94d1/main_extracted_fonttools.txt",
+      "text_bytes": 76749,
+      "text_sha256": "1cb0918160218291d2e31be1a48ec1b4ae847017168685cd15b1e90ce008eb63",
+      "pages": 22,
+      "extracted_characters": 74665,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:07.707135+00:00"
+    },
+    {
+      "work_id": "W_neurips_2024_669a385d180f2bcf",
+      "queue_ordinal": 94,
+      "title": "Infusing Synthetic Data with Real-World Patterns for Zero-Shot Material State Segmentation",
+      "venue": "NeurIPS",
+      "year": 2024,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:07.336489+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ef4a4b387a5a547ea699f3df7fc1248-Abstract-Datasets_and_Benchmarks_Track.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ef4a4b387a5a547ea699f3df7fc1248-Abstract-Datasets_and_Benchmarks_Track.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ef4a4b387a5a547ea699f3df7fc1248-Abstract-Datasets_and_Benchmarks_Track.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ef4a4b387a5a547ea699f3df7fc1248-Abstract-Datasets_and_Benchmarks_Track.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10426,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "55122810026a6b501cd8d65d7659a825d3e77a65d04df341b2ae7e741738a590",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 13681838,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ef4a4b387a5a547ea699f3df7fc1248-Paper-Datasets_and_Benchmarks_Track.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 13681838,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2024_669a385d180f2bcf/main.pdf",
+      "pdf_bytes": 13681838,
+      "pdf_sha256": "e08bad9300efa88a24149ffd5ea6c7a0158db67a166f5981ddf46117df097f63",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2024_669a385d180f2bcf/main_extracted_fonttools.txt",
+      "text_bytes": 66476,
+      "text_sha256": "7754528183a774368385aeb0f39b96ce74ab858e4420428de969fef913320d30",
+      "pages": 23,
+      "extracted_characters": 65545,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:10.850238+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_b62fcf863964a121",
+      "queue_ordinal": 97,
+      "title": "3DID: Direct 3D Inverse Design for Aerodynamics with Physics-Aware Optimization",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:07.769134+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8fffba1c70615c74f68f56290464590e-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8fffba1c70615c74f68f56290464590e-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8fffba1c70615c74f68f56290464590e-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8fffba1c70615c74f68f56290464590e-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 9985,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "1f1dbae87f2effff770452f582e8ff5dff43c2c4c6c7a70257547d03039046aa",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 21121959,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8fffba1c70615c74f68f56290464590e-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 21121959,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_b62fcf863964a121/main.pdf",
+      "pdf_bytes": 21121959,
+      "pdf_sha256": "b6b4db4f484a530e09ed349f2e4db02a5ac08926d21aaa2c51f49d73c6d95987",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_b62fcf863964a121/main_extracted_fonttools.txt",
+      "text_bytes": 95466,
+      "text_sha256": "c37a33e8c2ec4e90c1d36751628c50e652811608dfdc4d8fb50364de542a5c2c",
+      "pages": 34,
+      "extracted_characters": 93348,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:12.088704+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_884c2f67d0802842",
+      "queue_ordinal": 101,
+      "title": "EngiBench: A Framework for Data-Driven Engineering Design Research",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:08.800345+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0013efa1327c079e73154d4061c3a396-Abstract-Datasets_and_Benchmarks_Track.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0013efa1327c079e73154d4061c3a396-Abstract-Datasets_and_Benchmarks_Track.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0013efa1327c079e73154d4061c3a396-Abstract-Datasets_and_Benchmarks_Track.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0013efa1327c079e73154d4061c3a396-Abstract-Datasets_and_Benchmarks_Track.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10569,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "10161d120a489323652911250c37cb0b91c9539e8f5591bf6fec4fa823247ad3",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 19642084,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/0013efa1327c079e73154d4061c3a396-Paper-Datasets_and_Benchmarks_Track.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 19642084,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_884c2f67d0802842/main.pdf",
+      "pdf_bytes": 19642084,
+      "pdf_sha256": "13f11a1ba3df3511058a2c834764185192303bd309818c18853bae0ff8274d97",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_884c2f67d0802842/main_extracted_fonttools.txt",
+      "text_bytes": 121882,
+      "text_sha256": "568abb4dcb5b7ac69b625347f8af9cf7dcbac128da482086c398762cd4d8a56b",
+      "pages": 44,
+      "extracted_characters": 118828,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:16.810289+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_f1341c53a6d7cc9f",
+      "queue_ordinal": 102,
+      "title": "ENMA: Tokenwise Autoregression for Continuous Neural PDE Operators",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:10.851242+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b9155a40314b3e4a6110b4b9dcdf8d57-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b9155a40314b3e4a6110b4b9dcdf8d57-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b9155a40314b3e4a6110b4b9dcdf8d57-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b9155a40314b3e4a6110b4b9dcdf8d57-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 9790,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "5ea91a13988c203db2e8cded567d9c465915fa82ad4623bb18ec2327e1ca68fd",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 27614899,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b9155a40314b3e4a6110b4b9dcdf8d57-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 27614899,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_f1341c53a6d7cc9f/main.pdf",
+      "pdf_bytes": 27614899,
+      "pdf_sha256": "177c842cd0a23c1143f7fbc82347b247aa1023e197bbe52e4f7680734d910c95",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_f1341c53a6d7cc9f/main_extracted_fonttools.txt",
+      "text_bytes": 173114,
+      "text_sha256": "e34f1f20425187386f71aa2c6e45506e38d7aa69e30d8cca2f65d07f18e93ffe",
+      "pages": 69,
+      "extracted_characters": 168111,
+      "title_token_coverage": 0.875,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:26.132834+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_b81c23c4a47c12b7",
+      "queue_ordinal": 104,
+      "title": "FuncGenFoil: Airfoil Generation and Editing Model in Function Space",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:12.091220+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1bbfea488a8968e2d3c6565639b08e5e-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1bbfea488a8968e2d3c6565639b08e5e-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1bbfea488a8968e2d3c6565639b08e5e-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1bbfea488a8968e2d3c6565639b08e5e-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10361,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "589e9c318b62cd10a83f1451980c3206b1b2e26949c544fc728f13a28efd89d9",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 2368044,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1bbfea488a8968e2d3c6565639b08e5e-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 2368044,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_b81c23c4a47c12b7/main.pdf",
+      "pdf_bytes": 2368044,
+      "pdf_sha256": "81d3616d969be04686b60881a7554cb0ebaa704a527848a2075d3518cfbe29a4",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_b81c23c4a47c12b7/main_extracted_fonttools.txt",
+      "text_bytes": 88415,
+      "text_sha256": "125afbc90bcfac2bfc269c38344b5b0ae6cdcb605600bf4136520ec7a7af3bf9",
+      "pages": 27,
+      "extracted_characters": 85425,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [
+        "Exceeded 5000 form XObject invocations while extracting text; further form content is skipped."
+      ],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:17.865101+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_3c609ff9e9121c0f",
+      "queue_ordinal": 105,
+      "title": "GeoCAD: Local Geometry-Controllable CAD Generation with Large Language Models",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:16.923822+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10350,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "860c7eb23525ce6cea5fc3c2ffaba1dadb818eefe20080a3910af8c46e5388d0",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 6093228,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/bdd4cb9ca5cf3bed4fa66e0677a0ab6a-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 6093228,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_3c609ff9e9121c0f/main.pdf",
+      "pdf_bytes": 6093228,
+      "pdf_sha256": "bf59ccf44c3272aab9c8d21db6a00360d6f3e7aed533dffc7da6f4e6092184ba",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_3c609ff9e9121c0f/main_extracted_fonttools.txt",
+      "text_bytes": 91535,
+      "text_sha256": "d085190c3da2fefd25fc06c846b41647d1ae663f50d51efe214875b1dc3177a6",
+      "pages": 26,
+      "extracted_characters": 89816,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:22.917181+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_35356bf05f9b15b9",
+      "queue_ordinal": 106,
+      "title": "LLM Meets Diffusion: A Hybrid Framework for Crystal Material Generation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:17.867102+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f789a628fca473e922c806657512a20f-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f789a628fca473e922c806657512a20f-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f789a628fca473e922c806657512a20f-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f789a628fca473e922c806657512a20f-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10239,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "f48824aaff61deada85fd8ab5fb867a213b8c3e40a4584221086cc21822bc1e1",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 871256,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/f789a628fca473e922c806657512a20f-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 871256,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_35356bf05f9b15b9/main.pdf",
+      "pdf_bytes": 871256,
+      "pdf_sha256": "0180dd2813094bd01dea037fa8534cafa8514eaf420879a68371ce3a3173cfe4",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_35356bf05f9b15b9/main_extracted_fonttools.txt",
+      "text_bytes": 93925,
+      "text_sha256": "1bfba762050a8e02de4616efe6a9bd5b102fd78bf7da00e7272385000b4d9c0e",
+      "pages": 26,
+      "extracted_characters": 91856,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:22.702602+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_13b9663047fb989a",
+      "queue_ordinal": 107,
+      "title": "RobotSmith: Generative Robotic Tool Design for Acquisition of Complex Manipulation Skills",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:22.880662+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10972,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "95b159a6235d9d4e1d7ac92873f7fb61ea88d18eeffec616811352afdf06bb9e",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 10069154,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9fc291fef2f9607a46777d367f900a15-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 10069154,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_13b9663047fb989a/main.pdf",
+      "pdf_bytes": 10069154,
+      "pdf_sha256": "c82d3e49894c697faa75a3d3c912d8e7f60cefb93b2b8111c63ad62a138b1e73",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_13b9663047fb989a/main_extracted_fonttools.txt",
+      "text_bytes": 88361,
+      "text_sha256": "1ea4b017d5d4b1b5f96b3f38b1bd1373083f58bf0f1cc8fb496a04b963863b97",
+      "pages": 30,
+      "extracted_characters": 86494,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:27.737349+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_7d71af30fcc1f3f6",
+      "queue_ordinal": 109,
+      "title": "Taccel: Scaling Up Vision-based Tactile Robotics via High-performance GPU Simulation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:22.951182+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/87d91d52272c3166315ca20b18519b9e-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/87d91d52272c3166315ca20b18519b9e-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/87d91d52272c3166315ca20b18519b9e-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/87d91d52272c3166315ca20b18519b9e-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10274,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "46bd5b74e1096c12b856d3ac274895bd2caa3a59bba1409463b24c2c8ceaedd3",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 4336982,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/87d91d52272c3166315ca20b18519b9e-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 4336982,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_7d71af30fcc1f3f6/main.pdf",
+      "pdf_bytes": 4336982,
+      "pdf_sha256": "be8539e7c312462aa3a74f0bbecacca258c560a68f0afe5e688900effb893f69",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_7d71af30fcc1f3f6/main_extracted_fonttools.txt",
+      "text_bytes": 92086,
+      "text_sha256": "412624fd3cdb9990fae1613ec9c92d4fc6e374f7dd127473d85117728df6a475",
+      "pages": 28,
+      "extracted_characters": 89358,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:27.731349+00:00"
+    },
+    {
+      "work_id": "W_neurips_2025_26db54b21647ae26",
+      "queue_ordinal": 110,
+      "title": "ThermalGen: Style-Disentangled Flow-Based Generative Models for RGB-to-Thermal Image Translation",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "screening_code": "H2",
+      "fulltext_priority": "high",
+      "started_utc": "2026-10-11T05:53:26.136831+00:00",
+      "attempts": [
+        {
+          "original_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2f9e10c28c4052570ef9e39cc4dd69b9-Abstract-Conference.html",
+          "normalized_landing_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2f9e10c28c4052570ef9e39cc4dd69b9-Abstract-Conference.html",
+          "landing_response": {
+            "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2f9e10c28c4052570ef9e39cc4dd69b9-Abstract-Conference.html",
+            "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2f9e10c28c4052570ef9e39cc4dd69b9-Abstract-Conference.html",
+            "http_status": 200,
+            "content_type": "text/html; charset=utf-8",
+            "content_encoding": null,
+            "transport_bytes": 10241,
+            "etag": null,
+            "last_modified": null
+          },
+          "landing_page_sha256": "8e2f916e9ee9500a67689153bf917bd33970deaf2fff04a03ed25f80132ab2e3",
+          "pdf_candidates": [
+            "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf"
+          ],
+          "candidate_attempts": [
+            {
+              "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf",
+              "response": {
+                "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf",
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf",
+                "http_status": 200,
+                "content_type": "application/pdf",
+                "content_encoding": null,
+                "transport_bytes": 23870370,
+                "etag": null,
+                "last_modified": null
+              }
+            }
+          ]
+        }
+      ],
+      "systematic_inclusion_counted": false,
+      "fulltext_scientific_reading_completed": false,
+      "independent_fulltext_reading_completed": false,
+      "accepted_version_independently_verified": false,
+      "complete_content_extraction_verified": false,
+      "paper_linked_release_attribution_verified": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf",
+      "response": {
+        "requested_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf",
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2f9e10c28c4052570ef9e39cc4dd69b9-Paper-Conference.pdf",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_encoding": null,
+        "transport_bytes": 23870370,
+        "etag": null,
+        "last_modified": null
+      },
+      "pdf_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_26db54b21647ae26/main.pdf",
+      "pdf_bytes": 23870370,
+      "pdf_sha256": "ae65458dc288b01c87923c8599ba966e8a18ff07d4fa3ca585e7feb033af2324",
+      "text_path": "runs/wp1/supplemental_fulltext_acquisition_20261011/W_neurips_2025_26db54b21647ae26/main_extracted_fonttools.txt",
+      "text_bytes": 79487,
+      "text_sha256": "f1b26a017e1e49c1f945763de9b1573de3f7e0279a8998089e4da9f09f92612a",
+      "pages": 23,
+      "extracted_characters": 77720,
+      "title_token_coverage": 1.0,
+      "automatic_title_token_check_pass": true,
+      "technical_text_check_pass": true,
+      "fonttools_extraction_verified": true,
+      "replaced_surrogate_codepoints": 0,
+      "extraction_warning_messages": [],
+      "status": "acquired_automatic_identity_triage_pass",
+      "finished_utc": "2026-10-11T05:53:30.035000+00:00"
+    }
+  ],
+  "targeted_audits": [
+    {
+      "review_type": "same_AI_targeted_sections_and_static_sources_not_independent_fulltext_adjudication",
+      "fulltext_scientific_reading_completed": false,
+      "independent_human_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "upstream_execution_performed": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "audit_id": "SUP_A01",
+      "work_id": "W_neurips_2021_237ee9bac41586ea",
+      "title": "SketchGen: Generating Constrained CAD Sketches",
+      "assessed_pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "assessed_sections": [
+        "5.1 primitive generation",
+        "5.2 constraint generation",
+        "6 results"
+      ],
+      "generation_contribution": "Autoregressive primitive sequence plus pointer-network constraint generation; OnShape post-generation correction.",
+      "manufacturing_scope": "Editable parametric design boundary. Geometric constraints are not material/process manufacturability or synthetic manufacturing observations.",
+      "author_reported_evidence": {
+        "generated_sequence_evaluation_n": 15000,
+        "perturbed_test_sketch_constraint_accuracy_percent": 98.4,
+        "scope": "Different endpoints; neither is our run or industrial acceptance rate."
+      },
+      "artifact_repo": "https://github.com/wamiq-reyaz/sketchgen",
+      "artifact_pin": "39c288684a03eae78439b1d61cc26b5356f83241",
+      "artifact_observation": "Complete main tree contains README.md only; one observed branch and no GitHub releases. No generation source/checkpoint/license in this inspected repository snapshot. README self-identifies the paper; accepted paper/project-to-repository attribution remains unverified.",
+      "artifact_scope_limit": "This bounded repository observation does not prove global absence of other author assets.",
+      "execution_cohort_status": "hold_no_inference_source_or_weights_in_inspected_repo_and_attribution_pending"
+    },
+    {
+      "review_type": "same_AI_targeted_sections_and_static_sources_not_independent_fulltext_adjudication",
+      "fulltext_scientific_reading_completed": false,
+      "independent_human_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "upstream_execution_performed": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "audit_id": "SUP_A02",
+      "work_id": "W_cvpr_2025_e8aeda3976635695",
+      "title": "RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins",
+      "assessed_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "assessed_sections": [
+        "3 generation",
+        "4 benchmark",
+        "5 experiments including Tables2/3"
+      ],
+      "generation_contribution": "Image-derived 3D assets, spatial annotations, LLM movement code and simulated observation/action demonstrations.",
+      "manufacturing_scope": "Robot manipulation transfer comparator; household/tool tasks are not calibrated production-process data or factory qualification.",
+      "author_reported_evidence": {
+        "real_trials_per_task": 50,
+        "single_arm_tasks": 5,
+        "dual_arm_tasks": 5,
+        "training_comparison": "20 real demonstrations vs300 simulated plus20 real",
+        "single_arm_success_counts_baseline": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "single_arm_success_counts_combined": [
+          42,
+          16,
+          49,
+          39,
+          37
+        ],
+        "dual_arm_success_counts_baseline": [
+          0,
+          0,
+          25,
+          0,
+          25
+        ],
+        "dual_arm_success_counts_combined": [
+          31,
+          11,
+          44,
+          26,
+          43
+        ],
+        "single_arm_mean_baseline_percent": 1.2,
+        "single_arm_mean_combined_percent": 72,
+        "dual_arm_mean_baseline_percent": 20,
+        "dual_arm_mean_combined_percent": 62,
+        "scope": "Printed paper reports1.2/72percent single and20/62percent dual means. Single combined rows sum183/250=73.2percent, inconsistent with printed72percent. Keep both with unresolved discrepancy. No new execution or industrial evidence.",
+        "single_arm_difference_from_reported_means_percentage_points": 70.8,
+        "dual_arm_difference_from_reported_means_percentage_points": 42,
+        "single_arm_combined_sum_printed_rows": 183,
+        "single_arm_combined_trial_sum": 250,
+        "single_arm_recomputed_combined_percent": 73.2,
+        "single_arm_recomputed_difference_percentage_points": 72.0,
+        "single_arm_reported_average_difference_percentage_points": 1.2,
+        "table2_row_average_discrepancy_unresolved": true,
+        "table2_visual_check": {
+          "pdf_page": 8,
+          "printed_page": 27656,
+          "status": "Printed rows and72percent average visually confirmed; source not silently corrected."
+        }
+      },
+      "artifact_repo": "https://github.com/RoboTwin-Platform/RoboTwin",
+      "artifact_branch": "RoboTwin-1.0",
+      "artifact_pin": "65a6f5bb74794ba193c6bf17d8eae3b74fc2df70",
+      "artifact_tracked_blobs": 411,
+      "code_license_observed": "MIT at exact pinned LICENSE; third-party data/assets/models/services rights not cleared.",
+      "version_evidence": "Paper project URL now points to2.0 platform; new project labels CVPR2025 as previous1.0, current author repo exposes1.0branch and pinned README explicitly citesCVPR2025. Exact original experimental commit not established.",
+      "installation_observation": "Pinned guide requires Linux, GPU rendering/CUDA/Vulkan, SAPIEN3.0.0b1 and MPlib0.1.1, asset downloads and direct MPlib source edits.",
+      "collision_check_issue": "Installation guide removes the or collide failure condition in one MPlib planner branch. This warrants independent collision-trace validation; it does not prove all collision checking is removed or that every generated trajectory is unsafe.",
+      "physics_evidence_limit": "Paper material parameters assigned through GPT4V with5percent variation; assessed passages do not supply independent material metrology. Kinematic/simulator success is not external factory physics qualification.",
+      "execution_cohort_status": "public_generation_source_candidate_not_run_critical_assets_rights_and_supported_runtime_pending"
+    },
+    {
+      "review_type": "same_AI_targeted_sections_and_static_sources_not_independent_fulltext_adjudication",
+      "fulltext_scientific_reading_completed": false,
+      "independent_human_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "upstream_execution_performed": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "audit_id": "SUP_A03",
+      "work_id": "W_neurips_2025_26db54b21647ae26",
+      "title": "ThermalGen: Style-Disentangled Flow-Based Generative Models for RGB-to-Thermal Image Translation",
+      "pdf_sha256": "ae65458dc288b01c87923c8599ba966e8a18ff07d4fa3ca585e7feb033af2324",
+      "text_sha256": "f1b26a017e1e49c1f945763de9b1573de3f7e0279a8998089e4da9f09f92612a",
+      "artifact_repo": "https://github.com/arplaboratory/ThermalGen",
+      "artifact_pin": "681f8f96be1bb55779b49e10af0a273ff8e74895",
+      "artifact_tracked_blobs": 123,
+      "artifact_code_license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "assessed_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "assessed_sections": [
+        "RGB thermal translation and latent flow",
+        "data/preprocessing",
+        "metrics and ablation/discussion"
+      ],
+      "generation_contribution": "RGB-conditioned latent flow synthesizes 8-bit thermal appearance; a probability-flow ODE is not a heat-transfer equation.",
+      "manufacturing_scope": "Appearance baseline/transfer hypothesis. Assessed data/evaluation does not establish manufacturing radiometric calibration or temperature accuracy.",
+      "author_reported_evidence": {
+        "scope": "PSNR/SSIM/FID/LPIPS are image/feature metrics, not our execution or absolute temperature validation."
+      },
+      "artifact_observation": "MIT code; demo defaults to XL/2, while frozen B/2 config uses cross-attention. Public B/2 and required RGB VAE card license MIT; weights not downloaded/loaded. Raw training/input data rights remain separate.",
+      "execution_cohort_status": "prospective_nonmanufacturing_appearance_baseline_no_run",
+      "sampling": {
+        "default_solver": "dopri5",
+        "saved_time_points": 50,
+        "atol": 1e-06,
+        "rtol": 0.001,
+        "actual_neural_function_evaluations_measured": false,
+        "fifty_saved_points_are_not_fifty_model_calls": true
+      },
+      "model_assets": {
+        "model_id": "xjh19972/ThermalGen-B-2",
+        "model_revision": "8df3bbd9e396a4667202b850414711195f2634d5",
+        "variant": "B/2 cross-attention; not L/2 concat or demo default XL/2",
+        "RGB_VAE_id": "stabilityai/sd-vae-ft-ema",
+        "RGB_VAE_revision": "f04b2c4b98319346dad8c65879f680b1997b204a",
+        "weights_downloaded": false,
+        "loaded": false
+      },
+      "proposed_industrial_profile": "THERM INSPECT 01: radiometric surface-defect inspection; requires paired calibrated thermal measurements and defect KPI."
+    },
+    {
+      "review_type": "same_AI_targeted_sections_and_static_sources_not_independent_fulltext_adjudication",
+      "fulltext_scientific_reading_completed": false,
+      "independent_human_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "upstream_execution_performed": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "audit_id": "SUP_A04",
+      "work_id": "W_iccv_2025_d6166266d53c0427",
+      "title": "Physical Degradation Model-Guided Interferometric Hyperspectral Reconstruction with Unfolding Transformer",
+      "pdf_sha256": "00bc1ae2b98e45ff3eeb43c7b271b852398cceef1b5ba4ce969bf0e884629aa0",
+      "text_sha256": "64cdc9a4b1f868c0b0d96da642504dd256e8095358a24a3f1faa9e4a750ab3f1",
+      "artifact_repo": "https://github.com/bit1120203554/IHRUT",
+      "artifact_pin": "deb93c6d416dc149a1c8b8809aec22d0325bcf5b",
+      "artifact_tracked_blobs": 91,
+      "artifact_code_license_metadata": null,
+      "assessed_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "assessed_sections": [
+        "3.1 degradation modeling",
+        "3.2 calibration/simulation",
+        "4 experimental data and real reconstruction"
+      ],
+      "generation_contribution": "Calibrated optical/electronic forward model synthesizes interferograms for hyperspectral reconstruction training.",
+      "manufacturing_scope": "Paper evaluates remote-sensing/HSOD and uniform-light LASIS calibration data; manufacturing material/coating inspection is a separate transfer hypothesis.",
+      "author_reported_evidence": {
+        "real_calibration_PSNR_5stage_dB": 39.46,
+        "real_calibration_PSNR_7stage_dB": 39.61,
+        "scope": "Paper Table2, three real calibration scenes; not our replication or manufacturing defect metric."
+      },
+      "artifact_observation": "Complete pinned tree lists calibration pkl and two model_latest.pth blobs. No license metadata; no explicit grant verified. Default source import closure misses two modules. No asset deserialization or import attempt performed.",
+      "execution_cohort_status": "hold_source_import_closure_data_rights_and_calibration_loading_path",
+      "missing_source_modules": [
+        "methods/models/DAUHST_intf.py",
+        "methods/models/IHRUT.py"
+      ],
+      "public_binary_assets_metadata_only": [
+        {
+          "path": "results/calibration/ZZ_1733764060.pkl",
+          "git_blob_sha": "3afea4c5bf85c35b837925e73f7d0f6a059ca4d1",
+          "bytes": 61788807
+        },
+        {
+          "path": "results/checkpoints/ISR_IHRUT_4.24_5_hsod-train_1740034733/model_latest.pth",
+          "git_blob_sha": "7e4edf293ce48275c3b6f1a850cb0713fd9557e9",
+          "bytes": 40056798
+        },
+        {
+          "path": "results/checkpoints/ISR_IHRUT_4.24_7_hsod-train_1740139801_hsod-train_1740363592/model_latest.pth",
+          "git_blob_sha": "cba7dc0624c8b92d5ec6b1bd47592d62293f9d43",
+          "bytes": 73729086
+        }
+      ],
+      "dataset_synthesis_entrypoint": "simulation_dataset calls simulation_ablation4_standard; distinct from full simulation optical/electrical pathway. Does not establish which path produced published results.",
+      "proposed_industrial_profile": "HSI INSPECT 01: calibrated material/coating inspection, disjoint devices/times and independent spectral/task metrics."
+    },
+    {
+      "review_type": "same_AI_targeted_sections_and_static_sources_not_independent_fulltext_adjudication",
+      "fulltext_scientific_reading_completed": false,
+      "independent_human_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "upstream_execution_performed": false,
+      "new_execution_pass": false,
+      "industrial_pass": false,
+      "audit_id": "SUP_A05",
+      "work_id": "W_neurips_2025_7d71af30fcc1f3f6",
+      "title": "Taccel: Scaling Up Vision-based Tactile Robotics via High-performance GPU Simulation",
+      "pdf_sha256": "be8539e7c312462aa3a74f0bbecacca258c560a68f0afe5e688900effb893f69",
+      "text_sha256": "412624fd3cdb9990fae1613ec9c92d4fc6e374f7dd127473d85117728df6a475",
+      "artifact_repo": "https://github.com/Taccel-Simulator/Taccel",
+      "artifact_pin": "cb23bc251b531ba6908a3788c2f91423cd543149",
+      "artifact_tracked_blobs": 1406,
+      "artifact_code_license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "assessed_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        26,
+        27
+      ],
+      "assessed_sections": [
+        "3 unified IPC/ABD",
+        "4 sensor/signal simulation",
+        "5 physical/performance tests",
+        "6 applications",
+        "C resources",
+        "D1-D3 measurements and classification"
+      ],
+      "generation_contribution": "Contact/deformation simulation generates tactile depth/marker signals; learned rendering produces RGB signals.",
+      "manufacturing_scope": "Paper includes 10 mechanical-part sim-to-real classification and manipulation. Named manufacturing assembly/quality qualification remains unvalidated.",
+      "author_reported_evidence": {
+        "mechanical_part_classes": 10,
+        "approximate_synthetic_depth_maps": 4000,
+        "real_depth_maps": 160,
+        "augmented_tests_per_real_sample": 4,
+        "synthetic_accuracy_percent": 86.5,
+        "real_accuracy_percent": 70.94,
+        "accuracy_gap_percentage_points": 15.56,
+        "independent_real_samples_not_multiplied_by_augmentation": true,
+        "low_resolution_4096_environment_memory_GiB": 54.0,
+        "low_resolution_single_environment_memory_GiB": 4.3,
+        "H100_80GB_aggregate_4096_environment_FPS": 915,
+        "scope": "Author measurements Tables3/A1, not our runtime, independent physics or factory evidence."
+      },
+      "artifact_observation": "MIT code, modified Warp/CUDA12.x Linux-style official build. Pinned peg example is GPU path,200steps,Newton cap20; paper Table2 cap50 is a different performance setting. Host16,303MiB RTX5080/Windows and CUDA13.1 path do not qualify build/runtime.",
+      "execution_cohort_status": "hold_official_build_path_and_asset_rights_then_single_environment_test_no_attempt",
+      "proposed_industrial_profile": "TAC ASSEMBLY 01: tolerance-specific peg assembly, independent material/friction/sensor checks and grasp-grouped external validation."
+    }
+  ],
+  "arithmetic_amendment": {
+    "archive": "runs/wp1/supplemental_asset_audit_20261011/catalog_before_row_arithmetic_check.json",
+    "archive_sha256": "52b14636d891b9a1d2541e840e129ff5e5d6edd85e7efcc56a11be72814616c5",
+    "scope": "Same-AI evidence-coding correction after printed-row arithmetic and page8 visual review; no independent review."
+  },
+  "sensor_generation_review": {
+    "fixed_batch_source": "runs/wp1/sensor_generation_review_20261011/fixed_batch_manifest.json",
+    "fixed_batch_sha256": "fb4597515b120380cc7459950613d01a6a3211d4c5bd5cd545c36b74f1ed0a5b",
+    "parent_snapshot": "runs/wp1/sensor_generation_review_20261011/parent_fulltext_catalog_snapshot.json",
+    "parent_snapshot_sha256": "ddbccb0476e6df5d510bd80b3226c776d5b3279397087936a1ccc43a1ba2fba1",
+    "audit_source": "runs/wp1/sensor_generation_review_20261011/targeted_audit_records.json",
+    "audit_sha256": "7d13346b19293adead7b8cba37b71eb0583b7078f90aef2e3d863563d380523a",
+    "source_manifest": "runs/wp1/sensor_generation_review_20261011/source_snapshot_manifest.json",
+    "source_manifest_sha256": "6e95083d39934d27a2577b825206a9037fe57d0047c84f9565e39ee48558f69e",
+    "critical_source_manifest": "runs/wp1/sensor_generation_review_20261011/critical_source_snapshot_manifest.json",
+    "critical_source_manifest_sha256": "c68f15a6a373576e85391d44d76eea5a0bcc5a58f8804938775da3169615e0aa",
+    "operational_manifest": "runs/wp1/sensor_generation_review_20261011/operational_metadata_manifest.json",
+    "operational_manifest_sha256": "53bbd4d09a64c703fae9a934ed010f40c818202e436ea58a35032f3240c05165",
+    "RGB_VAE_manifest": "runs/wp1/sensor_generation_review_20261011/rgb_vae_metadata_manifest.json",
+    "RGB_VAE_manifest_sha256": "fdfa0cb07db4d6f80cf8cfa9d144091c8279905cbc341d2d9c085dac0e47e64d",
+    "source_closure_amendment": {
+      "archive": "runs/wp1/sensor_generation_review_20261011/audit_before_source_import_closure_check.json",
+      "archive_sha256": "ae662a9c55c1b720ab0fb94774c6e0dc189c2a813cba89a915413375349ff487",
+      "reason": "AST/complete-tree comparison corrects provisional3missing-source count to2; network_dncnn.py is tracked. Same-AI coding correction, no import experiment or independent review."
+    }
+  }
+}

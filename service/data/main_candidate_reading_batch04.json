@@ -1,0 +1,754 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "schema_version": "1.0",
+    "cohort_freeze_sha256": "d83677aeaf3c17af2fd35747674db2e241aff8ca2c918ae869fdde9fc6aca79d",
+    "batch04_freeze_sha256": "2cb03205f5cbff2a479ee3bcbeaadb7806f7d7bc29fda4bc9088978755e82825",
+    "fixed_cohort_works": 14,
+    "fixed_cohort_main_pdf_pages": 229,
+    "coverage_scope": "All pages of each acquired PDF, including embedded appendices where present; external supplements separate.",
+    "this_batch_same_ai_reviews_complete": 2,
+    "this_batch_pages_read_and_visually_reviewed": 38,
+    "cumulative_same_ai_main_pdf_reviews_complete": 10,
+    "cumulative_same_ai_main_pdf_pages_read_and_visually_reviewed": 130,
+    "remaining_same_ai_main_pdf_reviews": 4,
+    "remaining_same_ai_main_pdf_pages": 99,
+    "independent_reviews_complete": 0,
+    "adjudicated_inclusions": 0,
+    "systematic_review_complete": false,
+    "new_executions": 0,
+    "new_scientific_passes": 0,
+    "new_industrial_qualification_passes": 0,
+    "historical_sources_and_human_packets_unchanged": true,
+    "previous_eight_reviews_and_batch03_validation_unchanged": true,
+    "raw_pdfs_or_renders_publicly_redistributed": false,
+    "validation_scope": "Local source/record integrity, stated acquired-PDF page coverage and conservative accounting; not independent reading, physical validation or industrial qualification.",
+    "prior_reviews": [
+      {
+        "work_id": "W_aaai_2023_3e92365c6a31ea37",
+        "method": "DFMGAN",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_aaai_2023_3e92365c6a31ea37_review.json",
+        "sha256": "318c6fef1a36959cfb94e8ee6cdafb9d1b4641a906c474fe83ae2509ef5dcfae"
+      },
+      {
+        "work_id": "W_cvpr_2024_4bca28b6f05c412d",
+        "method": "TGI-AD",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2024_4bca28b6f05c412d_review.json",
+        "sha256": "de84c574f5dce08d0b2471d8d14cb5c9d0c22d262ed52c59f1301e173fbe5b4a"
+      },
+      {
+        "work_id": "W_cvpr_2025_e6d8cf140103e9bb",
+        "method": "DefectFill",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/W_cvpr_2025_e6d8cf140103e9bb_review.json",
+        "sha256": "e7e597326bb6c4cb23a67920a374105a7e4e2325f64702c05db5182c842c0e51"
+      },
+      {
+        "work_id": "W_eccv_2024_72b004555e605ea7",
+        "method": "GLASS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_72b004555e605ea7_review.json",
+        "sha256": "76fc6184f2dc02de24f6c73f1388b8165005cc1c576492259c0c265d85b9e06e"
+      },
+      {
+        "work_id": "W_eccv_2024_6821303e219e9206",
+        "method": "DefectDiffu",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch02/W_eccv_2024_6821303e219e9206_review.json",
+        "sha256": "6ef150302a9ae4fcd8f3010df2c29ef78d00e61069ae8c6e73a70857dd17c45b"
+      },
+      {
+        "work_id": "W_iccv_2025_e01efad5210c86d2",
+        "method": "IKDDiT",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_e01efad5210c86d2_review.json",
+        "sha256": "3a9920930959cc26e9611f2d933525656be565bc46bb11511dfdde5acce3eb68"
+      },
+      {
+        "work_id": "W_iccv_2025_715dd4512a3586b9",
+        "method": "SeaS",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_715dd4512a3586b9_review.json",
+        "sha256": "8ca05c3f0118f5624f04ab6cca98fd95d1c28a25ffe576eb47bd634673fd0db9"
+      },
+      {
+        "work_id": "W_iccv_2025_204365ef82780322",
+        "method": "TF-IDG",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch03/W_iccv_2025_204365ef82780322_review.json",
+        "sha256": "6dc1f50f994937bd4b4a326d82f4a327ebfa21371f679ec82532ff019740ebe3"
+      }
+    ],
+    "reviews": [
+      {
+        "work_id": "W_icml_2025_b84206981cf14d22",
+        "method": "LineFlow",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch04/W_icml_2025_b84206981cf14d22_review.json",
+        "sha256": "d473bd4874789d3babc13ebf7dbeaf2befc5ea0dfac1682b81258b6bd7c03e37"
+      },
+      {
+        "work_id": "W_neurips_2022_f8d33af9719ba938",
+        "method": "SMPL",
+        "path": "runs/wp1/main_candidate_ai_reading_20261011/batch04/W_neurips_2022_f8d33af9719ba938_review.json",
+        "sha256": "326886123ae33782bf5f7f84d704e228e6062948363d5300ae0263e548268250"
+      }
+    ],
+    "pending_work_ids": [
+      "W_neurips_2023_6e31d25a4d3bd304",
+      "W_neurips_2023_499969137de65d0b",
+      "W_neurips_2025_0a00b52c83c220fa",
+      "W_neurips_2025_4b3ae9c13c106648"
+    ]
+  },
+  "relation_to_existing_graph": "Additive provisional coding overlay; not appended to graph v0.9.32. SMPL main-only V0 proposal does not replace historical protocol/graph V2 calibration-only code. No qualification counts change.",
+  "records": [
+    {
+      "work_id": "W_icml_2025_b84206981cf14d22",
+      "method": "LineFlow",
+      "title": "LineFlow: A Framework to Learn Active Control of Production Lines",
+      "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/muller25c/muller25c.pdf",
+      "pdf_sha256": "f73274c1c544aa3b5a269ba8e883a9359b8a50052a273bc1f7c46b1f284f6aa2",
+      "provisional_topic_decision": "retain_supporting_operational_data_context_H2_core_physical_scope_pending_independent_adjudication",
+      "queue_decision_unchanged": "I3 in frozen original queue; no final systematic inclusion or exclusion here",
+      "provisional_codes": {
+        "C": [
+          "C0"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M2"
+        ]
+      },
+      "code_evidence_basis": {
+        "C0": "Section1.1 explicitly excludes modeling physical relations/parameters.",
+        "V0": "No calibrated internal physical-process verification in this PDF. Operational analytical and real-data comparisons are preserved separately.",
+        "M2": "Author-reported Bosch actual-manufacturing offline comparison in acquired embedded AppendixD pp23-24."
+      },
+      "generation": {
+        "target": "time-indexed synthetic production-line states, events and policy interaction trajectories",
+        "inputs": "station/layout definitions, buffer/carrier capacities, processing-time distributions, expiry/cost conditions and control policy",
+        "conditioning": "SimPy discrete-event transitions, delayed/masked observations, worker assignment/routing/waiting-time actions",
+        "output_scope": "operational manufacturing data for control and bottleneck studies; not defect images or calibrated material/chemical physical fields"
+      },
+      "claims": [
+        {
+          "claim_id": "LF01",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            5,
+            13,
+            14,
+            15,
+            16
+          ],
+          "location": "Sections 1.1/2/3.3; Appendix A",
+          "paraphrase": "The framework treats station technology as a black box and explicitly does not model physical relations or monitor physical process parameters. Shifted exponential processing times, FIFO buffers, capacities, workers and routing produce a discrete-event operational simulator with dataframe-accessible state histories.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF02",
+          "pdf_pages_1_based": [
+            3,
+            5,
+            6,
+            15,
+            16
+          ],
+          "location": "Expiry and resource constraints",
+          "paraphrase": "Adhesive-like assembly expiry, bounded buffers, fixed worker pools and delayed observations are meaningful operational constraints. They do not by themselves validate chemical adhesion, material mechanics or process conservation laws.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LF03",
+          "pdf_pages_1_based": [
+            4,
+            5
+          ],
+          "location": "Eq. 1; Section 3.1",
+          "paraphrase": "The evaluation objective is cost-weighted OK production minus scrap costs normalized by time. Per-step rewards are differences in this objective over fixed decision intervals. Fixed Tsim is chosen to represent a shift; simulated reward is not measured plant profit.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF04",
+          "pdf_pages_1_based": [
+            6,
+            7,
+            17,
+            18,
+            19,
+            20
+          ],
+          "location": "Atomic benchmarks; Appendix B",
+          "paraphrase": "Waiting-time, part-distribution and worker-assignment cases have analytical/statistical references under stated assumptions. Worker assignments found by GEKKO are compared with LineFlow enumerations. This is operational-model verification, separate from physical-process verification.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF05",
+          "pdf_pages_1_based": [
+            6,
+            18,
+            19
+          ],
+          "location": "WTJ and Appendix B.1",
+          "paraphrase": "WTJ ideal expected production is not attainable immediately after a hidden processing-time jump because observations lag. The reported WTJ optimal reference uses a tested rolling-mean agent with look-back l=1, rather than a proven global optimum over all partially observed policies.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF06",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            21,
+            22,
+            23
+          ],
+          "location": "Section 5; Appendix C; Table 1",
+          "paraphrase": "The authors test PPO, recurrent PPO, A2C and TRPO using three seeds; Table 1 selects best hyperparameters and separates average from parenthesized maximum reward. Appendix C specifies 22 configurations and 66 trained models per scenario. Evaluations use separate simulated environments, not a factory holdout.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF07",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            21
+          ],
+          "location": "Complex line",
+          "paraphrase": "Policies trained from scratch converge to production-stopping deadlock with zero reward. Curriculum and memory improve learning, yet the best learned complex-line policies remain below the manually tuned heuristic reward254.6±1.1. Frequent worker reallocation can add overhead and oscillation.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF08",
+          "pdf_pages_1_based": [
+            21
+          ],
+          "location": "Appendix C runtime report",
+          "paraphrase": "Reported training times per model are about2h for WT,7h for WTJ and14h for PD5. Complex-line stacked/recurrent PPO use H100 GPUs and take roughly20h/almost6days respectively. These are training-time reports, not measured local simulation generation throughput.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF09",
+          "pdf_pages_1_based": [
+            23,
+            24
+          ],
+          "location": "Appendix D; Figures22-23",
+          "paraphrase": "The authors reconstruct a Bosch public production dataset layout with two parallel12-station pre-assembly lines and a shared subsequent line, analyzing the higher-volume pre-assembly. Limited timestamp resolution leads to nonoverlapping averages over100 consecutive parts. The reconstructed simulation is compared with actual cumulative production.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "LF10",
+          "pdf_pages_1_based": [
+            23,
+            24
+          ],
+          "location": "Appendix D assumptions and inference",
+          "paraphrase": "Unknown buffer slots/traversal times and assumed round-robin routing limit the real-data reconstruction. Traversal times are assumed negligible; Figure23 visually compares cumulative sink output. The PDF does not establish a separate temporal/site holdout, quantitative error bound or real-line deployment trial.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LF11",
+          "pdf_pages_1_based": [
+            7,
+            13,
+            19
+          ],
+          "location": "Reproduction questions",
+          "paraphrase": "For c=0.3, exp(-c) retains about74% of the deterministic processing-time term; the prose says reduced by74%. Appendix A agent snippet visibly lacks a comma after Switch. Equation6 omits differing stochastic multipliers from the general preceding expression. Preserve these as scope/convention/snippet questions for pinned code review, not demonstrated repository bugs.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "LF12",
+          "pdf_pages_1_based": [
+            2,
+            9,
+            23,
+            24
+          ],
+          "location": "Eligibility and evidence boundary",
+          "paraphrase": "Synthetic operational data generation and actual-manufacturing offline comparison justify supporting-context retention pending adjudication. C0/V0 refer to missing governing physical coupling/verification, while M2 acknowledges Bosch real-data evaluation. Analytic operational references and real throughput evidence are retained in separate fields rather than erased or promoted to physical/industrial qualification.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "benchmark_simulation_horizon": 4000,
+        "decision_step": 1,
+        "worker_enumeration_horizon": 2000,
+        "configurations_per_scenario": 22,
+        "seeds_per_configuration": 3,
+        "models_per_scenario": 66,
+        "vectorized_environments": 5,
+        "evaluation_episodes_per_report": 5,
+        "evaluation_repetitions_reported": 5,
+        "stable_baselines3_version": "2.3.2",
+        "Table7_rollout_steps": 1000,
+        "Table7_discount_factor": 0.99,
+        "Table7_update_batch_size": 1000,
+        "Table7_update_epochs": 5,
+        "Table1_selected_results": {
+          "WT": {
+            "recurrent_PPO_mean": 157.7,
+            "recurrent_PPO_sd": 1.3,
+            "optimal_reference_mean": 156.2,
+            "optimal_reference_sd": 1.5
+          },
+          "WTJ": {
+            "recurrent_PPO_mean": 105.9,
+            "recurrent_PPO_sd": 11.6,
+            "tested_observation_based_reference_mean": 114.8,
+            "reference_sd": 0.9
+          },
+          "PD3": {
+            "PPO_mean": 578.7,
+            "PPO_sd": 0.6,
+            "reference_mean": 582.7,
+            "reference_sd": 2.6
+          }
+        },
+        "complex_line_manual_heuristic": {
+          "mean": 254.6,
+          "sd": 1.1,
+          "learned_policies_exceed_this": false
+        },
+        "worker_optimal_assignments": {
+          "k3_N9": [
+            2,
+            3,
+            4
+          ],
+          "k4_N12": [
+            2,
+            3,
+            3,
+            4
+          ],
+          "k5_N15": [
+            2,
+            2,
+            3,
+            4,
+            4
+          ]
+        },
+        "training_runtime_author_reported": {
+          "WT_hours": 2,
+          "WTJ_hours": 7,
+          "PD5_hours": 14,
+          "CL_stacked_PPO_H100_hours": 20,
+          "CL_recurrent_PPO_H100": "almost6days"
+        },
+        "Bosch_reconstructed_parallel_preassembly_lines": 2,
+        "stations_per_preassembly_line": 12,
+        "Bosch_timestamp_pooling_parts_per_nonoverlapping_window": 100,
+        "Bosch_quantitative_error_or_independent_holdout": "not established in acquired PDF",
+        "generation_throughput_local_measurement": false,
+        "raw_actual_manufacturing_data_used_for_offline_comparison": "author reported AppendixD"
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            2,
+            3,
+            6
+          ],
+          "issue": "No internal process physics. Expiry/time constraints need their own industrial calibration before being treated as quality thresholds."
+        },
+        {
+          "pages": [
+            6,
+            19
+          ],
+          "issue": "WTJ optimal label includes an empirically selected observation-based agent; preserve benchmark type and assumptions."
+        },
+        {
+          "pages": [
+            7,
+            8,
+            21
+          ],
+          "issue": "Best-hyperparameter selection, stochastic means and maximum rewards are different estimands; do not pool with actual-plant profit or safety rates."
+        },
+        {
+          "pages": [
+            8,
+            9,
+            21
+          ],
+          "issue": "Complex-line RL underperforms the manual heuristic. Runtime includes substantial training expense and worker reallocation overhead."
+        },
+        {
+          "pages": [
+            23,
+            24
+          ],
+          "issue": "Bosch real-data comparison is present; timestamp pooling, unknown buffer/transit information and absence of established independent holdout limit external validity."
+        },
+        {
+          "pages": [
+            7,
+            13,
+            19
+          ],
+          "issue": "Worker-percentage wording, PDF example syntax and distribution assumptions require code-specific clarification rather than silent corrections."
+        }
+      ],
+      "open_questions": [
+        "Adjudicate supporting operational-data versus core physical-field scope without changing the frozen I3 queue.",
+        "Pin a paper-compatible code version and acquire the attributed release before any task-run claim; current PyPI version is a later snapshot.",
+        "Reconcile fixed-resource, FIFO, expiry, routing and simulated accounting invariants independently; no assertion that station statistics represent governing physics.",
+        "For Bosch comparison, document exact data columns, timestamp units/windowing, calibrated versus held-out periods, buffer/transit assumptions and quantitative error.",
+        "Measure complete synthetic-trajectory generation cost separately from RL training; compare heuristic and learned policies under failures, observation delays and factory constraints."
+      ],
+      "accepted_version_observation": "Official PMLR-hosted acquired PDF; title, authors, ICML2025/PMLR267 notice and printed pages 1-24 inspected. Independent accepted-version adjudication pending.",
+      "embedded_appendices_read_this_batch": true,
+      "operational_model_validation": {
+        "analytical_or_statistical_reference": true,
+        "same_framework_empirical_comparison": true,
+        "actual_manufacturing_data_offline_comparison": true,
+        "external_plant_control_experiment_observed": false,
+        "not_an_independent_local_validation": true
+      },
+      "review_sha256": "d473bd4874789d3babc13ebf7dbeaf2befc5ea0dfac1682b81258b6bd7c03e37",
+      "acquired_pdf_pages_read": 24,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    },
+    {
+      "work_id": "W_neurips_2022_f8d33af9719ba938",
+      "method": "SMPL",
+      "title": "SMPL: Simulated Industrial Manufacturing and Process Control Learning Environments",
+      "official_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/a9b3d7f65eebb083e5c7f8cf10e52528-Paper-Datasets_and_Benchmarks.pdf",
+      "pdf_sha256": "b61b376faa27f710f85011b3f236e61572af8da3137f18c421abc07c71eaf8f6",
+      "provisional_topic_decision": "include_process_model_synthetic_trajectory_benchmark_I3_pending_independent_adjudication",
+      "queue_decision_unchanged": "I3 in frozen original queue; no final systematic inclusion",
+      "provisional_codes": {
+        "C": [
+          "C1"
+        ],
+        "physical_verification": [
+          "V0"
+        ],
+        "manufacturing": [
+          "M1"
+        ]
+      },
+      "code_evidence_basis": {
+        "C1": "Main pp2-5 describes governing/empirical ODE sources for synthetic manufacturing trajectories.",
+        "V0": "Main-PDF-only: industrial-data calibration claim without inspectable quantified physical constraint/measurement test; alternative to historical V2 calibration-only coding, awaiting adjudication.",
+        "M1": "Five process simulations and synthetic controller-generated benchmarks; calibration-data use is claimed but no inspectable actual-manufacturing offline evaluation cohort in main."
+      },
+      "generation": {
+        "target": "synthetic continuous process-state/action/reward trajectories for biochemical manufacturing control",
+        "inputs": "process ODE/empirical parameters, bounded initial states, control setpoints/feed inputs and controller policy",
+        "conditioning": "published process models with Gym/D4RL-style interfaces and expert controller-generated offline datasets",
+        "output_scope": "simulated concentration/temperature/flow/yield-related observations; counts of benchmark trajectories are not records from actual factories"
+      },
+      "claims": [
+        {
+          "claim_id": "SM01",
+          "pdf_pages_1_based": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "location": "Sections1-3",
+          "paraphrase": "SMPL provides BeerFMT, Reactor, Atropine, PenSim and mAb simulation environments using published first-principles or empirical ODE models. States/actions represent manufacturing process variables, continuous flows and setpoints; dataset wrappers support offline control learning.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SM02",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4
+          ],
+          "location": "Physical source and validation provenance",
+          "paraphrase": "The authors report using industrial data and domain experts to validate models and tune parameters. The reviewed main PDF supplies a calibration claim, but does not provide inspectable calibration records, a quantified physical constraint metric or independent solver/metrology comparison. C1 is supported; a main-PDF-only V0 claim classification is proposed for adjudication.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SM03",
+          "pdf_pages_1_based": [
+            3,
+            4,
+            6
+          ],
+          "location": "Assumptions and limitations",
+          "paraphrase": "The CSTR assumes a well-mixed single irreversible exothermic reaction with negligible surrounding heat loss. Phenomenological models can distort outside reliable regions; realistic non-Gaussian variability, expensive state observations and full state/action-change constraints remain incomplete.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SM04",
+          "pdf_pages_1_based": [
+            2
+          ],
+          "location": "Meaning of performance and stability",
+          "paraphrase": "Reported efficiency/productivity are aggregated reward comparisons. Stability denotes reward dispersion, explicitly not control-theory stability. Low variance in failed or zero-yield trajectories is not an industrial safety/stability certificate.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SM05",
+          "pdf_pages_1_based": [
+            6,
+            7,
+            8
+          ],
+          "location": "Table1; baseline generation; offline data",
+          "paraphrase": "Offline datasets are generated by expert controllers in simulations:125000Reactor MPC,10000Atropine MPC,1000PenSim BO and1000mAb MPC trajectories. BeerFMT has a fixed-start canonical formula and no offline dataset in this report. D4RL/Torch formatting does not turn these into observed plant records.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SM06",
+          "pdf_pages_1_based": [
+            7,
+            8,
+            9
+          ],
+          "location": "Experiment protocol and failure rewards",
+          "paraphrase": "Offline models train500epochs and online models2million environment steps. A trajectory fails on early simulator errors or action/observation limit violations and receives a large negative reward. This benchmark completion rule is separate from sensor accuracy, real safety limits and process qualification.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SM07",
+          "pdf_pages_1_based": [
+            8,
+            9,
+            10
+          ],
+          "location": "Table2 and conclusion",
+          "paraphrase": "Atropine PLAS mean reward-4.8416 versus MPC-20.6094 is a simulated improvement. PenSim GPEI3.3071 exceeds displayed offline RL values, and mAb AWAC1374.2244 exceeds MPC1322.5012 with smaller reward dispersion. The conclusion identifies substantial gains mainly for atropine; no uniformly better industrial control follows.",
+          "evidence_kind": "author_reported"
+        },
+        {
+          "claim_id": "SM08",
+          "pdf_pages_1_based": [
+            8,
+            9
+          ],
+          "location": "Table2 versus discussion",
+          "paraphrase": "PenSim prose calls PLAS the highest-average offline algorithm, but displayed means include PLAS2.0421, PLASWithPert3.0056 and COMBO3.1368. Preserve table/text separately. Reactor MPC Table1 dataset reward-3.7528 differs from Table2 evaluation-0.1912; these are different reporting contexts, not silently a common baseline.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SM09",
+          "pdf_pages_1_based": [
+            3,
+            6,
+            9
+          ],
+          "location": "Failure and transfer interpretation",
+          "paraphrase": "The authors observe exploration can exploit/break simulations outside reliable regions. Reward penalties and limited input bounds do not establish a complete safety envelope or independent qualification for physical deployment.",
+          "evidence_kind": "reviewer_inference"
+        },
+        {
+          "claim_id": "SM10",
+          "pdf_pages_1_based": [
+            1,
+            3,
+            4,
+            5,
+            13,
+            14
+          ],
+          "location": "Document/source scope",
+          "paraphrase": "The official-source acquired main file ends at14 reference pages and points to separate AppendixA for detailed models. Its first-page preprint footer is retained as a version question, not proof of rejection. Full main reading does not establish full supplemental coverage or publication-version adjudication.",
+          "evidence_kind": "reviewer_inference"
+        }
+      ],
+      "author_numeric_results": {
+        "offline_training_epochs": 500,
+        "online_training_environment_steps": 2000000,
+        "Table1_simulated_dataset_trajectories": {
+          "Reactor": 125000,
+          "Atropine": 10000,
+          "PenSim": 1000,
+          "mAb": 1000,
+          "BeerFMT": null
+        },
+        "Table1_action_observation_dims": {
+          "Reactor": [
+            2,
+            3
+          ],
+          "Atropine": [
+            4,
+            39
+          ],
+          "PenSim": [
+            6,
+            9
+          ],
+          "mAb": [
+            9,
+            1970
+          ],
+          "BeerFMT": [
+            1,
+            8
+          ]
+        },
+        "Table1_max_steps": {
+          "Reactor": 100,
+          "Atropine": 60,
+          "PenSim": 1150,
+          "mAb": 200,
+          "BeerFMT": 200
+        },
+        "Table1_failure_reward": {
+          "Reactor": -1000,
+          "Atropine": -100000,
+          "PenSim": -100,
+          "mAb": -100,
+          "BeerFMT": -200
+        },
+        "Table1_Reactor_dataset_reward": {
+          "mean": -3.7528,
+          "sd": 60.447
+        },
+        "Table2_Reactor_evaluation_reward": {
+          "MPC_mean": -0.1912,
+          "MPC_sd": 15.9328,
+          "AWAC_mean": -0.0965,
+          "AWAC_sd": 13.9237
+        },
+        "Table2_Atropine_reward": {
+          "MPC_mean": -20.6094,
+          "MPC_sd": 339.5105,
+          "PLAS_mean": -4.8416,
+          "PLAS_sd": 6.793
+        },
+        "Table2_PenSim_reward": {
+          "GPEI_mean": 3.3071,
+          "PLAS_mean": 2.0421,
+          "PLASWithPert_mean": 3.0056,
+          "COMBO_mean": 3.1368
+        },
+        "Table2_mAb_reward": {
+          "MPC_mean": 1322.5012,
+          "MPC_sd": 174.7515,
+          "AWAC_mean": 1374.2244,
+          "AWAC_sd": 61.2931
+        },
+        "physical_calibration_error_metric_in_main_PDF": "not established",
+        "actual_plant_dataset_counts_in_main_PDF": "not established",
+        "statistical_significance_or_external_plant_replication": "not independently established",
+        "reward_dispersion_equated_to_control_theory_stability": false
+      },
+      "design_limitations": [
+        {
+          "pages": [
+            2,
+            3,
+            6
+          ],
+          "issue": "Industrial-data calibration is reported, but exact records, process coverage, tolerances and held-out calibration errors are not established here."
+        },
+        {
+          "pages": [
+            3,
+            4,
+            5
+          ],
+          "issue": "Exact equations and units belong to a separate appendix; valid operating regions and each environment must be examined separately."
+        },
+        {
+          "pages": [
+            3,
+            6,
+            9
+          ],
+          "issue": "Non-Gaussian process variability, inaccessible states, incomplete constraints and simulator exploitation limit direct transfer."
+        },
+        {
+          "pages": [
+            2,
+            7,
+            8
+          ],
+          "issue": "Reward/variance, horizon completion and simulator error penalties are not control-theory stability or an independently calibrated physical acceptance test."
+        },
+        {
+          "pages": [
+            7,
+            8,
+            9
+          ],
+          "issue": "Simulated trajectory counts are not actual-plant dataset counts; dataset-generation and policy-evaluation rewards need separate denominators."
+        },
+        {
+          "pages": [
+            8,
+            9
+          ],
+          "issue": "PenSim prose ranking differs from Table2. Preserve values and selection context pending pinned experiment-code clarification."
+        },
+        {
+          "pages": [
+            1,
+            14
+          ],
+          "issue": "Official-source PDF retains preprint footer and lacks AppendixA. Independent version and supplement adjudication remain pending."
+        }
+      ],
+      "open_questions": [
+        "Resolve the calibration-only V2 versus main-evidence V0 coding disagreement in independent full-paper/supplement review; retain both provenance scopes.",
+        "Read separate AppendixA completely and reconcile reaction parameters, heat-transfer units, temperature convention and code regularization before paper-parameter trajectory claims.",
+        "Qualify each of the five environments and native dependencies separately; Reactor partial completion cannot stand for all SMPL.",
+        "Establish calibration-data access, uncertainties, operating-region bounds, batch/site holdouts and observable sensor intervals.",
+        "Validate rate-of-change constraints, reward failure behavior and real-time controller deadlines independently of total reward.",
+        "Separate synthetic training trajectories from actual process records, controller evaluation, dataset selection and statistical units."
+      ],
+      "accepted_version_observation": "Acquired official NeurIPS proceedings URL PDF; title/authors and printed pages1-14 inspected. Page1 footer still says Preprint/Under review; report this artifact observation without independently resolving accepted-version status.",
+      "embedded_appendices_read_this_batch": false,
+      "coding_disagreement_for_adjudication": {
+        "previous_protocol_and_targeted_audit_physical_evidence": "V2_author_reported_calibration_only",
+        "current_main_pdf_only_proposal": "V0_claim_or_visual_example_only",
+        "reason": "Frozen general V2 definition requires constraint measurement. Main p2 reports calibration without a quantified or inspectable test. Keep historical code and claim visible; do not replace protocol/graph or infer that real-data calibration never occurred.",
+        "separate_full_supplement_review_needed": true,
+        "previous_canonical_code_modified": false,
+        "independent_adjudication_completed": false
+      },
+      "carried_forward_local_execution": {
+        "source": "runs/wp1/artifacts/SMPL_Reactor_actual_execution_numerical_audit_20261011.md",
+        "new_execution_this_batch": false,
+        "scope": "ReactorEnv only; same operator and host",
+        "smpl_commit": "c816917eebfde59d525e325b56d16db07e499531",
+        "float64_primary_cases": 14,
+        "float64_primary_horizon_completed": 0,
+        "float32_primary_cases": 14,
+        "float32_primary_horizon_completed": 10,
+        "float32_primary_early_failures": 4,
+        "float32_primary_events": 1017,
+        "float32_events_with_seed0_repeat": 1118,
+        "independent_numerical_implementation": "Separate DOP853 versus source LSODA, sharing SciPy and code parameters; not independent physical calibration",
+        "worst_scaled_state_error": 2.81411e-05,
+        "declared_scaled_state_tolerance": 0.005,
+        "level_balance_max_abs_error_m": 1.55431e-15,
+        "level_balance_tolerance_m": 1e-08,
+        "paper_supplement_U_vs_code_U": "50000 versus54.94 with temperature-label/unit ambiguity; prior targeted supplement audit",
+        "paper_parameter_trajectory_reproduction": false,
+        "full_suite_reproduction": false,
+        "independent_local_physical_validation": false,
+        "scientific_pass": false,
+        "industrial_qualification": false
+      },
+      "review_sha256": "326886123ae33782bf5f7f84d704e228e6062948363d5300ae0263e548268250",
+      "acquired_pdf_pages_read": 14,
+      "same_ai_review": true,
+      "independent_review": false,
+      "final_inclusion_decision": null,
+      "systematic_inclusion_counted": false,
+      "release_attribution_snapshot": "author_linked",
+      "release_snapshot_fresh_network_rechecked": false,
+      "independent_local_physical_validation": false,
+      "scientific_pass_awarded_this_batch": false,
+      "industrial_qualification_pass_awarded_this_batch": false
+    }
+  ]
+}
