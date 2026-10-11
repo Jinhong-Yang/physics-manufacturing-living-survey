@@ -3,13 +3,10 @@
   "source_id": "cvpr_2026",
   "venue": "CVPR",
   "year": 2026,
-  "track_scope": "main_conference",
   "source_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
   "final_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
-  "retrieved_at": "2026-10-10T14:55:22.375376+00:00",
+  "retrieved_at": "2026-10-11T22:24:22.697133+00:00",
   "http_status": 200,
-  "content_type": "text/html; charset=UTF-8",
-  "raw_response_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/index.html",
   "raw_response_sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792",
   "record_count": 4042,
   "records": [
@@ -36391,5 +36388,6 @@
       "doi": null,
       "record_id": "Tang_E3AD_An_Emotion-Aware_Vision-Language-Action_Model_for_Human-Centric_End-to-End_Autonomous_Driving_CVPR_2026_paper"
     }
-  ]
+  ],
+  "track_scope": "official_index; individual track eligibility pending"
 }

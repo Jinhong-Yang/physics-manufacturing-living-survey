@@ -3,14 +3,11 @@
   "source_id": "ijcai_2026",
   "venue": "IJCAI",
   "year": 2026,
-  "track_scope": "main_proceedings_index",
   "source_url": "https://www.ijcai.org/proceedings/2026/",
   "final_url": "https://www.ijcai.org/proceedings/2026/",
-  "retrieved_at": "2026-10-10T14:55:29.291712+00:00",
+  "retrieved_at": "2026-10-11T22:24:29.281898+00:00",
   "http_status": 200,
-  "content_type": "text/html; charset=utf-8",
-  "raw_response_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/index.html",
-  "raw_response_sha256": "7ef48df4f1a7b5bdd18f4272ad2c1311f055dec575657eee891546c2f73344c1",
+  "raw_response_sha256": "8a722137ede725248de334a4b5929320fff31725a00bfdd4f9a55899d9cb3e11",
   "record_count": 972,
   "records": [
     {
@@ -8761,5 +8758,6 @@
       "doi": null,
       "record_id": "1004"
     }
-  ]
+  ],
+  "track_scope": "official_index; individual track eligibility pending"
 }

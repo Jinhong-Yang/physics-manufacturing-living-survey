@@ -3,13 +3,10 @@
   "source_id": "icml_2026",
   "venue": "ICML",
   "year": 2026,
-  "track_scope": "PMLR_ICML_volume_306",
   "source_url": "https://proceedings.mlr.press/v306/",
   "final_url": "https://proceedings.mlr.press/v306/",
-  "retrieved_at": "2026-10-10T14:55:28.138306+00:00",
+  "retrieved_at": "2026-10-11T22:24:30.417837+00:00",
   "http_status": 200,
-  "content_type": "text/html; charset=utf-8",
-  "raw_response_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/index.html",
   "raw_response_sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e",
   "record_count": 6552,
   "records": [
@@ -58981,5 +58978,6 @@
       "doi": null,
       "record_id": "zhuo26e"
     }
-  ]
+  ],
+  "track_scope": "official_index; individual track eligibility pending"
 }

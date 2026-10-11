@@ -3,13 +3,10 @@
   "source_id": "iclr_2026",
   "venue": "ICLR",
   "year": 2026,
-  "track_scope": "official_proceedings_book",
   "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026",
   "final_url": "https://proceedings.iclr.cc/paper_files/paper/2026",
-  "retrieved_at": "2026-10-10T14:55:27.182343+00:00",
+  "retrieved_at": "2026-10-11T22:24:26.355267+00:00",
   "http_status": 200,
-  "content_type": "text/html; charset=utf-8",
-  "raw_response_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/index.html",
   "raw_response_sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5",
   "record_count": 5351,
   "records": [
@@ -48172,5 +48169,6 @@
       "doi": null,
       "record_id": "ffffd32092164225bb302d438cacbc61-Abstract-Conference"
     }
-  ]
+  ],
+  "track_scope": "official_index; individual track eligibility pending"
 }
