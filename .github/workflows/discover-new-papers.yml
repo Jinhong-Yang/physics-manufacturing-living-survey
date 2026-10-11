@@ -7,7 +7,7 @@ permissions:
   contents: write
   actions: write
 concurrency:
-  group: discover-new-papers
+  group: living-evidence-metadata
   cancel-in-progress: false
 jobs:
   update:

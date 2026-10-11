@@ -28,8 +28,10 @@ for src in sources:
 aa=ROOT/f'runs/wp1/search/aaai_ojs_catalog/aaai_{YEAR}/records.json';prior=json.loads(aa.read_text(encoding='utf-8')) if aa.exists() else None
 log=OUT/'aaai_latest_check.log'
 with log.open('wb') as output:
- process=subprocess.run([sys.executable,str(ROOT/'scripts/retrieve_aaai_ojs_catalog.py'),'--year',str(YEAR)],stdout=output,stderr=subprocess.STDOUT,timeout=1200)
-results.append({'source_id':f'aaai_{YEAR}','venue':'AAAI','year':YEAR,'url':'https://ojs.aaai.org/index.php/AAAI/issue/archive','status':'index_fetched_and_parsed' if process.returncode==0 else 'check_failed_or_parser_hold','returncode':process.returncode,'prior_capture_retained':process.returncode!=0 and bool(prior),'records_path':aa.relative_to(ROOT).as_posix(),'log_sha256':hashlib.sha256(log.read_bytes()).hexdigest()})
+ try:
+  process=subprocess.run([sys.executable,str(ROOT/'scripts/retrieve_aaai_ojs_catalog.py'),'--year',str(YEAR)],stdout=output,stderr=subprocess.STDOUT,timeout=1200);aa_returncode=process.returncode
+ except subprocess.TimeoutExpired:aa_returncode=124
+results.append({'source_id':f'aaai_{YEAR}','venue':'AAAI','year':YEAR,'url':'https://ojs.aaai.org/index.php/AAAI/issue/archive','status':'index_fetched_and_parsed' if aa_returncode==0 else 'check_failed_or_parser_hold','returncode':aa_returncode,'prior_capture_retained':aa_returncode!=0 and bool(prior),'records_path':aa.relative_to(ROOT).as_posix(),'log_sha256':hashlib.sha256(log.read_bytes()).hexdigest()})
 if YEAR not in volumes:results.append({'source_id':f'icml_{YEAR}','venue':'ICML','year':YEAR,'status':'source_locator_review_required','note':'Official PMLR volume mapping must be verified before collection; no invented current-year URL.'})
 results.append({'source_id':f'{"iccv" if YEAR%2==0 else "eccv"}_{YEAR}','venue':'ICCV' if YEAR%2==0 else 'ECCV','year':YEAR,'status':'biennial_off_year'})
 runid='catalog_2026_partial_'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
