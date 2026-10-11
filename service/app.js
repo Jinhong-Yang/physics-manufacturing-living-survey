@@ -112,7 +112,7 @@ $('clear-filters').addEventListener('click',()=>{state.filters={q:'',stratum:'',
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('search').focus();}});
 const loadGraph=window.KNOWLEDGE_GRAPH?Promise.resolve(window.KNOWLEDGE_GRAPH):fetch('data/knowledge_graph.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();});
 loadGraph.then(data=>{state.graph=data;render();}).catch(err=>{$('record-detail').innerHTML=`<div class="loading">지식그래프 데이터를 불러오지 못했습니다. <br><small>${esc(err.message)} · 프로젝트 서버 또는 GitHub Pages로 접속해 주세요.</small></div>`;});
-fetch('data/public_artifact_revision_watch.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(w=>{
+fetch('data/public_artifact_revision_watch.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(w=>{
  const target=$('revision-watch-status');if(!target)return;
  if(w.watch_status==='not_started'){
   target.textContent='GitHub 저장소 revision 감시는 아직 활성화되지 않았습니다. 배포 후 매주 공개 repository metadata만 점검합니다.';
@@ -120,11 +120,12 @@ fetch('data/public_artifact_revision_watch.json').then(r=>{if(!r.ok)throw new Er
   target.textContent=`마지막 repository metadata 확인: ${w.as_of} · ${w.available_n}개 확인 · ${w.revision_changes_n}개 revision 변경 · 과학적/산업적 pass 판정은 별도 검토`;
  }
 }).catch(()=>{const target=$('revision-watch-status');if(target)target.textContent='Repository revision watch snapshot을 아직 불러올 수 없습니다.';});
-fetch('data/discovery_queue_2026_partial.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(q=>{
+fetch('data/discovery_queue_2026_partial.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(q=>{
  const target=$('discovery-status');if(!target)return;
  const venues=q.source_frame.map(x=>x.venue).join(', ');
  const tiers=q.review_priority_counts||{};
- target.textContent=`${q.source_cutoff_date} 기준 ${venues}의 catalog ${q.source_frame_record_count.toLocaleString()}편에서 제목 후보 ${q.title_candidate_count.toLocaleString()}편(집중 후보 ${(tiers.focused_title_candidate||0).toLocaleString()}, 민감도 전용 ${(tiers.sensitivity_only||0).toLocaleString()})을 추렸습니다. 모두 초록 검토 대기이며, 2026 부분 연도 자료라 본 분석 분모와 지식그래프에는 아직 포함하지 않았습니다.`;
+ const holds=(q.latest_source_check_status||[]).filter(x=>x.status==='check_failed_or_parser_hold'||x.status==='source_locator_review_required');
+ target.textContent=`${q.source_cutoff_date} 기준 ${venues}의 catalog ${q.source_frame_record_count.toLocaleString()}편에서 제목 후보 ${q.title_candidate_count.toLocaleString()}편(집중 후보 ${(tiers.focused_title_candidate||0).toLocaleString()}, 민감도 전용 ${(tiers.sensitivity_only||0).toLocaleString()})을 추렸습니다. 모두 초록 검토 대기이며, ${q.monitored_year||2026} 부분 연도 자료라 본 분석 분모와 지식그래프에는 아직 포함하지 않았습니다.${holds.length?` 최신 확인 보류: ${holds.map(x=>x.venue).join(', ')}. 이전 취득 자료를 사용한 경우 해당 출처의 원래 시점을 유지합니다.`:''}`;
 }).catch(()=>{const target=$('discovery-status');if(target)target.textContent='신규 후보 대기열 스냅샷을 불러올 수 없습니다.';});
 fetch('data/supplemental_abstract_evidence.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(q=>{
  const target=$('sensitivity-recovery-status');if(!target)return;
