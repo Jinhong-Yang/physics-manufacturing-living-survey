@@ -753,7 +753,6 @@
       "CPU_seconds": 240
     }
   ],
-  "public_verified_version": "0.9.40",
   "public041_deployment_pending": true,
   "new_model_runs": 0,
   "new_generated_output_events": 0,
@@ -767,5 +766,20 @@
     "preserved_parent_commit": "ec37fd334b3e1fd3cc9b2bc5e614cceedc6370ea",
     "prior_verified_public_version": "0.9.40",
     "scope": "Prepared public source follow-up; deployment is a separately observed event, not physics qualification."
-  }
+  },
+  "previous_verified_public_version_at_local_review": "0.9.40",
+  "first_public041_observation": {
+    "observed_utc": "2026-10-12T02:56:27.816279+00:00",
+    "version": "0.9.41-public1",
+    "commit": "5c36e05a0f76b0aaae628a4093f1d64d79a8e582",
+    "Pages_run": 38197625635,
+    "event": "push",
+    "conclusion": "success",
+    "HTTP_SHA_matched_protected_files": 70,
+    "graph_version": "0.9.41",
+    "scope": "First public1deployment observation before the later footer/context clarification. Not proof of future commits, scientific correctness or industrial qualification.",
+    "independent_scientific_review": false,
+    "submission_ready": false
+  },
+  "original_local_evidence_sha256": "37a1d17ae6e72008108b00a523493d955f35f87b50570b4066945f89b942ea4a"
 }

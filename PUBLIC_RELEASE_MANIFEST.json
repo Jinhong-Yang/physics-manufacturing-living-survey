@@ -1,10 +1,14 @@
 {
-  "public_variant": "science0.9.41-public1",
+  "public_variant": "science0.9.41-public2",
   "prepared_date": "2026-10-12",
   "protected_scientific_files": [
     {
       "path": "evidence/source_registry.json",
       "sha256": "7b2b069ecb906336a4022d761815db3405663404acef7d86ca2da14af29a76d3"
+    },
+    {
+      "path": "provenance/deployment_observation_0.9.41_public1.json",
+      "sha256": "8832ee8e4040863fe5458380bc49566861c14521f3bd87da39fd5ea05da70dc3"
     },
     {
       "path": "provenance/original_source_bindings.json",
@@ -37,6 +41,10 @@
     {
       "path": "scripts/check_public_release.py",
       "sha256": "e6ed4bfcf754c4e5088e2ec6b251c68ddac073411e38848443626000687df27f"
+    },
+    {
+      "path": "service/README.md",
+      "sha256": "8e3ac5b6b9136046b30c8fa6693e9806ae5497ebd02d647a94b23e620d4e16f4"
     },
     {
       "path": "service/app.js",
@@ -116,7 +124,7 @@
     },
     {
       "path": "service/data/pbfm_full_review_integrated.json",
-      "sha256": "03113defaae8c460335e8a033bff391494dad6bfc2b02db789cf351e83dfd1f1"
+      "sha256": "08043935de6177e0507f5b173ab33b4ddaf919161ba8e9688cf775bd61e9b0be"
     },
     {
       "path": "service/data/physical_design_evidence_integrated.json",
@@ -216,7 +224,7 @@
     },
     {
       "path": "service/pbfm_full_review.html",
-      "sha256": "0120eed5b3d4087f8370b8f45e42284a113574b0badf868d647457a56533bc90"
+      "sha256": "422a1d543d62b9cf13eecfb53f786dac50b6d852d6f9feef4b4c0a9f0eb570e2"
     },
     {
       "path": "service/pbfm_full_review.js",
@@ -229,10 +237,6 @@
     {
       "path": "service/physical_design_evidence.js",
       "sha256": "dcf81fb85bcdf6534dc69826e8a3687e46a554121ad38dd4bba20d2d4e4ceff9"
-    },
-    {
-      "path": "service/README.md",
-      "sha256": "8e3ac5b6b9136046b30c8fa6693e9806ae5497ebd02d647a94b23e620d4e16f4"
     },
     {
       "path": "service/styles.css",
