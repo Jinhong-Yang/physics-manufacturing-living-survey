@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "run_id": "catalog_2026_partial_20261012T112030Z",
+  "year": 2026,
+  "cutoff_date": "2026-10-12",
+  "classification": "dated current-year source checks; prior captures retain original dates; separate from completed-year scientific corpus",
+  "catalogs": [
+    {
+      "source_id": "cvpr_2026",
+      "venue": "CVPR",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/records.json",
+      "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "record_count": 4042,
+      "capture_time": "2026-10-12T11:19:41.269023+00:00",
+      "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792"
+    },
+    {
+      "source_id": "iclr_2026",
+      "venue": "ICLR",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/records.json",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026",
+      "record_count": 5351,
+      "capture_time": "2026-10-12T11:19:46.011355+00:00",
+      "sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5"
+    },
+    {
+      "source_id": "ijcai_2026",
+      "venue": "IJCAI",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/records.json",
+      "url": "https://www.ijcai.org/proceedings/2026/",
+      "record_count": 972,
+      "capture_time": "2026-10-12T11:19:47.225300+00:00",
+      "sha256": "fec0c59c77098c58e8cf897837f6f769efe7872364055fe3eae19759c71caa49"
+    },
+    {
+      "source_id": "neurips_2026",
+      "venue": "NeurIPS",
+      "year": 2026,
+      "status": "check_failed_or_parser_hold",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2026",
+      "error_class": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "prior_capture_retained": false,
+      "prior_capture_time": null,
+      "record_count": 0
+    },
+    {
+      "source_id": "icml_2026",
+      "venue": "ICML",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/records.json",
+      "url": "https://proceedings.mlr.press/v306/",
+      "record_count": 6552,
+      "capture_time": "2026-10-12T11:19:48.411497+00:00",
+      "sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e"
+    },
+    {
+      "source_id": "eccv_2026",
+      "venue": "ECCV",
+      "year": 2026,
+      "status": "check_failed_or_parser_hold",
+      "url": "https://www.ecva.net/papers.php",
+      "error_class": "ValueError",
+      "error": "zero_records_parser_or_publication_review_required",
+      "prior_capture_retained": false,
+      "prior_capture_time": null,
+      "record_count": 0
+    },
+    {
+      "source_id": "aaai_2026",
+      "venue": "AAAI",
+      "year": 2026,
+      "url": "https://ojs.aaai.org/index.php/AAAI/issue/archive",
+      "status": "index_fetched_and_parsed",
+      "returncode": 0,
+      "prior_capture_retained": false,
+      "records_path": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json",
+      "log_sha256": "c917172b1c475ffedadbb904c4b1d2a0aaa1fddaa0a7a56c0663fafd4471f324"
+    },
+    {
+      "source_id": "iccv_2026",
+      "venue": "ICCV",
+      "year": 2026,
+      "status": "biennial_off_year"
+    }
+  ],
+  "venue_availability": [
+    {
+      "source_id": "cvpr_2026",
+      "venue": "CVPR",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/records.json",
+      "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "record_count": 4042,
+      "capture_time": "2026-10-12T11:19:41.269023+00:00",
+      "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792"
+    },
+    {
+      "source_id": "iclr_2026",
+      "venue": "ICLR",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/records.json",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026",
+      "record_count": 5351,
+      "capture_time": "2026-10-12T11:19:46.011355+00:00",
+      "sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5"
+    },
+    {
+      "source_id": "ijcai_2026",
+      "venue": "IJCAI",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/records.json",
+      "url": "https://www.ijcai.org/proceedings/2026/",
+      "record_count": 972,
+      "capture_time": "2026-10-12T11:19:47.225300+00:00",
+      "sha256": "fec0c59c77098c58e8cf897837f6f769efe7872364055fe3eae19759c71caa49"
+    },
+    {
+      "source_id": "neurips_2026",
+      "venue": "NeurIPS",
+      "year": 2026,
+      "status": "check_failed_or_parser_hold",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2026",
+      "error_class": "HTTPError",
+      "error": "HTTP Error 404: Not Found",
+      "prior_capture_retained": false,
+      "prior_capture_time": null,
+      "record_count": 0
+    },
+    {
+      "source_id": "icml_2026",
+      "venue": "ICML",
+      "year": 2026,
+      "status": "index_fetched_and_parsed",
+      "records_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/records.json",
+      "url": "https://proceedings.mlr.press/v306/",
+      "record_count": 6552,
+      "capture_time": "2026-10-12T11:19:48.411497+00:00",
+      "sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e"
+    },
+    {
+      "source_id": "eccv_2026",
+      "venue": "ECCV",
+      "year": 2026,
+      "status": "check_failed_or_parser_hold",
+      "url": "https://www.ecva.net/papers.php",
+      "error_class": "ValueError",
+      "error": "zero_records_parser_or_publication_review_required",
+      "prior_capture_retained": false,
+      "prior_capture_time": null,
+      "record_count": 0
+    },
+    {
+      "source_id": "aaai_2026",
+      "venue": "AAAI",
+      "year": 2026,
+      "url": "https://ojs.aaai.org/index.php/AAAI/issue/archive",
+      "status": "index_fetched_and_parsed",
+      "returncode": 0,
+      "prior_capture_retained": false,
+      "records_path": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json",
+      "log_sha256": "c917172b1c475ffedadbb904c4b1d2a0aaa1fddaa0a7a56c0663fafd4471f324"
+    },
+    {
+      "source_id": "iccv_2026",
+      "venue": "ICCV",
+      "year": 2026,
+      "status": "biennial_off_year"
+    }
+  ],
+  "limitations": [
+    "A failed check does not prove a source or paper is absent.",
+    "Retained captures are not newly retrieved records.",
+    "Title candidates require subsequent eligibility and release/physics review."
+  ]
+}
