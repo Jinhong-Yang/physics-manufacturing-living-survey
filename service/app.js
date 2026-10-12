@@ -34,13 +34,16 @@ function renderList(){
 }
 function edgeTarget(id,type){return state.graph.edges.filter(e=>e.source===id&&(!type||e.type===type)).map(e=>state.graph.nodes.find(n=>n.id===e.target)).filter(Boolean);}
 function claims(work){return edgeTarget(work.id,'ASSERTS').filter(n=>n.type==='Claim');}
-function evidenceForClaim(claim){return edgeTarget(claim.id,'SUPPORTED_BY').filter(n=>n.type==='EvidenceSpan');}
+function evidenceForClaim(claim){return ClaimEvidenceResolution.spans(state.graph,claim,edgeTarget(claim.id,'SUPPORTED_BY').filter(n=>n.type==='EvidenceSpan'));}
 function renderDetail(){
  const n=selectedWork();if(!n)return;
  const p=n.properties,c=p.cvm||{},claimNodes=claims(n);
  const codingOverlay=state.graph.assessment_overlays?.[n.id];
- const claim=(k)=>claimNodes.find(x=>x.id.endsWith(':'+k))?.properties.text||'';
- const allEvidence=claimNodes.flatMap(x=>evidenceForClaim(x).map(ev=>({...ev.properties,claim:x.label}))).concat(edgeTarget(n.id,"SUPPORTED_BY").filter(ev=>ev.type==="EvidenceSpan").map(ev=>({...ev.properties,claim:ev.label})));
+ const claim=(k)=>ClaimEvidenceResolution.text(state.graph,claimNodes.find(x=>x.id.endsWith(':'+k)));
+ const bindingAudit=state.graph.claim_routing_audit_overlays?.[n.id];
+ const reviewedBindings=claimNodes.filter(x=>state.graph.claim_evidence_resolution_overlays?.[x.id]).length;
+ const bindingNote=bindingAudit?`<p class="detail-summary"><b>주장과 출처의 대응:</b> ${reviewedBindings?`이 기록의 ${reviewedBindings}개 주장에 대해 실제 원문과 고정 저장소 문서를 같은 AI가 다시 대조했습니다. 독립 검토는 대기 중입니다.`:'기존 근거는 항목 순서에 따라 연결된 기록입니다. 주장별 의미 대응 확인이 남아 있으며, 재사용 자체를 오류로 판정하지 않습니다.'}</p>`:'';
+ const allEvidence=claimNodes.flatMap(x=>evidenceForClaim(x).map(ev=>({...ev.properties,span_id:ev.id,claim:reviewedBindings&&!state.graph.claim_evidence_resolution_overlays?.[x.id]?'과거 '+x.label:x.label}))).concat(edgeTarget(n.id,"SUPPORTED_BY").filter(ev=>ev.type==="EvidenceSpan").map(ev=>({...ev.properties,span_id:ev.id,claim:ev.label}))).map(ev=>SourceReferenceResolution.resolve(state.graph,ev));
  const paper=p.paper_url?`<a href="${esc(p.paper_url)}" target="_blank" rel="noopener">논문 원문 ↗</a>`:'';
  const artifact=p.repository_url?`<a href="${esc(p.repository_url)}" target="_blank" rel="noopener">공개 저장소 ↗</a>`:'';
  const codingCards=c.physics_coupling_codes?`<div class="coding-grid">
@@ -63,6 +66,8 @@ function renderDetail(){
  const releaseLinks=releaseObservations.map(r=>`<p class="detail-summary"><b>본문·정적 검토 시점의 공개 자산:</b> ${esc(r.properties.summary_ko)} <a href="${esc(r.properties.public_display_path)}">고정 버전·입력 규약·미해결 근거 ↗</a> · 새 실행·산업 통과 아님</p>`).join('');
  const fullSourceFollowup=state.graph.fulltext_review_overlays?.[followupWorkId];
  const fullSourceLink=fullSourceFollowup?`<p class="detail-summary"><a href="${esc(fullSourceFollowup.public_review_path)}">${esc(fullSourceFollowup.label)} ↗</a> · 같은 AI 후속 검토, 독립 판정 대기</p>`:'';
+ const dataDiagnosticFollowup=state.graph.data_diagnostic_overlays?.[followupWorkId];
+ const dataDiagnosticLink=dataDiagnosticFollowup?`<p class="detail-summary"><a href="${esc(dataDiagnosticFollowup.public_review_path)}">${esc(dataDiagnosticFollowup.label)} ↗</a> · 원본 데이터 점검, 새 생성·산업 합격 아님</p>`:'';
  const observedExecution=ExecutionEvidence.describe(n,state.graph);
  const runNodes=observedExecution.runs;
  const runHistory=runNodes.length?`<p class=\"section-label\">실행 이력</p><ul class=\"evidence-list\">${runNodes.map(run=>{const q=run.properties;const failures=state.graph.nodes.filter(f=>f.type==='FailureEvent'&&f.properties.run_id===run.id);return `<li><b>${esc(q.failure_attribution==='investigator_harness'?'연구용 검사 중단':q.status==='passed'?'기술 실행 완료':q.status==='partial'?'부분 완료':'실패')} · ${esc(q.observed_at||'')}</b><br>${esc(q.scope||'')} ${failures.map(f=>`<br>${esc(f.properties.category)}: ${esc(f.properties.message||f.properties.detail||'')}`).join('')}<br><a href=\"${esc(q.public_log||'../'+(q.log||''))}\">실행 관측 요약(JSON) ↗</a></li>`}).join('')}</ul>`:'';
@@ -72,14 +77,14 @@ function renderDetail(){
  const executionContext=observedExecution.context;
  $('record-detail').innerHTML=`<div class="detail-top"><div><p class="eyebrow">${esc(strata[p.stratum]||'RESEARCH RECORD')} · ${esc(p.pilot_id)}</p><h2 class="detail-title">${esc(n.label)}</h2><div class="detail-meta"><span>${esc(parseVenue(p.venue))}</span><span>·</span><span>대상 층: ${esc(strata[p.stratum]||p.stratum)}</span><span>·</span><span>${esc(reviewLabel)}</span></div></div><span class="status-chip">${esc(executionLabel)}</span></div>
  <div class="detail-links">${paper}${artifact}</div>
- <p class="section-label">연구 범위와 결과</p><p class="detail-summary">${esc(p.summary||claim('novelty_or_benchmark_scope')||'')}</p>
+ <p class="section-label">연구 범위와 결과</p><p class="detail-summary">${esc(claim('novelty_or_benchmark_scope')||p.summary||'')}</p>
  <p class="section-label">물리·제조 평가</p>${codingCards}
  <p class="section-label">${executionFollowups?'기존 감사의 공개 자료 설명':'공개 실행 자료'}</p>${executionFollowups?'<p class="detail-summary">아래 자산 설명과 검증 과제는 당시의 기록입니다. 이후 생성·저장 관측은 실행 이력과 버전별 결과에서 확인하세요.</p>':''}<p class="detail-summary">${esc(claim('artifact_readiness')||p.artifact_web_audit_scope||'코드/모델 공개 상태는 이 비교 자료에서 방법별로 판정하지 않았습니다.')}</p><p class="detail-summary"><b>해석:</b> ${esc(executionContext)}</p>
  ${runHistory}
- ${fullSourceLink}${readingLinks}${executionFollowups}${supplementLinks}${releaseLinks}
- <p class="section-label">근거 구간</p><ul class="evidence-list">${evidence}</ul>
- <p class="section-label">${executionFollowups?'기존 감사 당시의 검증 과제':'미해결 항목'}</p><ul class="unresolved-list">${unresolved}</ul>
- <p class="section-label">코딩 범위</p><p class="detail-summary">${esc(p.assessed_scope||'')}<br><span class="muted">${esc(p.coding_status||'')}</span></p>`;
+ ${dataDiagnosticLink}${fullSourceLink}${readingLinks}${executionFollowups}${supplementLinks}${releaseLinks}
+ <p class="section-label">근거 구간</p>${bindingNote}<ul class="evidence-list">${evidence}</ul>
+ <p class="section-label">${executionFollowups||reviewedBindings?'기존 감사 당시의 검증 과제':'미해결 항목'}</p><ul class="unresolved-list">${unresolved}</ul>
+ <p class="section-label">${reviewedBindings?'기존 감사의 코딩 범위':'코딩 범위'}</p><p class="detail-summary">${esc(p.assessed_scope||'')}<br><span class="muted">${esc(p.coding_status||'')}</span></p>`;
 }
 function svgNode(x,y,w,label,type,sub=''){
  const short=label.length>25?label.slice(0,24)+'…':label;

@@ -5,12 +5,12 @@ from html.parser import HTMLParser
 R=Path(__file__).resolve().parents[1]
 def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-g=read('service/data/knowledge_graph.json');parent=read('provenance/parent_graph_0.9.40.json');reg=read('evidence/source_registry.json')['sources'];ids={n['id'] for n in g['nodes']};sids={s['source_id'] for s in reg}
-assert g['graph_version']=='0.9.41' and (len(g['nodes']),len(g['edges']))==(2157,2586)
+g=read('service/data/knowledge_graph.json');parent=read('provenance/parent_graph_0.9.41.json');reg=read('evidence/source_registry.json')['sources'];ids={n['id'] for n in g['nodes']};sids={s['source_id'] for s in reg}
+assert g['graph_version']=='0.9.45' and (len(g['nodes']),len(g['edges']))==(2377,3099)
 assert len(ids)==len(g['nodes']) and len({e['id'] for e in g['edges']})==len(g['edges'])
 assert all(e['source'] in ids and e['target'] in ids for e in g['edges'])
-assert g['nodes'][:2083]==parent['nodes'] and g['edges'][:2451]==parent['edges']
-assert len(reg)==len(sids)==377
+assert g['nodes'][:2157]==parent['nodes'] and g['edges'][:2586]==parent['edges']
+assert len(reg)==len(sids)==391
 assert sum(n['type']=='Work' for n in g['nodes'])==95 and sum(n['type']=='ExecutionRun' for n in g['nodes'])==89
 assert g['summary']['industrial_readiness_passes']==0 and g['summary']['methods_executed']==9 and g['summary']['methods_with_passed_generation_runs']==6
 assert all(not n['properties'].get('R4_clean_start_pass',False) and not n['properties'].get('industrial_pass',False) for n in g['nodes'] if n['type']=='ExecutionRun')
@@ -73,9 +73,29 @@ assert [n for n in g['nodes'] if n['type']=='ExecutionRun']==[n for n in parent[
 assert reg[:374]==read('provenance/parent_source_registry_0.9.40.json')['sources']
 assert g['summary']['independently_reviewed']==0 and not full['independent_review']
 assert g['fulltext_review_overlays']['constraint040:work:PBFM']['public_review_path']=='pbfm_full_review.html'
-assert g['public_projection_context']['version']=='0.9.41'
+assert g['public_projection_context']['version']=='0.9.45'
+
+
+assert reg[:377]==read('provenance/parent_source_registry_0.9.41.json')['sources']
+assert len(g['source_reference_resolution_overlays'])==125
+assert len(g['claim_evidence_resolution_overlays'])==18
+for cid,q in g['claim_evidence_resolution_overlays'].items():
+ assert cid in by and not q['independent_review'] and not q['new_execution'] and not q['scientific_codes_changed']
+ assert all(x in by and by[x]['type']=='EvidenceSpan' for x in q['reviewed_span_ids'])
+assert by['evidence:binding045:02']['properties']['source_id']=='S391'
+assert by['evidence:binding045:02']['properties']['source_lines']==[41,47,51,54,55,58,67]
+assert by['evidence:binding045:05']['properties']['physical_pages']==[3,4,5]
+assert [n for n in g['nodes'] if n['type'] in ['Work','ExecutionRun']]==[n for n in parent['nodes'] if n['type'] in ['Work','ExecutionRun']]
+data=read('service/data/pbfm_dynamic_data_integrated.json')
+assert data['original_test_fields']==512 and data['original_nominal_groups']==16
+assert data['preflight']['loaded_ema_keys']==51
+assert data['public_projection_context']['version']=='0.9.45'
+assert 'not immediately executable' in g['claim_evidence_resolution_overlays']['claim:V03:artifact_readiness']['display_claim_text']
+assert 'Manufacturing use remains unestablished' in g['claim_evidence_resolution_overlays']['claim:P03:industrial_scope']['display_claim_text']
+for n in g['nodes'][2157:]:
+ assert not re.search(r'(^|[/\\])private_(assets|sources|runtime|metadata|reading)([/\\]|$)',json.dumps(n))
 
 manifest=read('PUBLIC_RELEASE_MANIFEST.json')
 for f in manifest['protected_scientific_files']:assert sha(R/f['path'])==f['sha256'],f['path']
 assert not manifest['submission_ready'] and not manifest['private_payloads_distributed']
-print(json.dumps({'validation':'passed','graph_version':'0.9.41','audit_Work_nodes':95,'execution_records':89,'local_HTML_links_checked':True,'protected_scientific_files':len(manifest['protected_scientific_files']),'private_dependencies_required':False,'independent_scientific_validation':False,'submission_ready':False}))
+print(json.dumps({'validation':'passed','graph_version':'0.9.45','audit_Work_nodes':95,'execution_records':89,'local_HTML_links_checked':True,'protected_scientific_files':len(manifest['protected_scientific_files']),'private_dependencies_required':False,'independent_scientific_validation':False,'submission_ready':False}))

@@ -1,9 +1,11 @@
-## Full-source follow-up 0.9.41
+## Evidence follow-up 0.9.45
 
-Current public projection: 2,157 nodes, 2,586 edges, 95 audit Work records, 89 Run records, and 377 registry Sources. The exact public 0.9.40 graph, registry, and source-binding record are preserved in provenance/. All parent node, edge, and source objects remain unchanged.
+Current public projection: 2,377 nodes, 3,099 edges, 95 audit Work records, 89 execution records and 391 Sources. All public 0.9.41 parent node, edge and source objects remain exact; prior bytes and source-binding metadata are retained in provenance/. Work and Run counts are not included-paper or independently qualified-reproduction counts.
 
-PBFM's same acquired 29-page paper received a full same-AI reading. Twenty-four paper claims, five selected implementation claims, and six manufactured CPU calculation cases are linked to sources. These cases are component Results, not new model Runs; earlier 64 generation events are not counted again. Current-source time/error broadcasting differs from an explicitly paired comparator. That comparator does not settle the paper's weighting exponent, prove the acquired checkpoint's training commit, or explain the earlier negative permeability causally. Matched author-reported dynamic-stall batch timings and remaining exact validation-CSV access are displayed separately.
+The added evidence includes original PBFM dynamic-stall test-input diagnosis, source-identity resolution and explicit claim-to-passage correspondence for GLASS, TGI-AD and PBFM. Eighteen mappings have same-AI targeted passage checks; unreviewed historical bindings remain provisional. Data diagnosis and strict CPU loading are not new generation. Documentation, observed execution, numerical checks and manufacturing qualification are displayed separately. No model Run, generated event, independent review or industrial pass is added.
 
-Source review, public deployment, and byte integrity do not establish independent physics, manufacturing qualification, final inclusion, service superiority, or submission readiness. Upstream source, PDFs/pixels, weights, generated arrays, private host paths, and runtime assets are excluded.
+[Detailed executable/manufacturing research design v2](docs/research_design_v2_20261012_KO.md)
 
-Historical public0.40 evidence pages retain their original targeted-review scope. The new full-source page and assessment overlays express the later reading scope. Only the two designated metadata views are writable by metadata workflows.
+Upstream PDFs/text/pixels, documentation/source payloads, weights, input/output arrays, private host paths and runtimes are excluded. Public deployment is separately verified; it does not establish scientific adjudication, manufacturing readiness, service superiority or submission readiness. The sections below describe historical snapshots.
+
+Existing historical evidence readers retain their source-review dates and scopes. Only the two designated metadata views are writable by metadata workflows.

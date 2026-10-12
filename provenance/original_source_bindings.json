@@ -1,11 +1,10 @@
 {
-  "local_graph_version": "0.9.41",
-  "original_graph_sha256": "4a6b437576daf661702c95b3a492e9b14a073967908576d75598f8b623475349",
-  "local_parent_graph_sha256": "93f8149d701d5efba40b77b65dfb343a81aca3d472699147f1ee1fd8a3fbe3ac",
-  "preserved_public_parent_commit": "ec37fd334b3e1fd3cc9b2bc5e614cceedc6370ea",
-  "preserved_public_parent_graph_sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826",
-  "preserved_public_parent_registry_sha256": "396b289d65e101c6350a9becc4fe0e96b1d000fe5a9fba2f1c6b884fbb574caa",
-  "transformation": "All historical public0.40node/edge/source objects preserved. New local0.41evidence appended with machine/private paths omitted; original acquisition and observation digests retained. Publication context is separate from scientific decisions.",
+  "local_graph_version": "0.9.45",
+  "original_graph_sha256": "049ccbb2383b1bfcf9a9b96a1f2716e84ced89105baaad59a9533e2a66434540",
+  "preserved_public_parent_commit": "1a60409e43a829976865ab65ec886ee90bbc81dd",
+  "preserved_public_parent_graph_sha256": "de181d2844e94739ed4268dc1178cf14c847a4747ad0fe7cc001505c6dd9209b",
+  "preserved_public_parent_registry_sha256": "7b2b069ecb906336a4022d761815db3405663404acef7d86ca2da14af29a76d3",
+  "transformation": "Exact public041parent node/edge/source objects preserved. Local042–045follow-ups appended with private/machine paths omitted. Original source digests retained. Publication and scientific decisions are separate.",
   "private_payloads_distributed": false,
   "redaction_fields": [
     {
@@ -169,6 +168,34 @@
       "kind": "machine_or_private_path_redaction"
     },
     {
+      "field": "graph/nodes/2157/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2159/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2162/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2165/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2172/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2176/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2179/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
       "field": "graph/provenance/constraint_forward_integration/source_inputs/1/private_path",
       "kind": "machine_or_private_path_redaction"
     },
@@ -269,23 +296,63 @@
       "kind": "machine_or_private_path_redaction"
     },
     {
-      "field": "PBFM_full_source/code_claims/0/path",
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/0/private_path",
       "kind": "machine_or_private_path_redaction"
     },
     {
-      "field": "PBFM_full_source/code_claims/1/path",
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/1/private_path",
       "kind": "machine_or_private_path_redaction"
     },
     {
-      "field": "PBFM_full_source/code_claims/2/path",
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/2/private_path",
       "kind": "machine_or_private_path_redaction"
     },
     {
-      "field": "PBFM_full_source/code_claims/3/path",
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/3/private_path",
       "kind": "machine_or_private_path_redaction"
     },
     {
-      "field": "PBFM_full_source/code_claims/4/path",
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/4/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/5/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_dynamic_data_forward_integration/source_inputs/6/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/0/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/1/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/2/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/3/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/4/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/4/additional_spans/0/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/source_claims/5/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_dynamic_data/condition_mapping/card_path",
       "kind": "machine_or_private_path_redaction"
     }
   ]

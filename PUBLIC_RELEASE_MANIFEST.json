@@ -1,10 +1,14 @@
 {
-  "public_variant": "science0.9.41-public2",
+  "public_variant": "science0.9.45-public1",
   "prepared_date": "2026-10-12",
   "protected_scientific_files": [
     {
+      "path": "docs/research_design_v2_20261012_KO.md",
+      "sha256": "118dd954533c21d5bb7190334e1ef3e9419b948fe0321460dc847cd73b15d58c"
+    },
+    {
       "path": "evidence/source_registry.json",
-      "sha256": "7b2b069ecb906336a4022d761815db3405663404acef7d86ca2da14af29a76d3"
+      "sha256": "5bfa83b29cb83ad2a64c9c91ad7e4d7e83d4e80cd8484d7ba0085642348b9133"
     },
     {
       "path": "provenance/deployment_observation_0.9.41_public1.json",
@@ -12,11 +16,15 @@
     },
     {
       "path": "provenance/original_source_bindings.json",
-      "sha256": "625c6b6acace8913d8a5e1418acf35fbb72621d6798a3c277f83936369a6ad8b"
+      "sha256": "407c14140999e2a65d6b1ab7906fc9f5989ca703082f27fa0f2456d23e87087f"
     },
     {
       "path": "provenance/original_source_bindings_0.9.40.json",
       "sha256": "465a1e1b48042ae48bfd749313eef7e04a453ab142a077f7f8fe94adc8b6b557"
+    },
+    {
+      "path": "provenance/original_source_bindings_0.9.41.json",
+      "sha256": "625c6b6acace8913d8a5e1418acf35fbb72621d6798a3c277f83936369a6ad8b"
     },
     {
       "path": "provenance/parent_graph_0.9.38.json",
@@ -31,6 +39,10 @@
       "sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826"
     },
     {
+      "path": "provenance/parent_graph_0.9.41.json",
+      "sha256": "de181d2844e94739ed4268dc1178cf14c847a4747ad0fe7cc001505c6dd9209b"
+    },
+    {
       "path": "provenance/parent_source_registry_0.9.39.json",
       "sha256": "44c1e0cce73265d5edc5b2ed9b3174be80958bd582aa0e61386a2e9b455c8ed7"
     },
@@ -39,16 +51,16 @@
       "sha256": "396b289d65e101c6350a9becc4fe0e96b1d000fe5a9fba2f1c6b884fbb574caa"
     },
     {
-      "path": "scripts/check_public_release.py",
-      "sha256": "e6ed4bfcf754c4e5088e2ec6b251c68ddac073411e38848443626000687df27f"
+      "path": "provenance/parent_source_registry_0.9.41.json",
+      "sha256": "7b2b069ecb906336a4022d761815db3405663404acef7d86ca2da14af29a76d3"
     },
     {
-      "path": "service/README.md",
-      "sha256": "8e3ac5b6b9136046b30c8fa6693e9806ae5497ebd02d647a94b23e620d4e16f4"
+      "path": "scripts/check_public_release.py",
+      "sha256": "1b895a939a3ad75d3cfbcf0787a8ec324b3475add076bb024a22345b785f8169"
     },
     {
       "path": "service/app.js",
-      "sha256": "6e304f27872075b4a5aeee745cddd5ad739d1866885f1b2972838213830c39a0"
+      "sha256": "eef7f476cdb2ccf805e653ddb33b13861fca393254169c410a5888db2d786755"
     },
     {
       "path": "service/boundary_readings.html",
@@ -57,6 +69,10 @@
     {
       "path": "service/boundary_readings.js",
       "sha256": "29b59ce4ef8eb499913355f6b6c807ed538b9fa0f0ce9af5f036d8402059f9c1"
+    },
+    {
+      "path": "service/claim_evidence_resolution.js",
+      "sha256": "a981735247376b371d52eced9758f7ee46ca9bc50d7630a13d59e72ce3c025ac"
     },
     {
       "path": "service/data/boundary_main_pdf_reading_staged.json",
@@ -80,11 +96,11 @@
     },
     {
       "path": "service/data/knowledge_graph.js",
-      "sha256": "ddeb168db4c95f7b59ca7322a04b8b34043259b591532a8b722a039939f80273"
+      "sha256": "cc0c75f3a4d2927982083c265c045f2b18cbab91c3e981019d48df06e6023208"
     },
     {
       "path": "service/data/knowledge_graph.json",
-      "sha256": "de181d2844e94739ed4268dc1178cf14c847a4747ad0fe7cc001505c6dd9209b"
+      "sha256": "2970400aba9c08e4af21ed0cc756afd0a2eef10d79fd93a955d1d5c7c54ccea3"
     },
     {
       "path": "service/data/m2pde_execution_integrated.json",
@@ -121,6 +137,10 @@
     {
       "path": "service/data/manufacturing_design_integrated.json",
       "sha256": "2e816e1c49959bba05f16bccbc01b94ce449634ec106104436f9fb341d41116b"
+    },
+    {
+      "path": "service/data/pbfm_dynamic_data_integrated.json",
+      "sha256": "03d65d7accf24c713d2337ed35046c9340ddbdda4153682712cf4e91811ba643"
     },
     {
       "path": "service/data/pbfm_full_review_integrated.json",
@@ -196,7 +216,7 @@
     },
     {
       "path": "service/index.html",
-      "sha256": "b21bff53a8146ec299aa95263b52f52f786d8bdcc59c4e07ea509de582fcd158"
+      "sha256": "8f0e201ce1a7ec8c5eb9b6336d47ed7b8ab02ad6b8e6b2ca3885670792e8ebe9"
     },
     {
       "path": "service/m2pde_execution.html",
@@ -223,6 +243,14 @@
       "sha256": "6a2dbc006327108509b8aaddc69ff25d6603b74a91e6a443d33fc372e83fc694"
     },
     {
+      "path": "service/pbfm_dynamic_data.html",
+      "sha256": "b2f7f82e456e85dc1dce65f47e38f08a87947768507de82547e4e19be95b2b12"
+    },
+    {
+      "path": "service/pbfm_dynamic_data.js",
+      "sha256": "0a05d091e7742c80eaa87b293941a707b455664f7408ac69cc3c0371126f7f68"
+    },
+    {
       "path": "service/pbfm_full_review.html",
       "sha256": "422a1d543d62b9cf13eecfb53f786dac50b6d852d6f9feef4b4c0a9f0eb570e2"
     },
@@ -237,6 +265,14 @@
     {
       "path": "service/physical_design_evidence.js",
       "sha256": "dcf81fb85bcdf6534dc69826e8a3687e46a554121ad38dd4bba20d2d4e4ceff9"
+    },
+    {
+      "path": "service/README.md",
+      "sha256": "5e0ef646ec7fa9e019ac4f8b699234deae03e17ad5e4adb15a5689c3c08e05c4"
+    },
+    {
+      "path": "service/source_reference_resolution.js",
+      "sha256": "920f85841eb3cffced50c4824446757ad82920faa2541d4717b73789c4a917d4"
     },
     {
       "path": "service/styles.css",
@@ -293,9 +329,9 @@
   ],
   "private_payloads_distributed": false,
   "submission_ready": false,
-  "source_graph_original_sha256": "4a6b437576daf661702c95b3a492e9b14a073967908576d75598f8b623475349",
-  "published_graph_sha256": "de181d2844e94739ed4268dc1178cf14c847a4747ad0fe7cc001505c6dd9209b",
-  "preserved_public_parent_commit": "ec37fd334b3e1fd3cc9b2bc5e614cceedc6370ea",
-  "graph_projection": "All historical public0.40node/edge/source objects preserved. New local0.41evidence appended with machine/private paths omitted; original acquisition and observation digests retained. Publication context is separate from scientific decisions.",
+  "source_graph_original_sha256": "049ccbb2383b1bfcf9a9b96a1f2716e84ced89105baaad59a9533e2a66434540",
+  "published_graph_sha256": "2970400aba9c08e4af21ed0cc756afd0a2eef10d79fd93a955d1d5c7c54ccea3",
+  "preserved_public_parent_commit": "1a60409e43a829976865ab65ec886ee90bbc81dd",
+  "graph_projection": "Exact public041parent node/edge/source objects preserved. Local042–045follow-ups appended with private/machine paths omitted. Original source digests retained. Publication and scientific decisions are separate.",
   "byte_encoding": "UTF-8 LF"
 }

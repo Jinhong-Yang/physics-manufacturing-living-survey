@@ -3461,6 +3461,155 @@
       "verification_scope": "Dataset registration metadata only;contentURLnull and rightsListempty;no exactCSVdownload or manufacturing-use clearance",
       "independent_human_review": false,
       "industrial_pass": false
+    },
+    {
+      "source_id": "S378",
+      "title": "PBFM pinned dynamic-stall test data",
+      "url": "https://huggingface.co/datasets/thuerey-group/PBFM/resolve/022378d965c92611edcd01cc79044e9a230128f6/data/dynamic_stall/dynamic_stall_test.h5",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "027f91e47c38952132ea562add0f0f8682021dd0369f1ac65999034015a86df2",
+      "verification_scope": "Exact author-linked test file acquired;official pointer/file SHA/size matched. Dataset/reference diagnosis only;not generator output or industrial clearance.",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S379",
+      "title": "PBFM current dynamic_stall/dataset_loader.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/dataset_loader.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "d1c401a8b35bf7cb650d81b8e8c84cdc36c2baf8e6fd7e30d2c8c078dc740c40",
+      "verification_scope": "Pinned code bytes and selected AST-derived range review;not whole-program or training reproduction",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S380",
+      "title": "PBFM current dynamic_stall/train_ddp.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/train_ddp.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "1ba98f3adc4efc535149cdc04c6cc5d3cf1d2eb4d7452b2c33e8bb3bf463edca",
+      "verification_scope": "Pinned code bytes and selected AST-derived range review;not whole-program or training reproduction",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S381",
+      "title": "PBFM current dynamic_stall/sample.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/sample.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "179652c8fd2502eddde51283830d474fd1d5e93a4d2ef9b7a03711afe3cbc1ab",
+      "verification_scope": "Pinned code bytes and selected AST-derived range review;not whole-program or training reproduction",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S382",
+      "title": "PBFM current dynamic_stall/dit.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/dit.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "f1599278645c942e28c9647357c2de6c9824ee3baae289de5dd034b7425f9778",
+      "verification_scope": "Pinned code bytes and selected AST-derived range review;not whole-program or training reproduction",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S383",
+      "title": "PBFM pinned dataset card",
+      "url": "https://huggingface.co/datasets/thuerey-group/PBFM/raw/022378d965c92611edcd01cc79044e9a230128f6/README.md",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "a6b1c2ebab1e68eb1328f36664088408abcc2b032771a4b4cefcdba557f0f354",
+      "verification_scope": "Full pinned card text inspected for fields/condition ranges. License tag metadata is not complete industrial-use clearance.",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S384",
+      "title": "cqylunlun/GLASS pinned README.md",
+      "url": "https://raw.githubusercontent.com/cqylunlun/GLASS/f788d567db552820d744ca2d93e989265aad8c45/README.md",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:56.928860+00:00",
+      "revision": "f788d567db552820d744ca2d93e989265aad8c45",
+      "original_sha256": "6b424723c17e26019d5f32f9f0fc4fbbd98d2ae35ae4477bf68c0b64f91d4ad5",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S385",
+      "title": "cqylunlun/GLASS pinned requirements.txt",
+      "url": "https://raw.githubusercontent.com/cqylunlun/GLASS/f788d567db552820d744ca2d93e989265aad8c45/requirements.txt",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:57.197301+00:00",
+      "revision": "f788d567db552820d744ca2d93e989265aad8c45",
+      "original_sha256": "74ba9f3c860bc544ea870d5f6ac22ea56f04eeb5a8e22a76bafa700b2d44e2b8",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S386",
+      "title": "cqylunlun/GLASS pinned LICENSE",
+      "url": "https://raw.githubusercontent.com/cqylunlun/GLASS/f788d567db552820d744ca2d93e989265aad8c45/LICENSE",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:57.460016+00:00",
+      "revision": "f788d567db552820d744ca2d93e989265aad8c45",
+      "original_sha256": "2afffd9c8ea7b969c6154837555177dfc66de264045c28207aedc4c2febed555",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S387",
+      "title": "cqylunlun/GLASS pinned tree.json",
+      "url": "https://api.github.com/repos/cqylunlun/GLASS/git/trees/f788d567db552820d744ca2d93e989265aad8c45?recursive=1",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:56.655611+00:00",
+      "revision": "f788d567db552820d744ca2d93e989265aad8c45",
+      "original_sha256": "614c9ef703d9a4306c16fbfb8ecdc111342d6befa3e8c0777a8097d795a7d758",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S388",
+      "title": "MingyuLee82/TGI_AD_v1 pinned README.md",
+      "url": "https://raw.githubusercontent.com/MingyuLee82/TGI_AD_v1/9387a921c5fa0a1f7670b75e8d19b7020af2a38a/README.md",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:58.711600+00:00",
+      "revision": "9387a921c5fa0a1f7670b75e8d19b7020af2a38a",
+      "original_sha256": "6eae6cf002bb18200b737507b7e1813884f0197fe1cb55572d96191493054edf",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S389",
+      "title": "MingyuLee82/TGI_AD_v1 pinned LICENSE",
+      "url": "https://raw.githubusercontent.com/MingyuLee82/TGI_AD_v1/9387a921c5fa0a1f7670b75e8d19b7020af2a38a/LICENSE",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:58.975590+00:00",
+      "revision": "9387a921c5fa0a1f7670b75e8d19b7020af2a38a",
+      "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S390",
+      "title": "MingyuLee82/TGI_AD_v1 pinned tree.json",
+      "url": "https://api.github.com/repos/MingyuLee82/TGI_AD_v1/git/trees/9387a921c5fa0a1f7670b75e8d19b7020af2a38a?recursive=1",
+      "accessed_date": "2026-10-12",
+      "observed_utc": "2026-10-12T05:13:58.438234+00:00",
+      "revision": "9387a921c5fa0a1f7670b75e8d19b7020af2a38a",
+      "original_sha256": "09e838afc4814a342357a1c1635f2b2271f8cfe2b6e6355d611e1a35ed2bca89",
+      "verification_scope": "Pinned small documentation/tree acquisition and targeted same-AI claim correspondence;no model execution or rights clearance",
+      "systematic_fulltext_coding_completed": false
+    },
+    {
+      "source_id": "S391",
+      "title": "PBFM fixed author README",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/README.md",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "a2f62eda279e6b2db318e36c9b380927587d145c9203b6cfc0896d0b81d23485",
+      "original_acquisition_utc": "2026-10-12T00:00:03.703190+00:00",
+      "reviewed_utc": "2026-10-12T05:52:40.064752+00:00",
+      "revision": "2a702673bae0cc4778d63af1c0243ad99e728b78",
+      "verification_scope": "Already acquired pinned README reinspection;documentation is separate from model execution and full asset-right clearance",
+      "systematic_fulltext_coding_completed": false
     }
   ],
   "protocol_version": "3.0",

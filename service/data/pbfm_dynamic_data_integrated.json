@@ -1,0 +1,824 @@
+{
+  "version": "0.9.42",
+  "as_of": "2026-10-12",
+  "method": "PBFM",
+  "work_id": "constraint040:work:PBFM",
+  "source_id": "S378",
+  "data_url": "https://huggingface.co/datasets/thuerey-group/PBFM/resolve/022378d965c92611edcd01cc79044e9a230128f6/data/dynamic_stall/dynamic_stall_test.h5",
+  "data_sha256": "027f91e47c38952132ea562add0f0f8682021dd0369f1ac65999034015a86df2",
+  "data_bytes": 268453888,
+  "dataset_revision": "022378d965c92611edcd01cc79044e9a230128f6",
+  "original_nominal_groups": 16,
+  "original_test_fields": 512,
+  "stored_channels": 8,
+  "model_output_channels": 6,
+  "acquisition": {
+    "completed_utc": "2026-10-12T03:03:25.446132+00:00",
+    "success": true,
+    "dataset_revision": "022378d965c92611edcd01cc79044e9a230128f6",
+    "path": "data/dynamic_stall/dynamic_stall_test.h5",
+    "bytes": 268453888,
+    "sha256": "027f91e47c38952132ea562add0f0f8682021dd0369f1ac65999034015a86df2",
+    "pointer_sha256": "7341c8ac49ace13d21c2eb5bdcd3bc2d56a6bda61e50beca13702ac45e3fd22b",
+    "pointer_HTTP_status": 200,
+    "download_HTTP_status": 200,
+    "response_host": "us.aws.cdn.hf.co",
+    "seconds": 15.672,
+    "new_model_runs": 0,
+    "new_generated_events": 0,
+    "training_data_acquired": false,
+    "actual_Darcy_validation_CSVs_acquired": false,
+    "industrial_pass": false,
+    "independent_scientific_review": false,
+    "private_asset_not_redistributed": true
+  },
+  "preflight": {
+    "completed_utc": "2026-10-12T03:09:03.109474+00:00",
+    "success": true,
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.4",
+    "h5py": "3.16.0",
+    "device": "cpu",
+    "schema": {
+      "fields": {
+        "shape": [
+          16,
+          32,
+          8,
+          128,
+          128
+        ],
+        "dtype": "float32",
+        "attribute_names": []
+      },
+      "nominal_condition": {
+        "shape": [
+          16,
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "attribute_names": []
+      },
+      "real_condition": {
+        "shape": [
+          16,
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "attribute_names": []
+      }
+    },
+    "condition_and_first_sample_checks": {
+      "nominal_min": [
+        5.072425842285156,
+        3.0288619995117188,
+        10.324588775634766,
+        5.453258514404297
+      ],
+      "nominal_max": [
+        9.759925842285156,
+        4.880713939666748,
+        19.924589157104492,
+        9.84101390838623
+      ],
+      "real_min": [
+        4.947086334228516,
+        2.9121220111846924,
+        10.019157409667969,
+        5.138420104980469
+      ],
+      "real_max": [
+        10.251103401184082,
+        5.083296775817871,
+        21.027414321899414,
+        10.318135261535645
+      ],
+      "nominal_constant_within_group": true,
+      "group_count": 16,
+      "perturbations_per_group": 32,
+      "unique_nominal_groups": 16,
+      "first_sample_channel_min": [
+        28361.5625,
+        -6186404.5,
+        -4137735.75,
+        241.7661590576172,
+        0.4086853265762329,
+        -443.4323425292969,
+        -1.0,
+        -0.9998630285263062
+      ],
+      "first_sample_channel_max": [
+        114692.765625,
+        16226813.0,
+        24071482.0,
+        300.984375,
+        1.338550329208374,
+        213.74630737304688,
+        1.0,
+        0.9999995231628418
+      ],
+      "physical_meanings_of_two_extra_channels_not_confirmed_from_HDF_metadata": true
+    },
+    "loaded_ema_keys": 51,
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "model_parameter_elements": 1425632,
+    "trainable_parameter_elements": 1294560,
+    "all_loaded_tensors_finite": true,
+    "seconds": 17.922,
+    "no_forward_or_generation": true,
+    "new_model_runs": 0,
+    "new_generated_events": 0,
+    "author_training_commit_verified": false,
+    "clean_environment_reproduction": false,
+    "scientific_R4_pass": false,
+    "industrial_pass": false
+  },
+  "source_claims": [
+    {
+      "path": "[private source path omitted; original digest retained]",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/dataset_loader.py",
+      "source_sha256": "d1c401a8b35bf7cb650d81b8e8c84cdc36c2baf8e6fd7e30d2c8c078dc740c40",
+      "lines": [
+        15,
+        45,
+        48,
+        84
+      ],
+      "statement": "The loader reads8stored channels,normalizes the first6as model outputs,and returns the remaining2as the third TensorDataset item.",
+      "caveat": "Dataset-card6field list describes model outputs;two stored support channels are distinct. No external geometry calibration established.",
+      "evidence_origin": "selected_source_inspection_same_AI",
+      "independent_review": false,
+      "line_ranges": [
+        [
+          15,
+          45
+        ],
+        [
+          48,
+          84
+        ]
+      ],
+      "claim_id": "PD01",
+      "locator_scope": "AST-derived full bounded functions/loops or exact std calls; range endpoints are not a claim that every individual line independently establishes the statement.",
+      "source_id": "S379"
+    },
+    {
+      "path": "[private source path omitted; original digest retained]",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/train_ddp.py",
+      "source_sha256": "1ba98f3adc4efc535149cdc04c6cc5d3cf1d2eb4d7452b2c33e8bb3bf463edca",
+      "lines": [
+        131,
+        165,
+        169,
+        256
+      ],
+      "statement": "The third data item is named cos_sin and passed to the original residual function during training;validation repeats the group-averaged third item128times.",
+      "caveat": "Names and call paths identify the implementation role,not independent verification that stored direction fields match an external mesh.",
+      "evidence_origin": "selected_source_inspection_same_AI",
+      "independent_review": false,
+      "line_ranges": [
+        [
+          131,
+          165
+        ],
+        [
+          169,
+          256
+        ]
+      ],
+      "claim_id": "PD02",
+      "locator_scope": "AST-derived full bounded functions/loops or exact std calls; range endpoints are not a claim that every individual line independently establishes the statement.",
+      "source_id": "S380"
+    },
+    {
+      "path": "[private source path omitted; original digest retained]",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/flow_matching.py",
+      "source_sha256": "5477c9847d2c66eafa5c09639df6f7448b151079921aea57576638e016a5f598",
+      "lines": [
+        44,
+        68,
+        84,
+        88
+      ],
+      "statement": "The residual uses the two direction channels as ds_cos/ds_sin and chooses the shear sign from a dot product while retaining gradient magnitude and source Sutherland viscosity.",
+      "caveat": "This is current-source signed-shear consistency;not all RANS equations or external physical calibration.",
+      "evidence_origin": "selected_source_inspection_same_AI",
+      "independent_review": false,
+      "line_ranges": [
+        [
+          44,
+          68
+        ],
+        [
+          84,
+          88
+        ]
+      ],
+      "claim_id": "PD03",
+      "locator_scope": "AST-derived full bounded functions/loops or exact std calls; range endpoints are not a claim that every individual line independently establishes the statement.",
+      "source_id": "S375"
+    },
+    {
+      "path": "[private source path omitted; original digest retained]",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/dataset_loader.py",
+      "source_sha256": "d1c401a8b35bf7cb650d81b8e8c84cdc36c2baf8e6fd7e30d2c8c078dc740c40",
+      "lines": [
+        9,
+        10,
+        15,
+        45,
+        48,
+        84
+      ],
+      "statement": "Conditioning uses nominal_condition and source min_values[5,3,10,5]/max_values[10,5,20,10];real_condition is not loaded by these two loader functions.",
+      "caveat": "Mapping/order/scaling from stored four columns to Table7physical variables remains unverified in these assessed paths;do not infer mapping from numeric ranges.",
+      "evidence_origin": "selected_source_inspection_same_AI",
+      "independent_review": false,
+      "line_ranges": [
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          15,
+          45
+        ],
+        [
+          48,
+          84
+        ]
+      ],
+      "claim_id": "PD04",
+      "locator_scope": "AST-derived full bounded functions/loops or exact std calls; range endpoints are not a claim that every individual line independently establishes the statement.",
+      "source_id": "S379"
+    },
+    {
+      "path": "[private source path omitted; original digest retained]",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/sample.py",
+      "source_sha256": "179652c8fd2502eddde51283830d474fd1d5e93a4d2ef9b7a03711afe3cbc1ab",
+      "lines": [
+        68
+      ],
+      "statement": "Reference standard deviation is supplied by NumPy population std in the loader;predicted standard deviation uses Torch.std with no explicit correction argument.",
+      "caveat": "Current-runtime controls confirm correction1;neither estimator is declared wrong and no author benchmark is numerically corrected.",
+      "evidence_origin": "selected_source_inspection_same_AI",
+      "independent_review": false,
+      "additional_spans": [
+        {
+          "path": "[private source path omitted; original digest retained]",
+          "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/dataset_loader.py",
+          "source_sha256": "d1c401a8b35bf7cb650d81b8e8c84cdc36c2baf8e6fd7e30d2c8c078dc740c40",
+          "line_ranges": [
+            [
+              77,
+              77
+            ]
+          ]
+        }
+      ],
+      "line_ranges": [
+        [
+          68,
+          68
+        ]
+      ],
+      "claim_id": "PD05",
+      "locator_scope": "AST-derived full bounded functions/loops or exact std calls; range endpoints are not a claim that every individual line independently establishes the statement.",
+      "source_id": "S381"
+    },
+    {
+      "path": "[private source path omitted; original digest retained]",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/dit.py",
+      "source_sha256": "f1599278645c942e28c9647357c2de6c9824ee3baae289de5dd034b7425f9778",
+      "lines": [
+        234,
+        248
+      ],
+      "statement": "The source forward pass receives a four-column y, repeats it across hidden features and adds it to the timestep embedding.",
+      "caveat": "Generic class-label docstring does not define physical column units. This is selected source inspection,not an actual model forward.",
+      "evidence_origin": "selected_source_inspection_same_AI",
+      "independent_review": false,
+      "line_ranges": [
+        [
+          234,
+          248
+        ]
+      ],
+      "claim_id": "PD06",
+      "locator_scope": "AST-derived full bounded functions/loops or exact std calls; range endpoints are not a claim that every individual line independently establishes the statement.",
+      "source_id": "S382"
+    }
+  ],
+  "condition_mapping": {
+    "paper_source_id": "S365",
+    "paper_SHA": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+    "paper_physical_page": 18,
+    "printed_locus": "AppendixC.3/Table7",
+    "page_text_read_this_stage": true,
+    "page_pixels_viewed_this_stage": true,
+    "pinned_dataset_card_sha256": "a6b1c2ebab1e68eb1328f36664088408abcc2b032771a4b4cefcdba557f0f354",
+    "card_path": "[private source path omitted; original digest retained]",
+    "statement": "PaperTable7and pinned card declare Mach.3–.5,alpha0/alphas5–10degrees,and reduced frequency.05–.1. Source-loader bounds are stated in stored coordinate order with no explicit variable map found in assessed card/loader/model paths. Reconciliation remains open;no unit-conversion defect is asserted.",
+    "scope": "Selected existing-PDF reinspection,no newPDFacquisition,no newstudy,no independent review"
+  },
+  "diagnostics": {
+    "completed_utc": "2026-10-12T03:23:31.514513+00:00",
+    "success": true,
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "device": "cpu",
+    "dtype": "float64",
+    "seconds": 1.984,
+    "original_nominal_groups": 16,
+    "original_perturbed_fields": 512,
+    "all_original_fields_finite": true,
+    "nonpositive_pressure_temperature_density_points": [
+      0,
+      0,
+      0
+    ],
+    "direction_unit_circle_max_abs_error": 8.390838601712858e-08,
+    "max_scaled_same_formula_discrepancy": 1.7956719008977743e-18,
+    "records": [
+      {
+        "nominal_group": 0,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.1257390977898075e-10,
+        "source_signed_shear_MSE_mean": 9.587195811958335e-17,
+        "source_ideal_gas_MSE_min_per_field": 9.532716277672572e-11,
+        "source_ideal_gas_MSE_max_per_field": 1.3219939486652638e-10,
+        "source_signed_shear_MSE_min_per_field": 8.493727448836321e-17,
+        "source_signed_shear_MSE_max_per_field": 1.0557001618982144e-16,
+        "ideal_gas_residual_of_group_mean": 6.172359167384664e-09,
+        "signed_shear_residual_of_group_mean": 2.303060927204981e-08,
+        "direction_unit_circle_max_abs_error": 8.348286328896393e-08,
+        "max_scaled_formula_discrepancy": 6.14309771866509e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 1,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 3.274180498074909e-11,
+        "source_signed_shear_MSE_mean": 3.8523495565462776e-17,
+        "source_ideal_gas_MSE_min_per_field": 2.8908584890267148e-11,
+        "source_ideal_gas_MSE_max_per_field": 4.3021180140572075e-11,
+        "source_signed_shear_MSE_min_per_field": 3.4030833119814965e-17,
+        "source_signed_shear_MSE_max_per_field": 4.4459259366658594e-17,
+        "ideal_gas_residual_of_group_mean": 4.9111584106447864e-08,
+        "signed_shear_residual_of_group_mean": 7.717666714143613e-08,
+        "direction_unit_circle_max_abs_error": 8.390838601712858e-08,
+        "max_scaled_formula_discrepancy": 1.7956719008977743e-18,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 2,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.2667982499193237e-10,
+        "source_signed_shear_MSE_mean": 9.733502443760096e-17,
+        "source_ideal_gas_MSE_min_per_field": 1.132699016910058e-10,
+        "source_ideal_gas_MSE_max_per_field": 1.477030133655427e-10,
+        "source_signed_shear_MSE_min_per_field": 8.85094698985048e-17,
+        "source_signed_shear_MSE_max_per_field": 1.139777481150494e-16,
+        "ideal_gas_residual_of_group_mean": 6.822818700058953e-09,
+        "signed_shear_residual_of_group_mean": 5.47293469053673e-08,
+        "direction_unit_circle_max_abs_error": 8.339191737150031e-08,
+        "max_scaled_formula_discrepancy": 1.1383416251393676e-18,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 3,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.3568772697787446e-10,
+        "source_signed_shear_MSE_mean": 1.1229331678178515e-16,
+        "source_ideal_gas_MSE_min_per_field": 1.1700989904331957e-10,
+        "source_ideal_gas_MSE_max_per_field": 1.5496560376517904e-10,
+        "source_signed_shear_MSE_min_per_field": 1.0210384511573242e-16,
+        "source_signed_shear_MSE_max_per_field": 1.233111295376529e-16,
+        "ideal_gas_residual_of_group_mean": 2.348279505866616e-08,
+        "signed_shear_residual_of_group_mean": 6.95491899828964e-08,
+        "direction_unit_circle_max_abs_error": 8.337628187859991e-08,
+        "max_scaled_formula_discrepancy": 1.0231902712950916e-18,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 4,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 4.9555982579601935e-11,
+        "source_signed_shear_MSE_mean": 6.57580133820541e-17,
+        "source_ideal_gas_MSE_min_per_field": 4.2913565416773446e-11,
+        "source_ideal_gas_MSE_max_per_field": 6.418031203387302e-11,
+        "source_signed_shear_MSE_min_per_field": 5.701896918315919e-17,
+        "source_signed_shear_MSE_max_per_field": 7.823056870311929e-17,
+        "ideal_gas_residual_of_group_mean": 1.0329898895589168e-08,
+        "signed_shear_residual_of_group_mean": 4.5133217668837085e-08,
+        "direction_unit_circle_max_abs_error": 8.348183300199707e-08,
+        "max_scaled_formula_discrepancy": 6.174846571236507e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 5,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.0145903833055964e-10,
+        "source_signed_shear_MSE_mean": 8.440689697813244e-17,
+        "source_ideal_gas_MSE_min_per_field": 8.722035338603196e-11,
+        "source_ideal_gas_MSE_max_per_field": 1.1666141170569625e-10,
+        "source_signed_shear_MSE_min_per_field": 7.49468097668116e-17,
+        "source_signed_shear_MSE_max_per_field": 9.374808698992944e-17,
+        "ideal_gas_residual_of_group_mean": 2.2568191040331286e-09,
+        "signed_shear_residual_of_group_mean": 1.0121112127019601e-08,
+        "direction_unit_circle_max_abs_error": 8.348915514488908e-08,
+        "max_scaled_formula_discrepancy": 4.1673954006977603e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 6,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.9137864882690042e-10,
+        "source_signed_shear_MSE_mean": 1.2506372358186174e-16,
+        "source_ideal_gas_MSE_min_per_field": 1.495368799000119e-10,
+        "source_ideal_gas_MSE_max_per_field": 2.36769654336926e-10,
+        "source_signed_shear_MSE_min_per_field": 1.1238106423312634e-16,
+        "source_signed_shear_MSE_max_per_field": 1.3243593539924298e-16,
+        "ideal_gas_residual_of_group_mean": 8.558010509308668e-09,
+        "signed_shear_residual_of_group_mean": 4.54461368229521e-08,
+        "direction_unit_circle_max_abs_error": 8.366067305587421e-08,
+        "max_scaled_formula_discrepancy": 8.131262432252485e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 7,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 4.056702334494214e-11,
+        "source_signed_shear_MSE_mean": 4.849314351374911e-17,
+        "source_ideal_gas_MSE_min_per_field": 3.6307707415140245e-11,
+        "source_ideal_gas_MSE_max_per_field": 4.980416598490999e-11,
+        "source_signed_shear_MSE_min_per_field": 4.395130545515295e-17,
+        "source_signed_shear_MSE_max_per_field": 5.496648911965115e-17,
+        "ideal_gas_residual_of_group_mean": 6.606992537405149e-09,
+        "signed_shear_residual_of_group_mean": 2.8902992875599112e-08,
+        "direction_unit_circle_max_abs_error": 8.318735211787498e-08,
+        "max_scaled_formula_discrepancy": 1.720971747630424e-18,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 8,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.0488171832704638e-10,
+        "source_signed_shear_MSE_mean": 8.427161197006335e-17,
+        "source_ideal_gas_MSE_min_per_field": 9.83117838047688e-11,
+        "source_ideal_gas_MSE_max_per_field": 1.1448805155836762e-10,
+        "source_signed_shear_MSE_min_per_field": 7.547906804675108e-17,
+        "source_signed_shear_MSE_max_per_field": 9.478288621203244e-17,
+        "ideal_gas_residual_of_group_mean": 1.9610689809382186e-09,
+        "signed_shear_residual_of_group_mean": 1.3976462441324493e-08,
+        "direction_unit_circle_max_abs_error": 8.338650303585382e-08,
+        "max_scaled_formula_discrepancy": 4.1419660591969205e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 9,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.0662808479697906e-10,
+        "source_signed_shear_MSE_mean": 9.638857198942446e-17,
+        "source_ideal_gas_MSE_min_per_field": 8.182275370596736e-11,
+        "source_ideal_gas_MSE_max_per_field": 1.3088893169086687e-10,
+        "source_signed_shear_MSE_min_per_field": 8.475288686702022e-17,
+        "source_signed_shear_MSE_max_per_field": 1.0655004320724963e-16,
+        "ideal_gas_residual_of_group_mean": 2.789318725667822e-08,
+        "signed_shear_residual_of_group_mean": 1.1501659050348929e-07,
+        "direction_unit_circle_max_abs_error": 8.359619130260398e-08,
+        "max_scaled_formula_discrepancy": 7.106578734860094e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 10,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 3.0327786457449234e-11,
+        "source_signed_shear_MSE_mean": 5.014266491397081e-17,
+        "source_ideal_gas_MSE_min_per_field": 1.581175146698979e-11,
+        "source_ideal_gas_MSE_max_per_field": 6.283110488280576e-11,
+        "source_signed_shear_MSE_min_per_field": 4.01453343872959e-17,
+        "source_signed_shear_MSE_max_per_field": 5.746511037150388e-17,
+        "ideal_gas_residual_of_group_mean": 8.162171779465916e-10,
+        "signed_shear_residual_of_group_mean": 7.523796219533901e-10,
+        "direction_unit_circle_max_abs_error": 8.337798718116574e-08,
+        "max_scaled_formula_discrepancy": 1.6300086044003628e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 11,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 6.434697038622813e-11,
+        "source_signed_shear_MSE_mean": 6.899334193001164e-17,
+        "source_ideal_gas_MSE_min_per_field": 5.0078367500294884e-11,
+        "source_ideal_gas_MSE_max_per_field": 7.998881223207083e-11,
+        "source_signed_shear_MSE_min_per_field": 6.019348992008575e-17,
+        "source_signed_shear_MSE_max_per_field": 7.837726034097842e-17,
+        "ideal_gas_residual_of_group_mean": 3.143616872625006e-08,
+        "signed_shear_residual_of_group_mean": 5.7297004526240846e-08,
+        "direction_unit_circle_max_abs_error": 8.301433140900372e-08,
+        "max_scaled_formula_discrepancy": 7.343743191334055e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 12,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.9715837641071137e-10,
+        "source_signed_shear_MSE_mean": 1.3082483058236492e-16,
+        "source_ideal_gas_MSE_min_per_field": 1.4253310299533104e-10,
+        "source_ideal_gas_MSE_max_per_field": 2.4595243788410154e-10,
+        "source_signed_shear_MSE_min_per_field": 1.1164617395305339e-16,
+        "source_signed_shear_MSE_max_per_field": 1.5105685752483882e-16,
+        "ideal_gas_residual_of_group_mean": 2.52338769605268e-08,
+        "signed_shear_residual_of_group_mean": 2.1045642051352395e-07,
+        "direction_unit_circle_max_abs_error": 8.386619043676546e-08,
+        "max_scaled_formula_discrepancy": 1.3822772201301467e-18,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 13,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 6.002554984819607e-11,
+        "source_signed_shear_MSE_mean": 5.134165614297779e-17,
+        "source_ideal_gas_MSE_min_per_field": 4.453187356009068e-11,
+        "source_ideal_gas_MSE_max_per_field": 6.758045783052567e-11,
+        "source_signed_shear_MSE_min_per_field": 4.546847099330623e-17,
+        "source_signed_shear_MSE_max_per_field": 6.034633570426796e-17,
+        "ideal_gas_residual_of_group_mean": 2.353436860368964e-10,
+        "signed_shear_residual_of_group_mean": 4.3190381780348944e-10,
+        "direction_unit_circle_max_abs_error": 8.362476577872258e-08,
+        "max_scaled_formula_discrepancy": 9.566177264102794e-20,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 14,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 6.047872589819257e-11,
+        "source_signed_shear_MSE_mean": 6.469452531850122e-17,
+        "source_ideal_gas_MSE_min_per_field": 5.224240242947068e-11,
+        "source_ideal_gas_MSE_max_per_field": 6.992812625637764e-11,
+        "source_signed_shear_MSE_min_per_field": 5.797616947447629e-17,
+        "source_signed_shear_MSE_max_per_field": 6.869065735385261e-17,
+        "ideal_gas_residual_of_group_mean": 8.171774657174882e-09,
+        "signed_shear_residual_of_group_mean": 7.38354413713075e-08,
+        "direction_unit_circle_max_abs_error": 8.342805557504107e-08,
+        "max_scaled_formula_discrepancy": 5.415711989524452e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "nominal_group": 15,
+        "original_perturbed_fields": 32,
+        "source_ideal_gas_MSE_mean": 1.2601105813956123e-10,
+        "source_signed_shear_MSE_mean": 1.0095801975493272e-16,
+        "source_ideal_gas_MSE_min_per_field": 1.0833091127374345e-10,
+        "source_ideal_gas_MSE_max_per_field": 1.4402065657844585e-10,
+        "source_signed_shear_MSE_min_per_field": 8.917749233396e-17,
+        "source_signed_shear_MSE_max_per_field": 1.1182800303129614e-16,
+        "ideal_gas_residual_of_group_mean": 7.65622800281331e-09,
+        "signed_shear_residual_of_group_mean": 4.6831098104848804e-08,
+        "direction_unit_circle_max_abs_error": 8.370478710162388e-08,
+        "max_scaled_formula_discrepancy": 4.184317985316363e-19,
+        "nonpositive_original_pressure_temperature_density_points": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "negative_control": {
+      "manufactured": true,
+      "scope": "Pressure offset of one source pressure normalization scale on first original field;software sensitivity check,not observed defective field",
+      "unmodified_normalized_ideal_gas_MSE": 1.1327929591175784e-10,
+      "modified_normalized_ideal_gas_MSE": 1.0000062233346387,
+      "increase": 1.0000062232213593,
+      "detected": true
+    },
+    "scope": "Acquired original test-data/source-definition diagnostic;no model generation. NumPy/Torch share original algebra and normalization. Mean-field and per-field residuals are distinct quantities. No independent geometry, solver calibration, physical tolerance or manufacturing profile.",
+    "all_test_data_physics_certified": false,
+    "all_variables_units_reconciled": false,
+    "new_model_runs": 0,
+    "new_generated_events": 0,
+    "scientific_R4_pass": false,
+    "industrial_pass": false,
+    "independent_review": false
+  },
+  "summary": {
+    "original_groups": 16,
+    "original_perturbed_fields": 512,
+    "per_field_mean_ideal_gas_MSE": 9.628138937974405e-11,
+    "per_field_mean_signed_shear_MSE": 8.221004968515478e-17,
+    "residual_of_group_mean_ideal_gas_MSE": 1.354657147045367e-08,
+    "residual_of_group_mean_signed_shear_MSE": 5.454291085604058e-08,
+    "groups_with_mean_field_ideal_gas_residual_larger": 16,
+    "groups_with_mean_field_signed_shear_residual_larger": 16,
+    "no_new_model_or_generated_output": true,
+    "scope": "Equal32fields/group,descriptive dataset/source residual summaries;not model or manufacturing results"
+  },
+  "std_conventions": {
+    "completed_utc": "2026-10-12T03:26:00.636801+00:00",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.4",
+    "controls": [
+      {
+        "n": 32,
+        "NumPy_default_population_std": 9.233092656309694,
+        "Torch_default_corrected_std": 9.38083151964686,
+        "observed_ratio": 1.016001016001524,
+        "analytical_ratio": 1.016001016001524
+      },
+      {
+        "n": 128,
+        "NumPy_default_population_std": 36.94928957368463,
+        "Torch_default_corrected_std": 37.094473981982816,
+        "observed_ratio": 1.0039292882210538,
+        "analytical_ratio": 1.0039292882210538
+      }
+    ],
+    "hypothetical_same32field_comparison": {
+      "nominal_group": 0,
+      "normalized_std_MSE_by_channel": [
+        3.318786748774835e-08,
+        9.906296479061443e-08,
+        1.8277077960244195e-08,
+        4.14347053675521e-08,
+        3.5264818125805105e-08,
+        7.228102935764191e-08
+      ],
+      "scope": "Both estimates use the same original32dataset fields;no generated samples. This shows a convention difference,not the paper benchmark error."
+    },
+    "source_reference_std_ddof": 0,
+    "current_source_generator_std_correction": 1,
+    "source_generator_statistics_samples_per_condition": 128,
+    "scope": "Source/runtime convention audit;not an assertion that either estimator is scientifically wrong or a numerical correction to reported model metrics.",
+    "new_model_runs": 0,
+    "new_generated_events": 0,
+    "scientific_R4_pass": false,
+    "industrial_pass": false
+  },
+  "stored_condition_bounds": {
+    "completed_utc": "2026-10-12T03:13:15.566655+00:00",
+    "source_bounds": {
+      "min_values": [
+        5,
+        3,
+        10,
+        5
+      ],
+      "max_values": [
+        10,
+        5,
+        20,
+        10
+      ]
+    },
+    "results": {
+      "nominal_condition": {
+        "shape": [
+          16,
+          32,
+          4
+        ],
+        "condition_vectors": 512,
+        "vectors_outside_loader_box": 0,
+        "groups_with_any_outside": 0,
+        "below_count_by_stored_column": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "above_count_by_stored_column": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "real_condition": {
+        "shape": [
+          16,
+          32,
+          4
+        ],
+        "condition_vectors": 512,
+        "vectors_outside_loader_box": 56,
+        "groups_with_any_outside": 11,
+        "below_count_by_stored_column": [
+          6,
+          10,
+          0,
+          0
+        ],
+        "above_count_by_stored_column": [
+          3,
+          5,
+          18,
+          14
+        ]
+      }
+    },
+    "scope": "Stored-coordinate source-normalizer box only. Nominal groups and perturbed conditions are not independent manufacturing observations;no physical variable unit was assigned from ranges.",
+    "new_model_runs": 0,
+    "new_generated_events": 0,
+    "scientific_R4_pass": false,
+    "industrial_pass": false
+  },
+  "resource_observation": {
+    "name": "NVIDIA GeForce RTX 5080",
+    "total_MiB": 16303,
+    "free_MiB": 958,
+    "utilization_percent": 94,
+    "gate_free_MiB_at_least": 4096,
+    "gate_utilization_percent_at_most": 20,
+    "resource_gate_satisfied": false
+  },
+  "original_trial": {
+    "batch": 128,
+    "conditions": 16,
+    "steps": 20,
+    "started": false,
+    "RNG_seed_specified": false
+  },
+  "verified_public_version": "0.9.41",
+  "local042_publication_pending": true,
+  "new_model_runs": 0,
+  "new_generated_events": 0,
+  "scientific_R4_pass": false,
+  "industrial_pass": false,
+  "independent_review": false,
+  "submission_ready": false,
+  "public_projection_context": {
+    "version": "0.9.45",
+    "preserved_parent_commit": "1a60409e43a829976865ab65ec886ee90bbc81dd",
+    "prior_verified_public_version": "0.9.41",
+    "scope": "Public projection preparation;actual deployment is separately observed and does not establish independent physics or manufacturing qualification."
+  }
+}
