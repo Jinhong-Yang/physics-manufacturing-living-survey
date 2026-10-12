@@ -1,11 +1,11 @@
 {
-  "local_graph_version": "0.9.40",
-  "original_graph_sha256": "93f8149d701d5efba40b77b65dfb343a81aca3d472699147f1ee1fd8a3fbe3ac",
-  "local_parent_graph_sha256": "5576ed0a40719cf2254c0647ed1c2f11ed8a5825cb48f8b25db60bb0fe79e543",
-  "preserved_public_parent_commit": "20a470c1f1d91f7535457ddb456e171759fb6042",
-  "preserved_public_parent_graph_sha256": "76b3d48a240471c027ba993a2eb19ba5f9ced3357b719ceabf5dc4dbd90aadd5",
-  "preserved_public_parent_registry_sha256": "44c1e0cce73265d5edc5b2ed9b3174be80958bd582aa0e61386a2e9b455c8ed7",
-  "transformation": "Preserve all historical public-parent node/edge/source objects;append sanitized new local evidence. Machine/private-acquisition paths omitted;public links are observation summaries. Local acquisition/observation digests identify original bytes,not sanitized projection bytes.",
+  "local_graph_version": "0.9.41",
+  "original_graph_sha256": "4a6b437576daf661702c95b3a492e9b14a073967908576d75598f8b623475349",
+  "local_parent_graph_sha256": "93f8149d701d5efba40b77b65dfb343a81aca3d472699147f1ee1fd8a3fbe3ac",
+  "preserved_public_parent_commit": "ec37fd334b3e1fd3cc9b2bc5e614cceedc6370ea",
+  "preserved_public_parent_graph_sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826",
+  "preserved_public_parent_registry_sha256": "396b289d65e101c6350a9becc4fe0e96b1d000fe5a9fba2f1c6b884fbb574caa",
+  "transformation": "All historical public0.40node/edge/source objects preserved. New local0.41evidence appended with machine/private paths omitted; original acquisition and observation digests retained. Publication context is separate from scientific decisions.",
   "private_payloads_distributed": false,
   "redaction_fields": [
     {
@@ -157,6 +157,18 @@
       "kind": "machine_or_private_path_redaction"
     },
     {
+      "field": "graph/nodes/2135/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2140/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/2145/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
       "field": "graph/provenance/constraint_forward_integration/source_inputs/1/private_path",
       "kind": "machine_or_private_path_redaction"
     },
@@ -230,6 +242,50 @@
     },
     {
       "field": "graph/provenance/constraint_forward_integration/source_inputs/19/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_fullreview_forward_integration/source_inputs/0/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_fullreview_forward_integration/source_inputs/1/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_fullreview_forward_integration/source_inputs/2/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_fullreview_forward_integration/source_inputs/3/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_fullreview_forward_integration/source_inputs/4/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/pbfm_fullreview_forward_integration/source_inputs/5/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_full_source/code_claims/0/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_full_source/code_claims/1/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_full_source/code_claims/2/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_full_source/code_claims/3/path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "PBFM_full_source/code_claims/4/path",
       "kind": "machine_or_private_path_redaction"
     }
   ]

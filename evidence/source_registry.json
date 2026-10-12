@@ -3431,6 +3431,36 @@
       "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
       "independent_human_review": false,
       "industrial_pass": false
+    },
+    {
+      "source_id": "S375",
+      "title": "PBFM current dynamic_stall/flow_matching.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/flow_matching.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "5477c9847d2c66eafa5c09639df6f7448b151079921aea57576638e016a5f598",
+      "verification_scope": "Exact pinned source bytes and selected source-formula/shape review;no new training or generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S376",
+      "title": "PBFM current darcy_flow/train_ddp.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/train_ddp.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "b2f049bb56b50c5e6b9a3e7e53da22725593be109ef82c060766c326199d85dd",
+      "verification_scope": "Exact pinned source bytes and selected source-formula/shape review;no new training or generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S377",
+      "title": "PIDM dataset DOI registration metadata200",
+      "url": "https://api.datacite.org/dois/10.3929/ethz-b-000674074",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "f269826e71df2983a69ead852ea8d5b673c53c85d653005a0462d0a56eedce2e",
+      "verification_scope": "Dataset registration metadata only;contentURLnull and rightsListempty;no exactCSVdownload or manufacturing-use clearance",
+      "independent_human_review": false,
+      "industrial_pass": false
     }
   ],
   "protocol_version": "3.0",

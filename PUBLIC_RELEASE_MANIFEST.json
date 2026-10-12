@@ -1,13 +1,17 @@
 {
-  "public_variant": "science0.9.40-public1",
+  "public_variant": "science0.9.41-public1",
   "prepared_date": "2026-10-12",
   "protected_scientific_files": [
     {
       "path": "evidence/source_registry.json",
-      "sha256": "396b289d65e101c6350a9becc4fe0e96b1d000fe5a9fba2f1c6b884fbb574caa"
+      "sha256": "7b2b069ecb906336a4022d761815db3405663404acef7d86ca2da14af29a76d3"
     },
     {
       "path": "provenance/original_source_bindings.json",
+      "sha256": "625c6b6acace8913d8a5e1418acf35fbb72621d6798a3c277f83936369a6ad8b"
+    },
+    {
+      "path": "provenance/original_source_bindings_0.9.40.json",
       "sha256": "465a1e1b48042ae48bfd749313eef7e04a453ab142a077f7f8fe94adc8b6b557"
     },
     {
@@ -19,16 +23,24 @@
       "sha256": "76b3d48a240471c027ba993a2eb19ba5f9ced3357b719ceabf5dc4dbd90aadd5"
     },
     {
+      "path": "provenance/parent_graph_0.9.40.json",
+      "sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826"
+    },
+    {
       "path": "provenance/parent_source_registry_0.9.39.json",
       "sha256": "44c1e0cce73265d5edc5b2ed9b3174be80958bd582aa0e61386a2e9b455c8ed7"
     },
     {
+      "path": "provenance/parent_source_registry_0.9.40.json",
+      "sha256": "396b289d65e101c6350a9becc4fe0e96b1d000fe5a9fba2f1c6b884fbb574caa"
+    },
+    {
       "path": "scripts/check_public_release.py",
-      "sha256": "bea3d1296938bf736e90b8d5fabed4fdb69332a96db557ff604aa5ee2cbd7858"
+      "sha256": "e6ed4bfcf754c4e5088e2ec6b251c68ddac073411e38848443626000687df27f"
     },
     {
       "path": "service/app.js",
-      "sha256": "fe541a3e9202809c593d93fe20b03473fcacfab73d5b43d0b827216145b01e02"
+      "sha256": "6e304f27872075b4a5aeee745cddd5ad739d1866885f1b2972838213830c39a0"
     },
     {
       "path": "service/boundary_readings.html",
@@ -60,11 +72,11 @@
     },
     {
       "path": "service/data/knowledge_graph.js",
-      "sha256": "b90c042822213d946218af8aec92f119a51dcd9b020661f2053080c7cdc7deb5"
+      "sha256": "ddeb168db4c95f7b59ca7322a04b8b34043259b591532a8b722a039939f80273"
     },
     {
       "path": "service/data/knowledge_graph.json",
-      "sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826"
+      "sha256": "de181d2844e94739ed4268dc1178cf14c847a4747ad0fe7cc001505c6dd9209b"
     },
     {
       "path": "service/data/m2pde_execution_integrated.json",
@@ -101,6 +113,10 @@
     {
       "path": "service/data/manufacturing_design_integrated.json",
       "sha256": "2e816e1c49959bba05f16bccbc01b94ce449634ec106104436f9fb341d41116b"
+    },
+    {
+      "path": "service/data/pbfm_full_review_integrated.json",
+      "sha256": "03113defaae8c460335e8a033bff391494dad6bfc2b02db789cf351e83dfd1f1"
     },
     {
       "path": "service/data/physical_design_evidence_integrated.json",
@@ -164,7 +180,7 @@
     },
     {
       "path": "service/hard_constraint_evidence.html",
-      "sha256": "e6ca9e12b4a01ce7f698ec17135cd79417501a41d629f754fd702b01cad6bf99"
+      "sha256": "87418561a74736814baa91d7af78e0a815b85e0f28d84255e094e0207e7aad49"
     },
     {
       "path": "service/hard_constraint_evidence.js",
@@ -172,7 +188,7 @@
     },
     {
       "path": "service/index.html",
-      "sha256": "39deabcb0938c5ca3de62c5bc805203fab18a01ef8e22525b51836cc40a1ea36"
+      "sha256": "b21bff53a8146ec299aa95263b52f52f786d8bdcc59c4e07ea509de582fcd158"
     },
     {
       "path": "service/m2pde_execution.html",
@@ -199,6 +215,14 @@
       "sha256": "6a2dbc006327108509b8aaddc69ff25d6603b74a91e6a443d33fc372e83fc694"
     },
     {
+      "path": "service/pbfm_full_review.html",
+      "sha256": "0120eed5b3d4087f8370b8f45e42284a113574b0badf868d647457a56533bc90"
+    },
+    {
+      "path": "service/pbfm_full_review.js",
+      "sha256": "523bb262a68c27c1bf5a96340106a8b0d8a72a3443af6acc32f062d84f86e7e4"
+    },
+    {
       "path": "service/physical_design_evidence.html",
       "sha256": "04fb1944f7f2ee2cd90ee0cbf687be2089f2f297a9a5677fddd5ac4e8cd0b795"
     },
@@ -208,7 +232,7 @@
     },
     {
       "path": "service/README.md",
-      "sha256": "a607e83c5705a2efaac1dfc37aaf0d17e527a314e063277f1796e3a34bbc6001"
+      "sha256": "8e3ac5b6b9136046b30c8fa6693e9806ae5497ebd02d647a94b23e620d4e16f4"
     },
     {
       "path": "service/styles.css",
@@ -265,9 +289,9 @@
   ],
   "private_payloads_distributed": false,
   "submission_ready": false,
-  "source_graph_original_sha256": "93f8149d701d5efba40b77b65dfb343a81aca3d472699147f1ee1fd8a3fbe3ac",
-  "published_graph_sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826",
-  "preserved_public_parent_commit": "20a470c1f1d91f7535457ddb456e171759fb6042",
-  "graph_projection": "Preserve all historical public-parent node/edge/source objects;append sanitized new local evidence. Machine/private-acquisition paths omitted;public links are observation summaries. Local acquisition/observation digests identify original bytes,not sanitized projection bytes.",
-  "byte_encoding": "UTF-8 LF for protected science;existing dynamic metadata bytes retained"
+  "source_graph_original_sha256": "4a6b437576daf661702c95b3a492e9b14a073967908576d75598f8b623475349",
+  "published_graph_sha256": "de181d2844e94739ed4268dc1178cf14c847a4747ad0fe7cc001505c6dd9209b",
+  "preserved_public_parent_commit": "ec37fd334b3e1fd3cc9b2bc5e614cceedc6370ea",
+  "graph_projection": "All historical public0.40node/edge/source objects preserved. New local0.41evidence appended with machine/private paths omitted; original acquisition and observation digests retained. Publication context is separate from scientific decisions.",
+  "byte_encoding": "UTF-8 LF"
 }

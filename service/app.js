@@ -61,6 +61,8 @@ function renderDetail(){
  const supplementLinks=supplementaryReviews.map(r=>`<p class="detail-summary"><a href="supplement_readings.html?work=${encodeURIComponent(r.properties.work_id)}">${esc(r.properties.method)} 보충자료 ${r.properties.supplement_pages}쪽 · 제조 조건과 미해결 근거 ↗</a> · 같은 AI 검토, 독립 심사 대기</p>`).join('');
  const releaseObservations=edgeTarget(followupWorkId,'HAS_RELEASE_OBSERVATION').filter(r=>r.properties.public_display_path);
  const releaseLinks=releaseObservations.map(r=>`<p class="detail-summary"><b>본문·정적 검토 시점의 공개 자산:</b> ${esc(r.properties.summary_ko)} <a href="${esc(r.properties.public_display_path)}">고정 버전·입력 규약·미해결 근거 ↗</a> · 새 실행·산업 통과 아님</p>`).join('');
+ const fullSourceFollowup=state.graph.fulltext_review_overlays?.[followupWorkId];
+ const fullSourceLink=fullSourceFollowup?`<p class="detail-summary"><a href="${esc(fullSourceFollowup.public_review_path)}">${esc(fullSourceFollowup.label)} ↗</a> · 같은 AI 후속 검토, 독립 판정 대기</p>`:'';
  const observedExecution=ExecutionEvidence.describe(n,state.graph);
  const runNodes=observedExecution.runs;
  const runHistory=runNodes.length?`<p class=\"section-label\">실행 이력</p><ul class=\"evidence-list\">${runNodes.map(run=>{const q=run.properties;const failures=state.graph.nodes.filter(f=>f.type==='FailureEvent'&&f.properties.run_id===run.id);return `<li><b>${esc(q.failure_attribution==='investigator_harness'?'연구용 검사 중단':q.status==='passed'?'기술 실행 완료':q.status==='partial'?'부분 완료':'실패')} · ${esc(q.observed_at||'')}</b><br>${esc(q.scope||'')} ${failures.map(f=>`<br>${esc(f.properties.category)}: ${esc(f.properties.message||f.properties.detail||'')}`).join('')}<br><a href=\"${esc(q.public_log||'../'+(q.log||''))}\">실행 관측 요약(JSON) ↗</a></li>`}).join('')}</ul>`:'';
@@ -74,7 +76,7 @@ function renderDetail(){
  <p class="section-label">물리·제조 평가</p>${codingCards}
  <p class="section-label">${executionFollowups?'기존 감사의 공개 자료 설명':'공개 실행 자료'}</p>${executionFollowups?'<p class="detail-summary">아래 자산 설명과 검증 과제는 당시의 기록입니다. 이후 생성·저장 관측은 실행 이력과 버전별 결과에서 확인하세요.</p>':''}<p class="detail-summary">${esc(claim('artifact_readiness')||p.artifact_web_audit_scope||'코드/모델 공개 상태는 이 비교 자료에서 방법별로 판정하지 않았습니다.')}</p><p class="detail-summary"><b>해석:</b> ${esc(executionContext)}</p>
  ${runHistory}
- ${readingLinks}${executionFollowups}${supplementLinks}${releaseLinks}
+ ${fullSourceLink}${readingLinks}${executionFollowups}${supplementLinks}${releaseLinks}
  <p class="section-label">근거 구간</p><ul class="evidence-list">${evidence}</ul>
  <p class="section-label">${executionFollowups?'기존 감사 당시의 검증 과제':'미해결 항목'}</p><ul class="unresolved-list">${unresolved}</ul>
  <p class="section-label">코딩 범위</p><p class="detail-summary">${esc(p.assessed_scope||'')}<br><span class="muted">${esc(p.coding_status||'')}</span></p>`;

@@ -1,0 +1,16 @@
+(function(root){
+ 'use strict';
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function view(d){
+  const modules={darcy_flow:'Darcy 유동',dynamic_stall:'동적 실속'},cases={single:'단일 표본 대조',paired_aligned:'시간·오류가 같이 증가',paired_reversed:'시간·오류가 반대 방향'};
+  const overview=`<div class="cards"><article>전체 원문<strong>${d.PDF_pages}쪽</strong>텍스트와 페이지를 같은 AI가 검토</article><article>이번 추가 모델 생성<strong>0건</strong>앞선 64개 출력은 별도 기록으로 보존</article><article>계산 부분 점검<strong>${d.component_records.length}사례</strong>인공 입력 · 학습/생성 실험과 구분</article></div><p><a href="${esc(d.pdf_url)}" target="_blank" rel="noopener">공식 원문 ↗</a></p>`;
+  const timing=`<p>원문에 보고된 동적 실속 결과입니다. 이번에 실행한 Darcy 생성 시간이나 실제 공장 처리량이 아닙니다.</p><div class="table-scroll"><table><thead><tr><th>적분 단계</th><th>배치/출력 수</th><th>GPU 초</th><th>CPU 초</th></tr></thead><tbody>${d.paper_reported_dynamic_stall_timings.map(r=>`<tr><td>${r.steps}</td><td>${r.batch}</td><td>${r.GPU_seconds}</td><td>${r.CPU_seconds}</td></tr>`).join('')}</tbody></table></div><p>CPU 4분과 GPU 0.2초는 서로 다른 단계 수에 해당합니다. 속도·정확도·자원 요구를 서로 다른 설정에서 가져와 하나의 운영점으로 합치지 않습니다.</p>`;
+  const component=`<p>저자 소스의 원래 계산문만 분리해 인공 텐서에서 확인했습니다. 표본별 시간과 오류를 짝지은 계산과, 현재 코드가 확장해 계산하는 결과가 다를 수 있습니다.</p><div class="table-scroll"><table><thead><tr><th>모듈</th><th>대조 사례</th><th>현재 계산</th><th>짝지은 계산</th></tr></thead><tbody>${d.component_records.map(r=>`<tr><td>${esc(modules[r.method]||r.method)}</td><td>${esc(cases[r.case]||r.case)}</td><td>${r.source_loss.toFixed(3)}</td><td>${r.per_sample_time_weighted_loss.toFixed(3)}</td></tr>`).join('')}</tbody></table></div><p class="notice">이 결과는 전체 학습의 실패율이나 모델 생성 성능이 아닙니다. 취득한 체크포인트가 해당 소스 커밋으로 학습됐는지는 미확인입니다.</p><details><summary>계산 조건과 미분값</summary><p>시간 텐서 [B,1,1,1]와 오류 [B]가 [B,1,1,B]로 확장됩니다. 시간 [0.1,0.9]와 오류 [1,9]에서 현재 값 2.5, 짝지은 값 4.1입니다. 오류를 [9,1]로 바꾸면 현재 값은 2.5이고 짝지은 값은 0.9입니다. 표본별 미분값도 [0.25,0.25]와 [0.05,0.45]로 다릅니다. 재사용한 PyTorch 2.11.0의 CPU float64 점검이며 저자 환경의 재학습이 아닙니다. 짝지은 계산은 표본 연결을 확인하기 위한 대조이며, 원문이 요구하는 가중 지수나 최적 물리 목적함수를 확정한 것이 아닙니다.</p></details>`;
+  const claims=d.paper_claims.map(c=>`<li><b>${esc(c.id)} · ${c.pages.map(x=>x+'쪽').join(', ')} · ${esc(c.locus)}</b><br>${esc(c.statement)}<br><em>${esc(c.caveat)}</em></li>`).join('');
+  const code=d.code_claims.map(c=>`<li><b>${esc(c.id)}</b><br>${esc(c.statement)}<br><em>${esc(c.caveat)}</em><br><a href="${esc(c.source_url)}" target="_blank" rel="noopener">고정 소스 ↗</a> · 확인한 줄 ${c.lines.join(', ')}</li>`).join('');
+  const data=`<p>정확한 Darcy 검증 CSV는 아직 확보하지 않았습니다. DOI 등록 정보의 조회 성공은 파일 취득이나 사용 권리의 확인이 아닙니다. 저장소의 일시적 접근 오류도 데이터의 전 세계적인 부재로 해석하지 않습니다.</p><p>기존 공개 서비스 0.9.40 시점의 표적 검토·생성 관측을 보존합니다. 본 화면은 0.9.41 전체 원문 후속 검토의 공개 투영입니다. 배포 관측은 과학적 검증과 구분하며, 독립 원문 판정·물리 참조·제조 용도·저자 승인이 필요합니다.</p>`;
+  return {overview,timing,component,claims,code,'data-status':data};
+ }
+ const api={view};if(typeof module!=='undefined'&&module.exports)module.exports=api;
+ if(typeof document!=='undefined')fetch('data/pbfm_full_review_integrated.json').then(r=>{if(!r.ok)throw new Error('Evidence unavailable');return r.json();}).then(d=>{for(const [k,v] of Object.entries(view(d)))document.getElementById(k).innerHTML=v;}).catch(()=>{document.getElementById('overview').textContent='근거 파일을 불러오지 못했습니다. 기록과 공식 원문을 확인하세요.';});
+})(typeof window!=='undefined'?window:globalThis);

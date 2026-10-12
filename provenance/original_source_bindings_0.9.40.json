@@ -1,0 +1,236 @@
+{
+  "local_graph_version": "0.9.40",
+  "original_graph_sha256": "93f8149d701d5efba40b77b65dfb343a81aca3d472699147f1ee1fd8a3fbe3ac",
+  "local_parent_graph_sha256": "5576ed0a40719cf2254c0647ed1c2f11ed8a5825cb48f8b25db60bb0fe79e543",
+  "preserved_public_parent_commit": "20a470c1f1d91f7535457ddb456e171759fb6042",
+  "preserved_public_parent_graph_sha256": "76b3d48a240471c027ba993a2eb19ba5f9ced3357b719ceabf5dc4dbd90aadd5",
+  "preserved_public_parent_registry_sha256": "44c1e0cce73265d5edc5b2ed9b3174be80958bd582aa0e61386a2e9b455c8ed7",
+  "transformation": "Preserve all historical public-parent node/edge/source objects;append sanitized new local evidence. Machine/private-acquisition paths omitted;public links are observation summaries. Local acquisition/observation digests identify original bytes,not sanitized projection bytes.",
+  "private_payloads_distributed": false,
+  "redaction_fields": [
+    {
+      "field": "graph/nodes/1488/properties/hf_cache",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1489/properties/hf_cache",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1490/properties/hf_cache",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1495/properties/packages/smpl_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1495/properties/packages/torch_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1578/properties/recoverability",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1719/properties/provenance/archive_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1778/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1786/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1786/properties/secondary_source_spans/1/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1790/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1816/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1818/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1820/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1820/properties/secondary_source_spans/1/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1820/properties/secondary_source_spans/2/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1824/properties/secondary_source_spans/0/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1824/properties/secondary_source_spans/1/source_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1948/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1949/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1950/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1951/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1952/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1953/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1954/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1955/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1956/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1957/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1958/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1959/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1960/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1961/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1962/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1963/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1964/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1965/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/nodes/1966/properties/private_raw_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/1/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/2/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/3/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/4/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/5/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/6/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/7/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/8/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/9/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/10/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/11/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/12/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/13/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/14/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/15/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/16/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/17/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/18/private_path",
+      "kind": "machine_or_private_path_redaction"
+    },
+    {
+      "field": "graph/provenance/constraint_forward_integration/source_inputs/19/private_path",
+      "kind": "machine_or_private_path_redaction"
+    }
+  ]
+}

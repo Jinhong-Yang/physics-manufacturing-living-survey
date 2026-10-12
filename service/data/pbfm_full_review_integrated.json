@@ -1,0 +1,771 @@
+{
+  "version": "0.9.41",
+  "as_of": "2026-10-12",
+  "work_id": "constraint040:work:PBFM",
+  "method": "PBFM",
+  "source_id": "S365",
+  "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+  "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+  "PDF_pages": 29,
+  "text_pages_read": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "visual_pages_viewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "paper_claims": [
+    {
+      "id": "PF01",
+      "pages": [
+        1,
+        3,
+        4
+      ],
+      "locus": "Abstract;Table1;Sec3.2",
+      "statement": "PBFM uses training-time residual and conflict-free gradient objectives;Table1 explicitly marks hard constraints absent. Reported Pareto improvement concerns compared configurations.",
+      "caveat": "No global Pareto-optimality certificate or universal feasible-output guarantee is independently established.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF02",
+      "pages": [
+        4
+      ],
+      "locus": "Eq3-4;Fig2",
+      "statement": "The printed ConFIG construction normalizes gradients and orthogonal components and asserts simultaneous descent.",
+      "caveat": "Its displayed divisions require nonzero denominators;this source reading does not certify degeneracy handling or global optimization.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF03",
+      "pages": [
+        5,
+        10
+      ],
+      "locus": "Algorithm1;training-cost discussion",
+      "statement": "Endpoint unrolling improves residual evaluation during training and increases training cost;inference does not add a physics projection.",
+      "caveat": "Numerical endpoint approximation and learned-model accuracy remain distinct;training overhead cannot be omitted from a deployment budget.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF04",
+      "pages": [
+        5,
+        24,
+        25
+      ],
+      "locus": "Algorithm1;AppendixE;Fig18",
+      "statement": "Algorithm1 squares the norm of a time-scaled residual;the source discusses p=1 and other power exponents.",
+      "caveat": "The current released training implementation requires a separate formula/shape audit rather than assuming identity from the method name.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF05",
+      "pages": [
+        5,
+        8,
+        9
+      ],
+      "locus": "sigma_min discussion;Table5",
+      "statement": "Dynamic-stall zero added noise has the best printed RE/WD/JS values,but not the best printed mean/std errors.",
+      "caveat": "A residual-vs-noise heuristic is task,operator,normalization and metric dependent;it is not a manufacturing tolerance.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF06",
+      "pages": [
+        6,
+        17
+      ],
+      "locus": "Darcy setup;AppendixC.1",
+      "statement": "Darcy has64x64pressure/permeability fields,10k train/1k validation samples,and no conditioning inputs. Reference permeability is exp(G)>0.",
+      "caveat": "Authors note limited real-world representativeness. Training/data residuals share finite-difference stencils,not independent metrology.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF07",
+      "pages": [
+        6,
+        17
+      ],
+      "locus": "Kolmogorov setup;AppendixC.2",
+      "statement": "Kolmogorov conditions on Reynolds number100-500;training32conditions and validation16conditions use a spectral solver and the generated velocity divergence residual.",
+      "caveat": "A divergence check is a specified mass-consistency endpoint;it does not establish all Navier-Stokes dynamics or an unseen manufacturing process.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF08",
+      "pages": [
+        6,
+        18,
+        19
+      ],
+      "locus": "Eq5;AppendixC.3;Table7;Fig8",
+      "statement": "Dynamic stall is simulated pitching NACA0012 RANS data with four operating inputs and six spatiotemporal fields;training128nominal conditions and test16nominal conditions each have32perturbations.",
+      "caveat": "Treat perturbations as nested within conditions. Algebraic ideal-gas and skin-friction checks are not a full independent RANS/manufacturing certificate.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF09",
+      "pages": [
+        6,
+        18
+      ],
+      "locus": "Eq5 versus signed-field description",
+      "statement": "The printed skin-friction relation uses a positive norm,while the dataset description includes signed skin friction.",
+      "caveat": "The released code includes tangent-based sign handling;do not infer that its actual residual is the unsigned printed expression.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF10",
+      "pages": [
+        7
+      ],
+      "locus": "Table2 versus Fig3-4",
+      "statement": "Darcy Table2 calls RE MSE while Figures3-4 refer to MAE;the released sample path computes absolute residual means.",
+      "caveat": "Metric identity remains unresolved;our measured MAE is not numeric reproduction of a displayed MSE caption.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF11",
+      "pages": [
+        7,
+        21
+      ],
+      "locus": "Table2/Table8 footnotes",
+      "statement": "The main D-Flow comparison keeps888of1024samples underRE<5;the Scale variant keeps403. Some main comparators use UNet while PBFM usesDiT.",
+      "caveat": "Selected-case and architecture differences restrict causal attribution of cross-method improvements.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF12",
+      "pages": [
+        8,
+        27,
+        28
+      ],
+      "locus": "Tables3,11,12;stochastic-sampler discussion",
+      "statement": "For PBFM,t*=0.2 improves printed WD relative to deterministic sampling while RE changes0.828to0.838. VanillaFM Table11 stochastic rows reduce RE but all displayed WD values exceed its deterministic0.059.",
+      "caveat": "Stochasticity is not a universal all-metric improvement. Preserve threshold and model recipe;no mode superiority is established by our32+32pilot.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF13",
+      "pages": [
+        8,
+        9
+      ],
+      "locus": "Kolmogorov prose versus Table4",
+      "statement": "Table4 displays PBFM SMSE2.484 versusFM2.574 and MMSE4.455 versusFM4.188,both with their column scales. Prose says standard-deviation error is slightly higher.",
+      "caveat": "Retain a source reporting discrepancy;do not infer statistical significance or silently swap the endpoint.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF14",
+      "pages": [
+        9
+      ],
+      "locus": "Table4 dynamic-stall comparison",
+      "statement": "Dynamic-stall PCFM has the smallest printed RE0.143 versusPBFM0.339,but larger WD,mean/std errors and reported time.",
+      "caveat": "Column scales and compared implementations are retained;this is not our independently executed dynamic-stall comparison.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF15",
+      "pages": [
+        10,
+        26,
+        27
+      ],
+      "locus": "Discussion;AppendixH;Table10",
+      "statement": "For128dynamic-stall outputs,Table10 reportsGPU0.198s/CPU119s at10steps,andGPU0.413s/CPU240s at20steps,withbatch128.",
+      "caveat": "The discussion combines4CPUminutes with0.2GPUseconds;these belong to different step counts. Do not construct a single20step operating point or compare them with single-sample latency.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF16",
+      "pages": [
+        10,
+        27
+      ],
+      "locus": "Table10 solver comparison",
+      "statement": "An author-reported conventional simulation uses76minutes on8XeonCPUcores,whereas generator timing varies withbatch size and steps.",
+      "caveat": "These are simulated engineering tasks,not measured plant throughput,end-to-end production cost,or a rights-cleared manufacturing use.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF17",
+      "pages": [
+        10
+      ],
+      "locus": "Table6 and limitations prose",
+      "statement": "The4step training rows are configuration-specific:Darcy44.15GB/0.159s versusFM12.35GB/0.0428s;Kolmogorov0.518s versusone-stepPBFM0.194s.",
+      "caveat": "The summary up-to3xmemory/2.5xtime is approximate and baseline-dependent. Hardware is recorded as the authors report it,not an inference minimum.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF18",
+      "pages": [
+        18,
+        19,
+        20
+      ],
+      "locus": "AppendixD.1;Fig10-11",
+      "statement": "The Darcy visual comparisons select similar variable ranges;Fig10 compares DiT and UNet without residual loss. Figure11 negative colorbar values are on pressure fields.",
+      "caveat": "Visual checking rejects the tentative interpretation that those negative labels establish negative permeability. They are not our raw-array positivity result.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF19",
+      "pages": [
+        20,
+        21
+      ],
+      "locus": "AppendixD.1.1;Tables2,8",
+      "statement": "The published Darcy normalization constants arep_mean0,p_std0.576,k_mean1.386,k_std10.64,matching the inspected code. PBFMScale has worse printedRE/WD butJS0.218 versusmain0.256.",
+      "caveat": "The prose that all scaling metrics degrade is broader than every displayed endpoint;the Scale checkpoint was not executed locally.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF20",
+      "pages": [
+        20,
+        23
+      ],
+      "locus": "Fig10 andFig16 captions",
+      "statement": "Fig10 error bars are validation-sample minima/maxima;Fig16 bars concern different conditioning values.",
+      "caveat": "These are not repeated-training confidence intervals or independent statistical evidence of method differences.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF21",
+      "pages": [
+        25,
+        26
+      ],
+      "locus": "AppendixG;Table9",
+      "statement": "Training uses authorPyTorch2.5.1,AdamW,EMA0.999,and listed architecture/batch64settings;Darcy has8blocks,hidden256,quadratic attention and displayed9.75Mparameters.",
+      "caveat": "Our runtime is reusedPyTorch2.11.0. Exact state compatibility is separate from author-environment/independent reproduction.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF22",
+      "pages": [
+        27
+      ],
+      "locus": "Algorithm2",
+      "statement": "The stochastic sampler resamples only beforet*=0.2 by predicting the endpoint and mixing fresh noise at the next time;otherwise it usesEuler.",
+      "caveat": "The checkpoint,generation mode,steps,seed and batch grouping must be fixed together.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF23",
+      "pages": [
+        28,
+        29
+      ],
+      "locus": "Tables13-14;AppendixJ",
+      "statement": "At4unrollingsteps,last-stepbackpropagation reports8.48GB/0.134s versus12.58GB/0.190s for basePBFM,but printedWD3.038versus1.814 and RE0.392versus0.339.",
+      "caveat": "Best cost and best fidelity rows are different training variants;the saved checkpoint training path is not inferred from the prose.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    },
+    {
+      "id": "PF24",
+      "pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "locus": "References;LLM-use statement",
+      "statement": "The reference list and authorLLM-use statement were read as source metadata and attribution evidence.",
+      "caveat": "The paper statement about authorLLMuse is not an instruction governing this user-authorized research or evidence of our own human review.",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "evidence_origin": "author_reported_or_same_AI_source_comparison",
+      "independent_review": false
+    }
+  ],
+  "code_claims": [
+    {
+      "id": "PCODE01",
+      "path": "[private acquisition path omitted; original source digest retained]",
+      "upstream_url": "https://github.com/tum-pbs/PBFM/blob/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/flow_matching.py",
+      "source_sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97",
+      "lines": [
+        37,
+        38,
+        39
+      ],
+      "statement": "The current Darcy training residual uses absolute values and averages them;the time/error multiplication broadcasts as separately probed.",
+      "caveat": "This differs from assuming a common squared-residual training formula. It does not prove the acquired checkpoint was trained at this release commit.",
+      "independent_review": false,
+      "source_id": "S367",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/flow_matching.py"
+    },
+    {
+      "id": "PCODE02",
+      "path": "[private acquisition path omitted; original source digest retained]",
+      "upstream_url": "https://github.com/tum-pbs/PBFM/blob/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/flow_matching.py",
+      "source_sha256": "5477c9847d2c66eafa5c09639df6f7448b151079921aea57576638e016a5f598",
+      "lines": [
+        35,
+        36,
+        37,
+        38,
+        48,
+        60,
+        61,
+        66
+      ],
+      "statement": "The dynamic-stall path sums squared normalized residuals and multiplies mean-per-sample errors by rank4time. It also computes tangent-based signed shear.",
+      "caveat": "Current formula,normalization,geometry inputs and tensor shape are separate from the printed equations;no dynamic-stall model was executed.",
+      "independent_review": false,
+      "source_id": "S375",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/flow_matching.py"
+    },
+    {
+      "id": "PCODE03",
+      "path": "[private acquisition path omitted; original source digest retained]",
+      "upstream_url": "https://github.com/tum-pbs/PBFM/blob/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dit.py",
+      "source_sha256": "b80565b14f8f06f8cca0e018582009b6a4a9906ca6447705cbe3207970d3c2cc",
+      "lines": [
+        184,
+        185,
+        186,
+        210
+      ],
+      "statement": "The default64grid/patch4/hidden256model includes65,536fixed positional entries as nontrainableParameters. Subtracting those from9,813,280total yields9,747,744,which rounds to9.75M.",
+      "caveat": "This is a source-based count reconciliation,not proof that the authors intended that exact count definition or a retraining experiment.",
+      "independent_review": false,
+      "source_id": "S366",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dit.py"
+    },
+    {
+      "id": "PCODE04",
+      "path": "[private acquisition path omitted; original source digest retained]",
+      "upstream_url": "https://github.com/tum-pbs/PBFM/blob/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/train_ddp.py",
+      "source_sha256": "b2f049bb56b50c5e6b9a3e7e53da22725593be109ef82c060766c326199d85dd",
+      "lines": [
+        133,
+        134,
+        139,
+        143,
+        260,
+        273
+      ],
+      "statement": "The current source records checkpoints byepoch,default8000;it passes sample_t outputs directly to cfm_loss_residual.",
+      "caveat": "Do not mistake0008000filename for8000optimizeriterations;actual checkpoint training provenance is still not proven.",
+      "independent_review": false,
+      "source_id": "S376",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/train_ddp.py"
+    },
+    {
+      "id": "PCODE05",
+      "path": "[private acquisition path omitted; original source digest retained]",
+      "upstream_url": "https://github.com/tum-pbs/PBFM/blob/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/sample.py",
+      "source_sha256": "70df78a2d38d27f80f1fb26ce5a5f0d41ae6ca2fe066ad0a9ca4ce4e77bc9a57",
+      "lines": [
+        19,
+        20,
+        40,
+        43,
+        67
+      ],
+      "statement": "The unmodified sampling entry requires the two validation CSVs and defaults to deterministic sampling unless the stochastic flag is provided.",
+      "caveat": "READMEdefaultcommand and a stochastic20step paper setting are different recipes. Acquiring validation data does not independently qualify the generated output.",
+      "independent_review": false,
+      "source_id": "S370",
+      "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/sample.py"
+    }
+  ],
+  "component_records": [
+    {
+      "method": "darcy_flow",
+      "case": "single",
+      "source_sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97",
+      "source_lines": [
+        38,
+        39
+      ],
+      "unchanged_AST_sha256": "c30b86ef48e9d734fa2547a0eda5284349aaf698e6110aa8049dab79c24e220a",
+      "t_shape": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "error_shape": [
+        1
+      ],
+      "product_shape": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_loss": 0.1,
+      "per_sample_time_weighted_loss": 0.1,
+      "source_loss_equals_group_product": true,
+      "paired_matches_source": true,
+      "source_per_sample_error_derivatives": [
+        0.1
+      ],
+      "paired_per_sample_error_derivatives": [
+        0.1
+      ],
+      "own_control_arithmetic_passed": true
+    },
+    {
+      "method": "darcy_flow",
+      "case": "paired_aligned",
+      "source_sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97",
+      "source_lines": [
+        38,
+        39
+      ],
+      "unchanged_AST_sha256": "c30b86ef48e9d734fa2547a0eda5284349aaf698e6110aa8049dab79c24e220a",
+      "t_shape": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "error_shape": [
+        2
+      ],
+      "product_shape": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "source_loss": 2.5,
+      "per_sample_time_weighted_loss": 4.1,
+      "source_loss_equals_group_product": true,
+      "paired_matches_source": false,
+      "source_per_sample_error_derivatives": [
+        0.25,
+        0.25
+      ],
+      "paired_per_sample_error_derivatives": [
+        0.05,
+        0.45
+      ],
+      "own_control_arithmetic_passed": true
+    },
+    {
+      "method": "darcy_flow",
+      "case": "paired_reversed",
+      "source_sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97",
+      "source_lines": [
+        38,
+        39
+      ],
+      "unchanged_AST_sha256": "c30b86ef48e9d734fa2547a0eda5284349aaf698e6110aa8049dab79c24e220a",
+      "t_shape": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "error_shape": [
+        2
+      ],
+      "product_shape": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "source_loss": 2.5,
+      "per_sample_time_weighted_loss": 0.9,
+      "source_loss_equals_group_product": true,
+      "paired_matches_source": false,
+      "source_per_sample_error_derivatives": [
+        0.25,
+        0.25
+      ],
+      "paired_per_sample_error_derivatives": [
+        0.05,
+        0.45
+      ],
+      "own_control_arithmetic_passed": true
+    },
+    {
+      "method": "dynamic_stall",
+      "case": "single",
+      "source_sha256": "5477c9847d2c66eafa5c09639df6f7448b151079921aea57576638e016a5f598",
+      "source_lines": [
+        37,
+        38
+      ],
+      "unchanged_AST_sha256": "c30b86ef48e9d734fa2547a0eda5284349aaf698e6110aa8049dab79c24e220a",
+      "t_shape": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "error_shape": [
+        1
+      ],
+      "product_shape": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_loss": 0.1,
+      "per_sample_time_weighted_loss": 0.1,
+      "source_loss_equals_group_product": true,
+      "paired_matches_source": true,
+      "source_per_sample_error_derivatives": [
+        0.1
+      ],
+      "paired_per_sample_error_derivatives": [
+        0.1
+      ],
+      "own_control_arithmetic_passed": true
+    },
+    {
+      "method": "dynamic_stall",
+      "case": "paired_aligned",
+      "source_sha256": "5477c9847d2c66eafa5c09639df6f7448b151079921aea57576638e016a5f598",
+      "source_lines": [
+        37,
+        38
+      ],
+      "unchanged_AST_sha256": "c30b86ef48e9d734fa2547a0eda5284349aaf698e6110aa8049dab79c24e220a",
+      "t_shape": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "error_shape": [
+        2
+      ],
+      "product_shape": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "source_loss": 2.5,
+      "per_sample_time_weighted_loss": 4.1,
+      "source_loss_equals_group_product": true,
+      "paired_matches_source": false,
+      "source_per_sample_error_derivatives": [
+        0.25,
+        0.25
+      ],
+      "paired_per_sample_error_derivatives": [
+        0.05,
+        0.45
+      ],
+      "own_control_arithmetic_passed": true
+    },
+    {
+      "method": "dynamic_stall",
+      "case": "paired_reversed",
+      "source_sha256": "5477c9847d2c66eafa5c09639df6f7448b151079921aea57576638e016a5f598",
+      "source_lines": [
+        37,
+        38
+      ],
+      "unchanged_AST_sha256": "c30b86ef48e9d734fa2547a0eda5284349aaf698e6110aa8049dab79c24e220a",
+      "t_shape": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "error_shape": [
+        2
+      ],
+      "product_shape": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "source_loss": 2.5,
+      "per_sample_time_weighted_loss": 0.9,
+      "source_loss_equals_group_product": true,
+      "paired_matches_source": false,
+      "source_per_sample_error_derivatives": [
+        0.25,
+        0.25
+      ],
+      "paired_per_sample_error_derivatives": [
+        0.05,
+        0.45
+      ],
+      "own_control_arithmetic_passed": true
+    }
+  ],
+  "component_scope": "Execute only unchanged AST assignments and sample_t on own manufactured tensors;not original training,checkpoint generation,PDE physics validation or a model failure-rate experiment",
+  "dataset_discovery": {
+    "recorded_utc": "2026-10-12T01:50:33.708242+00:00",
+    "author_attribution_chain": [
+      "ICLR2026PBFMofficialrecord",
+      "pinnedtum-pbs/PBFMREADME2a702673bae0cc4778d63af1c0243ad99e728b78",
+      "PIDM DOI10.3929/ethz-b-000674074",
+      "DataCitepublicregistration metadata200"
+    ],
+    "dataset_title": "Physics-Informed Diffusion Models: Datasets and model checkpoints",
+    "registered_landing_url": "http://hdl.handle.net/20.500.11850/674074",
+    "data_registration_year": 2024,
+    "official_landing_observation": "Host metadata fetch500;web tool403. Transient access observations,not evidence dataset absent.",
+    "DataCite_metadata_sha256": "f269826e71df2983a69ead852ea8d5b673c53c85d653005a0462d0a56eedce2e",
+    "DataCite_direct_content_url": null,
+    "DataCite_rights_list": [],
+    "search_indexed_ETH_license_observation": "CCBY4.0reported on officialsearch-indexedrecord;not independently confirmed from current downloaded asset metadata",
+    "required_asset_names": [
+      "valid/p_data.csv",
+      "valid/K_data.csv"
+    ],
+    "actual_validation_CSVs_acquired": false,
+    "bulk_data_download_started": false,
+    "original_entry_retrial_started": false,
+    "rights_clearance_for_named_manufacturing_use": false,
+    "no_global_absence_claim": true,
+    "no_auth_or_challenge_bypass": true,
+    "new_model_runs": 0,
+    "new_generated_output_events": 0,
+    "submission_ready": false
+  },
+  "paper_reported_dynamic_stall_timings": [
+    {
+      "steps": 10,
+      "batch": 128,
+      "GPU_seconds": 0.198,
+      "CPU_seconds": 119
+    },
+    {
+      "steps": 20,
+      "batch": 128,
+      "GPU_seconds": 0.413,
+      "CPU_seconds": 240
+    }
+  ],
+  "public_verified_version": "0.9.40",
+  "public041_deployment_pending": true,
+  "new_model_runs": 0,
+  "new_generated_output_events": 0,
+  "checkpoint_training_commit_verified": false,
+  "independent_review": false,
+  "scientific_R4_pass": false,
+  "industrial_pass": false,
+  "submission_ready": false,
+  "public_projection_context": {
+    "version": "0.9.41",
+    "preserved_parent_commit": "ec37fd334b3e1fd3cc9b2bc5e614cceedc6370ea",
+    "prior_verified_public_version": "0.9.40",
+    "scope": "Prepared public source follow-up; deployment is a separately observed event, not physics qualification."
+  }
+}
