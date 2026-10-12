@@ -1,0 +1,468 @@
+{
+  "graph_version": "0.9.40",
+  "as_of": "2026-10-12",
+  "records": [
+    {
+      "method": "PCFM",
+      "graph_work_id": "constraint040:work:PCFM",
+      "work_id": "W_neurips_2025_2d357e78fbc55e89",
+      "pilot_id": "D43",
+      "title": "Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints",
+      "venue": "NeurIPS 2025",
+      "year": 2025,
+      "PDF_pages": 36,
+      "all_PDF_text_scientifically_read": true,
+      "review_scope": "36page text read;15selected visual pages;22source claims;not independent review",
+      "source_id": "S355",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+      "claims": [
+        {
+          "id": "PC01",
+          "pages": [
+            1,
+            2,
+            4
+          ],
+          "locus": "Abstract Sec1 Sec3.1",
+          "statement": "PCFM applies equality-constraint correction at inference to a pretrained flow model; the objective is the intersection of learned PDE solution support and a specified constraint set.",
+          "evidence_origin": "author_reported",
+          "caveat": "A learned support approximation is not an independently measured manufacturing process.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC02",
+          "pages": [
+            5
+          ],
+          "locus": "Footnote3 Algorithm1",
+          "statement": "Hard constraint is explicitly qualified as satisfaction up to solver and machine numerical precision, not symbolic zero for every implementation.",
+          "evidence_origin": "author_reported",
+          "caveat": null,
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC03",
+          "pages": [
+            5,
+            20,
+            21
+          ],
+          "locus": "Eq4 PropositionE.1",
+          "statement": "A Gauss-Newton step projects onto the linearized affine constraint set; it is an exact feasible projection for affine h with the required invertible Schur system.",
+          "evidence_origin": "author_reported",
+          "caveat": "A single step on a nonlinear residual is not generally an exact nonlinear projection.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC04",
+          "pages": [
+            6
+          ],
+          "locus": "Proposition3.1 Eq5",
+          "statement": "The reverse approximation uses endpoint displacement and states a Lipschitz/small-step marginal-velocity relation.",
+          "evidence_origin": "author_reported",
+          "caveat": "Conditional straight-line interpolants and learned marginal trajectories require separate assumption review; no theorem independently certified here.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC05",
+          "pages": [
+            6,
+            22
+          ],
+          "locus": "Eq6 AppendixH",
+          "statement": "Relaxed correction is optional; AppendixH uses lambda0 by default but guided interpolation only for the Heat Table3 setting.",
+          "evidence_origin": "author_reported",
+          "caveat": "The lambda0 runtime setting and Heat guided-accuracy setting must not be combined into an unexecuted speed/accuracy configuration.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC06",
+          "pages": [
+            15,
+            23
+          ],
+          "locus": "TheoremA.1 AppendixI",
+          "statement": "The final-projection argument assumes twice-differentiable constraints, full row rank near a feasible manifold, a suitable convergence neighborhood, and sufficiently many Newton-Schur iterations.",
+          "evidence_origin": "author_reported",
+          "caveat": "No unconditional result for inconsistent constraints, singular Jacobians, every starting point, or fixed one iteration is established.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC07",
+          "pages": [
+            16,
+            17,
+            22
+          ],
+          "locus": "AppendixB-C-H",
+          "statement": "Benchmarks cover Heat, Navier-Stokes, Reaction-Diffusion and Burgers with numerical/analytical data; models use FNO-based FFM.",
+          "evidence_origin": "author_reported",
+          "caveat": "Spatial dimensions and spatiotemporal tensor dimensions are distinct; no factory data or external metrology is supplied by these experiments.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC08",
+          "pages": [
+            17
+          ],
+          "locus": "AppendixC",
+          "statement": "Reported training is 20,000 steps on one V100 for one-dimensional PDEs and 500,000 steps on four A100 GPUs for Navier-Stokes.",
+          "evidence_origin": "author_reported",
+          "caveat": "Training hardware is not an inference minimum requirement.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC09",
+          "pages": [
+            24
+          ],
+          "locus": "AppendixJ",
+          "statement": "MMSE compares generated/reference ensemble means; SMSE compares ensemble standard deviations.",
+          "evidence_origin": "author_reported",
+          "caveat": "SMSE is not standard error, repeated-training variability, or an uncertainty interval on a method difference.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC10",
+          "pages": [
+            24
+          ],
+          "locus": "AppendixJ ConstraintError",
+          "statement": "CE averages each sample residual L2 norm over 512 generated samples for one-dimensional problems or100 Navier-Stokes samples.",
+          "evidence_origin": "author_reported",
+          "caveat": "Mean CE alone does not establish worst-case compliance or independent physical reference; displayed zeros need raw tolerances.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC11",
+          "pages": [
+            7,
+            24
+          ],
+          "locus": "Table3 AppendixJ FPD",
+          "statement": "FPD uses Poseidon-base feature comparisons; Reaction-Diffusion grids are interpolated to128x128 for the pretrained model.",
+          "evidence_origin": "author_reported",
+          "caveat": "The table footnote acknowledges interpolation artifacts; feature similarity is not physical residual or calibrated manufacturing accuracy.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC12",
+          "pages": [
+            7,
+            8
+          ],
+          "locus": "Table3 versus Sec4.1",
+          "statement": "The Heat table reports PCFM SMSE0.937 and FPD1.22 versus PDM0.02 and0.17, respectively, despite prose saying PCFM outperforms all methods across these metrics.",
+          "evidence_origin": "source_comparison",
+          "caveat": "Values are table-display values; MSE columns are divided by10^-2, FPD is unscaled; no significance conclusion.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC13",
+          "pages": [
+            7,
+            25
+          ],
+          "locus": "Table3 Figure5 caption",
+          "statement": "For Burgers-BC, D-Flow has lower displayed MMSE0.224 than PCFM0.335; ECI has lower SMSE0.089 than PCFM0.123. The Figure5 caption acknowledges slightly worse MMSE/SMSE.",
+          "evidence_origin": "source_comparison",
+          "caveat": "Exact specified residual and distributional fidelity are different endpoints.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC14",
+          "pages": [
+            20,
+            22
+          ],
+          "locus": "Table4 and AppendixE.1/H",
+          "statement": "Runtime uses V10032GB, batch32 for one-dimensional problems/batch8 for Navier-Stokes,100 flow steps and lambda0; PCFM per-sample times are291.8,1371.0,636.6 and350.7ms.",
+          "evidence_origin": "author_reported",
+          "caveat": "These are not the200-step primary nonlinear fidelity setting or measured industrial throughput.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC15",
+          "pages": [
+            20
+          ],
+          "locus": "Table5",
+          "statement": "Final projection shares are1.78% Heat,0.89% Burgers,1.01% Reaction-Diffusion and0.2% Navier-Stokes.",
+          "evidence_origin": "author_reported",
+          "caveat": "The prose1-3% range does not precisely cover every table row; extra correction and whole-workflow costs remain configuration-specific.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC16",
+          "pages": [
+            19,
+            23,
+            24
+          ],
+          "locus": "Eq24-25 versus AppendixI complexity",
+          "statement": "Printed Burgers mass residuals use constant mass; general solver costs include O(m^2*n) Jacobian/Gram work and O(m^3) Schur solve.",
+          "evidence_origin": "source_comparison",
+          "caveat": "Current code includes cumulative boundary flux for Burgers; O(n) requires treating constraint count m as small/fixed and cannot be asserted as m scales with n.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC17",
+          "pages": [
+            16
+          ],
+          "locus": "Eq13-14 AppendixB.3",
+          "statement": "The printed Reaction-Diffusion equation uses minus nu*d_x(u), while current generator code uses diffusive flux minus nu*gradient and reaction updates.",
+          "evidence_origin": "source_comparison",
+          "caveat": "Retain a paper/code formulation discrepancy requiring clarification; do not infer a whole-method failure from a likely printed formula issue.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC18",
+          "pages": [
+            26,
+            27,
+            28
+          ],
+          "locus": "AppendixL.2 Table7",
+          "statement": "TVD-inspired equality constrains TV(final) to gamma*TV(initial), with gamma0.3 in the reported ablation.",
+          "evidence_origin": "author_reported",
+          "caveat": "This is stronger/specific relative to generic non-increasing TV; it is not a universal physical decay law or manufacturing tolerance.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC19",
+          "pages": [
+            28,
+            29
+          ],
+          "locus": "AppendixL.4 Table8",
+          "statement": "OOD Burgers changes sigmoid center training0.4-0.6 to disjoint test0.0-0.2/0.8-1.0 and uses200 flow steps; reported PCFM MMSE1.83/SMSE1.40 with displayed CE0.",
+          "evidence_origin": "author_reported",
+          "caveat": "This is a specific input shift, not unseen factory/tool/material qualification.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC20",
+          "pages": [
+            31,
+            33
+          ],
+          "locus": "Checklist3/7 versus TheoremA.1 AppendixJ",
+          "statement": "Checklist3 says no major theoretical result, while TheoremA.1 is present; Checklist7 cites SMSE and sample residual variability for significance.",
+          "evidence_origin": "source_comparison",
+          "caveat": "The checklist is reporting evidence, not proof of theorem validity or a repeated-run statistical significance test.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC21",
+          "pages": [
+            10
+          ],
+          "locus": "Conclusion",
+          "statement": "The paper focuses on equality constraints and identifies inequality extension and Jacobian structure as future directions.",
+          "evidence_origin": "author_reported",
+          "caveat": "No arbitrary industrial inequality/tolerance certificate is asserted.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "id": "PC22",
+          "pages": [
+            8,
+            32
+          ],
+          "locus": "Sec4 code URLs and Checklist5",
+          "statement": "The official accepted PDF directly identifies Python and experimental Julia repositories.",
+          "evidence_origin": "author_reported",
+          "caveat": "Publication-time code promises and current pinned asset availability are separate observations.",
+          "source_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        }
+      ],
+      "independent_review": false
+    },
+    {
+      "method": "PBFM",
+      "graph_work_id": "constraint040:work:PBFM",
+      "work_id": "a57483b394a3654f4317051e4ce3b2b8-Abstract-Conference",
+      "pilot_id": "D44",
+      "title": "Physics vs Distributions: Pareto Optimal Flow Matching with Physics Constraints",
+      "venue": "ICLR 2026",
+      "year": 2026,
+      "PDF_pages": 29,
+      "all_PDF_text_scientifically_read": false,
+      "review_scope": "Targeted methods/benchmark/execution source review;complete extracted text of pages6,7,16-19,21and selected earlier method passages. Remainder not claimed as reviewed.",
+      "source_id": "S365",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+      "claims": [
+        {
+          "id": "PB01",
+          "pages": [
+            6
+          ],
+          "locus": "Sec4 Darcy benchmark",
+          "statement": "Darcy data contain pressure and permeability on64x64 grids,10k training/1k validation samples, and no conditioning inputs; authors identify limited real-world representativeness.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        },
+        {
+          "id": "PB02",
+          "pages": [
+            17
+          ],
+          "locus": "AppendixC.1",
+          "statement": "Permeability reference is exp(G(x)), with zero-flux boundaries and a pressure integral condition. The paper uses matched numerical stencils for training/data generation rather than an external manufacturing measurement.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        },
+        {
+          "id": "PB03",
+          "pages": [
+            7
+          ],
+          "locus": "Table2 versus Fig3-4",
+          "statement": "Table2 calls RE residual MSE while Fig3-4/prose refer to MAE; current public sampling code computes residual.abs().mean(). Metric identity must be reconciled before numeric reproduction claims.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        },
+        {
+          "id": "PB04",
+          "pages": [
+            7
+          ],
+          "locus": "Table2 footnotes",
+          "statement": "Darcy comparison uses1024samples; D-Flow keeps888 under an RE<5 filter, and ECI enforces boundary conditions but not the nonlinear PDE residual. Methods do not have identical retained-case or constraint scopes.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        },
+        {
+          "id": "PB05",
+          "pages": [
+            21
+          ],
+          "locus": "Table8",
+          "statement": "The scale-normalization ablation has different reported RE/WD values than the main table. Source scaling and sampling variants must be bound to any comparison.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        },
+        {
+          "id": "PB06",
+          "pages": [
+            6,
+            18
+          ],
+          "locus": "Sec4 and AppendixC.3",
+          "statement": "Dynamic stall uses simulated NACA0012 airfoil conditions and algebraic ideal-gas/skin-friction relations, not the Darcy trial conducted here; acquired dynamic-stall weights were not executed.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        },
+        {
+          "id": "PB07",
+          "pages": [
+            1,
+            4
+          ],
+          "locus": "Abstract Sec3.2",
+          "statement": "PBFM couples flow matching and physical residual objectives at training via conflict-free updates; inference-time constraint projection is not the mechanism of this audited sampler.",
+          "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+          "evidence_origin": "author_reported_or_source_comparison",
+          "independent_review": false
+        }
+      ],
+      "independent_review": false
+    }
+  ],
+  "PCFM_components": {
+    "cases": 10,
+    "signature_cases": 2,
+    "model_runs": 0,
+    "nonlinear_one_step_max_residual": 0.03891891891891874,
+    "nonlinear_eight_step_max_residual": 0.0,
+    "same_AI": true,
+    "not_model_generation": true
+  },
+  "PBFM": {
+    "commit": "2a702673bae0cc4778d63af1c0243ad99e728b78",
+    "checkpoint_sha256": "2c85185f7e77bd0b0f9e580f8afd545728b44383af27dc793e93e0b223382015",
+    "strict_state_keys": 91,
+    "parameters": 9813280,
+    "original_entry_status": "missing_validation_CSV_pre_generation",
+    "bounded_sampler_status": "completed_two32sample_modes",
+    "subbatch": 4,
+    "steps": 20,
+    "source_MAE": [
+      0.8566027283668518,
+      1.2366920709609985
+    ],
+    "source_MSE": [
+      7.082430217503844,
+      17.88216146962795
+    ],
+    "nonpositive_K_points": [
+      4,
+      0
+    ],
+    "samples_with_nonpositive_K": [
+      1,
+      0
+    ],
+    "K_minima": [
+      -0.04107499122619629,
+      0.052131056785583496
+    ],
+    "software_discrepancies": [
+      9.118037592099645e-06,
+      2.2868475385078506e-06
+    ],
+    "reference_scope": "Same equations/grid/forcing;software consistency only",
+    "private_arrays_redistributed": false,
+    "original_program_completed": false,
+    "distributional_metrics_reproduced": false,
+    "independent_physical_reference_pass": false,
+    "scientific_R4_pass": false,
+    "industrial_pass": false
+  },
+  "PhysX_interpretation_overlay": {
+    "historical_physical_evidence_codes": [
+      "V2"
+    ],
+    "display_physical_evidence_label": "주석 물성 일치 · 해석 검토 중",
+    "assessment": "역사적 V2 표기는 보존했습니다. 해당 표의 주석 일치를 물리 제약 검증 통과로 해석하지 않습니다. 독립 재분류 대기입니다.",
+    "strict_constraint_evidence_established_from_Table2": false,
+    "independent_review": false,
+    "proposal_path": "runs/wp0/editorial_revision_v415_20261012/taxonomy_reconciliation.json",
+    "proposal_sha256": "94a99c45b7523169a8b28e5bb6488b9309ad639bf3d0f6b0c6661a59309c9498"
+  },
+  "independent_review": false,
+  "submission_ready": false,
+  "industrial_pass": false,
+  "scientific_R4_pass": false,
+  "completed_year_denominators_changed": false
+}

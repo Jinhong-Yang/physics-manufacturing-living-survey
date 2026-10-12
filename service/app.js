@@ -1,7 +1,7 @@
 const state={graph:null,selected:null,filters:{q:'',stratum:'',artifact:'',physics:''}};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const strata={generic_physical_asset_boundary:"일반 물성·객체 생성 경계",physically_constrained_fabrication_comparator:'물리 제약 제조 설계 비교',supplemental_tactile_contact_execution:"촉각 접촉 예제 실행",visual:'시각 합성',physics:'물리·물리장 생성',boundary:'리뷰·플랫폼 비교',priority_fulltext_targeted_audit:'우선후보 전문표적감사',discovery:'제조 전이 비교군',direct_manufacturing_transfer:'제조 직접 전이·산업 실증 비교',manufacturing_dataset:'제조 데이터셋 비교군',manufacturing_generator:'제조 CAD 생성 비교군',manufacturing_simulation:'제조 공정 시뮬레이터',engineering_sim2real_comparator:'상위 학회 공학·sim-to-real 비교',prior_art:'선행 서베이 감사',prior_art_industrial_system:'산업 생성 시스템',prior_art_industrial_model_platform:'산업 기반모델'};
+const strata={hard_constraint_PDE_boundary:'수치 제약 PDE 방법론 비교',partial_2026_physics_generator_boundary:'2026 물리 생성 비교',generic_physical_asset_boundary:"일반 물성·객체 생성 경계",physically_constrained_fabrication_comparator:'물리 제약 제조 설계 비교',supplemental_tactile_contact_execution:"촉각 접촉 예제 실행",visual:'시각 합성',physics:'물리·물리장 생성',boundary:'리뷰·플랫폼 비교',priority_fulltext_targeted_audit:'우선후보 전문표적감사',discovery:'제조 전이 비교군',direct_manufacturing_transfer:'제조 직접 전이·산업 실증 비교',manufacturing_dataset:'제조 데이터셋 비교군',manufacturing_generator:'제조 CAD 생성 비교군',manufacturing_simulation:'제조 공정 시뮬레이터',engineering_sim2real_comparator:'상위 학회 공학·sim-to-real 비교',prior_art:'선행 서베이 감사',prior_art_industrial_system:'산업 생성 시스템',prior_art_industrial_model_platform:'산업 기반모델'};
 const parseVenue=venue=>venue||'비교 자료';
 fetch('data/taccel_peg_evidence.json').then(r=>{if(!r.ok)throw new Error('Unavailable');return r.json();}).then(e=>{
  const p=document.getElementById('peg-summary');if(p)p.textContent=`고정 200-step 예제의 두 시도에서 ${e.usable_geometry_frames}개 형상 프레임을 확인했습니다. 전체 예제는 ${e.complete_example_and_output_sanity_pass?'통과':'미완료'}입니다. 형상 궤적은 촉각 데이터나 독립 제조 표본이 아니며, 물리·산업 적격성은 미검증입니다.`;
@@ -38,22 +38,23 @@ function evidenceForClaim(claim){return edgeTarget(claim.id,'SUPPORTED_BY').filt
 function renderDetail(){
  const n=selectedWork();if(!n)return;
  const p=n.properties,c=p.cvm||{},claimNodes=claims(n);
+ const codingOverlay=state.graph.assessment_overlays?.[n.id];
  const claim=(k)=>claimNodes.find(x=>x.id.endsWith(':'+k))?.properties.text||'';
  const allEvidence=claimNodes.flatMap(x=>evidenceForClaim(x).map(ev=>({...ev.properties,claim:x.label}))).concat(edgeTarget(n.id,"SUPPORTED_BY").filter(ev=>ev.type==="EvidenceSpan").map(ev=>({...ev.properties,claim:ev.label})));
  const paper=p.paper_url?`<a href="${esc(p.paper_url)}" target="_blank" rel="noopener">논문 원문 ↗</a>`:'';
  const artifact=p.repository_url?`<a href="${esc(p.repository_url)}" target="_blank" rel="noopener">공개 저장소 ↗</a>`:'';
  const codingCards=c.physics_coupling_codes?`<div class="coding-grid">
   <div class="coding-card"><b>물리 결합</b><strong>${esc((c.physics_coupling_codes||[]).join(' · ')||'미평가')}</strong><p>${esc(c.physics_assessment||'해당 층은 C/V/M 코딩 범위가 아닙니다.')}</p></div>
-  <div class="coding-card"><b>물리 근거</b><strong>${esc((c.physical_evidence_codes||[]).join(' · ')||'미평가')}</strong><p>${esc(c.physical_evidence_assessment||'미평가')}</p></div>
+  <div class="coding-card"><b>물리 근거</b><strong>${esc(codingOverlay?.display_physical_evidence_label||(c.physical_evidence_codes||[]).join(' · ')||'미평가')}</strong><p>${esc(codingOverlay?.assessment||c.physical_evidence_assessment||'미평가')}</p></div>
   <div class="coding-card"><b>제조 근거</b><strong>${esc((c.manufacturing_codes||[]).join(' · ')||'미평가')}</strong><p>${esc(c.manufacturing_assessment||'미평가')}</p></div>
  </div>`:`<div class="coding-card"><b>비교 범위</b><p>${esc(p.assessed_scope||'')}</p><p>이 자료는 방법 후보의 C/V/M 점수 대상이 아닙니다.</p></div>`;
  const evidence=allEvidence.length?allEvidence.map(e=>`<li><b>${esc(e.claim)}:</b> ${esc(e.location||'')} — ${esc(e.observation||'')}${e.source_url?` <a href="${esc(e.source_url)}" target="_blank" rel="noopener">출처 ↗</a>`:''}${e.local_display_path?` <a href="${esc(e.local_display_path)}">관측 근거 보기 ↗</a>`:''}</li>`).join(''):'<li>구체적인 원문 위치 코딩이 없습니다.</li>';
  const unresolved=(p.unresolved||[]).map(x=>`<li>${esc(x)}</li>`).join('')||'<li>현재 표적 코딩에서 별도 미해결 항목을 등록하지 않았습니다.</li>';
  // Discovery D35 and audit PT14 describe the same M2PDE paper. Display its
  // follow-up evidence in both views while preserving their historical nodes.
- const followupWorkId=n.id==='work:D35'?'work:PT14':n.id;
+ const followupWorkId=state.graph.followup_work_overlays?.[n.id]?.followup_work_id||(n.id==='work:D35'?'work:PT14':n.id);
  const fullReviews=edgeTarget(followupWorkId,'HAS_FULLTEXT_REVIEW');
- const readingLinks=(fullReviews.length?'<p class="detail-summary">이 화면의 분류·자산 설명은 기존 표적 감사 당시의 기록입니다. 이후 원문 검토와 새 관측은 아래 근거에서 함께 확인하세요.</p>':'')+fullReviews.map(r=>`<p class="detail-summary"><a href="${r.properties.public_review_path||'main_candidate_readings.html'}?work=${encodeURIComponent(r.properties.work_id)}">${esc(r.properties.method)} 원문 ${r.properties.pdf_pages}쪽 검토·분류 차이·미확인 조건 ↗</a> · 같은 AI 검토, 독립 심사 대기</p>`).join('');
+ const readingLinks=(fullReviews.length?'<p class="detail-summary">이 화면의 분류·자산 설명은 기존 표적 감사 당시의 기록입니다. 이후 원문 검토와 새 관측은 아래 근거에서 함께 확인하세요.</p>':'')+fullReviews.map(r=>`<p class="detail-summary"><a href="${r.properties.public_review_path||'main_candidate_readings.html'}?work=${encodeURIComponent(r.properties.public_review_path==='hard_constraint_evidence.html'?r.properties.method:r.properties.work_id)}">${esc(r.properties.method)} ${r.properties.all_text_read===false?'원문 '+r.properties.pdf_pages+'쪽 중 표적 검토':'원문 '+r.properties.pdf_pages+'쪽 검토'}·분류 차이·미확인 조건 ↗</a> · 같은 AI 검토, 독립 심사 대기</p>`).join('');
  const executionFollowups=edgeTarget(followupWorkId,'HAS_EXECUTION_FOLLOWUP').map(r=>`<p class="detail-summary"><a href="${esc(r.properties.public_display_path)}">버전별 실행·수정 조건·수치 비교 보기 ↗</a> · 산업 적격 미확인</p>`).join('');
  const supplementWorkIds=state.graph.nodes.filter(x=>x.type==='Work'&&(x.id===followupWorkId||(p.systematic_candidate_work_id&&x.properties.systematic_candidate_work_id===p.systematic_candidate_work_id))).map(x=>x.id);
  const supplementaryReviews=[...new Map(supplementWorkIds.flatMap(id=>edgeTarget(id,'HAS_SUPPLEMENT_REVIEW')).map(r=>[r.id,r])).values()];
@@ -112,7 +113,7 @@ $('clear-filters').addEventListener('click',()=>{state.filters={q:'',stratum:'',
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('search').focus();}});
 const loadGraph=window.KNOWLEDGE_GRAPH?Promise.resolve(window.KNOWLEDGE_GRAPH):fetch('data/knowledge_graph.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();});
 loadGraph.then(data=>{state.graph=data;render();}).catch(err=>{$('record-detail').innerHTML=`<div class="loading">지식그래프 데이터를 불러오지 못했습니다. <br><small>${esc(err.message)} · 프로젝트 서버 또는 GitHub Pages로 접속해 주세요.</small></div>`;});
-fetch('data/public_artifact_revision_watch.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(w=>{
+fetch('data/public_artifact_revision_watch.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(w=>{
  const target=$('revision-watch-status');if(!target)return;
  if(w.watch_status==='not_started'){
   target.textContent='GitHub 저장소 revision 감시는 아직 활성화되지 않았습니다. 배포 후 매주 공개 repository metadata만 점검합니다.';
@@ -120,12 +121,11 @@ fetch('data/public_artifact_revision_watch.json',{cache:'no-store'}).then(r=>{if
   target.textContent=`마지막 repository metadata 확인: ${w.as_of} · ${w.available_n}개 확인 · ${w.revision_changes_n}개 revision 변경 · 과학적/산업적 pass 판정은 별도 검토`;
  }
 }).catch(()=>{const target=$('revision-watch-status');if(target)target.textContent='Repository revision watch snapshot을 아직 불러올 수 없습니다.';});
-fetch('data/discovery_queue_2026_partial.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(q=>{
+fetch('data/discovery_queue_2026_partial.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(q=>{
  const target=$('discovery-status');if(!target)return;
  const venues=q.source_frame.map(x=>x.venue).join(', ');
  const tiers=q.review_priority_counts||{};
- const holds=(q.latest_source_check_status||[]).filter(x=>x.status==='check_failed_or_parser_hold'||x.status==='source_locator_review_required');
- target.textContent=`${q.source_cutoff_date} 기준 ${venues}의 catalog ${q.source_frame_record_count.toLocaleString()}편에서 제목 후보 ${q.title_candidate_count.toLocaleString()}편(집중 후보 ${(tiers.focused_title_candidate||0).toLocaleString()}, 민감도 전용 ${(tiers.sensitivity_only||0).toLocaleString()})을 추렸습니다. 모두 초록 검토 대기이며, ${q.monitored_year||2026} 부분 연도 자료라 본 분석 분모와 지식그래프에는 아직 포함하지 않았습니다.${holds.length?` 최신 확인 보류: ${holds.map(x=>x.venue).join(', ')}. 이전 취득 자료를 사용한 경우 해당 출처의 원래 시점을 유지합니다.`:''}`;
+ target.textContent=`${q.source_cutoff_date} 기준 ${venues}의 catalog ${q.source_frame_record_count.toLocaleString()}편에서 제목 후보 ${q.title_candidate_count.toLocaleString()}편(집중 후보 ${(tiers.focused_title_candidate||0).toLocaleString()}, 민감도 전용 ${(tiers.sensitivity_only||0).toLocaleString()})을 추렸습니다. 이 대기열의 상태는 당시 제목 수집 기록이며 최종 선별이 아닙니다. 2026 부분 연도 후보는 본 분석의 완료 연도 포함 분모가 아닙니다. 개별 후속 감사의 원문·실행 상태는 해당 연구 기록에서 확인하세요.`;
 }).catch(()=>{const target=$('discovery-status');if(target)target.textContent='신규 후보 대기열 스냅샷을 불러올 수 없습니다.';});
 fetch('data/supplemental_abstract_evidence.json').then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(q=>{
  const target=$('sensitivity-recovery-status');if(!target)return;

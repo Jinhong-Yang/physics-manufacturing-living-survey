@@ -1,7 +1,7 @@
 {
-  "graph_version": "0.9.39",
+  "graph_version": "0.9.40",
   "as_of": "2026-10-12",
-  "status": "provisional_coding_with_observed_runs_not_independent_review_or_industrial_qualification",
+  "status": "Curated forward evidence snapshot;same-AI provisional audit,not independently adjudicated survey or submission-ready",
   "codebook": "C0-C5 / V0-V4 / M0-M3; provisional codes are bounded to assessed sections",
   "summary": {
     "supplemental_fulltext_acquisition": {
@@ -25,19 +25,19 @@
     "prior_art_records": 4,
     "prior_art_survey_records": 2,
     "physically_constrained_fabrication_records": 8,
-    "graph_records": 93,
+    "graph_records": 95,
     "visual_records": 10,
     "physics_records": 10,
-    "boundary_comparators": 13,
+    "boundary_comparators": 15,
     "boundary_comparators_count_scope": "Engineering and fabrication audit records; not independently adjudicated unique studies",
     "targeted_coding_complete": 30,
     "priority_fulltext_targeted_audit_records": 16,
     "independently_reviewed": 0,
-    "methods_executed": 8,
-    "methods_with_passed_generation_runs": 5,
+    "methods_executed": 9,
+    "methods_with_passed_generation_runs": 6,
     "partial_run_sample_events": 1167,
-    "generator_sample_generation_runs": 32,
-    "completed_run_sample_events": 7918,
+    "generator_sample_generation_runs": 33,
+    "completed_run_sample_events": 7982,
     "title_sensitivity_catalog_rows": 286,
     "title_sensitivity_work_candidates": 284,
     "title_sensitivity_abstracts_retrieved": 284,
@@ -67,9 +67,9 @@
     "title_sensitivity_ai_exclusions": 28,
     "title_sensitivity_ai_holds": 256,
     "industrial_readiness_passes": 0,
-    "execution_run_records": 87,
-    "passed_execution_runs": 45,
-    "failed_execution_runs": 35,
+    "execution_run_records": 89,
+    "passed_execution_runs": 46,
+    "failed_execution_runs": 36,
     "simulator_sample_replay_runs": 1,
     "code_or_model_link_found": 70,
     "same_pipeline_artifact_web_audits": 21,
@@ -177,7 +177,22 @@
       "industrial_passes": 0,
       "not_a_manufacturing_core_inclusion": true
     },
-    "completed_run_sample_events_scope": "Retained historical task-completion events; one new instrumented partial mesh is separate, heterogeneous counts are not a common success rate."
+    "completed_run_sample_events_scope": "Heterogeneous output events including64paired-mode Darcy fields;not a common success rate or independent validated sample denominator.",
+    "hard_constraint_followup": {
+      "source_claims": 29,
+      "implementation_claims": 6,
+      "PCFM_component_cases": 10,
+      "PCFM_signature_cases": 2,
+      "PCFM_model_runs": 0,
+      "PBFM_original_entry_jobs": 1,
+      "PBFM_bounded_sampler_jobs": 1,
+      "PBFM_modes": 2,
+      "PBFM_output_events": 64,
+      "PBFM_nonpositive_K_points_deterministic": 4,
+      "new_R4_passes": 0,
+      "new_industrial_passes": 0,
+      "PBFM_full_PDF_scientifically_reviewed": false
+    }
   },
   "node_types": [
     "ArtifactVersion",
@@ -195,9 +210,11 @@
     "MetricComparison",
     "MetricDefinition",
     "ObservedOutput",
+    "PaperVersion",
     "PlannedTaskContract",
     "PublicAsset",
     "ReleaseObservation",
+    "Result",
     "RunRecipe",
     "SourceSnapshot",
     "TaskContract",
@@ -43531,6 +43548,2383 @@
         "local_observation_sha256": "f12fed48facd2f66c473948c3402a38baf5b8eab7a959f504a838b4817cef9a9",
         "local_observation_path": "runs/wp2/physx_pre_render_observation_20261012/pre_render_observation.json"
       }
+    },
+    {
+      "id": "constraint040:source:pcfm_pdf",
+      "type": "SourceSnapshot",
+      "label": "PCFM official NeurIPS2025PDF",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "private_raw_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_projector",
+      "type": "SourceSnapshot",
+      "label": "PCFM pinned pcfm/pcfm_sampling.py",
+      "properties": {
+        "source_id": "S356",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/pcfm_sampling.py",
+        "source_sha256": "5b1f040ece1105a7677b68e22e0e95f20480bd24e3c12a86d5a4ebeb4862fe59",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_residual",
+      "type": "SourceSnapshot",
+      "label": "PCFM pinned pcfm/constraints.py",
+      "properties": {
+        "source_id": "S357",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/constraints.py",
+        "source_sha256": "f3a993d85d7152c0d2679bee4c575395b4f2e0bff0da663f8992253ae1d950ab",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_sampler",
+      "type": "SourceSnapshot",
+      "label": "PCFM pinned pcfm/ffm_sampler.py",
+      "properties": {
+        "source_id": "S358",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/ffm_sampler.py",
+        "source_sha256": "d4b3f947b7ec99d4f7671e3041e65976c6ecb47e8f5101257fc90f2959777d75",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_rd_generator",
+      "type": "SourceSnapshot",
+      "label": "PCFM pinned datasets/generate_RD1d_data.py",
+      "properties": {
+        "source_id": "S359",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/datasets/generate_RD1d_data.py",
+        "source_sha256": "f13ae07fdce5b1bb70433a85e66fc0225abccd37edf14e9f4a39c578b7f97a5a",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_training_cli",
+      "type": "SourceSnapshot",
+      "label": "PCFM pinned scripts/training/main.py",
+      "properties": {
+        "source_id": "S360",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/scripts/training/main.py",
+        "source_sha256": "c145b9fab3cb71a61b40916aa45e326d97f957d5d3fe31f0b2aa193ce1fd3c1f",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_license",
+      "type": "SourceSnapshot",
+      "label": "PCFM pinned LICENSE",
+      "properties": {
+        "source_id": "S361",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/LICENSE",
+        "source_sha256": "b2f0ff0d015d2491632e48a2a45c3aa441e3964e850cca3f10ab1538d2478d3f",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_julia_sampling",
+      "type": "SourceSnapshot",
+      "label": "PCFM Julia pinned src/sampling.jl",
+      "properties": {
+        "source_id": "S362",
+        "source_url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/src/sampling.jl",
+        "source_sha256": "50e0d3b400f73e21879c3ef5871ed7a9fff0575920860d2bc0469ed5d28ebc28",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_julia_example",
+      "type": "SourceSnapshot",
+      "label": "PCFM Julia pinned examples/train_diffusion.jl",
+      "properties": {
+        "source_id": "S363",
+        "source_url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/examples/train_diffusion.jl",
+        "source_sha256": "881cd2fb164702a55f721be25ee85b2d01c1624808306edc7fea083d854a1767",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pcfm_julia_license",
+      "type": "SourceSnapshot",
+      "label": "PCFM Julia pinned LICENSE",
+      "properties": {
+        "source_id": "S364",
+        "source_url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/LICENSE",
+        "source_sha256": "2772156eff93b9e2cd73e02ac36965019a64738bc90d1755fda8f88653e3f776",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_pdf",
+      "type": "SourceSnapshot",
+      "label": "PBFM official ICLR2026PDF",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_dit",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned darcy_flow/dit.py",
+      "properties": {
+        "source_id": "S366",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dit.py",
+        "source_sha256": "b80565b14f8f06f8cca0e018582009b6a4a9906ca6447705cbe3207970d3c2cc",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_flow",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned darcy_flow/flow_matching.py",
+      "properties": {
+        "source_id": "S367",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/flow_matching.py",
+        "source_sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_residual",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned darcy_flow/grad_utils.py",
+      "properties": {
+        "source_id": "S368",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/grad_utils.py",
+        "source_sha256": "08876caaf82dc9d37dff0d6652e0aae01aec608c7b4fe8cef773fb0b79f99f4c",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_data",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned darcy_flow/dataset_loader.py",
+      "properties": {
+        "source_id": "S369",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dataset_loader.py",
+        "source_sha256": "e92e07966f858fe9fd535c89ba672e14281300aa5eb0b4b500b257f6b8526f82",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_original_cli",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned darcy_flow/sample.py",
+      "properties": {
+        "source_id": "S370",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/sample.py",
+        "source_sha256": "70df78a2d38d27f80f1fb26ce5a5f0d41ae6ca2fe066ad0a9ca4ce4e77bc9a57",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_license",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned LICENSE",
+      "properties": {
+        "source_id": "S371",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/LICENSE",
+        "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_checkpoint",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned darcy_flow/logs/PBFM/checkpoints/0008000.pt",
+      "properties": {
+        "source_id": "S372",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/logs/PBFM/checkpoints/0008000.pt",
+        "source_sha256": "2c85185f7e77bd0b0f9e580f8afd545728b44383af27dc793e93e0b223382015",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_dynamic_checkpoint",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned dynamic_stall/logs/PBFM/checkpoints/0032000.pt",
+      "properties": {
+        "source_id": "S373",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/logs/PBFM/checkpoints/0032000.pt",
+        "source_sha256": "51196ba21e2cbb24c56b89b6de6f5ac9c8664bbe9a0f1df384b5472c3ba9dad9",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:source:pbfm_kolmogorov_checkpoint",
+      "type": "SourceSnapshot",
+      "label": "PBFM pinned kolmogorov_flow/logs/PBFM/checkpoints/0001000.pt",
+      "properties": {
+        "source_id": "S374",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/kolmogorov_flow/logs/PBFM/checkpoints/0001000.pt",
+        "source_sha256": "a2f421d1e1c65e35a0326d80af766f75107ee54cc816e4ba875e4b9415617781",
+        "private_raw_path": "[private acquisition path omitted; original source digest retained]",
+        "raw_payload_redistributed": false,
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:work:PCFM",
+      "type": "Work",
+      "label": "Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints",
+      "properties": {
+        "pilot_id": "D43",
+        "stratum": "hard_constraint_PDE_boundary",
+        "venue": "NeurIPS 2025",
+        "year": 2025,
+        "systematic_candidate_work_id": "W_neurips_2025_2d357e78fbc55e89",
+        "source_ids": [
+          "S355"
+        ],
+        "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "artifact_url": "https://github.com/cpfpengfei/PCFM",
+        "repository_url": "https://github.com/cpfpengfei/PCFM",
+        "artifact_link_found": true,
+        "summary": "수치 제약, 풀이 조건과 공개 구현의 지원 범위를 확인합니다.",
+        "assessed_scope": "36page text read;15selected visual pages;22source claims;not independent review",
+        "coding_status": "Same-AI H2 boundary proposal;independent inclusion/coding pending",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C4",
+            "C5"
+          ],
+          "physical_evidence_codes": [
+            "V1",
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M0"
+          ],
+          "physics_assessment": "추론과 최종 수치 투영에 등식 제약을 적용합니다.",
+          "physical_evidence_assessment": "저자 조건부 정리와 수치 잔차 평가입니다. 독립 정리 인증이나 제조 계측은 아닙니다.",
+          "manufacturing_assessment": "일반 PDE 방법론 경계 사례입니다. 제조 핵심 포함은 미확정입니다."
+        },
+        "artifact_execution_status": "component_probes_only_no_pretrained_PDE_generation",
+        "commercial_rights_status": "Pinned source license observed;model/data/dependencies/output and named-use rights assessed separately;no commercial-profile clearance",
+        "industrial_readiness_status": "No direct industrial-use pass",
+        "scientific_R4_pass": false,
+        "industrial_pass": false,
+        "unresolved": [
+          "독립 원문 판정과 과학 검토",
+          "기준 분포·독립 물리 참조·특정 제조 용도",
+          "정확한 실행 경로 및 자산별 목적 사용 조건"
+        ]
+      }
+    },
+    {
+      "id": "method:D43",
+      "type": "Method",
+      "label": "PCFM",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "physics_coupling_codes": [
+          "C4",
+          "C5"
+        ],
+        "source_ids": [
+          "S355"
+        ]
+      }
+    },
+    {
+      "id": "constraint040:paper:PCFM",
+      "type": "PaperVersion",
+      "label": "PCFM official accepted version",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "venue": "NeurIPS 2025",
+        "year": 2025,
+        "source_id": "S355",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:review:PCFM",
+      "type": "FulltextReview",
+      "label": "PCFM source review",
+      "properties": {
+        "work_id": "W_neurips_2025_2d357e78fbc55e89",
+        "method": "PCFM",
+        "pdf_pages": 36,
+        "scope": "36page text read;15selected visual pages;22source claims;not independent review",
+        "all_text_read": true,
+        "public_review_path": "hard_constraint_evidence.html",
+        "source_id": "S355",
+        "independent_review": false,
+        "historical_work_coding_replaced": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC01",
+      "type": "Claim",
+      "label": "PCFM PC01",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC01",
+        "text": "PCFM applies equality-constraint correction at inference to a pretrained flow model; the objective is the intersection of learned PDE solution support and a specified constraint set.",
+        "statement": "PCFM applies equality-constraint correction at inference to a pretrained flow model; the objective is the intersection of learned PDE solution support and a specified constraint set.",
+        "evidence_origin": "author_reported",
+        "caveat": "A learned support approximation is not an independently measured manufacturing process.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC01",
+      "type": "EvidenceSpan",
+      "label": "Abstract Sec1 Sec3.1",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          1,
+          2,
+          4
+        ],
+        "location": "Abstract Sec1 Sec3.1",
+        "observation": "PCFM applies equality-constraint correction at inference to a pretrained flow model; the objective is the intersection of learned PDE solution support and a specified constraint set.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC02",
+      "type": "Claim",
+      "label": "PCFM PC02",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC02",
+        "text": "Hard constraint is explicitly qualified as satisfaction up to solver and machine numerical precision, not symbolic zero for every implementation.",
+        "statement": "Hard constraint is explicitly qualified as satisfaction up to solver and machine numerical precision, not symbolic zero for every implementation.",
+        "evidence_origin": "author_reported",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC02",
+      "type": "EvidenceSpan",
+      "label": "Footnote3 Algorithm1",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          5
+        ],
+        "location": "Footnote3 Algorithm1",
+        "observation": "Hard constraint is explicitly qualified as satisfaction up to solver and machine numerical precision, not symbolic zero for every implementation.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC03",
+      "type": "Claim",
+      "label": "PCFM PC03",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC03",
+        "text": "A Gauss-Newton step projects onto the linearized affine constraint set; it is an exact feasible projection for affine h with the required invertible Schur system.",
+        "statement": "A Gauss-Newton step projects onto the linearized affine constraint set; it is an exact feasible projection for affine h with the required invertible Schur system.",
+        "evidence_origin": "author_reported",
+        "caveat": "A single step on a nonlinear residual is not generally an exact nonlinear projection.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC03",
+      "type": "EvidenceSpan",
+      "label": "Eq4 PropositionE.1",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          5,
+          20,
+          21
+        ],
+        "location": "Eq4 PropositionE.1",
+        "observation": "A Gauss-Newton step projects onto the linearized affine constraint set; it is an exact feasible projection for affine h with the required invertible Schur system.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC04",
+      "type": "Claim",
+      "label": "PCFM PC04",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC04",
+        "text": "The reverse approximation uses endpoint displacement and states a Lipschitz/small-step marginal-velocity relation.",
+        "statement": "The reverse approximation uses endpoint displacement and states a Lipschitz/small-step marginal-velocity relation.",
+        "evidence_origin": "author_reported",
+        "caveat": "Conditional straight-line interpolants and learned marginal trajectories require separate assumption review; no theorem independently certified here.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC04",
+      "type": "EvidenceSpan",
+      "label": "Proposition3.1 Eq5",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          6
+        ],
+        "location": "Proposition3.1 Eq5",
+        "observation": "The reverse approximation uses endpoint displacement and states a Lipschitz/small-step marginal-velocity relation.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC05",
+      "type": "Claim",
+      "label": "PCFM PC05",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC05",
+        "text": "Relaxed correction is optional; AppendixH uses lambda0 by default but guided interpolation only for the Heat Table3 setting.",
+        "statement": "Relaxed correction is optional; AppendixH uses lambda0 by default but guided interpolation only for the Heat Table3 setting.",
+        "evidence_origin": "author_reported",
+        "caveat": "The lambda0 runtime setting and Heat guided-accuracy setting must not be combined into an unexecuted speed/accuracy configuration.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC05",
+      "type": "EvidenceSpan",
+      "label": "Eq6 AppendixH",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          6,
+          22
+        ],
+        "location": "Eq6 AppendixH",
+        "observation": "Relaxed correction is optional; AppendixH uses lambda0 by default but guided interpolation only for the Heat Table3 setting.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC06",
+      "type": "Claim",
+      "label": "PCFM PC06",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC06",
+        "text": "The final-projection argument assumes twice-differentiable constraints, full row rank near a feasible manifold, a suitable convergence neighborhood, and sufficiently many Newton-Schur iterations.",
+        "statement": "The final-projection argument assumes twice-differentiable constraints, full row rank near a feasible manifold, a suitable convergence neighborhood, and sufficiently many Newton-Schur iterations.",
+        "evidence_origin": "author_reported",
+        "caveat": "No unconditional result for inconsistent constraints, singular Jacobians, every starting point, or fixed one iteration is established.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC06",
+      "type": "EvidenceSpan",
+      "label": "TheoremA.1 AppendixI",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          15,
+          23
+        ],
+        "location": "TheoremA.1 AppendixI",
+        "observation": "The final-projection argument assumes twice-differentiable constraints, full row rank near a feasible manifold, a suitable convergence neighborhood, and sufficiently many Newton-Schur iterations.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC07",
+      "type": "Claim",
+      "label": "PCFM PC07",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC07",
+        "text": "Benchmarks cover Heat, Navier-Stokes, Reaction-Diffusion and Burgers with numerical/analytical data; models use FNO-based FFM.",
+        "statement": "Benchmarks cover Heat, Navier-Stokes, Reaction-Diffusion and Burgers with numerical/analytical data; models use FNO-based FFM.",
+        "evidence_origin": "author_reported",
+        "caveat": "Spatial dimensions and spatiotemporal tensor dimensions are distinct; no factory data or external metrology is supplied by these experiments.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC07",
+      "type": "EvidenceSpan",
+      "label": "AppendixB-C-H",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          16,
+          17,
+          22
+        ],
+        "location": "AppendixB-C-H",
+        "observation": "Benchmarks cover Heat, Navier-Stokes, Reaction-Diffusion and Burgers with numerical/analytical data; models use FNO-based FFM.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC08",
+      "type": "Claim",
+      "label": "PCFM PC08",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC08",
+        "text": "Reported training is 20,000 steps on one V100 for one-dimensional PDEs and 500,000 steps on four A100 GPUs for Navier-Stokes.",
+        "statement": "Reported training is 20,000 steps on one V100 for one-dimensional PDEs and 500,000 steps on four A100 GPUs for Navier-Stokes.",
+        "evidence_origin": "author_reported",
+        "caveat": "Training hardware is not an inference minimum requirement.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC08",
+      "type": "EvidenceSpan",
+      "label": "AppendixC",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          17
+        ],
+        "location": "AppendixC",
+        "observation": "Reported training is 20,000 steps on one V100 for one-dimensional PDEs and 500,000 steps on four A100 GPUs for Navier-Stokes.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC09",
+      "type": "Claim",
+      "label": "PCFM PC09",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC09",
+        "text": "MMSE compares generated/reference ensemble means; SMSE compares ensemble standard deviations.",
+        "statement": "MMSE compares generated/reference ensemble means; SMSE compares ensemble standard deviations.",
+        "evidence_origin": "author_reported",
+        "caveat": "SMSE is not standard error, repeated-training variability, or an uncertainty interval on a method difference.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC09",
+      "type": "EvidenceSpan",
+      "label": "AppendixJ",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          24
+        ],
+        "location": "AppendixJ",
+        "observation": "MMSE compares generated/reference ensemble means; SMSE compares ensemble standard deviations.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC10",
+      "type": "Claim",
+      "label": "PCFM PC10",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC10",
+        "text": "CE averages each sample residual L2 norm over 512 generated samples for one-dimensional problems or100 Navier-Stokes samples.",
+        "statement": "CE averages each sample residual L2 norm over 512 generated samples for one-dimensional problems or100 Navier-Stokes samples.",
+        "evidence_origin": "author_reported",
+        "caveat": "Mean CE alone does not establish worst-case compliance or independent physical reference; displayed zeros need raw tolerances.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC10",
+      "type": "EvidenceSpan",
+      "label": "AppendixJ ConstraintError",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          24
+        ],
+        "location": "AppendixJ ConstraintError",
+        "observation": "CE averages each sample residual L2 norm over 512 generated samples for one-dimensional problems or100 Navier-Stokes samples.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC11",
+      "type": "Claim",
+      "label": "PCFM PC11",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC11",
+        "text": "FPD uses Poseidon-base feature comparisons; Reaction-Diffusion grids are interpolated to128x128 for the pretrained model.",
+        "statement": "FPD uses Poseidon-base feature comparisons; Reaction-Diffusion grids are interpolated to128x128 for the pretrained model.",
+        "evidence_origin": "author_reported",
+        "caveat": "The table footnote acknowledges interpolation artifacts; feature similarity is not physical residual or calibrated manufacturing accuracy.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC11",
+      "type": "EvidenceSpan",
+      "label": "Table3 AppendixJ FPD",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          7,
+          24
+        ],
+        "location": "Table3 AppendixJ FPD",
+        "observation": "FPD uses Poseidon-base feature comparisons; Reaction-Diffusion grids are interpolated to128x128 for the pretrained model.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC12",
+      "type": "Claim",
+      "label": "PCFM PC12",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC12",
+        "text": "The Heat table reports PCFM SMSE0.937 and FPD1.22 versus PDM0.02 and0.17, respectively, despite prose saying PCFM outperforms all methods across these metrics.",
+        "statement": "The Heat table reports PCFM SMSE0.937 and FPD1.22 versus PDM0.02 and0.17, respectively, despite prose saying PCFM outperforms all methods across these metrics.",
+        "evidence_origin": "source_comparison",
+        "caveat": "Values are table-display values; MSE columns are divided by10^-2, FPD is unscaled; no significance conclusion.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC12",
+      "type": "EvidenceSpan",
+      "label": "Table3 versus Sec4.1",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          7,
+          8
+        ],
+        "location": "Table3 versus Sec4.1",
+        "observation": "The Heat table reports PCFM SMSE0.937 and FPD1.22 versus PDM0.02 and0.17, respectively, despite prose saying PCFM outperforms all methods across these metrics.",
+        "evidence_origin": "source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC13",
+      "type": "Claim",
+      "label": "PCFM PC13",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC13",
+        "text": "For Burgers-BC, D-Flow has lower displayed MMSE0.224 than PCFM0.335; ECI has lower SMSE0.089 than PCFM0.123. The Figure5 caption acknowledges slightly worse MMSE/SMSE.",
+        "statement": "For Burgers-BC, D-Flow has lower displayed MMSE0.224 than PCFM0.335; ECI has lower SMSE0.089 than PCFM0.123. The Figure5 caption acknowledges slightly worse MMSE/SMSE.",
+        "evidence_origin": "source_comparison",
+        "caveat": "Exact specified residual and distributional fidelity are different endpoints.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC13",
+      "type": "EvidenceSpan",
+      "label": "Table3 Figure5 caption",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          7,
+          25
+        ],
+        "location": "Table3 Figure5 caption",
+        "observation": "For Burgers-BC, D-Flow has lower displayed MMSE0.224 than PCFM0.335; ECI has lower SMSE0.089 than PCFM0.123. The Figure5 caption acknowledges slightly worse MMSE/SMSE.",
+        "evidence_origin": "source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC14",
+      "type": "Claim",
+      "label": "PCFM PC14",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC14",
+        "text": "Runtime uses V10032GB, batch32 for one-dimensional problems/batch8 for Navier-Stokes,100 flow steps and lambda0; PCFM per-sample times are291.8,1371.0,636.6 and350.7ms.",
+        "statement": "Runtime uses V10032GB, batch32 for one-dimensional problems/batch8 for Navier-Stokes,100 flow steps and lambda0; PCFM per-sample times are291.8,1371.0,636.6 and350.7ms.",
+        "evidence_origin": "author_reported",
+        "caveat": "These are not the200-step primary nonlinear fidelity setting or measured industrial throughput.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC14",
+      "type": "EvidenceSpan",
+      "label": "Table4 and AppendixE.1/H",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          20,
+          22
+        ],
+        "location": "Table4 and AppendixE.1/H",
+        "observation": "Runtime uses V10032GB, batch32 for one-dimensional problems/batch8 for Navier-Stokes,100 flow steps and lambda0; PCFM per-sample times are291.8,1371.0,636.6 and350.7ms.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC15",
+      "type": "Claim",
+      "label": "PCFM PC15",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC15",
+        "text": "Final projection shares are1.78% Heat,0.89% Burgers,1.01% Reaction-Diffusion and0.2% Navier-Stokes.",
+        "statement": "Final projection shares are1.78% Heat,0.89% Burgers,1.01% Reaction-Diffusion and0.2% Navier-Stokes.",
+        "evidence_origin": "author_reported",
+        "caveat": "The prose1-3% range does not precisely cover every table row; extra correction and whole-workflow costs remain configuration-specific.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC15",
+      "type": "EvidenceSpan",
+      "label": "Table5",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          20
+        ],
+        "location": "Table5",
+        "observation": "Final projection shares are1.78% Heat,0.89% Burgers,1.01% Reaction-Diffusion and0.2% Navier-Stokes.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC16",
+      "type": "Claim",
+      "label": "PCFM PC16",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC16",
+        "text": "Printed Burgers mass residuals use constant mass; general solver costs include O(m^2*n) Jacobian/Gram work and O(m^3) Schur solve.",
+        "statement": "Printed Burgers mass residuals use constant mass; general solver costs include O(m^2*n) Jacobian/Gram work and O(m^3) Schur solve.",
+        "evidence_origin": "source_comparison",
+        "caveat": "Current code includes cumulative boundary flux for Burgers; O(n) requires treating constraint count m as small/fixed and cannot be asserted as m scales with n.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC16",
+      "type": "EvidenceSpan",
+      "label": "Eq24-25 versus AppendixI complexity",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          19,
+          23,
+          24
+        ],
+        "location": "Eq24-25 versus AppendixI complexity",
+        "observation": "Printed Burgers mass residuals use constant mass; general solver costs include O(m^2*n) Jacobian/Gram work and O(m^3) Schur solve.",
+        "evidence_origin": "source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC17",
+      "type": "Claim",
+      "label": "PCFM PC17",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC17",
+        "text": "The printed Reaction-Diffusion equation uses minus nu*d_x(u), while current generator code uses diffusive flux minus nu*gradient and reaction updates.",
+        "statement": "The printed Reaction-Diffusion equation uses minus nu*d_x(u), while current generator code uses diffusive flux minus nu*gradient and reaction updates.",
+        "evidence_origin": "source_comparison",
+        "caveat": "Retain a paper/code formulation discrepancy requiring clarification; do not infer a whole-method failure from a likely printed formula issue.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC17",
+      "type": "EvidenceSpan",
+      "label": "Eq13-14 AppendixB.3",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          16
+        ],
+        "location": "Eq13-14 AppendixB.3",
+        "observation": "The printed Reaction-Diffusion equation uses minus nu*d_x(u), while current generator code uses diffusive flux minus nu*gradient and reaction updates.",
+        "evidence_origin": "source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC18",
+      "type": "Claim",
+      "label": "PCFM PC18",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC18",
+        "text": "TVD-inspired equality constrains TV(final) to gamma*TV(initial), with gamma0.3 in the reported ablation.",
+        "statement": "TVD-inspired equality constrains TV(final) to gamma*TV(initial), with gamma0.3 in the reported ablation.",
+        "evidence_origin": "author_reported",
+        "caveat": "This is stronger/specific relative to generic non-increasing TV; it is not a universal physical decay law or manufacturing tolerance.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC18",
+      "type": "EvidenceSpan",
+      "label": "AppendixL.2 Table7",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          26,
+          27,
+          28
+        ],
+        "location": "AppendixL.2 Table7",
+        "observation": "TVD-inspired equality constrains TV(final) to gamma*TV(initial), with gamma0.3 in the reported ablation.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC19",
+      "type": "Claim",
+      "label": "PCFM PC19",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC19",
+        "text": "OOD Burgers changes sigmoid center training0.4-0.6 to disjoint test0.0-0.2/0.8-1.0 and uses200 flow steps; reported PCFM MMSE1.83/SMSE1.40 with displayed CE0.",
+        "statement": "OOD Burgers changes sigmoid center training0.4-0.6 to disjoint test0.0-0.2/0.8-1.0 and uses200 flow steps; reported PCFM MMSE1.83/SMSE1.40 with displayed CE0.",
+        "evidence_origin": "author_reported",
+        "caveat": "This is a specific input shift, not unseen factory/tool/material qualification.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC19",
+      "type": "EvidenceSpan",
+      "label": "AppendixL.4 Table8",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          28,
+          29
+        ],
+        "location": "AppendixL.4 Table8",
+        "observation": "OOD Burgers changes sigmoid center training0.4-0.6 to disjoint test0.0-0.2/0.8-1.0 and uses200 flow steps; reported PCFM MMSE1.83/SMSE1.40 with displayed CE0.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC20",
+      "type": "Claim",
+      "label": "PCFM PC20",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC20",
+        "text": "Checklist3 says no major theoretical result, while TheoremA.1 is present; Checklist7 cites SMSE and sample residual variability for significance.",
+        "statement": "Checklist3 says no major theoretical result, while TheoremA.1 is present; Checklist7 cites SMSE and sample residual variability for significance.",
+        "evidence_origin": "source_comparison",
+        "caveat": "The checklist is reporting evidence, not proof of theorem validity or a repeated-run statistical significance test.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC20",
+      "type": "EvidenceSpan",
+      "label": "Checklist3/7 versus TheoremA.1 AppendixJ",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          31,
+          33
+        ],
+        "location": "Checklist3/7 versus TheoremA.1 AppendixJ",
+        "observation": "Checklist3 says no major theoretical result, while TheoremA.1 is present; Checklist7 cites SMSE and sample residual variability for significance.",
+        "evidence_origin": "source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC21",
+      "type": "Claim",
+      "label": "PCFM PC21",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC21",
+        "text": "The paper focuses on equality constraints and identifies inequality extension and Jacobian structure as future directions.",
+        "statement": "The paper focuses on equality constraints and identifies inequality extension and Jacobian structure as future directions.",
+        "evidence_origin": "author_reported",
+        "caveat": "No arbitrary industrial inequality/tolerance certificate is asserted.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC21",
+      "type": "EvidenceSpan",
+      "label": "Conclusion",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          10
+        ],
+        "location": "Conclusion",
+        "observation": "The paper focuses on equality constraints and identifies inequality extension and Jacobian structure as future directions.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:PC22",
+      "type": "Claim",
+      "label": "PCFM PC22",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "claim_id": "PC22",
+        "text": "The official accepted PDF directly identifies Python and experimental Julia repositories.",
+        "statement": "The official accepted PDF directly identifies Python and experimental Julia repositories.",
+        "evidence_origin": "author_reported",
+        "caveat": "Publication-time code promises and current pinned asset availability are separate observations.",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:PC22",
+      "type": "EvidenceSpan",
+      "label": "Sec4 code URLs and Checklist5",
+      "properties": {
+        "source_id": "S355",
+        "source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+        "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+        "physical_pages": [
+          8,
+          32
+        ],
+        "location": "Sec4 code URLs and Checklist5",
+        "observation": "The official accepted PDF directly identifies Python and experimental Julia repositories.",
+        "evidence_origin": "author_reported",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:work:PBFM",
+      "type": "Work",
+      "label": "Physics vs Distributions: Pareto Optimal Flow Matching with Physics Constraints",
+      "properties": {
+        "pilot_id": "D44",
+        "stratum": "partial_2026_physics_generator_boundary",
+        "venue": "ICLR 2026",
+        "year": 2026,
+        "systematic_candidate_work_id": "a57483b394a3654f4317051e4ce3b2b8-Abstract-Conference",
+        "source_ids": [
+          "S365"
+        ],
+        "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "artifact_url": "https://github.com/tum-pbs/PBFM",
+        "repository_url": "https://github.com/tum-pbs/PBFM",
+        "artifact_link_found": true,
+        "summary": "저자 모델로 유동장을 생성했지만 음의 투과도 점과 미확인 적용 조건이 남아 있습니다.",
+        "assessed_scope": "Targeted methods/benchmark/execution source review;complete extracted text of pages6,7,16-19,21and selected earlier method passages. Remainder not claimed as reviewed.",
+        "coding_status": "Same-AI H2 boundary proposal;independent inclusion/coding pending",
+        "cvm": {
+          "physics_coupling_codes": [
+            "C3"
+          ],
+          "physical_evidence_codes": [
+            "V2"
+          ],
+          "manufacturing_codes": [
+            "M1"
+          ],
+          "physics_assessment": "학습 시 물리 잔차와 생성 목적을 결합합니다. 추론 시 hard projection과 다릅니다.",
+          "physical_evidence_assessment": "저자 수치 벤치마크와 자체 별도 구현 점검입니다. 외부 공정 교정은 없습니다.",
+          "manufacturing_assessment": "유동장 공학 대리 사례입니다. 특정 제조 용도 적격성은 미확인입니다."
+        },
+        "artifact_execution_status": "64bounded_outputs_original_entry_dataset_block_physical_domain_violation",
+        "commercial_rights_status": "Pinned source license observed;model/data/dependencies/output and named-use rights assessed separately;no commercial-profile clearance",
+        "industrial_readiness_status": "No direct industrial-use pass",
+        "scientific_R4_pass": false,
+        "industrial_pass": false,
+        "unresolved": [
+          "독립 원문 판정과 과학 검토",
+          "기준 분포·독립 물리 참조·특정 제조 용도",
+          "정확한 실행 경로 및 자산별 목적 사용 조건"
+        ],
+        "discovery_queue_id": "2026-ICLR-5aef720c0089"
+      }
+    },
+    {
+      "id": "method:D44",
+      "type": "Method",
+      "label": "PBFM",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "physics_coupling_codes": [
+          "C3"
+        ],
+        "source_ids": [
+          "S365"
+        ]
+      }
+    },
+    {
+      "id": "constraint040:paper:PBFM",
+      "type": "PaperVersion",
+      "label": "PBFM official accepted version",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "venue": "ICLR 2026",
+        "year": 2026,
+        "source_id": "S365",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:review:PBFM",
+      "type": "FulltextReview",
+      "label": "PBFM source review",
+      "properties": {
+        "work_id": "a57483b394a3654f4317051e4ce3b2b8-Abstract-Conference",
+        "method": "PBFM",
+        "pdf_pages": 29,
+        "scope": "Targeted methods/benchmark/execution source review;complete extracted text of pages6,7,16-19,21and selected earlier method passages. Remainder not claimed as reviewed.",
+        "all_text_read": false,
+        "public_review_path": "hard_constraint_evidence.html",
+        "source_id": "S365",
+        "independent_review": false,
+        "historical_work_coding_replaced": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB01",
+      "type": "Claim",
+      "label": "PBFM PB01",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB01",
+        "text": "Darcy data contain pressure and permeability on64x64 grids,10k training/1k validation samples, and no conditioning inputs; authors identify limited real-world representativeness.",
+        "statement": "Darcy data contain pressure and permeability on64x64 grids,10k training/1k validation samples, and no conditioning inputs; authors identify limited real-world representativeness.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB01",
+      "type": "EvidenceSpan",
+      "label": "Sec4 Darcy benchmark",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          6
+        ],
+        "location": "Sec4 Darcy benchmark",
+        "observation": "Darcy data contain pressure and permeability on64x64 grids,10k training/1k validation samples, and no conditioning inputs; authors identify limited real-world representativeness.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB02",
+      "type": "Claim",
+      "label": "PBFM PB02",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB02",
+        "text": "Permeability reference is exp(G(x)), with zero-flux boundaries and a pressure integral condition. The paper uses matched numerical stencils for training/data generation rather than an external manufacturing measurement.",
+        "statement": "Permeability reference is exp(G(x)), with zero-flux boundaries and a pressure integral condition. The paper uses matched numerical stencils for training/data generation rather than an external manufacturing measurement.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB02",
+      "type": "EvidenceSpan",
+      "label": "AppendixC.1",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          17
+        ],
+        "location": "AppendixC.1",
+        "observation": "Permeability reference is exp(G(x)), with zero-flux boundaries and a pressure integral condition. The paper uses matched numerical stencils for training/data generation rather than an external manufacturing measurement.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB03",
+      "type": "Claim",
+      "label": "PBFM PB03",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB03",
+        "text": "Table2 calls RE residual MSE while Fig3-4/prose refer to MAE; current public sampling code computes residual.abs().mean(). Metric identity must be reconciled before numeric reproduction claims.",
+        "statement": "Table2 calls RE residual MSE while Fig3-4/prose refer to MAE; current public sampling code computes residual.abs().mean(). Metric identity must be reconciled before numeric reproduction claims.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB03",
+      "type": "EvidenceSpan",
+      "label": "Table2 versus Fig3-4",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          7
+        ],
+        "location": "Table2 versus Fig3-4",
+        "observation": "Table2 calls RE residual MSE while Fig3-4/prose refer to MAE; current public sampling code computes residual.abs().mean(). Metric identity must be reconciled before numeric reproduction claims.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB04",
+      "type": "Claim",
+      "label": "PBFM PB04",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB04",
+        "text": "Darcy comparison uses1024samples; D-Flow keeps888 under an RE<5 filter, and ECI enforces boundary conditions but not the nonlinear PDE residual. Methods do not have identical retained-case or constraint scopes.",
+        "statement": "Darcy comparison uses1024samples; D-Flow keeps888 under an RE<5 filter, and ECI enforces boundary conditions but not the nonlinear PDE residual. Methods do not have identical retained-case or constraint scopes.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB04",
+      "type": "EvidenceSpan",
+      "label": "Table2 footnotes",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          7
+        ],
+        "location": "Table2 footnotes",
+        "observation": "Darcy comparison uses1024samples; D-Flow keeps888 under an RE<5 filter, and ECI enforces boundary conditions but not the nonlinear PDE residual. Methods do not have identical retained-case or constraint scopes.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB05",
+      "type": "Claim",
+      "label": "PBFM PB05",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB05",
+        "text": "The scale-normalization ablation has different reported RE/WD values than the main table. Source scaling and sampling variants must be bound to any comparison.",
+        "statement": "The scale-normalization ablation has different reported RE/WD values than the main table. Source scaling and sampling variants must be bound to any comparison.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB05",
+      "type": "EvidenceSpan",
+      "label": "Table8",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          21
+        ],
+        "location": "Table8",
+        "observation": "The scale-normalization ablation has different reported RE/WD values than the main table. Source scaling and sampling variants must be bound to any comparison.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB06",
+      "type": "Claim",
+      "label": "PBFM PB06",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB06",
+        "text": "Dynamic stall uses simulated NACA0012 airfoil conditions and algebraic ideal-gas/skin-friction relations, not the Darcy trial conducted here; acquired dynamic-stall weights were not executed.",
+        "statement": "Dynamic stall uses simulated NACA0012 airfoil conditions and algebraic ideal-gas/skin-friction relations, not the Darcy trial conducted here; acquired dynamic-stall weights were not executed.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB06",
+      "type": "EvidenceSpan",
+      "label": "Sec4 and AppendixC.3",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          6,
+          18
+        ],
+        "location": "Sec4 and AppendixC.3",
+        "observation": "Dynamic stall uses simulated NACA0012 airfoil conditions and algebraic ideal-gas/skin-friction relations, not the Darcy trial conducted here; acquired dynamic-stall weights were not executed.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM:PB07",
+      "type": "Claim",
+      "label": "PBFM PB07",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "claim_id": "PB07",
+        "text": "PBFM couples flow matching and physical residual objectives at training via conflict-free updates; inference-time constraint projection is not the mechanism of this audited sampler.",
+        "statement": "PBFM couples flow matching and physical residual objectives at training via conflict-free updates; inference-time constraint projection is not the mechanism of this audited sampler.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "caveat": null,
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM:PB07",
+      "type": "EvidenceSpan",
+      "label": "Abstract Sec3.2",
+      "properties": {
+        "source_id": "S365",
+        "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+        "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+        "physical_pages": [
+          1,
+          4
+        ],
+        "location": "Abstract Sec3.2",
+        "observation": "PBFM couples flow matching and physical residual objectives at training via conflict-free updates; inference-time constraint projection is not the mechanism of this audited sampler.",
+        "evidence_origin": "author_reported_or_source_comparison",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:CODE01",
+      "type": "Claim",
+      "label": "CODE01",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "Original helper uses jacrev chunk_size=len(h_val)//4; chunk helper uses max(1,len(h_val)//4). Small residual dimension support differs; both use a fixed iteration loop rather than a residual-based stopping report.",
+        "statement": "Original helper uses jacrev chunk_size=len(h_val)//4; chunk helper uses max(1,len(h_val)//4). Small residual dimension support differs; both use a fixed iteration loop rather than a residual-based stopping report.",
+        "evidence_origin": "same_AI_source_inspection",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:CODE01",
+      "type": "EvidenceSpan",
+      "label": "fast_project_batched versus fast_project_batched_chunk",
+      "properties": {
+        "source_id": "S356",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/pcfm_sampling.py",
+        "source_sha256": "5b1f040ece1105a7677b68e22e0e95f20480bd24e3c12a86d5a4ebeb4862fe59",
+        "location": "fast_project_batched versus fast_project_batched_chunk",
+        "observation": "Original helper uses jacrev chunk_size=len(h_val)//4; chunk helper uses max(1,len(h_val)//4). Small residual dimension support differs; both use a fixed iteration loop rather than a residual-based stopping report.",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:CODE02",
+      "type": "Claim",
+      "label": "CODE02",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "The last call passes mode,newtonsteps,eps,use_vmap to fast_project_batched whose current signature accepts only xi_batch,h_func,max_iter; its expected flat input also differs from the sampler state shape.",
+        "statement": "The last call passes mode,newtonsteps,eps,use_vmap to fast_project_batched whose current signature accepts only xi_batch,h_func,max_iter; its expected flat input also differs from the sampler state shape.",
+        "evidence_origin": "same_AI_source_inspection",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:CODE02",
+      "type": "EvidenceSpan",
+      "label": "FFM_sampler.pcfm_sample final call",
+      "properties": {
+        "source_id": "S358",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/ffm_sampler.py",
+        "source_sha256": "d4b3f947b7ec99d4f7671e3041e65976c6ecb47e8f5101257fc90f2959777d75",
+        "location": "FFM_sampler.pcfm_sample final call",
+        "observation": "The last call passes mode,newtonsteps,eps,use_vmap to fast_project_batched whose current signature accepts only xi_batch,h_func,max_iter; its expected flat input also differs from the sampler state shape.",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:CODE03",
+      "type": "Claim",
+      "label": "CODE03",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "The current code subtracts an initial mass corrected by cumulative trapezoidal boundary flux. This differs from constant-mass formulas printed in Eq24-25.",
+        "statement": "The current code subtracts an initial mass corrected by cumulative trapezoidal boundary flux. This differs from constant-mass formulas printed in Eq24-25.",
+        "evidence_origin": "same_AI_source_inspection",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:CODE03",
+      "type": "EvidenceSpan",
+      "label": "mass_residual_burgers",
+      "properties": {
+        "source_id": "S357",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/constraints.py",
+        "source_sha256": "f3a993d85d7152c0d2679bee4c575395b4f2e0bff0da663f8992253ae1d950ab",
+        "location": "mass_residual_burgers",
+        "observation": "The current code subtracts an initial mass corrected by cumulative trapezoidal boundary flux. This differs from constant-mass formulas printed in Eq24-25.",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:CODE04",
+      "type": "Claim",
+      "label": "CODE04",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "Rarefaction branch uses minimum endpoint flux; for negative-to-positive states this omits the zero interior minimum. The paper benchmark is a nonnegative sigmoid/Dirichlet setup, so the extended sign test is a transfer-domain diagnostic.",
+        "statement": "Rarefaction branch uses minimum endpoint flux; for negative-to-positive states this omits the zero interior minimum. The paper benchmark is a nonnegative sigmoid/Dirichlet setup, so the extended sign test is a transfer-domain diagnostic.",
+        "evidence_origin": "same_AI_source_inspection",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:CODE04",
+      "type": "EvidenceSpan",
+      "label": "godunov_flux",
+      "properties": {
+        "source_id": "S357",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/constraints.py",
+        "source_sha256": "f3a993d85d7152c0d2679bee4c575395b4f2e0bff0da663f8992253ae1d950ab",
+        "location": "godunov_flux",
+        "observation": "Rarefaction branch uses minimum endpoint flux; for negative-to-positive states this omits the zero interior minimum. The paper benchmark is a nonnegative sigmoid/Dirichlet setup, so the extended sign test is a transfer-domain diagnostic.",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:CODE05",
+      "type": "Claim",
+      "label": "CODE05",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "The current data generator uses diffusive flux -nu*finite_difference and reaction update, which differs from the first-derivative term printed in Eq13.",
+        "statement": "The current data generator uses diffusive flux -nu*finite_difference and reaction update, which differs from the first-derivative term printed in Eq13.",
+        "evidence_origin": "same_AI_source_inspection",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:CODE05",
+      "type": "EvidenceSpan",
+      "label": "solve_single flux_numpy/update",
+      "properties": {
+        "source_id": "S359",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/datasets/generate_RD1d_data.py",
+        "source_sha256": "f13ae07fdce5b1bb70433a85e66fc0225abccd37edf14e9f4a39c578b7f97a5a",
+        "location": "solve_single flux_numpy/update",
+        "observation": "The current data generator uses diffusive flux -nu*finite_difference and reaction update, which differs from the first-derivative term printed in Eq13.",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM:CODE06",
+      "type": "Claim",
+      "label": "CODE06",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "The CLI can resume a supplied checkpoint but its shown sampling path calls model.sample unconditionally; inference without a checkpoint prints a warning. This is not a packaged constrained Table3 reproduction command.",
+        "statement": "The CLI can resume a supplied checkpoint but its shown sampling path calls model.sample unconditionally; inference without a checkpoint prints a warning. This is not a packaged constrained Table3 reproduction command.",
+        "evidence_origin": "same_AI_source_inspection",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM:CODE06",
+      "type": "EvidenceSpan",
+      "label": "--mode inf and sample_uncond",
+      "properties": {
+        "source_id": "S360",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/scripts/training/main.py",
+        "source_sha256": "c145b9fab3cb71a61b40916aa45e326d97f957d5d3fe31f0b2aa193ce1fd3c1f",
+        "location": "--mode inf and sample_uncond",
+        "observation": "The CLI can resume a supplied checkpoint but its shown sampling path calls model.sample unconditionally; inference without a checkpoint prints a warning. This is not a packaged constrained Table3 reproduction command.",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:PCFM_components",
+      "type": "Validator",
+      "label": "PCFM exact-source mathematical component probes",
+      "properties": {
+        "test_cases": 10,
+        "signature_cases": 2,
+        "component_returned": 7,
+        "component_exceptions": 3,
+        "not_model_inference": true,
+        "new_PDE_generations": 0,
+        "source_bytes_unchanged": true,
+        "independent_review": false,
+        "scope": "Manufactured inputs;AST class-body probe for sampler;not original full package or pretrained model run"
+      }
+    },
+    {
+      "id": "constraint040:component:affine_four_constraints_original_projection",
+      "type": "Result",
+      "label": "affine_four_constraints_original_projection",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "affine_four_constraints_original_projection",
+        "terminal": "returned",
+        "kind": "valid_full_row_rank_affine",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "affine_four_constraints_original_projection",
+          "kind": "valid_full_row_rank_affine",
+          "terminal": "returned",
+          "seconds": 4.625,
+          "output": [
+            [
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            [
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ]
+          ],
+          "finite": true,
+          "max_abs_residual": 0.0,
+          "residual": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "reference_max_abs_error": 0.0
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:one_constraint_original_projection",
+      "type": "Result",
+      "label": "one_constraint_original_projection",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "one_constraint_original_projection",
+        "terminal": "exception",
+        "kind": "valid_single_affine_constraint_original_helper",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "one_constraint_original_projection",
+          "kind": "valid_single_affine_constraint_original_helper",
+          "terminal": "exception",
+          "seconds": 0.09399999998277053,
+          "exception_class": "ValueError",
+          "message": "jacrev: `chunk_size` should be greater than 0."
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:one_constraint_chunk_projection",
+      "type": "Result",
+      "label": "one_constraint_chunk_projection",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "one_constraint_chunk_projection",
+        "terminal": "returned",
+        "kind": "valid_single_affine_constraint_other_author_helper",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "one_constraint_chunk_projection",
+          "kind": "valid_single_affine_constraint_other_author_helper",
+          "terminal": "returned",
+          "seconds": 0.10999999998603016,
+          "output": [
+            [
+              1.0,
+              0.2
+            ],
+            [
+              0.9999999999999999,
+              1.1
+            ]
+          ],
+          "finite": true,
+          "max_abs_residual": 1.1102230246251565e-16,
+          "residual": [
+            [
+              0.0
+            ],
+            [
+              -1.1102230246251565e-16
+            ]
+          ],
+          "reference_max_abs_error": 1.1102230246251565e-16
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:circle_chunk_one_iteration",
+      "type": "Result",
+      "label": "circle_chunk_one_iteration",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "circle_chunk_one_iteration",
+        "terminal": "returned",
+        "kind": "nonlinear_fixed_iteration_diagnostic",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "circle_chunk_one_iteration",
+          "kind": "nonlinear_fixed_iteration_diagnostic",
+          "terminal": "returned",
+          "seconds": 0.14000000001396984,
+          "output": [
+            [
+              1.0054054054054054,
+              0.16756756756756758
+            ],
+            [
+              -0.345985401459854,
+              0.9514598540145986
+            ]
+          ],
+          "finite": true,
+          "max_abs_residual": 0.03891891891891874,
+          "residual": [
+            [
+              0.03891891891891874
+            ],
+            [
+              0.024981751824817655
+            ]
+          ],
+          "reference_max_abs_error": 0.0190114815732616
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:circle_chunk_eight_iterations",
+      "type": "Result",
+      "label": "circle_chunk_eight_iterations",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "circle_chunk_eight_iterations",
+        "terminal": "returned",
+        "kind": "nonlinear_fixed_iteration_diagnostic",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "circle_chunk_eight_iterations",
+          "kind": "nonlinear_fixed_iteration_diagnostic",
+          "terminal": "returned",
+          "seconds": 0.06299999996554106,
+          "output": [
+            [
+              0.9863939238321437,
+              0.16439898730535732
+            ],
+            [
+              -0.3417430630867044,
+              0.9397934234884371
+            ]
+          ],
+          "finite": true,
+          "max_abs_residual": 0.0,
+          "residual": [
+            [
+              0.0
+            ],
+            [
+              0.0
+            ]
+          ],
+          "reference_max_abs_error": 1.1102230246251565e-16
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:circle_zero_jacobian",
+      "type": "Result",
+      "label": "circle_zero_jacobian",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "circle_zero_jacobian",
+        "terminal": "exception",
+        "kind": "outside_full_rank_theorem_assumption",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "circle_zero_jacobian",
+          "kind": "outside_full_rank_theorem_assumption",
+          "terminal": "exception",
+          "seconds": 0.125,
+          "exception_class": "_LinAlgError",
+          "message": "torch.linalg.solve: (Batch element 0): The solver failed because the input matrix is singular."
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:inconsistent_linear_constraints",
+      "type": "Result",
+      "label": "inconsistent_linear_constraints",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "inconsistent_linear_constraints",
+        "terminal": "exception",
+        "kind": "infeasible_constraints_negative_control",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "inconsistent_linear_constraints",
+          "kind": "infeasible_constraints_negative_control",
+          "terminal": "exception",
+          "seconds": 0.0,
+          "exception_class": "_LinAlgError",
+          "message": "torch.linalg.solve: (Batch element 0): The solver failed because the input matrix is singular."
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:regularized_intermediate_step",
+      "type": "Result",
+      "label": "regularized_intermediate_step",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "regularized_intermediate_step",
+        "terminal": "returned",
+        "kind": "intermediate_regularized_projection_not_final_solver",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "regularized_intermediate_step",
+          "kind": "intermediate_regularized_projection_not_final_solver",
+          "terminal": "returned",
+          "seconds": 0.0470000000204891,
+          "output": [
+            [
+              1.0000012999986967,
+              3.4
+            ]
+          ],
+          "finite": true,
+          "max_abs_residual": 1.2999986966910626e-06,
+          "residual": [
+            [
+              1.2999986966910626e-06
+            ]
+          ],
+          "reference_max_abs_error": null,
+          "eps": 1e-06,
+          "flow_t": 0.9,
+          "flow_dt": 0.1,
+          "final_projection_applied": false
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:burgers_constant_mass_boundary_flux",
+      "type": "Result",
+      "label": "burgers_constant_mass_boundary_flux",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "burgers_constant_mass_boundary_flux",
+        "terminal": "returned",
+        "kind": "operator_semantics_diagnostic_not_PDE_sample",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "burgers_constant_mass_boundary_flux",
+          "kind": "operator_semantics_diagnostic_not_PDE_sample",
+          "terminal": "returned",
+          "seconds": 0.0,
+          "residual": [
+            0.0,
+            -0.025000000000000022,
+            -0.050000000000000044
+          ],
+          "analytic_boundary_balance_residual": [
+            -0.0,
+            -0.025,
+            -0.05
+          ],
+          "max_abs_reference_error": 4.163336342344337e-17,
+          "constant_mass_difference": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "PDE_solution_claimed": false
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:godunov_sign_crossing_rarefaction",
+      "type": "Result",
+      "label": "godunov_sign_crossing_rarefaction",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "godunov_sign_crossing_rarefaction",
+        "terminal": "returned",
+        "kind": "extended_sign_domain_negative_control",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "godunov_sign_crossing_rarefaction",
+          "kind": "extended_sign_domain_negative_control",
+          "terminal": "returned",
+          "seconds": 0.015000000013969839,
+          "left": [
+            -1.0,
+            0.2,
+            -2.0
+          ],
+          "right": [
+            1.0,
+            0.8,
+            -0.5
+          ],
+          "observed_flux": [
+            0.5,
+            0.020000000000000004,
+            0.125
+          ],
+          "analytic_convex_flux_reference": [
+            0.0,
+            0.02,
+            0.125
+          ],
+          "max_abs_reference_error": 0.5,
+          "scope": "Sign-crossing input extends beyond the paper sigmoid/Dirichlet positive-valued Burgers benchmark; no in-scope benchmark failure is inferred."
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:final_call_signature",
+      "type": "Result",
+      "label": "final_call_signature",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "final_call_signature",
+        "terminal": "exception",
+        "kind": "AST isolated call/signature probe",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "final_call_signature",
+          "terminal": "exception",
+          "exception_class": "TypeError",
+          "message": "got an unexpected keyword argument 'mode'"
+        }
+      }
+    },
+    {
+      "id": "constraint040:component:exact_class_method_one_synthetic_step",
+      "type": "Result",
+      "label": "exact_class_method_one_synthetic_step",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "case": "exact_class_method_one_synthetic_step",
+        "terminal": "exception",
+        "kind": "AST isolated call/signature probe",
+        "not_model_generation": true,
+        "independent_review": false,
+        "result": {
+          "case": "exact_class_method_one_synthetic_step",
+          "terminal": "exception",
+          "exception_class": "TypeError",
+          "message": "fast_project_batched() got an unexpected keyword argument 'mode'"
+        }
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM_component_scope",
+      "type": "Claim",
+      "label": "PCFM_component_scope",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "Ten manufactured component cases and two signature/class-body probes do not count as model runs or PDE generations.",
+        "statement": "Ten manufactured component cases and two signature/class-body probes do not count as model runs or PDE generations.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "qualification_scope": "CPU exact-source mathematical diagnostics;not whole model generation",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM_component_scope",
+      "type": "EvidenceSpan",
+      "label": "CPU exact-source mathematical diagnostics;not whole model generation",
+      "properties": {
+        "source_id": null,
+        "source_sha256": null,
+        "source_url": null,
+        "local_observation_path": "runs/wp1/pcfm_hard_constraint_review_20261012/component_probe_results.json",
+        "local_observation_sha256": "267ee9c8a88ec81bcc2b604021bc541b058bbc74944736f1fb739a0570836bc0",
+        "local_display_path": "hard_constraint_evidence.html",
+        "location": "CPU exact-source mathematical diagnostics;not whole model generation",
+        "observation": "Ten manufactured component cases and two signature/class-body probes do not count as model runs or PDE generations.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PCFM_sampler_scope",
+      "type": "Claim",
+      "label": "PCFM_sampler_scope",
+      "properties": {
+        "work_id": "constraint040:work:PCFM",
+        "text": "Current final sampler call has an unsupported mode argument, observed by signature and AST class-body probes.",
+        "statement": "Current final sampler call has an unsupported mode argument, observed by signature and AST class-body probes.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "qualification_scope": "Disclosed isolated class body with own zero velocity field;not pretrained inference",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PCFM_sampler_scope",
+      "type": "EvidenceSpan",
+      "label": "Disclosed isolated class body with own zero velocity field;not pretrained inference",
+      "properties": {
+        "source_id": null,
+        "source_sha256": null,
+        "source_url": null,
+        "local_observation_path": "runs/wp1/pcfm_hard_constraint_review_20261012/sampler_integration_probe_results.json",
+        "local_observation_sha256": "083b193cbbe6b1b2b5adcfbf9b6337c8b80cb083c5b627808f94b39cfd068c5e",
+        "local_display_path": "hard_constraint_evidence.html",
+        "location": "Disclosed isolated class body with own zero velocity field;not pretrained inference",
+        "observation": "Current final sampler call has an unsupported mode argument, observed by signature and AST class-body probes.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:asset:PCFM_code",
+      "type": "ArtifactVersion",
+      "label": "PCFM_code",
+      "properties": {
+        "source_id": "S356",
+        "source_url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/pcfm_sampling.py",
+        "source_sha256": "5b1f040ece1105a7677b68e22e0e95f20480bd24e3c12a86d5a4ebeb4862fe59",
+        "role": "code",
+        "payload_acquired": true,
+        "model_executed": false,
+        "raw_payload_redistributed": false,
+        "rights_complete_for_named_use": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:asset:PCFM_Julia",
+      "type": "ArtifactVersion",
+      "label": "PCFM_Julia",
+      "properties": {
+        "source_id": "S362",
+        "source_url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/src/sampling.jl",
+        "source_sha256": "50e0d3b400f73e21879c3ef5871ed7a9fff0575920860d2bc0469ed5d28ebc28",
+        "role": "experimental_code",
+        "payload_acquired": true,
+        "model_executed": false,
+        "raw_payload_redistributed": false,
+        "rights_complete_for_named_use": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:asset:PBFM_Darcy",
+      "type": "ArtifactVersion",
+      "label": "PBFM_Darcy",
+      "properties": {
+        "source_id": "S372",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/logs/PBFM/checkpoints/0008000.pt",
+        "source_sha256": "2c85185f7e77bd0b0f9e580f8afd545728b44383af27dc793e93e0b223382015",
+        "role": "checkpoint",
+        "payload_acquired": true,
+        "model_executed": true,
+        "raw_payload_redistributed": false,
+        "rights_complete_for_named_use": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:asset:PBFM_Dynamic",
+      "type": "ArtifactVersion",
+      "label": "PBFM_Dynamic",
+      "properties": {
+        "source_id": "S373",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/logs/PBFM/checkpoints/0032000.pt",
+        "source_sha256": "51196ba21e2cbb24c56b89b6de6f5ac9c8664bbe9a0f1df384b5472c3ba9dad9",
+        "role": "checkpoint",
+        "payload_acquired": true,
+        "model_executed": false,
+        "raw_payload_redistributed": false,
+        "rights_complete_for_named_use": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:asset:PBFM_Kolmogorov",
+      "type": "ArtifactVersion",
+      "label": "PBFM_Kolmogorov",
+      "properties": {
+        "source_id": "S374",
+        "source_url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/kolmogorov_flow/logs/PBFM/checkpoints/0001000.pt",
+        "source_sha256": "a2f421d1e1c65e35a0326d80af766f75107ee54cc816e4ba875e4b9415617781",
+        "role": "checkpoint",
+        "payload_acquired": true,
+        "model_executed": false,
+        "raw_payload_redistributed": false,
+        "rights_complete_for_named_use": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:PBFM_environment",
+      "type": "Environment",
+      "label": "PBFM reused-runtime dependency overlay",
+      "properties": {
+        "python": "3.12.14",
+        "torch": "2.11.0+cu128",
+        "numpy": "2.5.4",
+        "timm": "1.0.30",
+        "torchvision": "0.26.0+cpu",
+        "GPU": "NVIDIA GeForce RTX 5080",
+        "cached_base_reused": true,
+        "fresh_cold_start": false,
+        "author_environment_reproduced": false,
+        "scientific_R4_pass": false
+      }
+    },
+    {
+      "id": "constraint040:PBFM_recipe",
+      "type": "RunRecipe",
+      "label": "Bounded Darcy author sampler recipe",
+      "properties": {
+        "contract_path": "runs/wp2/pbfm_darcy_execution_20261012/execution_contract.json",
+        "contract_sha256": "0a098d3ad4d902af1914fa6a37639115380a21bb9cb35f3cd60ae18f5ee3b977",
+        "samples_per_mode": 32,
+        "modes": [
+          "deterministic",
+          "stochastic"
+        ],
+        "steps": 20,
+        "subbatch": 4,
+        "original_program_batch32_1024samples": false,
+        "validation_data_acquired": false
+      }
+    },
+    {
+      "id": "constraint040:run:PBFM:original_entry",
+      "type": "ExecutionRun",
+      "label": "PBFM original_entry",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "variant": "original_entry",
+        "status": "failed",
+        "observed_at": "2026-10-12",
+        "source_process_returncode": 1,
+        "timeout": false,
+        "seconds_attempt": 5.23399999999674,
+        "log_sha256": "b7e2da43093b40b0743b0884ea06f635d1aa711f9557cc24f24cfbee989ae6a3",
+        "model_or_simulation_executed": false,
+        "sample_generation_executed": false,
+        "task_output_generated": false,
+        "generated_sample_count": 0,
+        "task_output_unit": "mode-specific pressure/permeability fields,not independent qualified samples",
+        "original_program_completed": false,
+        "technical_generation_completed": false,
+        "public_log": "data/hard_constraint_evidence_integrated.json",
+        "scope": "Original entry blocked by missing valid/p_data.csv before model generation",
+        "R4_clean_start_pass": false,
+        "scientific_R4_pass": false,
+        "independent_physical_pass": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:PBFM_native_failure",
+      "type": "FailureEvent",
+      "label": "Missing validation dataset before generation",
+      "properties": {
+        "run_id": "constraint040:run:PBFM:original_entry",
+        "category": "missing_input_asset_pre_generation",
+        "message": "FileNotFoundError valid/p_data.csv",
+        "failure_attribution": "input_asset_not_acquired",
+        "not_checkpoint_inference_failure": true
+      }
+    },
+    {
+      "id": "constraint040:run:PBFM:bounded_original_sampler",
+      "type": "ExecutionRun",
+      "label": "PBFM bounded_original_sampler",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "variant": "bounded_original_sampler",
+        "status": "passed",
+        "observed_at": "2026-10-12",
+        "source_process_returncode": 0,
+        "timeout": false,
+        "seconds_attempt": 18.14100000000326,
+        "log_sha256": "3b2ecd9c24f59ee8ee21e527c4b85aba1aaed51abe77bb833f1cf2d9550fc08b",
+        "model_or_simulation_executed": true,
+        "sample_generation_executed": true,
+        "task_output_generated": true,
+        "generated_sample_count": 64,
+        "task_output_unit": "mode-specific pressure/permeability fields,not independent qualified samples",
+        "original_program_completed": false,
+        "technical_generation_completed": true,
+        "public_log": "data/hard_constraint_evidence_integrated.json",
+        "scope": "Two32sample modes via original unconditional sample function with disclosed wrapper/subbatch/seed changes;not full original1024sample benchmark",
+        "R4_clean_start_pass": false,
+        "scientific_R4_pass": false,
+        "independent_physical_pass": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:output:PBFM:deterministic",
+      "type": "ObservedOutput",
+      "label": "PBFM deterministic32fields",
+      "properties": {
+        "run_id": "constraint040:run:PBFM:bounded_original_sampler",
+        "mode": "deterministic",
+        "shape": [
+          32,
+          2,
+          64,
+          64
+        ],
+        "sample_events": 32,
+        "private_output_sha256": "3117cd15fccc4ec9bfda69c83be9271dc95bda1dfe67952ea8dad7fa80462293",
+        "raw_arrays_redistributed": false,
+        "nonfinite_values": 0,
+        "nonpositive_K_points": 4,
+        "samples_with_nonpositive_K": 1,
+        "independent_sample_count_asserted": false,
+        "physical_qualification": false
+      }
+    },
+    {
+      "id": "constraint040:output:PBFM:stochastic",
+      "type": "ObservedOutput",
+      "label": "PBFM stochastic32fields",
+      "properties": {
+        "run_id": "constraint040:run:PBFM:bounded_original_sampler",
+        "mode": "stochastic",
+        "shape": [
+          32,
+          2,
+          64,
+          64
+        ],
+        "sample_events": 32,
+        "private_output_sha256": "f1d70b869342dfa357c15d76764955844b8d25f06a48208464d2ba4dc941661a",
+        "raw_arrays_redistributed": false,
+        "nonfinite_values": 0,
+        "nonpositive_K_points": 0,
+        "samples_with_nonpositive_K": 0,
+        "independent_sample_count_asserted": false,
+        "physical_qualification": false
+      }
+    },
+    {
+      "id": "constraint040:PBFM_followup",
+      "type": "ReleaseObservation",
+      "label": "PBFM checkpoint execution and applicability",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "public_display_path": "hard_constraint_evidence.html?work=PBFM",
+        "summary_ko": "원래 프로그램의 입력 미확보와 별도 호출의64개 출력,음의 투과도와 수치 검증 범위를 구분합니다.",
+        "original_program_completed": false,
+        "scientific_R4_pass": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM_output_scope",
+      "type": "Claim",
+      "label": "PBFM_output_scope",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "text": "Exact author EMA loaded;64bounded mode-specific finite fields observed;original entry blocked before generation;not paper distribution reproduction.",
+        "statement": "Exact author EMA loaded;64bounded mode-specific finite fields observed;original entry blocked before generation;not paper distribution reproduction.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "qualification_scope": "Disclosed output contract;no reference dataset or original full program completion",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM_output_scope",
+      "type": "EvidenceSpan",
+      "label": "Disclosed output contract;no reference dataset or original full program completion",
+      "properties": {
+        "source_id": null,
+        "source_sha256": null,
+        "source_url": null,
+        "local_observation_path": "runs/wp2/pbfm_darcy_execution_20261012/worker_observation.json",
+        "local_observation_sha256": "5ed28c4bc3d218658ebc538fe9ccff8e5888b0e8694a83269845b1d4a72c4f33",
+        "local_display_path": "hard_constraint_evidence.html",
+        "location": "Disclosed output contract;no reference dataset or original full program completion",
+        "observation": "Exact author EMA loaded;64bounded mode-specific finite fields observed;original entry blocked before generation;not paper distribution reproduction.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PBFM_domain_and_software",
+      "type": "Claim",
+      "label": "PBFM_domain_and_software",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "text": "Four nonpositive permeability points in one deterministic field;none observed in32stochastic fields. Separate shared-equation NumPy check is software consistency,not independent physical calibration.",
+        "statement": "Four nonpositive permeability points in one deterministic field;none observed in32stochastic fields. Separate shared-equation NumPy check is software consistency,not independent physical calibration.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "qualification_scope": "Post-generation diagnostic contract fixed before separate recomputation;not prospective manufacturing threshold",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PBFM_domain_and_software",
+      "type": "EvidenceSpan",
+      "label": "Post-generation diagnostic contract fixed before separate recomputation;not prospective manufacturing threshold",
+      "properties": {
+        "source_id": null,
+        "source_sha256": null,
+        "source_url": null,
+        "local_observation_path": "runs/wp2/pbfm_darcy_execution_20261012/numerical_and_domain_diagnostics.json",
+        "local_observation_sha256": "ce7589ef2cffc26354a8623878df8c99edf55487128673fd34f1a0820d475ba2",
+        "local_display_path": "hard_constraint_evidence.html",
+        "location": "Post-generation diagnostic contract fixed before separate recomputation;not prospective manufacturing threshold",
+        "observation": "Four nonpositive permeability points in one deterministic field;none observed in32stochastic fields. Separate shared-equation NumPy check is software consistency,not independent physical calibration.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "independent_review": false
+      }
+    },
+    {
+      "id": "constraint040:PBFM_numpy_validator",
+      "type": "Validator",
+      "label": "Separate same-equation residual recomputation",
+      "properties": {
+        "implementation": "NumPy float64 finite differences",
+        "maximum_scaled_discrepancy": [
+          9.118037592099645e-06,
+          2.2868475385078506e-06
+        ],
+        "software_tolerance": 0.0001,
+        "software_agreement_pass": true,
+        "negative_control_rejected": true,
+        "independent_physical_reference": false,
+        "analysis_contract_timing": "after generation,before recomputation",
+        "manufacturing_tolerance": null
+      }
+    },
+    {
+      "id": "constraint040:PBFM_metric_identity",
+      "type": "ClaimConflict",
+      "label": "Residual MAE/MSE identity requires reconciliation",
+      "properties": {
+        "work_id": "constraint040:work:PBFM",
+        "paper_table_caption": "MSE",
+        "source_program": "abs().mean()",
+        "own_MAE": [
+          0.8566027283668518,
+          1.2366920709609985
+        ],
+        "own_MSE": [
+          7.082430217503844,
+          17.88216146962795
+        ],
+        "resolved": false,
+        "paper_metric_reproduction": false
+      }
+    },
+    {
+      "id": "constraint040:claim:PhysX_annotation_fit",
+      "type": "Claim",
+      "label": "PhysX_annotation_fit",
+      "properties": {
+        "work_id": "physx039:work",
+        "text": "Historical V2_property_annotation_agreement is retained;Table2 supports estimated/annotated-property fit,not a numerical physical-law or metrology pass.",
+        "statement": "Historical V2_property_annotation_agreement is retained;Table2 supports estimated/annotated-property fit,not a numerical physical-law or metrology pass.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "qualification_scope": "Same-AI coding clarification proposal;independent reconciliation pending",
+        "independent_review": false,
+        "industrial_pass": false
+      }
+    },
+    {
+      "id": "constraint040:span:PhysX_annotation_fit",
+      "type": "EvidenceSpan",
+      "label": "Same-AI coding clarification proposal;independent reconciliation pending",
+      "properties": {
+        "source_id": null,
+        "source_sha256": null,
+        "source_url": null,
+        "local_observation_path": "runs/wp0/editorial_revision_v415_20261012/taxonomy_reconciliation.json",
+        "local_observation_sha256": "94a99c45b7523169a8b28e5bb6488b9309ad639bf3d0f6b0c6661a59309c9498",
+        "local_display_path": "hard_constraint_evidence.html",
+        "location": "Same-AI coding clarification proposal;independent reconciliation pending",
+        "observation": "Historical V2_property_annotation_agreement is retained;Table2 supports estimated/annotated-property fit,not a numerical physical-law or metrology pass.",
+        "evidence_origin": "investigator_generated_same_AI",
+        "independent_review": false
+      }
     }
   ],
   "edges": [
@@ -62794,6 +65188,2008 @@
       "provenance": {
         "integrated_date": "2026-10-12"
       }
+    },
+    {
+      "id": "E02270",
+      "source": "constraint040:work:PCFM",
+      "type": "PROPOSES",
+      "target": "method:D43",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02271",
+      "source": "constraint040:paper:PCFM",
+      "type": "VERSION_OF",
+      "target": "constraint040:work:PCFM",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02272",
+      "source": "constraint040:paper:PCFM",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02273",
+      "source": "constraint040:work:PCFM",
+      "type": "HAS_FULLTEXT_REVIEW",
+      "target": "constraint040:review:PCFM",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02274",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02275",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02276",
+      "source": "constraint040:claim:PCFM:PC01",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02277",
+      "source": "constraint040:span:PCFM:PC01",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02278",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02279",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02280",
+      "source": "constraint040:claim:PCFM:PC02",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02281",
+      "source": "constraint040:span:PCFM:PC02",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02282",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02283",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02284",
+      "source": "constraint040:claim:PCFM:PC03",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02285",
+      "source": "constraint040:span:PCFM:PC03",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02286",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02287",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02288",
+      "source": "constraint040:claim:PCFM:PC04",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02289",
+      "source": "constraint040:span:PCFM:PC04",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02290",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02291",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02292",
+      "source": "constraint040:claim:PCFM:PC05",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02293",
+      "source": "constraint040:span:PCFM:PC05",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02294",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02295",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02296",
+      "source": "constraint040:claim:PCFM:PC06",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02297",
+      "source": "constraint040:span:PCFM:PC06",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02298",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC07",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02299",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC07",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02300",
+      "source": "constraint040:claim:PCFM:PC07",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC07",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02301",
+      "source": "constraint040:span:PCFM:PC07",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02302",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC08",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02303",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC08",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02304",
+      "source": "constraint040:claim:PCFM:PC08",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC08",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02305",
+      "source": "constraint040:span:PCFM:PC08",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02306",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC09",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02307",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC09",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02308",
+      "source": "constraint040:claim:PCFM:PC09",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC09",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02309",
+      "source": "constraint040:span:PCFM:PC09",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02310",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC10",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02311",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC10",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02312",
+      "source": "constraint040:claim:PCFM:PC10",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC10",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02313",
+      "source": "constraint040:span:PCFM:PC10",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02314",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC11",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02315",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC11",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02316",
+      "source": "constraint040:claim:PCFM:PC11",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC11",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02317",
+      "source": "constraint040:span:PCFM:PC11",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02318",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC12",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02319",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC12",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02320",
+      "source": "constraint040:claim:PCFM:PC12",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC12",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02321",
+      "source": "constraint040:span:PCFM:PC12",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02322",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC13",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02323",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC13",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02324",
+      "source": "constraint040:claim:PCFM:PC13",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC13",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02325",
+      "source": "constraint040:span:PCFM:PC13",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02326",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC14",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02327",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC14",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02328",
+      "source": "constraint040:claim:PCFM:PC14",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC14",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02329",
+      "source": "constraint040:span:PCFM:PC14",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02330",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC15",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02331",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC15",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02332",
+      "source": "constraint040:claim:PCFM:PC15",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC15",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02333",
+      "source": "constraint040:span:PCFM:PC15",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02334",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC16",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02335",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC16",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02336",
+      "source": "constraint040:claim:PCFM:PC16",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC16",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02337",
+      "source": "constraint040:span:PCFM:PC16",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02338",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC17",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02339",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC17",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02340",
+      "source": "constraint040:claim:PCFM:PC17",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC17",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02341",
+      "source": "constraint040:span:PCFM:PC17",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02342",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC18",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02343",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC18",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02344",
+      "source": "constraint040:claim:PCFM:PC18",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC18",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02345",
+      "source": "constraint040:span:PCFM:PC18",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02346",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC19",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02347",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC19",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02348",
+      "source": "constraint040:claim:PCFM:PC19",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC19",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02349",
+      "source": "constraint040:span:PCFM:PC19",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02350",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC20",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02351",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC20",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02352",
+      "source": "constraint040:claim:PCFM:PC20",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC20",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02353",
+      "source": "constraint040:span:PCFM:PC20",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02354",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC21",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02355",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC21",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02356",
+      "source": "constraint040:claim:PCFM:PC21",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC21",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02357",
+      "source": "constraint040:span:PCFM:PC21",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02358",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:PC22",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02359",
+      "source": "constraint040:review:PCFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PCFM:PC22",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02360",
+      "source": "constraint040:claim:PCFM:PC22",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:PC22",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02361",
+      "source": "constraint040:span:PCFM:PC22",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02362",
+      "source": "constraint040:work:PBFM",
+      "type": "PROPOSES",
+      "target": "method:D44",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02363",
+      "source": "constraint040:paper:PBFM",
+      "type": "VERSION_OF",
+      "target": "constraint040:work:PBFM",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02364",
+      "source": "constraint040:paper:PBFM",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02365",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_FULLTEXT_REVIEW",
+      "target": "constraint040:review:PBFM",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02366",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02367",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02368",
+      "source": "constraint040:claim:PBFM:PB01",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02369",
+      "source": "constraint040:span:PBFM:PB01",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02370",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02371",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02372",
+      "source": "constraint040:claim:PBFM:PB02",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02373",
+      "source": "constraint040:span:PBFM:PB02",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02374",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02375",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02376",
+      "source": "constraint040:claim:PBFM:PB03",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02377",
+      "source": "constraint040:span:PBFM:PB03",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02378",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02379",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02380",
+      "source": "constraint040:claim:PBFM:PB04",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02381",
+      "source": "constraint040:span:PBFM:PB04",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02382",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02383",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02384",
+      "source": "constraint040:claim:PBFM:PB05",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02385",
+      "source": "constraint040:span:PBFM:PB05",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02386",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02387",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02388",
+      "source": "constraint040:claim:PBFM:PB06",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02389",
+      "source": "constraint040:span:PBFM:PB06",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02390",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM:PB07",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02391",
+      "source": "constraint040:review:PBFM",
+      "type": "CONTAINS",
+      "target": "constraint040:claim:PBFM:PB07",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02392",
+      "source": "constraint040:claim:PBFM:PB07",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM:PB07",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02393",
+      "source": "constraint040:span:PBFM:PB07",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pbfm_pdf",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02394",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:CODE01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02395",
+      "source": "constraint040:claim:PCFM:CODE01",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:CODE01",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02396",
+      "source": "constraint040:span:PCFM:CODE01",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_projector",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02397",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:CODE02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02398",
+      "source": "constraint040:claim:PCFM:CODE02",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:CODE02",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02399",
+      "source": "constraint040:span:PCFM:CODE02",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_sampler",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02400",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:CODE03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02401",
+      "source": "constraint040:claim:PCFM:CODE03",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:CODE03",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02402",
+      "source": "constraint040:span:PCFM:CODE03",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_residual",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02403",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:CODE04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02404",
+      "source": "constraint040:claim:PCFM:CODE04",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:CODE04",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02405",
+      "source": "constraint040:span:PCFM:CODE04",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_residual",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02406",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:CODE05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02407",
+      "source": "constraint040:claim:PCFM:CODE05",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:CODE05",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02408",
+      "source": "constraint040:span:PCFM:CODE05",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_rd_generator",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02409",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM:CODE06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02410",
+      "source": "constraint040:claim:PCFM:CODE06",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM:CODE06",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02411",
+      "source": "constraint040:span:PCFM:CODE06",
+      "type": "LOCATED_IN",
+      "target": "constraint040:source:pcfm_training_cli",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02412",
+      "source": "constraint040:work:PCFM",
+      "type": "HAS_VALIDATOR",
+      "target": "constraint040:PCFM_components",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02413",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:affine_four_constraints_original_projection",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02414",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:one_constraint_original_projection",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02415",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:one_constraint_chunk_projection",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02416",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:circle_chunk_one_iteration",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02417",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:circle_chunk_eight_iterations",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02418",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:circle_zero_jacobian",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02419",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:inconsistent_linear_constraints",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02420",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:regularized_intermediate_step",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02421",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:burgers_constant_mass_boundary_flux",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02422",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:godunov_sign_crossing_rarefaction",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02423",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:final_call_signature",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02424",
+      "source": "constraint040:PCFM_components",
+      "type": "HAS_RESULT",
+      "target": "constraint040:component:exact_class_method_one_synthetic_step",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02425",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM_component_scope",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02426",
+      "source": "constraint040:claim:PCFM_component_scope",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM_component_scope",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02427",
+      "source": "constraint040:work:PCFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PCFM_sampler_scope",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02428",
+      "source": "constraint040:claim:PCFM_sampler_scope",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PCFM_sampler_scope",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02429",
+      "source": "constraint040:work:PCFM",
+      "type": "HAS_ASSET",
+      "target": "constraint040:asset:PCFM_code",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02430",
+      "source": "constraint040:work:PCFM",
+      "type": "HAS_ASSET",
+      "target": "constraint040:asset:PCFM_Julia",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02431",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_ASSET",
+      "target": "constraint040:asset:PBFM_Darcy",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02432",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_ASSET",
+      "target": "constraint040:asset:PBFM_Dynamic",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02433",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_ASSET",
+      "target": "constraint040:asset:PBFM_Kolmogorov",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02434",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_RUN",
+      "target": "constraint040:run:PBFM:original_entry",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02435",
+      "source": "constraint040:run:PBFM:original_entry",
+      "type": "USES_RECIPE",
+      "target": "constraint040:PBFM_recipe",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02436",
+      "source": "constraint040:run:PBFM:original_entry",
+      "type": "USES_ENVIRONMENT",
+      "target": "constraint040:PBFM_environment",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02437",
+      "source": "constraint040:run:PBFM:original_entry",
+      "type": "FAILED_WITH",
+      "target": "constraint040:PBFM_native_failure",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02438",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_RUN",
+      "target": "constraint040:run:PBFM:bounded_original_sampler",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02439",
+      "source": "constraint040:run:PBFM:bounded_original_sampler",
+      "type": "USES_RECIPE",
+      "target": "constraint040:PBFM_recipe",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02440",
+      "source": "constraint040:run:PBFM:bounded_original_sampler",
+      "type": "USES_ENVIRONMENT",
+      "target": "constraint040:PBFM_environment",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02441",
+      "source": "constraint040:run:PBFM:bounded_original_sampler",
+      "type": "GENERATED",
+      "target": "constraint040:output:PBFM:deterministic",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02442",
+      "source": "constraint040:run:PBFM:bounded_original_sampler",
+      "type": "GENERATED",
+      "target": "constraint040:output:PBFM:stochastic",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02443",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_EXECUTION_FOLLOWUP",
+      "target": "constraint040:PBFM_followup",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02444",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM_output_scope",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02445",
+      "source": "constraint040:claim:PBFM_output_scope",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM_output_scope",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02446",
+      "source": "constraint040:work:PBFM",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PBFM_domain_and_software",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02447",
+      "source": "constraint040:claim:PBFM_domain_and_software",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PBFM_domain_and_software",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02448",
+      "source": "constraint040:run:PBFM:bounded_original_sampler",
+      "type": "VALIDATED_BY",
+      "target": "constraint040:PBFM_numpy_validator",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02449",
+      "source": "constraint040:work:PBFM",
+      "type": "HAS_CONFLICT",
+      "target": "constraint040:PBFM_metric_identity",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02450",
+      "source": "physx039:work",
+      "type": "ASSERTS",
+      "target": "constraint040:claim:PhysX_annotation_fit",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
+    },
+    {
+      "id": "E02451",
+      "source": "constraint040:claim:PhysX_annotation_fit",
+      "type": "SUPPORTED_BY",
+      "target": "constraint040:span:PhysX_annotation_fit",
+      "assertion_status": "source_bound_same_AI_not_independent_qualification",
+      "provenance": {
+        "integrated_date": "2026-10-12",
+        "integration": "constraint040"
+      }
     }
   ],
   "provenance": {
@@ -62888,6 +67284,158 @@
         "output/PhysXGen_Pre_Render_Observation_Evidence_20261012.zip": "be25d123d2734f8d611a838b0fcfe90a797516f7d6696f6b8d8293be760be959"
       },
       "independent_review": false
+    },
+    "constraint_forward_integration": {
+      "parent_graph_path": "runs/wp2/constraint_service_integration_20261012/before_service__data__knowledge_graph.json",
+      "parent_graph_sha256": "5576ed0a40719cf2254c0647ed1c2f11ed8a5825cb48f8b25db60bb0fe79e543",
+      "input_stages": [
+        "runs/wp1/pcfm_hard_constraint_review_20261012",
+        "runs/wp2/pbfm_darcy_execution_20261012"
+      ],
+      "source_inputs": [
+        {
+          "key": "pcfm_pdf",
+          "source_id": "S355",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+          "private_path": "runs/wp1/fulltext_acquisition_20261011/W_neurips_2025_2d357e78fbc55e89/main.pdf",
+          "sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d"
+        },
+        {
+          "key": "pcfm_projector",
+          "source_id": "S356",
+          "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/pcfm_sampling.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "5b1f040ece1105a7677b68e22e0e95f20480bd24e3c12a86d5a4ebeb4862fe59"
+        },
+        {
+          "key": "pcfm_residual",
+          "source_id": "S357",
+          "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/constraints.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "f3a993d85d7152c0d2679bee4c575395b4f2e0bff0da663f8992253ae1d950ab"
+        },
+        {
+          "key": "pcfm_sampler",
+          "source_id": "S358",
+          "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/ffm_sampler.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "d4b3f947b7ec99d4f7671e3041e65976c6ecb47e8f5101257fc90f2959777d75"
+        },
+        {
+          "key": "pcfm_rd_generator",
+          "source_id": "S359",
+          "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/datasets/generate_RD1d_data.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "f13ae07fdce5b1bb70433a85e66fc0225abccd37edf14e9f4a39c578b7f97a5a"
+        },
+        {
+          "key": "pcfm_training_cli",
+          "source_id": "S360",
+          "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/scripts/training/main.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "c145b9fab3cb71a61b40916aa45e326d97f957d5d3fe31f0b2aa193ce1fd3c1f"
+        },
+        {
+          "key": "pcfm_license",
+          "source_id": "S361",
+          "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/LICENSE",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "b2f0ff0d015d2491632e48a2a45c3aa441e3964e850cca3f10ab1538d2478d3f"
+        },
+        {
+          "key": "pcfm_julia_sampling",
+          "source_id": "S362",
+          "url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/src/sampling.jl",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "50e0d3b400f73e21879c3ef5871ed7a9fff0575920860d2bc0469ed5d28ebc28"
+        },
+        {
+          "key": "pcfm_julia_example",
+          "source_id": "S363",
+          "url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/examples/train_diffusion.jl",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "881cd2fb164702a55f721be25ee85b2d01c1624808306edc7fea083d854a1767"
+        },
+        {
+          "key": "pcfm_julia_license",
+          "source_id": "S364",
+          "url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/LICENSE",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "2772156eff93b9e2cd73e02ac36965019a64738bc90d1755fda8f88653e3f776"
+        },
+        {
+          "key": "pbfm_pdf",
+          "source_id": "S365",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1"
+        },
+        {
+          "key": "pbfm_dit",
+          "source_id": "S366",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dit.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "b80565b14f8f06f8cca0e018582009b6a4a9906ca6447705cbe3207970d3c2cc"
+        },
+        {
+          "key": "pbfm_flow",
+          "source_id": "S367",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/flow_matching.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97"
+        },
+        {
+          "key": "pbfm_residual",
+          "source_id": "S368",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/grad_utils.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "08876caaf82dc9d37dff0d6652e0aae01aec608c7b4fe8cef773fb0b79f99f4c"
+        },
+        {
+          "key": "pbfm_data",
+          "source_id": "S369",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dataset_loader.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "e92e07966f858fe9fd535c89ba672e14281300aa5eb0b4b500b257f6b8526f82"
+        },
+        {
+          "key": "pbfm_original_cli",
+          "source_id": "S370",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/sample.py",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "70df78a2d38d27f80f1fb26ce5a5f0d41ae6ca2fe066ad0a9ca4ce4e77bc9a57"
+        },
+        {
+          "key": "pbfm_license",
+          "source_id": "S371",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/LICENSE",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "key": "pbfm_checkpoint",
+          "source_id": "S372",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/logs/PBFM/checkpoints/0008000.pt",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "2c85185f7e77bd0b0f9e580f8afd545728b44383af27dc793e93e0b223382015"
+        },
+        {
+          "key": "pbfm_dynamic_checkpoint",
+          "source_id": "S373",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/logs/PBFM/checkpoints/0032000.pt",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "51196ba21e2cbb24c56b89b6de6f5ac9c8664bbe9a0f1df384b5472c3ba9dad9"
+        },
+        {
+          "key": "pbfm_kolmogorov_checkpoint",
+          "source_id": "S374",
+          "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/kolmogorov_flow/logs/PBFM/checkpoints/0001000.pt",
+          "private_path": "[private acquisition path omitted; original source digest retained]",
+          "sha256": "a2f421d1e1c65e35a0326d80af766f75107ee54cc816e4ba875e4b9415617781"
+        }
+      ],
+      "independent_review": false,
+      "scope": "Append-only graph objects;component diagnostics notExecutionRun;PhysX Work preserved with separate interpretation overlay"
     }
   },
   "edge_types": [
@@ -62896,21 +67444,27 @@
     "DESCRIBES_METRIC_TRADEOFF",
     "EXECUTED_AS",
     "FAILED_WITH",
+    "GENERATED",
     "HAS_ARTIFACT",
     "HAS_ARTIFACT_VERSION",
     "HAS_ASSET",
+    "HAS_CONFLICT",
     "HAS_EXECUTION_FOLLOWUP",
     "HAS_EXECUTION_RUN",
     "HAS_FAILURE",
     "HAS_FULLTEXT_REVIEW",
+    "HAS_METHOD",
     "HAS_OUTPUT",
     "HAS_PLANNED_TASK",
     "HAS_PLANNED_TASK_CONTRACT",
     "HAS_RECIPE",
     "HAS_RELEASE_OBSERVATION",
+    "HAS_RESULT",
+    "HAS_RUN",
     "HAS_SUPPLEMENT",
     "HAS_SUPPLEMENT_REVIEW",
     "HAS_UNRESOLVED_CONFLICT",
+    "HAS_VALIDATOR",
     "HAS_VERSION",
     "IMPLEMENTED_BY",
     "IMPLEMENTS",
@@ -62928,6 +67482,38 @@
     "USES_TASK_CONTRACT",
     "USES_VALIDATOR",
     "USES_VERSION",
-    "VALIDATED_BY"
-  ]
+    "VALIDATED_BY",
+    "VERSION_OF"
+  ],
+  "assessment_overlays": {
+    "physx039:work": {
+      "historical_physical_evidence_codes": [
+        "V2"
+      ],
+      "display_physical_evidence_label": "주석 물성 일치 · 해석 검토 중",
+      "assessment": "역사적 V2 표기는 보존했습니다. 해당 표의 주석 일치를 물리 제약 검증 통과로 해석하지 않습니다. 독립 재분류 대기입니다.",
+      "strict_constraint_evidence_established_from_Table2": false,
+      "independent_review": false,
+      "proposal_path": "runs/wp0/editorial_revision_v415_20261012/taxonomy_reconciliation.json",
+      "proposal_sha256": "94a99c45b7523169a8b28e5bb6488b9309ad639bf3d0f6b0c6661a59309c9498"
+    }
+  },
+  "work_identity_groups": [
+    {
+      "work_ids": [
+        "work:P03",
+        "constraint040:work:PBFM"
+      ],
+      "publication_identity": "a57483b394a3654f4317051e4ce3b2b8",
+      "identity_basis": "Same official ICLR2026 publication hash and exact attributable author repository;two audit assessment records,not two papers",
+      "independent_adjudication": false
+    }
+  ],
+  "followup_work_overlays": {
+    "work:P03": {
+      "followup_work_id": "constraint040:work:PBFM",
+      "reason": "Later targeted source/checkpoint audit of the same official publication;historical Work fields preserved",
+      "historical_assessment_replaced": false
+    }
+  }
 }

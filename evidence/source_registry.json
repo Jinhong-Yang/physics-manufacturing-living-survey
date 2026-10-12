@@ -3231,8 +3231,208 @@
       "verification_scope": "Frozen stage metadata and actual source/model acquisition where applicable; training dataset not acquired",
       "independent_human_review": false,
       "industrial_pass": false
+    },
+    {
+      "source_id": "S355",
+      "title": "PCFM official NeurIPS2025PDF",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/eacce1f7d11e2c3a7568468e0eff5d33-Paper-Conference.pdf",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "f5ac4801300ccf4cc0d533dc9d5ca4018ee39cf79e8c5f07885b31b6f5c5124d",
+      "verification_scope": "36page text reading;15selected source-page images;not independent adjudication",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S356",
+      "title": "PCFM pinned pcfm/pcfm_sampling.py",
+      "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/pcfm_sampling.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "5b1f040ece1105a7677b68e22e0e95f20480bd24e3c12a86d5a4ebeb4862fe59",
+      "verification_scope": "Exact acquired source bytes;selected implementation/component review,not whole model generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S357",
+      "title": "PCFM pinned pcfm/constraints.py",
+      "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/constraints.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "f3a993d85d7152c0d2679bee4c575395b4f2e0bff0da663f8992253ae1d950ab",
+      "verification_scope": "Exact acquired source bytes;selected implementation/component review,not whole model generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S358",
+      "title": "PCFM pinned pcfm/ffm_sampler.py",
+      "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/pcfm/ffm_sampler.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "d4b3f947b7ec99d4f7671e3041e65976c6ecb47e8f5101257fc90f2959777d75",
+      "verification_scope": "Exact acquired source bytes;selected implementation/component review,not whole model generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S359",
+      "title": "PCFM pinned datasets/generate_RD1d_data.py",
+      "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/datasets/generate_RD1d_data.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "f13ae07fdce5b1bb70433a85e66fc0225abccd37edf14e9f4a39c578b7f97a5a",
+      "verification_scope": "Exact acquired source bytes;selected implementation/component review,not whole model generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S360",
+      "title": "PCFM pinned scripts/training/main.py",
+      "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/scripts/training/main.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "c145b9fab3cb71a61b40916aa45e326d97f957d5d3fe31f0b2aa193ce1fd3c1f",
+      "verification_scope": "Exact acquired source bytes;selected implementation/component review,not whole model generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S361",
+      "title": "PCFM pinned LICENSE",
+      "url": "https://raw.githubusercontent.com/cpfpengfei/PCFM/306c82eca80711f9dcd777248f95ffd0f7c348b0/LICENSE",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "b2f0ff0d015d2491632e48a2a45c3aa441e3964e850cca3f10ab1538d2478d3f",
+      "verification_scope": "Exact acquired source bytes;selected implementation/component review,not whole model generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S362",
+      "title": "PCFM Julia pinned src/sampling.jl",
+      "url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/src/sampling.jl",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "50e0d3b400f73e21879c3ef5871ed7a9fff0575920860d2bc0469ed5d28ebc28",
+      "verification_scope": "Selected source review;Julia program not locally executed",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S363",
+      "title": "PCFM Julia pinned examples/train_diffusion.jl",
+      "url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/examples/train_diffusion.jl",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "881cd2fb164702a55f721be25ee85b2d01c1624808306edc7fea083d854a1767",
+      "verification_scope": "Selected source review;Julia program not locally executed",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S364",
+      "title": "PCFM Julia pinned LICENSE",
+      "url": "https://raw.githubusercontent.com/utkarsh530/PCFM.jl/536cb40649bcda625adc0da347ba91553a05b598/LICENSE",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "2772156eff93b9e2cd73e02ac36965019a64738bc90d1755fda8f88653e3f776",
+      "verification_scope": "Selected source review;Julia program not locally executed",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S365",
+      "title": "PBFM official ICLR2026PDF",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a57483b394a3654f4317051e4ce3b2b8-Paper-Conference.pdf",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "db653924a16f5d957c0a8cc819a27a55b53549c604ed8aabf19b127bbccc57e1",
+      "verification_scope": "Targeted benchmark/source review;29pages acquired,not full29page scientific reading",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S366",
+      "title": "PBFM pinned darcy_flow/dit.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dit.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "b80565b14f8f06f8cca0e018582009b6a4a9906ca6447705cbe3207970d3c2cc",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S367",
+      "title": "PBFM pinned darcy_flow/flow_matching.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/flow_matching.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "26854b9f4829a20694e06383a40d9af6c14a5f6b30eb84f2e66e538079a79c97",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S368",
+      "title": "PBFM pinned darcy_flow/grad_utils.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/grad_utils.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "08876caaf82dc9d37dff0d6652e0aae01aec608c7b4fe8cef773fb0b79f99f4c",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S369",
+      "title": "PBFM pinned darcy_flow/dataset_loader.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/dataset_loader.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "e92e07966f858fe9fd535c89ba672e14281300aa5eb0b4b500b257f6b8526f82",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S370",
+      "title": "PBFM pinned darcy_flow/sample.py",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/sample.py",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "70df78a2d38d27f80f1fb26ce5a5f0d41ae6ca2fe066ad0a9ca4ce4e77bc9a57",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S371",
+      "title": "PBFM pinned LICENSE",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/LICENSE",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S372",
+      "title": "PBFM pinned darcy_flow/logs/PBFM/checkpoints/0008000.pt",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/darcy_flow/logs/PBFM/checkpoints/0008000.pt",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "2c85185f7e77bd0b0f9e580f8afd545728b44383af27dc793e93e0b223382015",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S373",
+      "title": "PBFM pinned dynamic_stall/logs/PBFM/checkpoints/0032000.pt",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/dynamic_stall/logs/PBFM/checkpoints/0032000.pt",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "51196ba21e2cbb24c56b89b6de6f5ac9c8664bbe9a0f1df384b5472c3ba9dad9",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
+    },
+    {
+      "source_id": "S374",
+      "title": "PBFM pinned kolmogorov_flow/logs/PBFM/checkpoints/0001000.pt",
+      "url": "https://raw.githubusercontent.com/tum-pbs/PBFM/2a702673bae0cc4778d63af1c0243ad99e728b78/kolmogorov_flow/logs/PBFM/checkpoints/0001000.pt",
+      "accessed_date": "2026-10-12",
+      "source_sha256": "a2f421d1e1c65e35a0326d80af766f75107ee54cc816e4ba875e4b9415617781",
+      "verification_scope": "Exact acquired bytes;only Darcy checkpoint executed,other checkpoint availability not generation",
+      "independent_human_review": false,
+      "industrial_pass": false
     }
   ],
   "protocol_version": "3.0",
-  "source_count": 322
+  "source_count": 374
 }

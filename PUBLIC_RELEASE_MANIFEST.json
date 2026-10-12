@@ -1,14 +1,42 @@
 {
-  "public_variant": "science0.9.39-public1",
+  "public_variant": "science0.9.40-public1",
   "prepared_date": "2026-10-12",
   "protected_scientific_files": [
     {
       "path": "evidence/source_registry.json",
-      "sha256": "44c1e0cce73265d5edc5b2ed9b3174be80958bd582aa0e61386a2e9b455c8ed7"
+      "sha256": "396b289d65e101c6350a9becc4fe0e96b1d000fe5a9fba2f1c6b884fbb574caa"
+    },
+    {
+      "path": "provenance/original_source_bindings.json",
+      "sha256": "465a1e1b48042ae48bfd749313eef7e04a453ab142a077f7f8fe94adc8b6b557"
     },
     {
       "path": "provenance/parent_graph_0.9.38.json",
       "sha256": "1d094f2d703771c58cab19f5c625b71ac3bfcef9faaaed3fdce9bf6211f2fc64"
+    },
+    {
+      "path": "provenance/parent_graph_0.9.39.json",
+      "sha256": "76b3d48a240471c027ba993a2eb19ba5f9ced3357b719ceabf5dc4dbd90aadd5"
+    },
+    {
+      "path": "provenance/parent_source_registry_0.9.39.json",
+      "sha256": "44c1e0cce73265d5edc5b2ed9b3174be80958bd582aa0e61386a2e9b455c8ed7"
+    },
+    {
+      "path": "scripts/check_public_release.py",
+      "sha256": "bea3d1296938bf736e90b8d5fabed4fdb69332a96db557ff604aa5ee2cbd7858"
+    },
+    {
+      "path": "service/app.js",
+      "sha256": "fe541a3e9202809c593d93fe20b03473fcacfab73d5b43d0b827216145b01e02"
+    },
+    {
+      "path": "service/boundary_readings.html",
+      "sha256": "05e6e0336c4a993fce57abc9b679d8ebde7d17581ea3fc8ed894deb210ef35e9"
+    },
+    {
+      "path": "service/boundary_readings.js",
+      "sha256": "29b59ce4ef8eb499913355f6b6c807ed538b9fa0f0ce9af5f036d8402059f9c1"
     },
     {
       "path": "service/data/boundary_main_pdf_reading_staged.json",
@@ -27,12 +55,16 @@
       "sha256": "e2cb511884b71dfe5a17278d132f24bd448505c7594c54feff667844652ccfc5"
     },
     {
+      "path": "service/data/hard_constraint_evidence_integrated.json",
+      "sha256": "e377a0b2ddb3a7b41608e2a835b24179b51ba06cbbd0f1630ab317457d17f4c9"
+    },
+    {
       "path": "service/data/knowledge_graph.js",
-      "sha256": "576566cd6c9263d5a64ec88ec85352fb9a2ea4b7388769fc9d2cffe2bdad51c5"
+      "sha256": "b90c042822213d946218af8aec92f119a51dcd9b020661f2053080c7cdc7deb5"
     },
     {
       "path": "service/data/knowledge_graph.json",
-      "sha256": "76b3d48a240471c027ba993a2eb19ba5f9ced3357b719ceabf5dc4dbd90aadd5"
+      "sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826"
     },
     {
       "path": "service/data/m2pde_execution_integrated.json",
@@ -117,6 +149,114 @@
     {
       "path": "service/data/taccel_saved_geometry_integrated.json",
       "sha256": "372f3054ca0834e4bc321baab03e379c3216e4d63dbf1c0875241d532fa362d2"
+    },
+    {
+      "path": "service/execution_evidence.js",
+      "sha256": "2fdde9093d0c9c8450ab5d46ee2d8f59cb266418d4f2212f4784cd0dd97742ee"
+    },
+    {
+      "path": "service/gearformer_execution.html",
+      "sha256": "b2973a82894036f4cb09d64f46feaa12aa73ddbc123b0f57a3a771f327bba86f"
+    },
+    {
+      "path": "service/gearformer_execution.js",
+      "sha256": "a431a2b1fa302ffdf3c8adb6b30a0c6777365579dfb9d26d62c65ebfb3451cde"
+    },
+    {
+      "path": "service/hard_constraint_evidence.html",
+      "sha256": "e6ca9e12b4a01ce7f698ec17135cd79417501a41d629f754fd702b01cad6bf99"
+    },
+    {
+      "path": "service/hard_constraint_evidence.js",
+      "sha256": "347aa9144b016c03c46dcac9c5355aa3d55a4ec79098e06d075d2ed555ea6b01"
+    },
+    {
+      "path": "service/index.html",
+      "sha256": "39deabcb0938c5ca3de62c5bc805203fab18a01ef8e22525b51836cc40a1ea36"
+    },
+    {
+      "path": "service/m2pde_execution.html",
+      "sha256": "c099f75b55ca11171e60a867f34df7ccd1f6420332d63708d17cd2e94621bd1d"
+    },
+    {
+      "path": "service/m2pde_execution.js",
+      "sha256": "269f848d48bdf705593c3382ecdcc81d57f97428c9d718ad00f8ee8be7f7086c"
+    },
+    {
+      "path": "service/main_candidate_readings.html",
+      "sha256": "f6c4041e7b5da81476ad72bc7f5822f41ed6579a270585eb72e1895329809567"
+    },
+    {
+      "path": "service/main_candidate_readings.js",
+      "sha256": "a1e0e3253d37bdae44d3a50b6c89c4920524f1a620ea7c4b5ef03e44c50e27d5"
+    },
+    {
+      "path": "service/manufacturing_design_readings.html",
+      "sha256": "ea60a7ea27fbc038f5f85794c3b1de4b43443f68295c88c897e202065b8c9b31"
+    },
+    {
+      "path": "service/manufacturing_design_readings.js",
+      "sha256": "6a2dbc006327108509b8aaddc69ff25d6603b74a91e6a443d33fc372e83fc694"
+    },
+    {
+      "path": "service/physical_design_evidence.html",
+      "sha256": "04fb1944f7f2ee2cd90ee0cbf687be2089f2f297a9a5677fddd5ac4e8cd0b795"
+    },
+    {
+      "path": "service/physical_design_evidence.js",
+      "sha256": "dcf81fb85bcdf6534dc69826e8a3687e46a554121ad38dd4bba20d2d4e4ceff9"
+    },
+    {
+      "path": "service/README.md",
+      "sha256": "a607e83c5705a2efaac1dfc37aaf0d17e527a314e063277f1796e3a34bbc6001"
+    },
+    {
+      "path": "service/styles.css",
+      "sha256": "42aec6fd49d530ecb4d3657094903f0b04400c6d7ad05d246e9907431eb17e69"
+    },
+    {
+      "path": "service/supplement_readings.html",
+      "sha256": "ebc759c4717acfa2ac3480ad67c7264505eb20004afacfdb093f3ce2549b5df0"
+    },
+    {
+      "path": "service/supplement_readings.js",
+      "sha256": "dea8e4bdb39a58d989f1f5d273cf5b3e30b105529b906b167579c0097f9ba1f5"
+    },
+    {
+      "path": "service/taccel_build_followup.html",
+      "sha256": "1b852e93c93023a7d568bba624bcfc1c774ac766651c67c116cf1349fea95e4e"
+    },
+    {
+      "path": "service/taccel_build_followup.js",
+      "sha256": "143b6c07f65d8a2cf382ae5777b7f4fa313ffb0ff1296ed2ec7cf8fda9950250"
+    },
+    {
+      "path": "service/taccel_peg.html",
+      "sha256": "3e701f642a3efb77f04d9e895defa4a07c4d725900d1bf2a3daab8570ef63590"
+    },
+    {
+      "path": "service/taccel_peg.js",
+      "sha256": "71720964696d914cb62f9a46cfc500d5b9b5f3a337aa916a39d27dde88ff71bd"
+    },
+    {
+      "path": "service/taccel_peg_attempt.html",
+      "sha256": "ff1defec77a99e7122dcb60a65f21dfb8ab50ec597bda71e07ec676ca3801fd6"
+    },
+    {
+      "path": "service/taccel_peg_attempt.js",
+      "sha256": "e0addfe51d268515967c446108e2268eca84c74fce4bbc157c1ba92cb2e5245f"
+    },
+    {
+      "path": "service/taccel_runtime.js",
+      "sha256": "3d3faede60115015d18dc5abf35ba8c54456373403ef6a4265b8e44e5a667bd0"
+    },
+    {
+      "path": "service/taccel_saved_geometry.html",
+      "sha256": "8edad218ddf52003e98634a87cee5670e57a29e216e8893b5c1149f62c949886"
+    },
+    {
+      "path": "service/taccel_saved_geometry.js",
+      "sha256": "57bc4cf405b2dd88cf17c0def401ea2b67d1f3ccf364025f091b6e31595176fe"
     }
   ],
   "dynamic_metadata_files": [
@@ -125,8 +265,9 @@
   ],
   "private_payloads_distributed": false,
   "submission_ready": false,
-  "source_graph_original_sha256": "5576ed0a40719cf2254c0647ed1c2f11ed8a5825cb48f8b25db60bb0fe79e543",
-  "published_graph_sha256": "76b3d48a240471c027ba993a2eb19ba5f9ced3357b719ceabf5dc4dbd90aadd5",
-  "graph_projection": "local paths redacted and private log links replaced by observation-summary links; scientific claim and outcome scope preserved",
-  "byte_encoding": "UTF-8 LF"
+  "source_graph_original_sha256": "93f8149d701d5efba40b77b65dfb343a81aca3d472699147f1ee1fd8a3fbe3ac",
+  "published_graph_sha256": "f6512caf453e2f4129d402b11ffad87291ee05f23dd0f25cfbce8f8ffdc65826",
+  "preserved_public_parent_commit": "20a470c1f1d91f7535457ddb456e171759fb6042",
+  "graph_projection": "Preserve all historical public-parent node/edge/source objects;append sanitized new local evidence. Machine/private-acquisition paths omitted;public links are observation summaries. Local acquisition/observation digests identify original bytes,not sanitized projection bytes.",
+  "byte_encoding": "UTF-8 LF for protected science;existing dynamic metadata bytes retained"
 }
