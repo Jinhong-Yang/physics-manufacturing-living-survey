@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "run_id": "discovery_queue_2026_20261012T112032Z",
-  "generated_at": "2026-10-12T11:20:32.999377+00:00",
+  "run_id": "discovery_queue_2026_20261019T091927Z",
+  "generated_at": "2026-10-19T09:19:27.471326+00:00",
   "classification": "partial-year official-conference title discovery queue; sensitivity and triage only; separate from completed 2020-2025 review and denominators",
-  "source_cutoff_date": "2026-10-12",
-  "source_catalog_run_id": "catalog_2026_partial_20261012T112030Z",
+  "source_cutoff_date": "2026-10-19",
+  "source_catalog_run_id": "catalog_2026_partial_20261019T091925Z",
   "monitored_year": 2026,
   "latest_source_check_status": [
     {
@@ -15,7 +15,7 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/records.json",
       "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
       "record_count": 4042,
-      "capture_time": "2026-10-12T11:19:41.269023+00:00",
+      "capture_time": "2026-10-19T09:18:15.002721+00:00",
       "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792"
     },
     {
@@ -26,7 +26,7 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/records.json",
       "url": "https://proceedings.iclr.cc/paper_files/paper/2026",
       "record_count": 5351,
-      "capture_time": "2026-10-12T11:19:46.011355+00:00",
+      "capture_time": "2026-10-19T09:18:19.348895+00:00",
       "sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5"
     },
     {
@@ -37,8 +37,8 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/records.json",
       "url": "https://www.ijcai.org/proceedings/2026/",
       "record_count": 972,
-      "capture_time": "2026-10-12T11:19:47.225300+00:00",
-      "sha256": "fec0c59c77098c58e8cf897837f6f769efe7872364055fe3eae19759c71caa49"
+      "capture_time": "2026-10-19T09:18:20.066385+00:00",
+      "sha256": "10dd6850e507c8a6e1f10542fa0664b1e269aca152203c319d840e61312fc4ae"
     },
     {
       "source_id": "neurips_2026",
@@ -60,7 +60,7 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/records.json",
       "url": "https://proceedings.mlr.press/v306/",
       "record_count": 6552,
-      "capture_time": "2026-10-12T11:19:48.411497+00:00",
+      "capture_time": "2026-10-19T09:18:21.122579+00:00",
       "sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e"
     },
     {
@@ -84,7 +84,7 @@
       "returncode": 0,
       "prior_capture_retained": false,
       "records_path": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json",
-      "log_sha256": "c917172b1c475ffedadbb904c4b1d2a0aaa1fddaa0a7a56c0663fafd4471f324"
+      "log_sha256": "ed11fd585546f5314f3420b6b04880d0350353732703bdfcbbfe8a96a4e98530"
     },
     {
       "source_id": "iccv_2026",
@@ -93,7 +93,7 @@
       "status": "biennial_off_year"
     }
   ],
-  "source_catalog_summary": "runs/wp1/search/partial_2026_catalogs/catalog_2026_partial_20261012T112030Z_summary.json",
+  "source_catalog_summary": "runs/wp1/search/partial_2026_catalogs/catalog_2026_partial_20261019T091925Z_summary.json",
   "source_frame": [
     {
       "venue": "AAAI",
@@ -102,11 +102,11 @@
       "track_scope": "official_OJS_issues_archived_under_AAAI_journal",
       "source_url": null,
       "retrieved_at": null,
-      "capture_run_id": "aaai_ojs_20261012T111951Z",
+      "capture_run_id": "aaai_ojs_20261019T091824Z",
       "latest_check_status": "index_fetched_and_parsed",
       "prior_capture_retained_after_failed_check": false,
       "catalog_file": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json",
-      "catalog_file_sha256": "701af33ec80c00e9d4d356a7b3b91448c177a807c04bf5dc5795bd2e41ff984e",
+      "catalog_file_sha256": "c5c07fd5808d88fd2dd4680c8ec3f167111adbfcbfdaf67220d7503ef5b1f27e",
       "raw_response_sha256": null
     },
     {
@@ -115,12 +115,12 @@
       "record_count": 4042,
       "track_scope": "official_index; individual track eligibility pending",
       "source_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
-      "retrieved_at": "2026-10-12T11:19:41.134787+00:00",
+      "retrieved_at": "2026-10-19T09:18:14.967373+00:00",
       "capture_run_id": null,
       "latest_check_status": "index_fetched_and_parsed",
       "prior_capture_retained_after_failed_check": false,
       "catalog_file": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/records.json",
-      "catalog_file_sha256": "f0b9e4fdc20b0afe9802b9ecca49a4965c5855f5072ba4b6c434aa25d3e84098",
+      "catalog_file_sha256": "e0ce037970cfe4e3be88141e945ed17cd1f54a6ce4fe74c69d0c6ed84e9bdd45",
       "raw_response_sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792"
     },
     {
@@ -129,12 +129,12 @@
       "record_count": 5351,
       "track_scope": "official_index; individual track eligibility pending",
       "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026",
-      "retrieved_at": "2026-10-12T11:19:45.973216+00:00",
+      "retrieved_at": "2026-10-19T09:18:19.319371+00:00",
       "capture_run_id": null,
       "latest_check_status": "index_fetched_and_parsed",
       "prior_capture_retained_after_failed_check": false,
       "catalog_file": "runs/wp1/search/partial_2026_catalogs/iclr_2026/records.json",
-      "catalog_file_sha256": "c48e0b577030938ceb07d3b7c82330ca2a0b1835d8c9c9ea268864a929b6ce5d",
+      "catalog_file_sha256": "47aca8586c03c6b9da406a9b8952ed060045a2702096547d9407462cd54d1cc8",
       "raw_response_sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5"
     },
     {
@@ -143,12 +143,12 @@
       "record_count": 6552,
       "track_scope": "official_index; individual track eligibility pending",
       "source_url": "https://proceedings.mlr.press/v306/",
-      "retrieved_at": "2026-10-12T11:19:48.323870+00:00",
+      "retrieved_at": "2026-10-19T09:18:21.049970+00:00",
       "capture_run_id": null,
       "latest_check_status": "index_fetched_and_parsed",
       "prior_capture_retained_after_failed_check": false,
       "catalog_file": "runs/wp1/search/partial_2026_catalogs/icml_2026/records.json",
-      "catalog_file_sha256": "79c33fce1ec55e286867e3849889b7b227874a80747b53f1abfe501c260b290c",
+      "catalog_file_sha256": "40a6bbeb7f145d0f7ec559c1cb787c6c52ef7d2f7e60bc4462b4977cafc7544a",
       "raw_response_sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e"
     },
     {
@@ -157,13 +157,13 @@
       "record_count": 972,
       "track_scope": "official_index; individual track eligibility pending",
       "source_url": "https://www.ijcai.org/proceedings/2026/",
-      "retrieved_at": "2026-10-12T11:19:47.218609+00:00",
+      "retrieved_at": "2026-10-19T09:18:20.061322+00:00",
       "capture_run_id": null,
       "latest_check_status": "index_fetched_and_parsed",
       "prior_capture_retained_after_failed_check": false,
       "catalog_file": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/records.json",
-      "catalog_file_sha256": "99e81c3a9d88e098ae348e909c6f366ec2c2df97a49d3388ac1299f7380d7e90",
-      "raw_response_sha256": "fec0c59c77098c58e8cf897837f6f769efe7872364055fe3eae19759c71caa49"
+      "catalog_file_sha256": "1da49d4a90f50a7259bedff16ce0a8724cdd00732112d542632bd7289b12d074",
+      "raw_response_sha256": "10dd6850e507c8a6e1f10542fa0664b1e269aca152203c319d840e61312fc4ae"
     }
   ],
   "source_frame_record_count": 21837,
@@ -78348,7 +78348,7 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/cvpr_2026/records.json",
       "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
       "record_count": 4042,
-      "capture_time": "2026-10-12T11:19:41.269023+00:00",
+      "capture_time": "2026-10-19T09:18:15.002721+00:00",
       "sha256": "31f63227934062163d5bc57838d339c3c7a7e1e6e51f71a238022bff73f1b792"
     },
     {
@@ -78359,7 +78359,7 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/iclr_2026/records.json",
       "url": "https://proceedings.iclr.cc/paper_files/paper/2026",
       "record_count": 5351,
-      "capture_time": "2026-10-12T11:19:46.011355+00:00",
+      "capture_time": "2026-10-19T09:18:19.348895+00:00",
       "sha256": "2e233e9120602a93230f1e81b01bd295ee69b5c93f4eaa5b1988166fa3983fe5"
     },
     {
@@ -78370,8 +78370,8 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/ijcai_2026/records.json",
       "url": "https://www.ijcai.org/proceedings/2026/",
       "record_count": 972,
-      "capture_time": "2026-10-12T11:19:47.225300+00:00",
-      "sha256": "fec0c59c77098c58e8cf897837f6f769efe7872364055fe3eae19759c71caa49"
+      "capture_time": "2026-10-19T09:18:20.066385+00:00",
+      "sha256": "10dd6850e507c8a6e1f10542fa0664b1e269aca152203c319d840e61312fc4ae"
     },
     {
       "source_id": "neurips_2026",
@@ -78393,7 +78393,7 @@
       "records_path": "runs/wp1/search/partial_2026_catalogs/icml_2026/records.json",
       "url": "https://proceedings.mlr.press/v306/",
       "record_count": 6552,
-      "capture_time": "2026-10-12T11:19:48.411497+00:00",
+      "capture_time": "2026-10-19T09:18:21.122579+00:00",
       "sha256": "36e4d82cfc94f5ae93a8697d517d39a04cf35cc9aedfb1cc2a66bbd6a3855d8e"
     },
     {
@@ -78417,7 +78417,7 @@
       "returncode": 0,
       "prior_capture_retained": false,
       "records_path": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json",
-      "log_sha256": "c917172b1c475ffedadbb904c4b1d2a0aaa1fddaa0a7a56c0663fafd4471f324"
+      "log_sha256": "ed11fd585546f5314f3420b6b04880d0350353732703bdfcbbfe8a96a4e98530"
     },
     {
       "source_id": "iccv_2026",

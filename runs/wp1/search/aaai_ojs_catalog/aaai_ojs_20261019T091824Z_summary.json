@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "run_id": "aaai_ojs_20261019T091824Z",
+  "retrieved_at": "2026-10-19T09:19:25.649634+00:00",
+  "classification": "official_AAAI_OJS_issue_and_title_manifest; abstracts not yet fetched; not search-screened",
+  "archive_url": "https://ojs.aaai.org/index.php/AAAI/issue/archive",
+  "archive_pages": "41751-41753",
+  "issue_manifest_path": "runs/wp1/search/aaai_ojs_catalog/aaai_ojs_20261019T091824Z_issues.json",
+  "years": {
+    "2026": {
+      "record_count": 4920,
+      "issue_count": 48,
+      "records_path": "runs/wp1/search/aaai_ojs_catalog/aaai_2026/records.json"
+    }
+  },
+  "issues_retrieved": 48,
+  "limitations": [
+    "Issue and article title records are an official proceedings frame, not eligible-study counts.",
+    "AAAI archive may include technical tracks, special programs and demonstrations; track eligibility must be screened.",
+    "Article abstracts, deduplication, query screening, and 2026 cutoff adjudication remain pending."
+  ]
+}
