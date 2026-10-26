@@ -1,15 +1,24 @@
 {
   "schema_version": "1.0",
   "watch_status": "active",
-  "as_of": "2026-10-19T09:04:37Z",
+  "as_of": "2026-10-26T09:07:35Z",
   "monitor_scope": "GitHub repository revision/availability metadata only; no code, model, data, license, or scientific claim is automatically reclassified.",
   "graph_version": "0.9.45",
   "graph_as_of": "2026-10-12",
   "unique_github_repositories": 56,
   "available_n": 56,
   "check_failed_n": 0,
-  "revision_changes_n": 0,
-  "revision_changes": [],
+  "revision_changes_n": 1,
+  "revision_changes": [
+    {
+      "repository": "NVIDIA/paidf-anomalygen",
+      "from": "dbaf7d7d9003f048230f9026da5969e9e5931785",
+      "to": "63c888cb479e22f6abe343421eaba2ae1847b8f5",
+      "work_ids": [
+        "prior:R13"
+      ]
+    }
+  ],
   "items": [
     {
       "repository": "AI4Science-WestlakeU/GenCP",
@@ -20,7 +29,7 @@
       "work_labels": [
         "GenCP"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "a1d28320a1b648cae738d965f3d7cb878264bd13",
@@ -41,7 +50,7 @@
         "M2PDE (ICML 2025; author v1 titled MultiSimDiff)",
         "M2PDE (ICML 2025; author v1 titled MultiSimDiff)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "604031962a3d09f91b010c2eb94d35e680e0904c",
@@ -60,7 +69,7 @@
       "work_labels": [
         "RealPDEBench (ICLR 2026)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "62f4c80ab17f78933d046f2b038531dbc6a478a0",
@@ -79,7 +88,7 @@
       "work_labels": [
         "SIP-17: Towards Sim-to-Real Industrial Parts Classification With Synthetic Dataset"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "c5c7a63bf55f09be20b619efd33bab00157df176",
@@ -100,7 +109,7 @@
         "DrivAerStar: An Industrial-Grade CFD Dataset for Vehicle Aerodynamic Optimization",
         "DrivAerStar: An Industrial-Grade CFD Dataset for Vehicle Aerodynamic Optimization"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "35bdd29e8cc3ca95f073ea0dbb12472c1353c461",
@@ -119,7 +128,7 @@
       "work_labels": [
         "AnomalyAny"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "585198d594582f41442a779dd2f91288066092e7",
@@ -138,7 +147,7 @@
       "work_labels": [
         "OMatG stochastic-interpolant/flow-matching framework for crystalline materials generation"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "ed80cb86fd69d4f4d14164c6635b0a8d4939b34f",
@@ -159,7 +168,7 @@
         "DefectDiffu: few-shot industrial defect image and mask generation via consistency modeling",
         "DefectDiffu"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "fcbf4830966bd9de2dfc157aa42571e61acd7085",
@@ -178,7 +187,7 @@
       "work_labels": [
         "Deep Generative Model for Mechanical System Configuration Design (GearFormer)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "0a0d9d0254ba64e2278ce0a5733eea376af1610f",
@@ -199,7 +208,7 @@
         "SeaS",
         "SeaS: Few-shot Industrial Anomaly Image Generation with Separation and Sharing Fine-tuning"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "4645d3bda982855388bfc46fd1ceebc66b48c3f7",
@@ -218,7 +227,7 @@
       "work_labels": [
         "EngiBench + EngiOpt (NeurIPS 2025 Datasets and Benchmarks)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "0173289472fb90d77a514b208d4e1e55a6a96bd1",
@@ -237,7 +246,7 @@
       "work_labels": [
         "LIPS: Learning Industrial Physical Simulation benchmark suite"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "ed39b3ed3a0062f0d6776da27b6c6970aca5a409",
@@ -256,7 +265,7 @@
       "work_labels": [
         "CReFT-CAD and TriView2CAD constraint-guided synthetic engineering-drawing/CAD benchmark"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "fe5bbb0dd9ae89ecbf80bcca5643792d50f303b9",
@@ -275,7 +284,7 @@
       "work_labels": [
         "DFMGAN"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "6b130d03c3b174afbb04ff16615c6938e4c89a8c",
@@ -296,7 +305,7 @@
         "Text-Guided Variational Image Generation (TGI-AD)",
         "TGI-AD"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "9387a921c5fa0a1f7670b75e8d19b7020af2a38a",
@@ -315,7 +324,7 @@
       "work_labels": [
         "DrivAerNet++: A Large-Scale Multimodal Car Dataset with Computational Fluid Dynamics Simulations and Deep Learning Benchmarks"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "8b8c053053aa0f27c30f73af00be070a20205858",
@@ -334,7 +343,7 @@
       "work_labels": [
         "SMPL simulated industrial manufacturing and process-control environments"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "c816917eebfde59d525e325b56d16db07e499531",
@@ -353,15 +362,15 @@
       "work_labels": [
         "NVIDIA PAIDF AnomalyGen"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
-      "head_sha": "dbaf7d7d9003f048230f9026da5969e9e5931785",
-      "commit_date": "2026-09-01T01:35:24Z",
+      "head_sha": "63c888cb479e22f6abe343421eaba2ae1847b8f5",
+      "commit_date": "2026-10-20T03:16:56Z",
       "archived": false,
       "license_spdx": "Apache-2.0",
       "previous_head_sha": "dbaf7d7d9003f048230f9026da5969e9e5931785",
-      "revision_changed": false
+      "revision_changed": true
     },
     {
       "repository": "NinaNeon/IMDD-1M-Towards-Open-Vocabulary-Industrial-Defect-",
@@ -372,7 +381,7 @@
       "work_labels": [
         "IMDD-1M industrial multimodal defect dataset and diffusion-based generator"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "aef47373dbe953c2ff7330df4f80532dc501dc13",
@@ -391,7 +400,7 @@
       "work_labels": [
         "Projected Diffusion Models (PDM)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "992510f7836a0ffbde0ae09ea80326ca2bc204dd",
@@ -412,7 +421,7 @@
         "IKDDiT: Photolithography Overlay Map Generation with Implicit Knowledge Distillation Diffusion Transformer",
         "IKDDiT: Photolithography Overlay Map Generation with Implicit Knowledge Distillation Diffusion Transformer"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "bd94784c2aa5807c7681af07a55bc448c83ec551",
@@ -433,7 +442,7 @@
         "Benchmark of Machine Learning Force Fields for Semiconductor Simulations: Datasets, Metrics, and Comparative Analysis",
         "Benchmark of Machine Learning Force Fields for Semiconductor Simulations: Datasets, Metrics, and Comparative Analysis"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "6ca53320589daa03e455d29a0fdf1b5255debc88",
@@ -452,7 +461,7 @@
       "work_labels": [
         "CAD-GPT spatial-reasoning-enhanced multimodal CAD sequence synthesis"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "9328068b58689b0bc41c036fb935f5f16dd14149",
@@ -471,7 +480,7 @@
       "work_labels": [
         "Taccel: Scaling Up Vision-based Tactile Robotics via High-performance GPU Simulation"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "cb23bc251b531ba6908a3788c2f91423cd543149",
@@ -490,7 +499,7 @@
       "work_labels": [
         "PhysGaussian"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "8339ed6aa2cd5d50e1001a254a3d95aea678a956",
@@ -511,7 +520,7 @@
         "DefectFill",
         "DefectFill"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "ffc1df5ba1ff354836f01878b3898fb9fc9ad119",
@@ -530,7 +539,7 @@
       "work_labels": [
         "RealNet"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "09e60a2ec50aa11560382c5961f1711088ed713a",
@@ -549,7 +558,7 @@
       "work_labels": [
         "Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "306c82eca80711f9dcd777248f95ffd0f7c348b0",
@@ -568,7 +577,7 @@
       "work_labels": [
         "GLASS"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "f788d567db552820d744ca2d93e989265aad8c45",
@@ -587,7 +596,7 @@
       "work_labels": [
         "PhysCtrl"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "eaebd534719ce209436a610ea583ee7aee38943b",
@@ -606,7 +615,7 @@
       "work_labels": [
         "LithoSim: A Large, Holistic Lithography Simulation Benchmark"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "07138be9a5ca648b850a282f3ae72a7e27e28537",
@@ -625,7 +634,7 @@
       "work_labels": [
         "O2MAG"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "ff4d67827d6a0baf019de0d549b63f5ebf20aa61",
@@ -646,7 +655,7 @@
         "CAD-Coder text-to-parametric-CAD generator and Geom reward dataset",
         "CAD-Coder text-to-CAD generation"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "24c04e72d869b216c934b77a7efc43741185fa94",
@@ -665,7 +674,7 @@
       "work_labels": [
         "LineFlow"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "51cd2a5ebfbd9199ecf2f0c4b2391af8da03ecba",
@@ -684,7 +693,7 @@
       "work_labels": [
         "Slice-100K multimodal extrusion-based 3D-printing dataset and pipeline"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "61be295130ec04681969ab069abe6825819243e2",
@@ -703,7 +712,7 @@
       "work_labels": [
         "DensiCrafter: Physically-Constrained Generation and Fabrication of Self-Supporting Hollow Structures"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "21e6d8dc646129a9b21a38c2d5bee5bef2704d98",
@@ -724,7 +733,7 @@
         "SynMfg domain randomization (ICRA study)",
         "Assembly-specific domain randomization (ICCVW study)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "d191f76fb5afc9286060a6736fae12f392f6708c",
@@ -743,7 +752,7 @@
       "work_labels": [
         "Physics-Constrained Fine-Tuning (PCFT)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "a4bbaf033fad7487ff3a3bff5301d665e3c5d3bb",
@@ -762,7 +771,7 @@
       "work_labels": [
         "Physics-Informed Diffusion Models (PIDM)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "733aeb0fe8e56f8d1b3aaf9ff24f340438c20d9a",
@@ -781,7 +790,7 @@
       "work_labels": [
         "DiffusionPDE"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "1e2bc8b9e312f3a936630a30d2f49aedabf0cea7",
@@ -800,7 +809,7 @@
       "work_labels": [
         "CrysLLMGen hybrid fine-tuned LLM and equivariant diffusion for crystal-material generation"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "94bb287751cd20a882c7c1df7ca736633d78e5e1",
@@ -819,7 +828,7 @@
       "work_labels": [
         "LithoGRPO: Fast Inverse Lithography via GRPO Reinforced Flow Matching"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "f694498f1523efb89381fd9fb8984247f166095e",
@@ -838,7 +847,7 @@
       "work_labels": [
         "CAD-Editor automated data synthesis and text-based CAD editing"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "3363b99eb5d2c833c3fe963754f94c30cf341f92",
@@ -857,7 +866,7 @@
       "work_labels": [
         "CADFusion text-to-CAD generation with visual feedback"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "5bef5bb632b66ede9ca3d438b68adca0460e27f9",
@@ -876,7 +885,7 @@
       "work_labels": [
         "CNC-Net: Self-Supervised Learning for CNC Machining Operations"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "ba0652f9941686058c07c98617b9748e72f5f019",
@@ -897,7 +906,7 @@
         "TF-IDG",
         "Training-Free Industrial Defect Generation with Diffusion Models (TF-IDG)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "579994c0d63c5f1d21cf71984e6b24b98768d92e",
@@ -916,7 +925,7 @@
       "work_labels": [
         "MatSeg: Infusing Synthetic Data with Real-World Patterns for Zero-Shot Material State Segmentation"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "c9104da6ca8c563b5489880fefabcf9f547bfd5c",
@@ -937,7 +946,7 @@
         "LithoBench: Benchmarking AI Computational Lithography for Semiconductor Manufacturing",
         "LithoBench"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "9c74e82218e377eaf6d02d113fc1ce6e36c92aa6",
@@ -956,7 +965,7 @@
       "work_labels": [
         "AnomalyDiffusion"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "master",
       "head_sha": "b85297f333ebfc59b3863338445b81363efb9761",
@@ -975,7 +984,7 @@
       "work_labels": [
         "SMPL: Simulated Industrial Manufacturing and Process Control Learning Environments"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "c816917eebfde59d525e325b56d16db07e499531",
@@ -996,7 +1005,7 @@
         "Physics-Based Flow Matching (PBFM)",
         "Physics vs Distributions: Pareto Optimal Flow Matching with Physics Constraints"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "2a702673bae0cc4778d63af1c0243ad99e728b78",
@@ -1015,7 +1024,7 @@
       "work_labels": [
         "Chip Placement with Diffusion Models (ICML 2025)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "6973e90ee1afc345b56da486bbf7dc9772ada1a4",
@@ -1034,7 +1043,7 @@
       "work_labels": [
         "DualAnoDiff"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "0ae11b06ec10eaf38447c549b8188ed8880a56a4",
@@ -1053,7 +1062,7 @@
       "work_labels": [
         "Atlas3D: Physically Constrained Self-Supporting Text-to-3D for Simulation and Fabrication (NeurIPS 2024)"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "eeb25758dda0f80bf585e56414b327b03a16bd04",
@@ -1072,7 +1081,7 @@
       "work_labels": [
         "PhysX-3D: Physical-Grounded 3D Asset Generation"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "4f54e750a309fe9cd9f20816916ecc0e8a9ae594",
@@ -1091,7 +1100,7 @@
       "work_labels": [
         "FuncGenFoil function-space airfoil generation and editing"
       ],
-      "checked_at": "2026-10-19T09:04:37Z",
+      "checked_at": "2026-10-26T09:07:35Z",
       "status": "available",
       "default_branch": "main",
       "head_sha": "215a0084af8f5cd44e5e7d8281608eb410aeab90",
